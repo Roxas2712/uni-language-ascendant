@@ -151,6 +151,14 @@ return {{
 ["sha1"]="1c2a53332382e14dab8815e3a6dd81ad89534050",
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="ruby_ptbr",
+["language"]="pt-BR",
+["md5"]="7088f5789736f6fcedc687b385033003",
+["name"]="Ruby · Português (Brasil), OJ Abreu",
+["sha1"]="90f1464f77c57b4eef45ee07df140d402162eee3",
+["size"]=16777216,
+["version"]="OJ Abreu fan translation",
 }},
 },{
 ["base"]={
@@ -168,6 +176,14 @@ return {{
 ["sha1"]="7e6e034f9cdca6d2c4a270fdb50a94def5883d17",
 ["size"]=16777216,
 ["version"]="1.1 / Revision 1",
+},{
+["import_id"]="ruby_ptbr",
+["language"]="pt-BR",
+["md5"]="7088f5789736f6fcedc687b385033003",
+["name"]="Pokémon Ruby PT-BR (OJ Abreu) · gemeinsame Textquelle für Sapphire",
+["sha1"]="90f1464f77c57b4eef45ee07df140d402162eee3",
+["size"]=16777216,
+["version"]="OJ Abreu fan translation",
 }},
 },{
 ["base"]={

@@ -1,4 +1,4 @@
-# Uni-Language Ascendant 1.5.0-preview.1
+# Uni-Language Ascendant 1.5.0-preview.2
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
@@ -13,7 +13,16 @@ Die englische US-Basis bleibt `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
 Die Übersetzung enthält selbst noch englische Texte. Alle 15.655 Textschlüssel
 sind zugeordnet; das ist keine Aussage über 100 % sprachliche Vollständigkeit.
 Live-Smoke-Tests, Grenzen und Performancewerte stehen in [PT-BR.html](PT-BR.html).
-**Die übrigen zehn Editionen sind in PT-BR noch nicht fertig und ausgeblendet.**
+Rubin und Saphir haben zusätzlich ein Entwicklungsprofil mit OJ Abreu als
+Textquelle (SHA-1 `90f1464f77c57b4eef45ee07df140d402162eee3`). Saphir behält
+sein US-Basisspiel und verwendet 203 eigene Pokédex-Übersetzungen. Beide Profile
+enthalten weiterhin englische Beschriftungen und ungeprüfte Fanübersetzungen.
+**Die übrigen acht Editionen sind in PT-BR noch ausgeblendet.**
+
+Korrektur zur früheren Doku: „Missão concluída! Poções, saúde e proteção.“ war
+ein künstlicher Schrift-Test in Rubin, kein echter Joy-Dialog. Der Heilungsdialog
+wird jetzt durch die tatsächliche NPC-Interaktion samt KP-Erholung geprüft.
+Eigene Korrekturen sind an Prüfsummen der US-Ausgangstexte gebunden.
 
 Neu in 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
 Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
@@ -25,13 +34,13 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.5.0-preview.1.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.5.0-preview.2.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.
 4. Die Mod für diese Edition aktivieren und das Spiel starten. Vor dem Titelbild
    erscheint die Sprachwahl mit den benötigten ROM-Versionen und SHA-1-Prüfsummen.
-5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES/PT-BR, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
+5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES/PT-BR, Ruby/Sapphire EN/DE/PT-BR, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
    anschließend die Edition im Launcher erneut starten. Die Auswahl wird pro
    Edition gespeichert. Ohne vorherige Auswahl startet die Mod im englischen Modus.
 

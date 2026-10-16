@@ -1,0 +1,80 @@
+{
+  "gText_RestoredPkmnToFullHealth": [
+    {
+      "t": "text",
+      "s": "Obrigada por esperar."
+    },
+    {
+      "t": "para"
+    },
+    {
+      "t": "text",
+      "s": "Seus POKéMON estão"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "com a saúde recuperada."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_WouldYouLikeToRestYourPkmn": [
+    {
+      "t": "text",
+      "s": "Olá! Este é o CENTRO POKéMON."
+    },
+    {
+      "t": "para"
+    },
+    {
+      "t": "text",
+      "s": "Aqui recuperamos a saúde"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "dos seus POKéMON."
+    },
+    {
+      "t": "para"
+    },
+    {
+      "t": "text",
+      "s": "Quer que cuidemos"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "dos seus POKéMON?"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_WeHopeToSeeYouAgain": [
+    {
+      "t": "text",
+      "s": "Esperamos ver você de novo!"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_WeHopeToSeeYouAgain2": [
+    {
+      "t": "text",
+      "s": "Esperamos ver você de novo!"
+    },
+    {
+      "t": "eos"
+    }
+  ]
+}

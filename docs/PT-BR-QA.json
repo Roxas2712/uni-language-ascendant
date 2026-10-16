@@ -1,11 +1,16 @@
 {
   "format": 1,
   "status": "preview-not-all-games-complete",
-  "scene": "EM_OLDALE_TOWN",
+  "scene": "Oldale Town in each corresponding game",
   "frames_per_run": 360,
-  "total_measured_frames": 1440,
+  "total_measured_frames": 2880,
   "background_load": "Other independently running game instances were active. These are exploratory comparisons, not an isolated performance certification.",
   "mapped_keys": 15655,
+  "edition_mapped_keys": {
+    "emerald": 15655,
+    "ruby": 13457,
+    "sapphire": 13457
+  },
   "full_playthrough": false,
   "live_battle": "scripted wild battle, fixed Tackle fixture, victory and return to field",
   "runs": [
@@ -156,14 +161,163 @@
       "bootToDriverSeconds": 6.439878083333334,
       "language": "pt-BR",
       "run": "pt-BR-performance-2"
+    },
+    {
+      "draw": {
+        "p95Ms": 16.051333333333417,
+        "maxMs": 31.960708333333088,
+        "n": 360,
+        "meanMs": 14.910873263888966,
+        "p50Ms": 14.813375000001017
+      },
+      "modLoadSeconds": 0.0014907499999998741,
+      "bootToDriverSeconds": 1.1214693333333334,
+      "elapsedSeconds": 5.9993010416666674,
+      "luaMemoryKiB": 77961.9033203125,
+      "memoryBeforeKiB": 80642.296875,
+      "language": "en",
+      "scene": "RU_OLDALE_TOWN",
+      "update": {
+        "p95Ms": 1.0729583333342063,
+        "maxMs": 1.8700416666650455,
+        "n": 360,
+        "meanMs": 0.5350390046295997,
+        "p50Ms": 0.4868749999999977
+      },
+      "cacheHit": false,
+      "graphics": {
+        "fonts": 0,
+        "drawcalls": 0,
+        "canvasswitches": 0,
+        "texturememory": 10917896,
+        "drawcallsbatched": 0,
+        "shaderswitches": 0,
+        "buffermemory": 681050,
+        "textures": 57,
+        "buffers": 7
+      },
+      "game": "ruby",
+      "run": "ruby-en-performance-1"
+    },
+    {
+      "update": {
+        "n": 360,
+        "meanMs": 0.4485465277777193,
+        "p50Ms": 0.41220833333266427,
+        "p95Ms": 0.8219166666663114,
+        "maxMs": 1.1701666666681376
+      },
+      "graphics": {
+        "shaderswitches": 0,
+        "buffermemory": 681050,
+        "textures": 57,
+        "drawcalls": 0,
+        "canvasswitches": 0,
+        "texturememory": 10917896,
+        "drawcallsbatched": 0,
+        "buffers": 7,
+        "fonts": 0
+      },
+      "scene": "RU_OLDALE_TOWN",
+      "memoryBeforeKiB": 176890.5927734375,
+      "modLoadSeconds": 2.835432583333333,
+      "game": "ruby",
+      "elapsedSeconds": 6.000199750000001,
+      "luaMemoryKiB": 148092.6328125,
+      "cacheHit": false,
+      "draw": {
+        "n": 360,
+        "meanMs": 15.01518784722231,
+        "p50Ms": 14.82229166666471,
+        "p95Ms": 16.381625000001065,
+        "maxMs": 32.41399999999928
+      },
+      "bootToDriverSeconds": 4.09134475,
+      "language": "pt-BR",
+      "run": "ruby-pt-BR-performance-1"
+    },
+    {
+      "cacheHit": false,
+      "modLoadSeconds": 0.0010113749999999255,
+      "bootToDriverSeconds": 0.9629130833333335,
+      "elapsedSeconds": 6.083133125000001,
+      "update": {
+        "p50Ms": 0.4444583333320651,
+        "p95Ms": 0.8882083333325852,
+        "maxMs": 1.5331666666673627,
+        "n": 360,
+        "meanMs": 0.4706320601852228
+      },
+      "memoryBeforeKiB": 80361.1708984375,
+      "language": "en",
+      "draw": {
+        "p50Ms": 14.808833333333382,
+        "p95Ms": 18.406541666667664,
+        "maxMs": 48.65566666666599,
+        "n": 360,
+        "meanMs": 15.177579976851888
+      },
+      "scene": "SA_OLDALE_TOWN",
+      "luaMemoryKiB": 78049.0595703125,
+      "graphics": {
+        "buffers": 7,
+        "drawcalls": 0,
+        "textures": 57,
+        "texturememory": 10917896,
+        "drawcallsbatched": 0,
+        "shaderswitches": 0,
+        "buffermemory": 681050,
+        "fonts": 0,
+        "canvasswitches": 0
+      },
+      "game": "sapphire",
+      "run": "sapphire-en-performance-1"
+    },
+    {
+      "elapsedSeconds": 6.000104500000002,
+      "cacheHit": true,
+      "memoryBeforeKiB": 144358.3876953125,
+      "draw": {
+        "meanMs": 15.013601736111287,
+        "p50Ms": 15.036583333332132,
+        "p95Ms": 16.31979166666575,
+        "maxMs": 16.887791666666097,
+        "n": 360
+      },
+      "language": "pt-BR",
+      "scene": "SA_OLDALE_TOWN",
+      "graphics": {
+        "texturememory": 10917896,
+        "textures": 57,
+        "buffers": 7,
+        "shaderswitches": 0,
+        "buffermemory": 681050,
+        "fonts": 0,
+        "drawcallsbatched": 0,
+        "drawcalls": 0,
+        "canvasswitches": 0
+      },
+      "luaMemoryKiB": 140508.65625,
+      "game": "sapphire",
+      "modLoadSeconds": 1.3538158333333334,
+      "update": {
+        "meanMs": 0.4472500000000349,
+        "p50Ms": 0.41929166666676565,
+        "p95Ms": 0.7875833333326199,
+        "maxMs": 1.204791666665983,
+        "n": 360
+      },
+      "bootToDriverSeconds": 2.5857614166666667,
+      "run": "sapphire-pt-BR-performance-1"
     }
   ],
   "live_checks": [
     {
-      "log": "pt-BR-live-final.log",
+      "log": "pt-BR-healing-fix.log",
       "passed_markers": [
         "LANGUAGE_LIVE_OK",
-        "LANGUAGE_BATTLE_OK"
+        "LANGUAGE_BATTLE_OK",
+        "LANGUAGE_HEALING_OK"
       ]
     },
     {
@@ -171,6 +325,13 @@
       "passed_markers": [
         "LANGUAGE_LIVE_OK",
         "LANGUAGE_BATTLE_OK"
+      ]
+    },
+    {
+      "log": "en-healing-regression.log",
+      "passed_markers": [
+        "LANGUAGE_LIVE_OK",
+        "LANGUAGE_HEALING_OK"
       ]
     },
     {
@@ -210,9 +371,24 @@
       ]
     },
     {
-      "log": "install.log",
+      "log": "install-preview2.log",
       "passed_markers": [
         "PTBR_INSTALL_OK"
+      ]
+    },
+    {
+      "log": "ruby-pt-BR-healing-fix.log",
+      "passed_markers": [
+        "LANGUAGE_HEALING_OK",
+        "LANGUAGE_LIVE_OK"
+      ]
+    },
+    {
+      "log": "sapphire-pt-BR-dex-final.log",
+      "passed_markers": [
+        "LANGUAGE_HEALING_OK",
+        "LANGUAGE_DEX_OK",
+        "LANGUAGE_LIVE_OK"
       ]
     }
   ]

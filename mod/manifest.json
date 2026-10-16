@@ -1,7 +1,7 @@
 {
   "id": "german_rom_source",
   "name": "Uni-Language Ascendant",
-  "version": "1.5.0-preview.1",
+  "version": "1.5.0-preview.2",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -147,6 +147,14 @@
       "file": "emerald_ptbr.gba",
       "size": 16777216,
       "md5": "5f91214a7b563c858a94920796817d83"
+    },
+    {
+      "id": "ruby_ptbr",
+      "name": "Ruby PT-BR · OJ Abreu",
+      "description": "SHA-1 90f1464f77c57b4eef45ee07df140d402162eee3; Basis: Pokémon Ruby (USA / English) 1.0 / Revision 0 / Pokémon Sapphire (USA / English) 1.0 / Revision 0.",
+      "file": "ruby_ptbr.gba",
+      "size": 16777216,
+      "md5": "7088f5789736f6fcedc687b385033003"
     }
   ]
 }

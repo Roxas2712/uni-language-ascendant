@@ -1,7 +1,9 @@
 -- Profiles are selected by validated ROM digest, never by a guessed filename.
 -- More languages/revisions can be added without changing the compiler.
 return {
- {id='emerald_ptbr',noticeKey='fanTranslation',game='emerald',language='pt-BR',name='Português (Brasil)',code='BPEE',revision=0,profile='profiles/emerald_ptbr.lua',assets='profiles/emerald_ptbr_assets.lua',world='profiles/emerald_ptbr_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='sapphire_ptbr',sourceId='ruby_ptbr',authored='profiles/sapphire_ptbr_authored.lua',preserveTitle=true,noticeKey='fanTranslation',game='sapphire',language='pt-BR',name='Português (Brasil)',code='AXVE',revision=0,profile='profiles/sapphire_ptbr.lua',assets='profiles/ruby_ptbr_assets.lua',world='profiles/ruby_ptbr_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='ruby_ptbr',authored='profiles/ruby_ptbr_authored.lua',noticeKey='fanTranslation',game='ruby',language='pt-BR',name='Português (Brasil)',code='AXVE',revision=0,profile='profiles/ruby_ptbr.lua',assets='profiles/ruby_ptbr_assets.lua',world='profiles/ruby_ptbr_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='emerald_ptbr',authored='profiles/emerald_ptbr_authored.lua',noticeKey='fanTranslation',game='emerald',language='pt-BR',name='Português (Brasil)',code='BPEE',revision=0,profile='profiles/emerald_ptbr.lua',assets='profiles/emerald_ptbr_assets.lua',world='profiles/emerald_ptbr_world.lua',glyphsPath='latin_glyphs.lua'},
  {id='emerald_fr',game='emerald',language='fr',name='Français',code='BPEF',revision=0,profile='profiles/emerald_fr.lua',assets='profiles/emerald_fr_assets.lua',world='profiles/emerald_fr_world.lua',glyphsPath='latin_glyphs.lua'},
  {id='emerald_it',game='emerald',language='it',name='Italiano',code='BPEI',revision=0,profile='profiles/emerald_it.lua',assets='profiles/emerald_it_assets.lua',world='profiles/emerald_it_world.lua',glyphsPath='latin_glyphs.lua'},
  {id='emerald_es',game='emerald',language='es',name='Español',code='BPES',revision=0,profile='profiles/emerald_es.lua',assets='profiles/emerald_es_assets.lua',world='profiles/emerald_es_world.lua',glyphsPath='latin_glyphs.lua'},

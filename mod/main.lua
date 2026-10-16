@@ -17,7 +17,7 @@ return function(mod)
  local selected,profile,info
  for _,entry in ipairs(own('catalog.lua')) do
   if entry.game==version and entry.language==language then
-   local candidate=mod.imports:info(entry.id)
+   local candidate=mod.imports:info(entry.sourceId or entry.id)
    if candidate then
     local p=own(entry.profile)
     assert(candidate.md5==p.md5 and candidate.size==p.size,'ROM does not match language profile')
@@ -35,10 +35,13 @@ return function(mod)
   assert(require('src.import.gba.versions').BUILD==version,'Uni-Language Ascendant requires the matching USA 1.0 base game.')
  end
  profile.glyphs,profile.assetsPath,profile.worldPath=selected.glyphsPath and own(selected.glyphsPath,selected.language) or selected.glyphs,selected.assets,selected.world
+ for code,text in pairs(profile.decodeGlyphs or {}) do profile.glyphs[code]=text end
+ if selected.authored then profile.authored=own(selected.authored) end
  local W=require('src.import.LuaWriter')
  local function hash(bytes) return love.data.encode('string','hex',love.data.hash('string','sha256',bytes)) end
  local recipe={'compiler-v2',profile.sha1,version}
  local paths={'main.lua','catalog.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua',selected.profile,selected.assets,selected.world}
+ if selected.authored then paths[#paths+1]=selected.authored;paths[#paths+1]='authored.lua' end
  if selected.glyphsPath then paths[#paths+1]=selected.glyphsPath end
  for name in pairs(own('vendor/index.lua')) do paths[#paths+1]='vendor/'..name:gsub('%.','/')..'.lua' end
  table.sort(paths)
@@ -67,7 +70,7 @@ return function(mod)
   local chunks={}
   for offset=0,info.size-1,4*1024*1024 do
    local length=math.min(4*1024*1024,info.size-offset)
-   local bytes,err=mod.imports:read(selected.id,offset,length)
+   local bytes,err=mod.imports:read(selected.sourceId or selected.id,offset,length)
    assert(bytes and #bytes==length,err or 'Incomplete language ROM')
    chunks[#chunks+1]=bytes
   end
@@ -90,6 +93,17 @@ return function(mod)
   end
   local assets,report=own('assets.lua')(mod,profile,bytes,own)
   local translated=own('translate.lua')(proxy,profile,bytes)
+  if profile.authored then
+   translated.authored=own('authored.lua')(proxy,profile.authored)
+   local missing={}
+   for _,key in ipairs(translated.missing) do
+    if profile.authored[key] then translated.translated=translated.translated+1 else missing[#missing+1]=key end
+   end
+   translated.missing=missing
+  end
+  if selected.preserveTitle then
+   for path in pairs(assets) do if path:find('/title/',1,true) then assets[path]=nil end end
+  end
   if version=='leafgreen' or version=='firered' then
    local sections=assert(loadstring(assert(assets['data/generated/gba/map_sections.lua'])))().sections
    local original=assert(loadstring(assert(base:read('data/generated/gba/region_map/names.lua'))))()

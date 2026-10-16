@@ -1,0 +1,260 @@
+{
+  "gText_NurseJoy_ThankYouForWaiting": [
+    {
+      "t": "text",
+      "s": "Obrigada por esperar."
+    },
+    {
+      "t": "para"
+    },
+    {
+      "t": "text",
+      "s": "Seus POKéMON estão"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "com a saúde recuperada."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_NurseJoy_Welcome": [
+    {
+      "t": "text",
+      "s": "Olá! Este é o CENTRO POKéMON."
+    },
+    {
+      "t": "para"
+    },
+    {
+      "t": "text",
+      "s": "Aqui recuperamos a saúde"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "dos seus POKéMON."
+    },
+    {
+      "t": "para"
+    },
+    {
+      "t": "text",
+      "s": "Quer que cuidemos"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "dos seus POKéMON?"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_NurseJoy_OkayIllTakeYourPokemon": [
+    {
+      "t": "text",
+      "s": "Certo! Vou cuidar dos seus"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "POKéMON por alguns instantes."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_NurseJoy_WeHopeToSeeYouAgain": [
+    {
+      "t": "text",
+      "s": "Esperamos ver você de novo!"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "BattleStatText_Speed": [
+    {
+      "t": "text",
+      "s": "VEL."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "BattleText_CuredOfProblem": [
+    {
+      "code": 16,
+      "t": "bph"
+    },
+    {
+      "s": ": ",
+      "t": "text"
+    },
+    {
+      "code": 23,
+      "t": "bph"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "curou o problema de ",
+      "t": "text"
+    },
+    {
+      "code": 0,
+      "t": "bph"
+    },
+    {
+      "s": "!",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "BattleText_PlayerMenu": [
+    {
+      "s": "O que",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "code": 32,
+      "t": "bph"
+    },
+    {
+      "s": " vai fazer?",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "BattleText_PreventedLoss": [
+    {
+      "code": 16,
+      "t": "bph"
+    },
+    {
+      "s": ": ",
+      "t": "text"
+    },
+    {
+      "code": 23,
+      "t": "bph"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "evitou a perda de ",
+      "t": "text"
+    },
+    {
+      "code": 0,
+      "t": "bph"
+    },
+    {
+      "s": "!",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "BattleText_ReadyToHelp": [
+    {
+      "code": 12,
+      "t": "bph"
+    },
+    {
+      "s": " vai",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "ajudar ",
+      "t": "text"
+    },
+    {
+      "code": 13,
+      "t": "bph"
+    },
+    {
+      "s": "!",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "BattleText_SpikesScattered": [
+    {
+      "code": 37,
+      "t": "bph"
+    },
+    {
+      "s": ": a equipe foi cercada",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "por ESPINHOS!",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "LilycoveCity_Text_IfWorldBecomesOurs": [
+    {
+      "s": "Se este mundo for nosso,",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "da EQUIPE ",
+      "t": "text"
+    },
+    {
+      "code": 8,
+      "name": "EVIL_TEAM",
+      "t": "ph"
+    },
+    {
+      "s": ", será",
+      "t": "text"
+    },
+    {
+      "t": "scroll"
+    },
+    {
+      "s": "melhor para os POKéMON também.",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ]
+}

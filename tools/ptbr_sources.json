@@ -57,21 +57,31 @@
     },
     {
       "game": "ruby",
-      "status": "patched-input-verified-profile-pending",
+      "status": "development-preview-live-smoke-tested-language-review-incomplete",
       "source": "https://www.brgames.org/traducao/483/pokemon-ruby",
-      "runtime_enabled": false,
+      "runtime_enabled": true,
       "base_sha1": "f28b6ffc97847e94a6c21a63cacf633ee5c8df1e",
       "sha1": "90f1464f77c57b4eef45ee07df140d402162eee3",
       "md5": "7088f5789736f6fcedc687b385033003",
       "size": 16777216,
       "patch_sha256": "3da642ce74953bba70fe66b43618cd505bb2fb785caef03b8ebb635068834bcb",
-      "tested": false
+      "tested": "smoke-only",
+      "full_playthrough": false,
+      "battle_variable_texts_audited": 608
     },
     {
       "game": "sapphire",
-      "status": "own-translation-draft",
+      "status": "development-preview-live-smoke-tested-language-review-incomplete",
       "source": null,
-      "runtime_enabled": false
+      "runtime_enabled": true,
+      "tested": "smoke-only",
+      "full_playthrough": false,
+      "battle_variable_texts_audited": 608,
+      "source_import": "ruby_ptbr",
+      "source_sha1": "90f1464f77c57b4eef45ee07df140d402162eee3",
+      "shared_source_keys": 13047,
+      "authored_dex_species": 203,
+      "authored_dex_pages": 405
     },
     {
       "game": "firered",

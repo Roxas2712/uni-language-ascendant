@@ -24,15 +24,24 @@ playthrough or a complete linguistic review. The picker states that limitation
 in all ten menu languages. Menu choice, Back, reset, persistence and all menu
 font glyphs were tested.
 
-**PT-BR for the other ten editions is not ready or enabled.** Source/patch
-progress is recorded in [ptbr_sources.json](tools/ptbr_sources.json). The Sapphire
-translation has 13 authored drafts, deliberately excluded from runtime and the
-ZIP. The private worksheet contains 7,717 unique texts; 2,581 have unreviewed
-cross-game candidates. Drafts must pass source/control-token checks and in-game
-review before becoming a profile.
+**Ruby and Sapphire are also development previews; the other eight editions remain hidden.**
+Both use the OJ Abreu Ruby PT-BR ROM as their imported translation source
+(SHA-1 `90f1464f77c57b4eef45ee07df140d402162eee3`). Sapphire runs its own
+US base, retains its own title/world assets, reuses only text with exactly
+matching English source IR, and adds 203 authored edition-specific Pokédex
+entries (405 pages). All 13,457 text keys are mapped. This is not full linguistic
+coverage: English labels and inherited fan-translation defects remain.
+Progress is recorded in [ptbr_sources.json](tools/ptbr_sources.json).
+
+**Screenshot correction:** “Missão concluída! Poções, saúde e proteção.” was a
+synthetic Ruby font fixture, not Nurse Joy's dialogue. It must not be used as
+translation evidence. The misleading Emerald caption was also corrected.
+Authored healing dialogue is now tested through actual field interaction,
+including HP recovery and return of control. It is pinned to original text IR
+hashes and applied to both symbol and address aliases.
 
 Build the installable preview with `python3 tools/package.py`; it writes
-`dist/uni-language-ascendant-1.5.0-preview.1.zip`. The latest stable release
+`dist/uni-language-ascendant-1.5.0-preview.2.zip`. The latest stable release
 remains 1.4.2 below. No ROM or translation patch is included.
 
 ## Install version 1.4.2

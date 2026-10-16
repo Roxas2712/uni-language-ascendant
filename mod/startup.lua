@@ -11,7 +11,7 @@ return function(mod,version,own)
  local choices={{id='en',name='English',available=true}}
  local known={en=true}
  for _,entry in ipairs(catalog) do
-  if entry.game==version and not known[entry.language] and mod.imports:info(entry.id)~=nil then
+  if entry.game==version and not known[entry.language] and mod.imports:info(entry.sourceId or entry.id)~=nil then
    known[entry.language]=true
    choices[#choices+1]={id=entry.language,name=entry.name,available=true,noticeKey=entry.noticeKey}
   end

@@ -22,7 +22,7 @@ return function(game)
    for ch,id in pairs({['ã']=0xF4,['õ']=0xF5,['Ã']=0xF1,['Õ']=0xF2,['í']=0x21,['Í']=0x0C}) do
     assert(Font.glyphId(ch)==id,'Wrong Portuguese font cell: '..ch)
    end
-   assert(Text.plain('gText_RestoredPkmnToFullHealth'):find('Missão',1,true),'Portuguese tilde not decoded')
+   assert(Text.plain('gText_RestoredPkmnToFullHealth'):find('saúde recuperada',1,true),'Authored healing correction missing')
    local Runtime=require('src.mods.Runtime')
    local bus=Runtime.events;Runtime.events={}
    assert(Font.glyphId('ã')==0,'Portuguese glyph override leaked after deactivation')
@@ -48,15 +48,7 @@ return function(game)
   capture('center')
   assert(Map.load(nil,game,'EM_OLDALE_TOWN',{x=14,y=7,facing='up'}));capture('mart')
   assert(Map.load(nil,game,'EM_OLDALE_TOWN_POKEMON_CENTER_1F',{x=7,y=4,facing='up'}))
-  local nurse=Text.plain('gText_WouldYouLikeToRestYourPkmn')
-  print('LANGUAGE_NURSE',lang,nurse)
-  require('src.ui.game3.hud').openMessage(game,nurse);wait(10);require('src.ui.game3.message').advance();capture('dialogue')
-  if lang=='pt-BR' then
-   require('src.ui.game3.message').close()
-   local restored=Text.plain('gText_RestoredPkmnToFullHealth'):match('\n\n(.+)')
-   require('src.ui.game3.hud').openMessage(game,assert(restored),{speed=0})
-   capture('accents')
-  end
+  assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_nurse_live.lua'))()(game,capture,lang)
   game:_handleBootAction({action='new_game',name='TEST',gender=0,start={map='EM_OLDALE_TOWN',x=6,y=17,facing='up'}})
   wait(60)
   require('src.core.game3.rng').SeedRng(12345)
