@@ -1,10 +1,15 @@
-# Uni-Language Ascendant 1.4.2
+# Uni-Language Ascendant 1.4.3-europe-preview.1
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
 Es ist kein spezieller Recompiler-Build erforderlich.
 
-Neu in 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
+Diese Preview ergänzt 13 europäische Sprachprofile. Umfang, fehlende ROMs und
+verbleibende Texte/Grafiken stehen in [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md).
+Die unten beschriebenen vollständigen deutschen Grafikadapter gelten nicht
+automatisch für die neuen GB/GBC-Profile.
+
+Aus dem Ausgangsrelease 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
 Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
 zuvor gewählte Sprach-ROM, startet die Mod auf Englisch. Die neun Menüsprachen
 und die Liste der benötigten ROMs bleiben unabhängig davon verfügbar.
@@ -14,13 +19,13 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.4.2.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.4.3-europe-preview.1.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.
 4. Die Mod für diese Edition aktivieren und das Spiel starten. Vor dem Titelbild
    erscheint die Sprachwahl mit den benötigten ROM-Versionen und SHA-1-Prüfsummen.
-5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
+5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (verfügbare Sprachen je Edition siehe ROM-Liste.html). Bei einem Sprachwechsel startet die Engine neu;
    anschließend die Edition im Launcher erneut starten. Die Auswahl wird pro
    Edition gespeichert. Ohne vorherige Auswahl startet die Mod im englischen Modus.
 

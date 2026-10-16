@@ -1,0 +1,1 @@
+return {["assets/fonts/font.png"]={["width"]=128,["height"]=64,["bits"]=1,["transparent"]=true,["tiles"]={{["off"]=1016320,["size"]=1024}}},["assets/fonts/font_battle_extra.png"]={["width"]=128,["height"]=16,["bits"]=2,["ink"]=true,["tiles"]={{["off"]=1017344,["size"]=512}}}}

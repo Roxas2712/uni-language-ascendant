@@ -33,8 +33,9 @@ for game,stem,label in [('gold','Geum','Gold'),('silver','Eun','Silber')]:
  e=choose('Pocket Monsters '+stem+' (Korea)');e.update(language='ko',game=game,edition=label,revision=0,status='Profil fehlt – noch nicht unterstützt/getestet');rows.append(e)
 e=choose('Pocket Monsters - Midori (Japan)');e.update(language='ja',game='green',edition='Grün (zusätzliche Edition)',revision=0,status='Optional für vollständiges japanisches Gen1; separate Edition/Zuordnung nötig');rows.append(e)
 assert len(rows)==47 and len({x['sha1'] for x in rows})==47
-rows=[x for x in rows if not (x['game']=='emerald' and x['language'] in ('fr','it','es'))]
 known=json.loads((R/'tools/rom_requirements.json').read_text())
+supported={(r['game'],x['language']) for r in known for x in r['sources']}
+rows=[x for x in rows if (x['game'],x['language']) not in supported]
 for game in ['firered','sapphire']:
  c=next(x for x in known if x['game']==game);src=c['sources'][0];e=next(dict(x) for x in entries if x['sha1']==src['sha1'])
  e.update(language='de',game=game,edition=c['name'],revision=1 if game=='sapphire' else 0,status='Profil getestet; passende eigene ROM noch benötigt');rows.insert(0,e)
@@ -43,9 +44,9 @@ report=dict(status='Development inputs, not an importer allowlist',checked='2026
 esc=html.escape
 body='''<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Weitere Spielsprachen · Uni-Language Ascendant</title><style>body{background:#f4f2e6;color:#182b3c;font:16px/1.55 system-ui;max-width:1200px;margin:40px auto;padding:0 22px}h1{color:#ba303c}a{color:#086e72}aside{border:2px solid #182b3c;border-radius:12px;padding:20px;background:#ffdf70}table{width:100%;border-collapse:collapse}th,td{padding:14px 9px;text-align:left;border-bottom:1px solid #bbc5bd;vertical-align:top}small{display:block;color:#51656c}code{font-size:12px;overflow-wrap:anywhere}input{padding:12px;font:inherit;border:2px solid #182b3c;border-radius:8px;width:350px;max-width:85%}@media(max-width:700px){table,tbody,tr,td,th{display:block}thead{display:none}td,th{border:0}tr{border-bottom:2px solid #aaa}}</style>
 <h1>Welche weiteren ROMs brauchen wir?</h1>
-<aside><b>Aktuell spielbar und geprüft: Englisch und Deutsch für elf Editionen; zusätzlich Französisch, Italienisch und Spanisch für Emerald.</b><br>Die neun Menüsprachen sind davon unabhängig. Die folgenden fremdsprachigen ROMs sind Entwicklungsgrundlagen für neue Profile, noch keine unterstützten Imports. Ein passender Hash allein bedeutet noch keine Spielkompatibilität.</aside>
-<p><b>Am besten zuerst:</b> Weitere Editionen auf Französisch, Italienisch und Spanisch. Die drei Emerald-ROMs liegen bereits vor und sind freigegeben. Japanisch folgt als eigener Zeichensatz-/Layout-Schritt. Dafür steht pro Sprache eine genaue Revision unten. Bereits vorhandene andere Revisionen bitte ebenfalls nennen; nicht mehrere Revisionen derselben Edition beschaffen.</p>
-<p>Für die bisherigen elf Editionen: 30 weitere FR/IT/ES-ROMs, 11 japanische ROMs und 2 koreanische ROMs (Gold/Silber). Japanisches Grün ist als zusätzliche zwölfte Edition separat aufgeführt. Dazu fehlen für die bestehenden deutschen Profile noch die passende eigene Feuerrot-ROM und ein korrekter Saphir-1.1-Dump.</p>
+<aside><b>Englisch und Deutsch: elf Editionen. Die zusätzlichen europäischen Profile und ihr Preview-Testumfang stehen in der ROM-Liste und im Integrationsbericht.</b><br>Die neun Menüsprachen sind davon unabhängig. Die folgenden fremdsprachigen ROMs sind Entwicklungsgrundlagen für neue Profile, noch keine unterstützten Imports. Ein passender Hash allein bedeutet noch keine Spielkompatibilität.</aside>
+<p><b>Am besten zuerst:</b> Weitere Editionen auf Französisch, Italienisch und Spanisch. Die 16 bereitgestellten FR/IT/ES-Sprach-ROMs sind integriert; GB/GBC befinden sich im Preview-Status. Japanisch folgt als eigener Zeichensatz-/Layout-Schritt. Dafür steht pro Sprache eine genaue Revision unten. Bereits vorhandene andere Revisionen bitte ebenfalls nennen; nicht mehrere Revisionen derselben Edition beschaffen.</p>
+<p>Für die bisherigen elf Editionen: 17 weitere FR/IT/ES-ROMs, 11 japanische ROMs und 2 koreanische ROMs (Gold/Silber). Japanisches Grün ist als zusätzliche zwölfte Edition separat aufgeführt. Dazu fehlen für die bestehenden deutschen Profile noch die passende eigene Feuerrot-ROM und ein korrekter Saphir-1.1-Dump.</p>
 <p>Japanische Gen1-Ausgaben unterscheiden sich auch in Inhalt und Datenlayout; insbesondere Grün und Blau sind keine austauschbaren Sprachdateien. Die Zuordnung zu den US-Basen muss separat umgesetzt und getestet werden.</p>
 <p>Der geprüfte Original-ROM-Katalog enthält keine regulären chinesischen Gen1–3-Ausgaben. Chinesisch ist deshalb derzeit ausschließlich eine Menüsprache. Eine Fanübersetzung wäre ein eigenes Profil mit festgelegter Basis-ROM, Patch-Version und separaten Tests. Für Koreanisch umfasst diese Liste ausschließlich die Originalausgaben Gold/Silber.</p>
 <p><b>Revisionen:</b> Für neue Profile wählen wir hier gezielt Revision 0 (1.0), keine VC-/Switch-Abwandlungen, Debug-Versionen oder bereits gepatchten Dateien. Saphir Deutsch benötigt wegen des vorhandenen Profils ausdrücklich Revision 1 (1.1). Dateinamen sind nur eine Orientierung; entscheidend ist die SHA-1 der vollständigen Datei.</p>
@@ -57,6 +58,6 @@ body+='</tbody></table><h2>Prüfen</h2><p>macOS/Linux: <code>shasum -a 1 "/Pfad/
 for source in sources:body+='<li><a href="'+esc(source['url'])+'">Nintendo – '+source['system']+'</a> · Katalog '+source['version']+'</li>'
 body+='''</ul><p><a href="ROM-Liste.html">Bereits unterstützte ROMs</a></p><script>document.querySelector('#filter').addEventListener('input',e=>{let q=e.target.value.toLowerCase();document.querySelectorAll('tbody tr').forEach(r=>r.hidden=!r.textContent.toLowerCase().includes(q))})</script></html>'''
 (R/'mod/Weitere-Sprachen.html').write_text(body)
-print('LANGUAGE_NEEDS_OK',len(rows),'exact inputs; 44 future / 2 existing German profiles')
+print('LANGUAGE_NEEDS_OK',len(rows),'exact inputs; 31 future / 2 existing German profiles')
 for e in rows:
  if e['game']=='emerald':print(e['language'],e['file'],e['sha1'])

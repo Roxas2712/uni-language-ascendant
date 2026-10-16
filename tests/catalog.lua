@@ -18,5 +18,5 @@ for _,c in ipairs(catalog) do
   assert(loadfile(root..'/mod/'..c.adapter));assert(loadfile(root..'/mod/'..c.runtime))
  else assert(loadfile(root..'/mod/'..c.assets));assert(loadfile(root..'/mod/'..c.world)) end
 end
-assert(#requirements==11 and #catalog==14 and #m.games==11)
-print('CATALOG_OK 11 editions, 14 language profiles, exact manifest/profile/ROM-list identities, generation adapters')
+assert(#requirements==11 and #catalog==27 and #m.games==11)
+print('CATALOG_OK 11 editions, 27 language profiles, exact manifest/profile/ROM-list identities, generation adapters')

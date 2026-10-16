@@ -1,0 +1,352 @@
+{
+  "YES": [
+    "SÍ",
+    "OUI",
+    "SÌ"
+  ],
+  "NO": [
+    "NO",
+    "NON",
+    "NO"
+  ],
+  "NEW GAME": [
+    "NUEVO JUEGO",
+    "NOUV. PARTIE",
+    "NUOVO GIOCO"
+  ],
+  "CONTINUE": [
+    "CONTINUAR",
+    "CONTINUER",
+    "CONTINUA"
+  ],
+  "OPTION": [
+    "OPCIONES",
+    "OPTIONS",
+    "OPZIONI"
+  ],
+  "OPTIONS": [
+    "OPCIONES",
+    "OPTIONS",
+    "OPZIONI"
+  ],
+  "SAVE": [
+    "GUARDAR",
+    "SAUVER",
+    "SALVA"
+  ],
+  "QUIT": [
+    "SALIR",
+    "QUITTER",
+    "ESCI"
+  ],
+  "EXIT": [
+    "SALIR",
+    "RETOUR",
+    "ESCI"
+  ],
+  "CANCEL": [
+    "SALIR",
+    "ANNULER",
+    "ESCI"
+  ],
+  "BACK": [
+    "ATRÁS",
+    "RETOUR",
+    "INDIETRO"
+  ],
+  "OK": [
+    "VALE",
+    "OK",
+    "OK"
+  ],
+  "ITEM": [
+    "OBJETO",
+    "OBJET",
+    "STRUM."
+  ],
+  "ITEMS": [
+    "OBJETOS",
+    "OBJETS",
+    "STRUMENTI"
+  ],
+  "BAG": [
+    "MOCHILA",
+    "SAC",
+    "ZAINO"
+  ],
+  "PACK": [
+    "MOCHILA",
+    "SAC",
+    "ZAINO"
+  ],
+  "POKéDEX": [
+    "POKéDEX",
+    "POKéDEX",
+    "POKéDEX"
+  ],
+  "POKéMON": [
+    "POKéMON",
+    "POKéMON",
+    "POKéMON"
+  ],
+  "FIGHT": [
+    "LUCHA",
+    "ATTAQUE",
+    "LOTTA"
+  ],
+  "RUN": [
+    "HUIDA",
+    "FUITE",
+    "FUGA"
+  ],
+  "STATS": [
+    "DATOS",
+    "STATS",
+    "INFO"
+  ],
+  "SWITCH": [
+    "CAMBIO",
+    "CHANGER",
+    "SCAMBIA"
+  ],
+  "MOVE": [
+    "MOV.",
+    "CAPACITÉ",
+    "MOSSA"
+  ],
+  "MOVES": [
+    "MOVIMIENTOS",
+    "CAPACITÉS",
+    "MOSSE"
+  ],
+  "TYPE": [
+    "TIPO",
+    "TYPE",
+    "TIPO"
+  ],
+  "ATTACK": [
+    "ATAQUE",
+    "ATTAQUE",
+    "ATTACCO"
+  ],
+  "DEFENSE": [
+    "DEFENSA",
+    "DÉFENSE",
+    "DIFESA"
+  ],
+  "SPEED": [
+    "VELOCIDAD",
+    "VITESSE",
+    "VELOCITÀ"
+  ],
+  "SPECIAL": [
+    "ESPECIAL",
+    "SPÉCIAL",
+    "SPECIALI"
+  ],
+  "SPCL.ATK": [
+    "AT.ESP.",
+    "ATT.SPÉ.",
+    "ATT.SP."
+  ],
+  "SPCL.DEF": [
+    "DEF.ESP.",
+    "DÉF.SPÉ.",
+    "DIF.SP."
+  ],
+  "NAME": [
+    "NOMBRE",
+    "NOM",
+    "NOME"
+  ],
+  "LEVEL": [
+    "NIVEL",
+    "NIVEAU",
+    "LIVELLO"
+  ],
+  "HP": [
+    "PS",
+    "PV",
+    "PS"
+  ],
+  "POWER": [
+    "POTENCIA",
+    "PUISSANCE",
+    "POTENZA"
+  ],
+  "ACCURACY": [
+    "PRECISIÓN",
+    "PRÉCISION",
+    "PRECISIONE"
+  ],
+  "STATUS": [
+    "ESTADO",
+    "STATUT",
+    "STATO"
+  ],
+  "USE": [
+    "USAR",
+    "UTILISER",
+    "USA"
+  ],
+  "GIVE": [
+    "DAR",
+    "DONNER",
+    "DAI"
+  ],
+  "TAKE": [
+    "QUITAR",
+    "PRENDRE",
+    "PRENDI"
+  ],
+  "TOSS": [
+    "TIRAR",
+    "JETER",
+    "BUTTA"
+  ],
+  "REGISTER": [
+    "REGISTRAR",
+    "SELECT",
+    "ASSEGNA"
+  ],
+  "SELL": [
+    "VENDER",
+    "VENDRE",
+    "VENDI"
+  ],
+  "BUY": [
+    "COMPRAR",
+    "ACHETER",
+    "COMPRA"
+  ],
+  "DEPOSIT": [
+    "DEJAR",
+    "DÉPOSER",
+    "DEPOSITA"
+  ],
+  "WITHDRAW": [
+    "SACAR",
+    "RETIRER",
+    "RITIRA"
+  ],
+  "RELEASE": [
+    "SOLTAR",
+    "RELÂCHER",
+    "LIBERA"
+  ],
+  "CHANGE BOX": [
+    "CAMBIAR CAJA",
+    "CHANGER BOÎTE",
+    "CAMBIA BOX"
+  ],
+  "BILL'S PC": [
+    "PC DE BILL",
+    "PC DE LÉO",
+    "PC DI BILL"
+  ],
+  "SOMEONE'S PC": [
+    "PC DE ALGUIEN",
+    "PC DE ???",
+    "PC DI QUALCUNO"
+  ],
+  "POKéGEAR": [
+    "POKéGEAR",
+    "POKéMATOS",
+    "POKéGEAR"
+  ],
+  "MAP": [
+    "MAPA",
+    "CARTE",
+    "MAPPA"
+  ],
+  "PHONE": [
+    "TELÉFONO",
+    "TÉLÉPHONE",
+    "TELEFONO"
+  ],
+  "RADIO": [
+    "RADIO",
+    "RADIO",
+    "RADIO"
+  ],
+  "TIME": [
+    "TIEMPO",
+    "HEURE",
+    "ORA"
+  ],
+  "TRAINER": [
+    "ENTRENADOR",
+    "DRESSEUR",
+    "ALLENATORE"
+  ],
+  "BADGES": [
+    "MEDALLAS",
+    "BADGES",
+    "MEDAGLIE"
+  ],
+  "MONEY": [
+    "DINERO",
+    "ARGENT",
+    "SOLDI"
+  ],
+  "OWN": [
+    "PROPIOS",
+    "PRIS",
+    "PRESI"
+  ],
+  "SEEN": [
+    "VISTOS",
+    "VUS",
+    "VISTI"
+  ],
+  "DATA": [
+    "DATOS",
+    "INFOS",
+    "DATI"
+  ],
+  "CRY": [
+    "GRITO",
+    "CRI",
+    "VERSO"
+  ],
+  "AREA": [
+    "ÁREA",
+    "ZONE",
+    "AREA"
+  ],
+  "PRINT": [
+    "IMPRIMIR",
+    "IMPRIMER",
+    "STAMPA"
+  ],
+  "SEARCH": [
+    "BUSCAR",
+    "CHERCHER",
+    "CERCA"
+  ],
+  "ABC": [
+    "ABC",
+    "ABC",
+    "ABC"
+  ],
+  "OLD": [
+    "VIEJA",
+    "ANCIEN",
+    "VECCHIO"
+  ],
+  "NEW": [
+    "NUEVA",
+    "NOUVEAU",
+    "NUOVO"
+  ],
+  "HT": [
+    "ALT",
+    "TAIL.",
+    "ALT."
+  ],
+  "WT": [
+    "PESO",
+    "POIDS",
+    "PESO"
+  ]
+}

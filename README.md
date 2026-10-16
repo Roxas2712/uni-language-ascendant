@@ -1,3 +1,9 @@
+# European expansion preview
+
+13 additional profiles based on v1.4.2. See [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md)
+for coverage, QA limits, missing ROMs and PT-BR merge status, and
+[LICENSE-POLICY.md](LICENSE-POLICY.md) for the existing GPL obligations.
+
 # Uni-Language Ascendant
 
 A standalone language mod for **Gen1Recomp**. Import the exact English base game,

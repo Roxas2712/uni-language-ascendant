@@ -1,0 +1,94 @@
+{
+  "version": "1.4.3-europe-preview.1",
+  "tested": "2026-10-17",
+  "platform": "macOS / LÖVE",
+  "baseline": "5843925",
+  "unitChecks": [
+    "unit",
+    "startup_unit",
+    "intro_unit",
+    "preferences_unit",
+    "catalog"
+  ],
+  "liveProfiles": [
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-live.log"
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-live.log"
+    },
+    {
+      "game": "firered",
+      "language": "es",
+      "passed": true,
+      "log": "firered-es-europe-live.log"
+    },
+    {
+      "game": "firered",
+      "language": "it",
+      "passed": true,
+      "log": "firered-it-europe-live.log"
+    },
+    {
+      "game": "leafgreen",
+      "language": "es",
+      "passed": true,
+      "log": "leafgreen-es-europe-live.log"
+    },
+    {
+      "game": "leafgreen",
+      "language": "fr",
+      "passed": true,
+      "log": "leafgreen-fr-europe-live.log"
+    },
+    {
+      "game": "gold",
+      "language": "es",
+      "passed": true,
+      "log": "gold-es-europe-live.log"
+    },
+    {
+      "game": "gold",
+      "language": "fr",
+      "passed": true,
+      "log": "gold-fr-europe-live.log"
+    },
+    {
+      "game": "gold",
+      "language": "it",
+      "passed": true,
+      "log": "gold-it-europe-live.log"
+    },
+    {
+      "game": "silver",
+      "language": "es",
+      "passed": true,
+      "log": "silver-es-europe-live.log"
+    },
+    {
+      "game": "silver",
+      "language": "fr",
+      "passed": true,
+      "log": "silver-fr-europe-live.log"
+    },
+    {
+      "game": "crystal",
+      "language": "es",
+      "passed": true,
+      "log": "crystal-es-europe-live.log"
+    },
+    {
+      "game": "crystal",
+      "language": "it",
+      "passed": true,
+      "log": "crystal-it-europe-live.log"
+    }
+  ],
+  "limitations": "Smoke/scene tests only; full playthrough, all battle/link paths, Windows/Linux not tested."
+}

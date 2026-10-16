@@ -16,6 +16,14 @@
         "sha1": "87d523fe1a0c548db7c5477b451ddec1eb083c06",
         "md5": "8ed0e8d45a81ca34de625d930148a512",
         "size": 1048576
+      },
+      {
+        "language": "es",
+        "name": "Edicion Roja (Spain) (SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "fc17c5b904d551b1b908054ccd1c493f755f832a",
+        "md5": "463c241c8721ab1d1da17c91de9f8a32",
+        "size": 1048576
       }
     ]
   },
@@ -56,6 +64,14 @@
         "sha1": "42f3714eec6eca25200d42461ff08d57c98f6d1d",
         "md5": "e93f10168e3c9b9d18e3ad4a1415e1d0",
         "size": 1048576
+      },
+      {
+        "language": "es",
+        "name": "Edicion Amarilla - Edicion Especial Pikachu (Spain) (GBC,SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "1dc242039218fba50928d1afb66b70565b6b9daf",
+        "md5": "f0da8b1cff3aab898ecde9dcbda6d817",
+        "size": 1048576
       }
     ]
   },
@@ -75,6 +91,30 @@
         "version": "1.0 / Revision 0",
         "sha1": "9254195d461ea942eaaa08cc4b83de3cf82aea0d",
         "md5": "7542ec9b695d4fe38adfdaaa57364d83",
+        "size": 2097152
+      },
+      {
+        "language": "es",
+        "name": "Edicion Oro (Spain) (SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "162ea54c6a3cff374642e6dd842f9bffac847e7b",
+        "md5": "9462bc81907e38c59acccd739690e6f9",
+        "size": 2097152
+      },
+      {
+        "language": "fr",
+        "name": "Version Or (France) (SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "c147c0d8c2b71b7628a7233436f5c052b5b17081",
+        "md5": "9af19423c5fa3dbe4fdcc78d2bc7d1c0",
+        "size": 2097152
+      },
+      {
+        "language": "it",
+        "name": "Versione Oro (Italy) (SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "032608fe8947b627584a4a0eccc7bf9ad3588426",
+        "md5": "89bb59dc49b59b0cd30b7384d9860bb8",
         "size": 2097152
       }
     ]
@@ -96,6 +136,22 @@
         "sha1": "8ecc58d621faaedf2a934bd2583d527220df7bb9",
         "md5": "f1f013cd591bc4ea77305bbc9f8cbb3c",
         "size": 2097152
+      },
+      {
+        "language": "es",
+        "name": "Edicion Plata (Spain) (SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "05bd978ab2cb104b0aff3f696896e30885203a18",
+        "md5": "2d83fb454dd5687a802425c501854dc2",
+        "size": 2097152
+      },
+      {
+        "language": "fr",
+        "name": "Version Argent (France) (SGB Enhanced)",
+        "version": "1.0 / Revision 0",
+        "sha1": "a4a7e8079b7a53e4d9ef43382bbb1090b9d45d1a",
+        "md5": "72448fe75f534f70cd90469da95ef76f",
+        "size": 2097152
       }
     ]
   },
@@ -115,6 +171,22 @@
         "version": "1.0 / Revision 0",
         "sha1": "accb584293ba056152f1fd908439b019017ff2fe",
         "md5": "a35c0fa2e3b3d1c1779cd9f2352bc427",
+        "size": 2097152
+      },
+      {
+        "language": "es",
+        "name": "Cristal (Spain)",
+        "version": "1.0 / Revision 0",
+        "sha1": "889a06fc0bb863666865aa69def0adf97945ac2a",
+        "md5": "8a626340f6b16ba45c1d4e07f2134875",
+        "size": 2097152
+      },
+      {
+        "language": "it",
+        "name": "Cristallo (Italy)",
+        "version": "1.0 / Revision 0",
+        "sha1": "6cee05e5b95beeae74b8365ad18ec4a07a8c4af8",
+        "md5": "7c513823f65b92a75e29067745839cc8",
         "size": 2097152
       }
     ]
@@ -136,6 +208,22 @@
         "sha1": "18a3758ceeef2c77b315144be2c3910d6f1f69fe",
         "md5": "6648a0484a56097ca75d6af87ebce225",
         "size": 16777216
+      },
+      {
+        "language": "es",
+        "name": "Edicion Rojo Fuego (Spain)",
+        "version": "1.0 / Revision 0",
+        "sha1": "ab8f6bfe0ccdaf41188cd015c8c74c314d02296a",
+        "md5": "c629272c5e0111930a240623b6c239f0",
+        "size": 16777216
+      },
+      {
+        "language": "it",
+        "name": "Versione Rosso Fuoco (Italy)",
+        "version": "1.0 / Revision 0",
+        "sha1": "66a9d415205321376b4318534c0dce5f69d28362",
+        "md5": "fce3c39e7ba452eddb2279b454b66416",
+        "size": 16777216
       }
     ]
   },
@@ -155,6 +243,22 @@
         "version": "1.0 / Revision 0",
         "sha1": "0802d1fb185ee3ed48d9a22afb25e66424076dac",
         "md5": "4dd5e72f942a921d3fe53d21a39f4cba",
+        "size": 16777216
+      },
+      {
+        "language": "es",
+        "name": "Edicion Verde Hoja (Spain)",
+        "version": "1.0 / Revision 0",
+        "sha1": "f9ebee5d228cb695f18ef2ced41630a09fa9eb05",
+        "md5": "765178ed4d402033ef7ed6b82d059f5a",
+        "size": 16777216
+      },
+      {
+        "language": "fr",
+        "name": "Version Vert Feuille (France)",
+        "version": "1.0 / Revision 0",
+        "sha1": "4b5758c14d0a07b70ef3ef0bd7fa5e7ce6978672",
+        "md5": "c5bc831107f459816508b45d9392afc9",
         "size": 16777216
       }
     ]
