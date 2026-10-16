@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/bryanthaboi/gen1recomp",
+  "commit": "1925fa9f97661f1e2d0922f7c6eb9546d262fd29",
+  "files": [
+    "main.lua",
+    "src/core/GameVersion.lua",
+    "src/core/Game3.lua",
+    "src/mods/LauncherMods.lua",
+    "src/mods/RequiredImports.lua",
+    "src/import/RomImporter.lua"
+  ]
+}

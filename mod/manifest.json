@@ -1,0 +1,144 @@
+{
+  "id": "german_rom_source",
+  "name": "Uni-Language Ascendant",
+  "version": "1.4.2",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "UI",
+  "games": [
+    "red",
+    "blue",
+    "yellow",
+    "gold",
+    "silver",
+    "crystal",
+    "firered",
+    "leafgreen",
+    "ruby",
+    "sapphire",
+    "emerald"
+  ],
+  "game_version": ">=0.0.0-dev <1.0.0",
+  "priority": 50,
+  "permissions": [
+    "engine_internals"
+  ],
+  "description": "Original Ascendant intro, nine menu languages, Back and Reset profile. Uninstalling deletes the mod profile; reinstalling starts fresh. German ROM profiles for all 11 Gen1–Gen3 editions; Emerald also French, Italian and Spanish. Compile once from your own language ROM; exact US base required. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp)",
+  "optional_imports": [
+    {
+      "id": "leafgreen_de",
+      "name": "Blattgrün Deutsch 1.0",
+      "description": "SHA-1 0802d1fb185ee3ed48d9a22afb25e66424076dac; Basis: Pokémon LeafGreen (USA / English) 1.0 / Revision 0.",
+      "file": "leafgreen_de.gba",
+      "size": 16777216,
+      "md5": "4dd5e72f942a921d3fe53d21a39f4cba"
+    },
+    {
+      "id": "ruby_de",
+      "name": "Rubin Deutsch 1.0",
+      "description": "SHA-1 1c2a53332382e14dab8815e3a6dd81ad89534050; Basis: Pokémon Ruby (USA / English) 1.0 / Revision 0.",
+      "file": "ruby_de.gba",
+      "size": 16777216,
+      "md5": "1af28ea547d4116dc752c93f7f694239"
+    },
+    {
+      "id": "emerald_de",
+      "name": "Smaragd Deutsch 1.0",
+      "description": "SHA-1 61c2eb2b380b1a75f0c94b767a2d4c26cd7ce4e3; Basis: Pokémon Emerald (USA / English) 1.0 / Revision 0.",
+      "file": "emerald_de.gba",
+      "size": 16777216,
+      "md5": "f793a854654b467211fc32c4062cb183"
+    },
+    {
+      "id": "red_de",
+      "name": "Rot Deutsch 1.0",
+      "description": "SHA-1 87d523fe1a0c548db7c5477b451ddec1eb083c06; Basis: Pokémon Red (USA / English) 1.0 / Revision 0.",
+      "file": "red_de.gb",
+      "size": 1048576,
+      "md5": "8ed0e8d45a81ca34de625d930148a512"
+    },
+    {
+      "id": "blue_de",
+      "name": "Blau Deutsch 1.0",
+      "description": "SHA-1 20e72dc6f41493eee1fdd0cef54214e6c3389688; Basis: Pokémon Blue (USA / English) 1.0 / Revision 0.",
+      "file": "blue_de.gb",
+      "size": 1048576,
+      "md5": "a1ec7f07c7b4251d5fafc50622d546f8"
+    },
+    {
+      "id": "yellow_de",
+      "name": "Gelb Deutsch 1.0",
+      "description": "SHA-1 42f3714eec6eca25200d42461ff08d57c98f6d1d; Basis: Pokémon Yellow (USA / English) 1.0 / Revision 0.",
+      "file": "yellow_de.gb",
+      "size": 1048576,
+      "md5": "e93f10168e3c9b9d18e3ad4a1415e1d0"
+    },
+    {
+      "id": "gold_de",
+      "name": "Gold Deutsch 1.0",
+      "description": "SHA-1 9254195d461ea942eaaa08cc4b83de3cf82aea0d; Basis: Pokémon Gold (USA / English) 1.0 / Revision 0.",
+      "file": "gold_de.gbc",
+      "size": 2097152,
+      "md5": "7542ec9b695d4fe38adfdaaa57364d83"
+    },
+    {
+      "id": "silver_de",
+      "name": "Silber Deutsch 1.0",
+      "description": "SHA-1 8ecc58d621faaedf2a934bd2583d527220df7bb9; Basis: Pokémon Silver (USA / English) 1.0 / Revision 0.",
+      "file": "silver_de.gbc",
+      "size": 2097152,
+      "md5": "f1f013cd591bc4ea77305bbc9f8cbb3c"
+    },
+    {
+      "id": "crystal_de",
+      "name": "Kristall Deutsch 1.0",
+      "description": "SHA-1 accb584293ba056152f1fd908439b019017ff2fe; Basis: Pokémon Crystal (USA / English) 1.0 / Revision 0.",
+      "file": "crystal_de.gbc",
+      "size": 2097152,
+      "md5": "a35c0fa2e3b3d1c1779cd9f2352bc427"
+    },
+    {
+      "id": "firered_de",
+      "name": "Feuerrot Deutsch 1.0",
+      "description": "SHA-1 18a3758ceeef2c77b315144be2c3910d6f1f69fe; Basis: Pokémon FireRed (USA / English) 1.0 / Revision 0.",
+      "file": "firered_de.gba",
+      "md5": "6648a0484a56097ca75d6af87ebce225",
+      "size": 16777216,
+      "required": false
+    },
+    {
+      "id": "sapphire_de",
+      "name": "Saphir Deutsch 1.1",
+      "description": "SHA-1 7e6e034f9cdca6d2c4a270fdb50a94def5883d17; Basis: Pokémon Sapphire (USA / English) 1.0 / Revision 0.",
+      "file": "sapphire_de.gba",
+      "md5": "9d816b369343d39b94af9a8b0ce7f63b",
+      "size": 16777216,
+      "required": false
+    },
+    {
+      "id": "emerald_fr",
+      "name": "Émeraude · Français 1.0",
+      "description": "SHA-1 ca666651374d89ca439007bed54d839eb7bd14d0; Basis: Pokémon Emerald (USA / English) 1.0 / Revision 0.",
+      "file": "emerald_fr.gba",
+      "size": 16777216,
+      "md5": "2c00e335288a96650e34785b5e2a7588"
+    },
+    {
+      "id": "emerald_it",
+      "name": "Smeraldo · Italiano 1.0",
+      "description": "SHA-1 1692db322400c3141c5de2db38469913ceb1f4d4; Basis: Pokémon Emerald (USA / English) 1.0 / Revision 0.",
+      "file": "emerald_it.gba",
+      "size": 16777216,
+      "md5": "c3e85be7372bbd5e43f6334a565968c1"
+    },
+    {
+      "id": "emerald_es",
+      "name": "Esmeralda · Español 1.0",
+      "description": "SHA-1 fe1558a3dcb0360ab558969e09b690888b846dd9; Basis: Pokémon Emerald (USA / English) 1.0 / Revision 0.",
+      "file": "emerald_es.gba",
+      "size": 16777216,
+      "md5": "67b770405f7b87589e0342513b25fe9b"
+    }
+  ]
+}

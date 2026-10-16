@@ -1,0 +1,18 @@
+-- Profiles are selected by validated ROM digest, never by a guessed filename.
+-- More languages/revisions can be added without changing the compiler.
+return {
+ {id='emerald_fr',game='emerald',language='fr',name='Français',code='BPEF',revision=0,profile='profiles/emerald_fr.lua',assets='profiles/emerald_fr_assets.lua',world='profiles/emerald_fr_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='emerald_it',game='emerald',language='it',name='Italiano',code='BPEI',revision=0,profile='profiles/emerald_it.lua',assets='profiles/emerald_it_assets.lua',world='profiles/emerald_it_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='emerald_es',game='emerald',language='es',name='Español',code='BPES',revision=0,profile='profiles/emerald_es.lua',assets='profiles/emerald_es_assets.lua',world='profiles/emerald_es_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='sapphire_de',game='sapphire',language='de',name='Deutsch',code='AXPD',revision=1,profile='profiles/sapphire.lua',assets='profiles/sapphire_assets.lua',world='profiles/sapphire_world.lua',glyphs={[0x15]='ß',[0xF1]='Ä',[0xF2]='Ö',[0xF3]='Ü',[0xF4]='ä',[0xF5]='ö',[0xF6]='ü'}},
+ {id='firered_de',game='firered',language='de',name='Deutsch',code='BPRD',revision=0,profile='profiles/firered.lua',assets='profiles/firered_assets.lua',world='profiles/firered_world.lua',glyphs={[0x15]='ß',[0xF1]='Ä',[0xF2]='Ö',[0xF3]='Ü',[0xF4]='ä',[0xF5]='ö',[0xF6]='ü'}},
+ {id='leafgreen_de',game='leafgreen',language='de',name='Deutsch',code='BPGD',revision=0,profile='profiles/leafgreen.lua',assets='profiles/leafgreen_assets.lua',world='profiles/leafgreen_world.lua',glyphs={[0x15]='ß',[0xF1]='Ä',[0xF2]='Ö',[0xF3]='Ü',[0xF4]='ä',[0xF5]='ö',[0xF6]='ü'}},
+ {id='ruby_de',game='ruby',language='de',name='Deutsch',code='AXVD',revision=0,profile='profiles/ruby.lua',assets='profiles/ruby_assets.lua',world='profiles/ruby_world.lua',glyphs={[0x15]='ß',[0xF1]='Ä',[0xF2]='Ö',[0xF3]='Ü',[0xF4]='ä',[0xF5]='ö',[0xF6]='ü'}},
+ {id='emerald_de',game='emerald',language='de',name='Deutsch',code='BPED',revision=0,profile='profiles/emerald.lua',assets='profiles/emerald_assets.lua',world='profiles/emerald_world.lua',glyphs={[0x15]='ß',[0xF1]='Ä',[0xF2]='Ö',[0xF3]='Ü',[0xF4]='ä',[0xF5]='ö',[0xF6]='ü'}},
+ {id='red_de',game='red',language='de',name='Deutsch',generation=1,profile='gb/profiles/red/profile.lua',root='gb/profiles/red/',runtime='gb/runtime/red.lua',adapter='gb/adapters/gen1.lua',shared='gb/shared/'},
+ {id='blue_de',game='blue',language='de',name='Deutsch',generation=1,profile='gb/profiles/blue/profile.lua',root='gb/profiles/blue/',runtime='gb/runtime/blue.lua',adapter='gb/adapters/gen1.lua',shared='gb/shared/'},
+ {id='yellow_de',game='yellow',language='de',name='Deutsch',generation=1,profile='gb/profiles/yellow/profile.lua',root='gb/profiles/yellow/',runtime='gb/runtime/yellow.lua',adapter='gb/adapters/gen1.lua',shared='gb/shared/'},
+ {id='gold_de',game='gold',language='de',name='Deutsch',generation=2,profile='gb/profiles/gold/profile.lua',root='gb/profiles/gold/',runtime='gb/runtime/gold.lua',adapter='gb/adapters/gen2.lua',shared='gb/shared/'},
+ {id='silver_de',game='silver',language='de',name='Deutsch',generation=2,profile='gb/profiles/silver/profile.lua',root='gb/profiles/silver/',runtime='gb/runtime/silver.lua',adapter='gb/adapters/gen2.lua',shared='gb/shared/'},
+ {id='crystal_de',game='crystal',language='de',name='Deutsch',generation=2,profile='gb/profiles/crystal/profile.lua',root='gb/profiles/crystal/',runtime='gb/runtime/silver.lua',adapter='gb/adapters/gen2.lua',shared='gb/shared/'},
+}

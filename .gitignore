@@ -1,0 +1,25 @@
+# Private inputs and local generated game content must never be committed.
+/build/
+/dist/
+/output/
+/tmp/
+**/baseroms/
+**/mod_cache/
+**/.uni-language-profile
+*.gba
+*.gb
+*.gbc
+*.nds
+*.rom
+*.sav
+*.srm
+*.state
+*.zip
+*.7z
+*.rar
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+

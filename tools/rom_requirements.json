@@ -1,0 +1,246 @@
+[
+  {
+    "game": "red",
+    "name": "Rot",
+    "generation": 1,
+    "base": {
+      "name": "Pokémon Red (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Rot (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "87d523fe1a0c548db7c5477b451ddec1eb083c06",
+        "md5": "8ed0e8d45a81ca34de625d930148a512",
+        "size": 1048576
+      }
+    ]
+  },
+  {
+    "game": "blue",
+    "name": "Blau",
+    "generation": 1,
+    "base": {
+      "name": "Pokémon Blue (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "d7037c83e1ae5b39bde3c30787637ba1d4c48ce2"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Blau (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "20e72dc6f41493eee1fdd0cef54214e6c3389688",
+        "md5": "a1ec7f07c7b4251d5fafc50622d546f8",
+        "size": 1048576
+      }
+    ]
+  },
+  {
+    "game": "yellow",
+    "name": "Gelb",
+    "generation": 1,
+    "base": {
+      "name": "Pokémon Yellow (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "cc7d03262ebfaf2f06772c1a480c7d9d5f4a38e1"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Gelb (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "42f3714eec6eca25200d42461ff08d57c98f6d1d",
+        "md5": "e93f10168e3c9b9d18e3ad4a1415e1d0",
+        "size": 1048576
+      }
+    ]
+  },
+  {
+    "game": "gold",
+    "name": "Gold",
+    "generation": 2,
+    "base": {
+      "name": "Pokémon Gold (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "d8b8a3600a465308c9953dfa04f0081c05bdcb94"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Gold (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "9254195d461ea942eaaa08cc4b83de3cf82aea0d",
+        "md5": "7542ec9b695d4fe38adfdaaa57364d83",
+        "size": 2097152
+      }
+    ]
+  },
+  {
+    "game": "silver",
+    "name": "Silber",
+    "generation": 2,
+    "base": {
+      "name": "Pokémon Silver (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "49b163f7e57702bc939d642a18f591de55d92dae"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Silber (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "8ecc58d621faaedf2a934bd2583d527220df7bb9",
+        "md5": "f1f013cd591bc4ea77305bbc9f8cbb3c",
+        "size": 2097152
+      }
+    ]
+  },
+  {
+    "game": "crystal",
+    "name": "Kristall",
+    "generation": 2,
+    "base": {
+      "name": "Pokémon Crystal (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "f4cd194bdee0d04ca4eac29e09b8e4e9d818c133"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Kristall (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "accb584293ba056152f1fd908439b019017ff2fe",
+        "md5": "a35c0fa2e3b3d1c1779cd9f2352bc427",
+        "size": 2097152
+      }
+    ]
+  },
+  {
+    "game": "firered",
+    "name": "Feuerrot",
+    "generation": 3,
+    "base": {
+      "name": "Pokémon FireRed (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Feuerrot (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "18a3758ceeef2c77b315144be2c3910d6f1f69fe",
+        "md5": "6648a0484a56097ca75d6af87ebce225",
+        "size": 16777216
+      }
+    ]
+  },
+  {
+    "game": "leafgreen",
+    "name": "Blattgrün",
+    "generation": 3,
+    "base": {
+      "name": "Pokémon LeafGreen (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "574fa542ffebb14be69902d1d36f1ec0a4afd71e"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Blattgrün (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "0802d1fb185ee3ed48d9a22afb25e66424076dac",
+        "md5": "4dd5e72f942a921d3fe53d21a39f4cba",
+        "size": 16777216
+      }
+    ]
+  },
+  {
+    "game": "ruby",
+    "name": "Rubin",
+    "generation": 3,
+    "base": {
+      "name": "Pokémon Ruby (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "f28b6ffc97847e94a6c21a63cacf633ee5c8df1e"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Rubin (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "1c2a53332382e14dab8815e3a6dd81ad89534050",
+        "md5": "1af28ea547d4116dc752c93f7f694239",
+        "size": 16777216
+      }
+    ]
+  },
+  {
+    "game": "sapphire",
+    "name": "Saphir",
+    "generation": 3,
+    "base": {
+      "name": "Pokémon Sapphire (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "3ccbbd45f8553c36463f13b938e833f652b793e4"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Saphir (Germany)",
+        "version": "1.1 / Revision 1",
+        "sha1": "7e6e034f9cdca6d2c4a270fdb50a94def5883d17",
+        "md5": "9d816b369343d39b94af9a8b0ce7f63b",
+        "size": 16777216
+      }
+    ]
+  },
+  {
+    "game": "emerald",
+    "name": "Smaragd",
+    "generation": 3,
+    "base": {
+      "name": "Pokémon Emerald (USA / English)",
+      "version": "1.0 / Revision 0",
+      "sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7"
+    },
+    "sources": [
+      {
+        "language": "de",
+        "name": "Smaragd (Germany)",
+        "version": "1.0 / Revision 0",
+        "sha1": "61c2eb2b380b1a75f0c94b767a2d4c26cd7ce4e3",
+        "md5": "f793a854654b467211fc32c4062cb183",
+        "size": 16777216
+      },
+      {
+        "language": "fr",
+        "name": "Émeraude · Français",
+        "version": "1.0 / Revision 0",
+        "sha1": "ca666651374d89ca439007bed54d839eb7bd14d0",
+        "md5": "2c00e335288a96650e34785b5e2a7588",
+        "size": 16777216
+      },
+      {
+        "language": "it",
+        "name": "Smeraldo · Italiano",
+        "version": "1.0 / Revision 0",
+        "sha1": "1692db322400c3141c5de2db38469913ceb1f4d4",
+        "md5": "c3e85be7372bbd5e43f6334a565968c1",
+        "size": 16777216
+      },
+      {
+        "language": "es",
+        "name": "Esmeralda · Español",
+        "version": "1.0 / Revision 0",
+        "sha1": "fe1558a3dcb0360ab558969e09b690888b846dd9",
+        "md5": "67b770405f7b87589e0342513b25fe9b",
+        "size": 16777216
+      }
+    ]
+  }
+]

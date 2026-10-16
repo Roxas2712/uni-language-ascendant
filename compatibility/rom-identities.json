@@ -1,0 +1,30 @@
+[
+  {
+    "file": "Pokemon - Blattgruene Edition (Germany).gba",
+    "sha1": "0802d1fb185ee3ed48d9a22afb25e66424076dac",
+    "md5": "4dd5e72f942a921d3fe53d21a39f4cba",
+    "size": 16777216,
+    "code": "BPGD"
+  },
+  {
+    "file": "Pokemon - Rubin-Edition (Germany).gba",
+    "sha1": "1c2a53332382e14dab8815e3a6dd81ad89534050",
+    "md5": "1af28ea547d4116dc752c93f7f694239",
+    "size": 16777216,
+    "code": "AXVD"
+  },
+  {
+    "file": "Pokemon - Saphir-Edition (Germany) (Rev 1).gba",
+    "sha1": "99f7ad71de5de97ca643f2c4123a77ee79af8e80",
+    "md5": "8899222c44583c9ff3c7826081523b42",
+    "size": 16777216,
+    "code": "AXPD"
+  },
+  {
+    "file": "Pokemon - Smaragd-Edition (Germany).gba",
+    "sha1": "61c2eb2b380b1a75f0c94b767a2d4c26cd7ce4e3",
+    "md5": "f793a854654b467211fc32c4062cb183",
+    "size": 16777216,
+    "code": "BPED"
+  }
+]
