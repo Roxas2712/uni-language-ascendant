@@ -1,6 +1,7 @@
 # European expansion preview
 
-13 additional profiles based on v1.4.2. See [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md)
+13 additional profiles based on v1.4.2. Preview 2 completes the supplemental
+GB/GBC menu catalog and localized UI/world graphics for the nine new GB/GBC profiles. See [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md)
 for coverage, QA limits, missing ROMs and PT-BR merge status, and
 [LICENSE-POLICY.md](LICENSE-POLICY.md) for the existing GPL obligations.
 
@@ -13,7 +14,7 @@ once and reuses its local cache on later launches.
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
-## Install version 1.4.2
+## Install the stable release 1.4.2
 
 1. Download [uni-language-ascendant-1.4.2.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.4.2).
 2. Import the matching US base ROM in Gen1Recomp.
@@ -30,13 +31,22 @@ ROM is missing, the mod starts in English.
 starts fresh.** The first-run Ascendant intro, Back navigation and Reset profile
 are included. Changing game language requires a restart.
 
-## Supported profiles
+For this branch, build the preview with `python3 tools/package.py` and install
+the resulting `dist/uni-language-ascendant-1.4.3-europe-preview.2.zip` through
+the same mod manager. PT-BR development remains separate.
+
+## Supported profiles in this preview
 
 | Games | Game languages |
 | --- | --- |
-| Red, Blue, Yellow | English base + German |
-| Gold, Silver, Crystal | English base + German |
-| FireRed, LeafGreen, Ruby, Sapphire | English base + German |
+| Red, Yellow | English base + German, Spanish |
+| Blue | English base + German |
+| Gold | English base + German, French, Italian, Spanish |
+| Silver | English base + German, French, Spanish |
+| Crystal | English base + German, Italian, Spanish |
+| FireRed | English base + German, Italian, Spanish |
+| LeafGreen | English base + German, French, Spanish |
+| Ruby, Sapphire | English base + German |
 | Emerald | English base + German, French, Italian, Spanish |
 
 Menu languages: English, German, French, Italian, Spanish, Japanese, Korean,

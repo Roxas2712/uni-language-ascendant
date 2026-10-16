@@ -1,4 +1,4 @@
-# Europäische Sprachprofile · 1.4.3-europe-preview.1
+# Europäische Sprachprofile · 1.4.3-europe-preview.2
 
 Ausgangspunkt ist der unveränderte Release 1.4.2 (Commit 5843925).
 Die parallele PT-BR-Entwicklung ist in dieser separaten Arbeitskopie nicht enthalten.
@@ -26,7 +26,11 @@ Für GB/GBC enthalten die Profile Dialogrezepte, Schrift, Pokémon-, Attacken-,
 Item-, Trainerklassen- und Typnamen. Gen2 ergänzt Attacken-/Itembeschreibungen,
 495 bzw. 541 einzelne Trainernamen, 95 bzw. 96 Ortsnamen und 251 Pokédex-Einträge.
 Die 889 bzw. 1.011 benannten Gen2-Systemtexte sind vollständig zugeordnet.
-70 kurze, neu verfasste UI-Übersetzungen pro Sprache ergänzen die ROM-Daten.
+856 ergänzende UI-Schlüssel pro Sprache decken die vom Recompiler verfassten
+Menüs, Statusseiten, Kampfmenüs sowie PC-, Pokécom-, Einstellungs- und Hilfetexte ab.
+Die Übersetzungen sind maschinell vorübersetzt und für Fachbegriffe, kritische
+Menüs und feste Anzeigefelder manuell überarbeitet. Die ROM-Dialoge werden
+weiterhin direkt aus der jeweiligen Handelsfassung gelesen.
 Italienisches Kristall enthält im Original leere, ungenutzte Mobiladapter-Texte;
 deshalb unterscheiden sich Textzahlen und Inhalt zwischen den Regionen.
 Metrische Pokédex-Werte ergänzen ausschließlich Anzeigefelder; die ursprünglichen
@@ -39,14 +43,29 @@ GB/GBC verwenden exakte ROM-Prüfsummen, rekonstruierte Symboltabellen,
 Map-/Event-/Skript-Vergleiche und abgeglichene Textbank-Grenzen.
 Das ist eine Prüfung der zugeordneten Daten, kein Beweis für jedes Spielereignis.
 
+## Menütexte und Grafiken in Preview 2
+
+Alle neun neuen GB/GBC-Profile verwenden den vollständigen ergänzenden UI-Katalog.
+Formatfelder, Steuerzeichen und die Breiten kritischer Status-/Trainerkartenfelder
+werden geprüft. Zusammengesetzte printf-Ausgaben behalten Namen und Zahlen.
+Typnamen und Statuskürzel werden über die Datenregister übersetzt.
+
+Gold/Silber verwenden je 72, Kristall je 78 Grafikrezepte: Schrift,
+Titelanimationen, Pokédex, Beutel und Taschenbeschriftungen, Pokécom, Trainerkarte,
+PC, Kampf-/Statusrahmen, Namenseingabe und 28 bzw. 36 Weltatlanten.
+Spanisches Gelb ergänzt die eigenen Titel-Tilemaps; Rot/Gelb enthalten auch
+lokalisierte Weltschilder. Sprachneutrale Originalgrafiken werden weiterverwendet.
+Kristalls regionale Icognito-Wandzeichen erhalten eigene visuelle Metatiles;
+Karten-Block-IDs und Kollisionen bleiben unverändert. Die Namenseingabe
+enthält die sprachspezifischen Akzentzeichen bei gleicher Tastaturgeometrie.
+
+290 Menügrafik-/Titelbilder aller sieben Gen2-Profile wurden pixelweise gegen
+eine unabhängige direkte Extraktion aus der jeweiligen ROM geprüft, einschließlich
+Transparenz. Die Laufzeittests öffnen die tatsächlichen Menüs und vergleichen
+die Kollisionstabellen mit der Basis. Entwicklungsbilder bleiben privat.
+
 ## Noch offen innerhalb dieser Profile
 
-- GB/GBC: vollständige Übersetzung der zusätzlich vom Recompiler verfassten
-  Menü-, Kampf-, Online-, Einstellungs- und Hilfetexte. Die 70 UI-Einträge sind
-  ein Anfang; englische Laufzeittexte sind weiterhin zu erwarten.
-- GB/GBC: lokalisierte Titel-/Menü-/Statusgrafiken, Weltschilder, Namenseingabe
-  und alle regionalen Layout-Anpassungen. Bisher sind die Sprachschriften und
-  bei spanischem Rot das Versionsband enthalten. Weitere Grafiken bleiben US.
 - GB/GBC: Systemdialoge mit speziell zusammengesetzten Laufzeitvariablen,
   Tausch-/Geschenk-Spitznamen und Sonderereignisse benötigen weitere Szenentests.
 - Die drei bereits im deutschen FRLG-Referenzprofil fehlenden US-Textschlüssel
@@ -87,7 +106,8 @@ werden. LICENSE-POLICY.md erklärt die Grenzen und die Projektkennzeichnung.
 ## Prüfumfang
 
 Ergebnis vom 17.10.2026: 13/13 neue Profile bestehen die unten genannten
-Szenentests; fünf Unit-/Katalogprüfungen bestehen ebenfalls. Siehe EUROPE-QA.json.
+Szenentests; fünf Unit-/Katalogprüfungen bestehen ebenfalls. Zusätzlich bestehen
+neun GB/GBC-Menüszenarien, die UI-Katalogprüfung und der Grafik-Roundtrip mit 290 Bildern. Siehe EUROPE-QA.json.
 
 Der isolierte macOS-Test verwendet ausschließlich private ROM-Imports und
 separate QA-Spielstände. Für jedes der 13 neuen Profile werden Aktivierung und

@@ -1,5 +1,5 @@
 {
-  "version": "1.4.3-europe-preview.1",
+  "version": "1.4.3-europe-preview.2",
   "tested": "2026-10-17",
   "platform": "macOS / LÖVE",
   "baseline": "5843925",
@@ -11,18 +11,6 @@
     "catalog"
   ],
   "liveProfiles": [
-    {
-      "game": "red",
-      "language": "es",
-      "passed": true,
-      "log": "red-es-europe-live.log"
-    },
-    {
-      "game": "yellow",
-      "language": "es",
-      "passed": true,
-      "log": "yellow-es-europe-live.log"
-    },
     {
       "game": "firered",
       "language": "es",
@@ -46,6 +34,18 @@
       "language": "fr",
       "passed": true,
       "log": "leafgreen-fr-europe-live.log"
+    },
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-live.log"
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-live.log"
     },
     {
       "game": "gold",
@@ -90,5 +90,114 @@
       "log": "crystal-it-europe-live.log"
     }
   ],
-  "limitations": "Smoke/scene tests only; full playthrough, all battle/link paths, Windows/Linux not tested."
+  "limitations": "Scene and menu tests on macOS; full playthrough, every battle/link path and Windows/Linux remain untested. PT-BR merge remains separate.",
+  "additionalChecks": {
+    "uiCatalog": {
+      "passed": true,
+      "keysPerLanguage": 856,
+      "languages": [
+        "es",
+        "fr",
+        "it"
+      ],
+      "profileCount": 9,
+      "checks": [
+        "format/control identities",
+        "fixed field geometry",
+        "generated profile synchronization"
+      ]
+    },
+    "graphicsRoundtrip": {
+      "passed": true,
+      "profiles": 7,
+      "images": 290,
+      "checks": [
+        "every RGBA pixel",
+        "tile flips",
+        "transparent color zero",
+        "image dimensions"
+      ]
+    }
+  },
+  "graphicsRecipes": {
+    "gold_es": 72,
+    "gold_fr": 72,
+    "gold_it": 72,
+    "silver_es": 72,
+    "silver_fr": 72,
+    "crystal_es": 78,
+    "crystal_it": 78
+  },
+  "translationReview": "Supplemental engine UI: machine-assisted drafts with manual terminology/menu/fixed-field corrections; no complete native-speaker editorial review. Retail dialogue is decoded locally from exact ROM inputs.",
+  "gbMenuProfiles": [
+    {
+      "game": "gold",
+      "language": "es",
+      "passed": true,
+      "log": "gold-es-europe-menu.log"
+    },
+    {
+      "game": "gold",
+      "language": "fr",
+      "passed": true,
+      "log": "gold-fr-europe-menu.log"
+    },
+    {
+      "game": "gold",
+      "language": "it",
+      "passed": true,
+      "log": "gold-it-europe-menu.log"
+    },
+    {
+      "game": "silver",
+      "language": "es",
+      "passed": true,
+      "log": "silver-es-europe-menu.log"
+    },
+    {
+      "game": "silver",
+      "language": "fr",
+      "passed": true,
+      "log": "silver-fr-europe-menu.log"
+    },
+    {
+      "game": "crystal",
+      "language": "es",
+      "passed": true,
+      "log": "crystal-es-europe-menu.log"
+    },
+    {
+      "game": "crystal",
+      "language": "it",
+      "passed": true,
+      "log": "crystal-it-europe-menu.log"
+    },
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-menu.log"
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-menu.log"
+    }
+  ],
+  "gbMenuChecks": [
+    "title and native world signs",
+    "start/options/party",
+    "uppercase/lowercase naming and player naming",
+    "four pack pockets",
+    "trainer card and badges",
+    "four Pokegear cards with bounded landmark lines",
+    "PC box",
+    "three Pokemon summary pages",
+    "unchanged base collision rows",
+    "localized type names and formatted UI fields"
+  ],
+  "supplementalUiUnitTest": "tests/european_ui_catalog.py",
+  "gfxRoundtripTest": "tests/european_gfx_roundtrip.lua",
+  "menuScreenCaptures": 172
 }

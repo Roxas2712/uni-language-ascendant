@@ -14,6 +14,37 @@ return function(mod)
  for key,value in pairs(catalog('dialogue')) do mod.content.text:override(key,value) end
  if generation==2 then for key,value in pairs(catalog('rom_text')) do mod.content.rom_text:override(key,value) end end
  local strings=catalog('strings')
+ local patterns={}
+ local function escaped(value)return (value:gsub('([%^%$%(%)%%%.%[%]%*%+%-%?])','%%%1'))end
+ local token='%%[-+ #0-9%.]*[a-zA-Z]'
+ for source,target in pairs(strings) do
+  if source:find('%%') and not source:find('%%%%') then
+   local pieces,at,fields={},1,0
+   while true do
+    local first,last=source:find(token,at)
+    if not first then pieces[#pieces+1]=escaped(source:sub(at));break end
+    pieces[#pieces+1]=escaped(source:sub(at,first-1))
+    pieces[#pieces+1]=source:sub(last,last)=='s' and '(.-)' or '([%s%+%-]*%d+%.?%d*)'
+    fields=fields+1;at=last+1
+   end
+   local letters=source:gsub(token,''):gsub('[^A-Za-z]','')
+   if fields>0 and #letters>=3 then patterns[#patterns+1]={source=source,pattern='^'..table.concat(pieces)..'$',target=target,fields=fields} end
+  end
+ end
+ table.sort(patterns,function(a,b)if #a.source==#b.source then return a.source<b.source end;return #a.source>#b.source end)
+ local function localize(text)
+  if type(text)~='string' then return text end
+  if strings[text] then return strings[text] end
+  for _,row in ipairs(patterns) do
+   local captures={text:match(row.pattern)}
+   if #captures==row.fields then
+    local index=0
+    return (row.target:gsub(token,function()index=index+1;return captures[index] end))
+   end
+  end
+  return text
+ end
+ mod.exports.localizeUi=localize
  for key,value in pairs(strings) do mod.content.strings:override(key,value) end
  local function names(cat,registry,records)
   for key,value in pairs(catalog(cat)) do
@@ -24,7 +55,7 @@ return function(mod)
  names('move_names',mod.content.moves,data.moves)
  names('item_names',mod.content.items,data.items)
  names(generation==1 and 'trainer_names' or 'trainer_class_names',mod.content.trainers)
- names('type_names',mod.content.type_chart,data.type_chart)
+ names('type_names',mod.content.type_chart,data.type_chart and data.type_chart.types)
  if generation==2 then names('landmark_names',mod.content.landmarks) end
  for key,value in pairs(catalog('status_labels')) do mod.content.statuses:patch(key,{label=value,hudLabel=value}) end
  for key,value in pairs(catalog('dex_kinds')) do if data.pokemon[key] then mod.content.pokemon:patch(key,{dexEntry={kind=value}}) end end
@@ -60,7 +91,23 @@ return function(mod)
   end
  end
  -- Immediate-mode GB menus pass their authored English strings straight to
- -- Font.encode. Resolve only exact catalog keys while this mod bus is active.
+ -- Font.encode. Resolve catalog keys and authored printf templates only while
+ -- this mod bus is active; captured names and numeric values remain intact.
+ do
+  local accent={es={'Á','É','Í','Ó','Ú','Ñ','Ü','¿','¡'},fr={'à','è','é','ù','ç','ë','ï','ê','î'},it={'À','È','É','Ì','Ò','Ù','à','è','ì'}}
+  local fontmap=catalog('charmap')
+  mod.hooks:wrap('ui.naming.grid',function(next,base,ctx)
+   local grid=next(base,ctx)
+   local out={};for i,row in ipairs(grid) do out[i]={};for j,c in ipairs(row) do out[i][j]=c end end
+   local chars=accent[mod.language]
+   -- Keep a font-based fallback for development callers without a language.
+   if not chars then
+    if fontmap['ç'] then chars=accent.fr elseif fontmap['ñ'] then chars=accent.es else chars=accent.it end
+   end
+   out[4]={};for i,c in ipairs(chars) do out[4][i]=ctx.lower and (({['Á']='á',['É']='é',['Í']='í',['Ó']='ó',['Ú']='ú',['Ñ']='ñ',['Ü']='ü',['À']='à',['È']='è',['Ì']='ì',['Ò']='ò',['Ù']='ù'})[c] or c:lower()) or c end
+   return out
+  end)
+ end
  local Font=require('src.render.Font')
  local Runtime=require('src.mods.Runtime')
  local version=require('src.core.GameVersion')
@@ -81,10 +128,10 @@ return function(mod)
    return spans
   end
   Font.encode=function(text)
-   if patch.active and patch.active() and type(text)=='string' then text=patch.strings[text] or text end
+   if patch.active and patch.active() and type(text)=='string' then text=patch.localize(text) end
    return patch.original(text)
   end
  end
  patch.active=function() return Runtime.events==bus and version.get()==mod.edition and data.strings and data.strings[marker]=='active' end
- patch.strings=strings;patch.fontmap=catalog('charmap')
+ patch.strings=strings;patch.localize=localize;patch.fontmap=catalog('charmap')
 end

@@ -9,9 +9,43 @@ function Adapter.apply(mod,edition)
   route(font,'image','fonts/font.png')
   route(font,'imageBattleExtra','fonts/font_battle_extra.png')
  end
- local gfx=data.gen2MenuGfx or {}
+ local body=mod:read('lang/layouts.lua')
+ local layouts=body and assert(loadstring(body))() or {}
+ local function localPaths(value)
+  if type(value)=='string' then
+   local rel=value:match('^assets/generated/(.+)$')
+   if rel and mod:info('assets/'..rel) then return mod.path..'/assets/'..rel end
+   return value
+  elseif type(value)=='table' then
+   local out={};for k,v in pairs(value) do out[k]=localPaths(v) end;return out
+  end
+  return value
+ end
+ local function merge(target,patch)
+  for k,v in pairs(patch or {}) do
+   if type(v)=='table' and type(target[k])=='table' then merge(target[k],v) else target[k]=v end
+  end
+ end
+ data.gen2MenuGfx=data.gen2MenuGfx or {}
+ merge(data.gen2MenuGfx,localPaths(layouts.menu))
+ if game.titleData and layouts.title then merge(game.titleData,localPaths(layouts.title)) end
+ local world=mod:read('lang/world_layout.lua')
+ if world then for id,blocks in pairs(assert(loadstring(world))()) do
+  local tileset=data.gen2Tilesets and data.gen2Tilesets[id]
+  if tileset then for index,tiles in pairs(blocks) do tileset.blocks[index]=tiles end end
+ end end
+ local gfx=data.gen2MenuGfx
  route(gfx.battleHud,'battleExtra','fonts/font_battle_extra.png')
+ route(gfx.battleHud,'hpBar','battle/hud/hp_bar.png')
+ route(gfx.battleHud,'enemyBorder','battle/hud/enemy_border.png')
+ route(gfx.battleHud,'playerBorder','battle/hud/player_border.png')
  route(gfx.pack,'menu','pack/menu.png')
+ route(gfx.pack,'pack','pack/pack.png')
+ route(gfx.stats,'sheet','menu/stats_tiles.png')
+ route(gfx,'border','naming/border.png')
+ route(gfx,'cursor','naming/cursor.png')
+ route(gfx,'middleLine','naming/middleline.png')
+ route(gfx,'underLine','naming/underline.png')
  route(gfx.pokedex,'tiles','pokedex/dex.png')
  route(gfx.pokegear,'tiles','pokegear/gear.png')
  route(gfx.trainerCard,'card','trainer_card/card.png')

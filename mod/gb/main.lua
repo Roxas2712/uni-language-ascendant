@@ -40,7 +40,7 @@ return function(mod,version,own,language)
  end)
  local virtual='rom-language/'..key
  own('gb/overlay.lua')(mod,version,virtual,files)
- local proxy={path=virtual,edition=version,exports=mod.exports,shared={}}
+ local proxy={path=virtual,edition=version,language=selected.language,exports=mod.exports,shared={}}
  local decoded={}
  function proxy:read(relative)
   local value=files[relative]

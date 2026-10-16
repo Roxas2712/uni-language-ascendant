@@ -208,7 +208,7 @@ class Builder:
         for i,key in enumerate(m['constants']['landmarkOrder']):
             pos=offset(bank,int.from_bytes(rom[table+i*4+2:table+i*4+4],'little'));end=rom.index(0x50,pos);parts=[];begin=pos
             for j in range(pos,end):
-                if rom[j]==0x1f:
+                if rom[j] in (0x1e,0x1f,0x25):
                     if j>begin:parts.append({'off':begin,'size':j-begin})
                     parts.append({'token':'\n'});begin=j+1
             if end>begin:parts.append({'off':begin,'size':end-begin})

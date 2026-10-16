@@ -1,13 +1,16 @@
-# Uni-Language Ascendant 1.4.3-europe-preview.1
+# Uni-Language Ascendant 1.4.3-europe-preview.2
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
 Es ist kein spezieller Recompiler-Build erforderlich.
 
-Diese Preview ergänzt 13 europäische Sprachprofile. Umfang, fehlende ROMs und
-verbleibende Texte/Grafiken stehen in [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md).
-Die unten beschriebenen vollständigen deutschen Grafikadapter gelten nicht
-automatisch für die neuen GB/GBC-Profile.
+Diese Preview ergänzt 13 europäische Sprachprofile. Preview 2 enthält je
+856 ergänzende Menütexte in Spanisch, Französisch und Italienisch sowie die
+lokalisierten Menü-/Titel-/Weltgrafiken für die neun neuen GB/GBC-Profile.
+Umfang und Prüfgrenzen stehen in [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md),
+die Ergebnisse in [EUROPE-QA.json](EUROPE-QA.json). Die ergänzenden UI-Texte
+sind maschinell vorübersetzt und manuell überarbeitet; ein vollständiges
+muttersprachliches Lektorat und vollständige Spieldurchläufe stehen noch aus.
 
 Aus dem Ausgangsrelease 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
 Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
@@ -19,7 +22,7 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.4.3-europe-preview.1.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.4.3-europe-preview.2.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.

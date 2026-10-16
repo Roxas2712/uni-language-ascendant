@@ -79,7 +79,13 @@ changed registry key to decoded bytes from the exact input ROM on cold/warm load
 
 The new `european.lua` adapters and the EU metadata builders are newly written
 GPL-covered additions. They do not copy a separate translation mod runtime.
-The short UI phrases in `translations/european/gb-ui.json` are authored here.
+The supplemental UI catalog in `translations/european/gb-ui.json` started with
+70 authored phrases. Preview 2 adds machine-assisted drafts of public, English
+engine UI literals (Google Translate), with manual terminology, placeholder,
+font and fixed-field corrections in `gb-ui-overrides.tsv`. No private ROM text
+was sent to that service. The checked-in catalog builds offline; no translation
+service is used by the mod. This is supplemental interface text, separate from
+the retail text recipes.
 The retail alphabets are factual encoding mappings cross-checked with
 PKHeX's StringConverter2 and the exact Spanish Crystal disassembly.
 

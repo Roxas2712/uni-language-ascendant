@@ -95,7 +95,7 @@
     "LOTTA"
   ],
   "RUN": [
-    "HUIDA",
+    "HUIR",
     "FUITE",
     "FUGA"
   ],
@@ -106,17 +106,17 @@
   ],
   "SWITCH": [
     "CAMBIO",
-    "CHANGER",
-    "SCAMBIA"
+    "CHOIX",
+    "CAMBIA"
   ],
   "MOVE": [
     "MOV.",
-    "CAPACITÉ",
+    "CAPACITE",
     "MOSSA"
   ],
   "MOVES": [
     "MOVIMIENTOS",
-    "CAPACITÉS",
+    "CAPACITES",
     "MOSSE"
   ],
   "TYPE": [
@@ -131,7 +131,7 @@
   ],
   "DEFENSE": [
     "DEFENSA",
-    "DÉFENSE",
+    "DEFENSE",
     "DIFESA"
   ],
   "SPEED": [
@@ -141,17 +141,17 @@
   ],
   "SPECIAL": [
     "ESPECIAL",
-    "SPÉCIAL",
-    "SPECIALI"
+    "SPECIAL",
+    "SPECIALE"
   ],
   "SPCL.ATK": [
     "AT.ESP.",
-    "ATT.SPÉ.",
+    "ATT.SPE.",
     "ATT.SP."
   ],
   "SPCL.DEF": [
     "DEF.ESP.",
-    "DÉF.SPÉ.",
+    "DEF.SPE.",
     "DIF.SP."
   ],
   "NAME": [
@@ -176,7 +176,7 @@
   ],
   "ACCURACY": [
     "PRECISIÓN",
-    "PRÉCISION",
+    "PRECISION",
     "PRECISIONE"
   ],
   "STATUS": [
@@ -221,7 +221,7 @@
   ],
   "DEPOSIT": [
     "DEJAR",
-    "DÉPOSER",
+    "DEPOSER",
     "DEPOSITA"
   ],
   "WITHDRAW": [
@@ -231,17 +231,17 @@
   ],
   "RELEASE": [
     "SOLTAR",
-    "RELÂCHER",
+    "RELACHER",
     "LIBERA"
   ],
   "CHANGE BOX": [
     "CAMBIAR CAJA",
-    "CHANGER BOÎTE",
+    "CHANGER BOITE",
     "CAMBIA BOX"
   ],
   "BILL'S PC": [
     "PC DE BILL",
-    "PC DE LÉO",
+    "PC DE LEO",
     "PC DI BILL"
   ],
   "SOMEONE'S PC": [
@@ -261,7 +261,7 @@
   ],
   "PHONE": [
     "TELÉFONO",
-    "TÉLÉPHONE",
+    "TELEPHONE",
     "TELEFONO"
   ],
   "RADIO": [
@@ -280,17 +280,17 @@
     "ALLENATORE"
   ],
   "BADGES": [
-    "MEDALLAS",
+    "MED.",
     "BADGES",
-    "MEDAGLIE"
+    "MED."
   ],
   "MONEY": [
-    "DINERO",
-    "ARGENT",
+    "DIN.",
+    "ARG.",
     "SOLDI"
   ],
   "OWN": [
-    "PROPIOS",
+    "CAPT.",
     "PRIS",
     "PRESI"
   ],
@@ -348,5 +348,3935 @@
     "PESO",
     "POIDS",
     "PESO"
+  ],
+  "HALL OF FAME No": [
+    "HALL FAMA N.",
+    "PANTHEON N.",
+    "SALA ONORE N."
+  ],
+  "%s (%s)": [
+    "%s (%s)",
+    "%s (%s)",
+    "%s (%s)"
+  ],
+  "%s x%d": [
+    "%s x%d",
+    "%s x%d",
+    "%s x%d"
+  ],
+  "%s to box %d": [
+    "%s a caja %d",
+    "%s à la boîte %d",
+    "%s alla box %d"
+  ],
+  "LOAD REPORT": [
+    "INFORME DE CARGA",
+    "RAPPORT DE CHARGE",
+    "RAPPORTO DI CARICO"
+  ],
+  "A:CONTINUE": [
+    "A:CONTINUAR",
+    "A : CONTINUER",
+    "A:CONTINUA"
+  ],
+  "There isn't any\nresponse...": [
+    "No hay ninguna respuesta\n...",
+    "Il n'y a aucune réponse\n...",
+    "Nessuna risposta\n..."
+  ],
+  "No! A new BADGE\nis required.": [
+    "¡No! Se requiere una nueva INSIGNIA\n.",
+    "Non ! Un nouveau BADGE\nest requis.",
+    "No! È richiesto un nuovo BADGE\n."
+  ],
+  "{RAM:wNameBuffer} can't\nFLY here.": [
+    "{RAM:wNameBuffer} no puede\nVOLAR aquí.",
+    "{RAM:wNameBuffer} ne peut pas\nVOLER ici.",
+    "{RAM:wNameBuffer} non può\nVOLARE qui."
+  ],
+  "No SURFing here!": [
+    "¡Aquí no hay SURF!",
+    "Pas de SURF ici !",
+    "Niente SURF qui!"
+  ],
+  "Nothing to CUT!": [
+    "¡Nada que CORTAR!",
+    "Rien à COUPER !",
+    "Niente da TAGLIARE!"
+  ],
+  "{RAM:wNameBuffer} can't\nuse TELEPORT now.": [
+    "{RAM:wNameBuffer} no puede\nusar TELEPORTAR ahora.",
+    "{RAM:wNameBuffer} ne peut pas\nutiliser TELEPORT maintenant.",
+    "{RAM:wNameBuffer} non può\nusare il TELEPORT ora."
+  ],
+  "OAK: %s!\nThis isn't the\ntime to use that!": [
+    "ROBLE: %s!\n¡Este no es el momento\npara usar eso!",
+    "CHENE : %s !\nCe n'est pas le moment pour\nd'utiliser ça !",
+    "ROVERE: %s!\nNon è il momento\ndi usarlo!"
+  ],
+  "FLY": [
+    "VUELO",
+    "VOL",
+    "VOLO"
+  ],
+  "FLASH": [
+    "DESTELLO",
+    "FLASH",
+    "FLASH"
+  ],
+  "CUT": [
+    "CORTE",
+    "COUPE",
+    "TAGLIO"
+  ],
+  "SURF": [
+    "SURF",
+    "SURF",
+    "SURF"
+  ],
+  "STRENGTH": [
+    "FUERZA",
+    "FORCE",
+    "FORZA"
+  ],
+  "SOFTBOILED": [
+    "AMORTIGUADOR",
+    "E-COQUE",
+    "COVAUOVA"
+  ],
+  "TELEPORT": [
+    "TELEPORTE",
+    "TELEPORTATION",
+    "TELEPORTO"
+  ],
+  "DIG": [
+    "EXCAVAR",
+    "TUNNEL",
+    "FOSSA"
+  ],
+  "Move POKéMON\nwhere?": [
+    "Mover POKéMON\n¿adónde?",
+    "Déplacer POKéMON\noù ?",
+    "Sposta POKéMON\ndove?"
+  ],
+  "Use TM on which\nPOKéMON?": [
+    "¿Usar MT en qué\nPOKéMON?",
+    "Utiliser CT sur\nquel POKéMON ?",
+    "Usi la MT su quale\nPOKéMON?"
+  ],
+  "Use item on which\nPOKéMON?": [
+    "¿Usar objeto en\nqué POKéMON?",
+    "Utiliser sur\nquel POKéMON ?",
+    "Usi lo strumento\nsu quale POKéMON?"
+  ],
+  "Bring out which\nPOKéMON?": [
+    "¿Qué POKéMON\nsacas?",
+    "Retirer quel\nPOKéMON ?",
+    "Quale POKéMON\nvuoi ritirare?"
+  ],
+  "Choose a POKéMON.": [
+    "Elige un POKéMON.",
+    "Choisis un POKéMON.",
+    "Scegli un POKéMON."
+  ],
+  "No POKéMON!": [
+    "¡Sin POKéMON!",
+    "Pas de POKéMON !",
+    "Nessun POKéMON!"
+  ],
+  "ABLE": [
+    "CAPAZ",
+    "CAPABLE",
+    "CAPO"
+  ],
+  "NOT ABLE": [
+    "NO PUEDE",
+    "NON CAPABLE",
+    "IMPOSSIBILE"
+  ],
+  "FNT": [
+    "DEB",
+    "K.O.",
+    "KO"
+  ],
+  "How many?": [
+    "¿Cuántos?",
+    "Combien ?",
+    "Quanti?"
+  ],
+  "You can't carry\nany more items.": [
+    "No puedes transportar\nmás artículos.",
+    "Vous ne pouvez plus transporter d'articles\n.",
+    "Non puoi trasportare altri\n."
+  ],
+  "No room left to\nstore items.": [
+    "No queda espacio para\nalmacenar artículos.",
+    "Il ne reste plus de place pour stocker les articles\n.",
+    "Spazio esaurito per\nconservare gli articoli."
+  ],
+  "That's too impor-\ntant to toss!": [
+    "¡Eso es demasiado importante para tirarlo!",
+    "C'est trop important pour pouvoir le jeter !",
+    "È troppo importante per buttarlo!"
+  ],
+  "Toss %s?": [
+    "¿Lanzar %s?",
+    "Lancer %s ?",
+    "Lancia %s?"
+  ],
+  "WITHDRAW ITEM": [
+    "RETIRAR ARTÍCULO",
+    "RETRAIT DE L'ARTICLE",
+    "RITIRARE ARTICOLO"
+  ],
+  "DEPOSIT ITEM": [
+    "ARTÍCULO DE DEPÓSITO",
+    "ARTICLE DE DEPOT",
+    "VOCE DEPOSITO"
+  ],
+  "TOSS ITEM": [
+    "LANZAR ARTÍCULO",
+    "ARTICLE A LANCER",
+    "ARTICOLO DA LANCIARE"
+  ],
+  "LOG OFF": [
+    "CERRAR SESIÓN",
+    "DECONNEXION",
+    "LOGOFF"
+  ],
+  "POKéDEX   Seen:{NUM:wDexRatingNumMonsSeen, 1, 3}\n         Owned:{NUM:wDexRatingNumMonsOwned, 1, 3}": [
+    "POKéDEX Visto:{NUM:wDexRatingNumMonsSeen, 1, 3}\nPropiedad:{NUM:wDexRatingNumMonsOwned, 1, 3}",
+    "POKéDEX Vu : {NUM:wDexRatingNumMonsSeen, 1, 3}\nPossédé : {NUM:wDexRatingNumMonsOwned, 1, 3}",
+    "POKéDEX Visto:{NUM:wDexRatingNumMonsSeen, 1, 3}\nPosseduto:{NUM:wDexRatingNumMonsOwned, 1, 3}"
+  ],
+  "POKéDEX Rating{COLON}": [
+    "Clasificación POKéDEX{COLON}",
+    "Classement POKéDEX{COLON}",
+    "Valutazione POKéDEX{COLON}"
+  ],
+  "Keep it up!": [
+    "¡Sigue así!",
+    "Continuez comme ça !",
+    "Continuate così!"
+  ],
+  "LEVEL/": [
+    "NIVEL/",
+    "NIVEAU /",
+    "LIVELLO/"
+  ],
+  "TYPE1/": [
+    "TIPO1/",
+    "TYPE1/",
+    "TIPO1/"
+  ],
+  "TYPE2/": [
+    "TIPO2/",
+    "TYPE2/",
+    "TIPO2/"
+  ],
+  "HALL OF FAME": [
+    "HALL DE LA FAMA",
+    "PANTHEON",
+    "SALA D'ONORE"
+  ],
+  "PLAY TIME": [
+    "TIEMPO",
+    "DUREE",
+    "TEMPO"
+  ],
+  "To %s": [
+    "a %s",
+    "à %s",
+    "Da  a %s"
+  ],
+  "AREA UNKNOWN": [
+    "ÁREA DESCONOCIDA",
+    "ZONE  INCONNUE",
+    "ZONA SCONOSCIUTA"
+  ],
+  "%s's NEST": [
+    "NIDO DE  %s",
+    "Le NID de  %s",
+    "Il NIDO di  %s"
+  ],
+  "YOUR NAME?": [
+    "¿TU NOMBRE?",
+    "VOTRE NOM ?",
+    "IL TUO NOME?"
+  ],
+  "NEW NAME": [
+    "NUEVO NOMBRE",
+    "NOUVEAU NOM",
+    "NUOVO NOME"
+  ],
+  "Player": [
+    "Jugador",
+    "Joueur",
+    "Giocatore"
+  ],
+  "Congrats! This": [
+    "¡Felicidades! Este",
+    "Bravo ! Ce",
+    "Complimenti! Il"
+  ],
+  "diploma certifies": [
+    "El diploma  certifica",
+    "Diplôme  certifie",
+    "Il diploma  certifica"
+  ],
+  "that you have": [
+    "que tienes",
+    "que vous avez",
+    "che hai"
+  ],
+  "completed your": [
+    "completó su",
+    "a terminé votre",
+    "ha completato il tuo"
+  ],
+  "POKéDEX.": [
+    "POKéDEX.",
+    "POKéDEX.",
+    "POKéDEX."
+  ],
+  "GAME FREAK": [
+    "FANÁTICO DEL JUEGO",
+    "JEU MONSTRE",
+    "GIOCO FREAK"
+  ],
+  "Diploma": [
+    "Diploma",
+    "Diplôme",
+    "Diploma"
+  ],
+  "PLAYER": [
+    "JUGADOR",
+    "JOUEUR",
+    "GIOCATORE"
+  ],
+  "Would you like to\nSAVE the game?": [
+    "¿Te gustaría\nGUARDAR el juego?",
+    "Souhaitez-vous\nSAUVEGARDER le jeu ?",
+    "Vuoi\nSALVARE il gioco?"
+  ],
+  "Now saving...": [
+    "Guardando...",
+    "Sauvegarde...",
+    "Salvataggio..."
+  ],
+  "%s saved\nthe game!": [
+    "¡ %s guardó\nel juego!",
+    "%s a sauvé\nla partie !",
+    "%s ha salvato\nil gioco!"
+  ],
+  "MODS": [
+    "MODS",
+    "MODS",
+    "MOD"
+  ],
+  "RETURN TO MAIN\nMENU?": [
+    "¿REGRESAR AL MENÚ PRINCIPAL\n?",
+    "RETOUR AU MENU PRINCIPAL\n?",
+    "TORNARE AL MENU PRINCIPALE\n?"
+  ],
+  "BALL": [
+    "PELOTA",
+    "BALLE",
+    "SFERA"
+  ],
+  "SEEN %3d  OWN %3d": [
+    "VIST %3d CAPT %3d",
+    "VUS %3d PRIS %3d",
+    "VIST %3d PRES %3d"
+  ],
+  "PRNT": [
+    "IMPR",
+    "IMPR",
+    "STMP"
+  ],
+  "Printed %s's\ndata!\f": [
+    "¡Datos de %s\nimpresos!\f",
+    "Donnees de %s\nimprimees !\f",
+    "Dati di %s\nstampati!\f"
+  ],
+  "Printer error!\n%s": [
+    "¡Error de impresora!\n%s",
+    "Erreur d'imprimante !\n%s",
+    "Errore stampante!\n%s"
+  ],
+  "CONTENTS": [
+    "CONTENIDO",
+    "TABLE DES MATIERES",
+    "CONTENUTO"
+  ],
+  "A/L/R:STEP\nSELECT:RESET  START:ALL": [
+    "A/L/R:PASO\nSELECCIONAR:RESET INICIO:TODO",
+    "A/L/R : ETAPE\nSELECTION : RESET START : TOUS",
+    "A/L/R:PASSO\nSELEZIONA:RESET AVVIO:TUTTO"
+  ],
+  "RESET ALL PARAMS?": [
+    "¿REINICIAR TODO?",
+    "TOUT REINITIALISER ?",
+    "AZZERARE TUTTO?"
+  ],
+  "No.%03d": [
+    "No.%03d",
+    "No.%03d",
+    "N.%03d"
+  ],
+  "OT/%s": [
+    "EO/%s",
+    "DO/%s",
+    "AO/%s"
+  ],
+  "IDNo.%05d": [
+    "IDNo.%05d",
+    "IDNo.%05d",
+    "N.ID%05d"
+  ],
+  "HP Left": [
+    "PS rest.",
+    "PV rest.",
+    "PS rim."
+  ],
+  "Pts": [
+    "Puntos",
+    "Points",
+    "Pt"
+  ],
+  "Radness": [
+    "Radiancia",
+    "Radness",
+    "Radiosità"
+  ],
+  "Total": [
+    "Total",
+    "Total",
+    "Totale"
+  ],
+  "Hi-Score!!": [
+    "¡¡Puntuación alta!!",
+    "Salut-score !!",
+    "Punteggio elevato!!"
+  ],
+  "PIKACHU'S BEACH": [
+    "PLAYA DE PIKACHU",
+    "PLAGE DE PIKACHU",
+    "SPIAGGIA PIKACHU"
+  ],
+  "COIN": [
+    "MONEDA",
+    "PIECE",
+    "MONETA"
+  ],
+  "NO THANKS": [
+    "NO, GRACIAS",
+    "NON MERCI",
+    "NO, GRAZIE"
+  ],
+  "You can't get off\nhere.": [
+    "No puedes bajarte de\naquí.",
+    "Vous ne pouvez pas quitter\nici.",
+    "Non puoi scendere da\nqui."
+  ],
+  "No cycling\nallowed here.": [
+    "No se permite el ciclismo\naquí.",
+    "Aucun cycle\nn'est autorisé ici.",
+    "Qui non è consentito pedalare\n."
+  ],
+  "No good! It's not\neven near water.": [
+    "¡No está bien! No es\nni siquiera cerca del agua.",
+    "Pas bon ! Ce n'est pas\n, même près de l'eau.",
+    "Non va bene! Non è\nnemmeno vicino all'acqua."
+  ],
+  "%s learned\n%s!": [
+    "%s aprendido\n%s!",
+    "%s appris\n%s !",
+    "%s imparato\n%s!"
+  ],
+  "The TOWN MAP is\nunreadable here.": [
+    "El MAPA DE LA CIUDAD es\nilegible aquí.",
+    "Le CARTE DE LA VILLE est\nillisible ici.",
+    "La MAPPA DELLA CITTÀ è\nilleggibile qui."
+  ],
+  "Is it OK to toss\n%s?": [
+    "¿Está bien tirar\n%s?",
+    "Est-il acceptable de lancer\n%s ?",
+    "È corretto lanciare\n%s?"
+  ],
+  "Threw away\n%s.": [
+    "Desechó\n%s.",
+    "Jeté\n%s.",
+    "Buttato via\n%s."
+  ],
+  "GENGAR VS NIDORINO": [
+    "GENGAR VS NIDORINO",
+    "GENGAR VS NIDORINO",
+    "GENGAR VS NIDORINO"
+  ],
+  "Nintendo": [
+    "Nintendo",
+    "Nintendo",
+    "Nintendo"
+  ],
+  "Creatures inc.": [
+    "Criaturas inc.",
+    "Créatures inc.",
+    "Creature inc."
+  ],
+  "GAME FREAK inc.": [
+    "GAME FREAK inc.",
+    "GAME FREAK inc.",
+    "GAME FREAK inc."
+  ],
+  "Is there anything\nelse I can do?": [
+    "¿Hay algo\nque pueda hacer más?",
+    "Puis-je faire autre chose que\n?",
+    "C'è qualcos'altro\nche posso fare?"
+  ],
+  "You don't have\nenough money.": [
+    "No tienes\nsuficiente dinero.",
+    "Vous n'avez pas assez d'argent pour\n.",
+    "Non hai\nabbastanza soldi."
+  ],
+  "Here you are!\nThank you!": [
+    "¡Aquí estás!\n¡Gracias!",
+    "Vous y êtes !\nMerci !",
+    "Ecco a voi!\nGrazie!"
+  ],
+  "What would you\nlike to sell?": [
+    "¿Qué te gustaría\nvender?",
+    "Que souhaiteriez-vous\nvendre ?",
+    "Cosa vorresti\nvendere?"
+  ],
+  "You don't have\nanything to sell.": [
+    "No tienes\nnada que vender.",
+    "Vous n'avez rien\nà vendre.",
+    "Non hai\nnulla da vendere."
+  ],
+  "I can't put a\nprice on that.": [
+    "No puedo ponerle un precio\na eso.",
+    "Je ne peux pas attribuer de prix\nà cela.",
+    "Non posso assegnargli un prezzo\n."
+  ],
+  "Hi there!\nMay I help you?": [
+    "¡Hola!\n¿Puedo ayudarte?",
+    "Bonjour !\nPuis-je vous aider ?",
+    "Ciao!\nPosso aiutarti?"
+  ],
+  "First, what is\nyour name?": [
+    "Primero, ¿cómo te llamas\n?",
+    "Tout d'abord, quel est votre nom\n?",
+    "Innanzitutto, come ti chiami\n?"
+  ],
+  "Right! So your\nname is {PLAYER}!": [
+    "¡Correcto! ¡Entonces su nombre\nes {PLAYER}!",
+    "C'est vrai ! Votre nom\nest donc {PLAYER} !",
+    "Giusto! Quindi il tuo nome\nè {PLAYER}!"
+  ],
+  "RIVAL's NAME?": [
+    "¿NOMBRE RIVAL?",
+    "NOM DU RIVAL ?",
+    "NOME RIVALE?"
+  ],
+  "NORMAL": [
+    "NORMAL",
+    "NORMAL",
+    "NORMALE"
+  ],
+  "%dX": [
+    "%dX",
+    "%dX",
+    "%dX"
+  ],
+  "OFF": [
+    "NO",
+    "NON",
+    "NO"
+  ],
+  "TEXT SPEED": [
+    "VELOCIDAD TEXTO",
+    "VITESSE TEXTE",
+    "VELOCITÀ TESTO"
+  ],
+  "BATTLE ANIMATION": [
+    "ANIM. COMBATE",
+    "ANIM. COMBAT",
+    "ANIM. LOTTA"
+  ],
+  "ON": [
+    "SÍ",
+    "OUI",
+    "SÌ"
+  ],
+  "BATTLE STYLE": [
+    "TIPO COMBATE",
+    "STYLE COMBAT",
+    "STILE LOTTA"
+  ],
+  "SET": [
+    "FIJO",
+    "DEFINI",
+    "FISSO"
+  ],
+  "SHIFT": [
+    "CAMBIO",
+    "CHOIX",
+    "CAMBIO"
+  ],
+  "BATTLE LAYOUT": [
+    "DISEÑO COMBATE",
+    "CADRE COMBAT",
+    "LAYOUT LOTTA"
+  ],
+  "WIDE": [
+    "ANCHO",
+    "LARGE",
+    "LARGO"
+  ],
+  "OG": [
+    "OG",
+    "OG",
+    "OG"
+  ],
+  "BATTLE SIZE": [
+    "TAMAÑO COMBATE",
+    "TAILLE COMBAT",
+    "DIM. LOTTA"
+  ],
+  "FILL": [
+    "LLENAR",
+    "REMPLIR",
+    "RIEMPI"
+  ],
+  "FIXED": [
+    "FIJO",
+    "FIXE",
+    "FISSO"
+  ],
+  "BATTLE HUD": [
+    "PANEL COMBATE",
+    "PANNEAU COMBAT",
+    "PANNELLO LOTTA"
+  ],
+  "EXTENDED": [
+    "AMPLIADO",
+    "ETENDU",
+    "ESTESO"
+  ],
+  "STANDARD": [
+    "NORMAL",
+    "NORMAL",
+    "NORMALE"
+  ],
+  "BATTLE BG": [
+    "FONDO COMBATE",
+    "FOND COMBAT",
+    "SFONDO LOTTA"
+  ],
+  "AUTO (FILL HUD)": [
+    "AUTO (PANEL)",
+    "AUTO (PANNEAU)",
+    "AUTO (PANNELLO)"
+  ],
+  "BLACK": [
+    "NEGRO",
+    "NOIR",
+    "NERO"
+  ],
+  "WORLD": [
+    "MUNDO",
+    "MONDE",
+    "IL MONDO"
+  ],
+  "WHITE": [
+    "BLANCO",
+    "BLANC",
+    "BIANCO"
+  ],
+  "UI LAYOUT": [
+    "DISEÑO MENÚ",
+    "CADRE MENUS",
+    "LAYOUT MENU"
+  ],
+  "DYNAMIC": [
+    "DINÁMICO",
+    "DYNAMIQUE",
+    "DINAMICO"
+  ],
+  "CENTERED": [
+    "CENTRADO",
+    "CENTRE",
+    "CENTRATO"
+  ],
+  "RULESET": [
+    "REGLAS",
+    "REGLES",
+    "REGOLE"
+  ],
+  "MUSIC VOL": [
+    "VOLUMEN MÚSICA",
+    "VOLUME MUSIQUE",
+    "VOLUME MUSICA"
+  ],
+  "SFX VOL": [
+    "VOLUMEN EFECTOS",
+    "VOLUME EFFETS",
+    "VOLUME EFFETTI"
+  ],
+  "PIKACHU VOL": [
+    "VOLUMEN PIKACHU",
+    "VOLUME PIKACHU",
+    "VOLUME PIKACHU"
+  ],
+  "MUSIC FILTER": [
+    "FILTRO MÚSICA",
+    "FILTRE MUSIQUE",
+    "FILTRO MUSICA"
+  ],
+  "AUDIO MODE": [
+    "MODO AUDIO",
+    "MODE AUDIO",
+    "MODO AUDIO"
+  ],
+  "BOTH": [
+    "AMBOS",
+    "LES DEUX",
+    "ENTRAMBI"
+  ],
+  "PERFORMANCE": [
+    "RENDIM.",
+    "PERFORM.",
+    "PRESTAZ."
+  ],
+  "COLORS": [
+    "COLORES",
+    "COULEURS",
+    "COLORI"
+  ],
+  "TILT": [
+    "INCLINACIÓN",
+    "INCLINAISON",
+    "INCLINAZIONE"
+  ],
+  "UI LETTERBOX": [
+    "BANDAS DEL MENÚ",
+    "BANDES DU MENU",
+    "BANDE MENU"
+  ],
+  "SHADER FX": [
+    "EFECTOS",
+    "EFFETS",
+    "EFFETTI"
+  ],
+  "SHADER FX 2": [
+    "EFECTOS 2",
+    "EFFETS 2",
+    "EFFETTI 2"
+  ],
+  "ZOOM": [
+    "ZOOM",
+    "ZOOM",
+    "ZOOM"
+  ],
+  "FIT": [
+    "AJUSTE",
+    "AJUSTEMENT",
+    "ADATTA"
+  ],
+  "OUT%d": [
+    "OUT%d",
+    "OUT%d",
+    "OUT%d"
+  ],
+  "IN%d": [
+    "IN%d",
+    "IN%d",
+    "IN%d"
+  ],
+  "VOID FILL": [
+    "LLENADO DE VACÍOS",
+    "REMPLISSAGE DU VIDE",
+    "RIEMPIMENTO VUOTO"
+  ],
+  "VIDEO MODE": [
+    "MODO VÍDEO",
+    "MODE VIDEO",
+    "MODALITÀ VIDEO"
+  ],
+  "ORIENTATION": [
+    "ORIENTACIÓN",
+    "ORIENTATION",
+    "ORIENTAMENTO"
+  ],
+  "FAITHFUL RATIO": [
+    "RELACIÓN FIEL",
+    "RATIO FIDELE",
+    "RAPPORTO FEDELE"
+  ],
+  "SCREEN POS": [
+    "POS DE PANTALLA",
+    "ECRAN POS",
+    "SCHERMO POS"
+  ],
+  "MAX FPS": [
+    "FPS MÁXIMOS",
+    "FPS MAXIMUM",
+    "FPS MASSIMI"
+  ],
+  "DISPLAY (%dHZ)": [
+    "PANTALLA  (%dHZ)",
+    "AFFICHAGE  (%dHZ)",
+    "DISPLAY (%dHZ)"
+  ],
+  "DISPLAY": [
+    "PANTALLA",
+    "AFFICHAGE",
+    "DISPLAY"
+  ],
+  "VSYNC": [
+    "VSYNC",
+    "VSYNC",
+    "VSYNC"
+  ],
+  "UNAVAILABLE": [
+    "NO DISPONIBLE",
+    "INDISPONIBLE",
+    "NON DISPONIBILE"
+  ],
+  "LOGIC CLOCK": [
+    "RELOJ LÓGICO",
+    "HORLOGE LOGIQUE",
+    "OROLOGIO LOGICO"
+  ],
+  "OVERWORLD SPEED": [
+    "VELOCIDAD MAPA",
+    "VITESSE CARTE",
+    "VELOCITÀ MAPPA"
+  ],
+  "BATTLE SPEED": [
+    "VELOCIDAD COMBATE",
+    "VITESSE COMBAT",
+    "VELOCITÀ LOTTA"
+  ],
+  "MENU SPEED": [
+    "VELOCIDAD MENÚ",
+    "VITESSE MENUS",
+    "VELOCITÀ MENU"
+  ],
+  "%d INSTALLED": [
+    "%d INSTALADO",
+    "%d INSTALLE",
+    "%d INSTALLATO"
+  ],
+  "CONTROLS": [
+    "CONTROLES",
+    "COMMANDES",
+    "COMANDI"
+  ],
+  "DATE FORMAT": [
+    "FORMATO DE FECHA",
+    "FORMAT DE DATE",
+    "FORMATO DATA"
+  ],
+  "TIME FORMAT": [
+    "FORMATO DE HORA",
+    "FORMAT DE L'HEURE",
+    "FORMATO ORA"
+  ],
+  "TOUCH PAD": [
+    "PAD TÁCTIL",
+    "PAVE TACTILE",
+    "TOUCHPAD"
+  ],
+  "VIBRATION": [
+    "VIBRACIÓN",
+    "VIBRATION",
+    "VIBRAZIONE"
+  ],
+  "KEY BAR": [
+    "BARRA DE TECLAS",
+    "BARRE A CLES",
+    "BARRA CHIAVE"
+  ],
+  "%d OPTIONS": [
+    "OPCIONES  %d",
+    "OPTIONS  %d",
+    "%d OPZIONI"
+  ],
+  "COLOUR": [
+    "COLOR",
+    "COULEUR",
+    "COLORE"
+  ],
+  "MONOCHROME": [
+    "MONOCROMO",
+    "MONOCHROME",
+    "MONOCROMO"
+  ],
+  "Which move should\nbe forgotten?": [
+    "¿Qué movimiento debería olvidarse\n?",
+    "Quel coup faut-il oublier\n?",
+    "Quale mossa\ndovrebbe essere dimenticata?"
+  ],
+  "NAME/%s": [
+    "NOMBRE/%s",
+    "NOM /%s",
+    "NOME/%s"
+  ],
+  "MONEY/¥%d": [
+    "DINERO/¥%d",
+    "ARGENT/¥%d",
+    "SOLDI/¥%d"
+  ],
+  "TIME/  %d:%02d": [
+    "TIEMPO/ %d:%02d",
+    "TEMPS/ %d:%02d",
+    "ORA/ %d:%02d"
+  ],
+  "Nothing here.": [
+    "Nada aquí.",
+    "Rien ici.",
+    "Niente qui."
+  ],
+  "FLY TO?": [
+    "¿VUELA A?",
+    "VOLER VERS ?",
+    "VOLA A?"
+  ],
+  "T H E  E N D": [
+    "EL FINAL",
+    "P H E N D",
+    "LA FINE"
+  ],
+  "GR. ???m": [
+    "ALT. ???m",
+    "TAIL. ???m",
+    "ALT. ???m"
+  ],
+  "GEW. ???kg": [
+    "PESO ???kg",
+    "POIDS ???kg",
+    "PESO ???kg"
+  ],
+  "No.": [
+    "N.",
+    "No.",
+    "N."
+  ],
+  "lb": [
+    "libra",
+    "lb",
+    "libbre"
+  ],
+  "GR. %.1fm": [
+    "ALT. %.1fm",
+    "TAIL. %.1fm",
+    "ALT. %.1fm"
+  ],
+  "GEW. %.1fkg": [
+    "PESO %.1fkg",
+    "POIDS %.1fkg",
+    "PESO %.1fkg"
+  ],
+  "SELECT:CLEAR ROW\nSTART:RESET ALL": [
+    "SELECCIONAR:BORRAR FILA\nINICIO:RESET TODO",
+    "SELECT : EFFACER LA LIGNE\nDEBUT : TOUT REINITIALISER",
+    "SELEZIONA:CANCELLA RIGA\nAVVIO:AZZERA TUTTO"
+  ],
+  "RESET ALL BINDINGS?": [
+    "¿REINICIAR TECLAS?",
+    "REINITIALISER ?",
+    "AZZERARE I TASTI?"
+  ],
+  "PRESS A BUTTON": [
+    "PULSA UN BOTÓN",
+    "PRESSE UN BOUTON",
+    "PREMI UN TASTO"
+  ],
+  "RELEASE TO SET": [
+    "SUELTA PARA FIJAR",
+    "RELACHE POUR FIXER",
+    "RILASCIA PER FISSARE"
+  ],
+  "ESC/2ND CANCELS": [
+    "ESC/2DA CANCELA",
+    "ESC/2EME ANNULE",
+    "ESC/2ND ANNULLA"
+  ],
+  "TOUCH B CANCELS": [
+    "TOQUE B CANCELA",
+    "TOUCH B ANNULE",
+    "TOCCARE B ANNULLA"
+  ],
+  "STATUS/": [
+    "ESTADO /",
+    "ETAT /",
+    "STATO /"
+  ],
+  "OT/": [
+    "EO/",
+    "DO/",
+    "AO/"
+  ],
+  "EXP POINTS": [
+    "PUNTOS EXP",
+    "POINTS EXP",
+    "PUNTI ESP"
+  ],
+  "LEVEL UP": [
+    "SIG. NIVEL",
+    "NIV. SUIV.",
+    "PROS. LIV."
+  ],
+  "CONVERT": [
+    "CONVERTIR",
+    "CONVERTIR",
+    "CONVERTI"
+  ],
+  "UPDATE": [
+    "ACTUALIZACIÓN",
+    "MISE A JOUR",
+    "AGGIORNAMENTO"
+  ],
+  "DOWNLOAD SHADERS": [
+    "DESCARGAR SHADERS",
+    "CHARGER SHADERS",
+    "SCARICA SHADER"
+  ],
+  "SELECT:EDIT PARAMS": [
+    "SELECT:EDITAR",
+    "SELECT:REGLER",
+    "SELECT:MODIFICA"
+  ],
+  "...": [
+    "...",
+    "...",
+    "..."
+  ],
+  "UP TO DATE": [
+    "ACTUALIZADO",
+    "A JOUR",
+    "AGGIORNATO"
+  ],
+  "FAILED": [
+    "FALLÓ",
+    "ECHEC DE",
+    "NON FALLITO"
+  ],
+  "Update the app": [
+    "Actualizar app",
+    "Mise à jour app",
+    "Aggiorna app"
+  ],
+  "Reinstall the app": [
+    "Reinstalar app",
+    "Réinstaller app",
+    "Reinstalla app"
+  ],
+  "Darn!\nRan out of coins!": [
+    "¡Maldita sea!\n¡Se te acabaron las monedas!",
+    "Merde !\nVous n'avez plus de pièces !",
+    "Maledizione!\nHai finito le monete!"
+  ],
+  "Not enough\ncoins!": [
+    "¡No hay suficientes monedas\n!",
+    "Pas assez de pièces\n!",
+    "Monete\ninsufficienti!"
+  ],
+  "SLOT MACHINE": [
+    "MÁQUINA TRAGAMONEDAS",
+    "MACHINE A SOUS",
+    "SLOT MACHINE"
+  ],
+  "COINS %4d": [
+    "MONEDAS %4d",
+    "PIECES %4d",
+    "MONETE %4d"
+  ],
+  "EXIT GAME": [
+    "SALIR DEL JUEGO",
+    "QUITTER LE JEU",
+    "ESCI DAL GIOCO"
+  ],
+  "POKéMON YELLOW": [
+    "POKéMON AMARILLO",
+    "POKéMON JAUNE",
+    "POKéMON GIALLO"
+  ],
+  "POKéMON BLUE": [
+    "POKéMON AZUL",
+    "POKéMON BLEU",
+    "POKéMON BLU"
+  ],
+  "POKéMON RED": [
+    "POKéMON ROJO",
+    "POKéMON ROUGE",
+    "POKéMON ROSSO"
+  ],
+  "What? There are\nno POKéMON here!": [
+    "¿Qué? ¡Aquí no\nhay POKéMON!",
+    "Quoi ? Aucun\nPOKéMON ici !",
+    "Cosa? Non ci sono\nPOKéMON qui!"
+  ],
+  "You can't take\nany more POKéMON.\fDeposit POKéMON\nfirst.": [
+    "No caben más\nPOKéMON.\fDeposita algún\nPOKéMON primero.",
+    "Plus de place\npour les POKéMON.\fDépose d'abord\nun POKéMON.",
+    "Non puoi ritirare\naltri POKéMON.\fDeposita prima\nun POKéMON."
+  ],
+  "The party is full!": [
+    "¡Equipo lleno!",
+    "Equipe complete !",
+    "Squadra al completo!"
+  ],
+  "You can't deposit\nthe last POKéMON!": [
+    "¡No puedes dejar\nal último POKéMON!",
+    "Tu dois garder\nun POKéMON !",
+    "Non puoi posare\nl'ultimo POKéMON!"
+  ],
+  "Oops! This Box is\nfull of POKéMON.": [
+    "¡Ups! Esta Caja está\nllena de POKéMON.",
+    "Oups ! Cette boîte est\npleine de POKéMON.",
+    "Ops! Questa box è\npiena di POKéMON."
+  ],
+  "You need at least\none POKéMON!": [
+    "¡Necesitas al\nmenos un POKéMON!",
+    "Il te faut au\nmoins un POKéMON !",
+    "Ti serve almeno\nun POKéMON!"
+  ],
+  "BOX %d is full!": [
+    "¡CAJA %d llena!",
+    "BOITE %d pleine !",
+    "BOX %d pieno!"
+  ],
+  "%s was\nstored in Box %s.": [
+    "%s fue\nalmacenado en Box %s.",
+    "%s était\nstocké dans la boîte %s.",
+    "%s era\nmemorizzato nella casella %s."
+  ],
+  "%s looks\nunhappy about it!": [
+    "¡ %s parece\ndescontento por eso!",
+    "%s semble\nmécontent !",
+    "%s sembra\nscontento!"
+  ],
+  "Once released,\n%s is\ngone forever. OK?": [
+    "Una vez lanzado,\n%s\ndesapareció para siempre. ¿DE ACUERDO?",
+    "Une fois sorti,\n%s est\ndisparu à jamais. D'ACCORD?",
+    "Una volta rilasciato,\n%s\nscomparirà per sempre. OK?"
+  ],
+  "%s was\nreleased outside.\fBye %s!": [
+    "%s fue\nlanzado al exterior.\f¡Adiós %s!",
+    "%s était\npublié à l'extérieur.\fAu revoir %s !",
+    "%s è stato\nrilasciato all'esterno.\fCiao %s!"
+  ],
+  "BOX%2d": [
+    "CAJA%2d",
+    "BOITE %2d",
+    "BOX%2d"
+  ],
+  "Choose a\n<PK><MN> BOX.": [
+    "Elija una CAJA\n<PK><MN>.",
+    "Choisissez une BOITE\n<PK><MN>.",
+    "Scegli una\n<PK><MN> BOX."
+  ],
+  "BOX No.": [
+    "CAJA No.",
+    "BOITE No.",
+    "BOX N."
+  ],
+  "What?": [
+    "¿Qué?",
+    "Quoi ?",
+    "Cosa?"
+  ],
+  "BOX No.%d": [
+    "CAJA No.%d",
+    "BOITE No.%d",
+    "BOX N.%d"
+  ],
+  "Empty.": [
+    "Vacío.",
+    "Vide.",
+    "Vuoto."
+  ],
+  ":L%d No.%03d": [
+    ":L%d No.%03d",
+    ":L%d No.%03d",
+    ":L%d N.%03d"
+  ],
+  "Printed BOX %d!\f": [
+    "¡CAJA %d impresa!\f",
+    "BOITE %d imprimee !\f",
+    "BOX %d stampato!\f"
+  ],
+  "WITHDRAW <PK><MN>": [
+    "RETIRAR <PK><MN>",
+    "RETRAIT  <PK><MN>",
+    "PRELIEVO <PK><MN>"
+  ],
+  "DEPOSIT <PK><MN>": [
+    "DEPÓSITO <PK><MN>",
+    "DEPOT  <PK><MN>",
+    "DEPOSITO <PK><MN>"
+  ],
+  "RELEASE <PK><MN>": [
+    "LIBERAR <PK><MN>",
+    "RELACHER <PK><MN>",
+    "LIBERA <PK><MN>"
+  ],
+  "PRINT BOX": [
+    "IMPRIMIR CAJA",
+    "BOITE D'IMPRESSION",
+    "BOX STAMPATA"
+  ],
+  "SEE YA!": [
+    "¡NOS VEMOS!",
+    "A VOIR !",
+    "CI VEDIAMO!"
+  ],
+  "The battle could not start.": [
+    "La batalla no pudo comenzar.",
+    "La bataille n'a pas pu commencer.",
+    "La battaglia non può iniziare."
+  ],
+  "TM32": [
+    "MT32",
+    "CT32",
+    "MT32"
+  ],
+  "TM29": [
+    "MT29",
+    "CT29",
+    "MT29"
+  ],
+  "TM15": [
+    "MT15",
+    "CT15",
+    "MT15"
+  ],
+  "MR.MIME": [
+    "MR.MIME",
+    "M. MIME",
+    "MR.MIME"
+  ],
+  "EEVEE": [
+    "EEVEE",
+    "EVOLI",
+    "EEVEE"
+  ],
+  "PORYGON": [
+    "PORYGON",
+    "PORYGON",
+    "PORYGON"
+  ],
+  "TM25": [
+    "MT25",
+    "CT25",
+    "MT25"
+  ],
+  "TM14": [
+    "MT14",
+    "CT14",
+    "MT14"
+  ],
+  "TM38": [
+    "MT38",
+    "CT38",
+    "MT38"
+  ],
+  "ABRA": [
+    "ABRA",
+    "ABRA",
+    "ABRA"
+  ],
+  "EKANS": [
+    "EKANS",
+    "ABO",
+    "EKANS"
+  ],
+  "SANDSHREW": [
+    "SANDSHREW",
+    "SABELETTE",
+    "SANDSHREW"
+  ],
+  "DRATINI": [
+    "DRATINI",
+    "MINIDRACO",
+    "DRATINI"
+  ],
+  "Which prize would\nyou like?": [
+    "¿Qué premio te gustaría\n?",
+    "Quel prix\naimeriez-vous ?",
+    "Quale premio\nvorresti?"
+  ],
+  "OK, so you wanted\na %s?": [
+    "Bien, ¿entonces querías\ny %s?",
+    "OK, donc vous vouliez\net %s ?",
+    "OK, quindi volevi\ne %s?"
+  ],
+  "Here you go!": [
+    "¡Aquí tienes!",
+    "Et voilà !",
+    "Ecco qui!"
+  ],
+  "You don't have\nenough coins.": [
+    "No tienes\nsuficientes monedas.",
+    "Vous n'avez pas suffisamment de pièces\n.",
+    "Non hai\nabbastanza monete."
+  ],
+  "You have no room\nfor it.": [
+    "No tienes espacio\npara ello.",
+    "Vous n'avez pas de place\npour cela.",
+    "Non hai spazio\nper questo."
+  ],
+  "Oh. Please come\nback with coins!": [
+    "Oh. ¡Por favor, vuelve\ncon monedas!",
+    "Oh. S'il vous plaît, revenez\navec des pièces !",
+    "Oh. Per favore, torna\ncon le monete!"
+  ],
+  "Oh? You don't have\na COIN CASE.": [
+    "¿Ah? No tienes\nun MONEDEROS.",
+    "Ah ? Vous n'avez pas de porte-monnaie\n.",
+    "Oh? Non hai\nun PORTAMONETE."
+  ],
+  "%s.\nIs that right?": [
+    "%s.\n¿Es así?",
+    "%s.\nC'est vrai ?",
+    "%s.\nÈ vero?"
+  ],
+  "Sorry! You need\nmore coins.": [
+    "¡Lo siento! Necesitas\nmás monedas.",
+    "Désolé ! Vous avez besoin de plus de pièces\n.",
+    "Siamo spiacenti! Hai bisogno di\npiù monete."
+  ],
+  "Sorry. You can't\ncarry any more.": [
+    "Lo siento. Ya no puedes cargar más.",
+    "Désolé. Vous ne pouvez plus transporter de\n.",
+    "Scusa. Non puoi\nportare altro."
+  ],
+  "Welcome to the\nGAME CORNER.": [
+    "Bienvenido al RINCÓN DE JUEGOS\n.",
+    "Bienvenue dans le coin du jeu\n.",
+    "Benvenuto nell'ANGOLO DEL GIOCO\n."
+  ],
+  "Do you need some\ngame coins?": [
+    "¿Necesitas algunas monedas del juego\n?",
+    "Avez-vous besoin de pièces de jeu\n?",
+    "Hai bisogno di monete da gioco\n?"
+  ],
+  "Thank you!\nHere are 50 coins.": [
+    "¡Gracias!\nAquí hay 50 monedas.",
+    "Merci !\nVoici 50 pièces.",
+    "Grazie!\nEcco 50 monete."
+  ],
+  "Thank you! Here\nare 500 coins.": [
+    "¡Gracias! Aquí\nson 500 monedas.",
+    "Merci ! Ici,\nreprésente 500 pièces.",
+    "Grazie! Qui\nci sono 500 monete."
+  ],
+  "Whoops! Your COIN\nCASE is full.": [
+    "¡Vaya! Tu MONEDA\nCASE está llena.",
+    "Oups ! Votre COIN\nCASE est pleine.",
+    "Ops! Il tuo COIN\nCASE è pieno."
+  ],
+  "No coins for you?\nCome again!": [
+    "¿No tienes monedas?\n¡Ven de nuevo!",
+    "Pas de pièces pour vous ?\nRevenez !",
+    "Nessuna moneta per te?\nVieni di nuovo!"
+  ],
+  "The hooked %s attacked!": [
+    "¡El enganchado %s atacó!",
+    "Le %s accro a attaqué !",
+    "Lo %s agganciato ha attaccato!"
+  ],
+  "%s fell out of the tree!": [
+    "¡ %s se cayó del árbol!",
+    "%s est tombé de l'arbre !",
+    "%s è caduto dall'albero!"
+  ],
+  "Wild %s appeared!": [
+    "¡Apareció el salvaje %s!",
+    "%s sauvage est apparu !",
+    "È apparso  %s selvaggio!"
+  ],
+  "There's no will to battle!": [
+    "¡No hay voluntad de luchar!",
+    "Il n'y a aucune volonté de se battre !",
+    "Non c'è voglia di combattere!"
+  ],
+  "An EGG can't battle!": [
+    "¡Un HUEVO no lucha!",
+    "Un OEUF ne combat\npas !",
+    "Un UOVO non lotta!"
+  ],
+  "%s is already out.": [
+    "¡%s\nya está luchando!",
+    "%s est\ndeja au combat !",
+    "%s è\ngià in campo!"
+  ],
+  "%s can't be recalled!": [
+    "¡ %s no se puede recuperar!",
+    "%s ne peut pas être rappelé !",
+    "%s non può essere richiamato!"
+  ],
+  "Use next POKéMON?": [
+    "¿Usar otro POKéMON?",
+    "Autre POKéMON ?",
+    "Usi un altro\nPOKéMON?"
+  ],
+  "There's no PP left for this move!": [
+    "¡No quedan PP para este movimiento!",
+    "Il ne reste plus de PP pour ce mouvement !",
+    "Non ci sono più PP per questa mossa!"
+  ],
+  "The move is DISABLED!": [
+    "¡El movimiento está DESHABILITADO!",
+    "Le déplacement est DESACTIVE !",
+    "Lo spostamento è DISABILITATO!"
+  ],
+  "Items can't be\nused here.": [
+    "Los artículos no se pueden\nusar aquí.",
+    "Les éléments\nne peuvent pas être utilisés ici.",
+    "Gli elementi non possono essere\nutilizzati qui."
+  ],
+  "HM moves can't be\nforgotten now.": [
+    "Los movimientos de HM no se pueden\nolvidar ahora.",
+    "Les mouvements  HM ne peuvent pas être oubliés\nmaintenant.",
+    "Le mosse HM non possono essere\ndimenticate adesso."
+  ],
+  "Stop learning\n%s?": [
+    "¿Dejar de aprender\n%s?",
+    "Arrêter d'apprendre\n%s ?",
+    "Smetti di apprendere\n%s?"
+  ],
+  "<PK><MN>": [
+    "<PK><MN>",
+    "<PK><MN>",
+    "<PK><MN>"
+  ],
+  "%s wants to battle!": [
+    "%s quiere luchar!",
+    "%s veut se battre !",
+    "%s vuole combattere!"
+  ],
+  "Go! %s!": [
+    "¡Vamos! ¡%s!",
+    "Allez-y ! %s!",
+    "Vai! %s!"
+  ],
+  "Oh no! The POKéMON broke free!": [
+    "¡Oh, no! ¡El POKéMON se liberó!",
+    "Oh non ! Le POKéMON s'est libéré !",
+    "Oh no! Il POKéMON si è liberato!"
+  ],
+  "Aww! It appeared to be caught!": [
+    "¡Ay! ¡Parecía estar atrapado!",
+    "Aww ! Il semblait attrapé !",
+    "Aww! Sembrava essere stato catturato!"
+  ],
+  "Aargh! Almost had it!": [
+    "¡Aargh! ¡Casi lo tengo!",
+    "Aargh! Je l'ai presque eu !",
+    "Aargh! Ce l'avevo quasi fatta!"
+  ],
+  "Shoot! It was so close too!": [
+    "¡Dispara! ¡Estaba tan cerca también!",
+    "Tirez ! C'était si proche aussi !",
+    "Spara! Era anche così vicino!"
+  ],
+  "The trainer blocked the BALL!": [
+    "¡El entrenador bloqueó el BALÓN!",
+    "L'entraîneur a bloqué le BALLON !",
+    "L'allenatore ha bloccato la PALLA!"
+  ],
+  "Don't be a thief!": [
+    "¡No seas ladrón!",
+    "Ne soyez pas un voleur !",
+    "Non essere un ladro!"
+  ],
+  "Gotcha! %s was caught!": [
+    "¡Te tengo! ¡%s fue atrapado!",
+    "Je vous ai eu ! %s a été attrapé !",
+    "Capito! %s è stato catturato!"
+  ],
+  "%s's data was newly added to the #DEX.": [
+    "Los datos de  %s se agregaron recientemente al #DEX.",
+    "Les données de  %s ont été récemment ajoutées au #DEX.",
+    "I dati di  %s sono stati appena aggiunti al #DEX."
+  ],
+  "%s was sent to BILL's PC.": [
+    "%s fue enviado a la PC de BILL.",
+    "%s a été envoyé au PC de BILL.",
+    "%s è stato inviato al PC di BILL."
+  ],
+  "Can't escape!": [
+    "¡No puedes huir!",
+    "Fuite impossible !",
+    "Non puoi fuggire!"
+  ],
+  "Give a nickname to %s?": [
+    "¿Darle un apodo a %s?",
+    "Donner un surnom à %s ?",
+    "Dai un soprannome a %s?"
+  ],
+  "Caught %s!": [
+    "¡Atrapado %s!",
+    "J'ai attrapé %s !",
+    "Catturato %s!"
+  ],
+  "You already caught a %s.": [
+    "Ya atrapaste un %s.",
+    "Vous avez déjà détecté un %s.",
+    "Hai già catturato un %s."
+  ],
+  "The POKéMON BOX is full. That can't be used now.": [
+    "La CAJA POKéMON está llena. Eso no se puede usar ahora.",
+    "La POKéMON BOX est pleine. Cela ne peut pas être utilisé maintenant.",
+    "La POKéMON BOX è piena. Non può essere usato adesso."
+  ],
+  "That isn't going to help here.": [
+    "Eso no ayudará aquí.",
+    "Cela ne va pas aider ici.",
+    "Questo non aiuterà qui."
+  ],
+  "%s's confused no more!": [
+    "¡ %s ya no está confundido!",
+    "%s n'est plus confus !",
+    "%s non è più confuso!"
+  ],
+  "%s came to its senses.": [
+    "%s recuperó el sentido.",
+    "%s a repris ses esprits.",
+    "%s è tornato in sé."
+  ],
+  "PSN": [
+    "ENV",
+    "PSN",
+    "AVV"
+  ],
+  "BRN": [
+    "QUE",
+    "BRU",
+    "BRU"
+  ],
+  "FRZ": [
+    "CON",
+    "GEL",
+    "GEL"
+  ],
+  "PAR": [
+    "PAR",
+    "PAR",
+    "PAR"
+  ],
+  "SLP": [
+    "DOR",
+    "SOM",
+    "DRM"
+  ],
+  "Disabled!": [
+    "¡Deshabilitado!",
+    "Désactivé !",
+    "Disabilitato!"
+  ],
+  "TYPE/": [
+    "TIPO/",
+    "TYPE/",
+    "TIPO/"
+  ],
+  "NO BATTLE": [
+    "SIN BATALLA",
+    "PAS DE BATAILLE",
+    "NESSUNA BATTAGLIA"
+  ],
+  "Use on which <PK><MN>?": [
+    "¿Usar en qué <PK><MN>?",
+    "Utiliser sur quel <PK><MN> ?",
+    "Utilizzare su quale <PK><MN>?"
+  ],
+  "Which <PK><MN>?": [
+    "¿Cuál <PK><MN>?",
+    "Quel <PK><MN> ?",
+    "Quale <PK><MN>?"
+  ],
+  "Teach which <PK><MN>?": [
+    "¿Enseñar cuál <PK><MN>?",
+    "Enseigner quel <PK><MN> ?",
+    "Insegna quale <PK><MN>?"
+  ],
+  "Move to where?": [
+    "¿Moverte a dónde?",
+    "Déménager où ?",
+    "Spostarsi dove?"
+  ],
+  "To which <PK><MN>?": [
+    "¿A cuál <PK><MN>?",
+    "A quel <PK><MN> ?",
+    "A quale <PK><MN>?"
+  ],
+  "You have no <PK><MN>!": [
+    "¡No tienes <PK><MN>!",
+    "Vous n'avez pas de <PK><MN> !",
+    "Non hai <PK><MN>!"
+  ],
+  "EGG": [
+    "HUEVO",
+    "OEUF",
+    "UOVO"
+  ],
+  "MAIL": [
+    "CORREO",
+    "COURRIER",
+    "POSTA"
+  ],
+  "%s\nrecovered %dHP!": [
+    "%s\nrecuperado %dHP!",
+    "%s\nrécupéré %dHP !",
+    "%s\nrecuperato %dHP!"
+  ],
+  "lower": [
+    "minús",
+    "min.",
+    "min."
+  ],
+  "DEL": [
+    "BOR",
+    "EFF",
+    "CANC"
+  ],
+  "END": [
+    "FIN",
+    "FIN",
+    "FINE"
+  ],
+  "UPPER": [
+    "MAYÚS",
+    "MAJ.",
+    "MAIUS"
+  ],
+  "RIVAL'S NAME?": [
+    "¿NOMBRE RIVAL?",
+    "NOM DU RIVAL ?",
+    "NOME RIVALE?"
+  ],
+  "MOTHER'S NAME?": [
+    "¿NOMBRE MAMÁ?",
+    "NOM DE MAMAN ?",
+    "NOME MAMMA?"
+  ],
+  "BOX NAME?": [
+    "¿NOMBRE CAJA?",
+    "NOM BOITE ?",
+    "NOME BOX?"
+  ],
+  "NICKNAME?": [
+    "¿APODO?",
+    "SURNOM ?",
+    "SOPRANNOME?"
+  ],
+  "%s'S": [
+    "%s'S",
+    "%s'S",
+    "%s'S"
+  ],
+  "This certifies": [
+    "Esto certifica",
+    "Ceci certifie",
+    "Questo certifica"
+  ],
+  "completed the": [
+    "completó el",
+    "a terminé le",
+    "ha completato il"
+  ],
+  "new #DEX.": [
+    "nuevo #DEX.",
+    "nouveau #DEX.",
+    "nuovo #DEX."
+  ],
+  "Congratulations!": [
+    "¡Felicitaciones!",
+    "Félicitations !",
+    "Congratulazioni!"
+  ],
+  "POKéMON\ndatabase": [
+    "Base de datos\nPOKéMON",
+    "Base de données\nPOKéMON",
+    "Database\nPOKéMON"
+  ],
+  "Party <PK><MN>\nstatus": [
+    "Estado del\nequipo <PK><MN>",
+    "Etat de\nl'équipe <PK><MN>",
+    "Stato della\nsquadra <PK><MN>"
+  ],
+  "Contains\nitems": [
+    "Contiene elementos\n",
+    "Contient des éléments\n",
+    "Contiene elementi\n"
+  ],
+  "<PO><KE>GEAR": [
+    "<PO><KE>GEAR",
+    "<PO><KE>MATOS",
+    "<PO><KE>GEAR"
+  ],
+  "Trainer's\nkey device": [
+    "Dispositivo clave\ndel entrenador",
+    "Dispositif clé\ndu formateur",
+    "Dispositivo chiave\ndell'allenatore"
+  ],
+  "Your own\nstatus": [
+    "Tu propio estado\n",
+    "Votre propre statut\n",
+    "Il tuo stato\n"
+  ],
+  "Save your\nprogress": [
+    "Guarde su progreso\n",
+    "Enregistrez votre progression\n",
+    "Salva i tuoi progressi\n"
+  ],
+  "Change\nsettings": [
+    "Cambiar la configuración de\n",
+    "Modifier les paramètres\n",
+    "Modifica le impostazioni\n"
+  ],
+  "Installed\nadd-ons": [
+    "Complementos\ninstalados",
+    "Modules complémentaires\ninstallés",
+    "Componenti aggiuntivi\ninstallati"
+  ],
+  "Return to\nthe title": [
+    "Volver a\nel título",
+    "Revenir à\nle titre",
+    "Ritorna al\ntitolo"
+  ],
+  "Quit and\nbe judged.": [
+    "Renuncia y\nserá juzgado.",
+    "Quittez et\nsera jugé.",
+    "Esci e\nsarai giudicato."
+  ],
+  "CAUGHT": [
+    "CAPT.",
+    "PRIS",
+    "PRESI"
+  ],
+  "BALLS:": [
+    "BOLAS :",
+    "BALLES  :",
+    "SFERE:"
+  ],
+  "None": [
+    "Ninguno",
+    "Aucun",
+    "Nessuno"
+  ],
+  "Would you like to\nend the Contest?": [
+    "¿Te gustaría\nfinalizar el Concurso?",
+    "Souhaitez-vous que\nmette fin au concours ?",
+    "Vuoi\nterminare il concorso?"
+  ],
+  "Return to the\ntitle screen?": [
+    "¿Volver a la pantalla de título\n?",
+    "Revenir à l'écran titre\n?",
+    "Ritornare alla schermata del titolo\n?"
+  ],
+  " OPTION ": [
+    " OPCIÓN ",
+    " OPTION ",
+    " OPZIONE "
+  ],
+  " SEARCH ": [
+    " BUSCAR ",
+    " RECHERCHE ",
+    " CERCA "
+  ],
+  "A-Z": [
+    "A-Z",
+    "A-Z",
+    "A-Z"
+  ],
+  "TYPE1": [
+    "TIPO1",
+    "TYPE1",
+    "TIPO1"
+  ],
+  "TYPE2": [
+    "TIPO 2",
+    "TYPE2",
+    "TIPO2"
+  ],
+  "BEGIN SEARCH!!": [
+    "¡INICIAR BÚSQUEDA!",
+    "LANCER RECHERCHE !",
+    "INIZIA RICERCA!"
+  ],
+  "No <PK><MN> found!": [
+    "¡No hay <PK><MN>!",
+    "Aucun <PK><MN> !",
+    "Nessun <PK><MN>!"
+  ],
+  " PAGE AREA CRY PRNT": [
+    " PÁG. ÁREA GR. IMPR",
+    " PAGE ZONE CRI IMPR",
+    " PAG. ZONA VERS STMP"
+  ],
+  "m": [
+    "m",
+    "m",
+    "m"
+  ],
+  "kg": [
+    "kg",
+    "kg",
+    "kg"
+  ],
+  "%s'S NEST": [
+    "%s NIDO DE",
+    "LE NID DE  %s",
+    "IL NIDO DI %s"
+  ],
+  "NEW POKéDEX MODE": [
+    "POKéDEX NUEVO",
+    "NOUVEAU POKéDEX",
+    "NUOVO POKéDEX"
+  ],
+  "<PK><MN> are listed by": [
+    "<PK><MN> se enumeran por",
+    "<PK><MN> sont répertoriés par",
+    "<PK><MN> sono elencati per"
+  ],
+  "evolution type.": [
+    "tipo de evolución.",
+    "Type d'évolution .",
+    "tipo evoluzione."
+  ],
+  "OLD POKéDEX MODE": [
+    "POKéDEX VIEJO",
+    "ANCIEN POKéDEX",
+    "VECCHIO POKéDEX"
+  ],
+  "official type.": [
+    "tipo oficial.",
+    "Type officiel .",
+    "Tipo ufficiale ."
+  ],
+  "A to Z MODE": [
+    "MODO A-Z",
+    "MODE A-Z",
+    "MODO A-Z"
+  ],
+  "<PK><MN> are listed": [
+    "<PK><MN> ordenados",
+    "Liste des <PK><MN>",
+    "<PK><MN> elencati"
+  ],
+  "alphabetically.": [
+    "alfabéticamente.",
+    "par ordre alpha.",
+    "in ordine A-Z."
+  ],
+  "UNOWN MODE": [
+    "MODO UNOWN",
+    "MODE ZARBI",
+    "MODO UNOWN"
+  ],
+  "UNOWN are listed": [
+    "UNOWN ordenados",
+    "Liste des ZARBI",
+    "UNOWN elencati"
+  ],
+  "in catching order.": [
+    "por captura.",
+    "par capture.",
+    "per cattura."
+  ],
+  "START>CANCEL": [
+    "INICIO>CANCELAR",
+    "DEMARRER>ANNULER",
+    "AVVIO>ANNULLA"
+  ],
+  "READ MAIL": [
+    "LEER CORREO",
+    "LIRE LE MAIL",
+    "LEGGI LA MAIL"
+  ],
+  "PUT IN PACK": [
+    "A LA MOCHILA",
+    "DANS LE SAC",
+    "NELLO ZAINO"
+  ],
+  "ATTACH MAIL": [
+    "ADJUNTAR CORREO",
+    "JOINDRE LE COURRIER",
+    "ALLEGA MAIL"
+  ],
+  "{STRBUF} was\nsent to {STRBUF}.": [
+    "{STRBUF} fue\nenviado a {STRBUF}.",
+    "{STRBUF} a été\nenvoyé à {STRBUF}.",
+    "{STRBUF} è stato\ninviato a {STRBUF}."
+  ],
+  "For {STRBUF}'s\n{STRBUF},": [
+    "Para {STRBUF}\n{STRBUF},",
+    "pour\n{STRBUF} de {STRBUF},",
+    "Per {STRBUF}\n{STRBUF},"
+  ],
+  "{STRBUF} sends\n{STRBUF}.": [
+    "{STRBUF} envía\n{STRBUF}.",
+    "{STRBUF} envoie\n{STRBUF}.",
+    "{STRBUF} invia\n{STRBUF}."
+  ],
+  "{STRBUF} bids\nfarewell to": [
+    "{STRBUF} se despide de\n",
+    "{STRBUF} fait ses adieux à\n",
+    "{STRBUF} dice addio a\n"
+  ],
+  "{STRBUF}.": [
+    "{STRBUF}.",
+    "{STRBUF}.",
+    "{STRBUF}."
+  ],
+  "Take good care of\n{STRBUF}.": [
+    "Cuida bien de\n{STRBUF}.",
+    "Prenez bien soin de\n{STRBUF}.",
+    "Prenditi cura di\n{STRBUF}."
+  ],
+  "You don't want to\ntrade? Aww…": [
+    "¿No desea realizar transacciones con\n? Awww...",
+    "Vous ne souhaitez pas échanger avec\n? Ohh...",
+    "Non vuoi fare\nscambi? Aww..."
+  ],
+  "Huh? That's not\n{STRBUF}. What a letdown…": [
+    "¿Eh? Eso no es\n{STRBUF}. ¡Qué decepción...!",
+    "Hein ? Ce n'est pas\n{STRBUF}. Quelle déception...",
+    "Eh? Non è\n{STRBUF}. Che delusione..."
+  ],
+  "Hi, how's my old\n{STRBUF} doing?": [
+    "Hola, ¿cómo está mi viejo\n{STRBUF}?",
+    "Salut, comment va mon ancien\n{STRBUF} ?",
+    "Ciao, come sta il mio vecchio\n{STRBUF}?"
+  ],
+  "OK, connect the\nGame Link Cable.": [
+    "OK, conecta el cable de enlace de juego\n.",
+    "OK, connectez le câble de liaison de jeu\n.",
+    "OK, collega il cavo Game Link\n."
+  ],
+  "%s knows\n%s.": [
+    "%s conoce\n%s.",
+    "%s connaît\n%s.",
+    "%s conosce\n%s."
+  ],
+  "There is a POKéMON\nholding MAIL.": [
+    "Un POKéMON lleva\nCARTA.",
+    "Un POKéMON tient\nune LETTRE.",
+    "Un POKéMON tiene\nun MESSAGGIO."
+  ],
+  "Please remove the\nMAIL.": [
+    "Elimine el CORREO\n.",
+    "Veuillez supprimer le MAIL\n.",
+    "Rimuovi la\nMAIL."
+  ],
+  "MOVE <PK><MN> W/O MAIL": [
+    "MOVER <PK><MN> SIN CORREO",
+    "DEPLACER <PK><MN> SANS MAIL",
+    "SPOSTA <PK><MN> SENZA POSTA"
+  ],
+  "MAIL BOX": [
+    "CAJA DE CORREO",
+    "BOITE AUX LETTRES",
+    "CASSETTA POSTALE"
+  ],
+  "DECORATION": [
+    "DECORACIÓN",
+    "DECORATION",
+    "DECORAZIONE"
+  ],
+  "%s saved\nthe game.": [
+    "%s salvó a\nel juego.",
+    "%s a sauvé la partie avec\n.",
+    "%s ha salvato\nla partita."
+  ],
+  "Could not save.": [
+    "Error al guardar.",
+    "Echec sauvegarde.",
+    "Errore salvataggio."
+  ],
+  "Which BOX?": [
+    "¿Qué CAJA?",
+    "Quelle BOITE ?",
+    "Quale BOX?"
+  ],
+  "What? %s\nis evolving!": [
+    "¿Qué? ¡%s\nestá evolucionando!",
+    "Quoi ? %s\névolue !",
+    "Cosa? %s\nsi sta evolvendo!"
+  ],
+  "Huh? %s\nstopped evolving!": [
+    "¿Eh? ¡%s\ndejó de evolucionar!",
+    "Hein ? %s\na arrêté d'évoluer !",
+    "Eh? %s\nha smesso di evolversi!"
+  ],
+  "Congratulations!\nYour %s": [
+    "¡Felicitaciones!\nTu %s",
+    "Félicitations !\nVotre %s",
+    "Congratulazioni!\nIl tuo %s"
+  ],
+  "evolved into\n%s!": [
+    "¡ evolucionó a\n%s!",
+    "a évolué pour devenir\n%s !",
+    "si è evoluto in\n%s!"
+  ],
+  "%s wants to\nlearn %s!": [
+    "%s quiere\naprender %s!",
+    "%s veut apprendre\n%s !",
+    "%s vuole\nimparare %s!"
+  ],
+  "№.": [
+    "№.",
+    "№.",
+    "№."
+  ],
+  "<LV>": [
+    "<LV>",
+    "<LV>",
+    "<LV>"
+  ],
+  "♂": [
+    "♂",
+    "♂",
+    "♂"
+  ],
+  "♀": [
+    "♀",
+    "♀",
+    "♀"
+  ],
+  "⁂": [
+    "⁂",
+    "⁂",
+    "⁂"
+  ],
+  "/": [
+    "/",
+    "/",
+    "/"
+  ],
+  "<ID>№": [
+    "<ID>№",
+    "<ID>№",
+    "<ID>№"
+  ],
+  "TURN OFF": [
+    "APAGAR",
+    "ETEINDRE",
+    "SPEGNERE"
+  ],
+  "{PLAYER} turned on\nthe PC.": [
+    "{PLAYER} encendió\nla PC.",
+    "{PLAYER} a allumé\nle PC.",
+    "{PLAYER} ha acceso\nil PC."
+  ],
+  "There's no room\nfor more items.": [
+    "No hay espacio\npara más artículos.",
+    "Il n'y a pas de place\npour d'autres articles.",
+    "Non c'è spazio\nper altri oggetti."
+  ],
+  "Withdrew %d\n%s(S).": [
+    "Retiró %d\n%s(S).",
+    "a retiré %d\n%s(S).",
+    "Ritirato %d\n%s(S)."
+  ],
+  "How many do you\nwant to withdraw?": [
+    "¿Cuántos\nquieres retirar?",
+    "Combien de\nsouhaitez-vous retirer ?",
+    "Quanti\nvuoi prelevare?"
+  ],
+  "There's no room to\nstore items.": [
+    "No hay espacio para\nalmacenar artículos.",
+    "Il n'y a pas de place pour stocker des articles\n.",
+    "Non c'è spazio per\nconservare gli oggetti."
+  ],
+  "Deposited %d\n%s(S).": [
+    "Depositado %d\n%s(S).",
+    "Déposé %d\n%s(S).",
+    "Depositato %d\n%s(S)."
+  ],
+  "No items here!": [
+    "¡No hay objetos!",
+    "Aucun objet !",
+    "Nessuno strumento!"
+  ],
+  "How many do you\nwant to deposit?": [
+    "¿Cuántos\nquieres depositar?",
+    "Combien de\nsouhaitez-vous déposer ?",
+    "Quanti vuoi depositare\n?"
+  ],
+  "That's too impor-\ntant to toss out!": [
+    "¡Eso es demasiado importante para\ndescartarlo!",
+    "C'est trop important pour être jeté !",
+    "È troppo importante per buttarlo via!"
+  ],
+  "Toss out how many\n%s(S)?": [
+    "Tira ¿cuántos\n%s(S)?",
+    "Jetez combien de\n%s(S) ?",
+    "Quanti\n%s(S) butti via?"
+  ],
+  "Throw away %d\n%s(S)?": [
+    "Desechar %d\n%s(S)?",
+    "Jeter %d\n%s(S) ?",
+    "Buttare via %d\n%s(S)?"
+  ],
+  "Discarded\n%s(S).": [
+    "Descartado\n%s(S).",
+    "Rejeté\n%s(S).",
+    "Scartato\n%s(S)."
+  ],
+  "What do you want\nto do?": [
+    "¿Qué quieres que haga\n?",
+    "Que voulez-vous que\nfasse ?",
+    "Cosa vuoi che\nfaccia?"
+  ],
+  "BILL's PC": [
+    "PC de BILL",
+    "PC de BILL",
+    "PC di BILL"
+  ],
+  "%s's PC": [
+    "PC de  %s",
+    "PC de  %s",
+    "Il PC di  %s"
+  ],
+  "PROF.OAK's PC": [
+    "PC de  PROF.OAK",
+    "PC de  PROF.OAK",
+    "PC di PROF.OAK"
+  ],
+  "The link to PROF.\nOAK's PC closed.": [
+    "El enlace al PROF. La PC de\nOAK se cerró.",
+    "Le lien vers PROF. Le PC de\nOAK est fermé.",
+    "Il collegamento a PROF.\nIl PC di OAK è chiuso."
+  ],
+  "…\nLink closed…": [
+    "...\nEnlace cerrado...",
+    "...\nLien fermé...",
+    "...\nCollegamento chiuso..."
+  ],
+  "BILL's PC\naccessed.\n\n#MON Storage\nSystem opened.": [
+    "Se accedió a la PC de BILL\n.\n\n#MON Almacenamiento\nSistema abierto.",
+    "PC de BILL\naccédé.\n\n#MON Stockage\nSystème ouvert.",
+    "Accesso al PC di BILL\n.\n\n#MON Archiviazione\nSistema aperto."
+  ],
+  "Accessed own PC.\n\nItem Storage\nSystem opened.": [
+    "Se accedió a su propia PC.\n\nAlmacenamiento de artículos\nSistema abierto.",
+    "Accès à son propre PC.\n\nStockage d'articles\nSystème ouvert.",
+    "Accesso al proprio PC.\n\nArchiviazione articolo\nSistema aperto."
+  ],
+  "PROF.OAK's PC\naccessed.\n\n#DEX Rating\nSystem opened.": [
+    "Se accedió al PC  PROF.OAK\n.\n\n#DEX Clasificación\nSistema abierto.",
+    "PC\ndu PROF.OAK accédé.\n\n#DEX Notation\nSystème ouvert.",
+    "Accesso al PC di PROF.OAK\n.\n\n#DEX Valutazione\nSistema aperto."
+  ],
+  "Want to get your\n#DEX rated?": [
+    "¿Quiere calificar su\n#DEX?",
+    "Vous voulez que votre\n#DEX soit noté ?",
+    "Vuoi ottenere la valutazione #DEX del tuo\n?"
+  ],
+  "Access whose PC?": [
+    "¿Qué PC usas?",
+    "Quel PC utiliser ?",
+    "Quale PC usi?"
+  ],
+  "SAVING… DON'T TURN\nOFF THE POWER.": [
+    "GUARDANDO... NO APAGUE\n.",
+    "ECONOMIE ... NE COUPEZ PAS L'ALIMENTATION DU\n.",
+    "RISPARMIO... NON SPEGNERE\n."
+  ],
+  "Would you like to\nsave the game?": [
+    "¿Te gustaría\nguardar el juego?",
+    "Souhaitez-vous que\nsauvegarde la partie ?",
+    "Vuoi\nsalvare il gioco?"
+  ],
+  "PLAYER %s": [
+    "JUGADOR %s",
+    "LECTEUR %s",
+    "LETTORE %s"
+  ],
+  "SAVED": [
+    "GUARDADO",
+    "ENREGISTRE",
+    "SALVATO"
+  ],
+  "HELD": [
+    "RETENIDO",
+    "TENU",
+    "TENUTO"
+  ],
+  "PP": [
+    "PP",
+    "PP",
+    "PP"
+  ],
+  "What level do you\nwant to challenge?": [
+    "¿A qué nivel quieres desafiar\n?",
+    "Quel niveau souhaitez-vous\ndéfier ?",
+    "Quale livello vuoi\nsfidare?"
+  ],
+  "A party POKéMON\ntops this level.": [
+    "Un POKéMON supera\neste nivel.",
+    "Un POKéMON dépasse\nce niveau.",
+    "Un POKéMON supera\nquesto livello."
+  ],
+  "%s may go\nonly to BATTLE\n\nROOMS that are\nLv.70 or higher.": [
+    "%s puede ir\nsolo a HABITACIONES DE BATALLA\n\nque sean\nLv.70 o superior.",
+    "%s peut accéder à\nuniquement dans les SALLES DE COMBAT\n\nqui sont\nNiv.70 ou supérieur.",
+    "%s può andare\nsolo nelle STANZE BATTAGLIA\n\nche sono\nLv.70 o superiore."
+  ],
+  "Cancel your BATTLE\nROOM challenge?": [
+    "¿Cancelar tu desafío SALA DE BATALLA\n?",
+    "Annuler votre défi BATTLE\nROOM ?",
+    "Annulla la tua sfida BATTLE\nROOM?"
+  ],
+  "RIGHT SIDE": [
+    "LADO DERECHO",
+    "COTE DROIT",
+    "LATO DESTRO"
+  ],
+  "LEFT SIDE": [
+    "LADO IZQUIERDO",
+    "COTE GAUCHE",
+    "LATO SINISTRO"
+  ],
+  "Play with\n3 coins?": [
+    "¿Jugar con\n3 monedas?",
+    "Jouer avec\n3 pièces ?",
+    "Gioca con\n3 monete?"
+  ],
+  "Not enough\ncoins.": [
+    "No hay suficientes monedas\n.",
+    "Pas assez de pièces\n.",
+    "Monete\ninsufficienti."
+  ],
+  "Choose a\ncard.": [
+    "Elija una tarjeta\n.",
+    "Choisissez une carte\n.",
+    "Scegli una carta\n."
+  ],
+  "Place\nyour bet": [
+    "Haz\ntu apuesta",
+    "Placez votre pari\n",
+    "Piazza\nla tua scommessa"
+  ],
+  "Play\nagain?": [
+    "¿Jugar\notra vez?",
+    "Rejouer à\n?",
+    "Riprodurre\n?"
+  ],
+  "The cards\nshuffled.": [
+    "Las cartas\nbarajadas.",
+    "Les cartes\nont été mélangées.",
+    "Le carte\nvengono mescolate."
+  ],
+  "Yeah!": [
+    "¡Sí!",
+    "Ouais !",
+    "Già!"
+  ],
+  "Darn…": [
+    "Maldita...",
+    "Merde...",
+    "Maledizione..."
+  ],
+  "Hello! Sorry to\nkeep you waiting!\fWelcome to the\nworld of POKéMON!\fMy name is OAK.\fPeople call me the\nPOKéMON PROF.": [
+    "¡Hola! ¡Lamento que\nte haga esperar!\f¡Bienvenido al mundo\nde POKéMON!\fMi nombre es ROBLE.\fLa gente me llama\nPROF POKéMON.",
+    "Bonjour ! Désolé de vous faire attendre !\fBienvenue dans le monde\nde POKéMON !\fJe m'appelle OAK.\fLes gens m'appellent le\nPOKéMON PROF.",
+    "Ciao! Mi dispiace\nfarti aspettare!\fBenvenuto nel\nmondo dei POKéMON!\fIl mio nome è OAK.\fLa gente mi chiama\nPOKéMON PROF."
+  ],
+  "Now, what did you\nsay your name was?": [
+    "Ahora, ¿cómo dijiste\nque te llamabas?",
+    "Maintenant, quel était selon vous,\n, votre nom ?",
+    "Ora, come hai\ndetto che ti chiami?"
+  ],
+  "READ": [
+    "LEER",
+    "LIRE",
+    "LEGGI"
+  ],
+  "1X": [
+    "1X",
+    "1X",
+    "1X"
+  ],
+  "2X": [
+    "2X",
+    "2X",
+    "2X"
+  ],
+  "3X": [
+    "3X",
+    "3X",
+    "3X"
+  ],
+  "AUTO": [
+    "AUTO",
+    "AUTO",
+    "AUTO"
+  ],
+  "HIGH": [
+    "ALTO",
+    "ELEVE",
+    "ALTA"
+  ],
+  "BALANCED": [
+    "EQUILIBRADO",
+    "EQUILIBRE",
+    "BILANCIATO"
+  ],
+  "LOW": [
+    "BAJO",
+    "FAIBLE",
+    "BASSO"
+  ],
+  "WATER": [
+    "AGUA",
+    "EAU",
+    "ACQUA"
+  ],
+  "TREES": [
+    "ÁRBOLES",
+    "ARBRES",
+    "ALBERI"
+  ],
+  "FADE ": [
+    "DESVANECIMIENTO ",
+    "FONDU ",
+    "SCOLORIMENTO "
+  ],
+  "GEN 2": [
+    "GEN 2",
+    "GEN 2",
+    "GEN 2"
+  ],
+  "DMG": [
+    "DMG",
+    "DMG",
+    "DMG"
+  ],
+  "CLASSIC": [
+    "CLÁSICO",
+    "CLASSIQUE",
+    "CLASSICO"
+  ],
+  "GREEN": [
+    "VERDE",
+    "VERT",
+    "VERDE"
+  ],
+  "LIME": [
+    "LIMA",
+    "CHAUX",
+    "CALCE"
+  ],
+  "OLIVE": [
+    "OLIVA",
+    "OLIVE",
+    "OLIVA"
+  ],
+  "AMBER": [
+    "ÁMBAR",
+    "AMBRE",
+    "AMBRA"
+  ],
+  "ORANGE": [
+    "NARANJA",
+    "ORANGE",
+    "ARANCIONE"
+  ],
+  "RED": [
+    "ROJO",
+    "ROUGE",
+    "ROSSO"
+  ],
+  "ROSE": [
+    "ROSA",
+    "ROSE",
+    "ROSA"
+  ],
+  "MAGENTA": [
+    "MAGENTA",
+    "MAGENTA",
+    "MAGENTA"
+  ],
+  "PURPLE": [
+    "PÚRPURA",
+    "VIOLET",
+    "VIOLA"
+  ],
+  "INDIGO": [
+    "ÍNDIGO",
+    "INDIGO",
+    "INDIGO"
+  ],
+  "BLUE": [
+    "AZUL",
+    "BLEU",
+    "BLU"
+  ],
+  "CYAN": [
+    "CIAN",
+    "CYAN",
+    "CIANO"
+  ],
+  "TEAL": [
+    "VERDE AZULADO",
+    "SARCELLE",
+    "OTTANIO"
+  ],
+  "MINT": [
+    "MENTA",
+    "MENTHE",
+    "MENTA"
+  ],
+  "SAND": [
+    "ARENA",
+    "SABLE",
+    "SABBIA"
+  ],
+  "BROWN": [
+    "MARRÓN",
+    "MARRON",
+    "MARRONE"
+  ],
+  "SILVER": [
+    "PLATA",
+    "ARGENT",
+    "ARGENTO"
+  ],
+  "MONO": [
+    "MONO",
+    "MONO",
+    "MONO"
+  ],
+  "PALETTE": [
+    "PALETA",
+    "PALETTE",
+    "TAVOLOZZA"
+  ],
+  "FULL": [
+    "COMPLETO",
+    "COMPLET",
+    "COMPLETO"
+  ],
+  "WINDOWED": [
+    "CON VENTANA",
+    "FENETRE",
+    "FINESTRATO"
+  ],
+  "CENTER": [
+    "CENTRO",
+    "CENTRE",
+    "CENTRO"
+  ],
+  "TOP": [
+    "SUPERIOR",
+    "HAUT",
+    "SUPERIORE"
+  ],
+  "SKIN": [
+    "PIEL",
+    "PEAU",
+    "PELLE"
+  ],
+  "LIGHT": [
+    "LUZ",
+    "LUMIERE",
+    "LUCE"
+  ],
+  "STRONG": [
+    "FUERTE",
+    "FORT",
+    "FORTE"
+  ],
+  "ADAPTIVE": [
+    "ADAPTABLE",
+    "ADAPTATIF",
+    "ADATTIVO"
+  ],
+  "4X": [
+    "4X",
+    "4X",
+    "4X"
+  ],
+  "EXT ONLY": [
+    "SÓLO EXT",
+    "EXT UNIQUEMENT",
+    "SOLO EST"
+  ],
+  "GAME ONLY": [
+    "SÓLO JUEGO",
+    "JEU  UNIQUEMENT",
+    "SOLO GIOCO"
+  ],
+  "FAST": [
+    "RÁPIDO",
+    "RAPIDE",
+    "VELOCE"
+  ],
+  "MID ": [
+    "MEDIO ",
+    "MOYEN ",
+    "MED "
+  ],
+  "SLOW": [
+    "LENTO",
+    "LENT",
+    "LENTO"
+  ],
+  "BATTLE SCENE": [
+    "ESCENA DE BATALLA",
+    "SCENE DE BATAILLE",
+    "SCENA DI BATTAGLIA"
+  ],
+  "ON ": [
+    "ENCENDIDO ",
+    "SUR ",
+    "ACCESO "
+  ],
+  "SET  ": [
+    "CONJUNTO ",
+    "ENSEMBLE ",
+    "SET "
+  ],
+  "SOUND": [
+    "SONIDO",
+    "SON",
+    "SUONO"
+  ],
+  "MONO  ": [
+    "MONO ",
+    "MONO ",
+    "MONO "
+  ],
+  "STEREO": [
+    "ESTÉREO",
+    "STEREO",
+    "STEREO"
+  ],
+  "LIGHTEST": [
+    "MÁS LIGERO",
+    "LE PLUS LEGER",
+    "PIÙ LEGGERO"
+  ],
+  "LIGHTER ": [
+    "ENCENDEDOR ",
+    "BRIQUET ",
+    "ACCENDINO "
+  ],
+  "NORMAL  ": [
+    "NORMAL ",
+    "NORMAL ",
+    "NORMALE "
+  ],
+  "DARKER  ": [
+    "MÁS OSCURO ",
+    "PLUS FONCE ",
+    "PIÙ SCURO "
+  ],
+  "DARKEST ": [
+    "MÁS OSCURO ",
+    "LE PLUS SOMBRE ",
+    "PIÙ SCURO "
+  ],
+  "MENU ACCOUNT": [
+    "MENÚ CUENTA",
+    "COMPTE DE MENU",
+    "MENÙ CONTO"
+  ],
+  "FRAME": [
+    "MARCO",
+    "CADRE",
+    "CORNICE"
+  ],
+  "GAME SPEED": [
+    "VELOCIDAD DEL JUEGO",
+    "VITESSE DE JEU",
+    "VELOCITÀ DI GIOCO"
+  ],
+  "COLOR": [
+    "COLOR",
+    "COULEUR",
+    "COLORE"
+  ],
+  "TOUCH LAYOUT": [
+    "DISEÑO TÁCTIL",
+    "DISPOSITION TACTILE",
+    "DISPOSIZIONE TOUCH"
+  ],
+  "OG  ": [
+    "OG ",
+    "OG ",
+    "OG "
+  ],
+  "FILL ": [
+    "LLENAR ",
+    "REMPLISSAGE ",
+    "RIEMPIMENTO "
+  ],
+  "VIDEO": [
+    "VÍDEO",
+    "VIDEO",
+    "VIDEO"
+  ],
+  "GRAPHICS": [
+    "GRÁFICOS",
+    "GRAPHIQUES",
+    "GRAFICA"
+  ],
+  "AUDIO": [
+    "AUDIO",
+    "AUDIO",
+    "AUDIO"
+  ],
+  "BATTLE OPTIONS": [
+    "COMBATE",
+    "COMBAT",
+    "LOTTA"
+  ],
+  "EXTRAS": [
+    "EXTRAS",
+    "SUPPLEMENTS",
+    "EXTRA"
+  ],
+  ":TYPE": [
+    ": TIPO",
+    ":TYPE",
+    ":TIPO"
+  ],
+  " ALPH RUINS STAMP": [
+    " SELLO  RUINAS ALPH",
+    " TIMBRE RUINES ALPH",
+    " TIMBRO ROVINE ALPH"
+  ],
+  "Do what?": [
+    "¿Hacer qué?",
+    "Faire quoi ?",
+    "Fare cosa?"
+  ],
+  "VACANT": [
+    "VACANTE",
+    "VACANT",
+    "LIBERO"
+  ],
+  "A▶PRINT": [
+    "A▶IMPRIMIR",
+    "A▶IMPRESSION",
+    "A ▶STAMPA"
+  ],
+  "B▶CANCEL": [
+    "B▶CANCELAR",
+    "B▶ANNULER",
+    "B ▶ANNULLA"
+  ],
+  "L▶BEFORE": [
+    "L▶ANTES",
+    "L▶AVANT",
+    "L▶PRIMA"
+  ],
+  "R▶NEXT": [
+    "R▶SIGUIENTE",
+    "R▶SUIVANT",
+    "R***AVANTI"
+  ],
+  " STOCK <PK><MN> ": [
+    " <PK><MN> GUARDADOS ",
+    " <PK><MN> STOCKES ",
+    " <PK><MN> NEL BOX "
+  ],
+  " THIS <PK><MN> ": [
+    " ESTE <PK><MN> ",
+    " CE <PK><MN> ",
+    " QUESTO <PK><MN> "
+  ],
+  "HEALTH": [
+    "SALUD",
+    "SANTE",
+    "SALUTE"
+  ],
+  "Switch #MON?": [
+    "¿Interruptor #MON?",
+    "Commutateur #MON ?",
+    "Commuta #MON?"
+  ],
+  "You already caught\na %s.": [
+    "Ya atrapaste\ny %s.",
+    "Vous avez déjà attrapé\net %s.",
+    "Hai già catturato\nun %s."
+  ],
+  "CLOCK": [
+    "RELOJ",
+    "HORLOGE",
+    "OROLOGIO"
+  ],
+  "AM": [
+    "AM",
+    "AM",
+    "AM"
+  ],
+  "PM": [
+    "PM",
+    "PM",
+    "PM"
+  ],
+  "DAY": [
+    "DÍA",
+    "JOUR",
+    "GIORNO"
+  ],
+  "sweet and adorably": [
+    "dulce y adorablemente",
+    "doux et adorablement",
+    "dolce e adorabile"
+  ],
+  "wiggly and slickly": [
+    "ondulante y resbaladizo",
+    "ondulé et lisse",
+    "sinuoso e agile"
+  ],
+  "aptly named and": [
+    "con un nombre acertado y",
+    "bien nommé et",
+    "giustamente chiamato e"
+  ],
+  "undeniably kind of": [
+    "sin lugar a dudas una especie de",
+    "indéniablement en quelque sorte",
+    "innegabilmente gentile"
+  ],
+  "so, so unbearably": [
+    "tan, tan insoportable",
+    "tellement, tellement insupportable",
+    "così, così insopportabilmente"
+  ],
+  "wow, impressively": [
+    "guau, impresionante",
+    "wow, impressionnant",
+    "wow, impressionante"
+  ],
+  "almost poisonously": [
+    "casi venenosamente",
+    "presque toxique",
+    "quasi velenosamente"
+  ],
+  "ooh, so sensually": [
+    "ooh, tan sensualmente",
+    "ooh, si sensuellement",
+    "ooh, così sensualmente"
+  ],
+  "so mischievously": [
+    "con tanta picardía",
+    "si malicieusement",
+    "così maliziosamente"
+  ],
+  "so very topically": [
+    "muy actual",
+    "donc très d'actualité",
+    "in modo molto attuale"
+  ],
+  "sure addictively": [
+    "seguro adictivo",
+    ", c'est sûr, addictif",
+    "sicuramente crea dipendenza"
+  ],
+  "looks in water is": [
+    "se ve en el agua.",
+    "regarde dans l'eau est",
+    "guarda nell'acqua è"
+  ],
+  "evolution must be": [
+    "la evolución debe ser",
+    "L'évolution  doit être",
+    "L'evoluzione di  deve essere"
+  ],
+  "provocatively": [
+    "provocativamente",
+    "de manière provocante",
+    "provocatoriamente"
+  ],
+  "so flipped out and": [
+    "se volvió tan loco y",
+    "s'est donc retourné et",
+    "così fuori di testa e"
+  ],
+  "heart-meltingly": [
+    "conmovedoramente",
+    "fondant le coeur",
+    "da sciogliere il cuore"
+  ],
+  "cute.": [
+    "lindo.",
+    "mignon.",
+    "carino."
+  ],
+  "weird.": [
+    "raro.",
+    "bizarre.",
+    "strano."
+  ],
+  "pleasant.": [
+    "agradable.",
+    "agréable.",
+    "piacevole."
+  ],
+  "bold, sort of.": [
+    "negrita, más o menos.",
+    "gras, en quelque sorte.",
+    "audace, più o meno."
+  ],
+  "frightening.": [
+    "aterrador.",
+    "effrayant.",
+    "spaventoso."
+  ],
+  "suave & debonair!": [
+    "¡suave y elegante!",
+    "suave & débonnaire !",
+    "soave e disinvolto!"
+  ],
+  "powerful.": [
+    "potente.",
+    "puissant.",
+    "potente."
+  ],
+  "exciting.": [
+    "emocionante.",
+    "passionnant.",
+    "emozionante."
+  ],
+  "now!": [
+    "¡ ahora!",
+    "maintenant !",
+    "ora!"
+  ],
+  "inspiring.": [
+    "inspirador.",
+    "inspirant.",
+    "stimolante."
+  ],
+  "friendly.": [
+    "Compatible con .",
+    "Convivial pour .",
+    "amichevole."
+  ],
+  "hot, hot, hot!": [
+    "¡caliente, caliente, caliente!",
+    "chaud, chaud, chaud !",
+    "caldo, caldo, caldo!"
+  ],
+  "stimulating.": [
+    "estimulante.",
+    "stimulant.",
+    "stimolante."
+  ],
+  "guarded.": [
+    "vigilado.",
+    "gardé.",
+    "custodito."
+  ],
+  "lovely.": [
+    "precioso.",
+    "charmant.",
+    "adorabile."
+  ],
+  "speedy.": [
+    "rápido.",
+    "rapide.",
+    "veloce."
+  ],
+  "is cute.": [
+    "es lindo.",
+    "est mignon.",
+    "è carino."
+  ],
+  "is sort of lazy.": [
+    "es un poco vago.",
+    "est un peu paresseux.",
+    "è un po' pigro."
+  ],
+  "is always happy.": [
+    "siempre está feliz.",
+    "est toujours heureux.",
+    "è sempre felice."
+  ],
+  "is quite noisy.": [
+    "es bastante ruidoso.",
+    "Le  est assez bruyant.",
+    "è piuttosto rumoroso."
+  ],
+  "is precocious.": [
+    "es precoz.",
+    "est précoce.",
+    "è precoce."
+  ],
+  "is somewhat bold.": [
+    "es algo atrevido.",
+    "est quelque peu audacieux.",
+    "è un po' audace."
+  ],
+  "is too picky!": [
+    "¡ es demasiado exigente!",
+    "est trop pointilleux !",
+    "è troppo esigente!"
+  ],
+  "is sort of OK.": [
+    "está bastante bien.",
+    "est plutôt OK.",
+    "è abbastanza OK."
+  ],
+  "is just so-so.": [
+    "es regular.",
+    "est juste moyen.",
+    "è proprio così così."
+  ],
+  "is actually great.": [
+    "es realmente genial.",
+    "est vraiment génial.",
+    "è davvero fantastico."
+  ],
+  "is just my type.": [
+    "es mi tipo.",
+    "est juste mon type.",
+    "è proprio il mio tipo."
+  ],
+  "is so cool, no?": [
+    "es genial, ¿no?",
+    "est trop cool, non ?",
+    "è fantastico, no?"
+  ],
+  "is inspiring!": [
+    "¡ es inspirador!",
+    "est inspirant !",
+    "è stimolante!"
+  ],
+  "is kind of weird.": [
+    "es un poco extraño.",
+    "est un peu bizarre.",
+    "è un po' strano."
+  ],
+  "is right for me?": [
+    "¿ es adecuado para mí?",
+    "me convient-il ?",
+    "è adatto a me?"
+  ],
+  "is definitely odd!": [
+    "¡ es definitivamente extraño!",
+    "est définitivement étrange !",
+    "è decisamente strano!"
+  ],
+  "… …Ahem, we are": [
+    "... ...Ejem, estamos",
+    "......Ahem, nous sommes",
+    "... ...Ehm, lo siamo"
+  ],
+  "TEAM ROCKET!": [
+    "¡COHETE DEL EQUIPO !",
+    "FUSEE DE L'EQUIPE  !",
+    "RAZZO DI SQUADRA!"
+  ],
+  "After three years": [
+    "Después de tres años",
+    "Après trois ans",
+    "Dopo tre anni"
+  ],
+  "of preparation, we": [
+    "de preparación, nosotros",
+    "de préparation, nous",
+    "di preparazione, noi"
+  ],
+  "have risen again": [
+    "han vuelto a subir",
+    "a de nouveau augmenté",
+    "sono risorti"
+  ],
+  "from the ashes!": [
+    "de las cenizas!",
+    "renaît de ses cendres !",
+    "dalle ceneri!"
+  ],
+  "GIOVANNI! Can you": [
+    "GIOVANNI! ¿puedes",
+    "GIOVANNI! Pouvez-vous",
+    "GIOVANNI! Puoi"
+  ],
+  "hear? We did it!": [
+    "¿escuchas? ¡Lo logramos!",
+    "vous entendez ? Nous l'avons fait !",
+    "senti? Ce l'abbiamo fatta!"
+  ],
+  "Where is our Boss?": [
+    "¿Dónde está nuestro jefe?",
+    "Où est notre patron ?",
+    "Dov'è il nostro capo?"
+  ],
+  "Is he listening?": [
+    "¿Está escuchando?",
+    "Est-ce qu'il écoute ?",
+    "Sta ascoltando?"
+  ],
+  "SUNDAY": [
+    "DOMINGO",
+    "DIMANCHE",
+    "DOMENICA"
+  ],
+  "MONDAY": [
+    "LUNES",
+    "LUNDI",
+    "LUNEDI"
+  ],
+  "TUESDAY": [
+    "MARTES",
+    "MARDI",
+    "MARTEDÌ"
+  ],
+  "WEDNESDAY": [
+    "MIÉRCOLES",
+    "MERCREDI",
+    "MERCOLEDI"
+  ],
+  "THURSDAY": [
+    "JUEVES",
+    "JEUDI",
+    "GIOVEDI"
+  ],
+  "FRIDAY": [
+    "VIERNES",
+    "VENDREDI",
+    "VENERDÌ"
+  ],
+  "SATURDAY": [
+    "SÁBADO",
+    "SAMEDI",
+    "SABATO"
+  ],
+  "MARY: PROF.OAK'S": [
+    "ROSA: PROF. OAK",
+    "LULA: PROF. CHEN",
+    "LORI: PROF. OAK"
+  ],
+  "POKéMON TALK!": [
+    "¡HABLA POKéMON!",
+    "PARLEZ DE POKéMON !",
+    "POKéMON PARLA!"
+  ],
+  "With me, MARY!": [
+    "¡Conmigo, MARÍA!",
+    "Avec moi, MARY !",
+    "Con me, MARIA!"
+  ],
+  "OAK: %s": [
+    "ROBLE: %s",
+    "CHENE : %s",
+    "ROVERE: %s"
+  ],
+  "may be seen around": [
+    "se puede ver alrededor",
+    "peut être vu autour",
+    "può essere visto in giro"
+  ],
+  "%s.": [
+    "%s.",
+    "%s.",
+    "%s."
+  ],
+  "MARY: %s's": [
+    "MARÍA: %s",
+    "MARIE : %s",
+    "MARIA: %s's"
+  ],
+  "POKéMON Channel": [
+    "Canal POKéMON",
+    "Chaîne POKéMON",
+    "Canale POKéMON"
+  ],
+  "BEN: POKéMON MUSIC": [
+    "BEN: MÚSICA POKéMON",
+    "BEN : MUSIQUE POKéMON",
+    "BEN: MUSICA POKéMON"
+  ],
+  "CHANNEL!": [
+    "¡CANAL !",
+    "CANAL  !",
+    "CANALE !"
+  ],
+  "It's me, DJ BEN!": [
+    "¡Soy yo, DJ BEN!",
+    "C'est moi, DJ BEN !",
+    "Sono io, DJ BEN!"
+  ],
+  "FERN: POKéMUSIC!": [
+    "HELECHO: ¡POKéMÚSICA!",
+    "FOUGERE : POKéMUSIQUE !",
+    "FELCE: POKéMUSIC!"
+  ],
+  "With DJ FERN!": [
+    "¡Con DJ FERN!",
+    "Avec DJ FERN !",
+    "Con DJ FERN!"
+  ],
+  "Today's %s,": [
+    "%s de hoy,",
+    "%s d'aujourd'hui,",
+    "%s di oggi,"
+  ],
+  "so chill out to": [
+    "así que relájate",
+    "alors détendez-vous",
+    "quindi rilassati"
+  ],
+  "so let us jam to": [
+    "así que tocamos",
+    "alors laissez-nous jouer",
+    "quindi improvvisamo"
+  ],
+  "POKéMON Lullaby!": [
+    "¡Canción de cuna POKéMON!",
+    "Berceuse POKéMON !",
+    "POKéMON Ninna nanna!"
+  ],
+  "POKéMON March!": [
+    "¡Marcha POKéMON!",
+    "Marche POKéMON !",
+    "Marcia POKéMON!"
+  ],
+  "REED: Yeehaw! How": [
+    "REED: ¡Sí! como",
+    "REED : Ouais ! Comment",
+    "REED: Sì! Come"
+  ],
+  "y'all doin' now?": [
+    "¿Están bien ahora?",
+    ", vous le faites maintenant ?",
+    "va tutto bene adesso?"
+  ],
+  "Whether you're up": [
+    "Ya sea que estés despierto",
+    "Que vous soyez debout",
+    "Che tu sia sveglio"
+  ],
+  "or way down low,": [
+    "o muy bajo,",
+    "ou très bas,",
+    "o molto in basso,"
+  ],
+  "don't you miss the": [
+    "no te pierdas el",
+    "ne manquez pas le",
+    "non perderti il"
+  ],
+  "LUCKY NUMBER SHOW!": [
+    "¡MUESTRA DE NÚMEROS DE SUERTE!",
+    "SPECTACLE DE NUMEROS CHANCEUX !",
+    "NUMERI FORTUNATI MOSTRA!"
+  ],
+  "This week's Lucky": [
+    "La suerte de esta semana",
+    "La chance de cette semaine",
+    "La fortuna di questa settimana"
+  ],
+  "I'll repeat that!": [
+    "¡Lo repetiré!",
+    "Je vais le répéter !",
+    "Lo ripeterò!"
+  ],
+  "Match it and go to": [
+    "Combínelo y vaya a",
+    "Faites-le correspondre et accédez à",
+    "Abbinalo e vai a"
+  ],
+  "…Repeating myself": [
+    "...Repitiéndome",
+    "...Je me répète",
+    "...Mi ripeto"
+  ],
+  "gets to be a drag…": [
+    "llega a ser un lastre...",
+    "devient un frein...",
+    "diventa una seccatura..."
+  ],
+  "Number is %05d!": [
+    "¡El número es %05d!",
+    "Le numéro  est %05d !",
+    "Il numero è %05d!"
+  ],
+  "the RADIO TOWER!": [
+    "la TORRE DE RADIO!",
+    "la TOUR RADIO !",
+    "la TORRE RADIO!"
+  ],
+  "PLACES AND PEOPLE!": [
+    "¡LUGARES Y PERSONAS!",
+    "LIEUX ET PERSONNES !",
+    "LUOGHI E PERSONE!"
+  ],
+  "Brought to you by": [
+    "Presentado por",
+    "Présenté par",
+    "Offerto da"
+  ],
+  "me, DJ LILY!": [
+    "¡Yo, DJ LILY!",
+    "moi, DJ LILY !",
+    "io, DJ LILY!"
+  ],
+  "%s %s": [
+    "%s %s",
+    "%s %s",
+    "%s %s"
+  ],
+  "……": [
+    "......",
+    "......",
+    "......"
+  ],
+  "You're out of the service area.": [
+    "Estás fuera del área de servicio.",
+    "Vous êtes hors de la zone de service.",
+    "Sei fuori dall'area di servizio."
+  ],
+  "Whom do you want to call?": [
+    "¿A quién quieres llamar?",
+    "Qui souhaitez-vous appeler ?",
+    "Chi vuoi chiamare?"
+  ],
+  "Press any button to exit.": [
+    "Presione cualquier botón para salir.",
+    "Appuyez sur n'importe quel bouton pour quitter.",
+    "Premere un pulsante qualsiasi per uscire."
+  ],
+  "Delete this stored phone number?": [
+    "¿Eliminar este número de teléfono almacenado?",
+    "Supprimer ce numéro de téléphone enregistré ?",
+    "Eliminare questo numero di telefono memorizzato?"
+  ],
+  "Huh? Sorry, wrong number!": [
+    "¿Eh? ¡Lo siento, número equivocado!",
+    "Hein ? Désolé, mauvais numéro !",
+    "Eh? Scusa, numero sbagliato!"
+  ],
+  "Click!": [
+    "¡Haz clic!",
+    "Cliquez !",
+    "Clicca!"
+  ],
+  "That number is out of the area.": [
+    "Ese número está fuera del área.",
+    "Ce numéro est hors de la zone.",
+    "Quel numero è fuori zona."
+  ],
+  "Just go talk to that person!": [
+    "¡Simplemente ve a hablar con esa persona!",
+    "Allez simplement parler à cette personne !",
+    "Vai a parlare con quella persona!"
+  ],
+  "CALL": [
+    "LLAMADA",
+    "APPEL",
+    "CHIAMA"
+  ],
+  "DELETE": [
+    "BORRAR",
+    "SUPPRIMER",
+    "ELIMINA"
+  ],
+  "Where?": [
+    "¿Dónde?",
+    "Où ?",
+    "Dove?"
+  ],
+  "NO CARD DATA": [
+    "SIN DATOS",
+    "AUCUNE DONNEE",
+    "NESSUN DATO"
+  ],
+  "ZEPHYR": [
+    "CÉFIRO",
+    "ZEPHYR",
+    "ZEFIRO"
+  ],
+  "HIVE": [
+    "COLMENA",
+    "ESSAIM",
+    "ALVEARE"
+  ],
+  "PLAIN": [
+    "PLANICIE",
+    "PLAINE",
+    "PIANA"
+  ],
+  "FOG": [
+    "NIEBLA",
+    "BRUME",
+    "NEBBIA"
+  ],
+  "STORM": [
+    "TORMENTA",
+    "CHOC",
+    "TEMPESTA"
+  ],
+  "MINERAL": [
+    "MINERAL",
+    "MINERAL",
+    "MINERALE"
+  ],
+  "GLACIER": [
+    "GLACIAR",
+    "GLACIER",
+    "GELO"
+  ],
+  "RISING": [
+    "DRAGÓN",
+    "LEVER",
+    "LEVANTE"
+  ],
+  "BOULDER": [
+    "ROCA",
+    "ROCHE",
+    "SASSO"
+  ],
+  "CASCADE": [
+    "CASCADA",
+    "CASCADE",
+    "CASCATA"
+  ],
+  "THUNDER": [
+    "TRUENO",
+    "FOUDRE",
+    "TUONO"
+  ],
+  "RAINBOW": [
+    "ARCO IRIS",
+    "ARC-EN-CIEL",
+    "ARCOBALENO"
+  ],
+  "SOUL": [
+    "ALMA",
+    "AME",
+    "ANIMA"
+  ],
+  "MARSH": [
+    "PANTANO",
+    "MARAIS",
+    "PALUDE"
+  ],
+  "VOLCANO": [
+    "VOLCÁN",
+    "VOLCAN",
+    "VULCANO"
+  ],
+  "EARTH": [
+    "TIERRA",
+    "TERRE",
+    "TERRA"
+  ],
+  "JOHTO BADGES": [
+    "INSIGNIAS JOHTO",
+    "BADGES JOHTO",
+    "DISTINTIVI JOHTO"
+  ],
+  "KANTO BADGES": [
+    "INSIGNIAS KANTO",
+    "BADGES KANTO",
+    "DISTINTIVI KANTO"
+  ],
+  "NAME/": [
+    "NOM./",
+    "NOM/",
+    "NOME/"
+  ],
+  "ID No": [
+    "N. ID",
+    "N. ID",
+    "N. ID"
+  ],
+  "NO SAVE FILE": [
+    "SIN PARTIDA",
+    "AUCUNE SAUVEGARDE",
+    "NESSUN SALVATAGGIO"
+  ],
+  "Now on:": [
+    "Ahora en:",
+    "Maintenant sur :",
+    "Ora disponibile:"
+  ],
+  "POKé BALLS": [
+    "POKé BALL",
+    "POKé BALLS",
+    "POKé BALL"
+  ],
+  "KEY ITEMS": [
+    "ARTÍCULOS CLAVE",
+    "ELEMENTS CLES",
+    "ARTICOLI CHIAVE"
+  ],
+  "TM/HM": [
+    "MT/MO",
+    "CT/CS",
+    "MT/MN"
+  ],
+  "SEL": [
+    "SEL",
+    "SEL.",
+    "SEL"
+  ],
+  "Throw away how\nmany?": [
+    "Tirar ¿cuántos\ncuántos?",
+    "Jetez combien de\n?",
+    "Quanti\nbuttare via?"
+  ],
+  "Where should this\nbe moved to?": [
+    "¿A dónde debería trasladarse este\n?",
+    "Où doit-on déplacer ce\n?",
+    "Dove dovrebbe essere spostato questo\n?"
+  ],
+  "You don't have a\n#MON!": [
+    "¡No tienes un\n#MON!",
+    "Vous n'avez pas de\n#MON !",
+    "Non hai un\n#MON!"
+  ],
+  "An EGG can't hold\nan item.": [
+    "Un EGG no puede contener\nun elemento.",
+    "Un EGG ne peut pas contenir un élément\n.",
+    "Un EGG non può contenere\nun oggetto."
+  ],
+  "Coins:\n%d": [
+    "Monedas:\n%d",
+    "Pièces :\n%d",
+    "Monete:\n%d"
+  ],
+  "You now have\n%d points.": [
+    "Ahora tienes puntos\n%d.",
+    "Vous disposez désormais de points\n%d.",
+    "Ora hai\n%d punti."
+  ],
+  "{PLAYER} used the\n%s.": [
+    "{PLAYER} utilizó el\n%s.",
+    "{PLAYER} a utilisé le\n%s.",
+    "{PLAYER} ha utilizzato\n%s."
+  ],
+  "There was a trophy\ninside!\f{PLAYER} sent the\ntrophy home.": [
+    "¡Había un trofeo\nadentro!\f{PLAYER} envió el trofeo\na casa.",
+    "Il y avait un trophée\nà l'intérieur !\f{PLAYER} a envoyé le trophée\nà la maison.",
+    "Dentro c'era un trofeo\n!\f{PLAYER} ha portato a casa il trofeo\n."
+  ],
+  "Threw away\n%s(S).": [
+    "Desechó\n%s(S).",
+    "Jeté\n%s(S).",
+    "Buttato via\n%s(S)."
+  ],
+  "%s can't learn %s!": [
+    "%s ¡No puedo aprender %s!",
+    "%s ne peut pas apprendre %s !",
+    "%s non può imparare %s!"
+  ],
+  "%s already knows %s!": [
+    "%s ¡ya conoce %s!",
+    "%s connaît déjà %s !",
+    "%s conosce già %s!"
+  ],
+  "Registered the\n%s.": [
+    "Registrado el\n%s.",
+    "Enregistré le\n%s.",
+    "Registrato\n%s."
+  ],
+  "You can't register\nthat item.": [
+    "No puedes registrar\nese artículo.",
+    "Vous ne pouvez pas enregistrer\ncet élément.",
+    "Impossibile registrare\nquell'elemento."
+  ],
+  "Zzz... Hm? Wha...?\nYou woke me up!": [
+    "Zzz... ¿Hm? ¿Qué...?\n¡Me despertaste!",
+    "Zzz... Hum ? Quoi...?\nTu m'as réveillé !",
+    "Zzz... Hm? Cosa...?\nMi hai svegliato!"
+  ],
+  "What time is it?": [
+    "¿Qué hora es?",
+    "Quelle heure est-il ?",
+    "Che ore sono?"
+  ],
+  "What?\n%s?": [
+    "¿Qué?\n%s?",
+    "Quoi ?\n%s?",
+    "Cosa?\n%s?"
+  ],
+  "How many minutes?": [
+    "¿Cuántos minutos?",
+    "Combien de minutes ?",
+    "Quanti minuti?"
+  ],
+  "Whoa!\n%d min.?": [
+    "¡Vaya!\n%d mín.?",
+    "Waouh !\n%d min.?",
+    "Whoa!\n%d min.?"
+  ],
+  "%s!\nIt's so dark!": [
+    "%s!\n¡Está tan oscuro!",
+    "%s!\nIl fait si sombre !",
+    "%s!\nÈ così buio!"
+  ],
+  "%s!\nI overslept!": [
+    "%s!\n¡Me quedé dormido!",
+    "%s!\nJ'ai dormi trop longtemps !",
+    "%s!\nHo dormito troppo!"
+  ],
+  "%s!\nYikes! I over-\nslept!": [
+    "%s!\n¡Ay! ¡Me quedé dormido! ¡\n!",
+    "%s!\nAïe ! J'ai trop dormi !\n!",
+    "%s!\nCavolo! Ho dormito troppo!"
+  ],
+  "What day is it?": [
+    "¿Qué día es hoy?",
+    "Quel jour sommes-nous ?",
+    "Che giorno è?"
+  ],
+  "%s, is that right?": [
+    "%s, ¿es así?",
+    "%s, c'est vrai ?",
+    "%s, è vero?"
+  ],
+  "%s o'clock": [
+    "%s en punto",
+    "%s heures",
+    "%s ore"
+  ],
+  "%d min.": [
+    "%d mín.",
+    "%d min.",
+    "%d min."
+  ],
+  "POKéRUS": [
+    "POKéRUS",
+    "POKéRUS",
+    "POKéRUS"
+  ],
+  "TO": [
+    "A",
+    "A",
+    "A"
+  ],
+  "ATTK/": [
+    "ATQ/",
+    "ATT/",
+    "ATT/"
+  ],
+  "<ID>№.": [
+    "<ID>№.",
+    "<ID>№.",
+    "<ID>№."
+  ],
+  "It's making sounds<NEXT>inside. It's going<NEXT>to hatch soon!": [
+    "Está haciendo sonidos<NEXT>dentro. ¡Pronto <NEXT>saldrá del cascarón!",
+    "Il fait des bruits<NEXT>à l'intérieur. Il va<NEXT>éclore bientôt !",
+    "Emette suoni<NEXT>dentro. Si schiuderà<NEXT>presto!"
+  ],
+  "It moves around<NEXT>inside sometimes.<NEXT>It must be close<NEXT>to hatching.": [
+    "A veces se mueve<NEXT>dentro.<NEXT>Debe estar cerca<NEXT>de eclosionar.",
+    "Il se déplace<NEXT>à l'intérieur parfois.<NEXT>Il doit être proche<NEXT>des hachures.",
+    "A volte si muove<NEXT>all'interno.<NEXT>Deve essere vicino<NEXT>alla schiusa."
+  ],
+  "Wonder what's<NEXT>inside? It needs<NEXT>more time, though.": [
+    "¿Me pregunto qué hay<NEXT>dentro? Sin embargo, necesita<NEXT>más tiempo.",
+    "Vous vous demandez ce qu'il y a<NEXT>à l'intérieur ? Cela nécessite cependant<NEXT>plus de temps.",
+    "Ti chiedi cosa c'è<NEXT>dentro? Tuttavia, ha bisogno di<NEXT>più tempo."
+  ],
+  "This EGG needs a<NEXT>lot more time to<NEXT>hatch.": [
+    "Este HUEVO necesita<NEXT>mucho más tiempo para<NEXT>eclosionar.",
+    "Cet OEUF a besoin de<NEXT>beaucoup plus de temps pour<NEXT>éclore.",
+    "Questo UOVO ha bisogno di <NEXT>molto più tempo per<NEXT>schiudersi."
+  ],
+  "Boy": [
+    "Niño",
+    "Garçon",
+    "Ragazzo"
+  ],
+  "Girl": [
+    "Chica",
+    "Fille",
+    "Ragazza"
+  ],
+  "Are you a boy?\nOr are you a girl?": [
+    "¿Eres un niño?\n¿O eres una niña?",
+    "Etes-vous un garçon ?\nOu êtes-vous une fille ?",
+    "Sei un maschio?\nOppure sei una ragazza?"
+  ],
+  "Bet how many\ncoins?": [
+    "¿Apuesta cuántas monedas\n?",
+    "Pariez combien de pièces\n?",
+    "Scommetti quante monete\n?"
+  ],
+  "Start!": [
+    "¡Comienza!",
+    "Commencez !",
+    "Inizio!"
+  ],
+  "Darn… Ran out of\ncoins…": [
+    "Maldita sea... Se me acabaron las monedas\n...",
+    "Merde... Plus de pièces\n...",
+    "Maledizione... Ho finito le\nmonete..."
+  ],
+  "Play again?": [
+    "¿Jugar de nuevo?",
+    "Rejouer ?",
+    "Giocare di nuovo?"
+  ],
+  "Darn!": [
+    "¡Maldita sea!",
+    "Merde !",
+    "Maledizione!"
+  ],
+  "    lined up!\nWon %d coins!": [
+    " ¡ alineados!\n¡Ganó monedas %d!",
+    " aligné !\nA gagné des pièces %d !",
+    " in fila!\nHai vinto %d monete!"
+  ],
+  "Points": [
+    "Puntos",
+    "Points",
+    "Punti"
+  ],
+  "Saving… Leave ON!": [
+    "Guardando...\n¡No apagues!",
+    "Sauvegarde...\nNe pas eteindre !",
+    "Salvataggio...\nNon spegnere!"
+  ],
+  "No releasing EGGS!": [
+    "¡No liberar HUEVOS!",
+    "Pas de libération d'OEUFS !",
+    "Nessun rilascio delle UOVA!"
+  ],
+  "PARTY <PK><MN>": [
+    "EQUIPO <PK><MN>",
+    "EQUIPE <PK><MN>",
+    "SQUADRA <PK><MN>"
+  ],
+  "BOX%d": [
+    "CAJA%d",
+    "BOITE %d",
+    "BOX%d"
+  ],
+  "Choose a <PK><MN>.": [
+    "Elige un <PK><MN>.",
+    "Choisis un <PK><MN>.",
+    "Scegli un <PK><MN>."
+  ],
+  "What's up?": [
+    "¿Qué pasa?",
+    "Quoi de neuf ?",
+    "Che succede?"
+  ],
+  "It's your last <PK><MN>!": [
+    "¡Es tu último <PK><MN>!",
+    "C'est votre dernier <PK><MN> !",
+    "È il tuo ultimo <PK><MN>!"
+  ],
+  "No more usable <PK><MN>!": [
+    "¡Ya no se puede utilizar <PK><MN>!",
+    "Plus de <PK><MN> utilisable !",
+    "<PK><MN> non più utilizzabile!"
+  ],
+  "Remove MAIL.": [
+    "Eliminar CORREO.",
+    "Supprimer MAIL.",
+    "Rimuovi MAIL."
+  ],
+  "There's no room!": [
+    "¡No hay espacio!",
+    "Pas de place !",
+    "Non c'è spazio!"
+  ],
+  "Release <PK><MN>?": [
+    "¿Liberar <PK><MN>?",
+    "Relâcher <PK><MN> ?",
+    "Liberi <PK><MN>?"
+  ],
+  "Released <PK><MN>.\fBye,\n%s!": [
+    "Liberaste a <PK><MN>.\f¡Adiós,\n%s!",
+    "<PK><MN> relâché.\fAu revoir,\n%s !",
+    "<PK><MN> liberato.\fCiao,\n%s!"
+  ],
+  "Got %s!": [
+    "¡Tienes %s!",
+    "Vous avez %s !",
+    "Ho ricevuto %s!"
+  ],
+  "Stored %s!": [
+    "Almacenado %s!",
+    "%s stocké !",
+    "Memorizzato %s!"
+  ],
+  "No save.": [
+    "Sin guardar.",
+    "Aucune sauvegarde.",
+    "Nessun salvataggio."
+  ],
+  "There is no POKéMON there.": [
+    "No hay ningún POKéMON allí.",
+    "Il n'y a pas de POKéMON là-bas.",
+    "Non ci sono POKéMON lì."
+  ],
+  "The BOX is full.": [
+    "La CAJA está llena.",
+    "La BOITE est pleine.",
+    "La BOX è piena."
+  ],
+  "You can't take\nany more POKéMON.": [
+    "No caben más\nPOKéMON.",
+    "Plus de place\npour les POKéMON.",
+    "Non puoi ritirare\naltri POKéMON."
+  ],
+  "It's already there.": [
+    "Ya está allí.",
+    "Il est déjà là.",
+    "È già lì."
+  ],
+  "You'll need a\nPOKéMON to call\fwith.": [
+    "Necesitarás un POKéMON\npara llamar a\f.",
+    "Vous aurez besoin d'un POKéMON\npour appeler\f.",
+    "Avrai bisogno di un POKéMON\ncon cui chiamare\f."
+  ],
+  "TRADING BOARD": [
+    "JUNTA COMERCIAL",
+    "TABLEAU DE COMMERCE",
+    "SCHEDA COMMERCIALE"
+  ],
+  "INFO": [
+    "INFORMACIÓN",
+    "INFORMATIONS",
+    "INFORMAZIONI"
+  ],
+  "Lv%d": [
+    "Lv%d",
+    "Lv%d",
+    "Lv%d"
+  ],
+  "BATTLE": [
+    "BATALLA",
+    "BATAILLE",
+    "BATTAGLIA"
+  ],
+  "TRADE": [
+    "COMERCIO",
+    "COMMERCE",
+    "COMMERCIO"
+  ],
+  "Do what with\n%s?": [
+    "¿Qué hacer con\n%s?",
+    "Que faire avec\n%s ?",
+    "Fare cosa con\n%s?"
+  ],
+  "%s looks\nbusy right now.": [
+    "%s parece\nocupado en este momento.",
+    "%s semble\noccupé en ce moment.",
+    "%s sembra\noccupato in questo momento."
+  ],
+  "Waiting for\n%s…": [
+    "Esperando\n%s...",
+    "En attente de\n%s...",
+    "In attesa di\n%s..."
+  ],
+  "%s\nsaid no.": [
+    "%s\ndijo que no.",
+    "%s\na dit non.",
+    "%s\nha detto di no."
+  ],
+  "%s\ndidn't answer.": [
+    "%s\nno respondió.",
+    "%s\nn'a pas répondu.",
+    "%s\nnon ha risposto."
+  ],
+  "%s\nhas left.": [
+    "%s\nse ha ido.",
+    "%s\nest parti.",
+    "%s\nè uscito."
+  ],
+  "%s can't\ndo that now.": [
+    "%s no puede\nhacer eso ahora.",
+    "%s ne peut pas faire cela pour le moment.",
+    "%s non può farlo adesso."
+  ],
+  "%s wants\nto BATTLE!\fWill you accept?": [
+    "¡ %s quiere que\npelee!\f¿Aceptarás?",
+    "%s veut que\nse batte !\fAccepterez-vous ?",
+    "%s vuole che\nBATTAGLI!\fAccetterai?"
+  ],
+  "%s wants\nto TRADE!\fWill you accept?": [
+    "¡ %s quiere que\nhaga COMERCIO!\f¿Aceptarás?",
+    "%s veut que\nECHANGE !\fAccepterez-vous ?",
+    "%s vuole che\nfaccia COMMERCIO!\fAccetterai?"
+  ],
+  "Linking up with\n%s…": [
+    "Vinculación con\n%s...",
+    "Connexion avec\n%s...",
+    "Collegamento con\n%s..."
+  ],
+  "Getting ready to\nBATTLE %s…": [
+    "Preparándose para\nBATALLA %s...",
+    "Se préparer à la BATAILLE\n%s...",
+    "Prepararsi alla\nBATTAGLIA %s..."
+  ],
+  "Getting ready to\nTRADE: %s…": [
+    "Preparándose para\nCOMERCIO: %s...",
+    "Se préparer au COMMERCE\n: %s...",
+    "Prepararsi al\nTRADE: %s..."
+  ],
+  "%s\ncanceled.": [
+    "%s\ncancelado.",
+    "%s\nannulé.",
+    "%s\nannullato."
+  ],
+  "The request was\ncanceled.": [
+    "La solicitud fue\ncancelada.",
+    "La demande a été annulée\n.",
+    "La richiesta è stata\nannullata."
+  ],
+  "%s\nplays %s!\fImport %s\nto see them here.": [
+    "%s\njuega %s!\fImporta %s\npara verlos aquí.",
+    "%s\njoue à %s !\fImportez %s\npour les voir ici.",
+    "%s\nriproduce %s!\fImporta %s\nper vederli qui."
+  ],
+  "Linking to the\nUNION ROOM…": [
+    "Vinculando a la SALA DE UNIÓN\n...",
+    "Lien vers la SALLE UNION\n...",
+    "Collegamento alla\nUNION ROOM..."
+  ],
+  "No link could be\nmade.\fNo other TRAINERS\nare here for now.": [
+    "No se pudo establecer ningún enlace\n.\fNo hay otros ENTRENADORES\naquí por ahora.",
+    "Aucun lien n'a pu être établi.\n.\fAucun autre FORMATEUR\nn'est là pour le moment.",
+    "Impossibile creare un collegamento\n.\fNessun altro TRAINER\nè qui per ora."
+  ],
+  "The UNION ROOM\nlink is too old.\fNo other TRAINERS\nare here for now.": [
+    "El enlace UNION ROOM\nes demasiado antiguo.\fNo hay otros ENTRENADORES\naquí por ahora.",
+    "Le lien UNION ROOM\nest trop ancien.\fAucun autre FORMATEUR\nn'est là pour le moment.",
+    "Il collegamento UNION ROOM\nè troppo vecchio.\fNessun altro TRAINER\nè qui per ora."
+  ],
+  "This game is too\nold to link up.\fUpdate it to meet\nother TRAINERS.": [
+    "Este juego es demasiado antiguo\npara vincularlo.\fActualízalo para conocer\notros ENTRENADORES.",
+    "Ce jeu est trop ancien pour être associé à\n.\fMettez-le à jour pour rencontrer d'autres FORMATEURS\n.",
+    "Questo gioco è troppo\nvecchio per essere collegato.\fAggiornalo per incontrare\naltri ALLENATORI."
+  ],
+  "The UNION ROOM\ncouldn't be used.\fNo other TRAINERS\nare here for now.": [
+    "No se pudo utilizar UNION ROOM\n.\fNo hay otros ENTRENADORES\naquí por ahora.",
+    "La SALLE UNION\nn'a pas pu être utilisée.\fAucun autre FORMATEUR\nn'est là pour le moment.",
+    "Impossibile utilizzare la UNION ROOM\n.\fNessun altro TRAINER\nè qui per ora."
+  ],
+  "The link was lost.\nReconnecting…": [
+    "El enlace se perdió.\nReconectando...",
+    "Le lien a été perdu.\nReconnexion...",
+    "Il collegamento è stato perso.\nRiconnessione in corso..."
+  ],
+  "The link couldn't\nbe made again.\fNo other TRAINERS\nare here for now.": [
+    "No se pudo volver a establecer el enlace\n.\fNo hay otros ENTRENADORES\naquí por ahora.",
+    "Le lien n'a pas pu être établi à nouveau.\n.\fAucun autre FORMATEUR\nn'est là pour le moment.",
+    "Impossibile creare nuovamente il collegamento\n.\fNessun altro TRAINER\nè qui per ora."
+  ],
+  "With %s,\nwhat'll you do?": [
+    "Con %s,\n¿qué harás?",
+    "Avec %s,\n, que ferez-vous ?",
+    "Con %s,\ncosa farai?"
+  ],
+  "%s is\nbusy right now.": [
+    "%s está\nocupado en este momento.",
+    "%s est\noccupé en ce moment.",
+    "%s è\noccupato in questo momento."
+  ],
+  "%s said no.": [
+    "%s dijo que no.",
+    "%s a dit non.",
+    "%s ha detto di no."
+  ],
+  "%s didn't\nanswer.": [
+    "%s no respondió\n.",
+    "%s n'a pas répondu à\n.",
+    "%s non ha risposto\n."
+  ],
+  "%s left the\nUNION ROOM.": [
+    "%s salió de la SALA DE UNIÓN\n.",
+    "%s a quitté la SALLE UNION\n.",
+    "%s lasciò la\nUNION ROOM."
+  ],
+  "%s can't do\nthat right now.": [
+    "%s no puede hacer eso\nen este momento.",
+    "%s ne peut pas faire cela\npour le moment.",
+    "%s non posso farlo\nin questo momento."
+  ],
+  "%s wants\nto battle. OK?": [
+    "%s quiere que\npelee. ¿DE ACUERDO?",
+    "%s veut que\nse batte. D'ACCORD?",
+    "%s vuole che\ncombatta. OK?"
+  ],
+  "%s wants\nto trade. OK?": [
+    "%s quiere que\nnegocie. ¿DE ACUERDO?",
+    "%s souhaite que\nsoit négocié. D'ACCORD?",
+    "%s vuole che\nfaccia scambio. OK?"
+  ],
+  "Getting ready to\nbattle %s…": [
+    "Preparándonos para la batalla\n%s...",
+    "Préparez-vous à la bataille\n%s...",
+    "Prepararsi alla battaglia\n%s..."
+  ],
+  "Getting ready to\ntrade with %s…": [
+    "Preparándonos para\ncomerciar con %s...",
+    "Préparez-vous à échanger\navec %s...",
+    "Prepararsi a fare trading con\ncon %s..."
+  ],
+  "%s cancelled.": [
+    "%s cancelado.",
+    "%s annulé.",
+    "%s annullato."
+  ],
+  "%s is playing\n%s.\fImport %s\nto see them here.": [
+    "%s está jugando\n%s.\fImporta %s\npara verlos aquí.",
+    "%s joue à\n%s.\fImportez %s\npour les voir ici.",
+    "%s sta giocando a\n%s.\fImporta %s\nper vederli qui."
+  ],
+  "Connecting to the\nUNION ROOM…": [
+    "Conectándose a\nUNION ROOM...",
+    "Connexion à la SALLE UNION\n...",
+    "Collegamento a\nUNION ROOM..."
+  ],
+  "Couldn't connect.\fNo other trainers\ncan be seen now.": [
+    "No se pudo conectar.\fNo se pueden ver otras zapatillas\nahora.",
+    "Impossible de se connecter.\fAucune autre basket\nn'est visible actuellement.",
+    "Impossibile connettersi.\fNessun altro trainer\npuò essere visto adesso."
+  ],
+  "The UNION ROOM\nserver is too old.\fNo other trainers\ncan be seen now.": [
+    "El servidor UNION ROOM\nes demasiado antiguo.\fNo se pueden ver otras zapatillas\nahora.",
+    "Le serveur UNION ROOM\nest trop ancien.\fAucune autre basket\nn'est visible actuellement.",
+    "Il server UNION ROOM\nè troppo vecchio.\fNessun altro trainer\npuò essere visto adesso."
+  ],
+  "This game is too\nold to link up.\fUpdate it to meet\nother trainers.": [
+    "Este juego es demasiado antiguo\npara vincularlo.\fActualízalo para conocer\notros entrenadores.",
+    "Ce jeu est trop ancien pour être associé à\n.\fMettez-le à jour pour rencontrer d'autres formateurs\n.",
+    "Questo gioco è troppo\nvecchio per essere collegato.\fAggiornalo per incontrare\naltri allenatori."
+  ],
+  "Couldn't enter\nthe UNION ROOM.\fNo other trainers\ncan be seen now.": [
+    "No se pudo ingresar a\nla SALA DE LA UNIÓN.\fNo se pueden ver otras zapatillas\nahora.",
+    "Impossible d'accéder à\ndans la SALLE UNION.\fAucune autre basket\nn'est visible actuellement.",
+    "Impossibile accedere alla\nUNION ROOM.\fNessun altro trainer\npuò essere visto adesso."
+  ],
+  "Couldn't link up\nagain.\fNo other trainers\ncan be seen now.": [
+    "No se pudo vincular\nnuevamente.\fNo se pueden ver otras zapatillas\nahora.",
+    "Impossible de relier à nouveau\n.\fAucune autre basket\nn'est visible actuellement.",
+    "Impossibile ricollegare\n.\fNessun altro trainer\npuò essere visto adesso."
+  ],
+  "Your games can't\nlink up for this.": [
+    "Tus juegos no pueden\nvincularse para esto.",
+    "Vos jeux ne peuvent pas se connecter à\npour cela.",
+    "I tuoi giochi non possono\ncollegarsi per questo."
+  ],
+  "lower case": [
+    "minúsculas",
+    "minuscules",
+    "minuscole"
+  ],
+  "UPPER CASE": [
+    "MAYÚSCULAS",
+    "MAJUSCULES",
+    "MAIUSCOLE"
   ]
 }

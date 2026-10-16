@@ -25,8 +25,9 @@ return function(mod,version,prefix,files)
  local resolve=A.resolve
  A.resolve=function(path)
   local resolved=resolve(path)
-  if active() and path==resolved and path=='assets/generated/tilesets/overworld.png' and files['assets/tilesets/overworld.png'] then
-   return prefix..'/assets/tilesets/overworld.png'
+  local tileName=type(path)=='string' and path:match('^assets/[^/]+/tilesets/([^/]+%.png)$')
+  if active() and path==resolved and tileName and files['assets/tilesets/'..tileName] then
+   return prefix..'/assets/tilesets/'..tileName
   end
   return resolved
  end
