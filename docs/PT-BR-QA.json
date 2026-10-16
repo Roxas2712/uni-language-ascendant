@@ -3,7 +3,7 @@
   "status": "preview-not-all-games-complete",
   "scene": "Oldale Town in each corresponding game",
   "frames_per_run": 360,
-  "total_measured_frames": 2880,
+  "total_measured_frames": 3600,
   "background_load": "Other independently running game instances were active. These are exploratory comparisons, not an isolated performance certification.",
   "mapped_keys": 15655,
   "edition_mapped_keys": {
@@ -89,6 +89,43 @@
       "run": "en-performance-2"
     },
     {
+      "cacheHit": false,
+      "draw": {
+        "n": 360,
+        "maxMs": 76.49104166666376,
+        "meanMs": 13.985903703703716,
+        "p50Ms": 13.51020833333294,
+        "p95Ms": 22.102291666667107
+      },
+      "scene": "EM_OLDALE_TOWN",
+      "language": "en",
+      "graphics": {
+        "drawcallsbatched": 0,
+        "shaderswitches": 0,
+        "drawcalls": 0,
+        "canvasswitches": 0,
+        "fonts": 0,
+        "buffermemory": 681050,
+        "textures": 58,
+        "buffers": 7,
+        "texturememory": 16173832
+      },
+      "modLoadSeconds": 0.003786583333333482,
+      "bootToDriverSeconds": 3.0160797916666673,
+      "elapsedSeconds": 6.644093624999999,
+      "luaMemoryKiB": 101305.41015625,
+      "memoryBeforeKiB": 97927.1328125,
+      "game": "emerald",
+      "update": {
+        "n": 360,
+        "maxMs": 52.94362500000105,
+        "meanMs": 2.079658101851949,
+        "p50Ms": 1.2393750000008197,
+        "p95Ms": 5.034374999999258
+      },
+      "run": "en-remainder-performance"
+    },
+    {
       "modLoadSeconds": 5.796973791666667,
       "bootToDriverSeconds": 8.1443395,
       "elapsedSeconds": 5.999644249999999,
@@ -161,6 +198,43 @@
       "bootToDriverSeconds": 6.439878083333334,
       "language": "pt-BR",
       "run": "pt-BR-performance-2"
+    },
+    {
+      "graphics": {
+        "canvasswitches": 0,
+        "texturememory": 16173832,
+        "buffers": 7,
+        "drawcallsbatched": 0,
+        "shaderswitches": 0,
+        "buffermemory": 681050,
+        "fonts": 0,
+        "textures": 58,
+        "drawcalls": 0
+      },
+      "game": "emerald",
+      "draw": {
+        "n": 360,
+        "maxMs": 46.19341666666443,
+        "p95Ms": 18.58974999999674,
+        "meanMs": 13.730478124999875,
+        "p50Ms": 13.831666666664688
+      },
+      "scene": "EM_OLDALE_TOWN",
+      "memoryBeforeKiB": 225314.193359375,
+      "cacheHit": true,
+      "modLoadSeconds": 4.885790791666668,
+      "bootToDriverSeconds": 9.418376166666667,
+      "elapsedSeconds": 6.1154275416666675,
+      "luaMemoryKiB": 226884.162109375,
+      "update": {
+        "n": 360,
+        "maxMs": 22.208125000002354,
+        "p95Ms": 3.480958333334172,
+        "meanMs": 1.6129229166667358,
+        "p50Ms": 1.1945833333335543
+      },
+      "language": "pt-BR",
+      "run": "pt-BR-remainder-performance"
     },
     {
       "draw": {
@@ -313,11 +387,12 @@
   ],
   "live_checks": [
     {
-      "log": "pt-BR-healing-fix.log",
+      "log": "pt-BR-remainder-regression.log",
       "passed_markers": [
         "LANGUAGE_LIVE_OK",
         "LANGUAGE_BATTLE_OK",
-        "LANGUAGE_HEALING_OK"
+        "LANGUAGE_HEALING_OK",
+        "LANGUAGE_DIALOGUE_EVIDENCE"
       ]
     },
     {
@@ -371,25 +446,251 @@
       ]
     },
     {
-      "log": "install-preview2.log",
+      "log": "install-preview3.log",
       "passed_markers": [
         "PTBR_INSTALL_OK"
       ]
     },
     {
-      "log": "ruby-pt-BR-healing-fix.log",
+      "log": "ruby-pt-BR-remainder-regression.log",
       "passed_markers": [
         "LANGUAGE_HEALING_OK",
         "LANGUAGE_LIVE_OK"
       ]
     },
     {
-      "log": "sapphire-pt-BR-dex-final.log",
+      "log": "sapphire-pt-BR-remainder-regression.log",
       "passed_markers": [
         "LANGUAGE_HEALING_OK",
         "LANGUAGE_DEX_OK",
         "LANGUAGE_LIVE_OK"
       ]
+    },
+    {
+      "log": "en-real-npc-dialogues.log",
+      "passed_markers": [
+        "LANGUAGE_DIALOGUES_OK"
+      ]
+    },
+    {
+      "log": "pt-BR-ingrain.log",
+      "passed_markers": [
+        "LANGUAGE_BATTLE_DIALOGUES_OK"
+      ]
+    },
+    {
+      "log": "en-ingrain.log",
+      "passed_markers": [
+        "LANGUAGE_BATTLE_DIALOGUES_OK"
+      ]
+    },
+    {
+      "log": "ruby-pt-BR-ingrain.log",
+      "passed_markers": [
+        "LANGUAGE_BATTLE_DIALOGUES_OK"
+      ]
+    },
+    {
+      "log": "sapphire-pt-BR-ingrain.log",
+      "passed_markers": [
+        "LANGUAGE_BATTLE_DIALOGUES_OK"
+      ]
+    }
+  ],
+  "authored_keys": {
+    "emerald": 1544,
+    "ruby": 733,
+    "sapphire": 1142
+  },
+  "authored_prose_entries": {
+    "emerald": 937,
+    "ruby": 218
+  },
+  "dialogue_evidence": [
+    {
+      "pages": [
+        "Acho que fecharam o\nterraço por causa do mau",
+        "tempo de hoje."
+      ],
+      "trigger": "Field.interact",
+      "game": "emerald",
+      "key": "g3:082201c4",
+      "completed": true,
+      "case": "rooftop-weather",
+      "language": "pt-BR",
+      "map": "EM_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
+      "fixture": "VAR_SOOTOPOLIS_CITY_STATE=1 (legendary weather)",
+      "log": "pt-BR-remainder-regression.log"
+    },
+    {
+      "pages": [
+        "Este navio se chama S.S.\nCACTUS. Parece ser de uma",
+        "época antiga."
+      ],
+      "trigger": "Field.interact",
+      "game": "emerald",
+      "key": "g3:08238918",
+      "completed": true,
+      "case": "captain-scanner",
+      "language": "pt-BR",
+      "map": "EM_ABANDONED_SHIP_CAPTAINS_OFFICE",
+      "fixture": "FLAG_EXCHANGED_SCANNER=true (scanner delivered)",
+      "log": "pt-BR-remainder-regression.log"
+    },
+    {
+      "pages": [
+        "TEST? Sim, eu estava\nesperando você.",
+        "Este é o prêmio que\nguardamos para você.",
+        "Ganhou MASTER BOLA!",
+        "TEST colocou MASTER BOLA\nno BOLSO DE POKé BOLAS."
+      ],
+      "trigger": "Field.interact",
+      "game": "emerald",
+      "key": "LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding",
+      "completed": true,
+      "case": "lottery-prize",
+      "language": "pt-BR",
+      "map": "EM_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+      "fixture": "pending lottery Master Ball prize; actual player name TEST",
+      "log": "pt-BR-remainder-regression.log"
+    },
+    {
+      "completed": true,
+      "case": "rooftop-weather",
+      "map": "EM_LILYCOVE_CITY_DEPARTMENT_STORE_5F",
+      "pages": [
+        "I think they closed the rooftop\nbecause the weather is wild today."
+      ],
+      "language": "en",
+      "key": "g3:082201c4",
+      "game": "emerald",
+      "fixture": "VAR_SOOTOPOLIS_CITY_STATE=1 (legendary weather)",
+      "trigger": "Field.interact",
+      "log": "en-real-npc-dialogues.log"
+    },
+    {
+      "completed": true,
+      "case": "captain-scanner",
+      "map": "EM_ABANDONED_SHIP_CAPTAINS_OFFICE",
+      "pages": [
+        "This ship is called S.S. CACTUS.\nIt seems to be from an earlier era."
+      ],
+      "language": "en",
+      "key": "g3:08238918",
+      "game": "emerald",
+      "fixture": "FLAG_EXCHANGED_SCANNER=true (scanner delivered)",
+      "trigger": "Field.interact",
+      "log": "en-real-npc-dialogues.log"
+    },
+    {
+      "completed": true,
+      "case": "lottery-prize",
+      "map": "EM_LILYCOVE_CITY_DEPARTMENT_STORE_1F",
+      "pages": [
+        "TEST?\nYes, I've been expecting you.",
+        "This is the prize we've been holding\nfor you.",
+        "Obtained the MASTER BALL!",
+        "TEST put away the MASTER BALL\nin the POKé BALLS POCKET."
+      ],
+      "language": "en",
+      "key": "LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding",
+      "game": "emerald",
+      "fixture": "pending lottery Master Ball prize; actual player name TEST",
+      "trigger": "Field.interact",
+      "log": "en-real-npc-dialogues.log"
+    },
+    {
+      "language": "pt-BR",
+      "outcome": "win",
+      "case": "ingrain",
+      "pages": [
+        "RATTATA apareceu!",
+        "Vá! SUNKERN!",
+        "SUNKERN usou\nENRAIZAR!",
+        "SUNKERN plantou\nsuas raízes!",
+        "RATTATA usou\nRABO CHICOTE!",
+        "SUNKERN DEFESA \ncai!   ",
+        "SUNKERN usou\nABSORVER!",
+        "RATTATA teve a\nenergia drenada!",
+        "RATTATA\ndesmaia!",
+        "SUNKERN ganhou\n16 de EXP!"
+      ],
+      "fixture": "Level 35 Sunkern uses Ingrain, then Absorb against level 2 Rattata",
+      "trigger": "battle_bridge.startWild / autoFight",
+      "rooted": true,
+      "game": "emerald",
+      "field_return": true,
+      "log": "pt-BR-ingrain.log"
+    },
+    {
+      "field_return": true,
+      "game": "emerald",
+      "pages": [
+        "Wild RATTATA appeared!",
+        "Go! SUNKERN!",
+        "SUNKERN used\nINGRAIN!",
+        "SUNKERN planted its roots!",
+        "Wild RATTATA used\nTACKLE!",
+        "SUNKERN absorbed\nnutrients with its roots!",
+        "SUNKERN used\nABSORB!",
+        "Wild RATTATA had its\nenergy drained!",
+        "Wild RATTATA\nfainted!",
+        "SUNKERN gained\n16 EXP. Points!"
+      ],
+      "outcome": "win",
+      "language": "en",
+      "case": "ingrain",
+      "fixture": "Level 35 Sunkern uses Ingrain, then Absorb against level 2 Rattata",
+      "trigger": "battle_bridge.startWild / autoFight",
+      "rooted": true,
+      "log": "en-ingrain.log"
+    },
+    {
+      "case": "ingrain",
+      "fixture": "Level 35 Sunkern uses Ingrain, then Absorb against level 2 Rattata",
+      "game": "ruby",
+      "trigger": "battle_bridge.startWild / autoFight",
+      "rooted": true,
+      "pages": [
+        "Um(a) RATTATA selvagem\napareceu!",
+        "Vá! SUNKERN!",
+        "SUNKERN usou\nINGRAIN!",
+        "SUNKERN plantou\nsuas raízes!",
+        "Pokémon RATTATA usou\nTACKLE!",
+        "SUNKERN absorveu\nnutrientes c/suas raízes!",
+        "SUNKERN usou\nABSORB!",
+        "Pokémon RATTATA teve a \nenergia sugada!",
+        "Pokémon RATTATA\ndesmaia!",
+        "SUNKERN ganha\n16 pontos de EXP"
+      ],
+      "language": "pt-BR",
+      "outcome": "win",
+      "field_return": true,
+      "log": "ruby-pt-BR-ingrain.log"
+    },
+    {
+      "field_return": true,
+      "game": "sapphire",
+      "language": "pt-BR",
+      "pages": [
+        "RATTATA selvagem surge",
+        "Vá! SUNKERN!",
+        "SUNKERN usou\nINGRAIN!",
+        "SUNKERN plantou\nsuas raízes!",
+        "Pokémon RATTATA usou\nTACKLE!",
+        "Um golpe forte!",
+        "SUNKERN absorveu\nnutrientes c/suas raízes!",
+        "SUNKERN usou\nABSORB!",
+        "Pokémon RATTATA teve a \nenergia sugada!",
+        "Pokémon RATTATA\ndesmaia!",
+        "SUNKERN ganha\n16 pontos de EXP"
+      ],
+      "outcome": "win",
+      "fixture": "Level 35 Sunkern uses Ingrain, then Absorb against level 2 Rattata",
+      "case": "ingrain",
+      "trigger": "battle_bridge.startWild / autoFight",
+      "rooted": true,
+      "log": "sapphire-pt-BR-ingrain.log"
     }
   ]
 }

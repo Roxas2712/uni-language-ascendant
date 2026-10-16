@@ -1,7 +1,7 @@
 {
   "id": "german_rom_source",
   "name": "Uni-Language Ascendant",
-  "version": "1.5.0-preview.2",
+  "version": "1.5.0-preview.3",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",

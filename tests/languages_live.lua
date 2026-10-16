@@ -10,6 +10,17 @@ return function(game)
    translated=e.coverage and e.coverage.translated,total=e.coverage and e.coverage.total}))
   if os.getenv('QA_MODE')=='load' then love.event.quit();return end
   if love.setDeprecationOutput then love.setDeprecationOutput(false) end
+  if os.getenv('QA_MODE')=='dialogues' then
+   game:_handleBootAction({action='new_game',name='TEST',gender=0,start={map='EM_OLDALE_TOWN',x=6,y=17,facing='up'}})
+   wait(60)
+   local function capture(name)
+    game.capturePath=os.getenv('SHOT_DIR')..'/'..lang..'-'..name..'.png'
+    for _=1,600 do if not game.capturePath then break end;wait(1) end
+    assert(not game.capturePath,'Screenshot timeout')
+   end
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_field_dialogues.lua'))()(game,capture,lang)
+   print('LANGUAGE_DIALOGUES_OK',lang);love.event.quit();return
+  end
   local Text=require('src.core.game3.rom_text')
   local Pokemon=require('src.core.game3.pokemon')
   local expected={fr={'OUI','BULBIZARRE','ENGRAIS'},it={'SÌ','BULBASAUR','ERBAIUTO'},es={'SÍ','BULBASAUR','ESPESURA'},de={'JA','BISASAM','NOTDÜNGER'},en={'YES','BULBASAUR','OVERGROW'}}
@@ -49,6 +60,9 @@ return function(game)
   assert(Map.load(nil,game,'EM_OLDALE_TOWN',{x=14,y=7,facing='up'}));capture('mart')
   assert(Map.load(nil,game,'EM_OLDALE_TOWN_POKEMON_CENTER_1F',{x=7,y=4,facing='up'}))
   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_nurse_live.lua'))()(game,capture,lang)
+  if lang=='pt-BR' or lang=='en' then
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_field_dialogues.lua'))()(game,capture,lang)
+  end
   game:_handleBootAction({action='new_game',name='TEST',gender=0,start={map='EM_OLDALE_TOWN',x=6,y=17,facing='up'}})
   wait(60)
   require('src.core.game3.rng').SeedRng(12345)

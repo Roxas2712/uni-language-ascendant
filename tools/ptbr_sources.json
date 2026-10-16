@@ -21,9 +21,12 @@
     },
     {
       "game": "yellow",
-      "status": "source-build-incomplete",
+      "status": "source-build-only",
       "source": "https://github.com/hydhyro/pokeamarelo-ptbr",
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "sha1": "2b94c64b1944fb6866fd0c28149f86c11bc86253",
+      "commit": "fbb76167ed98a014380280668e518893104c3a81",
+      "tested": false
     },
     {
       "game": "gold",
@@ -67,7 +70,9 @@
       "patch_sha256": "3da642ce74953bba70fe66b43618cd505bb2fb785caef03b8ebb635068834bcb",
       "tested": "smoke-only",
       "full_playthrough": false,
-      "battle_variable_texts_audited": 608
+      "battle_variable_texts_audited": 608,
+      "authored_text_keys": 733,
+      "additional_authored_prose_entries": 218
     },
     {
       "game": "sapphire",
@@ -81,19 +86,34 @@
       "source_sha1": "90f1464f77c57b4eef45ee07df140d402162eee3",
       "shared_source_keys": 13047,
       "authored_dex_species": 203,
-      "authored_dex_pages": 405
+      "authored_dex_pages": 405,
+      "authored_text_keys": 1142
     },
     {
       "game": "firered",
-      "status": "patch-obtained-base-revision-unverified",
+      "status": "patched-input-verified-profile-pending",
       "source": "https://www.romhacking.net.br/index.php?topic=3337.0",
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "sha1": "51ab6d001412cdc3d6da16fb824ab8084123b1dd",
+      "md5": "dfc02ad742baa5d557dcb0213b0b50dc",
+      "size": 16777216,
+      "base_revision": 1,
+      "tested": false,
+      "base_sha1": "dd5945db9b930750cb39d00c84da8571feebf417",
+      "patch_sha256": "3a81fbe7049252e1c0de1513aeae2d0967c11a0077bcc79ced7d5a1be331d089"
     },
     {
       "game": "leafgreen",
-      "status": "patch-obtained-base-revision-unverified",
+      "status": "patched-input-verified-profile-pending",
       "source": "https://www.romhacking.net.br/index.php?topic=3337.0",
-      "runtime_enabled": false
+      "runtime_enabled": false,
+      "sha1": "b32c63d5d1454d851cef16699f3ce757798553a2",
+      "md5": "790d40d042401d1dea843fa7f52e2448",
+      "size": 16777216,
+      "base_revision": 1,
+      "tested": false,
+      "base_sha1": "7862c67bdecbe21d1d69ce082ce34327e1c6ed5e",
+      "patch_sha256": "6db06722e313a8490c7c7cd2312f1c02ab740dfef1bd980ceaf38a7b6e3ef940"
     },
     {
       "game": "emerald",
@@ -105,7 +125,16 @@
       "md5": "5f91214a7b563c858a94920796817d83",
       "base_sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
       "patch_sha256": "38051b3266bfb5d6edac96882ecce877d5054f256460b242c341d04802566414",
-      "source": "https://github.com/RetroAchievements/RAPatches/blob/main/GBA/Translation/Portuguese/668-PokemonEmerald-Portuguese.zip"
+      "source": "https://github.com/RetroAchievements/RAPatches/blob/main/GBA/Translation/Portuguese/668-PokemonEmerald-Portuguese.zip",
+      "authored_text_keys": 1544,
+      "authored_prose_entries": 937,
+      "real_dialogue_scenarios": [
+        "nurse-healing",
+        "rooftop-weather",
+        "captain-scanner",
+        "lottery-prize",
+        "ingrain-battle"
+      ]
     }
   ]
 }

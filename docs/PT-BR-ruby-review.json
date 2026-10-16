@@ -1,0 +1,2031 @@
+{
+  "status": "review-required",
+  "completeness_proven": false,
+  "unchanged_unique_candidates": 237,
+  "unchanged_keys": 331,
+  "missing_decoded_keys": [
+    "g3:081c533d",
+    "g3:081c534f",
+    "g3:081c5359",
+    "g3:081c5363",
+    "g3:081c536d",
+    "g3:081c5377",
+    "g3:081c5381",
+    "g3:081c538b",
+    "g3:081c5396",
+    "g3:081c539e",
+    "g3:081c53a9",
+    "g3:081c53b1",
+    "g3:081c53c1",
+    "g3:081c53f2",
+    "g3:081c5414",
+    "g3:081c5435",
+    "g3:081c545c",
+    "g3:081c5470",
+    "g3:081c549b",
+    "g3:081c54c8",
+    "g3:081c54fc",
+    "g3:081c552e",
+    "gUnknown_083CC59C"
+  ],
+  "candidates": [
+    {
+      "source_sha256": "c2f6b99486654cbaf2d60b1ff46b868ae2811a9199567094b9586eca9d61b773",
+      "keys": [
+        "BattleStatText_HP",
+        "StatNames[0]",
+        "gOtherText_HP",
+        "gOtherText_Hp2",
+        "gUnknown_08400F58[0]"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "6aa971766eb15f34b0b4a5e03bd511e9e5ad328556a34793b6e86f387f594d1a",
+      "keys": [
+        "BattleText_Berry",
+        "gOtherText_Berry",
+        "gOtherText_Berry2"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "fd338b0bd00b976846c0235b0edea8411fc62f16f92dfe97b49f4722b5683604",
+      "keys": [
+        "BattleText_Burn"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "170a11cdc6970faa4b85e7f03b4694678ce5456e94d87044467e39c415f5f24d",
+      "keys": [
+        "BattleText_EnigmaBerry"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "73f362f000f3f431a3117b35578ccc93bad2b959fe982d17483ac14dc270f021",
+      "keys": [
+        "BattleText_HP",
+        "gUnknown_0840165C[0]"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e817f244ed79dd52aefa92b943972da4a9420b1bb54d18aedb596850f7487765",
+      "keys": [
+        "BattleText_IceStatus"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3f57fe8fce70a024a5fe2afda0210e437de39d7e794619ab92207498d14ace5f",
+      "keys": [
+        "BattleText_MagnitudeCount",
+        "STRINGID_MAGNITUDESTRENGTH"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0cdab7ccca3d75b908f4031134585312099ee66daefdc68e425e21c919da4505",
+      "keys": [
+        "BattleText_Wally"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e6a884ffa1f05f955cec367ea2de0a80a17832e4a16ba559e8c383d2c78658ca",
+      "keys": [
+        "DewfordTown_House1_Text_Zigzagoon",
+        "g3:08174cc8"
+      ],
+      "characters": 18,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d54121d0f1a33e81dfe1393d2be11f8f4e038858466f416c03e1586ec744554f",
+      "keys": [
+        "DexText_ABC"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "41ecf978738bd4ac54b96c0b055867f55d87f7e8f6bec352cac7822d5fcaca47",
+      "keys": [
+        "DexText_DEF"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8ef560e5a7d89b3a39c2a99805d69b8fbc81ad8b4bb4379ec0349d0eb19d0e2d",
+      "keys": [
+        "DexText_GHI"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f77602f257961fb7e673495c476c12b4873f54b262d6f066432c83530dd12e76",
+      "keys": [
+        "DexText_HoennDex"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "beaeef3cda12bb15213705a2f7ebebbdb0764c87e8b0baddb424a0302c2de700",
+      "keys": [
+        "DexText_JKL"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "de43bc1fafc6dd9a66a15dbffef8c7adc47f2f3969d68956299a391f3a9470a9",
+      "keys": [
+        "DexText_MNO"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c218c357c890d29459d75e6b962d8fd1528aab2e258d2f8df6fb69c975499b88",
+      "keys": [
+        "DexText_NationalDex"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9097ca2993d0047667bc05abbad2dda576ac3097b73e49f51bfca5584d331bce",
+      "keys": [
+        "DexText_PQR"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f5823df1e37dad57b73cdc5a1bd5b7f2edfe99025c2740bcb4020391bd17f35f",
+      "keys": [
+        "DexText_STU"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a590237bf67be347f8fdf1dba792520f278c1dc557a39ee14faaf794f56fcd11",
+      "keys": [
+        "DexText_VWX"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "64f2340816c562c274d6b4b8f1eb9e0beb329111bec10a60ac2de1272a121b54",
+      "keys": [
+        "DexText_YZ"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3305d6bdf9cfc80ae08ca24119b43a5fe5fc8e6a50ae6a0664f0d62521681133",
+      "keys": [
+        "FallarborTown_Mart_Text_Skitty",
+        "g3:081770d3"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "47f4190d25a01732ddc1ad06cd3d49ad3e9d503d7dbe4e4d136c10eca6a647c2",
+      "keys": [
+        "FortreeCity_House1_Text_Zigzagoon",
+        "g3:08185888"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e6b742f64c93ed34efd559dc2b2820530c528814f18ca29c4c1abcb8a13f432c",
+      "keys": [
+        "FortreeCity_House4_Text_Wingull",
+        "MossdeepCity_House2_Text_Wingull",
+        "g3:0818695c",
+        "g3:0818d61e"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7d58a6f6491a7b7df3682ba9a611ba2cba823e960b33fa06b259b8c5de9be7a8",
+      "keys": [
+        "FortreeCity_House5_Text_Zigzagoon",
+        "g3:08186a4f"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b62dc512127e1d52a5502bd6622a7c04694a304a9a7d4728c3360a26eb8783d0",
+      "keys": [
+        "LavaridgeTown_House_Text_Zigzagoon",
+        "g3:08176d94"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "997ab58207f92eaae6332e69e4f06d7e944161b9aebf53858608abe5aeecd562",
+      "keys": [
+        "LilycoveCity_DepartmentStore_1F_Text_Azumarill",
+        "g3:0818c0c3"
+      ],
+      "characters": 21,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e513316e6e61056eaa021414bfe3a5cd02b96a1375c1efce2fe370ef92c9bff9",
+      "keys": [
+        "LilycoveCity_House1_Text_Kecleon",
+        "g3:0818b82b"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "221eb571dd9a0cdcdea62c1bbefa375ee454da3d0f1461aac9807f480705965d",
+      "keys": [
+        "MossdeepCity_House4_Text_Delcatty",
+        "g3:0818e1e1"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0422563935ed8ee7830ce946082fdaaab1960764ebd93db28cf0ca6f8775775b",
+      "keys": [
+        "MtChimney_Text_1B3503",
+        "MtChimney_Text_1B41B0",
+        "g3:081b41b0"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2cd544481a6f39d137a5c88a3385c71242ddac49dce2d19847dca3f29bc2c7d1",
+      "keys": [
+        "MtChimney_Text_1B37B4",
+        "MtChimney_Text_1B3EBA",
+        "g3:081b3eba"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "019ea38b85e8e40f00961ff919c3f293dc20c9c525e6ce49e81f58a50b04e6c0",
+      "keys": [
+        "OtherText_Acro"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9847ccd7801af21eeaa57302840ea766d6fab76e9cc39f1b9ab9eabf893f9aaa",
+      "keys": [
+        "OtherText_Dewford"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c4d21b46e6a48ec4977bee36f79c7e039ad8bfe0c9e38ef2d04a0f9b438500a3",
+      "keys": [
+        "OtherText_Info",
+        "OtherText_Info3",
+        "sPageHeaderTexts[6]"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "52d54763fec09c483303aac81bbc75f1acc2895d42462b417365ac8efc61d8d4",
+      "keys": [
+        "OtherText_Item"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a68f8f28ef8a0579aed1a6dd31fc4e216049ae77def9ab6233299d51dd3d63f3",
+      "keys": [
+        "OtherText_Lilycove"
+      ],
+      "characters": 8,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "1a56307e1da4638fc424dd484e8b1816d8f7e39b8b6c6fcf406c4fdc0beb1324",
+      "keys": [
+        "OtherText_Littleroot"
+      ],
+      "characters": 10,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "ada962d45e5d10b93794683200ed239c1b196f7c373289b461dd0f378d0694d1",
+      "keys": [
+        "OtherText_Lotad"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "98c10d5f95d32dd8c29429f72d4eb753d0821c396bc49b5f5cff4b99692284c3",
+      "keys": [
+        "OtherText_Mudkip"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f94c13e3610d7726cf55113b994bec947fb871179efe36e97b7b3adf03bc8095",
+      "keys": [
+        "OtherText_Nincada",
+        "OtherText_Nincada2",
+        "OtherText_Nincada3"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bdf6cd3f25851dd049a48572b3d5a887eb954d614a905a610929eb8cc1c01cb1",
+      "keys": [
+        "OtherText_Normal",
+        "gStdStrings[5]",
+        "gTypeNames",
+        "stdstring:5"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8a5f4d6d819d59571f86f6f05a3a81ffffeed4fbeaff9d6d327a77fb4cc3abd1",
+      "keys": [
+        "OtherText_PP"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bb629adcc9adb1f6d93a4580c1e94e9315729965dc4e413afb41df10c593cea4",
+      "keys": [
+        "OtherText_Paralysis"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d638da32da74d1449c77cf7f9ac2acfe56257233967508ec3431504dc0b08f28",
+      "keys": [
+        "OtherText_Petalburg"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "051474a07a299373fac05655f0990899db122bf6c952cf122402f88bf304f963",
+      "keys": [
+        "OtherText_Poochyena"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "cc6bc8cff720cbffc90f958840b2da2d8945a461e297ed83d4ffb2695957da8c",
+      "keys": [
+        "OtherText_Roselia"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "effcf66fee7a2cbb08251d983de4e794b8a8ac30d175e3f353bc5cee8c8d9bb4",
+      "keys": [
+        "OtherText_Seedot"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7d3a85ef56196334c7c5860f584de725d3232b7d337375cf3e82126f23e9c999",
+      "keys": [
+        "OtherText_Shroomish",
+        "OtherText_Shroomish2",
+        "OtherText_Shroomish3"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a15353fbfecb1725f35efc8962c5f2fd653e36bbd799e6b6739bad0407f8c1db",
+      "keys": [
+        "OtherText_Slateport"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "1024d35440f21ee80508ad3b5775604bfbcbe5b93185b6fb6956876a2d92a02a",
+      "keys": [
+        "OtherText_Spinda"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "396c3ec49ba0c13a4b15eaf414ca6bd2519a835acb8ede8f431a9fda2e593eeb",
+      "keys": [
+        "OtherText_Super",
+        "gStdStrings[6]",
+        "stdstring:6"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2e10aae9b79ac293a2d38ff5acd2a309e5097455d40dbb082ccbd138d4ca0219",
+      "keys": [
+        "OtherText_Surskit"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d975d58a2f947fa42fd5112fbcd2d3e7ebed1b8e30bea3d3b28b7237bfbdcf01",
+      "keys": [
+        "OtherText_TMsHMs",
+        "gStdStrings[17]",
+        "stdstring:17"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8fae6471b3c454fad7419d78f9b8a63f5fc87ab9d29097982d001cefe1536caf",
+      "keys": [
+        "OtherText_Torchic"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "4293c075ba74eb58ad0eed495b0291dce426d52bb282b0684fbd469080bff19c",
+      "keys": [
+        "OtherText_Treecko"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7c74d16ec7a61e8b48b8c068c9063c53500488e2797d6bcbe11d943f4050b76e",
+      "keys": [
+        "OtherText_Wurmple"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "605f919641dabecb4afba4f520845c71df03d0a63694afb9a498bc37c09c9c2e",
+      "keys": [
+        "OtherText_Zigzagoon",
+        "OtherText_Zigzagoon2"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d1740310ef487dd1f0c50f3ca358a980f89770f4f1ca6776ba90c426537de5c1",
+      "keys": [
+        "PacifidlogTown_House2_Text_Rurii",
+        "g3:0817938b"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5e9dc65e4876f3a511a91106456bdb105178aeb646b35406913f5d0d1e116a03",
+      "keys": [
+        "PacifidlogTown_House2_Text_Rururi",
+        "g3:081793cc"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0109a2fec5e658933bff5d56f863a53b75404fb619c4e89d9c6bf564226b48e6",
+      "keys": [
+        "PlayersHouse_1F_Text_Machoke1",
+        "g3:0817281d"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "ebe68c6078075dd30ebb5fe1efe6ae7e3a6aedbf46b57e70375799d6ba1d0ecb",
+      "keys": [
+        "PlayersHouse_1F_Text_Machoke2",
+        "g3:08172831"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f6ba0f706dc1a8adccbb7f8677628e4a06f7a56c70bcdb662973075236ac4cf5",
+      "keys": [
+        "Route104_MrBrineysHouse_Text_191FB9",
+        "g3:08191fb9"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e96ef7a5f63f7aa2a7090e9de0bb7a89fcc22501de5600f710322de2108d6857",
+      "keys": [
+        "Route105_Text_1B8C99",
+        "g3:081b8c99"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3fb0b1b5f5bf6bf591184f4c30411a0a44ab3983ca2c048275e3574f633f6581",
+      "keys": [
+        "Route109_Text_16E5CA",
+        "g3:0816e5ca"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f1dcd4d409a7119c2506242294e97698a39d7c737e6c9a661bca977560014ce4",
+      "keys": [
+        "Route109_Text_1B9BAE",
+        "g3:081b9bae"
+      ],
+      "characters": 36,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a0ddbe820d419d84e858ef024f51a7acec8cbf244bbec23fd668d0c627d1352f",
+      "keys": [
+        "Route112_Text_1BB8B6",
+        "g3:081bb8b6"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0a7d3c9bfa0cf1b0fa2e826d10bbb1ff32785a09bc5cf6218d64413c55181a5b",
+      "keys": [
+        "Route114_Text_1701F9",
+        "g3:081701f9"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a82d475b1f436eb7087ba4b412acbbb83ef16184bf4f5085455554149d3f49a5",
+      "keys": [
+        "Route118_Text_1BE406",
+        "Route118_Text_1BE4CC",
+        "g3:081be406",
+        "g3:081be4cc"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "545f3730cc5576781692c1f9bc506349deae392c088dad0e5d8a1938b11ea3c2",
+      "keys": [
+        "Route119_House_Text_19F406",
+        "g3:0819f406"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "79674c577cf1d387742bc2eb12ef9fbf8d4a7956129ffbd68974802edec6071b",
+      "keys": [
+        "Route123_BerryMastersHouse_Text_1C5EC0",
+        "g3:081c5ec0"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3de0bf5bdac1ef6d54fd5e8b5e097ce5e5b5e13bf7718717d8a37a055231e8c1",
+      "keys": [
+        "Route127_Text_1C17DD",
+        "g3:081c17dd"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e169d450e463a0134b0aaccf0fa9cd1a9aa282d60a1bc7feabd50ae694b32c53",
+      "keys": [
+        "Route131_Text_1C271F",
+        "g3:081c271f"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "84eab0ecbffc820c425927a60e5f2e0959d995c16852c535b8383cdba67c2975",
+      "keys": [
+        "Route134_Text_1C3110",
+        "g3:081c3110"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7ee2b0426817f7074ac1d440ccbb6570c09a1ba21845683ea82931e9cf273407",
+      "keys": [
+        "Route134_Text_1C3198",
+        "g3:081c3198"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c2294b594bdd26cf1a63f2e407699e233a03aca8a7dbe2605f486332996d9838",
+      "keys": [
+        "RustboroCity_Flat2_1F_Text_Skitty",
+        "g3:08185410"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9ec486b0f0393d05b51bb4c22319207b674bf1bb758dd34291661d39c93a61ff",
+      "keys": [
+        "RustboroCity_House3_Text_Pekachu",
+        "g3:0818567d"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "31da222cfbf610362a46156b51170bb670dcaebd0181166f70763b3169b3b7c7",
+      "keys": [
+        "RusturfTunnel_Text_194188",
+        "g3:08194188"
+      ],
+      "characters": 18,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "ac1f58f09e890611f56097219642281d7cbf47a215a9d15ef31a3fa1d2f867c5",
+      "keys": [
+        "SecretBaseText_Cushion",
+        "gUnknown_083EC5E4[7]"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b54c955c07ae05d9a4f4d5045139a66475affee2916868ef2fbc78c5a4780fe6",
+      "keys": [
+        "SecretBaseText_Dennis",
+        "gUnknown_083F62D8[2]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "288a52d7a9a6183fba495c27ca534ba5e79e6833120c5143e09b5817edd6130a",
+      "keys": [
+        "SecretBaseText_Doll",
+        "gUnknown_083EC5E4[6]"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d44a9ce5786fc3d9719c5e90666b56bdf96916169a722ddb52363f70d527813f",
+      "keys": [
+        "SecretBaseText_Mat",
+        "gUnknown_083EC5E4[4]"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d00891579c5f6ffc85508fd9b393139f9ecac257116164914f85a465c202cc62",
+      "keys": [
+        "SecretBaseText_Ornament",
+        "gUnknown_083EC5E4[3]"
+      ],
+      "characters": 8,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c37df72334b7665344b9193d0f7d4038c4af993d1897a594caf79c32692ea80d",
+      "keys": [
+        "SecretBaseText_Philip",
+        "gUnknown_083F62D8[1]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "1d9d5812882ea762a3cdd815ac54ca10a677ff41d8dd036f6852dac6c786fc86",
+      "keys": [
+        "SecretBaseText_Plant",
+        "gUnknown_083EC5E4[2]"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "615113cf57f78e81c88b5b2faca61c01b8a979cf26b5e42a35a2f77745c37717",
+      "keys": [
+        "SecretBaseText_Poster",
+        "gUnknown_083EC5E4[5]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "37d593208545f82a41ff62ae98c9c79586606f51aa6e28d25473b6bea92b7036",
+      "keys": [
+        "SecretBaseText_Roberto",
+        "gUnknown_083F62D8[3]"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e663b6f6ff3c9a7c6231b330561873e3466ea8ef4b835283e86201a1f8abeccd",
+      "keys": [
+        "SecretBaseText_Tristan",
+        "gUnknown_083F62D8[0]"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d3dd884e5065725a1562005baa8d1e9249386216d95416cee0a8b5942789074f",
+      "keys": [
+        "SlateportCity_PokemonFanClub_Text_Azumarill",
+        "g3:0817e178"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "44efedc4cabb7f0d955997ebfc93363b95375ff370a18a16681617b81be49efe",
+      "keys": [
+        "SlateportCity_PokemonFanClub_Text_Skitty",
+        "g3:0817e14e"
+      ],
+      "characters": 21,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "fcdec07b1aad2c224183e2a207b78949e01cadcf9338560bfe0e2dbda04e7122",
+      "keys": [
+        "SlateportCity_PokemonFanClub_Text_Zigzagoon",
+        "g3:0817e164"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2e5d92fd341a37d408562ea3b10afd6f3187386fc48288a3707dea4af29d63de",
+      "keys": [
+        "SootopolisCity_House4_Text_Azumarill",
+        "g3:0818fdd8"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a7c59b203363253d667b77b82a9100669c136f7b3f9aa972ef715f63e8d481bd",
+      "keys": [
+        "Text_ABA"
+      ],
+      "characters": 28,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "40a41ef9004f51c99af2cca4167fa9ab6e46542ee6e9ffdc07e88c67b3d98383",
+      "keys": [
+        "Text_Aoki"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "104f91a708c271968d01d3415b2b32b3e000b182d5b43e790c28d67ca289bc54",
+      "keys": [
+        "Text_Barlow"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "41d03c0f5fa84bbfea664d9330910acad0d5a231b328445509c72b5a4db05007",
+      "keys": [
+        "Text_ChieMatsumiya"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "1c3abf35669aaf5f79863c4168fc3a65f6dd08ff3ae04966a59a351b80505d2d",
+      "keys": [
+        "Text_EBU"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "1337ea59a0a0d6d10013e47e06e7353ac1e8efd8bf1c35d5bcd8e65b8663f8cb",
+      "keys": [
+        "Text_Enomoto"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a9de84a97cc93c6971ebff66bca865a1b96e8ecfee2e81ac0749e874d9677e2b",
+      "keys": [
+        "Text_Eo"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a4b949b3397b186cfe023fedf687e86d56ee1103ad5268ede3c1c9f8113cbd76",
+      "keys": [
+        "Text_Ford"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8b8d6e2184318f08cf25f172f099416697368199babe1d72574b95c00ac97534",
+      "keys": [
+        "Text_Fujihara"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bc2b9c364d12611233cebc44141b90c2788181e87388430bd8f43c1ae992d2c9",
+      "keys": [
+        "Text_Fujii"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bdf0d88a4ccfb3704ce9c122b6cebb350956ce3fbc7e5115ce1e8cfddf4e585b",
+      "keys": [
+        "Text_Fujiwara"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "4a8f6b474830a707bc1cd51eb5df2d6bf33f92c7c2c4b21d97270d2be994deee",
+      "keys": [
+        "Text_Funakoshi"
+      ],
+      "characters": 18,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "971c638f3877ea2606ae1a705ce5335ff8facd484f00647775a3585c03aa5efd",
+      "keys": [
+        "Text_Hamano"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "46d21c7de3191fee6d8e6213e83155b4972ef15682e21c01b4e9afeab8b497f7",
+      "keys": [
+        "Text_Hara"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a74f26f40a088068bd482b5a154da32da596906e931b4adbd00a180d460f470c",
+      "keys": [
+        "Text_Hertzog"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7887ed4319d823f322e9671b83f85fdd7633bccaf5c28cdba96b3c171d355cd2",
+      "keys": [
+        "Text_HiroNakamura"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "25fcf8ea7e70d9facb2a64ef6b4721d3c6c3d16cc5ec416bddd6adfaee449465",
+      "keys": [
+        "Text_HiroyukiNakamura"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "dcb3eb21b8bc95f220b460a2b41902c88897b3f4dcbd4343a362c8d1bcb388fa",
+      "keys": [
+        "Text_Ichinose"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "64d60b93e57d78fcded8bc1968b7d34b4d8787c2aa5139b84e1acb963da74e36",
+      "keys": [
+        "Text_Ishihara"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b743fc9bfb8c12ccba453c69f77ddee9260c65dd7cf7d42f1f35b2e235283ba6",
+      "keys": [
+        "Text_Iwasawa"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e3a0c63f479a3d87a26f9dbbdd2a4df4c87c33c5152e09eede44e2e6f3ba3e35",
+      "keys": [
+        "Text_Iwashita"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9bce7fa7960fca4605f42dad76edddac4221c9456b9693eefeda67f67d15f9d1",
+      "keys": [
+        "Text_Iwata"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3b1de228033453c383ea6d8885ae3c7aedc06492002a88dae9e88d2889937ac3",
+      "keys": [
+        "Text_Izushi"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2de01a91898b86f8fe7741054c04d43ee405d7dc253b3d0537fa424411fcfc6d",
+      "keys": [
+        "Text_JapanBrailleLibrary"
+      ],
+      "characters": 21,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a4e165b26805afb828988eec94ba8b163ca8f42148b2830bc7253f83255bc311",
+      "keys": [
+        "Text_Jinnai"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "da687df76356ee90d25261d197a63b9f7531e9ac00eda9b15321f887b110e125",
+      "keys": [
+        "Text_Kagaya"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "78e03e7a4b0c6637dd17dc704cad994dc5d82ed36c0d8fc3532160e920b8d9ed",
+      "keys": [
+        "Text_Kawachimaru"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8045ef84af7579a83a39bd073d233fdcbd3241c634dcfbe154f9a17bc7ffa251",
+      "keys": [
+        "Text_Kinashi"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "feb10f78a0eb7687dcebaf346ae6a491251e0a36ba5bd17ad6514e7c41bdb6c3",
+      "keys": [
+        "Text_Komura"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e3b4bd9dc7ae872c115a034d77a04f77062f20dc9bd5fc63d93a9d7fcfe61122",
+      "keys": [
+        "Text_Kondo"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "31e584888b0eaa84165fb73c8e94a02ca1f9dea4389cf01f3ebd702793193ea6",
+      "keys": [
+        "Text_KyokoWatanabe"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8b0256685758a24b4ff26ee31cc8687196b4b4024c35f13f4f57233065b94a42",
+      "keys": [
+        "Text_Mashima"
+      ],
+      "characters": 10,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5cbd28865342b77e9d4122aea2747c07b354f5ed1f010a15b7ceb22f5f715c67",
+      "keys": [
+        "Text_Masuda"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8d4fdd916debfd8ecb024382f8fa432dffdc416cce628657e834e0c992fcc2cb",
+      "keys": [
+        "Text_Matsuda"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5264b90451f79cb9c46af16fed97f35ae8db54518fd00dac3617e996d3965dc9",
+      "keys": [
+        "Text_Matsushima"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8b101d78532b47e7086b0de3c2cf8d72a4771590caccd67dbd9e9d9277d43116",
+      "keys": [
+        "Text_Maurer"
+      ],
+      "characters": 18,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e5e51708bbc894719aefa58204431a0a0cb0207f7c7c4db4f863a6b4e6be4200",
+      "keys": [
+        "Text_McMahill"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5d328340f5c4e332f992ea1608d99d7fa0ceaf973422d82e0664287db20bd658",
+      "keys": [
+        "Text_Mitsuhara"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "23bb36eeb37c40153ee08dde50c8c37d575b3235a04850db4839f50bb4cc267c",
+      "keys": [
+        "Text_Mori"
+      ],
+      "characters": 10,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bebbb9067caf5a42ad0cff8e7f50e01f1aa86d348011c06eb4d2fc01621c3caf",
+      "keys": [
+        "Text_Morimoto"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b85da82e6b914f8f94657870a3bbe742c2bdbe73cb9f894dc8d4d40f9d376528",
+      "keys": [
+        "Text_Murakawa"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f2a8847905ffbec24bdd24781bd067ae91c9019d756d83f84cfd8a15c269fe4f",
+      "keys": [
+        "Text_NFotB"
+      ],
+      "characters": 32,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a959a9bb530fa2cbc23af3b21738303b4c37ae87f7472a315e75e000a556aaab",
+      "keys": [
+        "Text_Nakamichi"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7ce03301512f74e1d64298c4829aaa21bc03f50204a337546aaa272a9d2a67b0",
+      "keys": [
+        "Text_Nakano"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2207246766935718b80a1444fb6d064639bd7216c1a4250081bc8cfc9f835c8d",
+      "keys": [
+        "Text_Nishida"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "36972e90b7571f6a5db0569ecabb09d84584bac8b4529cd545df43feba38fc9d",
+      "keys": [
+        "Text_Nishino"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f4380e9998784f44f9f51f1d81833807f1e330f1bcab8d186f74d6c21ba293d4",
+      "keys": [
+        "Text_Nohara"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b72e1d6f1d324fa324811dcf0e462f29a261e426f8a90d8187ffe8089a15f41c",
+      "keys": [
+        "Text_Nomoto"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "179ecb61c635a42e9f84727358e29b42d17e69a37538be135d16df728baf744b",
+      "keys": [
+        "Text_Ohashi"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8c7dbde2dfa5ef131bd11593a82aa1e856b4ecddf397f8966cd76e638b6b5886",
+      "keys": [
+        "Text_Ohmori"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f20769a697760abdc9ca464113c59a4c91917fe93d47769f760239ba34d9dc59",
+      "keys": [
+        "Text_Ohnishi"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bce3e11a3d380ed65ffc62f28edffd5ecb82dab5f4e9440baf153e1301e5ba7b",
+      "keys": [
+        "Text_Okada"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3bf4bb25c316da9931d50169df4b4edafe3d9e85651f661fb17935071bee8318",
+      "keys": [
+        "Text_Okamura"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b1a3ed82e72244ca2f5cc0c78a857c576e91121a54f3468c237065bd90460bb4",
+      "keys": [
+        "Text_Okutani"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "82a46d01534e6b553451d9e78b1bfe9c8bd91acc27384ed7faa34cc507ca4202",
+      "keys": [
+        "Text_Ridgeway"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a07380db075fef2bff2ca2a2d58487aee037830f661995b2388e4d4959fb9b3e",
+      "keys": [
+        "Text_Sagawa"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "caf369b60d54c35cb80a91aa4ee8a0f682096e91bf59e96ccf51074a153f6999",
+      "keys": [
+        "Text_Saito"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5facbd6f3097d2b5195986e4872ca9855ce32ca6358f4978eec3534109f1fc1b",
+      "keys": [
+        "Text_Sakurai"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "334a118ef1987c7f4ef4179e876e21adc8afeb6dda074c89c34274808e59d7de",
+      "keys": [
+        "Text_Sasaki"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e9cdd80eb8958502a0d2800056fcdf6fb891bceab659909b2d6425896f9b5307",
+      "keys": [
+        "Text_Sato"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "13b29560510393edacff44d9cb84e439afccb4557f32da6a7e95e19ffa8b0bc4",
+      "keys": [
+        "Text_SatoshiOhta"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a4d10da32ff9be8beca8441f7fe93564a46508f28dd98a4100473a3806e3988a",
+      "keys": [
+        "Text_SatoshiTajiri"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e0c54629b9a16044172a58b065e9f4d9a179457de5b32c48b3fcfb323be067cf",
+      "keys": [
+        "Text_Shimoyamada"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "fef07d8757fe5e8b52927f5439d94ef909cb87578d8e24b3ad5c6751dc3841f9",
+      "keys": [
+        "Text_Shinozaki"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "338efaeb98e557c291ae9862e25e2d23cfeb28f52d07e90af6387819da2619f3",
+      "keys": [
+        "Text_Sogabe"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "78230c6e9cc73ec1faa21d1e9b61a34d5be2bd11e5d9140f82ef2e0981dd1f9b",
+      "keys": [
+        "Text_Sugimori"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9a0b3de4388eac0d4b29f78151916f9533f469aaf59b5b717b1dd1417d8a5d92",
+      "keys": [
+        "Text_SuperMarioClub"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "bf762e4d2c47164770c5b534ce2fd859e05054456491483100801c106e9cae43",
+      "keys": [
+        "Text_Suyama"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "494be77b915bb90c9e935f5d12f0579c1680aebda250769e04d7b3dcdcb9ae11",
+      "keys": [
+        "Text_Tada"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "4ed7bbd68e76ea300dd67db8dced3197cbc0537ebb4ae14e4ab3b0709b8b88d9",
+      "keys": [
+        "Text_Takada"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "74a474f3f1626d0fe0c59ec6fe0b1cb129863504073dfb446870922765c9592d",
+      "keys": [
+        "Text_Takahashi"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "df254613f89e58601310171eb3668d25deb25e32821d47a9a973a33c743004d5",
+      "keys": [
+        "Text_TakenoriOhta"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "fab02c25252ded3b1e8f84934471713b7905f6b14975595fadb20c3b4d851aee",
+      "keys": [
+        "Text_Takizawa"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2d9e73a77913a448b0e3f8a4c31f7499efbadb565816b025d2b88fd286e919c7",
+      "keys": [
+        "Text_Taya"
+      ],
+      "characters": 10,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "af765cd165b7424aed51326551803a0d940395a0ff6071f97fc2c4cfc15ec183",
+      "keys": [
+        "Text_Terada"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "33c7ac1f40d85df4bd04b5b2ba160074f4afbbfcbb8b8bcfd5da8fd0184eb897",
+      "keys": [
+        "Text_TetsujiOhta"
+      ],
+      "characters": 12,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "cd22d7682bf981dcfe66eadb863fc66973fcc02915d0d8e18cb8a6ceb905ad69",
+      "keys": [
+        "Text_TetsuyaWatanabe"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "483cf1893e3336b578e1b27da6e6083dbcfcd00a4d8bf44d56847b028006db43",
+      "keys": [
+        "Text_Tilden"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0f2f3b9443947335e78e936fa1869a31fd03bdcf13c4f4c21df66df674ac961b",
+      "keys": [
+        "Text_Tominaga"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b24d2f8649883b36e2771191724ae51c2023ae52dc1a72d832fe0114e27bd080",
+      "keys": [
+        "Text_Tomisawa"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "98ea7a6294118b48ba5b9299b51f2621ef5a15cf829ebd6e5b37975da5c82236",
+      "keys": [
+        "Text_Tomita"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "531325537c9fb6603309882d7173624d540269d7ac221bfabad5cb7427e0f304",
+      "keys": [
+        "Text_TomomichiOhta"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "fb23cf19761a0155994e8e46ddd4f1e38d6fd93d48c6574a1f29b2f44f0e01fc",
+      "keys": [
+        "Text_ToshinobuMatsumiya"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "cda505b823112e6be6ef285d899ba4a20d5b1d054978d12a975c4c1361d9c6ca",
+      "keys": [
+        "Text_Tsuru"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5c337e573e7b084aacb9dbd42a1b0531f62ff1608de59dde5b40283d4649ab9c",
+      "keys": [
+        "Text_Uesugi"
+      ],
+      "characters": 15,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d55f444a620d4ab5e53cb813fa2997db88cd977e976f863d115165be23bf4a4e",
+      "keys": [
+        "Text_Unno"
+      ],
+      "characters": 10,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2d4dc66b727224f77401c40849202d40b2bf9faffb13d8183842ec8d792a36cb",
+      "keys": [
+        "Text_Uyama"
+      ],
+      "characters": 10,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c945c20506e38c596928e94e6981986a443101ca894aa22d127b8e6b15a0dbcb",
+      "keys": [
+        "Text_Yamagami"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e911eead59bad6066f5a81b48ff2da60b094f59e867d4d717a91cb9c3134e4d4",
+      "keys": [
+        "Text_Yamamoto"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "19d28079226491c0b27d51e2a7d17bba67aad99fdfc4fc8659a97457a61755ba",
+      "keys": [
+        "Text_Yoshida"
+      ],
+      "characters": 16,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0caa2d4b6e3a8656fd36d5bb5eee7b866a9f7330e31a579b0f4cb3de8f8350e9",
+      "keys": [
+        "Text_Yoshikawa"
+      ],
+      "characters": 14,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "772e39c585ff55ee8cad7d1e1b54d01bb0d8b90db1d93f03a189a0aa20bc83e5",
+      "keys": [
+        "Text_YoshioTajiri"
+      ],
+      "characters": 13,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f2c5bf3da61ba095ce7b8eb3c5fc924fd019069e9cf6decff3d250076c98cf17",
+      "keys": [
+        "TradeText_Cancel",
+        "gOtherText_CancelAndLv",
+        "gUnknown_0820C14C[0]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "11da0d4ec8b7387a8bd00a9743d61a86d25d8c5237c587f63fefc39d12fb6282",
+      "keys": [
+        "TrainerCardColorName_Bronze",
+        "gTrainerCardColorNames[0]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "0e41a108c0d9049a023b8adb62dd3d04628f23287d55430402e657cea90e3f29",
+      "keys": [
+        "TrainerCardColorName_Copper",
+        "gTrainerCardColorNames[1]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e5fcf87f43743ad5dcb5ab14e0c35dca10b8ec0531114ea071c0d7f457cdae71",
+      "keys": [
+        "TrainerCardColorName_Gold",
+        "gTrainerCardColorNames[3]"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c84d361bef4646c418478a79f4251c29d654c59c84582b7ea38f5f7ea1a8487e",
+      "keys": [
+        "TrainerCardColorName_Silver",
+        "gTrainerCardColorNames[2]"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "234dd360a7c32685d367099f36adba1284fe9570d356c6117160827b8c285afd",
+      "keys": [
+        "UnknownString_8172E0F"
+      ],
+      "characters": 8,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "5e2744b7d0020bff98d6ed1d682a6a58be9025667f5e6dbc11912ee8b12dab82",
+      "keys": [
+        "UnknownString_817C6A6"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a7a676607c3e8057a3116c81f97d0cb254e313a67aa70ed38099d5d89fa84b1f",
+      "keys": [
+        "UnknownString_81A0DA6"
+      ],
+      "characters": 9,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "ae52fbdc5a6bcaa425fbf9c494a89938163132c872a563c97bd5fd2ad53bd34e",
+      "keys": [
+        "UnknownString_81A0DC2"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "220961d8fbcee67b37b49c936e1bd30b2f1de4b1b572f09404d5f8f821d714f5",
+      "keys": [
+        "UnknownString_81B2C68",
+        "g3:081b2c68"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "6b21442df9e6b79685866b70b55ef8df07841b1fe611523e53f74e7e69429816",
+      "keys": [
+        "UnknownString_81C41A5",
+        "gUnknown_081C41A5"
+      ],
+      "characters": 8,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b1c3824687288804e58924ada040709226c202bfbd2adfa16bc69624d3c1f034",
+      "keys": [
+        "VerdanturfTown_FriendshipRatersHouse_Text_Pikachu",
+        "g3:08178cfd"
+      ],
+      "characters": 19,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8d14c5232314fc28c99bcb2f19441dcda5e5231e4629f7060db8a2198b53ace2",
+      "keys": [
+        "gDexText_UnknownWeight"
+      ],
+      "characters": 11,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "2904be5f81684fa8d90a7c5bdc8ab063f4471e2fd2768b354299f05b34d7e216",
+      "keys": [
+        "gEasyChatGroupName_Pokemon",
+        "gText_Pokemon"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f4c3b96259f559e68bf1e087f3877144329df9f66b313c5deb8916cd7a136752",
+      "keys": [
+        "gEasyChatGroupName_Pokemon2"
+      ],
+      "characters": 8,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "192fef53fbc39bdd743164b778299851dba239d8dfdd30b733680a782f5cc94a",
+      "keys": [
+        "gEasyChatGroupName_Status",
+        "gOtherText_Status"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "733f543b28d3c8e172755fdbea1c41216f4df7f52726dc5f6818f936f598e43f",
+      "keys": [
+        "gExpandedPlaceholder_Aqua"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7b95fb722bde60587beeead2902bcb15f85615574aabaa58b81c52fb10ca8e3d",
+      "keys": [
+        "gExpandedPlaceholder_Archie"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "743d50b4f9b07f67244fca6d3c198afdc2f0bcbd990427df947d7165f9cb5821",
+      "keys": [
+        "gExpandedPlaceholder_Brendan"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "62497ee202b1628abb47f2f6d3837f30769960b0240811e1fc82bd2ecbca1b4c",
+      "keys": [
+        "gExpandedPlaceholder_Groudon"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "e39b74eee3fb2ff841a6c3d035585eab448d7b2d82865c287707314a782c9087",
+      "keys": [
+        "gExpandedPlaceholder_Kyogre"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "89a1757eb6fed33dfa0ea7b6975644ef5dd23b2c08f002835a5815e9af4b74d5",
+      "keys": [
+        "gExpandedPlaceholder_Magma"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "34f7203387321c6f1afd1a89dd486078c79fd7d218e44e5612348f1e9904d1c9",
+      "keys": [
+        "gExpandedPlaceholder_Maxie"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3a6143f5548ae445f0b25dd9b3fb1d6f9261a6e11bd825677f449066be49e28d",
+      "keys": [
+        "gExpandedPlaceholder_May"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "6d62cfab7c76aad948f5c42261d3408124f6ce0136258ab6634e469b71b48a9f",
+      "keys": [
+        "gGiftRibbonDescriptionPart1_PokemonCenterNY",
+        "gGiftRibbonDescriptions[53][0]"
+      ],
+      "characters": 17,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f875d94ed34384d503b21b008823f5f998e7706920ee36c2ae5fcfbbe93c2437",
+      "keys": [
+        "gGiftRibbonDescriptionPart1_PokemonCenterNagoya",
+        "gGiftRibbonDescriptions[52][0]"
+      ],
+      "characters": 21,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b3535a01c9390f2e30dc62f4d3ca84a639c29a7837f94206eec4828fe18a09bc",
+      "keys": [
+        "gGiftRibbonDescriptionPart1_PokemonCenterOsaka",
+        "gGiftRibbonDescriptions[51][0]"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8fcd1229922a5b5c8153bdf7f4e3dab8fd8efe5dc602aa36f347a913bab52b28",
+      "keys": [
+        "gGiftRibbonDescriptionPart1_PokemonCenterTokyo",
+        "gGiftRibbonDescriptions[50][0]"
+      ],
+      "characters": 20,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8e1b6bcf8e6e720254d758f0783546371468e2f95b201cd5cfbb62a2f570941b",
+      "keys": [
+        "gOtherText_Brawly"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f89f97ad40f6dbedf6965f1a92b6b59f55625f5f6ab300dc3c20e21439db03cf",
+      "keys": [
+        "gOtherText_ForgotMove123"
+      ],
+      "characters": 22,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "a6f93ac1e1889cd522fe6d87d56b737fdd23ae0b5ff6fe67370bca95ef8d84d1",
+      "keys": [
+        "gOtherText_Glacia"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9c3cea209a3497583ef7f12bd763719f1fd67229f028ffeea15805a8e640795d",
+      "keys": [
+        "gOtherText_Hoenn",
+        "gOtherText_HoennDex"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "3b35c35881ab4c12bfc50535eafdd268a8ded8864bb8452b74b4d66c3a15a319",
+      "keys": [
+        "gOtherText_IDNumber",
+        "gOtherText_IDNumber2"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "cac4fba1cf6755257baf3924473eba574c93847e66ec647042d29fd30399ea5f",
+      "keys": [
+        "gOtherText_Marco"
+      ],
+      "characters": 5,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "874e4249784df3455a72c4dd7154d58a6ba58c8d8b2f7a11084e3a77f52786e7",
+      "keys": [
+        "gOtherText_Min"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8fc01e6fa462b0273ccbbd61dc97760da38804eebb6367ce41bfa8a25af8af56",
+      "keys": [
+        "gOtherText_Number",
+        "gOtherText_Number2"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "6d5c3ed0e917a6035eee238870d38593fb73779ae9609e18f689a1579f58603d",
+      "keys": [
+        "gOtherText_OK"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "080fbce56695eea2be234881589361ad609b15520b9f115453f739a8625db7e8",
+      "keys": [
+        "gOtherText_Phoebe"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "94e8f0e01949dd1dcbee675cc286ce1b7268404d92b4fcdaf918bdca2ff16f09",
+      "keys": [
+        "gOtherText_Pokedex"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "54f43c3547de46a092aa59b1e04047b34568bfeb4933b5d6ca550b2b6e74f7a2",
+      "keys": [
+        "gOtherText_RPM"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "7a5b46e3572b3b4fb2c1a45ee4ed65e090be55d68ed66e3b01cede5aa413b2e8",
+      "keys": [
+        "gOtherText_Ranking"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "f070f47fbfed1e0c7396c45c4933d86a2f82a1bcd3aa7cf5781bdc2c6bffa0e2",
+      "keys": [
+        "gOtherText_Steven"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "b87b1ab9fbe8bd27b0dce9e07acaf0dbf14b7ce811dde684c2aff9cc613ed44f",
+      "keys": [
+        "gOtherText_Wallace"
+      ],
+      "characters": 7,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "ac638de73528935ec0629bc6f7751bd3d5b599f0a4753d4323cd99169ffa4c52",
+      "keys": [
+        "gOtherText_Winona"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "649363d997a021ce3c01e00dcc9ab1132fc5dc4fc8d721855b9af1ae3b66c0e6",
+      "keys": [
+        "gStatusConditionString_ParalysisJpn"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "8ac9edac3185c49fce043c32f294f3aec3f91d31c90cef121c17fc3751db8596",
+      "keys": [
+        "gSystemText_LA"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d373c88036039c4cb23721e10b36134e2de2bbac25f0975ffd146053da9b916f",
+      "keys": [
+        "gSystemText_LR"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "97d64521031b862476b113cb51f9936ab8e46e476fb92c3638c121e62805d8c9",
+      "keys": [
+        "gSystemText_Mono"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "9cc337e377d03762a96042f733de111bcb03c2870adf8fcaf61f781a343dfe00",
+      "keys": [
+        "gSystemText_Normal"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "d18beba17e03afdf4dfa06efed3c6cdf3941f3222cf1d63e3898bc2185a64d36",
+      "keys": [
+        "gSystemText_Stereo"
+      ],
+      "characters": 6,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "eededc3f78fec70569c92a169d1140137988e027cb6cbe65254a07bb51be1fe9",
+      "keys": [
+        "gUnknown_08216284[0]",
+        "sUnknownText_2Pok"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c435f0a46c5fad3f9a540659b5de1e63f8c47035aaae810ff408c71931ac9116",
+      "keys": [
+        "gUnknown_08216284[1]",
+        "sUnknownText_3Pok"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "c68c583262285171ea12e2eda5dec101c13acb6356d128484d88e4ee113afb6f",
+      "keys": [
+        "gUnknown_08216284[2]",
+        "sUnknownText_4Pok"
+      ],
+      "characters": 4,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "eaa5cca348d52d4caeea216629929790e007ddfbbf157efab63042121e5f6b38",
+      "keys": [
+        "gUnknown_0839B24A"
+      ],
+      "characters": 2,
+      "review": "unreviewed-unchanged-candidate"
+    },
+    {
+      "source_sha256": "560a3347381954fbd2fb144320bed3beb2c1ba775bdb986191c1edebb0648727",
+      "keys": [
+        "sText_BPM"
+      ],
+      "characters": 3,
+      "review": "unreviewed-unchanged-candidate"
+    }
+  ],
+  "inputs_sha256": {
+    "base": "f55a111562798b0d5f0e8de6e90107bd51041f75bfeddff799ef5d92f1e5ed76",
+    "decoded": "0a0a604538211ebe451391de07598639201331ca2d37d5c51c02e3bcc2934785",
+    "translations": "1d387cbf47a0cbe6796b358a68b6438a7d7f6eab6db60ee8f14d2967e5a5e288",
+    "reference_base": "026f8f2d2349ece8131a62b3698a96a49f5102b99c20ce865adeaf9dd907f022",
+    "corrections": "ec5d7bf1f566e251f13cbc1d6ab4c9ca8e9fbb807c362278bad38545b10a540d",
+    "edition_translations": "cfeaa63fdfeaa5a531965b19589515e5ac5c3d98167ea02f4c19bbb3ebd61842"
+  }
+}

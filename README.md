@@ -40,8 +40,24 @@ Authored healing dialogue is now tested through actual field interaction,
 including HP recovery and return of control. It is pinned to original text IR
 hashes and applied to both symbol and address aliases.
 
+The current supplement adds **937 authored Emerald translations** and **218
+additional Ruby translations**, with exact-source reuse in Sapphire. Including
+aliases and earlier corrections, the authored profiles contain 1,544 Emerald,
+733 Ruby and 1,142 Sapphire keys. These counts do not establish completeness.
+The broader review queue includes short strings and non-ASCII dialogue that the
+previous English-remainder filter missed. Unchanged names are candidates for
+review, not automatically translation defects.
+
+Real-dialogue checks now cover the weather-closed department-store rooftop,
+the abandoned ship's captain office, and the lottery clerk's pending prize.
+The English/PT-BR pairs use identical story preconditions and actual NPC
+interaction. The lottery check also verifies the player name and item delivery.
+An Ingrain battle checks the actual rooted state, message, victory and field
+return. Screenshots and observed pages are in the QA document and
+[PT-BR-QA.json](docs/PT-BR-QA.json).
+
 Build the installable preview with `python3 tools/package.py`; it writes
-`dist/uni-language-ascendant-1.5.0-preview.2.zip`. The latest stable release
+`dist/uni-language-ascendant-1.5.0-preview.3.zip`. The latest stable release
 remains 1.4.2 below. No ROM or translation patch is included.
 
 ## Install version 1.4.2

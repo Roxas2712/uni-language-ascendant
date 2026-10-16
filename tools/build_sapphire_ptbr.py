@@ -7,6 +7,7 @@ import argparse,json,subprocess
 from pathlib import Path
 from build_profiles import lua
 from build_authored import build
+from build_plain_supplement import compile_prose, reuse_exact
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -70,6 +71,12 @@ def main(a):
     corrections=json.loads((ROOT/'translations/pt-BR/ruby-corrections.json').read_text())
     for key,target in corrections.items():
         if key in sa and sa[key]==ru[key]:targets[key]=target
+    ruby_prose=json.loads((ROOT/'translations/pt-BR/ruby-remainders.json').read_text())
+    targets=reuse_exact(sa,ru,compile_prose(ru,ruby_prose),targets)
+    if a.reference_base:
+        reference=json.loads(a.reference_base.read_text())
+        extra=json.loads((ROOT/'translations/pt-BR/emerald-remainders.json').read_text())
+        targets=reuse_exact(sa,reference,compile_prose(reference,extra),targets)
     authored=build(sa,targets,a.engine,a.luajit)
     mapped={key:profile['texts'][rkey] for key,rkey in shared.items()}
     # Unique entries have authored content, so they require no source pointer.
@@ -83,4 +90,5 @@ def main(a):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for k in ('engine','luajit','ruby-texts','sapphire-texts','source-rom'):p.add_argument('--'+k,type=Path,required=True)
+    p.add_argument('--reference-base',type=Path,help='Reuse authored Emerald dialogue only for identical source IR')
     main(p.parse_args())

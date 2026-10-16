@@ -4,6 +4,7 @@ local function read(path)local f=assert(io.open(path,'rb'));local v=f:read('*a')
 local base=require('src.link.Json').decode(read(basePath))
 local bytes=read(romPath)
 local profile=dofile(root..'/mod/profiles/emerald_ptbr.lua')
+local authored=dofile(root..'/mod/profiles/emerald_ptbr_authored.lua')
 local IR=require('src.core.game3.scripting.text_ir')
 for code,ch in pairs(assert(loadfile(root..'/mod/latin_glyphs.lua'))('pt-BR')) do IR.CHARMAP[code]=ch end
 local count,battles,braille=0,0,0
@@ -19,7 +20,7 @@ for key,source in pairs(base) do
   assert(row[3]=='braille_emerald');braille=braille+1
  else
   local before=placeholders(source)
-  local ir=IR.decode(bytes:sub(row[1]+1,row[1]+16384),{dialect='rse',battle=row[2] or next(before)~=nil})
+  local ir=authored[key] and authored[key].target or IR.decode(bytes:sub(row[1]+1,row[1]+16384),{dialect='rse',battle=row[2] or next(before)~=nil})
   assert(ir[#ir] and ir[#ir].t=='eos','Unterminated text: '..key)
   if next(before) then
    local after=placeholders(ir)
