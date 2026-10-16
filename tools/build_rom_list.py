@@ -9,7 +9,7 @@ proper={'firered':'FireRed','leafgreen':'LeafGreen'}
 for row in rows:
  row['base']['name']='Pokémon '+proper.get(row['game'],row['game'].title())+' (USA / English)'
  for source in row['sources']:
-  spec=next(x for x in m['optional_imports'] if x['id']==row['game']+'_'+source['language'])
+  spec=next(x for x in m['optional_imports'] if x['id']==source.get('import_id', row['game']+'_'+source['language']))
   source['md5']=spec['md5'];source['size']=spec['size']
   spec['description']='SHA-1 '+source['sha1']+'; Basis: '+row['base']['name']+' '+row['base']['version']+'.'
 (r/'tools/rom_requirements.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n')
@@ -32,7 +32,7 @@ body='''<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewpor
 <h2>Vorhandene Dateien</h2><p>Die bereitgestellten Gen1-/Gen2-ROMs und Blattgrün, Rubin, Smaragd stimmen mit diesen Profilen überein. Für Feuerrot Deutsch wurde ein SHA-1-identischer Referenz-Build getestet; eine eigene deutsche ROM ist weiterhin für den Import erforderlich.</p>
 <p>Die vorhandene Saphir-Datei <code>99f7ad71de5de97ca643f2c4123a77ee79af8e80</code>weicht im Bereich 0x5BFE5C bis 0x67FE5B vom geprüften Dump ab (781.268 abweichende Bytes). Sie wird nicht als regulärer Import akzeptiert. Erwartet wird die oben genannte SHA-1 7e6e034f… . Die Originaldatei wurde nicht geändert.</p>
 <p>SHA-1-Referenz für Saphir: <a href="https://github.com/TASEmulators/BizHawk/blob/master/Assets/gamedb/gamedb_gba.txt">BizHawk-Spieldatenbank</a>. Feuerrot/Saphir wurden zusätzlich gegen lokale Decompilation-Builds geprüft.</p>
-<h2>Emerald / Smaragd ist nicht mehrsprachig</h2><p>Die englische USA/Europe-ROM (BPEE) enthält keine vollständigen weiteren Sprachfassungen. Deutsch (BPED) ist eine separate ROM. Die neun Menüsprachen der Mod sind unabhängig von den Spielprofilen: EN/DE für elf Editionen sowie FR/IT/ES für Emerald.</p>
+<h2>Emerald / Smaragd ist nicht mehrsprachig</h2><p>Die englische USA/Europe-ROM (BPEE) enthält keine vollständigen weiteren Sprachfassungen. Deutsch (BPED) ist eine separate ROM. Die zehn Menüsprachen der Mod sind unabhängig von den Spielprofilen: EN/DE für elf Editionen sowie FR/IT/ES für Emerald und das PT-BR-Preview mit Zambrakas 2013. Diese Fanübersetzung enthält noch englische Texte; siehe <a href="PT-BR.html">PT-BR-Prüfbericht</a>.</p>
 <h2>Weitere Sprachen und Generationen</h2><p><a href="Weitere-Sprachen.html">Zusätzliche Sprach-ROMs: Entwicklungsbedarf, Versionen und SHA-1</a>. Diese zusätzlichen Profile sind noch nicht unterstützt oder getestet.</p><p>Die Auswahl liest die registrierten Sprachprofile. Weitere Sprachen benötigen ein geprüftes Text-/Grafikprofil und einen passenden Laufzeitadapter. Eine zusätzliche Generation benötigt außerdem eine Spielengine im Recompiler. Aktuell sind Gen1 bis Gen3 freigegeben.</p>
 <script>document.querySelector('#filter').addEventListener('input',e=>{let q=e.target.value.toLowerCase().replaceAll(' ','');document.querySelectorAll('tbody tr').forEach(r=>r.hidden=!r.textContent.toLowerCase().replaceAll(' ','').includes(q))})</script></html>'''
 (r/'mod/ROM-Liste.html').write_text(body.replace('1.4.0',m['version']))

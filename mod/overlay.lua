@@ -12,6 +12,17 @@ return function(mod,game,files,display)
     local s=Cache._germanROMOverlay
     return s and Runtime.events==s.bus and Runtime.wants(marker) and Version.get()==s.game and s
   end
+  local Font=require('src.ui.game3.frlg_font')
+  if not Font._ulaROMGlyphId then
+    local glyphId=Font.glyphId;Font._ulaROMGlyphId=glyphId
+    Font.glyphId=function(ch)
+      local s=Cache._germanROMOverlay
+      local glyphs=s and s.display.glyphs
+      local code=glyphs and glyphs[ch]
+      if code and active() then return code end
+      return glyphId(ch)
+    end
+  end
   if not Cache._germanROMRead then
     Cache._germanROMRead=Cache.readAt
     Cache.readAt=function(path,...)

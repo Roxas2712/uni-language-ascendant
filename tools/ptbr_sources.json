@@ -1,0 +1,101 @@
+{
+  "language": "pt-BR",
+  "checked": "2026-10-16",
+  "full_project_complete": false,
+  "games": [
+    {
+      "game": "red",
+      "status": "source-build-only",
+      "sha1": "a2a0e2a3d6ef4d5771aa33682d31eaefd03c32ba",
+      "source": "https://github.com/hydhyro/pokeazul-ptbr",
+      "commit": "98cec899e9add15d32dd7879f70ac4c9c42d9963",
+      "runtime_enabled": false
+    },
+    {
+      "game": "blue",
+      "status": "source-build-only",
+      "sha1": "ec9e33447d9bdbf95c2d57f487e25a57854a1adf",
+      "source": "https://github.com/hydhyro/pokeazul-ptbr",
+      "commit": "98cec899e9add15d32dd7879f70ac4c9c42d9963",
+      "runtime_enabled": false
+    },
+    {
+      "game": "yellow",
+      "status": "source-build-incomplete",
+      "source": "https://github.com/hydhyro/pokeamarelo-ptbr",
+      "runtime_enabled": false
+    },
+    {
+      "game": "gold",
+      "status": "patched-input-verified-profile-pending",
+      "source": "https://www.zophar.net/translations/gameboy/brazilian-portuguese/pok-mon-gold-version.html",
+      "runtime_enabled": false,
+      "base_sha1": "d8b8a3600a465308c9953dfa04f0081c05bdcb94",
+      "sha1": "652c0208a5c54313e2d3efb336346e59a17cbab6",
+      "md5": "a663443555efaf74dfbbf264f12b25bc",
+      "size": 2097152,
+      "patch_sha256": "c903b0fb2e9f9751af5b648fee0d05dbf86a3a5c2ad40297febe2e24ea6ffa9e",
+      "tested": false
+    },
+    {
+      "game": "silver",
+      "status": "patched-input-verified-profile-pending",
+      "source": "https://traducoesroms.github.io/traducoes/game-boy-color/pokemon-silver-version_r_lopes-night_shadown-fserve/",
+      "runtime_enabled": false,
+      "base_sha1": "49b163f7e57702bc939d642a18f591de55d92dae",
+      "sha1": "9d9536f14a1874d27ea9167fdf00b80439204a6d",
+      "md5": "7454208311f121e492e6634d13612f25",
+      "size": 2097152,
+      "patch_sha256": "c7cdc8e08fe1f090866850c450a4c05a2de6e808decfad3d8c097a0cbbba76fa",
+      "tested": false
+    },
+    {
+      "game": "crystal",
+      "status": "patch-obtained-base-revision-unverified",
+      "source": "https://www.zophar.net/translations/gameboy/brazilian-portuguese/pok-mon-crystal-version.html",
+      "runtime_enabled": false
+    },
+    {
+      "game": "ruby",
+      "status": "patched-input-verified-profile-pending",
+      "source": "https://www.brgames.org/traducao/483/pokemon-ruby",
+      "runtime_enabled": false,
+      "base_sha1": "f28b6ffc97847e94a6c21a63cacf633ee5c8df1e",
+      "sha1": "90f1464f77c57b4eef45ee07df140d402162eee3",
+      "md5": "7088f5789736f6fcedc687b385033003",
+      "size": 16777216,
+      "patch_sha256": "3da642ce74953bba70fe66b43618cd505bb2fb785caef03b8ebb635068834bcb",
+      "tested": false
+    },
+    {
+      "game": "sapphire",
+      "status": "own-translation-draft",
+      "source": null,
+      "runtime_enabled": false
+    },
+    {
+      "game": "firered",
+      "status": "patch-obtained-base-revision-unverified",
+      "source": "https://www.romhacking.net.br/index.php?topic=3337.0",
+      "runtime_enabled": false
+    },
+    {
+      "game": "leafgreen",
+      "status": "patch-obtained-base-revision-unverified",
+      "source": "https://www.romhacking.net.br/index.php?topic=3337.0",
+      "runtime_enabled": false
+    },
+    {
+      "game": "emerald",
+      "status": "live-smoke-tested-source-has-english-remainders",
+      "runtime_enabled": true,
+      "author": "Zambrakas",
+      "version": "2013-12-08 (no day/night patch)",
+      "sha1": "18a2b0acdba046c71b8677bb58c9ee7d36f7a91f",
+      "md5": "5f91214a7b563c858a94920796817d83",
+      "base_sha1": "f3ae088181bf583e55daf962a92bb46f4f1d07b7",
+      "patch_sha256": "38051b3266bfb5d6edac96882ecce877d5054f256460b242c341d04802566414",
+      "source": "https://github.com/RetroAchievements/RAPatches/blob/main/GBA/Translation/Portuguese/668-PokemonEmerald-Portuguese.zip"
+    }
+  ]
+}

@@ -1,12 +1,23 @@
-# Uni-Language Ascendant 1.4.2
+# Uni-Language Ascendant 1.5.0-preview.1
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
 Es ist kein spezieller Recompiler-Build erforderlich.
 
+**PT-BR-Preview:** Das Mod-Menü ist jetzt auch auf Brasilianisch-Portugiesisch
+verfügbar. Emerald unterstützt die Fanübersetzung von Zambrakas vom 08.12.2013
+(ohne zusätzlichen Tag-/Nacht-Patch). Benötigte Sprach-ROM-SHA-1:
+`18a2b0acdba046c71b8677bb58c9ee7d36f7a91f`.
+Die englische US-Basis bleibt `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
+
+Die Übersetzung enthält selbst noch englische Texte. Alle 15.655 Textschlüssel
+sind zugeordnet; das ist keine Aussage über 100 % sprachliche Vollständigkeit.
+Live-Smoke-Tests, Grenzen und Performancewerte stehen in [PT-BR.html](PT-BR.html).
+**Die übrigen zehn Editionen sind in PT-BR noch nicht fertig und ausgeblendet.**
+
 Neu in 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
 Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
-zuvor gewählte Sprach-ROM, startet die Mod auf Englisch. Die neun Menüsprachen
+zuvor gewählte Sprach-ROM, startet die Mod auf Englisch. Die zehn Menüsprachen
 und die Liste der benötigten ROMs bleiben unabhängig davon verfügbar.
 Emerald unterstützt zusätzlich Französisch, Italienisch und Spanisch. Die unten
 genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
@@ -14,13 +25,13 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.4.2.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.5.0-preview.1.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.
 4. Die Mod für diese Edition aktivieren und das Spiel starten. Vor dem Titelbild
    erscheint die Sprachwahl mit den benötigten ROM-Versionen und SHA-1-Prüfsummen.
-5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
+5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES/PT-BR, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
    anschließend die Edition im Launcher erneut starten. Die Auswahl wird pro
    Edition gespeichert. Ohne vorherige Auswahl startet die Mod im englischen Modus.
 

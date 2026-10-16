@@ -5,7 +5,7 @@ return function(game)
   local V=require('src.core.GameVersion');local v=V.get();local gen=V.generation()
   local e=game.mods and game.mods.exports.german_rom_source
   local mode=os.getenv('QA_LANGUAGE')
-  if mode=='de' or mode=='fr' or mode=='it' or mode=='es' then assert(e and e.status=='active' and e.language==mode,'language not active')
+  if mode=='de' or mode=='fr' or mode=='it' or mode=='es' or mode=='pt-BR' then assert(e and e.status=='active' and e.language==mode,'language not active')
   elseif mode=='en' then assert(e and e.status=='english','English selection not active')
   else assert(not e,'Baseline has active language mod') end
   if e and e.startup.open then assert(e.startup.choose(e.language)) end

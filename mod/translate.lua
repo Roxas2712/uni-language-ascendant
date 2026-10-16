@@ -79,7 +79,7 @@ return function(mod, profile, bytes)
       for id,record in mod.content[registry]:each() do
         local n=indexFn and indexFn(id,record) or record.index
         if n and n>=0 and n<count then
-          local name=plain(base+n*stride+(offset or 0),registry=='items' and 14 or
+          local name=plain(base+n*stride+(offset or 0),registry=='items' and (F.ITEM_NAME_LENGTH or 14) or
             registry=='trainers' and 12 or stride)
           if name~='' then
             local patch={name=name}

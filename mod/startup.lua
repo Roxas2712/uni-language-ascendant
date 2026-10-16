@@ -5,7 +5,7 @@ return function(mod,version,own)
  local catalog=own('catalog.lua')
  local requirements=own('rom_requirements.lua')
  local locales=own('locales.lua')
- local order={'en','de','fr','it','es','ja','ko','zh-Hans','zh-Hant'}
+ local order={'en','de','fr','it','es','ja','ko','zh-Hans','zh-Hant','pt-BR'}
  local savedUI=preferences:read('preferences/ui-language.txt')
  local uiLanguage=locales[savedUI] and savedUI or 'en'
  local choices={{id='en',name='English',available=true}}
@@ -13,7 +13,7 @@ return function(mod,version,own)
  for _,entry in ipairs(catalog) do
   if entry.game==version and not known[entry.language] and mod.imports:info(entry.id)~=nil then
    known[entry.language]=true
-   choices[#choices+1]={id=entry.language,name=entry.name,available=true}
+   choices[#choices+1]={id=entry.language,name=entry.name,available=true,noticeKey=entry.noticeKey}
   end
  end
  -- Use the same installed, per-game languages in both entry points. Menu
@@ -29,6 +29,12 @@ return function(mod,version,own)
  if preferences:read('preferences/notice.txt')~='accepted' then state.stage='notice' end
  for i,id in ipairs(order) do if id==uiLanguage then state.uiIndex=i end end
  function state.previewLocale(id) if not locales[id] then return false end;state.uiLanguage=id;return true end
+ function state.pageMenu(delta)
+  if state.stage~='menu' then return false end
+  local pages=math.ceil(#order/9)
+  state.uiIndex=((math.floor((state.uiIndex-1)/9)+delta)%pages)*9+1
+  state.previewLocale(order[state.uiIndex]);return true
+ end
  function state.chooseMenu(id)
   if state.stage=='intro' or state.stage=='notice' or state.stage=='reset' then return false,'Complete the current step first' end
   if not locales[id] then return false,'Unknown menu language' end
@@ -139,6 +145,8 @@ return function(mod,version,own)
   end
   if key=='l' then state.stage='menu';state.noticeKey=nil;return end
   if state.stage=='menu' then
+   if key=='tab' or key=='pagedown' then state.pageMenu(1);return end
+   if key=='pageup' then state.pageMenu(-1);return end
    local steps={left=-1,a=-1,right=1,d=1,up=-3,down=3}
    if steps[key] then state.uiIndex=(state.uiIndex-1+steps[key])%#order+1;state.previewLocale(order[state.uiIndex])
    elseif key=='return' or key=='space' or key=='z' then state.confirm() end

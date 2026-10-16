@@ -1,7 +1,7 @@
 {
   "id": "german_rom_source",
   "name": "Uni-Language Ascendant",
-  "version": "1.4.2",
+  "version": "1.5.0-preview.1",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -24,7 +24,7 @@
   "permissions": [
     "engine_internals"
   ],
-  "description": "Original Ascendant intro, nine menu languages, Back and Reset profile. Uninstalling deletes the mod profile; reinstalling starts fresh. German ROM profiles for all 11 Gen1–Gen3 editions; Emerald also French, Italian and Spanish. Compile once from your own language ROM; exact US base required. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp)",
+  "description": "PT-BR preview: ten menu languages and the Zambrakas 2013 Emerald source profile. The fan translation retains some English text. PT-BR for the other ten editions is not enabled. Original Ascendant intro, Back and Reset profile; uninstalling deletes the mod profile. German profiles for all 11 Gen1–Gen3 editions; Emerald also French, Italian and Spanish. Requires your own exact ROMs. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp)",
   "optional_imports": [
     {
       "id": "leafgreen_de",
@@ -139,6 +139,14 @@
       "file": "emerald_es.gba",
       "size": 16777216,
       "md5": "67b770405f7b87589e0342513b25fe9b"
+    },
+    {
+      "id": "emerald_ptbr",
+      "name": "Emerald PT-BR · Zambrakas 2013-12-08",
+      "description": "SHA-1 18a2b0acdba046c71b8677bb58c9ee7d36f7a91f; Basis: Pokémon Emerald (USA / English) 1.0 / Revision 0.",
+      "file": "emerald_ptbr.gba",
+      "size": 16777216,
+      "md5": "5f91214a7b563c858a94920796817d83"
     }
   ]
 }

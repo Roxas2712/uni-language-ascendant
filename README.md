@@ -7,6 +7,34 @@ once and reuses its local cache on later launches.
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
+## PT-BR development preview
+
+The `feature/pt-br` branch adds a Brazilian Portuguese menu and an Emerald
+import profile for **Zambrakas 2013-12-08, without the day/night patch**.
+The matching BPS patch is linked in [the in-game QA document](mod/PT-BR.html).
+Apply it to your own US Emerald dump, then import the patched ROM:
+
+- US base SHA-1: `f3ae088181bf583e55daf962a92bb46f4f1d07b7`
+- PT-BR source SHA-1: `18a2b0acdba046c71b8677bb58c9ee7d36f7a91f`
+
+All 15,655 text keys are mapped and the profile passes live smoke tests,
+including a scripted wild battle through victory and return to the field.
+**The source fan translation still contains English text.** This is not a full
+playthrough or a complete linguistic review. The picker states that limitation
+in all ten menu languages. Menu choice, Back, reset, persistence and all menu
+font glyphs were tested.
+
+**PT-BR for the other ten editions is not ready or enabled.** Source/patch
+progress is recorded in [ptbr_sources.json](tools/ptbr_sources.json). The Sapphire
+translation has 13 authored drafts, deliberately excluded from runtime and the
+ZIP. The private worksheet contains 7,717 unique texts; 2,581 have unreviewed
+cross-game candidates. Drafts must pass source/control-token checks and in-game
+review before becoming a profile.
+
+Build the installable preview with `python3 tools/package.py`; it writes
+`dist/uni-language-ascendant-1.5.0-preview.1.zip`. The latest stable release
+remains 1.4.2 below. No ROM or translation patch is included.
+
 ## Install version 1.4.2
 
 1. Download [uni-language-ascendant-1.4.2.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.4.2).
@@ -31,10 +59,10 @@ are included. Changing game language requires a restart.
 | Red, Blue, Yellow | English base + German |
 | Gold, Silver, Crystal | English base + German |
 | FireRed, LeafGreen, Ruby, Sapphire | English base + German |
-| Emerald | English base + German, French, Italian, Spanish |
+| Emerald | English base + German, French, Italian, Spanish; PT-BR in the preview |
 
 Menu languages: English, German, French, Italian, Spanish, Japanese, Korean,
-Simplified Chinese and Traditional Chinese. A translated menu does not imply a
+Simplified Chinese, Traditional Chinese and Brazilian Portuguese (preview). A translated menu does not imply a
 game-language profile exists.
 
 Exact versions and SHA-1 checksums are in [the ROM catalog](tools/rom_requirements.json)
@@ -103,3 +131,22 @@ New generations also require an appropriate engine and runtime adapter.
 See [LICENSE.MD](LICENSE.MD) and [VENDOR.md](mod/VENDOR.md) for upstream code,
 the German Universal reference, Noto fonts and the shared Origami Ascendant intro.
 
+
+### Reproduce PT-BR QA
+
+Use a stock engine checkout and an isolated copy of an already imported US
+Emerald cache. The runner always uses `german-rom-mod-ptbr-qa`, never the player’s
+normal save identity. Substitute your own absolute paths:
+
+```sh
+python3 tests/run_ptbr.py --engine /path/to/gen1recomp --love /path/to/love --base-cache /path/to/emerald --rom /path/to/emerald-ptbr.gba --mode live
+python3 tests/run_ptbr.py --engine /path/to/gen1recomp --love /path/to/love --mode menu
+python3 tests/run_ptbr.py --engine /path/to/gen1recomp --love /path/to/love --mode performance
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+`tools/apply_bps.py BASE PATCH OUTPUT` validates source, patch and target CRCs
+and refuses to overwrite an existing output file. The profile builder separately
+pins the source and target SHA-1 values. `tools/export_asset_metadata.lua` records
+metadata using the shipped private extractors without altering engine/vendor
+files; `tools/build_emerald_ptbr.py --help` lists its private inputs.

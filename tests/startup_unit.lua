@@ -65,7 +65,15 @@ local g=check({language='fr',de_alt=true})
 assert(g.language=='en' and #g.ui.choices==2 and g.ui.choices[2].id=='de','override fallback or alternate imported revision failed')
 local h=check({de=true,de_alt=true})
 assert(#h.ui.choices==2,'duplicate language revisions shown')
-for _,id in ipairs({'en','de','fr','it','es','ja','ko','zh-Hans','zh-Hant'}) do
+for _,id in ipairs({'en','de','fr','it','es','ja','ko','zh-Hans','zh-Hant','pt-BR'}) do
  assert(f.ui.chooseMenu(id),'menu locale hidden with missing game ROM: '..id)
 end
-print('STARTUP_UNIT_OK per-game/import filtering, saved/override fallback, alternate revisions, nine menu locales, persistence, restart, callback restoration, disk failure')
+f.ui.stage='menu';f.ui.uiIndex=1
+assert(f.ui.pageMenu(1) and f.ui.uiLanguage=='pt-BR' and f.ui.uiIndex==10)
+assert(f.ui.confirm() and f.store['preferences/ui-language.txt']=='pt-BR')
+assert(f.ui.back() and f.ui.stage=='menu')
+assert(f.ui.pageMenu(1) and f.ui.uiIndex==1 and f.ui.uiLanguage=='en')
+assert(f.ui.pageMenu(-1) and f.ui.uiIndex==10)
+local locales=dofile(root..'/mod/locales.lua')
+for key in pairs(locales.en) do assert(type(locales['pt-BR'][key])=='string',key) end
+print('STARTUP_UNIT_OK per-game/import filtering, saved/override fallback, alternate revisions, ten menu locales, persistence, restart, callback restoration, disk failure')

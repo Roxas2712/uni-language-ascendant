@@ -1,0 +1,444 @@
+{
+  "format": "ula-authored-translation-v1",
+  "game": "sapphire",
+  "language": "pt-BR",
+  "runtime_enabled": false,
+  "entries": [
+    {
+      "key": "BattleText_BirchDontLeaveMe",
+      "source_sha256": "f185add027c54b9f7c5903343d5c6eae8d743c42e1415ef19f99fd5d1575048a",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "PROF. BIRCH: N-não me"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "deixe aqui desse jeito!"
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_BirchRivalRoute103",
+      "source_sha256": "810395683563fec7578656f388d5c221cf0623b5ea4aafa509f8677af4e72111",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "PROF. BIRCH: "
+        },
+        {
+          "t": "rival"
+        },
+        {
+          "t": "text",
+          "s": " deve estar"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "em algum lugar da ROTA 103."
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Se você ou seus POKéMON se cansarem,"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "descansem um pouco em casa."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_BrendanGotPokedexTooTakeThese",
+      "source_sha256": "72f78d6602b965d286ea2d752919d8ad6bfe118a8c0fef245f9f3ed15c65806c",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "BRENDAN: Ah..."
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "Você também ganhou uma POKéDEX."
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Então, tome."
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "Isto é para você."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_BrendanWhereShouldIGoNext",
+      "source_sha256": "f7ed07307c32abc2d53c20c325311270debd82effd4967473e168c4a0af62ca2",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "BRENDAN: Onde vou procurar"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "POKéMON agora..."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_CountlessPokemonAwait",
+      "source_sha256": "f6adfb3ad84b21bd420adceb9ebef52258a9bbed809a574ce7cc975bb81a1b16",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "PROF. BIRCH: Inúmeros POKéMON estão"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "esperando por você!"
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Ah, já estou com vontade de sair"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "e voltar à pesquisa de campo!"
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay",
+      "source_sha256": "e4650d84514ac8403c758dfd8c903a60cb55b78b3f6ecf6915748991f328ce55",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "PROF. BIRCH: Ah, não diga isso."
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "Vá lá fazer uma visita."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_HeyYourBagsFull",
+      "source_sha256": "cc45dfc4a9f0a8571753c217b7eeb9a0a0c105eb4554790a218a688b63b91284",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "Ei, sua BOLSA está cheia."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_MayGotPokedexTooTakeThese",
+      "source_sha256": "6d94983fbbe093ebc04166493525e765ae35df786b055b04c387ee0c9e2a4a7f",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "MAY: Ah, que legal, "
+        },
+        {
+          "t": "player"
+        },
+        {
+          "code": 5,
+          "name": "KUN",
+          "t": "ph"
+        },
+        {
+          "t": "text",
+          "s": "!"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "Você também ganhou uma POKéDEX!"
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Agora nós dois temos uma!"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "Também tenho algo para você!"
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival",
+      "source_sha256": "c95dba041591464a79023db1f5350b204e2610a6b76176802ffe5a820de3b5c0",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "PROF. BIRCH: Se você treinar POKéMON"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "e ganhar experiência, tenho certeza"
+        },
+        {
+          "t": "scroll"
+        },
+        {
+          "t": "text",
+          "s": "de que vai se sair muito bem."
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Sabe, "
+        },
+        {
+          "t": "rival"
+        },
+        {
+          "t": "text",
+          "s": " está na ROTA 103"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "estudando POKéMON."
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Talvez seja uma boa ideia"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "ir encontrar "
+        },
+        {
+          "t": "rival"
+        },
+        {
+          "t": "text",
+          "s": ". O que acha?"
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_OhYourBagsFull",
+      "source_sha256": "396194c3f093f54562d7df1c6d7de1b326119c8b4a73ab910d5617242d86aac0",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "Ah? Sua BOLSA está cheia."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon",
+      "source_sha256": "1758bc22e8b163388bf157b8ee05a59380fb79b61de3fed245ac53bc756ed926",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "PROF. BIRCH: Que tal aproveitar"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "e dar um apelido a esse "
+        },
+        {
+          "n": 1,
+          "t": "strvar"
+        },
+        {
+          "t": "text",
+          "s": "?"
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LittlerootTown_Text_BirchSpendsDaysInLab",
+      "source_sha256": "d12121ba34764cd388edd0a870673817fb1bc3d34bed59b71724604687f96a7f",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "O PROF. BIRCH passa dias no LAB"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "estudando. Aí, de repente, sai"
+        },
+        {
+          "t": "scroll"
+        },
+        {
+          "t": "text",
+          "s": "para pesquisar na natureza..."
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Quando será que o PROF. BIRCH"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "fica em casa?"
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    },
+    {
+      "key": "LilycoveCity_Text_BrendanGoingBackToLittleroot",
+      "source_sha256": "7e69f0db2502896b9d38535c620b93c06c0378c36570422240627e9a14a95b75",
+      "status": "draft-needs-game-review",
+      "target": [
+        {
+          "t": "text",
+          "s": "BRENDAN: Eu..."
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "Estou pensando em voltar a LITTLEROOT."
+        },
+        {
+          "t": "para"
+        },
+        {
+          "t": "text",
+          "s": "Sabe, estou ajudando meu pai com a"
+        },
+        {
+          "t": "nl"
+        },
+        {
+          "t": "text",
+          "s": "POKéDEX. Ela já está bem completa,"
+        },
+        {
+          "t": "scroll"
+        },
+        {
+          "t": "text",
+          "s": "então quero mostrar a ele."
+        },
+        {
+          "t": "eos"
+        }
+      ]
+    }
+  ]
+}

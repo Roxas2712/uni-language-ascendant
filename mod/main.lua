@@ -103,6 +103,7 @@ return function(mod)
   translated.assets=report
   translated.language=selected.language
   translated.display.language=selected.language
+  translated.display.glyphs=profile.renderGlyphs
   if next(translated.display.types) then assets['data/generated/gba/pokemon/type_names.lua']=W.encode(translated.display.types) end
   return {files=assets,operations=operations,report=translated}
  end)

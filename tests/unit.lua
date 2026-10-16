@@ -27,7 +27,7 @@ writes={}
 translate(m,profile(0,true),string.char(0xFD,0x0D,0xFE,0xFC,1,2,255))
 assert(writes.test[1].t=='bph' and writes.test[1].code==13,'battle placeholder preserved')
 assert(writes.test[2].t=='nl' and writes.test[3].t=='ext','control codes preserved')
-for _,case in ipairs({{'fr',{0x2C,0x84,0x64},'erePC'},{'es',{0x52,0xCD,0x6F},'¡Sí'},{'it',{0x5E,0x5F,0x60,0x61,0x62},'POKéMELLA'},{'it',{0x5E,0x5F,0x60,0x61,0x63},'POKéMELLE'}}) do
+for _,case in ipairs({{'pt-BR',{0xF1,0xF2,0xF4,0xF5,0x0C,0x21},'ÃÕãõÍí'},{'fr',{0x2C,0x84,0x64},'erePC'},{'es',{0x52,0xCD,0x6F},'¡Sí'},{'it',{0x5E,0x5F,0x60,0x61,0x62},'POKéMELLA'},{'it',{0x5E,0x5F,0x60,0x61,0x63},'POKéMELLE'}}) do
  local p=profile(0);p.glyphs=assert(loadfile(root..'/mod/latin_glyphs.lua'))(case[1])
  local old={};for k in pairs(p.glyphs) do old[k]=IR.CHARMAP[k] end
  local b={};for _,v in ipairs(case[2]) do b[#b+1]=string.char(v) end;b[#b+1]=string.char(255)

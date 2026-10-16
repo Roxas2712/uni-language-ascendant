@@ -206,5 +206,13 @@ return {{
 ["sha1"]="fe1558a3dcb0360ab558969e09b690888b846dd9",
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="emerald_ptbr",
+["language"]="pt-BR",
+["md5"]="5f91214a7b563c858a94920796817d83",
+["name"]="Pokémon Emerald · Português (Brasil)",
+["sha1"]="18a2b0acdba046c71b8677bb58c9ee7d36f7a91f",
+["size"]=16777216,
+["version"]="Zambrakas 2013-12-08 · no day/night patch",
 }},
 }}

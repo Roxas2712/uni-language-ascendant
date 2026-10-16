@@ -5,7 +5,8 @@ import hashlib, json, re, zipfile
 root=Path(__file__).resolve().parents[1]
 files=['manifest.json','main.lua','startup.lua','startup_view.lua','locales.lua','intro.lua','preferences.lua','Weitere-Sprachen.html','adapters.lua','options_schema.lua','rom_requirements.lua','translate.lua','extract.lua','assets.lua','world.lua','compiler.lua','catalog.lua','overlay.lua','README.md','ROM-Liste.html','Performance.html','LICENSE.MD','VENDOR.md','vendor/index.lua']
 files.append('latin_glyphs.lua')
-for game in ['firered','leafgreen','ruby','sapphire','emerald','emerald_fr','emerald_it','emerald_es']:
+files.append('PT-BR.html')
+for game in ['firered','leafgreen','ruby','sapphire','emerald','emerald_fr','emerald_it','emerald_es','emerald_ptbr']:
     files.extend([f'profiles/{game}.lua',f'profiles/{game}_assets.lua',f'profiles/{game}_world.lua'])
 index=(root/'mod/vendor/index.lua').read_text()
 files.extend('vendor/'+name.replace('.','/')+'.lua' for name in re.findall(r'\["([a-zA-Z0-9_.]+)"\] = true',index))

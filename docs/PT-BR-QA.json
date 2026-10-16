@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "status": "preview-not-all-games-complete",
+  "scene": "EM_OLDALE_TOWN",
+  "frames_per_run": 360,
+  "total_measured_frames": 1440,
+  "background_load": "Other independently running game instances were active. These are exploratory comparisons, not an isolated performance certification.",
+  "mapped_keys": 15655,
+  "full_playthrough": false,
+  "live_battle": "scripted wild battle, fixed Tackle fixture, victory and return to field",
+  "runs": [
+    {
+      "scene": "EM_OLDALE_TOWN",
+      "modLoadSeconds": 0.002629625000000191,
+      "bootToDriverSeconds": 1.7132984583333333,
+      "elapsedSeconds": 5.998049166666665,
+      "update": {
+        "n": 360,
+        "meanMs": 0.6374056712963392,
+        "p50Ms": 0.5977083333323918,
+        "p95Ms": 1.2145416666662356,
+        "maxMs": 2.437541666667542
+      },
+      "memoryBeforeKiB": 98026.580078125,
+      "graphics": {
+        "canvasswitches": 0,
+        "drawcallsbatched": 0,
+        "shaderswitches": 0,
+        "buffermemory": 681050,
+        "fonts": 0,
+        "buffers": 7,
+        "textures": 58,
+        "texturememory": 16173832,
+        "drawcalls": 0
+      },
+      "luaMemoryKiB": 98292.908203125,
+      "language": "en",
+      "draw": {
+        "n": 360,
+        "meanMs": 14.755734259259293,
+        "p50Ms": 14.649833333333362,
+        "p95Ms": 15.955250000001087,
+        "maxMs": 17.689541666667807
+      },
+      "cacheHit": false,
+      "game": "emerald",
+      "run": "en-performance-1"
+    },
+    {
+      "draw": {
+        "n": 360,
+        "meanMs": 15.177348148148177,
+        "p50Ms": 15.179708333331376,
+        "p95Ms": 15.825791666667754,
+        "maxMs": 18.329958333332286
+      },
+      "cacheHit": false,
+      "scene": "EM_OLDALE_TOWN",
+      "modLoadSeconds": 0.0012680000000000469,
+      "bootToDriverSeconds": 0.8805956666666667,
+      "elapsedSeconds": 5.999061958333335,
+      "luaMemoryKiB": 99896.58203125,
+      "memoryBeforeKiB": 98602.7890625,
+      "update": {
+        "n": 360,
+        "meanMs": 0.31685127314816786,
+        "p50Ms": 0.25954166666508627,
+        "p95Ms": 0.6822083333322126,
+        "maxMs": 1.6792916666670266
+      },
+      "graphics": {
+        "drawcallsbatched": 0,
+        "drawcalls": 0,
+        "canvasswitches": 0,
+        "texturememory": 16173832,
+        "fonts": 0,
+        "buffers": 7,
+        "buffermemory": 681050,
+        "shaderswitches": 0,
+        "textures": 58
+      },
+      "language": "en",
+      "game": "emerald",
+      "run": "en-performance-2"
+    },
+    {
+      "modLoadSeconds": 5.796973791666667,
+      "bootToDriverSeconds": 8.1443395,
+      "elapsedSeconds": 5.999644249999999,
+      "luaMemoryKiB": 186896.833984375,
+      "memoryBeforeKiB": 215638.6953125,
+      "update": {
+        "maxMs": 4.6858749999998395,
+        "n": 360,
+        "meanMs": 0.6284501157406542,
+        "p50Ms": 0.5520833333321207,
+        "p95Ms": 1.3058750000016772
+      },
+      "language": "pt-BR",
+      "scene": "EM_OLDALE_TOWN",
+      "draw": {
+        "maxMs": 17.582500000003165,
+        "n": 360,
+        "meanMs": 14.791034722222141,
+        "p50Ms": 14.913208333332761,
+        "p95Ms": 15.324708333334769
+      },
+      "game": "emerald",
+      "graphics": {
+        "shaderswitches": 0,
+        "textures": 58,
+        "drawcalls": 0,
+        "canvasswitches": 0,
+        "texturememory": 16173832,
+        "fonts": 0,
+        "buffermemory": 681050,
+        "buffers": 7,
+        "drawcallsbatched": 0
+      },
+      "cacheHit": false,
+      "run": "pt-BR-performance-1"
+    },
+    {
+      "elapsedSeconds": 5.999115708333335,
+      "luaMemoryKiB": 198740.4189453125,
+      "memoryBeforeKiB": 218659.982421875,
+      "game": "emerald",
+      "update": {
+        "meanMs": 0.6341203703703711,
+        "p50Ms": 0.5972499999984393,
+        "p95Ms": 1.0700416666651336,
+        "maxMs": 1.756333333334581,
+        "n": 360
+      },
+      "modLoadSeconds": 4.112153583333334,
+      "graphics": {
+        "buffermemory": 681050,
+        "fonts": 0,
+        "textures": 58,
+        "shaderswitches": 0,
+        "buffers": 7,
+        "drawcallsbatched": 0,
+        "drawcalls": 0,
+        "canvasswitches": 0,
+        "texturememory": 16173832
+      },
+      "cacheHit": true,
+      "scene": "EM_OLDALE_TOWN",
+      "draw": {
+        "meanMs": 14.78049282407395,
+        "p50Ms": 14.81708333333387,
+        "p95Ms": 15.25066666666497,
+        "maxMs": 16.3795000000011,
+        "n": 360
+      },
+      "bootToDriverSeconds": 6.439878083333334,
+      "language": "pt-BR",
+      "run": "pt-BR-performance-2"
+    }
+  ],
+  "live_checks": [
+    {
+      "log": "pt-BR-live-final.log",
+      "passed_markers": [
+        "LANGUAGE_LIVE_OK",
+        "LANGUAGE_BATTLE_OK"
+      ]
+    },
+    {
+      "log": "en-english-regression.log",
+      "passed_markers": [
+        "LANGUAGE_LIVE_OK",
+        "LANGUAGE_BATTLE_OK"
+      ]
+    },
+    {
+      "log": "en-menu-final.log",
+      "passed_markers": [
+        "PTBR_MENU_OK"
+      ]
+    },
+    {
+      "log": "pt-BR-picker-final.log",
+      "passed_markers": [
+        "RELEASE_UI_OK"
+      ]
+    },
+    {
+      "log": "de-german-regression.log",
+      "passed_markers": [
+        "LANGUAGE_LOAD "
+      ]
+    },
+    {
+      "log": "fr-regression.log",
+      "passed_markers": [
+        "LANGUAGE_LOAD "
+      ]
+    },
+    {
+      "log": "it-regression.log",
+      "passed_markers": [
+        "LANGUAGE_LOAD "
+      ]
+    },
+    {
+      "log": "es-regression.log",
+      "passed_markers": [
+        "LANGUAGE_LOAD "
+      ]
+    },
+    {
+      "log": "install.log",
+      "passed_markers": [
+        "PTBR_INSTALL_OK"
+      ]
+    }
+  ]
+}

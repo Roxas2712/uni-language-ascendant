@@ -1,0 +1,22 @@
+[
+  {
+    "test": "startup_unit",
+    "result": "STARTUP_UNIT_OK per-game/import filtering, saved/override fallback, alternate revisions, ten menu locales, persistence, restart, callback restoration, disk failure"
+  },
+  {
+    "test": "preferences_unit",
+    "result": "PREFERENCES_UNIT_OK scoped data, restart, reset, reinstall, stale options, failure rollback, prefix restoration"
+  },
+  {
+    "test": "intro_unit",
+    "result": "INTRO_UNIT_OK natural completion, restart marker, skip, interruption, storage failure, mute, cleanup"
+  },
+  {
+    "test": "unit",
+    "result": "UNIT_OK glyphs, controls, bounds, atomic extraction, decoder cleanup, missing/wrong ROM"
+  },
+  {
+    "test": "catalog",
+    "result": "CATALOG_OK 11 editions, 15 language profiles, exact manifest/profile/ROM-list identities, generation adapters"
+  }
+]
