@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.5.1
+
+- Load compiled operations from a bounded binary data format and defer large
+  Gen3 address/translation tables until a cache rebuild is actually needed.
+- Remove superseded operation history while preserving final values, patch
+  chains and first-touch ordering.
+- Keep large Gen3 raw graphics losslessly compressed until first use, then reuse
+  the decoded bytes. Full exported asset inspection still exposes every file.
+- Validate stored and expanded cache payloads before applying translations;
+  damaged caches rebuild automatically.
+- Rebuild the language cache once after updating; preserve imported ROMs,
+  language choices, intro status and saves.
+- Add complete before/after content comparison and controlled release-to-release
+  performance evidence alongside the native gameplay checks.
+
 ## 1.4.2
 
 - Hide game languages without a supported, imported ROM for the selected edition

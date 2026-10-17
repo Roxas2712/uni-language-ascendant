@@ -77,6 +77,18 @@ class GameplayEvidenceTests(unittest.TestCase):
         self.clear_caches()
         self.assertIsNone(report.proof('check'))
 
+    def test_gen1_shared_cache_codec_change_requires_new_run(self):
+        codec = self.root / 'mod/cache_codec.lua'
+        codec.write_text('return {format=1}')
+        self.evidence['game'] = 'red'
+        self.clear_caches()
+        self.evidence['runtime_sha256'] = report.runtime_hashes()
+        self.save()
+        self.assertIsNotNone(report.proof('check'))
+        codec.write_text('return {format=2}')
+        self.clear_caches()
+        self.assertIsNone(report.proof('check'))
+
     def test_modified_log_is_rejected(self):
         self.log.write_text('LANGUAGE_LIVE_OK\nmodified\n')
         self.assertIsNone(report.proof('check'))

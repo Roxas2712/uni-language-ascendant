@@ -1,6 +1,6 @@
 -- In-memory reads only. The event owner and bus identity make this overlay
 -- inactive immediately when the loader removes the mod or replaces its bus.
-return function(mod,game,files,display,easyChatUI)
+return function(mod,game,files,display,easyChatUI,materialize)
   local Cache=require('src.import.CacheFs')
   local Runtime=require('src.mods.Runtime')
   local Version=require('src.core.GameVersion')
@@ -315,5 +315,11 @@ return function(mod,game,files,display,easyChatUI)
   require('src.ui.game3.fame_checker').reloadAssets()
   require('src.core.game3.rse.contest').reset()
   if easyChatUI then easyChatUI(active)end
-  mod.exports.assets=files
+  if materialize then
+    -- Debuggers/other mods retain the complete assets-table interface. Normal
+    -- play uses the internal on-demand table and does not expand unused art.
+    setmetatable(mod.exports,{__index=function(t,key)
+      if key=='assets' then local all=materialize();rawset(t,key,all);return all end
+    end})
+  else mod.exports.assets=files end
 end

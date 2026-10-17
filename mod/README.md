@@ -1,4 +1,4 @@
-# Uni-Language Ascendant 1.5.0
+# Uni-Language Ascendant 1.5.1
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
@@ -32,7 +32,7 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.5.0.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.5.1.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.
@@ -322,3 +322,26 @@ in `Performance.html`.
 Bei mehr als drei Spielsprachen bieten die Pfeile neben der Sprachwahl
 auch per Maus Zugriff auf die weiteren Sprachen. Links/Rechts auf Tastatur
 und Controller wechseln weiterhin durch alle Einträge.
+
+
+## Version 1.5.1: Sprachcache und Speicher
+
+Der Sprachcache verwendet jetzt ein begrenztes binäres Datenformat. Geladene
+Cache-Dateien werden nicht als Lua-Code ausgeführt. Bereits vollständig ersetzte
+Übersetzungseinträge werden nicht länger zusätzlich gespeichert; der endgültige
+Text und seine Steuerzeichen bleiben erhalten. Große Gen3-Rohgrafiken bleiben verlustfrei
+komprimiert im Speicher, bis das Spiel sie zum ersten Mal benötigt. Anschließend
+wird das entpackte Ergebnis wiederverwendet. Bereits komprimierte PNGs und
+Lua-Manifeste bleiben direkt verfügbar. Ein vollständiger Zugriff auf die
+exportierte Asset-Tabelle entpackt weiterhin alle Einträge für andere Mods und
+Diagnosewerkzeuge.
+
+Beim ersten Start nach dem Update wird der Sprachcache einmal neu aufgebaut.
+Das ist ein kalter Start und nicht mit einem späteren Warmstart vergleichbar.
+ROM-Imports, gewählte Sprachen, Intro-Status und Spielstände bleiben erhalten.
+Beschädigte Cache-Dateien lösen einen vollständigen Neuaufbau aus.
+
+Die aktuellen Vorher-/Nachher-Messungen und Spielbilder stehen in
+[PT-BR.html](PT-BR.html). Speicherwerte hängen davon ab, welche Bildschirme bereits
+geöffnet wurden; es gibt keine feste Obergrenze für die Ersparnis. Der bisherige
+Bericht in `Performance.html` dokumentiert ältere Versionen.

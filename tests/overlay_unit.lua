@@ -80,3 +80,13 @@ assert(Help.show().id=='pt');Help.close();assert(Help.pack==native)
 assert(Help.show().id=='pt');enabled=false;assert(Help.show()==native)
 assert(not Help._ulaHasBasePack)
 print('HELP_OVERLAY_UNIT_OK absent/populated base restoration and owner removal')
+
+-- Inspecting exports materializes every deferred asset once; ordinary overlay
+-- reads remain independent of that inspection path.
+version='ruby';enabled=true
+local m=mod();local reads=0;local files={[path]='tiles'}
+apply(m,'ruby',files,{language='pt-BR',abilities={},classes={}},nil,function()reads=reads+1;files.extra='bytes';return files end)
+assert(reads==0 and Blob.readFs(path)=='tiles')
+assert(m.exports.assets.extra=='bytes' and m.exports.assets==files and reads==1)
+local count=0;for _ in pairs(m.exports.assets)do count=count+1 end;assert(count==2 and reads==1)
+print('LAZY_EXPORTS_UNIT_OK full inspection materializes once')

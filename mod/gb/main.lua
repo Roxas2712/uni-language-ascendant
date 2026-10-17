@@ -17,7 +17,7 @@ return function(mod,version,own,language)
  assert(info.md5==profile.md5 and info.size==profile.size,'ROM/profile mismatch')
  local S=require('src.core.SaveSerializer')
  local function hash(s) return love.data.encode('string','hex',love.data.hash('string','sha256',s)) end
- local paths={'main.lua','catalog.lua','compiler.lua','gb/main.lua','gb/compile.lua','gb/overlay.lua','gb/adapters/gen1.lua','gb/adapters/gen2.lua','gb/shared/dex_units.lua','gb/shared/official_mon_names.lua',root..'profile.lua',root..'assets.lua'}
+ local paths={'main.lua','catalog.lua','cache_codec.lua','compiler.lua','gb/main.lua','gb/compile.lua','gb/overlay.lua','gb/adapters/gen1.lua','gb/adapters/gen2.lua','gb/shared/dex_units.lua','gb/shared/official_mon_names.lua',root..'profile.lua',root..'assets.lua'}
  local gen=require('src.core.GameVersion').generation()==2 and 'gen2' or 'gen1'
  local runtime=selected.runtime
  paths[#paths+1]=runtime
