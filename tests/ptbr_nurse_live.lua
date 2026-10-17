@@ -7,6 +7,10 @@ return function(game,capture,lang)
  Message.close()
  if #game.session.party==0 then assert(Party.giveMon(game.session,1,15,nil,{fixedPersonality=0})) end
  local mon=game.session.party[1];mon.hp=1
+ local version=require('src.core.GameVersion').get()
+ local key=(version=='ruby' or version=='sapphire') and 'gText_NurseJoy_ThankYouForWaiting' or 'gText_RestoredPkmnToFullHealth'
+ local expected=require('src.core.game3.rom_text').plain(key)
+ local tail=assert(expected:match('([^\n]+)%s*$')):gsub('%s+',' ')
  local seen,shot={},false
  wait(60)
  Field.interact(game)
@@ -15,9 +19,7 @@ return function(game,capture,lang)
   if type(page)=='string' and page~='' and not seen[page] then
    seen[page]=true;print('LANGUAGE_NURSE_PAGE',lang,page:gsub('\n',' | '))
   end
-  if lang=='pt-BR' and page:find('saúde recuperada',1,true) and not shot then
-   Message.skipReveal();capture('healing');shot=true
-  elseif lang=='en' and page:find('full health',1,true) and mon.hp>1 and not shot then
+  if type(page)=='string' and page:gsub('%s+',' '):find(tail,1,true) and mon.hp>1 and not shot then
    Message.skipReveal();capture('healing');shot=true
   end
   game:keypressed('z');wait(1);game:keyreleased('z');wait(10)

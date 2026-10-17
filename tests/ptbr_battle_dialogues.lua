@@ -11,19 +11,21 @@ return function(game)
   assert(e.language==lang and e.status==(lang=='en' and 'english' or 'active'))
   game:_handleBootAction({action='new_game',name='TEST',gender=0,start={map=prefix..'OLDALE_TOWN',x=6,y=17,facing='up'}})
   wait(60)
+  if lang=='pt-BR' then assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_moves_live.lua'))()() end
   local Party=require('src.core.game3.party')
   local Pokemon=require('src.core.game3.pokemon')
   local id=assert(Pokemon.speciesFromName('SUNKERN'))
   assert(Party.giveMon(game.session,id,35,nil,{fixedPersonality=0}))
   local mon=game.session.party[1]
-  mon.moves={275};mon.pp={20};mon.maxPp={20}
+  mon.moves={275,71,74,72};mon.pp={20,25,40,15};mon.maxPp={20,25,40,15}
   local Battle=require('src.core.game3.battle')
   local Runtime=require('src.core.game3.runtime')
   local Message=require('src.ui.game3.message')
-  local outcome,pages,seen,shot,rooted=nil,{}, {},false,false
+  local Ui=require('src.core.game3.battle.ui')
+  local outcome,pages,seen,shot,rooted,menuShot=nil,{}, {},false,false,false
   require('src.core.game3.rng').SeedRng(12345)
   assert(require('src.core.game3.battle_bridge').startWild(Runtime._mod,game,{species=19,level=2},
-   {autoFight=true,done=function(result)outcome=result end}))
+   {autoFight=false,done=function(result)outcome=result end}))
   for _=1,2400 do
    local page=Message.currentPage()
    if page and page~='' and not seen[page] then pages[#pages+1]=page;seen[page]=true end
@@ -37,21 +39,29 @@ return function(game)
     for _=1,600 do if not game.capturePath then break end;wait(1) end
     assert(not game.capturePath,'Screenshot timeout')
     shot=true
-    -- Finish with Sunkern's Absorb instead of repeating the status move.
-    state.player.mon.moves={71};state.player.mon.pp={20};state.player.mon.maxPp={20}
    end
    if outcome then break end
    local state=Battle.getState()
    assert(shot or not state or (state.turn or 0)<4,
     'Expected translation missing after Ingrain turns: '..table.concat(pages,' | '))
-   game:keypressed('z');wait(1);game:keyreleased('z');wait(4)
+   if Ui._mode=='moves' and not menuShot then
+    game.capturePath=os.getenv('SHOT_DIR')..'/'..version..'-'..lang..'-move-menu.png'
+    for _=1,600 do if not game.capturePath then break end;wait(1) end
+    assert(not game.capturePath,'Move menu screenshot timeout');menuShot=true
+   end
+   -- Choose Absorb through the actual menu after the first Ingrain turn.
+   local key=shot and Ui._mode=='moves' and Ui._moveIndex==1 and 'right' or 'z'
+   game:keypressed(key);wait(1);game:keyreleased(key);wait(4)
   end
   assert(shot and rooted,'Actual Ingrain message/effect not observed: '..table.concat(pages,' | '))
   assert(outcome=='win','Battle did not finish: '..tostring(outcome))
+  assert(menuShot,'Actual move selection menu not observed')
+  assert(mon.pp[1]==19 and mon.pp[2]<25,'The selected moves did not consume PP')
   wait(60);assert(game.phase=='field' and not Battle.isActive())
   print('LANGUAGE_BATTLE_DIALOGUE_EVIDENCE '..require('src.link.Json').encode({game=version,language=lang,
    case='ingrain',fixture='Level 35 Sunkern uses Ingrain, then Absorb against level 2 Rattata',
-   trigger='battle_bridge.startWild / autoFight',pages=pages,rooted=rooted,outcome=outcome,field_return=true}))
+   trigger='battle_bridge.startWild / keyboard Fight and move selection',pages=pages,
+   move_menu=true,rooted=rooted,outcome=outcome,field_return=true}))
   print('LANGUAGE_BATTLE_DIALOGUES_OK',version,lang)
  end,debug.traceback)
  if not ok then print('LANGUAGE_LIVE_FAILED',err) end

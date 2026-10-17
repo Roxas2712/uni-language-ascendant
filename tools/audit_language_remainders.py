@@ -38,29 +38,52 @@ def audit(source, decoded, authored):
                 candidates=rows)
 
 
+
+def apply_neutral_review(report, source, review):
+    verified={}
+    for row in review['entries']:
+        digest=row['source_sha256']
+        assert row['keys'] and row['reason'], 'Incomplete neutral review'
+        for key in row['keys']:
+            actual=hashlib.sha256(canonical(source[key]).encode()).hexdigest()
+            if actual!=digest:raise ValueError('Stale neutral review: '+key)
+        if digest in verified and verified[digest]!=row['reason']:
+            raise ValueError('Conflicting neutral review: '+digest)
+        verified[digest]=row['reason']
+    for row in report['candidates']:
+        reason=verified.get(row['source_sha256'])
+        if reason:row.update(review='reviewed-neutral',reason=reason)
+    report['reviewed_neutral_unique']=sum(r['review']=='reviewed-neutral' for r in report['candidates'])
+    report['unreviewed_unique_candidates']=sum(r['review']!='reviewed-neutral' for r in report['candidates'])
+    # This audit cannot judge changed native prose, graphics or gameplay.
+    report['completeness_proven']=False
+
+
 def main(a):
     source=json.loads(a.base.read_text());decoded=json.loads(a.decoded.read_text())
     reference=json.loads(a.reference_base.read_text()) if a.reference_base else source
     targets=compile_prose(reference,json.loads(a.translations.read_text()))
     corrections=json.loads(a.corrections.read_text()) if a.corrections else {}
     if a.edition_translations:
-        local=compile_prose(source,json.loads(a.edition_translations.read_text()))
+        edition_reference=json.loads(a.edition_reference_base.read_text()) if a.edition_reference_base else source
+        local=reuse_exact(source,edition_reference,compile_prose(edition_reference,json.loads(a.edition_translations.read_text())))
         local.update(corrections);corrections=local
     authored=reuse_exact(source,reference,targets,corrections)
     report=audit(source,decoded,authored)
+    if a.neutral:apply_neutral_review(report,source,json.loads(a.neutral.read_text()))
     report['inputs_sha256']={name:hashlib.sha256(path.read_bytes()).hexdigest() for name,path in
        [('base',a.base),('decoded',a.decoded),('translations',a.translations),
         ('reference_base',a.reference_base),('corrections',a.corrections),
-        ('edition_translations',a.edition_translations)] if path}
+        ('edition_translations',a.edition_translations),('edition_reference_base',a.edition_reference_base),('neutral',a.neutral)] if path}
     a.output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     if a.private_texts:
         assert 'build' in a.private_texts.parts,'Source prose must remain in the private build directory'
         a.private_texts.write_text(json.dumps([{**r,'text':prose(source[r['keys'][0]])} for r in report['candidates']],ensure_ascii=False,indent=2)+'\n')
-    print('REMAINDER_AUDIT',report['unchanged_unique_candidates'],'unreviewed candidates;',len(report['missing_decoded_keys']),'missing keys; NOT a completion claim')
+    print('REMAINDER_AUDIT',report.get('unreviewed_unique_candidates',report['unchanged_unique_candidates']),'unreviewed candidates;',len(report['missing_decoded_keys']),'missing keys; NOT a completion claim')
 
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for name in ('base','decoded','translations','output'):p.add_argument('--'+name,type=Path,required=True)
-    for name in ('reference-base','corrections','private-texts','edition-translations'):p.add_argument('--'+name,type=Path)
+    for name in ('reference-base','corrections','private-texts','edition-translations','edition-reference-base','neutral'):p.add_argument('--'+name,type=Path)
     main(p.parse_args())

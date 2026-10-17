@@ -15,6 +15,14 @@ return {{
 ["sha1"]="87d523fe1a0c548db7c5477b451ddec1eb083c06",
 ["size"]=1048576,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="red_ptbr",
+["language"]="pt-BR",
+["md5"]="b002d19d15337b3132637364258605ee",
+["name"]="Vermelho · fan translation",
+["sha1"]="a2a0e2a3d6ef4d5771aa33682d31eaefd03c32ba",
+["size"]=1048576,
+["version"]="hydhyro · 98cec899e9ad",
 }},
 },{
 ["base"]={
@@ -32,6 +40,14 @@ return {{
 ["sha1"]="20e72dc6f41493eee1fdd0cef54214e6c3389688",
 ["size"]=1048576,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="blue_ptbr",
+["language"]="pt-BR",
+["md5"]="64bdddd54bfe775b910ec89a58740031",
+["name"]="Azul · fan translation",
+["sha1"]="ec9e33447d9bdbf95c2d57f487e25a57854a1adf",
+["size"]=1048576,
+["version"]="hydhyro · 98cec899e9ad",
 }},
 },{
 ["base"]={
@@ -49,6 +65,14 @@ return {{
 ["sha1"]="42f3714eec6eca25200d42461ff08d57c98f6d1d",
 ["size"]=1048576,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="yellow_ptbr",
+["language"]="pt-BR",
+["md5"]="186578eb92a67f04940a94fd43dd4836",
+["name"]="Amarelo · fan translation",
+["sha1"]="2b94c64b1944fb6866fd0c28149f86c11bc86253",
+["size"]=1048576,
+["version"]="hydhyro · fbb76167ed98",
 }},
 },{
 ["base"]={
@@ -66,6 +90,14 @@ return {{
 ["sha1"]="9254195d461ea942eaaa08cc4b83de3cf82aea0d",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="gold_ptbr",
+["language"]="pt-BR",
+["md5"]="a663443555efaf74dfbbf264f12b25bc",
+["name"]="Ouro · fan translation",
+["sha1"]="652c0208a5c54313e2d3efb336346e59a17cbab6",
+["size"]=2097152,
+["version"]="PT-BR · exact hash required",
 }},
 },{
 ["base"]={
@@ -83,6 +115,14 @@ return {{
 ["sha1"]="8ecc58d621faaedf2a934bd2583d527220df7bb9",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="silver_ptbr",
+["language"]="pt-BR",
+["md5"]="7454208311f121e492e6634d13612f25",
+["name"]="Prata · fan translation",
+["sha1"]="9d9536f14a1874d27ea9167fdf00b80439204a6d",
+["size"]=2097152,
+["version"]="PT-BR · exact hash required",
 }},
 },{
 ["base"]={
@@ -100,6 +140,14 @@ return {{
 ["sha1"]="accb584293ba056152f1fd908439b019017ff2fe",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="crystal_ptbr",
+["language"]="pt-BR",
+["md5"]="56c2dcb22ace6a4de161e1a6699ddefd",
+["name"]="Cristal · fan translation",
+["sha1"]="e41c519d7ca680facf546fa34b7b00f3149f428f",
+["size"]=2097152,
+["version"]="PT-BR · exact hash required",
 }},
 },{
 ["base"]={
@@ -117,6 +165,14 @@ return {{
 ["sha1"]="18a3758ceeef2c77b315144be2c3910d6f1f69fe",
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="firered_ptbr",
+["language"]="pt-BR",
+["md5"]="dfc02ad742baa5d557dcb0213b0b50dc",
+["name"]="FireRed · fan translation",
+["sha1"]="51ab6d001412cdc3d6da16fb824ab8084123b1dd",
+["size"]=16777216,
+["version"]="Breno · based on USA 1.1; mod gameplay base is USA 1.0",
 }},
 },{
 ["base"]={
@@ -134,6 +190,14 @@ return {{
 ["sha1"]="0802d1fb185ee3ed48d9a22afb25e66424076dac",
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="leafgreen_ptbr",
+["language"]="pt-BR",
+["md5"]="790d40d042401d1dea843fa7f52e2448",
+["name"]="LeafGreen · fan translation",
+["sha1"]="b32c63d5d1454d851cef16699f3ce757798553a2",
+["size"]=16777216,
+["version"]="Breno · based on USA 1.1; mod gameplay base is USA 1.0",
 }},
 },{
 ["base"]={

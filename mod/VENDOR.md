@@ -62,7 +62,7 @@ registry entry. This is not an independent full decompilation comparison.
 `latin_glyphs.lua` extends the synchronous text decoder with the Latin font
 indices already represented by upstream `FrlgFont.LATIN_GLYPHS`, plus localized
 ordinal/PC/Pokémelle font cells. Decoder changes are restored after extraction.
-No source ROM, ROM excerpt, decoded game text, or game screenshot is packaged.
+The runtime does not include source ROMs or extracted game asset packs. The accompanying QA document contains screenshots from local gameplay tests.
 
 ### Text corrections in 1.4.1
 
@@ -74,3 +74,29 @@ both adjacent script/data boundaries. `players_emerald_texts.py` validates the
 four indexed dynamic player-count strings. The audit JSON remains development
 material, outside the distributed archive. Live tests compare every added or
 changed registry key to decoded bytes from the exact input ROM on cold/warm load.
+
+## PT-BR profiles and authored additions
+
+PT-BR profiles import the user’s exact private translation ROM. Source projects,
+versions, patch hashes and resulting ROM identities are documented in
+`tools/ptbr_sources.json` in the repository. They include hydhyro’s Gen1 projects,
+the separately credited Gold/Silver/Crystal translations, OJ Abreu’s Ruby source,
+Zambrakas’s Emerald translation and the referenced FireRed/LeafGreen project.
+No source ROM or fanpatch is distributed with this mod.
+
+Sapphire supplements, move/ability display vocabulary, scene corrections and
+new pixel lettering are supplied as mod-authored data. Source hashes identify
+where corrections apply; numeric gameplay IDs remain unchanged. Original
+translation attribution is retained rather than assigned to this mod.
+
+Three additional private extractor changes support these profiles:
+
+- `extract_intro.lua` retains the cartridge's black backing beneath the blinking
+  title prompt instead of exposing the unused background band.
+- `pokedex_chrome_extract.lua` accepts an explicitly scoped entry-layout override
+  for a translated ROM whose Pokédex structure differs from the base revision.
+- `rs/extract_storage.lua` supplies the PC transition bar path relative to the
+  storage asset directory, as required by the native PC renderer.
+
+These changes are confined to the mod's private importer copies. The installed
+engine files remain unchanged.

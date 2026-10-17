@@ -38,6 +38,8 @@ def plain_ir(source, prose):
     # "<player> has no berries". Do not silently join the name and verb.
     if prose.startswith(' '):
         result[0]['s']=' '+result[0]['s']
+    if prose.endswith(' '):
+        result[-1]['s']+=' '
     result.append({'t':'eos'})
     return result
 
@@ -72,6 +74,12 @@ def template_ir(source, prose):
                 if re.fullmatch(r'\{\d+\}',part):out.append(dict(operands[int(part[1:-1])]))
                 elif part:out.append({'t':'text','s':part})
     if not out:raise ValueError('Empty template')
+    if prose.startswith(' '):
+        if out[0]['t']=='text':out[0]['s']=' '+out[0]['s']
+        else:out.insert(0,{'t':'text','s':' '})
+    if prose.endswith(' '):
+        if out[-1]['t']=='text':out[-1]['s']+=' '
+        else:out.append({'t':'text','s':' '})
     out.append({'t':'eos'})
     return out
 
@@ -104,7 +112,8 @@ def main(args):
     source=json.loads(args.base.read_text())
     corrections=json.loads(args.corrections.read_text()) if args.corrections else {}
     if args.edition_translations:
-        local=compile_prose(source,json.loads(args.edition_translations.read_text()))
+        edition_reference=json.loads(args.edition_reference_base.read_text()) if args.edition_reference_base else source
+        local=reuse_exact(source,edition_reference,compile_prose(edition_reference,json.loads(args.edition_translations.read_text())))
         local.update(corrections)
         corrections=local
     prose=json.loads(args.translations.read_text())
@@ -122,4 +131,5 @@ if __name__=='__main__':
     p.add_argument('--corrections',type=Path)
     p.add_argument('--reference-base',type=Path,help='Reuse only complete identical IR from another edition')
     p.add_argument('--edition-translations',type=Path,help='Additional prose keyed to this edition')
+    p.add_argument('--edition-reference-base',type=Path,help='Reference for edition prose; reuse only complete identical IR')
     main(p.parse_args())

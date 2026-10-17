@@ -76,5 +76,1235 @@
     {
       "t": "eos"
     }
+  ],
+  "sText_ApostropheS": [
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b31": [
+    {
+      "s": "GHI",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b45": [
+    {
+      "s": "TUV",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b59": [
+    {
+      "s": "JKL",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b76": [
+    {
+      "s": "WXYZ",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b81": [
+    {
+      "s": ",",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b6e": [
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b63": [
+    {
+      "s": "PQRS",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b4f": [
+    {
+      "s": "DEF",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b3b": [
+    {
+      "s": "MNO",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b27": [
+    {
+      "s": "ABC",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b15": [
+    {
+      "t": "text",
+      "s": "SUBA AQUI."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b89": [
+    {
+      "t": "text",
+      "s": "ESCAVE AQUI."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6bca": [
+    {
+      "t": "text",
+      "s": "VIVEMOS"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "NESTA"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "CAVERNA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6bec": [
+    {
+      "t": "text",
+      "s": "DEVEMOS TUDO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "AOS POKEMON."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6d06": [
+    {
+      "t": "text",
+      "s": "QUEM HERDAR"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "NOSSA VONTADE"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "BRILHE NO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "CENTRO."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6cd4": [
+    {
+      "t": "text",
+      "s": "FIQUE JUNTO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "DA PAREDE."
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "CORRA UMA"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "VOLTA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6ca0": [
+    {
+      "t": "text",
+      "s": "ESQ., ESQ.,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "BAIXO, BAIXO."
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "DEPOIS, USE"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "QUEBRAROCHA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6c73": [
+    {
+      "t": "text",
+      "s": "ABRA A PORTA."
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "UM POKEMON"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "ETERNO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "ESPERA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6c48": [
+    {
+      "t": "text",
+      "s": "AQUELES COM"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "CORAGEM,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "AQUELES COM"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "ESPERANCA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6c34": [
+    {
+      "t": "text",
+      "s": "O TEMIAMOS."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6c0d": [
+    {
+      "t": "text",
+      "s": "MAS NOS"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "SELAMOS O"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "POKEMON."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:082a6b99": [
+    {
+      "t": "text",
+      "s": "PRIMEIRO VEM"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "WAILORD."
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "POR ULTIMO,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "RELICANTH."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_ContestLady_Coolness": [
+    {
+      "t": "text",
+      "s": "estilo"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_ContestLady_Smartness": [
+    {
+      "t": "text",
+      "s": "esperteza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_ContestLady_Toughness": [
+    {
+      "t": "text",
+      "s": "vigor"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_Contest_Beauty": [
+    {
+      "t": "text",
+      "s": "beleza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_Contest_Coolness": [
+    {
+      "t": "text",
+      "s": "estilo"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_Contest_Cuteness": [
+    {
+      "t": "text",
+      "s": "fofura"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_Contest_Smartness": [
+    {
+      "t": "text",
+      "s": "esperteza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_Contest_Toughness": [
+    {
+      "t": "text",
+      "s": "vigor"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_CoolMove": [
+    {
+      "t": "text",
+      "s": "GOLPE ESTILOSO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_CuteMove": [
+    {
+      "t": "text",
+      "s": "GOLPE FOFO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_MonAttractedALotOfAttention": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " atraiu muita"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "atenção."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_MonCommandedTotalAttention": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " ganhou toda a"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "atenção."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sRoundResultTexts[3]": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " atraiu muita"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "atenção."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sRoundResultTexts[2]": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " chamou um"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "pouco de atenção."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sInvalidContestMoveNames[4]": [
+    {
+      "t": "text",
+      "s": "GOLPE VIGOROSO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sInvalidContestMoveNames[3]": [
+    {
+      "t": "text",
+      "s": "GOLPE ESPERTO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sInvalidContestMoveNames[2]": [
+    {
+      "t": "text",
+      "s": "GOLPE FOFO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sInvalidContestMoveNames[1]": [
+    {
+      "t": "text",
+      "s": "GOLPE BELO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sInvalidContestMoveNames[0]": [
+    {
+      "t": "text",
+      "s": "GOLPE ESTILOSO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestLadyCategoryNames[4]": [
+    {
+      "t": "text",
+      "s": "vigor"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestLadyCategoryNames[1]": [
+    {
+      "t": "text",
+      "s": "beleza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestConditions[3]": [
+    {
+      "t": "text",
+      "s": "esperteza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestConditions[2]": [
+    {
+      "t": "text",
+      "s": "fofura"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestConditions[1]": [
+    {
+      "t": "text",
+      "s": "beleza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestConditions[0]": [
+    {
+      "t": "text",
+      "s": "estilo"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_ToughMove": [
+    {
+      "t": "text",
+      "s": "GOLPE VIGOROSO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_SmartMove": [
+    {
+      "t": "text",
+      "s": "GOLPE ESPERTO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sRoundResultTexts[4]": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " ganhou toda a"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "atenção."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sRoundResultTexts[5]": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " não se"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "apresentou."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_MonHasntMadeItsAppeal": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " não se"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "apresentou."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_MonCaughtALittleAttention": [
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "t": "text",
+      "s": " chamou um"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "pouco de atenção."
+    },
+    {
+      "args": [],
+      "cmd": 9,
+      "t": "ext"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_ContestLady_Cuteness": [
+    {
+      "t": "text",
+      "s": "fofura"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_ContestLady_Beauty": [
+    {
+      "t": "text",
+      "s": "beleza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_BeautyMove": [
+    {
+      "t": "text",
+      "s": "GOLPE BELO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestConditions[4]": [
+    {
+      "t": "text",
+      "s": "vigor"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestLadyCategoryNames[0]": [
+    {
+      "t": "text",
+      "s": "estilo"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestLadyCategoryNames[2]": [
+    {
+      "t": "text",
+      "s": "fofura"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "sContestLadyCategoryNames[3]": [
+    {
+      "t": "text",
+      "s": "esperteza"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_SpAtk": [
+    {
+      "t": "text",
+      "s": "AT.ESP."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_XNatureMetAtYZ": [
+    {
+      "t": "text",
+      "s": "Natureza "
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 2
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "t": "dynamic",
+      "n": 5
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Visto no ",
+      "t": "text"
+    },
+    {
+      "t": "tag",
+      "tag": "{LV_2}"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 3
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ",",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 4
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_XNatureHatchedAtYZ": [
+    {
+      "t": "text",
+      "s": "Natureza "
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 2
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "t": "dynamic",
+      "n": 5
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Nasceu no ",
+      "t": "text"
+    },
+    {
+      "t": "tag",
+      "tag": "{LV_2}"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 3
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ",",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 4
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_XNatureProbablyMetAt": [
+    {
+      "t": "text",
+      "s": "Natureza "
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 2
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "t": "dynamic",
+      "n": 5
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Prov. no ",
+      "t": "text"
+    },
+    {
+      "t": "tag",
+      "tag": "{LV_2}"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 3
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ",",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 4
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_XNatureMetSomewhereAt": [
+    {
+      "t": "text",
+      "s": "Natureza "
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 2
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "t": "dynamic",
+      "n": 5
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Visto no ",
+      "t": "text"
+    },
+    {
+      "t": "tag",
+      "tag": "{LV_2}"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 3
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "Local desconhecido."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_XNatureHatchedSomewhereAt": [
+    {
+      "t": "text",
+      "s": "Natureza "
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 2
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "t": "dynamic",
+      "n": 5
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Nasceu no ",
+      "t": "text"
+    },
+    {
+      "t": "tag",
+      "tag": "{LV_2}"
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 3
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "Local desconhecido."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gText_XNatureObtainedInTrade": [
+    {
+      "t": "text",
+      "s": "Natureza "
+    },
+    {
+      "t": "dynamic",
+      "n": 0
+    },
+    {
+      "t": "dynamic",
+      "n": 2
+    },
+    {
+      "t": "dynamic",
+      "n": 1
+    },
+    {
+      "t": "dynamic",
+      "n": 5
+    },
+    {
+      "s": ".",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Recebido em troca.",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
   ]
 }

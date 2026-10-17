@@ -13,7 +13,7 @@ import json
 import re
 from pathlib import Path
 
-from build_profiles import lua
+from lua_literal import lua
 
 
 def symbols(path):
@@ -38,21 +38,27 @@ def charmap(path):
     # Deliberate text alphabet: the ROM reuses several cells in special UIs.
     result = {}
     for seq, code in re.findall(r'^\s*charmap "([^"\n]+)",\s*\$([0-9a-fA-F]+)', path.read_text(), re.M):
+        # The source appends a Japanese alphabet using the same byte values.
+        # It is not the font selected by this Latin translation. Never let
+        # those later aliases silently replace A/B/etc with kana.
+        if any(0x3000 <= ord(ch) <= 0x30ff or 0xff00 <= ord(ch) <= 0xffef
+               or 0x4e00 <= ord(ch) <= 0x9fff for ch in seq):
+            continue
         value = int(code, 16)
         if value not in result or len(seq) == 1:
             result[value] = seq
-    result.update({0x4b:'{_CONT}',0x4c:'{SCROLL}',0x4e:'{NEXT}',0x4f:'{LINE}',
-                   0x51:'{PARA}',0x52:'{PLAYER}',0x53:'{RIVAL}',0x54:'POKé',
-                   0x55:'{CONT}',0x56:'……',0x59:'{TARGET}',0x5a:'{USER}',
+    result.update({0x49:'\f',0x4a:'POKéMON',0x64:'N',0xe1:'POKé',0xe2:'MON',0x4b:'\v',0x4c:'\v',0x4e:'\n',0x4f:'\n',
+                   0x51:'\f',0x52:'{PLAYER}',0x53:'{RIVAL}',0x54:'POKé',
+                   0x55:'\v',0x56:'……',0x59:'{TARGET}',0x5a:'{USER}',
                    0x5b:'PC',0x5c:'TM',0x5d:'TREINADOR',0x5e:'ROCKET',
-                   0xc7:'Á',0xd7:'á',0xd0:'PO',0xd1:'Ké',
+                   0xc3:'ADV.',0xc4:'',0xc5:'',0xc7:'Á',0xd7:'á',0xd0:'PO',0xd1:'Ké',
                    0xd2:'',0xd3:'',0xd4:'',0xd5:'',0xe9:'',0xea:'',0xeb:'',
-                   0xf0:'¥',0x6d:'{COLON}'})
+                   0xf0:'¥',0x6d:':'})
     return result
 
 
 def recipe(rom, start, dynamic, syms, cmap):
-    parts, substitutions, visited = [], 0, set()
+    parts, used, visited = [], set(), set()
     bank, address = start
     pos = offset(bank, address)
     for _ in range(8192):
@@ -84,17 +90,22 @@ def recipe(rom, start, dynamic, syms, cmap):
                 parts.append({'token':'{DONE}'})
             break
         if command in (1,2,9):
-            if substitutions >= len(dynamic):
-                raise ValueError('Additional dynamic operand')
-            expected, token = dynamic[substitutions]
-            if command != expected:
-                raise ValueError('Changed dynamic command order')
-            ram_name = re.search(r':([^,}]+)',token)[1]
             ram = int.from_bytes(rom[pos:pos+2],'little')
-            if ram_name not in syms or syms[ram_name][1] != ram:
-                raise ValueError(f'Dynamic address mismatch: {ram_name}')
+            candidates=[]
+            for i,(expected,token) in enumerate(dynamic):
+                ram_name = re.search(r':([^,}]+)',token)[1]
+                if i not in used and command==expected and ram_name in syms and syms[ram_name][1]==ram:
+                    candidates.append((i,token))
+            if not candidates:
+                raise ValueError(f'Unmatched dynamic operand: command {command}, RAM {ram:04x}')
+            i,token=candidates[0]
+            # The engine's RomText also substitutes positional arguments.
+            # Correct ROM RAM identities alone do not make a reversed order
+            # safe. Those lines need an authored, order-preserving correction.
+            if i != len(used):
+                raise ValueError('Changed dynamic operand order')
+            used.add(i)
             parts.append({'token':token})
-            substitutions += 1
             pos += 2 if command == 1 else 3
         elif command == 0x17:
             address = int.from_bytes(rom[pos:pos+2],'little')
@@ -104,7 +115,7 @@ def recipe(rom, start, dynamic, syms, cmap):
             raise ValueError(f'Unsupported command {command:02x}')
     else:
         raise ValueError('Unterminated command stream')
-    if substitutions != len(dynamic):
+    if len(used) != len(dynamic):
         raise ValueError('Missing dynamic operands')
     return {'parts':parts}
 

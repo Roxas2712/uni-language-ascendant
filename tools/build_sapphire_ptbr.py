@@ -69,8 +69,9 @@ def main(a):
             assert key in ('gDefaultBoyName1','gMalePresetNames[1]','gDefaultGirlName1','gFemalePresetNames[1]'),key
             targets[key]=ir # Preserve Sapphire's player-name presets.
     corrections=json.loads((ROOT/'translations/pt-BR/ruby-corrections.json').read_text())
-    for key,target in corrections.items():
-        if key in sa and sa[key]==ru[key]:targets[key]=target
+    # Address-derived script keys differ even when the whole source IR is
+    # identical. Reuse the reviewed correction by full IR, including controls.
+    targets=reuse_exact(sa,ru,corrections,targets)
     ruby_prose=json.loads((ROOT/'translations/pt-BR/ruby-remainders.json').read_text())
     targets=reuse_exact(sa,ru,compile_prose(ru,ruby_prose),targets)
     if a.reference_base:

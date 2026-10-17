@@ -35,6 +35,8 @@ return function(game)
   wait(tonumber(os.getenv("QA_FRAMES")) or 360)
   local elapsed=love.timer.getTime()-started
   game.update=u;game.draw=d
+  local _,_,windowFlags=love.window.getMode()
+  local rendererName,rendererVersion,rendererVendor,rendererDevice=love.graphics.getRendererInfo()
   local function stats(a)
    table.sort(a);local sum=0;for _,x in ipairs(a) do sum=sum+x end
    return {n=#a,meanMs=sum/#a,p50Ms=a[math.ceil(#a*.5)],p95Ms=a[math.ceil(#a*.95)],maxMs=a[#a]}
@@ -43,6 +45,8 @@ return function(game)
    modLoadSeconds=e and e.loadSeconds or 0,bootToDriverSeconds=boot,
    update=stats(updates),draw=stats(draws),elapsedSeconds=elapsed,luaMemoryKiB=collectgarbage('count'),memoryBeforeKiB=before,
    graphics=love.graphics.getStats(),scene=map}
+  result.vsync=windowFlags.vsync
+  result.renderer={name=rendererName,version=rendererVersion,vendor=rendererVendor,device=rendererDevice}
   print('PERFORMANCE_JSON '..require('src.link.Json').encode(result))
  end,debug.traceback)
  if not ok then print('PERFORMANCE_FAILED',err) end

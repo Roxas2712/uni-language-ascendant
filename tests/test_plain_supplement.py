@@ -43,6 +43,10 @@ class PlainSupplementTests(unittest.TestCase):
 
     def test_preserves_fragment_separator(self):
         self.assertEqual(plain_ir([{'t':'eos'}],' não tem FRUTAS.')[0]['s'],' não tem FRUTAS.')
+        self.assertEqual(plain_ir([{'t':'eos'}],'Nº ')[0]['s'],'Nº ')
+        source=[{'t':'strvar','n':1},{'t':'eos'}]
+        target=template_ir(source,' {0} ')
+        self.assertEqual(target,[{'t':'text','s':' '},source[0],{'t':'text','s':' '},{'t':'eos'}])
 
     def test_rejects_blank_or_embedded_control(self):
         for text in ('','   ','{PLAYER} chegou.'):

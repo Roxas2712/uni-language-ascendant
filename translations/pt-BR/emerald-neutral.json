@@ -1,0 +1,2419 @@
+{
+  "scope": "Exact source identities reviewed for unchanged prose only; not a gameplay or full-language certificate.",
+  "entries": [
+    {
+      "source_sha256": "835427973ea56c6fb68c356508e767e3243d9ae106847be8e23e3996a613bf90",
+      "keys": [
+        "gText_NamingScreenKeyboard_ABCDEF"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "60cd5507655be87a3ab21bd751a9ca7de55de460b138633835da49e6d192bb85",
+      "keys": [
+        "gText_NamingScreenKeyboard_MNOPQRS",
+        "sEasyChatKeyboardAlphabet[2]",
+        "gText_EasyChatKeyboard_MNOPQRS"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "6a0fc05979361ab20e15f50352d050e3e249c9b09df8bd4b7476df54f8e7b7ca",
+      "keys": [
+        "gText_NamingScreenKeyboard_ghijkl"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "95da9d9a784879f932ddd723a6310206fbf6dc58001b910239c69ecc5460ef3d",
+      "keys": [
+        "gText_NamingScreenKeyboard_mnopqrs"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "e0a856e5c64baea201d1d39b88e2e9debdd0eda4e6ae64cdfb4d29ea179babfa",
+      "keys": [
+        "gText_NamingScreenKeyboard_tuvwxyz"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "7ba0b9272ea31f7bae8b5aa52f897fec293e84dc7beff3212b8cb8606b2bb15d",
+      "keys": [
+        "g3:08267a90"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "436990d3eade0d999d07dd12f5b93f0cfd1ebd9b106d72029bfa02e522c61479",
+      "keys": [
+        "Route114_Text_LennyDefeat",
+        "g3:0829a707"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "e6b742f64c93ed34efd559dc2b2820530c528814f18ca29c4c1abcb8a13f432c",
+      "keys": [
+        "g3:08217ee0",
+        "g3:08270a17",
+        "g3:0822222e"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "7d58a6f6491a7b7df3682ba9a611ba2cba823e960b33fa06b259b8c5de9be7a8",
+      "keys": [
+        "g3:08217ffb"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "3b283bcfe3024957085450b09e078659cf3d09e082e0aac2177792f9b54e7bbe",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][0]",
+        "gText_0Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "b10be060150d6ff16523792a202890cf4db07c45bdc223ce907f5e45e40f0625",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][10]",
+        "gText_100Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "0a7d3c9bfa0cf1b0fa2e826d10bbb1ff32785a09bc5cf6218d64413c55181a5b",
+      "keys": [
+        "g3:081f28a6"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "1291c4c93081bf9f3776c4e130e0739d5914b4dd48c2020021ef49a7850e630d",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][1]",
+        "gText_10Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "98ca8030817623fbe990aa2922cae966f328fe2109b1ea9bde9741233ed23ff9",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][2]",
+        "gText_20Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "192ed5c684a79db96ad0216a86d098d606948fffae8ba851b38ee6d4c832a5dc",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][3]",
+        "gText_30Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "94527c481aa868326f87b3a42d203840b362ded54bff9644bf89d20fce27b307",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][4]",
+        "gText_40Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "5ca927a3c4a5e7b81f7a1364349718a7033879f9196733479fe3dfdafb4b8d0d",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][5]",
+        "gText_50Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "946590deef93b560d174862be442e93b7b133c6d7eb8bfa6946a920bf6d722bd",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][6]",
+        "gText_60Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "d23b406c2f4168a6057d9b33234e3a04760b63ea1425839fb51dba5013f348a0",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][7]",
+        "gText_70Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "4e972811ed0627d4f4f660fd36153c5ddb130f43d74d2282dcf7d618a00facbf",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][8]",
+        "gText_80Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "997ab58207f92eaae6332e69e4f06d7e944161b9aebf53858608abe5aeecd562",
+      "keys": [
+        "g3:0821f974"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "11da0d4ec8b7387a8bd00a9743d61a86d25d8c5237c587f63fefc39d12fb6282",
+      "keys": [
+        "sTrainerCardColorNames[0]",
+        "gText_BronzeCard"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "bb629adcc9adb1f6d93a4580c1e94e9315729965dc4e413afb41df10c593cea4",
+      "keys": [
+        "gText_Par"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "c37df72334b7665344b9193d0f7d4038c4af993d1897a594caf79c32692ea80d",
+      "keys": [
+        "gText_Philip",
+        "sDefaultTraderNames[1]"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2904be5f81684fa8d90a7c5bdc8ab063f4471e2fd2768b354299f05b34d7e216",
+      "keys": [
+        "gText_Pokemon4",
+        "gText_Pokemon2",
+        "sStartMenuItems[1]",
+        "gEasyChatGroupName_Pokemon",
+        "sEasyChatGroupNamePointers[0]",
+        "gText_Pokemon",
+        "gText_MenuPokemon",
+        "gText_MenuOptionPokemon"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "92eb2a10ce094dc39b8f6b8214ae44ffbb36a929e339c0e7074b16ef296ca4cf",
+      "keys": [
+        "gText_Quiz",
+        "sFooterTextOptions[1][3]"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "e6a884ffa1f05f955cec367ea2de0a80a17832e4a16ba559e8c383d2c78658ca",
+      "keys": [
+        "g3:081fc510"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "ec795b5cd555b18f3abb498e3251a19b27d1dab8e7976e6a847ae126f2201e74",
+      "keys": [
+        "gText_ContestLady_Vinny",
+        "sContestLadyMonNames[1]"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "94e8f0e01949dd1dcbee675cc286ce1b7268404d92b4fcdaf918bdca2ff16f09",
+      "keys": [
+        "gText_ContinueMenuPokedex",
+        "gText_MenuPokedex",
+        "sStartMenuItems[0]",
+        "gText_TrainerCardPokedex",
+        "gText_SavingPokedex",
+        "gText_Pokedex",
+        "gText_MenuOptionPokedex"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "c6ad102888a0449b2ca521e7c8386151d981cfbd1ac32dd3d01427e688253d75",
+      "keys": [
+        "gText_DefaultNameAllie",
+        "sFemalePresetNames[4]"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "aa4a244cbf7b1f1cc7f051913b5648c791b7c178f7fc6f68fe1bd39daf6c7ec3",
+      "keys": [
+        "sText_Semifinal",
+        "gRoundsStringTable[2]"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "31da222cfbf610362a46156b51170bb670dcaebd0181166f70763b3169b3b7c7",
+      "keys": [
+        "g3:0822d1f7"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "733f543b28d3c8e172755fdbea1c41216f4df7f52726dc5f6818f936f598e43f",
+      "keys": [
+        "gText_ExpandedPlaceholder_Aqua"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "743d50b4f9b07f67244fca6d3c198afdc2f0bcbd990427df947d7165f9cb5821",
+      "keys": [
+        "gText_ExpandedPlaceholder_Brendan"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "62497ee202b1628abb47f2f6d3837f30769960b0240811e1fc82bd2ecbca1b4c",
+      "keys": [
+        "gText_ExpandedPlaceholder_Groudon"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e39b74eee3fb2ff841a6c3d035585eab448d7b2d82865c287707314a782c9087",
+      "keys": [
+        "gText_ExpandedPlaceholder_Kyogre"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "89a1757eb6fed33dfa0ea7b6975644ef5dd23b2c08f002835a5815e9af4b74d5",
+      "keys": [
+        "gText_ExpandedPlaceholder_Magma"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "3a6143f5548ae445f0b25dd9b3fb1d6f9261a6e11bd825677f449066be49e28d",
+      "keys": [
+        "gText_ExpandedPlaceholder_May"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a68f8f28ef8a0579aed1a6dd31fc4e216049ae77def9ab6233299d51dd3d63f3",
+      "keys": [
+        "gText_Lilycove"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "433bcdd2f4e1094b39bc96aca9fc42dc4dfc6efa4621f7c03825402961effe74",
+      "keys": [
+        "gText_ProfBirchMatchCallName"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c2294b594bdd26cf1a63f2e407699e233a03aca8a7dbe2605f486332996d9838",
+      "keys": [
+        "g3:08215fc6"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "9ec486b0f0393d05b51bb4c22319207b674bf1bb758dd34291661d39c93a61ff",
+      "keys": [
+        "g3:082162ab"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "47f4190d25a01732ddc1ad06cd3d49ad3e9d503d7dbe4e4d136c10eca6a647c2",
+      "keys": [
+        "g3:08216597"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "5cbb6cf13979c7a68a23c15e00c1f24ef8ee92d2dfdef11f198e031e4a4c5867",
+      "keys": [
+        "sText_Min",
+        "gText_SpaceMin"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "3f57fe8fce70a024a5fe2afda0210e437de39d7e794619ab92207498d14ace5f",
+      "keys": [
+        "sText_MagnitudeStrength",
+        "STRINGID_MAGNITUDESTRENGTH"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "2e9aa3cb4bfc1d7059693a66eeede96b4522c1ebeb6432a68753809289690f99",
+      "keys": [
+        "sText_Letters",
+        "sDebug_PlayerNames[3]"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "a6d530751829585f2f9af6bea3c8687490d523f9941e3183ae5993c409e84d0a",
+      "keys": [
+        "gTrainerClassNames[35]"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a15353fbfecb1725f35efc8962c5f2fd653e36bbd799e6b6739bad0407f8c1db",
+      "keys": [
+        "gText_Slateport"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b93090aaa9a72a735a03b53f88b0fa27d881588bde471829f57a82576e319800",
+      "keys": [
+        "gText_SoundMono"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "0583a97acaa41b075f1dada6f77c73a3140f1a880e0a6f92f7ea0a4c86ba93b7",
+      "keys": [
+        "gText_SpenserDefeatGold",
+        "sFrontierBrainPlayerWonGoldTexts[2]"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "4518fc14ee946ff5f37adcda8e0e1f32a2bf54f65ebe6a60535b168ffcd84423",
+      "keys": [
+        "sStartMenuItems[3]",
+        "gText_MenuOptionPokenav",
+        "gText_MenuPokenav"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "2cd544481a6f39d137a5c88a3385c71242ddac49dce2d19847dca3f29bc2c7d1",
+      "keys": [
+        "g3:0822facb"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "11ce49514013cf81c212694196f2055c4c944aeb9b5d89b931120ac574a47c4f",
+      "keys": [
+        "Route105_Text_LuisDefeated",
+        "g3:08295e66"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "bf00412effface38dade23178db8408c9ed79ed6dda0e81f0e893648fb38fd0f",
+      "keys": [
+        "gText_MoveInterfacePP"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "4d6ac676c7cfb36ceaa57562ab4a031e7d4ac0e46d5ff46aacbdd9c98f9fbf40",
+      "keys": [
+        "sText_AlphabetUpperLower"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "8a5f4d6d819d59571f86f6f05a3a81ffffeed4fbeaff9d6d327a77fb4cc3abd1",
+      "keys": [
+        "gText_MoveRelearnerPP"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "f070f47fbfed1e0c7396c45c4933d86a2f82a1bcd3aa7cf5781bdc2c6bffa0e2",
+      "keys": [
+        "gText_Steven",
+        "gText_StevenMatchCallName"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "396c3ec49ba0c13a4b15eaf414ca6bd2519a835acb8ede8f431a9fda2e593eeb",
+      "keys": [
+        "gText_Super",
+        "stdstring:6",
+        "gStdStrings[6]"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "3fb0b1b5f5bf6bf591184f4c30411a0a44ab3983ca2c048275e3574f633f6581",
+      "keys": [
+        "g3:081ef173"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "e6d5d17f2097c89f94f5d653b5b6017d73970e34f56805613c5f6b56af131bb7",
+      "keys": [
+        "sMalePresetNames[9]",
+        "gText_DefaultNameTeru"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f4c3b96259f559e68bf1e087f3877144329df9f66b313c5deb8916cd7a136752",
+      "keys": [
+        "gEasyChatGroupName_Pokemon2",
+        "sEasyChatGroupNamePointers[21]"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "16c3eca5369b608cac0123f2cfbcc837ee42afb6765c83764e3c949f74a8e274",
+      "keys": [
+        "sText_Final",
+        "gRoundsStringTable[3]"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "beecf35b38427be98442ba77971d15ac967b5c91caa1f1d7bea7332cada4880d",
+      "keys": [
+        "sScrollableMultichoiceOptions[2][9]",
+        "gText_90Pts"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "c4be2fccadffcab8fa84864bb330c27aef5a6e6fd057f0f5f3734b507f766947",
+      "keys": [
+        "Route123_BerryMastersHouse_Text_Ah",
+        "g3:082a7682"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "bdf6cd3f25851dd049a48572b3d5a887eb954d614a905a610929eb8cc1c01cb1",
+      "keys": [
+        "stdstring:5",
+        "gText_Normal",
+        "gStdStrings[5]",
+        "gTypeNames[0]"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "f2411528ed1000fe2c6b52152ce175a723d78744269011cd6f1a35759e7129d2",
+      "keys": [
+        "gText_ScottMatchCallName"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "186e42a1788bc851f8c1866f0f5574abd819d88db45b9f53c38644ba3473ba93",
+      "keys": [
+        "gText_Select"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "6525bcf00085bf5c491fe0748f5432a7ca2aa665fe1dc9c1427cf7438fc577ee",
+      "keys": [
+        "g3:0823c7e1"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "6fced0f4575d02078078eca01bc9dd9ad60e77e6925a8ab1fd1d2d1b988bf4f0",
+      "keys": [
+        "sEasyChatKeyboardAlphabet[1]",
+        "gText_EasyChatKeyboard_GHIJKL"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "e476989b6087dbe080325871378c7f0b5d36bd4af074757d30381e25730d259f",
+      "keys": [
+        "sEasyChatKeyboardAlphabet[3]",
+        "gText_NamingScreenKeyboard_TUVWXYZ",
+        "gText_EasyChatKeyboard_TUVWXYZ"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "1760e25b2e56eff6575ae876ae275d629dc59d136f7d933c1b924025e54b63c9",
+      "keys": [
+        "sFemalePresetNames[0]",
+        "gText_DefaultNameKimmy"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "81820118de4fdcf1ecf06587f936c4008221a8990e5e5118c7df42f934c35cd4",
+      "keys": [
+        "sFemalePresetNames[11]",
+        "gText_DefaultNameHazel"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "d332596db05f133c86e2e60bb613c166d038663b339bbd98f53cf253ca707cfc",
+      "keys": [
+        "sFemalePresetNames[13]",
+        "gText_DefaultNameTanja"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5b41175c8cd9ba976f6810707ee29fae1a449929c21b363ac603e8f3d03e6f39",
+      "keys": [
+        "sFemalePresetNames[15]",
+        "gText_DefaultNameNicola"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5b037dbac0b2aeda82a2a84b64bc30ac33b8392665502b3877889b8b9b5cdf4c",
+      "keys": [
+        "sFemalePresetNames[19]",
+        "gText_DefaultNameHalie"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "157fa768379827ae68921a4a5d9909ec75d4b9ec153781fe0edfb253c372d99a",
+      "keys": [
+        "sFemalePresetNames[2]",
+        "gText_DefaultNameBella"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "9054f32daf9df992c97b91b9c3440934b778badbb37e2ba00b18d5f4156197e7",
+      "keys": [
+        "sFemalePresetNames[5]",
+        "gText_DefaultNameLianna"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "8edd446fa8607bcf2d2de5a62750323e4490afc82463b743b51fdb66d798b3e4",
+      "keys": [
+        "sFemalePresetNames[7]",
+        "gText_DefaultNameMonica"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c228cbb970f5c6bc959a1cbfd23b69ea9c0ce4ec18a07e89a60cd7e6077acdde",
+      "keys": [
+        "sFemalePresetNames[9]",
+        "gText_DefaultNameAubree"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "6d5c3ed0e917a6035eee238870d38593fb73779ae9609e18f689a1579f58603d",
+      "keys": [
+        "sFooterTextOptions[0][2]",
+        "sFooterTextOptions[1][2]",
+        "gText_Ok3",
+        "sFooterTextOptions[2][2]",
+        "gText_Ok2"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "dfafac86a92d24cc2a88e6b67c1cf540dc5d5c92fd52e451b9d1523f7ec91689",
+      "keys": [
+        "sFrontierBrainPlayerLostGoldTexts[5]",
+        "gText_LucyWonGold"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "7c8f21c9458703a6462626e85a993d53909ac05dbe88aef358e6d8c5244bd182",
+      "keys": [
+        "sFrontierBrainPlayerLostSilverTexts[5]",
+        "gText_LucyWonSilver"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "f5823df1e37dad57b73cdc5a1bd5b7f2edfe99025c2740bcb4020391bd17f35f",
+      "keys": [
+        "gText_DefaultNameStu",
+        "sMalePresetNames[0]",
+        "gText_DexSearchAlphaSTU"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "080fbce56695eea2be234881589361ad609b15520b9f115453f739a8625db7e8",
+      "keys": [
+        "gText_Phoebe"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "704ca81f1ef1cf92c18f59faeffff64b65ae78b173a17d486d1b8cb18af1e416",
+      "keys": [
+        "gText_LucyDefeatSilver",
+        "sFrontierBrainPlayerWonSilverTexts[5]"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "cac4fba1cf6755257baf3924473eba574c93847e66ec647042d29fd30399ea5f",
+      "keys": [
+        "gText_Marco"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a6f93ac1e1889cd522fe6d87d56b737fdd23ae0b5ff6fe67370bca95ef8d84d1",
+      "keys": [
+        "gText_Glacia"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f32ac18adda081dd01512af44be7cd3013451dd8facafdda10abc8ccc4d970be",
+      "keys": [
+        "sMalePresetNames[8]",
+        "gText_DefaultNameWalker"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c310ba48b6d7f1e0d683eb41ab202410f362d13ce5c1f2b4ac68a8bb35ba821c",
+      "keys": [
+        "sMalePresetNames[7]",
+        "gText_DefaultNameEaston"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "9089a19d698c236f59f313989ffa4a625e0a4a9fd589785fd1fc033d01dbdf33",
+      "keys": [
+        "sMalePresetNames[6]",
+        "gText_DefaultNameJaxson"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "986eea865bd758381cbe286957ca11d51d2c79be7fad7154ca2b6be19a1cacb1",
+      "keys": [
+        "sMalePresetNames[5]",
+        "gText_DefaultNameJude"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "cec5f37824766d20c1edb8aaf1394ab45356ed4249864d9c54a72307ef0ea4a7",
+      "keys": [
+        "sMalePresetNames[4]",
+        "gText_DefaultNameReid"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "194009c423562b8e97422bde068686ac0cc9bf5d016282a922af9df8392603e2",
+      "keys": [
+        "sMalePresetNames[3]",
+        "gText_DefaultNameKenny"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a97479c82ed47f777230c8aaa5361b38edc092e4113dfda581a96153d528f5e3",
+      "keys": [
+        "sMalePresetNames[2]",
+        "gText_DefaultNameTom"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "27f20c2b419047d432bde9b3c0f4dc9f9f72ff81de3d37a4856c298b45cc167f",
+      "keys": [
+        "sMalePresetNames[1]",
+        "gText_DefaultNameMilton"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b59dbabf7abe2ca5cc89c0551b2e54fe9460d7ff495ebdf06c7ec976841a6e63",
+      "keys": [
+        "sMalePresetNames[19]",
+        "gText_DefaultNameQuincy"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "29d2cdbb27c6f2c3066e83a3d26c27302da34d44a4b8905e4ed24b4096c3c0f8",
+      "keys": [
+        "sMalePresetNames[18]",
+        "gText_DefaultNameStanley"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "07df53fd2b1751e8bb3c8734e7c145510f708df11e7357d2b38814d2dbc60524",
+      "keys": [
+        "sMalePresetNames[17]",
+        "gText_DefaultNameCollin"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "028c08224f9619d268189713dc06da8aa4046377c4547afb1371b4cd618fe58d",
+      "keys": [
+        "sMalePresetNames[16]",
+        "gText_DefaultNameLandon"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "ff9b19b2bd2bc8e322f7c963e74a86e239574a0bf7d949901fdb8e188e524256",
+      "keys": [
+        "sMalePresetNames[15]",
+        "gText_DefaultNameDarren"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "76bcc49261d65c433a53051dab642b86821ab80e1a5b22c83b0da61dc81099aa",
+      "keys": [
+        "sMalePresetNames[14]",
+        "gText_DefaultNameCasey"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "24261af603fe69348c6ce110e2d96c8a64652b414b1decf6283eda3c83fd8d5d",
+      "keys": [
+        "sMalePresetNames[13]",
+        "gText_DefaultNameTerry"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "d692d07989ee4eb9ce50f2c615b0e843daa081b20064a782826339f129e88d94",
+      "keys": [
+        "sMalePresetNames[12]",
+        "gText_DefaultNameSeth"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "9292c2993e4c3549fba58c8e4a405051c5105acc08d40d2363db28ed240a3c58",
+      "keys": [
+        "sMalePresetNames[11]",
+        "gText_DefaultNameBrett"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "443a6accd29ea18e10e2c995102659c98a1ebb88e9ef2d605d9f6b1266550917",
+      "keys": [
+        "sMalePresetNames[10]",
+        "gText_DefaultNameJohnny"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "79fec8ecbd844e97b5727dadb384acdee548f1fb46c98f4da0c370fc97a7185b",
+      "keys": [
+        "g3:08226a60"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "f4ccc2d0056e2548f96b4abcc2a1404720a412c8ed39db8652cf991d007448a9",
+      "keys": [
+        "gText_Anna"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2e5d92fd341a37d408562ea3b10afd6f3187386fc48288a3707dea4af29d63de",
+      "keys": [
+        "g3:08226e7f"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "84fe982f8900ed3e3b42b8ae96fef114d23c980bdd47b4fa20b33ddff6f17034",
+      "keys": [
+        "g3:081f7ea8"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "5eaec02f415545808b778f8f7872ae3ed10a874d67df8d58e312d45081dae954",
+      "keys": [
+        "g3:081f7eb3"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "82716c2e89747791617d27f7b2c6b07ebef065c344c9dac9e36f9784aae80b28",
+      "keys": [
+        "sFemalePresetNames[8]",
+        "gText_DefaultNameCamila"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "db15488b5339438669a60ed1ef60e299914c9396048b5b7460c40f46507f07bf",
+      "keys": [
+        "sFemalePresetNames[6]",
+        "gText_DefaultNameSara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "702ca562eb58e4e4866ed386a0292e9885013a84f08d45d726f79541dcc7b533",
+      "keys": [
+        "sFemalePresetNames[3]",
+        "gText_DefaultNameJayla"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "27fc4ce7d83ea2a23674304c634d790324a44aaed3a4ba472ac470f37fe62cb7",
+      "keys": [
+        "sFemalePresetNames[1]",
+        "gText_DefaultNameTiara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "62ec5931970ca52539649d2b4bd4e6b717c39fad010e8ce4f4fcd73d21004710",
+      "keys": [
+        "sFemalePresetNames[18]",
+        "gText_DefaultNameLucy"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "67fe12decbd6d50a7a6f7e8393c36c13f765de1173fe15d04528e8577135bbce",
+      "keys": [
+        "sFemalePresetNames[17]",
+        "gText_DefaultNameTerra"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f330de2ff8c1592839a3fe7257bde983fadc22abdf427faa07e4b19bf13e631a",
+      "keys": [
+        "sFemalePresetNames[16]",
+        "gText_DefaultNameLillie"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7811af90df42dc13720450b9ce3b700cb65decdb1ab014ca7407147eac944e1f",
+      "keys": [
+        "sFemalePresetNames[14]",
+        "gText_DefaultNameYasmin"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7354e8ecb0cd6372eaac4a4311c8c75edc3707607a2b15a2507515c7dc64711f",
+      "keys": [
+        "sFemalePresetNames[12]",
+        "gText_DefaultNameNadine"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "d0df06f73e7cbc4ec3652e5035608a80fced1ad695e8680cf2e79d9c7199de30",
+      "keys": [
+        "sFemalePresetNames[10]",
+        "gText_DefaultNameRuthie"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5d7c6957d58bdec8cfbaee343c40f59f3932bf9defc70c16176aae7acc6dfbb0",
+      "keys": [
+        "g3:0820ad5a"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "13b3d86d95a7a0948e9a4c3edf554778e979a6be38b683f95c31108ac0b85096",
+      "keys": [
+        "g3:0820ad6e"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "d3dd884e5065725a1562005baa8d1e9249386216d95416cee0a8b5942789074f",
+      "keys": [
+        "g3:0820ad80"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "019ea38b85e8e40f00961ff919c3f293dc20c9c525e6ce49e81f58a50b04e6c0",
+      "keys": [
+        "gText_Acro"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "3d302c7c5c4193f4aa4930e7dc52b04524e2884b4d0ed84833b41609a4d84051",
+      "keys": [
+        "gText_Amy"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "37d593208545f82a41ff62ae98c9c79586606f51aa6e28d25473b6bea92b7036",
+      "keys": [
+        "sDefaultTraderNames[3]",
+        "gText_Roberto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b54c955c07ae05d9a4f4d5045139a66475affee2916868ef2fbc78c5a4780fe6",
+      "keys": [
+        "sDefaultTraderNames[2]",
+        "gText_Dennis"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e663b6f6ff3c9a7c6231b330561873e3466ea8ef4b835283e86201a1f8abeccd",
+      "keys": [
+        "sDefaultTraderNames[0]",
+        "gText_Tristan"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5facbd6f3097d2b5195986e4872ca9855ce32ca6358f4978eec3534109f1fc1b",
+      "keys": [
+        "sCreditsText_YuriSakurai"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f4a1604808104b9d6db9e7e1115fc0b10d25965642388a31abac2fadb52bbfe7",
+      "keys": [
+        "sCreditsText_YumiFunasaka"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a71a805b378130c012d811899115301da7a2b8f31ee627a8b993bb241aa7fb78",
+      "keys": [
+        "sCreditsText_YuichiroIto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "772e39c585ff55ee8cad7d1e1b54d01bb0d8b90db1d93f03a189a0aa20bc83e5",
+      "keys": [
+        "sCreditsText_YoshioTajiri"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "8d4fdd916debfd8ecb024382f8fa432dffdc416cce628657e834e0c992fcc2cb",
+      "keys": [
+        "sCreditsText_YoshinoriMatsuda"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "50617575572bc2803ce6e5b30bf66e0cb3716087b3bd57757da5f6942fed948d",
+      "keys": [
+        "sCreditsText_YokoWatanabe"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "64d60b93e57d78fcded8bc1968b7d34b4d8787c2aa5139b84e1acb963da74e36",
+      "keys": [
+        "sCreditsText_TsunekazIshihara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "fb23cf19761a0155994e8e46ddd4f1e38d6fd93d48c6574a1f29b2f44f0e01fc",
+      "keys": [
+        "sCreditsText_ToshinobuMatsumiya"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "feb10f78a0eb7687dcebaf346ae6a491251e0a36ba5bd17ad6514e7c41bdb6c3",
+      "keys": [
+        "sCreditsText_TomotakaKomura"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "531325537c9fb6603309882d7173624d540269d7ac221bfabad5cb7427e0f304",
+      "keys": [
+        "sCreditsText_TomomichiOhta"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a74f26f40a088068bd482b5a154da32da596906e931b4adbd00a180d460f470c",
+      "keys": [
+        "sCreditsText_ThomasHertzog"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "cd22d7682bf981dcfe66eadb863fc66973fcc02915d0d8e18cb8a6ceb905ad69",
+      "keys": [
+        "sCreditsText_TetsuyaWatanabe"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "33c7ac1f40d85df4bd04b5b2ba160074f4afbbfcbb8b8bcfd5da8fd0184eb897",
+      "keys": [
+        "sCreditsText_TetsujiOhta"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "74a474f3f1626d0fe0c59ec6fe0b1cb129863504073dfb446870922765c9592d",
+      "keys": [
+        "sCreditsText_TadashiTakahashi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e911eead59bad6066f5a81b48ff2da60b094f59e867d4d717a91cb9c3134e4d4",
+      "keys": [
+        "sCreditsText_SouichiYamamoto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "ea45adb2e752445335febe63e9ab7620d4e3d4db4930527b49c297dc63a6346c",
+      "keys": [
+        "sCreditsText_SosukeTamada"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "1ba148211543184c508af8a5b9275c3af3135d1be90bb693d1c85c344a9a47b6",
+      "keys": [
+        "sCreditsText_ShusakuEgami"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2140cab809322724f8d9dcba0d4de60b8333337aa8acac62b30d452d6acb8f75",
+      "keys": [
+        "sCreditsText_ShunsukeKohori"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "8c7dbde2dfa5ef131bd11593a82aa1e856b4ecddf397f8966cd76e638b6b5886",
+      "keys": [
+        "sCreditsText_ShigeruOhmori"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "bebbb9067caf5a42ad0cff8e7f50e01f1aa86d348011c06eb4d2fc01621c3caf",
+      "keys": [
+        "sCreditsText_ShigekiMorimoto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e5e51708bbc894719aefa58204431a0a0cb0207f7c7c4db4f863a6b4e6be4200",
+      "keys": [
+        "sCreditsText_SethMcMahill"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a4d10da32ff9be8beca8441f7fe93564a46508f28dd98a4100473a3806e3988a",
+      "keys": [
+        "sCreditsText_SatoshiTajiri"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "13b29560510393edacff44d9cb84e439afccb4557f32da6a7e95e19ffa8b0bc4",
+      "keys": [
+        "sCreditsText_SatoshiOhta"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f4380e9998784f44f9f51f1d81833807f1e330f1bcab8d186f74d6c21ba293d4",
+      "keys": [
+        "sCreditsText_SatoshiNohara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5d328340f5c4e332f992ea1608d99d7fa0ceaf973422d82e0664287db20bd658",
+      "keys": [
+        "sCreditsText_SatoshiMitsuhara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "9bce7fa7960fca4605f42dad76edddac4221c9456b9693eefeda67f67d15f9d1",
+      "keys": [
+        "sCreditsText_SatoruIwata"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a04a7edae3bdfb7da156fb4ca1c07baf2f87989847c3fdf5386df688ea8dff35",
+      "keys": [
+        "sCreditsText_SakaeKimura"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b4df04083b183a77b7b77043b4c24cabba4313771ed87e4624195fddb8fece8c",
+      "keys": [
+        "sCreditsText_SachikoNakamichi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "971c638f3877ea2606ae1a705ce5335ff8facd484f00647775a3585c03aa5efd",
+      "keys": [
+        "sCreditsText_SachikoHamano"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "8343d32f597feb3fbcd733f660f37f1d6409a33d61151e34ffff136f762a52e3",
+      "keys": [
+        "sCreditsText_RuiKawaguchi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "d9e561c71b4c70f3ce04134229625f11c94a1e6e07a958744c13124355fc2b0e",
+      "keys": [
+        "sCreditsText_RetsujiNomoto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "0caa2d4b6e3a8656fd36d5bb5eee7b866a9f7330e31a579b0f4cb3de8f8350e9",
+      "keys": [
+        "sCreditsText_RenaYoshikawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e1000c010c4f59ad42940ec9c2a2d538943a4ba6836e27491bdbdc789d7bce24",
+      "keys": [
+        "sCreditsText_NozomuSaito"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "3bf4bb25c316da9931d50169df4b4edafe3d9e85651f661fb17935071bee8318",
+      "keys": [
+        "sCreditsText_NorihideOkamura"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "554ed446a40bdf770207422392d70cf644a7f64b94b113c2a34087ec38ac381b",
+      "keys": [
+        "sCreditsText_NaokoYanase"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "bdf0d88a4ccfb3704ce9c122b6cebb350956ce3fbc7e5115ce1e8cfddf4e585b",
+      "keys": [
+        "sCreditsText_MotofumiFujiwara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "4ed7bbd68e76ea300dd67db8dced3197cbc0537ebb4ae14e4ab3b0709b8b88d9",
+      "keys": [
+        "sCreditsText_MakikoTakada"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "36972e90b7571f6a5db0569ecabb09d84584bac8b4529cd545df43feba38fc9d",
+      "keys": [
+        "sCreditsText_KojiNishino"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a959a9bb530fa2cbc23af3b21738303b4c37ae87f7472a315e75e000a556aaab",
+      "keys": [
+        "sCreditsText_KimikoNakamichi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5264b90451f79cb9c46af16fed97f35ae8db54518fd00dac3617e996d3965dc9",
+      "keys": [
+        "sCreditsText_KenjiMatsushima"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "78230c6e9cc73ec1faa21d1e9b61a34d5be2bd11e5d9140f82ef2e0981dd1f9b",
+      "keys": [
+        "sCreditsText_KenSugimori"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "da687df76356ee90d25261d197a63b9f7531e9ac00eda9b15321f887b110e125",
+      "keys": [
+        "sCreditsText_KeitaKagaya"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "af765cd165b7424aed51326551803a0d940395a0ff6071f97fc2c4cfc15ec183",
+      "keys": [
+        "sCreditsText_KazuyukiTerada"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "bf762e4d2c47164770c5b534ce2fd859e05054456491483100801c106e9cae43",
+      "keys": [
+        "sCreditsText_KazuyaSuyama"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5cbd28865342b77e9d4122aea2747c07b354f5ed1f010a15b7ceb22f5f715c67",
+      "keys": [
+        "sCreditsText_JunichiMasuda"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c945c20506e38c596928e94e6981986a443101ca894aa22d127b8e6b15a0dbcb",
+      "keys": [
+        "sCreditsText_HitoshiYamagami"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "338efaeb98e557c291ae9862e25e2d23cfeb28f52d07e90af6387819da2619f3",
+      "keys": [
+        "sCreditsText_HisashiSogabe"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "25fcf8ea7e70d9facb2a64ef6b4721d3c6c3d16cc5ec416bddd6adfaee449465",
+      "keys": [
+        "sCreditsText_HiroyukiNakamura"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a4e165b26805afb828988eec94ba8b163ca8f42148b2830bc7253f83255bc311",
+      "keys": [
+        "sCreditsText_HiroyukiJinnai"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a07380db075fef2bff2ca2a2d58487aee037830f661995b2388e4d4959fb9b3e",
+      "keys": [
+        "sCreditsText_HiromiSagawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "dcb3eb21b8bc95f220b460a2b41902c88897b3f4dcbd4343a362c8d1bcb388fa",
+      "keys": [
+        "sCreditsText_GoIchinose"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b72e1d6f1d324fa324811dcf0e462f29a261e426f8a90d8187ffe8089a15f41c",
+      "keys": [
+        "sCreditsText_GakujiNomoto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e3a0c63f479a3d87a26f9dbbdd2a4df4c87c33c5152e09eede44e2e6f3ba3e35",
+      "keys": [
+        "sCreditsText_AsukaIwashita"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "23bb36eeb37c40153ee08dde50c8c37d575b3235a04850db4839f50bb4cc267c",
+      "keys": [
+        "sCreditsText_AkitoMori"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b24d2f8649883b36e2771191724ae51c2023ae52dc1a72d832fe0114e27bd080",
+      "keys": [
+        "sCreditsText_AkihitoTomisawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "98ea7a6294118b48ba5b9299b51f2621ef5a15cf829ebd6e5b37975da5c82236",
+      "keys": [
+        "sCreditsText_AimiTomita"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "33c79c0931e855348a640cbb28e14f4cf36d0488a1598336497e157dbc8d86a5",
+      "keys": [
+        "LilycoveCity_PokemonCenter_1F_Text_Skitty",
+        "g3:082a970e"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "e513316e6e61056eaa021414bfe3a5cd02b96a1375c1efce2fe370ef92c9bff9",
+      "keys": [
+        "g3:0821ed63"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "214d5638fdd400a04c716f40e6de521a6b8c4027df9617053b6a943944bb11e4",
+      "keys": [
+        "sCreditsText_ChiakiShinkai"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "41d03c0f5fa84bbfea664d9330910acad0d5a231b328445509c72b5a4db05007",
+      "keys": [
+        "sCreditsText_ChieMatsumiya"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "0791769e749df7bed7d4a34c1fdaf6daa6a8173bca9b6a7be1f180e7ca87eaf1",
+      "keys": [
+        "sCreditsText_DaisukeHoshino"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f200c324055c723798a83b6ede06d617d39dac33d69ab6df9973fb2b0a850bc0",
+      "keys": [
+        "sCreditsText_ErikJohnson"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "46dd4db6a15b78a54c219e6b1020c3a6889c8514e67f99051b696b13c1ddccd5",
+      "keys": [
+        "sCreditsText_FujikoNomura"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c7999bac3790112265c2511fd74f9d85c61b2d8b8538a1689336ae0dab7dfb6f",
+      "keys": [
+        "sCreditsText_HidenoriSaeki"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b1a8e6b2b29fcb8ddf6b88459545c3475c5a4b7d8be91347057293ac666029fb",
+      "keys": [
+        "sCreditsText_HideyukiNakajima"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7887ed4319d823f322e9671b83f85fdd7633bccaf5c28cdba96b3c171d355cd2",
+      "keys": [
+        "sCreditsText_HiroNakamura"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "cda505b823112e6be6ef285d899ba4a20d5b1d054978d12a975c4c1361d9c6ca",
+      "keys": [
+        "sCreditsText_HiroakiTsuru"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "1337ea59a0a0d6d10013e47e06e7353ac1e8efd8bf1c35d5bcd8e65b8663f8cb",
+      "keys": [
+        "sCreditsText_HirokiEnomoto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "19d28079226491c0b27d51e2a7d17bba67aad99fdfc4fc8659a97457a61755ba",
+      "keys": [
+        "sCreditsText_HironobuYoshida"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5c337e573e7b084aacb9dbd42a1b0531f62ff1608de59dde5b40283d4649ab9c",
+      "keys": [
+        "sCreditsText_HiroyukiUesugi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e9cdd80eb8958502a0d2800056fcdf6fb891bceab659909b2d6425896f9b5307",
+      "keys": [
+        "sCreditsText_HitomiSato"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b1a3ed82e72244ca2f5cc0c78a857c576e91121a54f3468c237065bd90460bb4",
+      "keys": [
+        "sCreditsText_JunOkutani"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "a9de84a97cc93c6971ebff66bca865a1b96e8ecfee2e81ac0749e874d9677e2b",
+      "keys": [
+        "sCreditsText_KanakoEo"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "93f1a5d7238e08a516ba1738d728e3aeacf73e91df67c66028d20471673e3269",
+      "keys": [
+        "sCreditsText_KazukiYoshihara"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "0f2f3b9443947335e78e936fa1869a31fd03bdcf13c4f4c21df66df674ac961b",
+      "keys": [
+        "sCreditsText_KenjiTominaga"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "89afb147272c18fbf07ccb39f7f8a0731f2475e989c98a639d231164da934343",
+      "keys": [
+        "sCreditsText_KenjiroIto"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "67e5bfb77839e6b15aec3c80d217c851b73350d57676890aee03c758eabeff34",
+      "keys": [
+        "sCreditsText_KenkichiToyama"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "31e584888b0eaa84165fb73c8e94a02ca1f9dea4389cf01f3ebd702793193ea6",
+      "keys": [
+        "sCreditsText_KyokoWatanabe"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "605f919641dabecb4afba4f520845c71df03d0a63694afb9a498bc37c09c9c2e",
+      "keys": [
+        "gTrickHouse_Mechadoll_Zigzagoon2",
+        "gTrickHouse_Mechadoll_Zigzagoon"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "dfb1254d5fe32ee008546d6f2779ad632bcfbdaa16942723c268a5be5126cbf3",
+      "keys": [
+        "gTrickHouse_Mechadoll_Slakoth"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7d3a85ef56196334c7c5860f584de725d3232b7d337375cf3e82126f23e9c999",
+      "keys": [
+        "gTrickHouse_Mechadoll_Shroomish"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "051474a07a299373fac05655f0990899db122bf6c952cf122402f88bf304f963",
+      "keys": [
+        "gTrickHouse_Mechadoll_Poochyena3",
+        "gTrickHouse_Mechadoll_Poochyena",
+        "gTrickHouse_Mechadoll_Poochyena2"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2df3623e00f6419bb491355d661e6406205991503395e96e24ff2fe088c4524b",
+      "keys": [
+        "gTrickHouse_Mechadoll_Oddish"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f94c13e3610d7726cf55113b994bec947fb871179efe36e97b7b3adf03bc8095",
+      "keys": [
+        "gTrickHouse_Mechadoll_Nincada"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "29b173a8bec6065f99f7945c346f8fce4f078c8a80ca358a85e61290a382d5c2",
+      "keys": [
+        "gTrickHouse_Mechadoll_Dustox"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c9d85f7349c0141eae048ec9b526579a524258d8d30523879644dd4431a45a69",
+      "keys": [
+        "g3:08239d75"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "f9ae595d8f1334e81815ab955d90b00b0abcd8ea8658242f24d0d51fd9cbc74d",
+      "keys": [
+        "gText_NamingScreenKeyboard_GHIJKL"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "b87b1ab9fbe8bd27b0dce9e07acaf0dbf14b7ce811dde684c2aff9cc613ed44f",
+      "keys": [
+        "gText_Wallace"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "84f838103acddb81d75184591543d3b143fab1ea19a96ce9a7c77a3b00fcaa8f",
+      "keys": [
+        "gText_Ok"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "a86d0b4664a576a19c062460c26f9d171e624dbac939530a249b8eefca8e25ef",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_z"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "3fc7a83e61df9fc884c98b0e0a61440492215e8c2167b4bbd27cd22829fd17da",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_uvwxy"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "1dbca7bb4aeebfc3b5fb87fb179dd0544c160804541cd9e825b0d38ddca5bf3d",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_pqrst"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "9b746613d7d7b99533bdd0019af1c851c15aecf9948a296fb3075f9cdec8be0b",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_klmno"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "db62848c3ff6f03c63a4b0f447b0dd2f4310786a7f310ac0e5a3302dd30b96ae",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_fghij"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "47847215984492e79814c3866a4a6754da200977dd3c97e7ebb6fda2ddcdc652",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_abcde"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "7b6b7802e55a6b949c8eddd1d75bf24d2a66b044cc56a346d13dcc75628f49e8",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_Z"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "6514f18acb086fef0c0ea1ed5a55e98c9aa42a18f7ec5eb7ed920b917e5e6bd9",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_UVWXY"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "ea3f1f3f081897457ac34a7751349859d72226d34c8c86c3a3d042d44e3a38ab",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_PQRST"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "762730fdffe93ec611ef394b52261ca48ce1877c4e90e5a5eb18b1ce0539c588",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_KLMNO"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "87bd1a208c73374ee3d1ff5ab088accd71c07fc6d9d1cc2b154a78bcc86fdf0a",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_FGHIJ"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "ac3d7330ceecb5e6320c1766101634f01a4def10d5c945b023ba8828426286e3",
+      "keys": [
+        "gText_Total"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "338ed778d5b18081b9b5f0a3ccd72d339f9ab3ccfe03b977562349e2b70864f8",
+      "keys": [
+        "gText_ProfBirchMatchCallDesc"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "d638da32da74d1449c77cf7f9ac2acfe56257233967508ec3431504dc0b08f28",
+      "keys": [
+        "gText_Petalburg"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7aa95f10b0aedaa2aa4ba097e3b5621f8d1741c09337f4d688847ceff5349cb0",
+      "keys": [
+        "gText_Vs"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "39b093e02aeccb3bb85979344997acaae534a13460d8e5594bb25a1d6078050f",
+      "keys": [
+        "gText_NamingScreenKeyboard_abcdef"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "ac638de73528935ec0629bc6f7751bd3d5b599f0a4753d4323cd99169ffa4c52",
+      "keys": [
+        "gText_Winona"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5e2744b7d0020bff98d6ed1d682a6a58be9025667f5e6dbc11912ee8b12dab82",
+      "keys": [
+        "g3:0822a337"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "775740362b95b0107d5200221b0bcf2683fc6c27273e3a25c7fc75baf88f9246",
+      "keys": [
+        "FarawayIsland_Interior_Text_Mew",
+        "g3:082c6dff"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "515a7fae068734019fbcfe3c2e70f5e9205c32ade21b70ba5f09a62764b92c55",
+      "keys": [
+        "sText_RPM"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "7a5b46e3572b3b4fb2c1a45ee4ed65e090be55d68ed66e3b01cede5aa413b2e8",
+      "keys": [
+        "sText_Ranking"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "81d50cd86f2506cf2d43f1715dc0e80ef6c632699392f242d4cee08ec5a4b601",
+      "keys": [
+        "gText_Kira"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "9cbd9b4eccbab4edf33abf453849185f106ad3daef42296cfbf082c797ee024e",
+      "keys": [
+        "gText_John"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "52d54763fec09c483303aac81bbc75f1acc2895d42462b417365ac8efc61d8d4",
+      "keys": [
+        "gText_Item"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "9c3cea209a3497583ef7f12bd763719f1fd67229f028ffeea15805a8e640795d",
+      "keys": [
+        "gText_Hoenn",
+        "gText_DexHoenn"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "4bc3640ffcad90d30efba750749b43eea681bebf6ec8bc23de5f361af78fe597",
+      "keys": [
+        "gText_Gabby"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "34f7203387321c6f1afd1a89dd486078c79fd7d218e44e5612348f1e9904d1c9",
+      "keys": [
+        "gText_ExpandedPlaceholder_Maxie"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7b95fb722bde60587beeead2902bcb15f85615574aabaa58b81c52fb10ca8e3d",
+      "keys": [
+        "gText_ExpandedPlaceholder_Archie"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "82b30b883b979cb805b91f603219a556e9495be368e3ade0636a01e1517b1ff9",
+      "keys": [
+        "gText_EmptyPkmnCategory"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "9097ca2993d0047667bc05abbad2dda576ac3097b73e49f51bfca5584d331bce",
+      "keys": [
+        "gText_DexSearchAlphaPQR"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "b8be3a9c10c74b92e39d6d12aaeb77efd899d839dcfd5a16dac74243580efcdc",
+      "keys": [
+        "g3:082a96da",
+        "LilycoveCity_PokemonCenter_1F_Text_Zigzagoon"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "91884ed04fbe711cc69d7f6999879c46915e28d11515bc7b5b9064b3a38deb9b",
+      "keys": [
+        "g3:082a96e6",
+        "LilycoveCity_PokemonCenter_1F_Text_Kecleon"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "84eab0ecbffc820c425927a60e5f2e0959d995c16852c535b8383cdba67c2975",
+      "keys": [
+        "Route134_Text_JackDefeat",
+        "g3:082a45bb"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "649363d997a021ce3c01e00dcc9ab1132fc5dc4fc8d721855b9af1ae3b66c0e6",
+      "keys": [
+        "gStatusConditionStringsTable[2][0]",
+        "gStatusConditionString_ParalysisJpn"
+      ],
+      "reason": "internal-status-comparison-marker"
+    },
+    {
+      "source_sha256": "8e1b6bcf8e6e720254d758f0783546371468e2f95b201cd5cfbb62a2f570941b",
+      "keys": [
+        "gText_Brawly"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "0cdab7ccca3d75b908f4031134585312099ee66daefdc68e425e21c919da4505",
+      "keys": [
+        "gText_BattleWallyName"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "1441aea2411dddb4617ee32455f6836df55f64dc8ab359fa7bb3f1d9089de064",
+      "keys": [
+        "gText_BDot"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "e4ba60c097aee17608286263b582b3add67d58db8859d96b86dd81875566a3bf",
+      "keys": [
+        "g3:0826346b"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "b9f7e77f4f08bc5dcbab3e4dfd78c333c56f654ba46c36eba755d66f35e9bb45",
+      "keys": [
+        "gText_5MarksPokemon"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "7b08899d6334244fb4a04ad346c6b64453de68f074caebc4ad310ce542d98526",
+      "keys": [
+        "gText_10P30P50P50P"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "33c397ccc4774a75fc3da8dc81eebb7a4c93fcdc0c8b9cf599cb00f30a007f86",
+      "keys": [
+        "g3:082a96f6",
+        "LilycoveCity_PokemonCenter_1F_Text_Poochyena"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "a9536015b87a3e4bb82a18e215d34e26f245c1b80901e43125b835669a054133",
+      "keys": [
+        "gText_ButtonTypeLEqualsA"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "c9bd506a61ddf3b90bba2ca30580ff2995141ea1dcf26ff1d6fd61ed0bc85287",
+      "keys": [
+        "gText_ButtonTypeLR"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "530ddb4e1d13abd19a2a6e9797a98ad7a7b95107b6adce233a5d1b37c16068b9",
+      "keys": [
+        "gText_ButtonTypeNormal"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "507cd2e554bc2418fd623943dc1eb1e1039d3d4e1ea9e9a2c87f671f2132dde7",
+      "keys": [
+        "gText_CDot"
+      ],
+      "reason": "shared-portuguese-word-symbol-or-unit"
+    },
+    {
+      "source_sha256": "7118e58adf52713babbb6933b7c75d7eed924c02e34acefc5081778d076c8498",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_ABCDE"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "ce88c28441d1595334b8d8297288df736f10ccd64abfc4dbd815faca2a4fe749",
+      "keys": [
+        "Route118_Text_DaltonDefeat",
+        "Route118_Text_DaltonRematchDefeat",
+        "g3:0829d6cd",
+        "g3:0829d7ca"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "381f1eb409abd7191e6910082200cc52e91ecb5ce03a994fd3bb2f487ddb8c60",
+      "keys": [
+        "g3:082a9703",
+        "LilycoveCity_PokemonCenter_1F_Text_Pikachu"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "9847ccd7801af21eeaa57302840ea766d6fab76e9cc39f1b9ab9eabf893f9aaa",
+      "keys": [
+        "gText_Dewford"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "d54121d0f1a33e81dfe1393d2be11f8f4e038858466f416c03e1586ec744554f",
+      "keys": [
+        "g3:082a6b27",
+        "gText_DexSearchAlphaABC"
+      ],
+      "reason": "alphabet-or-keyboard; braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "41ecf978738bd4ac54b96c0b055867f55d87f7e8f6bec352cac7822d5fcaca47",
+      "keys": [
+        "g3:082a6b4f",
+        "gText_DexSearchAlphaDEF"
+      ],
+      "reason": "alphabet-or-keyboard; braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "8ef560e5a7d89b3a39c2a99805d69b8fbc81ad8b4bb4379ec0349d0eb19d0e2d",
+      "keys": [
+        "g3:082a6b31",
+        "gText_DexSearchAlphaGHI"
+      ],
+      "reason": "alphabet-or-keyboard; braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "beaeef3cda12bb15213705a2f7ebebbdb0764c87e8b0baddb424a0302c2de700",
+      "keys": [
+        "g3:082a6b59",
+        "gText_DexSearchAlphaJKL"
+      ],
+      "reason": "alphabet-or-keyboard; braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "de43bc1fafc6dd9a66a15dbffef8c7adc47f2f3969d68956299a391f3a9470a9",
+      "keys": [
+        "g3:082a6b3b",
+        "gText_DexSearchAlphaMNO"
+      ],
+      "reason": "alphabet-or-keyboard; braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "a590237bf67be347f8fdf1dba792520f278c1dc557a39ee14faaf794f56fcd11",
+      "keys": [
+        "gText_DexSearchAlphaVWX"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "64f2340816c562c274d6b4b8f1eb9e0beb329111bec10a60ac2de1272a121b54",
+      "keys": [
+        "gText_DexSearchAlphaYZ"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "a883a71585714de08c7c450da281614f8f1e134105cbd3b83f239ff00638d1c2",
+      "keys": [
+        "gText_Roy"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "5e9dc65e4876f3a511a91106456bdb105178aeb646b35406913f5d0d1e116a03",
+      "keys": [
+        "g3:08203bce"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "d1740310ef487dd1f0c50f3ca358a980f89770f4f1ca6776ba90c426537de5c1",
+      "keys": [
+        "g3:08203b8d"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "c1c91b6b181a5badd8a7484022fa48988756a8b2ee164a3718b8cbff04c52b9d",
+      "keys": [
+        "g3:081eb3b5"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "3305d6bdf9cfc80ae08ca24119b43a5fe5fc8e6a50ae6a0664f0d62521681133",
+      "keys": [
+        "g3:081ffdfa"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "9fc9fdab698a054baa333a316838b9b54049f7c026de18f6e7a02c3e377e72eb",
+      "keys": [
+        "g3:08251c8a"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "b9902abfcfd982f64e54b988b54c24b534688494103a5985c96627a2fc39bbe7",
+      "keys": [
+        "g3:08222f31"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "2d9e73a77913a448b0e3f8a4c31f7499efbadb565816b025d2b88fd286e919c7",
+      "keys": [
+        "sCreditsText_MasaoTaya"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "fab02c25252ded3b1e8f84934471713b7905f6b14975595fadb20c3b4d851aee",
+      "keys": [
+        "sCreditsText_MichikoTakizawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "963bcc7e0bd0d84e623dd8d74c456174ae63516a9677ca08aa1aa69aef9db97f",
+      "keys": [
+        "sCreditsText_MikaKurosawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "11c2236a1526d1e2032fc00d0aa5a5dec38198c6b1a29a06dc1a9abbaff28278",
+      "keys": [
+        "sCreditsText_MikikoOhhashi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b743fc9bfb8c12ccba453c69f77ddee9260c65dd7cf7d42f1f35b2e235283ba6",
+      "keys": [
+        "sCreditsText_MiyukiIwasawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "40a41ef9004f51c99af2cca4167fa9ab6e46542ee6e9ffdc07e88c67b3d98383",
+      "keys": [
+        "sCreditsText_MorikazuAoki"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2317fa5394fc6d6c2dffa6829d2d4f65ccac5d3d040109492c7406bd5b58f259",
+      "keys": [
+        "sCreditsText_MotoyasuTojima"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "caf369b60d54c35cb80a91aa4ee8a0f682096e91bf59e96ccf51074a153f6999",
+      "keys": [
+        "sCreditsText_MuneoSaito"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "9a0b3de4388eac0d4b29f78151916f9533f469aaf59b5b717b1dd1417d8a5d92",
+      "keys": [
+        "sCreditsText_NCLSuperMarioClub"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "104f91a708c271968d01d3415b2b32b3e000b182d5b43e790c28d67ca289bc54",
+      "keys": [
+        "sCreditsText_NicolaPrattBarlow"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "8b101d78532b47e7086b0de3c2cf8d72a4771590caccd67dbd9e9d9277d43116",
+      "keys": [
+        "sCreditsText_PatriciaAMaurer"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "119915c301826fe1cf3824a269d005b65c5ecb8aefc092b5392a32d9616ea4a6",
+      "keys": [
+        "sCreditsText_ShellieDow"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "be9187d2f033f21f2b1310d09cd780f0708fdfe2e57d96987b3ccdd4fff0e17f",
+      "keys": [
+        "sCreditsText_SuguruNakatsui"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "f20769a697760abdc9ca464113c59a4c91917fe93d47769f760239ba34d9dc59",
+      "keys": [
+        "sCreditsText_TakahiroOhnishi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e3b4bd9dc7ae872c115a034d77a04f77062f20dc9bd5fc63d93a9d7fcfe61122",
+      "keys": [
+        "sCreditsText_TakanaoKondo"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "7ce03301512f74e1d64298c4829aaa21bc03f50204a337546aaa272a9d2a67b0",
+      "keys": [
+        "sCreditsText_TakaoNakano"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "d55f444a620d4ab5e53cb813fa2997db88cd977e976f863d115165be23bf4a4e",
+      "keys": [
+        "sCreditsText_TakaoUnno"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "3b1de228033453c383ea6d8885ae3c7aedc06492002a88dae9e88d2889937ac3",
+      "keys": [
+        "sCreditsText_TakehiroIzushi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "df254613f89e58601310171eb3668d25deb25e32821d47a9a973a33c743004d5",
+      "keys": [
+        "sCreditsText_TakenoriOhta"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "78e03e7a4b0c6637dd17dc704cad994dc5d82ed36c0d8fc3532160e920b8d9ed",
+      "keys": [
+        "sCreditsText_TakeshiKawachimaru"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "334a118ef1987c7f4ef4179e876e21adc8afeb6dda074c89c34274808e59d7de",
+      "keys": [
+        "sCreditsText_TeikoSasaki"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "6a98180d5cd31515c6bab7d26281dc602f6f17ce1f939e445aa199b96ddcf305",
+      "keys": [
+        "sCreditsText_TeresaLillygren"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b85da82e6b914f8f94657870a3bbe742c2bdbe73cb9f894dc8d4d40f9d376528",
+      "keys": [
+        "sCreditsText_TerukiMurakawa"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "e0c54629b9a16044172a58b065e9f4d9a179457de5b32c48b3fcfb323be067cf",
+      "keys": [
+        "sCreditsText_TeruyukiShimoyamada"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "0422563935ed8ee7830ce946082fdaaab1960764ebd93db28cf0ca6f8775775b",
+      "keys": [
+        "g3:0822fdfc"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "65cb8280dc6dbf2d410d0fdabf2000dd8c478ea318eadb80df56462569c40e25",
+      "keys": [
+        "g3:08233183"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "8b0256685758a24b4ff26ee31cc8687196b4b4024c35f13f4f57233065b94a42",
+      "keys": [
+        "sCreditsText_AiMashima"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "fef07d8757fe5e8b52927f5439d94ef909cb87578d8e24b3ad5c6751dc3841f9",
+      "keys": [
+        "sCreditsText_AkikoShinozaki"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "8045ef84af7579a83a39bd073d233fdcbd3241c634dcfbe154f9a17bc7ffa251",
+      "keys": [
+        "sCreditsText_AkiraKinashi"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2f1b922608e43ea3df65d3bf1ffcfb1472c5d093a0db2ff41612f70453fa7c33",
+      "keys": [
+        "sCreditsText_AstukoFujii"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "2207246766935718b80a1444fb6d064639bd7216c1a4250081bc8cfc9f835c8d",
+      "keys": [
+        "sCreditsText_AtsukoNishida"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "494be77b915bb90c9e935f5d12f0579c1680aebda250769e04d7b3dcdcb9ae11",
+      "keys": [
+        "sCreditsText_AtsushiTada"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "c381f7798a4e1f6a520ae94092545fc68af50e7e522dbe974541cf513e916141",
+      "keys": [
+        "sCreditsText_AzusaTajima"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "85b04b5ab441523cf1437c6a5f6caa75a4e05d8cf99cf04267f3bda62039ad75",
+      "keys": [
+        "gTrickHouse_Mechadoll_Azurill"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "18da681f6b8acf58d40ae61733eb6438bb454874e147614fed001290baf3a250",
+      "keys": [
+        "gTrickHouse_Mechadoll_Carvanha"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "ada962d45e5d10b93794683200ed239c1b196f7c373289b461dd0f378d0694d1",
+      "keys": [
+        "gTrickHouse_Mechadoll_Lotad"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "11eacd75cdb32927f1a62c8be12338f61f877fdde134fcf3b089a44f442f4859",
+      "keys": [
+        "gTrickHouse_Mechadoll_Ralts"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b0b99a2d7085b063ebe57449831fae7eb8349fdac5c8719c37a9779ed902a944",
+      "keys": [
+        "gTrickHouse_Mechadoll_Taillow"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "cf9cd5e158dfbd9f108ff02fa8e7de04c84bc75a52eb3b0ee89082ca3427c8a3",
+      "keys": [
+        "gTrickHouse_Mechadoll_Wingull"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "acd0a253c26f8808c0762572d5cbcf93ddb9219f3275b9a12fa71f30fab16d48",
+      "keys": [
+        "gTrickHouse_Mechadoll_Zubat",
+        "gTrickHouse_Mechadoll_Zubat2"
+      ],
+      "reason": "proper-name-retained"
+    },
+    {
+      "source_sha256": "b62dc512127e1d52a5502bd6622a7c04694a304a9a7d4728c3360a26eb8783d0",
+      "keys": [
+        "g3:081ff9bb"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "b1c3824687288804e58924ada040709226c202bfbd2adfa16bc69624d3c1f034",
+      "keys": [
+        "g3:0820334a"
+      ],
+      "reason": "cry-or-interjection"
+    },
+    {
+      "source_sha256": "d4664e7bd275c79b916de6190abbeef2ea3559de1184af42666e5f274e9b619d",
+      "keys": [
+        "g3:082a6b45"
+      ],
+      "reason": "braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "b8f66daf7328317e7bd12607227ecfe887884d48727a692023ffb4b6e04b592d",
+      "keys": [
+        "g3:082a6b76"
+      ],
+      "reason": "braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "f15dbabe7d0c77d951265267edd24f078b19762bc5df528672348a30245cbe60",
+      "keys": [
+        "g3:082a6b81"
+      ],
+      "reason": "braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "ce75d28edcee40d6141fe96dbab0c8fc43d6fa3cd73f1e52447c6e3ed271f0d5",
+      "keys": [
+        "g3:082a6b6e"
+      ],
+      "reason": "braille-alphabet-or-punctuation"
+    },
+    {
+      "source_sha256": "81fe9a0645be25dab904a3dd98e90f8a474638b6730508b3448627739158b732",
+      "keys": [
+        "g3:082a6b63"
+      ],
+      "reason": "braille-alphabet-or-punctuation"
+    }
+  ]
+}

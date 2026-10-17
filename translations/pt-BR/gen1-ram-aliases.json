@@ -1,4 +1,5 @@
 {
   "wNameBuffer": "wcd6d",
-  "hTextID": "hSpriteIndexOrTextID"
+  "hTextID": "hSpriteIndexOrTextID",
+  "wCurEnemyLevel": "wCurEnemyLVL"
 }

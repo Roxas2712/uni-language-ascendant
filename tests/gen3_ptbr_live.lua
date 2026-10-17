@@ -7,6 +7,10 @@ return function(game)
   assert(e.status==(lang=='en' and 'english' or 'active') and e.language==lang,'Wrong language state')
   print('LANGUAGE_LOAD '..require('src.link.Json').encode({game=version,language=lang,seconds=e.loadSeconds,cacheHit=e.coverage and e.coverage.cacheHit,translated=e.coverage and e.coverage.translated,total=e.coverage and e.coverage.total}))
   if os.getenv('QA_MODE')=='load' then love.event.quit();return end
+  if lang=='pt-BR' then
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_moves_live.lua'))()()
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_abilities_live.lua'))()()
+  end
   if love.setDeprecationOutput then love.setDeprecationOutput(false) end
   local Text=require('src.core.game3.rom_text')
   assert(Text.plain('OtherText_Yes')==(lang=='pt-BR' and 'SIM' or 'YES'))
@@ -27,11 +31,12 @@ return function(game)
   local Message=require('src.ui.game3.message')
   local Hud=require('src.ui.game3.hud')
   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_nurse_live.lua'))()(game,capture,lang)
+  assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/rs_ptbr_field.lua'))()(game,capture,lang)
   assert(Map.load(nil,game,prefix..'OLDALE_TOWN',{x=6,y=17,facing='up'}));wait(60)
   require('src.core.game3.rng').SeedRng(12345)
   assert(require('src.core.game3.party').giveMon(game.session,1,15,nil,{fixedPersonality=0}))
   if version=='sapphire' and lang=='pt-BR' then
-   local authored=dofile(os.getenv('GERMAN_MOD_ROOT')..'/mod/profiles/sapphire_ptbr_authored.lua')
+   local authored=assert(love.filesystem.load('mods/german_rom_source/profiles/sapphire_ptbr_authored.lua'))()
    local Font=require('src.ui.game3.frlg_font')
    local entries=0
    for key,row in pairs(authored) do

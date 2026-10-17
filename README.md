@@ -7,62 +7,46 @@ once and reuses its local cache on later launches.
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
-## PT-BR development preview
+## Brazilian Portuguese for Gen1–Gen3
 
-The `feature/pt-br` branch adds a Brazilian Portuguese menu and an Emerald
-import profile for **Zambrakas 2013-12-08, without the day/night patch**.
-The matching BPS patch is linked in [the in-game QA document](mod/PT-BR.html).
-Apply it to your own US Emerald dump, then import the patched ROM:
+Version 1.5.0 contains PT-BR profiles for all eleven editions: Red,
+Blue, Yellow, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed and LeafGreen.
+It combines exact fan-translation ROM imports with authored corrections, move
+names and native UI/graphic localization. See the generated
+[gameplay report](mod/PT-BR.html) and [machine-readable QA](docs/PT-BR-QA.json)
+for the current verification status. A profile being enabled is not a claim that
+every story or multiplayer branch has been played.
 
-- US base SHA-1: `f3ae088181bf583e55daf962a92bb46f4f1d07b7`
-- PT-BR source SHA-1: `18a2b0acdba046c71b8677bb58c9ee7d36f7a91f`
+The source ROM and revision must match [the ROM checklist](mod/ROM-Liste.html).
+[Source projects and patch identities](tools/ptbr_sources.json) are recorded
+separately. FireRed/LeafGreen fanpatches use a 1.1 patch base, while their
+recompiler runtime uses the supported US 1.0 base. Do not interchange them.
+Sapphire uses its own US game, exact-source reuse from the Ruby PT-BR import,
+and separate Sapphire translations, including its Pokédex entries.
 
-All 15,655 text keys are mapped and the profile passes live smoke tests,
-including a scripted wild battle through victory and return to the field.
-**The source fan translation still contains English text.** This is not a full
-playthrough or a complete linguistic review. The picker states that limitation
-in all ten menu languages. Menu choice, Back, reset, persistence and all menu
-font glyphs were tested.
+All 165/251/354 move IDs retain their gameplay identity and receive Portuguese
+display names. Gen3 also covers abilities, item names and descriptions, trainer classes,
+map labels, Easy Chat vocabulary, PokéNav and native side-menu text; FireRed/LeafGreen include Help and Fame Checker.
+Saved Easy Chat word IDs and unlock rules are preserved. Raster lettering is
+compiled into the language cache; the mod does not translate images each frame.
 
-**Ruby and Sapphire are also development previews; the other eight editions remain hidden.**
-Both use the OJ Abreu Ruby PT-BR ROM as their imported translation source
-(SHA-1 `90f1464f77c57b4eef45ee07df140d402162eee3`). Sapphire runs its own
-US base, retains its own title/world assets, reuses only text with exactly
-matching English source IR, and adds 203 authored edition-specific Pokédex
-entries (405 pages). All 13,457 text keys are mapped. This is not full linguistic
-coverage: English labels and inherited fan-translation defects remain.
-Progress is recorded in [ptbr_sources.json](tools/ptbr_sources.json).
+**Evidence correction:** “Missão concluída! Poções, saúde e proteção.” was a
+synthetic font fixture, not Nurse Joy's dialogue. It is excluded from the report.
+Current healing evidence is reached through actual NPC interaction and checks
+HP restoration and returned field control. Other fixtures prepare saves, maps,
+party members or inventory; they never supply display dialogue. Unit tests are
+reported separately from gameplay evidence.
 
-**Screenshot correction:** “Missão concluída! Poções, saúde e proteção.” was a
-synthetic Ruby font fixture, not Nurse Joy's dialogue. It must not be used as
-translation evidence. The misleading Emerald caption was also corrected.
-Authored healing dialogue is now tested through actual field interaction,
-including HP recovery and return of control. It is pinned to original text IR
-hashes and applied to both symbol and address aliases.
+The menu has ten languages, including PT-BR. Menu and game language can be
+selected independently. Back and Reset remain available. The intro runs once
+per mod profile; updates preserve that profile, uninstalling deletes it, and
+reinstallation starts fresh. The first-run notice explains this in English.
 
-The current supplement adds **937 authored Emerald translations** and **218
-additional Ruby translations**, with exact-source reuse in Sapphire. Including
-aliases and earlier corrections, the authored profiles contain 1,544 Emerald,
-733 Ruby and 1,142 Sapphire keys. These counts do not establish completeness.
-The broader review queue includes short strings and non-ASCII dialogue that the
-previous English-remainder filter missed. Unchanged names are candidates for
-review, not automatically translation defects.
+Build with `python3 tools/package.py`. No ROM or fanpatch is included.
 
-Real-dialogue checks now cover the weather-closed department-store rooftop,
-the abandoned ship's captain office, and the lottery clerk's pending prize.
-The English/PT-BR pairs use identical story preconditions and actual NPC
-interaction. The lottery check also verifies the player name and item delivery.
-An Ingrain battle checks the actual rooted state, message, victory and field
-return. Screenshots and observed pages are in the QA document and
-[PT-BR-QA.json](docs/PT-BR-QA.json).
+## Install version 1.5.0
 
-Build the installable preview with `python3 tools/package.py`; it writes
-`dist/uni-language-ascendant-1.5.0-preview.3.zip`. The latest stable release
-remains 1.4.2 below. No ROM or translation patch is included.
-
-## Install version 1.4.2
-
-1. Download [uni-language-ascendant-1.4.2.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.4.2).
+1. Download [uni-language-ascendant-1.5.0.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.5.0).
 2. Import the matching US base ROM in Gen1Recomp.
 3. Install the ZIP through the mod manager, enable the mod for your game, and
    import your language ROM under **Uni-Language Ascendant → Imports**.
@@ -81,13 +65,13 @@ are included. Changing game language requires a restart.
 
 | Games | Game languages |
 | --- | --- |
-| Red, Blue, Yellow | English base + German |
-| Gold, Silver, Crystal | English base + German |
-| FireRed, LeafGreen, Ruby, Sapphire | English base + German |
-| Emerald | English base + German, French, Italian, Spanish; PT-BR in the preview |
+| Red, Blue, Yellow | English base + German, Brazilian Portuguese |
+| Gold, Silver, Crystal | English base + German, Brazilian Portuguese |
+| FireRed, LeafGreen, Ruby, Sapphire | English base + German, Brazilian Portuguese |
+| Emerald | English base + German, French, Italian, Spanish, Brazilian Portuguese |
 
 Menu languages: English, German, French, Italian, Spanish, Japanese, Korean,
-Simplified Chinese, Traditional Chinese and Brazilian Portuguese (preview). A translated menu does not imply a
+Simplified Chinese, Traditional Chinese and Brazilian Portuguese. A translated menu does not imply a
 game-language profile exists.
 
 Exact versions and SHA-1 checksums are in [the ROM catalog](tools/rom_requirements.json)
@@ -99,7 +83,21 @@ source and attribution notices.
 
 ## Verification and limitations
 
-Version 1.4.2 passed unit checks for game/import filtering, fallback selection,
+The version 1.5.0 report records the current gameplay checks, exact runtime and
+test-helper fingerprints, screenshot hashes and paired English/PT-BR performance
+runs for every edition. The report builder refuses final output when a required
+run is missing, stale, failed or only a focused sample. See
+[PT-BR.html](mod/PT-BR.html) and [PT-BR-QA.json](docs/PT-BR-QA.json).
+
+The release passes 58 functional groups, 44 paired performance runs, 69 Python
+unit tests and nine Lua unit groups. All 22 PT-BR measurements hit the language
+cache. On the tested M3 Mac, Emerald's median observed rate was 59.84 FPS in both
+languages, while its cached PT-BR mod load took 3.79 seconds and its measured Lua
+heap was 211.8 MiB versus 96.1 MiB in English. These are stationary overworld
+measurements under VSync and background load, not a universal performance guarantee
+or process-RAM figures. The report includes every edition and all raw measurements.
+
+Earlier version 1.4.2 passed unit checks for game/import filtering, fallback selection,
 all nine menu locales, preferences and intro lifecycle. Live Emerald runs checked
 English-only and English/Spanish imports, fallback from an absent French import,
 and the five-language picker including mouse paging and a French in-game dialogue.
@@ -160,7 +158,7 @@ the German Universal reference, Noto fonts and the shared Origami Ascendant intr
 ### Reproduce PT-BR QA
 
 Use a stock engine checkout and an isolated copy of an already imported US
-Emerald cache. The runner always uses `german-rom-mod-ptbr-qa`, never the player’s
+Emerald cache. The runner uses an isolated `german-rom-mod-ptbr-*` QA identity, never the player’s
 normal save identity. Substitute your own absolute paths:
 
 ```sh

@@ -19,16 +19,19 @@ return function(game)
     assert(not game.capturePath,'Screenshot timeout')
    end
    assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_field_dialogues.lua'))()(game,capture,lang)
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_daycare_dialogues.lua'))()(game,capture,lang)
    print('LANGUAGE_DIALOGUES_OK',lang);love.event.quit();return
   end
   local Text=require('src.core.game3.rom_text')
   local Pokemon=require('src.core.game3.pokemon')
   local expected={fr={'OUI','BULBIZARRE','ENGRAIS'},it={'SÌ','BULBASAUR','ERBAIUTO'},es={'SÍ','BULBASAUR','ESPESURA'},de={'JA','BISASAM','NOTDÜNGER'},en={'YES','BULBASAUR','OVERGROW'}}
-  expected['pt-BR']={'SIM','BULBASAUR','ENORME'}
+  expected['pt-BR']={'SIM','BULBASAUR','SUPERCRESCER'}
   assert(Text.plain('gText_Yes')==expected[lang][1],Text.plain('gText_Yes'))
   assert(Pokemon._names[1]==expected[lang][2],Pokemon._names[1])
   assert(Pokemon.abilityName(65)==expected[lang][3],Pokemon.abilityName(65))
   if lang=='pt-BR' then
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_moves_live.lua'))()()
+   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_abilities_live.lua'))()()
    local Font=require('src.ui.game3.frlg_font')
    for ch,id in pairs({['ã']=0xF4,['õ']=0xF5,['Ã']=0xF1,['Õ']=0xF2,['í']=0x21,['Í']=0x0C}) do
     assert(Font.glyphId(ch)==id,'Wrong Portuguese font cell: '..ch)
@@ -60,7 +63,7 @@ return function(game)
   assert(Map.load(nil,game,'EM_OLDALE_TOWN',{x=14,y=7,facing='up'}));capture('mart')
   assert(Map.load(nil,game,'EM_OLDALE_TOWN_POKEMON_CENTER_1F',{x=7,y=4,facing='up'}))
   assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_nurse_live.lua'))()(game,capture,lang)
-  if lang=='pt-BR' or lang=='en' then
+  if (lang=='pt-BR' or lang=='en') and os.getenv('QA_MODE')~='smoke' then
    assert(loadfile(os.getenv('GERMAN_MOD_ROOT')..'/tests/ptbr_field_dialogues.lua'))()(game,capture,lang)
   end
   game:_handleBootAction({action='new_game',name='TEST',gender=0,start={map='EM_OLDALE_TOWN',x=6,y=17,facing='up'}})

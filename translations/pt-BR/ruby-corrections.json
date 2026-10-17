@@ -256,5 +256,540 @@
     {
       "t": "eos"
     }
+  ],
+  "gOtherText_DiplomaCertificationGameFreak": [
+    {
+      "args": [
+        0
+      ],
+      "cmd": 2,
+      "t": "ext"
+    },
+    {
+      "s": "Jogador: ",
+      "t": "text"
+    },
+    {
+      "args": [
+        16
+      ],
+      "cmd": 17,
+      "t": "ext"
+    },
+    {
+      "args": [
+        2
+      ],
+      "cmd": 1,
+      "t": "ext"
+    },
+    {
+      "t": "player"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "args": [
+        1
+      ],
+      "cmd": 1,
+      "t": "ext"
+    },
+    {
+      "n": 1,
+      "t": "strvar"
+    },
+    {
+      "s": " POKéDEX",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "Este diploma atesta",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "que você completou",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "s": "a sua POKéDEX.",
+      "t": "text"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "args": [
+        66
+      ],
+      "cmd": 19,
+      "t": "ext"
+    },
+    {
+      "args": [
+        2
+      ],
+      "cmd": 1,
+      "t": "ext"
+    },
+    {
+      "s": "GAME FREAK",
+      "t": "text"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "gOtherText_NationalDex": [
+    {
+      "t": "text",
+      "s": "NACIONAL"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c533d": [
+    {
+      "args": [
+        3,
+        6,
+        27,
+        13,
+        5,
+        9
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "SUBA AQUI."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c53b1": [
+    {
+      "args": [
+        5,
+        6,
+        25,
+        13,
+        7,
+        9
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "CAVE AQUI"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c53c1": [
+    {
+      "args": [
+        3,
+        0,
+        27,
+        19,
+        5,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "PRIMEIRO,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "RELICANTH."
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "POR ULTIMO,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "WAILORD."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c53f2": [
+    {
+      "args": [
+        6,
+        0,
+        22,
+        19,
+        8,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "NESTA"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "CAVERNA"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "VIVEMOS"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c5414": [
+    {
+      "args": [
+        4,
+        2,
+        26,
+        17,
+        6,
+        5
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "DEVEMOS"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "TUDO AOS"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "POKEMON."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c5435": [
+    {
+      "args": [
+        3,
+        0,
+        25,
+        19,
+        5,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "MAS"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "SELAMOS O"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "POKEMON"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "AQUI."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c545c": [
+    {
+      "args": [
+        1,
+        6,
+        29,
+        13,
+        3,
+        9
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "TINHAMOS MEDO"
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c5470": [
+    {
+      "args": [
+        4,
+        0,
+        26,
+        19,
+        6,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "OS QUE TEM"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "CORAGEM,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "OS QUE TEM"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "ESPERANCA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c549b": [
+    {
+      "args": [
+        2,
+        0,
+        28,
+        19,
+        4,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "ABRA A PORTA"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "UM POKEMON"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "ETERNO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "ESPERA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c54c8": [
+    {
+      "args": [
+        0,
+        0,
+        29,
+        19,
+        2,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "DIREITA DUAS,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "BAIXO DUAS."
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "DEPOIS,"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "USE FORCA."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c54fc": [
+    {
+      "args": [
+        3,
+        0,
+        27,
+        19,
+        5,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "PARE. DEIXE"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "O TEMPO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "PASSAR DUAS"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "VEZES."
+    },
+    {
+      "t": "eos"
+    }
+  ],
+  "g3:081c552e": [
+    {
+      "args": [
+        0,
+        0,
+        29,
+        19,
+        1,
+        3
+      ],
+      "cmd": "brailleformat",
+      "t": "ext"
+    },
+    {
+      "t": "text",
+      "s": "COM NOVO TEMPO"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "AMOR,ESPERANCA"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "MIRE O CEU"
+    },
+    {
+      "t": "nl"
+    },
+    {
+      "t": "text",
+      "s": "NO CENTRO."
+    },
+    {
+      "t": "eos"
+    }
   ]
 }

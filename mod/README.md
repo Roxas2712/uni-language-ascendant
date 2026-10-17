@@ -1,28 +1,26 @@
-# Uni-Language Ascendant 1.5.0-preview.2
+# Uni-Language Ascendant 1.5.0
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
 Es ist kein spezieller Recompiler-Build erforderlich.
 
-**PT-BR-Preview:** Das Mod-Menü ist jetzt auch auf Brasilianisch-Portugiesisch
-verfügbar. Emerald unterstützt die Fanübersetzung von Zambrakas vom 08.12.2013
-(ohne zusätzlichen Tag-/Nacht-Patch). Benötigte Sprach-ROM-SHA-1:
-`18a2b0acdba046c71b8677bb58c9ee7d36f7a91f`.
-Die englische US-Basis bleibt `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
+**PT-BR für alle elf Editionen:** Rot, Blau, Gelb, Gold, Silber, Kristall,
+Rubin, Saphir, Emerald, Feuerrot und Blattgrün haben eigene Importprofile.
+Attackennamen, Status-/Menütexte und Grafikbeschriftungen werden lokalisiert.
+Gen3 ergänzt auch Itemnamen, Trainerklassen, Ortsnamen und native Nebenmenüs.
+Die Mod ergänzt die importierten Fanübersetzungen durch eigene Korrekturen.
+Der aktuelle Prüfstatus mit echten Spielszenen steht in [PT-BR.html](PT-BR.html).
+Das ist keine Aussage über einen vollständigen Story-Durchlauf jeder Edition.
 
-Die Übersetzung enthält selbst noch englische Texte. Alle 15.655 Textschlüssel
-sind zugeordnet; das ist keine Aussage über 100 % sprachliche Vollständigkeit.
-Live-Smoke-Tests, Grenzen und Performancewerte stehen in [PT-BR.html](PT-BR.html).
-Rubin und Saphir haben zusätzlich ein Entwicklungsprofil mit OJ Abreu als
-Textquelle (SHA-1 `90f1464f77c57b4eef45ee07df140d402162eee3`). Saphir behält
-sein US-Basisspiel und verwendet 203 eigene Pokédex-Übersetzungen. Beide Profile
-enthalten weiterhin englische Beschriftungen und ungeprüfte Fanübersetzungen.
-**Die übrigen acht Editionen sind in PT-BR noch ausgeblendet.**
+Die benötigten Basis- und Sprach-ROMs müssen exakt der [ROM-Liste](ROM-Liste.html)
+entsprechen. Saphir verwendet sein eigenes US-Spiel mit der Rubin-PT-BR-Quelle
+und gesonderten Saphir-Ergänzungen. Feuerrot/Blattgrün benötigen zum Erstellen
+der Sprach-ROM eine andere Basisrevision als zum Starten im Recompiler:
+Fanpatch-Basis 1.1, US-Laufzeitbasis 1.0.
 
 Korrektur zur früheren Doku: „Missão concluída! Poções, saúde e proteção.“ war
-ein künstlicher Schrift-Test in Rubin, kein echter Joy-Dialog. Der Heilungsdialog
-wird jetzt durch die tatsächliche NPC-Interaktion samt KP-Erholung geprüft.
-Eigene Korrekturen sind an Prüfsummen der US-Ausgangstexte gebunden.
+ein künstlicher Schrift-Test, kein Joy-Dialog. Die aktuelle Doku verwendet echte
+NPC-Interaktion samt KP-Erholung und Rückkehr zur Feldsteuerung als Beleg.
 
 Neu in 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
 Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
@@ -34,13 +32,13 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.5.0-preview.2.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.5.0.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.
 4. Die Mod für diese Edition aktivieren und das Spiel starten. Vor dem Titelbild
    erscheint die Sprachwahl mit den benötigten ROM-Versionen und SHA-1-Prüfsummen.
-5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES/PT-BR, Ruby/Sapphire EN/DE/PT-BR, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
+5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES/PT-BR, übrige Editionen EN/DE/PT-BR). Bei einem Sprachwechsel startet die Engine neu;
    anschließend die Edition im Launcher erneut starten. Die Auswahl wird pro
    Edition gespeichert. Ohne vorherige Auswahl startet die Mod im englischen Modus.
 
@@ -99,9 +97,10 @@ der Mod. Windows/Linux wurden nicht praktisch getestet.
 
 ## Technischer Aufbau
 
-Die ZIP enthält ausschließlich Mod-Code und Adressprofile. Deutsche Texte und
-Bilder werden beim ersten Spielstart aus der vom Nutzer importierten ROM gelesen. Keine ROM,
-keine extrahierten Spieltexte oder Bilder und kein Spielstand werden mitgeliefert.
+Die ZIP enthält Mod-Code, Adressprofile, eigene Übersetzungsergänzungen, Menü-Assets
+und die Dokumentation mit Prüfaufnahmen. Lokalisierte ROM-Texte und Spielgrafiken
+werden beim ersten Spielstart aus der importierten Sprach-ROM gelesen. ROMs,
+Fanpatches, importierte Sprachcaches und Spielstände werden nicht mitgeliefert.
 
 Die Mod verwendet die offiziellen Inhaltsregister für Text- und Namensänderungen.
 Private Import-Routinen erzeugen die Sprach- und Grafikdaten. Das Ergebnis wird
@@ -116,7 +115,7 @@ fehlenden deutschen Zeichen im Decoder werden nur während der synchronen
 Extraktion ergänzt und danach wiederhergestellt. Die aktiven Engine-Adressprofile bleiben unverändert. Der Recompiler führt
 weiterhin das US-Basisspiel mit dessen Spielregeln aus.
 
-Beim Update die vorhandene Beta im Mod-Manager ersetzen; die Mod-ID bleibt
+Beim Update die vorhandene Version im Mod-Manager ersetzen; die Mod-ID bleibt
 gleich. Individuelle Spitznamen in vorhandenen Spielständen bleiben erhalten.
 
 ## Weitere Sprachen
@@ -126,8 +125,8 @@ Headerkennung und Revision mit Text-, Grafik- und Weltprofilen sowie Zeichensatz
 Eine validierte Prüfsumme wählt das passende Profil; der Dateiname ist unerheblich.
 Mehrere Sprachen können gleichzeitig importiert sein; beim Start wird eine ausgewählt.
 
-**Enthalten: Deutsch für alle elf Editionen, zusätzlich Französisch, Italienisch
-und Spanisch für Emerald (Revision 0).** Englisch stammt aus dem US-Basisspiel.
+**Enthalten: Deutsch und PT-BR für alle elf Editionen, zusätzlich Französisch,
+Italienisch und Spanisch für Emerald (Revision 0).** Englisch stammt aus dem US-Basisspiel.
 Die drei neuen Profile wurden mit den bereitgestellten ROMs importiert und in
 Live-Szenen geprüft: Titel, Center, Markt, Dialog, Pokémon-Bericht und Speichern.
 Die Namenseingabe berücksichtigt acht Spalten in IT/ES und neun in FR/DE.

@@ -2,7 +2,7 @@ return function(rom,p,root,own)
  local S=require('src.core.SaveSerializer')
  local I=require('src.import.ImageWriter')
  local R=require('src.import.Rom')
- local files,report={}, {dialogue=0,assets=0,catalogs={},language='de'}
+ local files,report={}, {dialogue=0,assets=0,catalogs={},language=p.language or 'de'}
  local function decode(r)
   if r.parts then
    local out={}
@@ -57,6 +57,20 @@ return function(rom,p,root,own)
   end
   if r.matte then image=I.matteColor0(image) end
   if r.ink then image:mapPixel(function(_,_,red) return 0,0,0,red<0.5 and 1 or 0 end) end
+  -- Authored labels are tiny monochrome masks, applied at compile time.
+  -- They never run in the frame loop and cannot change metatile geometry.
+  for _,patch in ipairs(r.authoredPixels or {}) do
+   assert(patch.x>=0 and patch.y>=0 and patch.y+#patch.rows<=r.height,'Label outside graphics sheet')
+   for y,row in ipairs(patch.rows) do
+    assert(patch.x+#row<=r.width,'Label outside graphics sheet')
+    for x=1,#row do
+     local pixel=row:sub(x,x);assert(pixel=='0' or pixel=='1','Invalid label pixel')
+     local color=patch.colors and patch.colors[tonumber(pixel)+1]
+     if color then image:setPixel(patch.x+x-1,patch.y+y-1,unpack(color))
+     else image:setPixel(patch.x+x-1,patch.y+y-1,0,0,0,pixel=='1' and 1 or 0) end
+    end
+   end
+  end
   files[path]=image:encode('png'):getString();report.assets=report.assets+1
  end
  return {files=files,report=report,operations={{registry='strings',method='override',key='__rom_language_source_gb__',value='active'}}}
