@@ -1,0 +1,145 @@
+# English|Deutsch|Español|Français|Italiano. Authored engine UI; \n/\f are controls.
+You don't have that item.|Du hast dieses Item nicht.|No tienes ese objeto.|Tu n'as pas cet objet.|Non hai questo strumento.
+An EGG can't be used on.|Bei einem EI geht das nicht.|No se puede usar en un HUEVO.|Impossible sur un OEUF.|Non si può usare su un UOVO.
+This can't be used right now.|Das geht jetzt nicht.|Ahora no se puede usar.|Impossible pour le moment.|Ora non si può usare.
+%s (HM)|%s (VM)|%s (MO)|%s (CS)|%s (MN)
+Would you like to forfeit the match\nand quit now?|Den Kampf aufgeben\nund beenden?|¿Quieres rendirte\ny abandonar el combate?|Veux-tu déclarer forfait\net quitter le combat?|Vuoi arrenderti\ne abbandonare la lotta?
+The BAG is empty.|Der BEUTEL ist leer.|La MOCHILA está vacía.|Le SAC est vide.|Lo ZAINO è vuoto.
+Unknown item.|Unbekanntes Item.|Objeto desconocido.|Objet inconnu.|Strumento sconosciuto.
+Select a POKéMON.|Wähle ein POKéMON.|Elige un POKéMON.|Choisis un POKéMON.|Scegli un POKéMON.
+CREATE GROUP|GRUPPE GRÜNDEN|CREAR GRUPO|CRÉER GROUPE|CREA GRUPPO
+JOIN GROUP|GRUPPE BEITRETEN|UNIRSE A GRUPO|REJOINDRE GROUPE|ENTRA NEL GRUPPO
+START|STARTEN|EMPEZAR|COMMENCER|INIZIA
+ADD %s?|%s HINZUFÜGEN?|¿AÑADIR %s?|AJOUTER %s ?|AGGIUNGI %s?
+Online play isn't available in this build.|Online-Spiel ist hier nicht verfügbar.|El juego en línea no está disponible en esta versión.|Le jeu en ligne est indisponible dans cette version.|Il gioco online non è disponibile in questa versione.
+The connection failed: %s.|Verbindung fehlgeschlagen: %s.|La conexión ha fallado: %s.|Échec de la connexion : %s.|Connessione fallita: %s.
+The connection failed.|Verbindung fehlgeschlagen.|La conexión ha fallado.|Échec de la connexion.|Connessione fallita.
+Connect to the Wireless Club?|Mit dem Konnex-Club verbinden?|¿Conectar con el Club Inalámbrico?|Se connecter au Club Sans Fil ?|Collegarsi al Club Wireless?
+Connecting...|Verbindung wird aufgebaut...|Conectando...|Connexion...|Connessione...
+The TRAINER|Der TRAINER|El ENTRENADOR|Le DRESSEUR|L'ALLENATORE
+%s or %s|%s oder %s|%s o %s|%s ou %s|%s o %s
+%s from POKéMON %s is here.\nWhat would you like to do?|%s aus POKéMON %s ist hier.\nWas möchtest du tun?|%s de POKéMON %s está aquí.\n¿Qué quieres hacer?|%s de POKéMON %s est là.\nQue veux-tu faire?|%s di POKéMON %s è qui.\nCosa vuoi fare?
+Import POKéMON %s to see how %s really looks.|Importiere POKéMON %s, um %s im Original zu sehen.|Importa POKéMON %s para ver el aspecto original de %s.|Importe POKéMON %s pour voir l'apparence d'origine de %s.|Importa POKéMON %s per vedere l'aspetto originale di %s.
+Waiting for %s to answer\nthe battle request...|Warte auf %s...\nKampfanfrage gesendet.|Esperando a %s...\nSolicitud de combate enviada.|En attente de %s...\nDemande de combat envoyée.|In attesa di %s...\nRichiesta di lotta inviata.
+Waiting for %s to answer\nthe trade request...|Warte auf %s...\nTauschanfrage gesendet.|Esperando a %s...\nSolicitud de intercambio enviada.|En attente de %s...\nDemande d'échange envoyée.|In attesa di %s...\nRichiesta di scambio inviata.
+%s turned down the battle.|%s lehnt den Kampf ab.|%s ha rechazado el combate.|%s a refusé le combat.|%s ha rifiutato la lotta.
+%s turned down the trade.|%s lehnt den Tausch ab.|%s ha rechazado el intercambio.|%s a refusé l'échange.|%s ha rifiutato lo scambio.
+%s seems to be busy right now.|%s ist gerade beschäftigt.|%s parece estar ocupado.|%s semble avoir à faire.|%s sembra avere da fare.
+The link with %s was lost.|Verbindung zu %s verloren.|Se ha perdido la conexión con %s.|La connexion avec %s a été perdue.|La connessione con %s si è interrotta.
+%s from POKéMON %s wants to battle!\nWill you accept?|%s aus POKéMON %s will kämpfen!\nNimmst du an?|¡%s de POKéMON %s quiere combatir!\n¿Aceptas?|%s de POKéMON %s veut combattre !\nAcceptes-tu ?|%s di POKéMON %s vuole lottare!\nAccetti?
+%s from POKéMON %s wants to trade!\nWill you accept?|%s aus POKéMON %s will tauschen!\nNimmst du an?|¡%s de POKéMON %s quiere intercambiar!\n¿Aceptas?|%s de POKéMON %s veut échanger !\nAcceptes-tu ?|%s di POKéMON %s vuole fare uno scambio!\nAccetti?
+You turned down the request.|Du hast die Anfrage abgelehnt.|Has rechazado la solicitud.|Tu as refusé la demande.|Hai rifiutato la richiesta.
+Getting ready to battle %s...|Kampf gegen %s wird vorbereitet...|Preparando el combate con %s...|Préparation du combat contre %s...|Preparazione della lotta con %s...
+Getting ready to trade with %s...|Tausch mit %s wird vorbereitet...|Preparando el intercambio con %s...|Préparation de l'échange avec %s...|Preparazione dello scambio con %s...
+Battles and trades between different games aren't open yet. The request was canceled.|Kämpfe und Tauschen zwischen verschiedenen Editionen sind noch nicht verfügbar. Die Anfrage wurde abgebrochen.|Los combates e intercambios entre distintas ediciones aún no están disponibles. Se ha cancelado la solicitud.|Les combats et échanges entre versions différentes sont encore indisponibles. La demande a été annulée.|Le lotte e gli scambi tra versioni diverse non sono ancora disponibili. La richiesta è stata annullata.
+%s canceled the request.|%s hat die Anfrage abgebrochen.|%s ha cancelado la solicitud.|%s a annulé la demande.|%s ha annullato la richiesta.
+The request was canceled.|Die Anfrage wurde abgebrochen.|Se ha cancelado la solicitud.|La demande a été annulée.|La richiesta è stata annullata.
+Your games can't link up for this. The request was canceled.|Eure Editionen sind hierfür nicht kompatibel. Die Anfrage wurde abgebrochen.|Vuestras ediciones no son compatibles para esto. Se ha cancelado la solicitud.|Vos versions sont incompatibles pour cette action. La demande a été annulée.|Le vostre versioni non sono compatibili per questa operazione. La richiesta è stata annullata.
+The UNION ROOM server needs an update before trainers from other games can join you.|Der Server des KONNEX-CLUBS braucht ein Update, bevor TRAINER anderer Editionen beitreten können.|El servidor de la SALA UNIÓN necesita una actualización para admitir ENTRENADORES de otras ediciones.|Le serveur de la SALLE UNION doit être mis à jour pour accueillir des DRESSEURS d'autres versions.|Il server della SALA CONTATTO va aggiornato per accogliere ALLENATORI di altre versioni.
+See you around!|Bis bald!|¡Hasta pronto!|À bientôt !|Ci vediamo!
+%s wants to battle!\nWill you accept?|%s will kämpfen!\nNimmst du an?|¡%s quiere combatir!\n¿Aceptas?|%s veut combattre !\nAcceptes-tu ?|%s vuole lottare!\nAccetti?
+%s wants to chat!\nWill you join?|%s möchte chatten!\nMachst du mit?|¡%s quiere charlar!\n¿Aceptas?|%s veut discuter !\nAcceptes-tu ?|%s vuole chiacchierare!\nAccetti?
+%s wants to show\nyou a TRAINER CARD. OK?|%s möchte dir\neinen TRAINERPASS zeigen. OK?|%s quiere enseñarte\nsu FICHA de ENTRENADOR. ¿Vale?|%s veut te montrer\nsa CARTE DRESSEUR. D'accord ?|%s vuole mostrarti\nla SCHEDA ALLENATORE. Va bene?
+%s wants to trade!|%s will tauschen!|¡%s quiere intercambiar!|%s veut échanger !|%s vuole fare uno scambio!
+AUTO or CHOOSE finds a partner.\nSET PIN hosts a private room.|AUTO oder WÄHLEN sucht Partner.\nMit PIN SETZEN privat einladen.|AUTO o ELEGIR busca un compañero.\nCon FIJAR PIN creas una sala privada.|AUTO ou CHOISIR trouve un partenaire.\nFIXER PIN crée une salle privée.|AUTO o SCEGLI cerca un compagno.\nIMPOSTA PIN crea una sala privata.
+Use this PIN?|Diese PIN verwenden?|¿Usar este PIN?|Utiliser ce PIN ?|Usare questo PIN?
+Let AUTO players join?|AUTO-Spieler zulassen?|¿Admitir jugadores de AUTO?|Autoriser les joueurs AUTO ?|Ammettere giocatori AUTO?
+MYSTIC TICKET|GEHEIMTICKET|MISTI-TICKET|TICKETMYSTIK|BIGL. MAGICO
+MYSTERY GIFT|GEHEIMGESCHEHEN|REGALO MISTERIOSO|CADEAU MYSTÈRE|DONO SEGRETO
+Thank you for using the MYSTERY|Danke, dass du am|Gracias por usar el sistema|Merci d'utiliser le système|Grazie per aver usato il
+GIFT System.|GEHEIMGESCHEHEN teilnimmst.|de REGALO MISTERIOSO.|de CADEAU MYSTÈRE.|sistema DONO SEGRETO.
+There is a ticket here for you.|Hier ist ein Ticket für dich.|Hay un ticket para ti.|Un ticket t'attend ici.|C'è un biglietto per te.
+It is for use at VERMILION CITY port.|Es gilt im Hafen von ORANIA CITY.|Úsalo en el puerto de CIUDAD CARMÍN.|Utilise-le au port de CARMIN SUR MER.|Usalo al porto di ARANCIOPOLI.
+Speak to the deliveryman|Sprich mit dem Lieferanten|Habla con el repartidor|Parle au livreur|Parla con il postino
+at a POKéMON CENTER.|im POKéMON-CENTER.|en un CENTRO POKéMON.|dans un CENTRE POKéMON.|in un CENTRO POKéMON.
+AURORA TICKET|AURORATICKET|ORI-TICKET|TICKETAURORA|BIGL. AURORA
+SURFING PICHU EGG|SURFER-PICHU-EI|HUEVO DE PICHU CON SURF|OEUF DE PICHU AVEC SURF|UOVO DI PICHU CON SURF
+POKéMON EGG|POKéMON-EI|HUEVO POKéMON|OEUF DE POKéMON|UOVO POKéMON
+From the POKéMON CENTER we|Vom POKéMON-CENTER gibt es|¡Tenemos un regalo para ti|Le CENTRE POKéMON t'offre|Il CENTRO POKéMON ti offre
+have a gift, a POKéMON EGG!|ein Geschenk: ein POKéMON-EI!|del CENTRO POKéMON: un HUEVO!|un cadeau : un OEUF DE POKéMON !|un regalo: un UOVO POKéMON!
+Please raise it with love and|Kümmere dich bitte liebevoll|Cuídalo con mucho cariño|Prends-en soin avec amour|Prenditene cura con amore
+kindness.|und fürsorglich darum.|y ternura.|et tendresse.|e affetto.
+STAMP CARD|STEMPELKARTE|TARJETA DE SELLOS|CARTE À TAMPONS|SCHEDA TIMBRI
+Thank you for using the STAMP CARD|Danke, dass du das|Gracias por usar el sistema|Merci d'utiliser le système|Grazie per aver usato il
+System.|STEMPELKARTEN-System nutzt.|de TARJETA DE SELLOS.|de CARTE À TAMPONS.|sistema SCHEDA TIMBRI.
+Trade with other TRAINERS to fill|Tausche mit anderen TRAINERN,|Intercambia con otros ENTRENADORES|Fais des échanges avec des DRESSEURS|Fai scambi con altri ALLENATORI
+your STAMP CARD.|um deine Karte zu füllen.|para llenar tu tarjeta.|pour remplir ta carte.|per riempire la tua scheda.
+BATTLE COUNT CARD|KAMPFZÄHLKARTE|TARJETA DE COMBATES|CARTE DE COMBATS|SCHEDA LOTTE
+Your BATTLE COUNT CARD keeps|Deine KAMPFZÄHLKARTE|Tu TARJETA DE COMBATES|Ta CARTE DE COMBATS|La tua SCHEDA LOTTE
+track of your battle record against|speichert die Kampfbilanz|registra tus combates contra|enregistre tes combats contre|registra le lotte contro
+TRAINERS with the same CARD.|gegen TRAINER mit gleicher Karte.|ENTRENADORES con la misma tarjeta.|les DRESSEURS ayant la même carte.|ALLENATORI con la stessa scheda.
+Look for them and battle!|Suche sie und fordere sie heraus!|¡Búscalos y combate!|Trouve-les et affronte-les !|Cercali e sfidali!
+ALTERING CAVE|WANDELHÖHLE|CUEVA CAMBIANTE|GROTTE MÉTAMO|GROTTA MUTEVOLE
+The POKéMON living in ALTERING|Die POKéMON in der|Los POKéMON que viven en la|Les POKéMON de la|I POKéMON della
+CAVE have changed.|WANDELHÖHLE haben gewechselt.|CUEVA CAMBIANTE han cambiado.|GROTTE MÉTAMO ont changé.|GROTTA MUTEVOLE sono cambiati.
+Go and see what turns up|Schau nach, was es gibt|Ve a ver qué aparece|Va voir ce que tu y trouveras|Vai a vedere chi trovi
+on SIX ISLAND.|auf EILAND SECHS.|en ISLA EXTA.|sur l'ÎLE SIX.|a SESTISOLA.
+It is for use at LILYCOVE CITY port.|Es gilt im Hafen von SEEGRASULB.|Úsalo en el puerto de CIUDAD CALAGUA.|Utilise-le au port de NÉNUCRIQUE.|Usalo al porto di PORTO ALGHEPOLI.
+EON TICKET|ÄON-TICKET|TICKET EÓN|PASSE ÉON|BIGL. EONE
+OLD SEA MAP|ALTE KARTE|MAPA VIEJO|VIEILLE CARTE|MAPPA STINTA
+We received this OLD SEA MAP|Diese ALTE KARTE wurde|Hemos recibido este MAPA VIEJO|Nous avons reçu cette VIEILLE CARTE|Abbiamo ricevuto questa MAPPA STINTA
+addressed to you.|an dich adressiert.|dirigido a ti.|à ton nom.|indirizzata a te.
+on ROUTE 103.|auf ROUTE 103.|en la RUTA 103.|sur la ROUTE 103.|sul PERCORSO 103.
+EVENT TICKETS|EVENT-TICKETS|TICKETS DE EVENTOS|TICKETS ÉVÉNEMENT|BIGLIETTI EVENTO
+Welcome to the UNION ROOM!\fTrainers from every POKéMON game meet here to battle and trade.\fWould you like to go in?|Willkommen im KONNEX-CLUB!\fHier treffen sich TRAINER aller POKéMON-Editionen zum Kämpfen und Tauschen.\fMöchtest du eintreten?|¡Te damos la bienvenida a la SALA UNIÓN!\fAquí se reúnen ENTRENADORES de todas las ediciones de POKéMON para combatir e intercambiar.\f¿Quieres entrar?|Bienvenue dans la SALLE UNION !\fLes DRESSEURS de toutes les versions de POKéMON s'y retrouvent pour combattre et échanger.\fVeux-tu entrer ?|Benvenuto nella SALA CONTATTO!\fQui si incontrano ALLENATORI di tutte le versioni di POKéMON per lottare e fare scambi.\fVuoi entrare?
+Please come again!|Komm bitte wieder!|¡Vuelve cuando quieras!|Reviens nous voir !|Torna a trovarci!
+You need at least two POKéMON that aren't EGGS to go in.|Du brauchst mindestens zwei POKéMON, die keine EIER sind.|Necesitas al menos dos POKéMON que no sean HUEVOS para entrar.|Il te faut au moins deux POKéMON qui ne sont pas des OEUFS pour entrer.|Per entrare servono almeno due POKéMON che non siano UOVA.
+The UNION ROOM is online.\nWould you like to connect?|Der KONNEX-CLUB ist online.\nMöchtest du dich verbinden?|La SALA UNIÓN está en línea.\n¿Quieres conectarte?|La SALLE UNION est en ligne.\nVeux-tu te connecter ?|La SALA CONTATTO è online.\nVuoi collegarti?
+Your progress will be saved before you go in.|Vor dem Eintritt wird dein Spiel gespeichert.|Se guardará tu partida antes de entrar.|Ta partie sera sauvegardée avant d'entrer.|La partita verrà salvata prima di entrare.
+Please enjoy the UNION ROOM!|Viel Spaß im KONNEX-CLUB!|¡Disfruta de la SALA UNIÓN!|Amuse-toi dans la SALLE UNION !|Buon divertimento nella SALA CONTATTO!
+OPTION %s|OPTION %s|OPCIÓN %s|OPTION %s|OPZIONE %s
+NAME?|NAME?|¿NOMBRE?|NOM ?|NOME?
+%s obtained %s!|%s erhält %s!|¡%s ha recibido %s!|%s obtient %s !|%s ha ricevuto %s!
+%s received an EGG!|%s erhält ein EI!|¡%s ha recibido un HUEVO!|%s reçoit un OEUF !|%s ha ricevuto un UOVO!
+%s obtained the %s!|%s erhält %s!|¡%s ha recibido %s!|%s obtient %s !|%s ha ricevuto %s!
+OK, LET'S BATTLE!|LOS, KÄMPFEN WIR!|¡VAMOS A COMBATIR!|ALLONS COMBATTRE !|FORZA, LOTTIAMO!
+This POKéMON isn't holding anything.|Dieses POKéMON trägt nichts.|Este POKéMON no lleva nada.|Ce POKéMON ne tient rien.|Questo POKéMON non ha strumenti.
+Lv%s|Lv%s|Nv%s|N.%s|L.%s
+CHOOSE|WÄHLEN|ELEGIR|CHOISIR|SCEGLI
+SET PIN|PIN SETZEN|FIJAR PIN|FIXER PIN|IMPOSTA PIN
+HOW MANY?|WIE VIELE?|¿CUÁNTOS?|COMBIEN ?|QUANTI?
+EFFECT|WIRKUNG|EFECTO|EFFET|EFFETTO
+Which WONDER NEWS\nwould you like to read?|Welche WUNDERNEWS\nmöchtest du lesen?|¿Qué NOTICIA MISTERIOSA\nquieres leer?|Quelles INFOS MIRACLE\nveux-tu lire ?|Quale NOTIZIA SEGRETA\nvuoi leggere?
+Which WONDER CARD\nwould you like?|Welche WUNDERKARTE\nmöchtest du haben?|¿Qué TARJETA MISTERIOSA\nquieres?|Quelle CARTE MIRACLE\nveux-tu choisir ?|Quale SCHEDA SEGRETA\nvuoi scegliere?
+Save failed.|Speichern fehlgeschlagen.|Error al guardar.|Échec de la sauvegarde.|Salvataggio fallito.
+MOVE %s|ATTACKE %s|MOV. %s|CAPACITÉ %s|MOSSA %s
+Which move?|Welche Attacke?|¿Qué movimiento?|Quelle capacité ?|Quale mossa?
+Set a 4-digit PIN.|Lege eine 4-stellige PIN fest.|Fija un PIN de 4 cifras.|Fixe un PIN à 4 chiffres.|Imposta un PIN di 4 cifre.
+Enter the 4-digit PIN.|Gib die 4-stellige PIN ein.|Introduce el PIN de 4 cifras.|Saisis le PIN à 4 chiffres.|Inserisci il PIN di 4 cifre.
+{A_BUTTON}NEXT   {B_BUTTON}SKIP|{A_BUTTON}WEITER   {B_BUTTON}ÜBERSPR.|{A_BUTTON}SIGUIENTE   {B_BUTTON}OMITIR|{A_BUTTON}SUITE   {B_BUTTON}PASSER|{A_BUTTON}AVANTI   {B_BUTTON}SALTA
+B: CANCEL|B: ZURÜCK|B: CANCELAR|B: ANNULER|B: ANNULLA
+You already have this WONDER NEWS.|Du hast diese WUNDERNEWS schon.|Ya tienes esta NOTICIA MISTERIOSA.|Tu as déjà ces INFOS MIRACLE.|Hai già questa NOTIZIA SEGRETA.
+This WONDER NEWS can't be read.|Diese WUNDERNEWS ist nicht lesbar.|No se puede leer esta NOTICIA MISTERIOSA.|Ces INFOS MIRACLE sont illisibles.|Questa NOTIZIA SEGRETA non si può leggere.
+The WONDER NEWS was saved.|Die WUNDERNEWS wurden gespeichert.|Se ha guardado la NOTICIA MISTERIOSA.|Les INFOS MIRACLE ont été sauvegardées.|La NOTIZIA SEGRETA è stata salvata.
+The game could not be saved.|Das Spiel konnte nicht gespeichert werden.|No se ha podido guardar la partida.|La partie n'a pas pu être sauvegardée.|Impossibile salvare la partita.
+A:OK  B:CANCEL|A:OK  B:ZURÜCK|A:OK  B:CANCELAR|A:OK  B:ANNULER|A:OK  B:ANNULLA
+A:OK  B:BACK|A:OK  B:ZURÜCK|A:OK  B:VOLVER|A:OK  B:RETOUR|A:OK  B:INDIETRO
+BET %d|EINSATZ %d|APUESTA %d|MISE %d|PUNTATA %d
+CREDIT|GUTHABEN|FICHAS|JETONS|GETTONI
+Searching...|Suche läuft...|Buscando...|Recherche...|Ricerca...
+The battle couldn't start: %s.|Kampf konnte nicht starten: %s.|No se ha podido iniciar el combate: %s.|Le combat n'a pas pu commencer : %s.|Impossibile iniziare la lotta: %s.
+Translator|Übersetzung|Traducción|Traduction|Traduzione
+English Version Coordinators|Koordination der englischen Fassung|Coordinación de la versión inglesa|Coordination de la version anglaise|Coordinamento della versione inglese
+NOA Product Testing|NOA-Produkttests|Pruebas de producto de NOA|Tests produits NOA|Test prodotti NOA
+POKéMON RUBY VERSION|POKéMON RUBIN-EDITION|POKéMON EDICIÓN RUBÍ|POKéMON VERSION RUBIS|POKéMON VERSIONE RUBINO
+POKéMON SAPPHIRE VERSION|POKéMON SAPHIR-EDITION|POKéMON EDICIÓN ZAFIRO|POKéMON VERSION SAPHIR|POKéMON VERSIONE ZAFFIRO
+EXT. ONLY|NUR EXTERN|SOLO EXTERNO|EXTERNE SEUL|SOLO ESTERNO
+BORDERLESS|RANDLOS|SIN BORDES|SANS BORDURE|SENZA BORDI
+PORTRAIT|HOCHFORMAT|VERTICAL|PORTRAIT|VERTICALE
+LANDSCAPE|QUERFORMAT|HORIZONTAL|PAYSAGE|ORIZZONTALE
+REVERSE LANDSCAPE|QUERF. GEDREHT|HORIZ. INVERTIDO|PAYSAGE INVERSÉ|ORIZZ. INVERTITO
+UNLIMITED|UNBEGRENZT|SIN LÍMITE|ILLIMITÉ|ILLIMITATO
+60HZ|60HZ|60HZ|60HZ|60HZ
+59.73HZ|59.73HZ|59.73HZ|59.73HZ|59.73HZ
+DISPLAY|BILDSCHIRM|PANTALLA|ÉCRAN|SCHERMO
+IN%d|+%d|+%d|+%d|+%d
+OUT%d|-%d|-%d|-%d|-%d
+SPEED|TEMPO|VELOCIDAD|VITESSE|VELOCITÀ
+{DPAD_UPDOWN}PICK {A_BUTTON}OK {B_BUTTON}BACK|{DPAD_UPDOWN}WAHL {A_BUTTON}OK {B_BUTTON}ZURÜCK|{DPAD_UPDOWN}ELEGIR {A_BUTTON}OK {B_BUTTON}VOLVER|{DPAD_UPDOWN}CHOIX {A_BUTTON}OK {B_BUTTON}RETOUR|{DPAD_UPDOWN}SCEGLI {A_BUTTON}OK {B_BUTTON}INDIETRO
+{A_BUTTON}SET {SELECT_BUTTON}CLEAR {START_BUTTON}RESET {B_BUTTON}BACK|{A_BUTTON}SETZ. {SELECT_BUTTON}LÖSCH. {START_BUTTON}RÜCKS. {B_BUTTON}ZUR.|{A_BUTTON}FIJAR {SELECT_BUTTON}BORR. {START_BUTTON}REST. {B_BUTTON}VOLV.|{A_BUTTON}FIXER {SELECT_BUTTON}EFF. {START_BUTTON}RAZ {B_BUTTON}RET.|{A_BUTTON}IMP. {SELECT_BUTTON}CANC. {START_BUTTON}RIPR. {B_BUTTON}IND.
+UP|OBEN|ARRIBA|HAUT|SU
+DOWN|UNTEN|ABAJO|BAS|GIÙ
+LEFT|LINKS|IZQUIERDA|GAUCHE|SINISTRA
+RIGHT|RECHTS|DERECHA|DROITE|DESTRA
+SPEED -|TEMPO -|VELOCIDAD -|VITESSE -|VELOCITÀ -
+SPEED +|TEMPO +|VELOCIDAD +|VITESSE +|VELOCITÀ +

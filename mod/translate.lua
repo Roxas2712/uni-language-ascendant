@@ -1,8 +1,8 @@
-return function(mod, profile, bytes)
+return function(mod, profile, bytes, policy)
   local IR=require('src.core.game3.scripting.text_ir')
   local dialect=IR.dialectOf(profile.game)
   local pending={texts={},names={}}
-  local report={translated=0,total=0,names=0,missing={},display={abilities={},classes={},types={}}}
+  local report={translated=0,total=0,names=0,missing={},authored={},retainedProperNames={},inapplicable={},display={abilities={},classes={},types={}}}
   local strings={}
   local function stringPair(english,german)
     if not english or english=='' or english==german then return end
@@ -69,6 +69,17 @@ return function(mod, profile, bytes)
         end
         if simple then stringPair(IR.toPlain(original,{}),IR.toPlain(ir,{})) end
         report.translated=report.translated+1
+      elseif policy and policy[key] then
+        local rule=policy[key]
+        local ir
+        if rule.kind=='retainedProperNames' then ir=original
+        elseif rule.kind=='inapplicable' then ir={{t='eos'}}
+        elseif rule.kind=='authored' then
+          assert(type(rule.value)=='string' and rule.value~='','Empty authored GBA text')
+          ir=IR.fromAscii(rule.value)
+        else error('Unknown GBA text policy for '..key) end
+        pending.texts[#pending.texts+1]={key,ir}
+        report[rule.kind][#report[rule.kind]+1]=key
       else
         report.missing[#report.missing+1]=key
       end
@@ -149,5 +160,9 @@ return function(mod, profile, bytes)
     end
   end
   table.sort(report.missing)
+  report.covered=report.translated
+  for _,kind in ipairs({'authored','retainedProperNames','inapplicable'}) do
+    table.sort(report[kind]);report.covered=report.covered+#report[kind]
+  end
   return report
 end

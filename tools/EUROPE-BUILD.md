@@ -42,3 +42,24 @@ The source revisions and attribution are listed in `mod/VENDOR.md`.
 The development tools fail on unexpected layouts rather than filling addresses
 from a similar revision. Some special fixed-slot sections also use explicit
 bounds/glyph checks; these checks do not replace complete playthrough testing.
+
+## Preview-4 GBA completion
+
+- `build_gba_ui.py` compiles `translations/gba/ui-extra.tsv` and
+  `ui-common-de.tsv`; the latter reuses the reviewed shared ES/FR/IT catalog.
+  Placeholders and paragraph controls are build invariants.
+- `audit_gba_ui.py` inventories the pinned engine's fixed GBA `Strings` calls.
+  It deliberately does not claim to identify every dynamic or raw draw string.
+- `tests/run_gba_completion.py` uses `ula-gba-completion-qa` only. It stages
+  checksum-verified private inputs, clones the existing private US caches, and
+  runs all 12 profiles cold/warm. Run the five `GAME_de` profiles additionally
+  with `--modes english,disabled`. Set `LOVE` to the local engine executable.
+- `tests/gba_policy_unit.lua` runs under LuaJIT in the pinned engine directory.
+  It verifies explicit exception semantics and unknown-key reporting.
+- `gba_qa_report.py` requires the 34 successful current-fingerprint live runs,
+  the source audit and `build/gba-completion-unit.log`. It verifies the generated
+  catalog against its editorial source, then produces the current report.
+  Preview-3 GB results are explicitly inherited only after checking unchanged
+  GB/profile sources and the shared startup path against commit 8d22d8f.
+- Run `package.py` after report generation. The `mod/gba/` runtime modules
+  and catalog are on its explicit allowlist; private caches remain excluded.

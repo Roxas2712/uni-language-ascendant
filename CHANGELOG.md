@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.4.3-europe-preview.4
+
+- Add 245 supplemental GBA UI entries in German, Spanish, French and Italian.
+- Use regional item names in FRLG script buffers and Pokemon Jump prizes;
+  remove English-only plural suffix helpers.
+- Preserve credit identities explicitly, translate missing RS credit headings,
+  and distinguish these categories from native ROM text coverage.
+- Correct the SPEED settings/stat meaning collision and dynamic zoom labels.
+- Add bounded source, real-font/menu, native credit-pointer, cold/warm cache,
+  save and English/disabled lifecycle checks for all twelve GBA profiles.
+
 ## 1.4.2
 
 - Hide game languages without a supported, imported ROM for the selected edition

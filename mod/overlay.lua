@@ -121,4 +121,5 @@ return function(mod,game,files,display)
   require('src.ui.game3.rse.scene_kit').resetCaches()
   require('src.ui.game3.rse.mapsec').reset()
   mod.exports.assets=files
+  return active
 end

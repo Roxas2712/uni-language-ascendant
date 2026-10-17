@@ -43,7 +43,7 @@ return function(mod)
  local W=require('src.import.LuaWriter')
  local function hash(bytes) return love.data.encode('string','hex',love.data.hash('string','sha256',bytes)) end
  local recipe={'compiler-v2',profile.sha1,version}
- local paths={'main.lua','catalog.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua',selected.profile,selected.assets,selected.world}
+ local paths={'main.lua','catalog.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua','gba/ui.lua','gba/policy.lua','gba/runtime.lua',selected.profile,selected.assets,selected.world}
  if selected.glyphsPath then paths[#paths+1]=selected.glyphsPath end
  for name in pairs(own('vendor/index.lua')) do paths[#paths+1]='vendor/'..name:gsub('%.','/')..'.lua' end
  table.sort(paths)
@@ -94,7 +94,16 @@ return function(mod)
    end
   end
   local assets,report=own('assets.lua')(mod,profile,bytes,own)
-  local translated=own('translate.lua')(proxy,profile,bytes)
+  -- Authored engine UI is a fallback. Pairs extracted from the selected
+  -- retail ROM are registered afterwards and keep precedence.
+  local ui=assert(own('gba/ui.lua')[selected.language],'Missing GBA UI language')
+  local uiCount=0
+  for source,target in pairs(ui) do proxy.content.strings:override(source,target);uiCount=uiCount+1 end
+  local translated=own('translate.lua')(proxy,profile,bytes,own('gba/policy.lua')(version,ui))
+  -- The port uses SPEED only for its engine speed settings here. The
+  -- retail pair means the Pokemon stat (e.g. INIT.), a different meaning.
+  proxy.content.strings:override('SPEED',ui.SPEED)
+  translated.authoredUI=uiCount
   if version=='leafgreen' or version=='firered' then
    local sections=assert(loadstring(assert(assets['data/generated/gba/map_sections.lua'])))().sections
    local original=assert(loadstring(assert(base:read('data/generated/gba/region_map/names.lua'))))()
@@ -111,7 +120,8 @@ return function(mod)
   if next(translated.display.types) then assets['data/generated/gba/pokemon/type_names.lua']=W.encode(translated.display.types) end
   return {files=assets,operations=operations,report=translated}
  end)
- own('overlay.lua')(mod,version,files,result.display)
+ local active=own('overlay.lua')(mod,version,files,result.display)
+ own('gba/runtime.lua')(mod,version,active)
  mod.exports.loadSeconds=love.timer.getTime()-started
  mod.exports.status='active'
  mod.exports.coverage=result

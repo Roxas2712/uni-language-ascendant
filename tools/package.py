@@ -10,6 +10,7 @@ for game in ['firered','leafgreen','ruby','sapphire','emerald','emerald_fr','eme
 index=(root/'mod/vendor/index.lua').read_text()
 files.extend('vendor/'+name.replace('.','/')+'.lua' for name in re.findall(r'\["([a-zA-Z0-9_.]+)"\] = true',index))
 files.extend(str(p.relative_to(root/'mod')) for p in sorted((root/'mod/gb').rglob('*.lua')))
+files.extend(str(p.relative_to(root/'mod')) for p in sorted((root/'mod/gba').rglob('*.lua')))
 files.extend(str(p.relative_to(root/'mod')) for p in sorted((root/'mod/fonts').iterdir()) if p.suffix in ('.otf','.txt'))
 files.extend('intro/'+p for p in ['IntroScene.lua','VoxelBall.lua','SOURCE.txt','ASSET-SHA256.json','assets/ascendant-start.png','assets/ascendant-chime.wav','assets/pikachu-atlas.png','assets/eevee-atlas.png','assets/mew-atlas.png'])
 assert len(files)==len(set(files))
@@ -36,6 +37,12 @@ with zipfile.ZipFile(out) as z:
     assert z.testzip() is None
     assert len(z.namelist())==len(files)
     assert not any('baseroms/' in p or p.endswith(('.gba','.gb','.gbc','.sav')) for p in z.namelist())
+    if qa.get('runtimePayloadSha256'):
+        packaged=hashlib.sha256()
+        for rel,name in sorted((Path(name).relative_to('german_rom_source'),name) for name in z.namelist()):
+            if rel.suffix.lower() not in ('.md','.html','.txt') and not rel.name.endswith('QA.json'):
+                packaged.update(str(rel).encode());packaged.update(z.read(name))
+        assert packaged.hexdigest()==qa['runtimePayloadSha256'], 'ZIP does not contain the complete tested runtime payload'
 digest=hashlib.sha256(out.read_bytes()).hexdigest()
 (dest/'SHA256SUMS.txt').write_text(digest+'  '+out.name+'\n')
 print(out, out.stat().st_size, 'bytes', digest)

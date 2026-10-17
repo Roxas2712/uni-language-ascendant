@@ -1,6 +1,8 @@
 # European expansion preview
 
-13 additional profiles based on v1.4.2. Preview 3 adds a complete AI editorial review of 1,520 supplemental
+13 additional profiles based on v1.4.2. Preview 4 completes the known GBA registry
+gaps, adds 245 supplemental GBA UI entries per language (DE/ES/FR/IT), and fixes
+regional item plurals. It retains Preview 3’s complete AI editorial review of 1,520 supplemental
 GB/GBC strings per language, native NPC/gift identities, endgame graphics
 and broader gameplay, localhost link and save/restart regression tests. See [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md)
 for coverage, QA limits, missing ROMs and PT-BR merge status, and
@@ -33,7 +35,7 @@ starts fresh.** The first-run Ascendant intro, Back navigation and Reset profile
 are included. Changing game language requires a restart.
 
 For this branch, build the preview with `python3 tools/package.py` and install
-the resulting `dist/uni-language-ascendant-1.4.3-europe-preview.3.zip` through
+the resulting `dist/uni-language-ascendant-1.4.3-europe-preview.4.zip` through
 the same mod manager. PT-BR development remains separate.
 
 ## Supported profiles in this preview
@@ -71,7 +73,7 @@ ZIP install, update, uninstall and reinstall were tested separately.
 
 The 1.4.1 Emerald FR/IT/ES text correction checks cover 176 added or changed keys
 across cold and warm loads. Each profile maps 15,653 of 15,655 text keys; two
-English-only credits keys remain. This is not a full-playthrough certification.
+credit identities are now explicitly preserved as proper names in Preview 4. This is not a full-playthrough certification.
 See [the detailed mod documentation](mod/README.md) and
 [performance measurements](mod/Performance.html) for earlier coverage and limits.
 

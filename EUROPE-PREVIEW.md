@@ -1,4 +1,4 @@
-# Europäische Sprachprofile · 1.4.3-europe-preview.3
+# Europäische Sprachprofile · 1.4.3-europe-preview.4
 
 Ausgangspunkt ist der unveränderte Release 1.4.2 (Commit 5843925).
 Die parallele PT-BR-Entwicklung ist in dieser separaten Arbeitskopie nicht enthalten.
@@ -13,8 +13,8 @@ Diese Preview ersetzt keine abgeschlossene Veröffentlichung mit vollständigem 
 | Gold | Spanisch, Französisch, Italienisch | 4.331 / 4.362 / 4.362 |
 | Silber | Spanisch, Französisch | 4.331 / 4.362 |
 | Kristall | Spanisch, Italienisch | 5.523 / 4.863 |
-| Feuerrot | Spanisch, Italienisch | 9.063 von 9.066 nativen Textschlüsseln |
-| Blattgrün | Spanisch, Französisch | 9.063 von 9.066 nativen Textschlüsseln |
+| Feuerrot | Spanisch, Italienisch | 9.063 ROM-Texte + 3 regionale Hilfseinträge |
+| Blattgrün | Spanisch, Französisch | 9.063 ROM-Texte + 3 regionale Hilfseinträge |
 
 Smaragd FR/IT/ES war bereits enthalten. Damit sind alle 16 bereitgestellten
 Sprach-ROMs berücksichtigt: 13 neue und drei bestehende europäische Profile.
@@ -102,14 +102,53 @@ das lokalisierte seltsame Ei durch den normalen Schlupfcode. Gen1 verwendet
 die echte Tausch-Skriptfunktion mit
 synchronen Testantworten für die Dialoge und Auswahl.
 
+## GBA-Texte in Preview 4
+
+245 ergänzende UI-Einträge je Sprache decken Deutsch, Spanisch, Französisch und
+Italienisch ab: Kampf-/Itemmeldungen, Online-/Link-Menüs, Einstellungen,
+Tastenbelegung, Ereignistickets und Wunderkarten. Der Katalog enthält sowohl
+geprüfte gemeinsame Menütexte als auch neu verfasste GBA-Texte. Die begrenzte
+Quelltextprüfung erfasst alle 180 festen `Strings`-Aufrufe unter
+`src/core/game3` und `src/ui/game3`, einschließlich verketteter Literale und
+Inline-Aufrufe. Dynamische Einstellungs- und Tastenlabels werden zusätzlich
+im laufenden Spiel geprüft. Das ist keine automatische Erkennung jedes
+möglichen englischen Textes in sämtlichen Spielpfaden.
+
+Übersetzungen aus der gewählten ROM haben Vorrang vor ergänzenden UI-Texten.
+Eine gezielte Ausnahme ist die Menügruppe „SPEED“: Hier geht es um Spieltempo,
+nicht um den Pokémon-Statuswert „INIT.“. Dynamische Zoom-/Bildschirmanzeigen
+bleiben ebenfalls sprachgerecht. Der Katalog und die Laufzeitkorrekturen sind
+Bestandteil des Compiler-Schlüssels; vorhandene Caches werden neu aufgebaut.
+
+Die drei FRLG-Schlüssel `sPluralTxt`, `sText_IES` und `sText_S` stammen aus
+Code, der im Original ausschließlich für Englisch kompiliert wird. Die Mod
+verwendet jetzt auch in Skripten und im Pokémon-Sprungspiel den regionalen
+Itemnamen, ohne englische S-/IES-Endung. Die unbenutzten Hilfseinträge sind leer.
+Das gilt bei jeder Menge; Item-IDs, Mengen und Spielregeln bleiben erhalten.
+
+Eigennamen aus US-Abspannregistern werden unverändert erhalten und ausdrücklich
+als solche gezählt: zwei Einträge bei Smaragd und 13 bei Rubin/Saphir.
+Fehlende Editions-/Funktionsüberschriften in Rubin/Saphir werden ergänzt.
+Der tatsächlich angezeigte Abspann verwendet weiterhin sein natives regionales
+Datenpaket. Der Prüfbericht unterscheidet ROM-Übersetzungen, verfasste
+Überschriften, erhaltene Eigennamen und nicht anwendbare englische Hilfseinträge.
+Im geprüften GBA-Textregister bleibt kein ungeklärter Schlüssel übrig.
+
+Alle zwölf unterstützten GBA-Sprachprofile werden jeweils beim Neuaufbau und
+beim Neustart mit Cache geprüft. Dazu kommen englische und deaktivierte
+Neustarts aller fünf GBA-Editionen. Die Tests prüfen tatsächliche Rasterglyphen,
+Formatwerte mit Akzenten, TextBox-Umbruch, feste Wunderkartenfelder, dynamische
+Menülabels, native Abspannzeilen gegen ROM-Pointer, regionale Item-Plurale,
+unveränderte Pokémon-Kampfwerte, individuelle Spitznamen und Speichern/Laden.
+GB/GBC-Ergebnisse aus Preview 3 werden mit Herkunftsvermerk übernommen; deren
+Quellen und der gemeinsame Startpfad sind unverändert. Die privaten Logs und
+Bilder bleiben außerhalb der ZIP. Eine unabhängige muttersprachliche Abnahme
+und komplette manuelle Spieldurchläufe bleiben offen.
+
 ## Verbleibende Grenzen
 
 - Eine unabhängige Abnahme durch Muttersprachler und komplette manuelle
   Spieldurchläufe bleiben als externe Freigabeschritte offen.
-- Drei bereits im deutschen FRLG-Referenzprofil fehlende englische
-  Pluralbildungsschlüssel (sPluralTxt, sText_IES, sText_S) bleiben auch in den vier
-  neuen GBA-Profilen als Rückfall erhalten. Hinzu kommen zwei bereits bekannte
-  englische Abspann-Schlüssel der bestehenden Smaragd-Profile.
 - Windows und Linux wurden nicht praktisch geprüft. Öffentliche Online-Räume,
   vollständige Link-Kämpfe zwischen zwei Geräten und eine erschöpfende Prüfung
   aller Kampf-/Sonderereignispfade stehen ebenfalls noch aus. Hot-Reload zwischen
@@ -135,8 +174,10 @@ benötigen zusätzliche Zeichensatz- und Layout-Arbeit. Chinesische Fanpatches
 und Portugiesisch brauchen eigene definierte Quellen; sie sind keine regulären
 Handelsfassungen dieser Liste. Die exakten Dateinamen, Revisionen und Prüfsummen
 stehen in Weitere-Sprachen.html.
-Für die bestehenden deutschen Profile fehlen weiterhin die passende eigene
-Feuerrot-ROM und ein korrekter Saphir-1.1-Dump aus der bisherigen Bestandsprüfung.
+Die GBA-Tests verwenden vorhandene private, anhand der Profil-Prüfsummen
+verifizierte Entwicklungsinputs. Die ursprüngliche Bestandsliste fehlender
+eigener Feuerrot-/Saphir-Dumps wird dadurch nicht zu einer Beschaffungsliste
+oder ROM-Beigabe; zum Spielen brauchst du weiterhin deine passende eigene Datei.
 
 ## Lizenz
 
