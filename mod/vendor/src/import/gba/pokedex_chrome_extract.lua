@@ -139,7 +139,7 @@ end
 --- Extract entries.lua from ROM gPokedexEntries table
 function PokedexChromeExtract.extractEntries(rom, cache, root)
   local L = require("src.import.gba.layouts.registry").active()
-  local E = L.pokedexEntry
+  local E = Versions.ULA_POKEDEX_ENTRY or L.pokedexEntry
   local entriesBase = assert(Versions.POKEDEX_ENTRIES, "pokedex entries: no POKEDEX_ENTRIES key")
   local spToNatBase = assert(Versions.SPECIES_TO_NATIONAL, "pokedex entries: no SPECIES_TO_NATIONAL key")
   local numSpecies = assert(Versions.NUM_SPECIES, "pokedex entries: no NUM_SPECIES key")

@@ -7,9 +7,46 @@ once and reuses its local cache on later launches.
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
-## Install version 1.4.2
+## Brazilian Portuguese for Gen1–Gen3
 
-1. Download [uni-language-ascendant-1.4.2.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.4.2).
+Version 1.5.0 contains PT-BR profiles for all eleven editions: Red,
+Blue, Yellow, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed and LeafGreen.
+It combines exact fan-translation ROM imports with authored corrections, move
+names and native UI/graphic localization. See the generated
+[gameplay report](mod/PT-BR.html) and [machine-readable QA](docs/PT-BR-QA.json)
+for the current verification status. A profile being enabled is not a claim that
+every story or multiplayer branch has been played.
+
+The source ROM and revision must match [the ROM checklist](mod/ROM-Liste.html).
+[Source projects and patch identities](tools/ptbr_sources.json) are recorded
+separately. FireRed/LeafGreen fanpatches use a 1.1 patch base, while their
+recompiler runtime uses the supported US 1.0 base. Do not interchange them.
+Sapphire uses its own US game, exact-source reuse from the Ruby PT-BR import,
+and separate Sapphire translations, including its Pokédex entries.
+
+All 165/251/354 move IDs retain their gameplay identity and receive Portuguese
+display names. Gen3 also covers abilities, item names and descriptions, trainer classes,
+map labels, Easy Chat vocabulary, PokéNav and native side-menu text; FireRed/LeafGreen include Help and Fame Checker.
+Saved Easy Chat word IDs and unlock rules are preserved. Raster lettering is
+compiled into the language cache; the mod does not translate images each frame.
+
+**Evidence correction:** “Missão concluída! Poções, saúde e proteção.” was a
+synthetic font fixture, not Nurse Joy's dialogue. It is excluded from the report.
+Current healing evidence is reached through actual NPC interaction and checks
+HP restoration and returned field control. Other fixtures prepare saves, maps,
+party members or inventory; they never supply display dialogue. Unit tests are
+reported separately from gameplay evidence.
+
+The menu has ten languages, including PT-BR. Menu and game language can be
+selected independently. Back and Reset remain available. The intro runs once
+per mod profile; updates preserve that profile, uninstalling deletes it, and
+reinstallation starts fresh. The first-run notice explains this in English.
+
+Build with `python3 tools/package.py`. No ROM or fanpatch is included.
+
+## Install version 1.5.0
+
+1. Download [uni-language-ascendant-1.5.0.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.5.0).
 2. Import the matching US base ROM in Gen1Recomp.
 3. Install the ZIP through the mod manager, enable the mod for your game, and
    import your language ROM under **Uni-Language Ascendant → Imports**.
@@ -28,13 +65,13 @@ are included. Changing game language requires a restart.
 
 | Games | Game languages |
 | --- | --- |
-| Red, Blue, Yellow | English base + German |
-| Gold, Silver, Crystal | English base + German |
-| FireRed, LeafGreen, Ruby, Sapphire | English base + German |
-| Emerald | English base + German, French, Italian, Spanish |
+| Red, Blue, Yellow | English base + German, Brazilian Portuguese |
+| Gold, Silver, Crystal | English base + German, Brazilian Portuguese |
+| FireRed, LeafGreen, Ruby, Sapphire | English base + German, Brazilian Portuguese |
+| Emerald | English base + German, French, Italian, Spanish, Brazilian Portuguese |
 
 Menu languages: English, German, French, Italian, Spanish, Japanese, Korean,
-Simplified Chinese and Traditional Chinese. A translated menu does not imply a
+Simplified Chinese, Traditional Chinese and Brazilian Portuguese. A translated menu does not imply a
 game-language profile exists.
 
 Exact versions and SHA-1 checksums are in [the ROM catalog](tools/rom_requirements.json)
@@ -46,7 +83,21 @@ source and attribution notices.
 
 ## Verification and limitations
 
-Version 1.4.2 passed unit checks for game/import filtering, fallback selection,
+The version 1.5.0 report records the current gameplay checks, exact runtime and
+test-helper fingerprints, screenshot hashes and paired English/PT-BR performance
+runs for every edition. The report builder refuses final output when a required
+run is missing, stale, failed or only a focused sample. See
+[PT-BR.html](mod/PT-BR.html) and [PT-BR-QA.json](docs/PT-BR-QA.json).
+
+The release passes 58 functional groups, 44 paired performance runs, 69 Python
+unit tests and nine Lua unit groups. All 22 PT-BR measurements hit the language
+cache. On the tested M3 Mac, Emerald's median observed rate was 59.84 FPS in both
+languages, while its cached PT-BR mod load took 3.79 seconds and its measured Lua
+heap was 211.8 MiB versus 96.1 MiB in English. These are stationary overworld
+measurements under VSync and background load, not a universal performance guarantee
+or process-RAM figures. The report includes every edition and all raw measurements.
+
+Earlier version 1.4.2 passed unit checks for game/import filtering, fallback selection,
 all nine menu locales, preferences and intro lifecycle. Live Emerald runs checked
 English-only and English/Spanish imports, fallback from an absent French import,
 and the five-language picker including mouse paging and a French in-game dialogue.
@@ -103,3 +154,22 @@ New generations also require an appropriate engine and runtime adapter.
 See [LICENSE.MD](LICENSE.MD) and [VENDOR.md](mod/VENDOR.md) for upstream code,
 the German Universal reference, Noto fonts and the shared Origami Ascendant intro.
 
+
+### Reproduce PT-BR QA
+
+Use a stock engine checkout and an isolated copy of an already imported US
+Emerald cache. The runner uses an isolated `german-rom-mod-ptbr-*` QA identity, never the player’s
+normal save identity. Substitute your own absolute paths:
+
+```sh
+python3 tests/run_ptbr.py --engine /path/to/gen1recomp --love /path/to/love --base-cache /path/to/emerald --rom /path/to/emerald-ptbr.gba --mode live
+python3 tests/run_ptbr.py --engine /path/to/gen1recomp --love /path/to/love --mode menu
+python3 tests/run_ptbr.py --engine /path/to/gen1recomp --love /path/to/love --mode performance
+python3 -m unittest discover -s tests -p 'test_*.py'
+```
+
+`tools/apply_bps.py BASE PATCH OUTPUT` validates source, patch and target CRCs
+and refuses to overwrite an existing output file. The profile builder separately
+pins the source and target SHA-1 values. `tools/export_asset_metadata.lua` records
+metadata using the shipped private extractors without altering engine/vendor
+files; `tools/build_emerald_ptbr.py --help` lists its private inputs.

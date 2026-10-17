@@ -1,0 +1,1508 @@
+{
+  "BULBASAUR": {
+    "kind": "SEMENTE",
+    "text": "Traz uma semente<NEXT>nas costas desde<NEXT>que nasce.",
+    "text2": "Conforme<NEXT>envelhece, a<NEXT>semente cresce.",
+    "source_sha256": "4b62991fe63b4793ad292680575a91bbdbff1baeeed510f5f676f1eefab616e9"
+  },
+  "IVYSAUR": {
+    "kind": "SEMENTE",
+    "text": "Se o botão nas<NEXT>costas exalar um<NEXT>aroma doce, a",
+    "text2": "grande flor está<NEXT>prestes a se<NEXT>abrir.",
+    "source_sha256": "80648d4c706501e5d3bb8bc0ddf4f271cb6b4aabc5b912c5df96cc1a312378a4"
+  },
+  "VENUSAUR": {
+    "kind": "SEMENTE",
+    "text": "Converte a luz<NEXT>solar em energia.<NEXT>Por isso, fica",
+    "text2": "mais poderoso<NEXT>durante o verão.",
+    "source_sha256": "4d9d2d4525c6e1e5e5953128c628948599d58bb4323258e9ad74a15ef9fa69ce"
+  },
+  "CHARMANDER": {
+    "kind": "LAGARTO",
+    "text": "A chama da cauda<NEXT>mostra sua força<NEXT>vital. Se estiver",
+    "text2": "saudável, ela arde<NEXT>com brilho.",
+    "source_sha256": "e261a828e090018a807e9d31e3ad6ef264971dfc999bd6c20b9dc6709c7e282c"
+  },
+  "CHARMELEON": {
+    "kind": "CHAMA",
+    "text": "Tem índole feroz.<NEXT>Na luta, agita a<NEXT>cauda em chamas e",
+    "text2": "retalha com garras<NEXT>afiadas.",
+    "source_sha256": "fdad48d12d23cf260409e242fa80863e55332a9faf3195d35aa6b638a8eb0371"
+  },
+  "CHARIZARD": {
+    "kind": "CHAMA",
+    "text": "Cospe chamas muito<NEXT>quentes, capazes<NEXT>de derreter quase",
+    "text2": "tudo e causar dor<NEXT>terrível aos<NEXT>inimigos.",
+    "source_sha256": "40e4bcec3b4bb28f183d510f287e925bda473540f75f2c4cb9210c84d2339329"
+  },
+  "SQUIRTLE": {
+    "kind": "TARTARUG. P",
+    "text": "O casco endurece<NEXT>logo após nascer e<NEXT>é elástico. Ao",
+    "text2": "cutucá-lo, ele<NEXT>volta ao lugar.",
+    "source_sha256": "05dc18f72783499be340a87b26344c26b0d39fee6e76df05305daa2345bf0629"
+  },
+  "WARTORTLE": {
+    "kind": "TARTARUGA",
+    "text": "Controla bem as<NEXT>orelhas peludas e<NEXT>a cauda para",
+    "text2": "manter o<NEXT>equilíbrio ao<NEXT>nadar.",
+    "source_sha256": "d8927a83fd31b4b3eb5c94deed04a2c42025afbaa69a96309215d607e21a8cc2"
+  },
+  "BLASTOISE": {
+    "kind": "MARISCO",
+    "text": "Os canhões do<NEXT>casco lançam jatos<NEXT>de água capazes de",
+    "text2": "perfurar placas<NEXT>grossas de aço.",
+    "source_sha256": "6892bde628558b7c763dec51e91631277626942ddc2b4f1de76a422e30ce022e"
+  },
+  "CATERPIE": {
+    "kind": "LAGARTA",
+    "text": "As ventosas dos<NEXT>pés se prendem a<NEXT>tudo. Sobe árvores",
+    "text2": "com afinco em<NEXT>busca de comida.",
+    "source_sha256": "e9d8f83e5eb702e5588039c98826c3f17a07a25e5c53c796891f078dc51f6d10"
+  },
+  "METAPOD": {
+    "kind": "CASULO",
+    "text": "Para evoluir,<NEXT>endurece o casulo<NEXT>ao máximo para",
+    "text2": "proteger seu corpo<NEXT>mole.",
+    "source_sha256": "6de7dfe80f39da5f9d29f6320b427487fd9d56a52c883121ed3588853dc14461"
+  },
+  "BUTTERFREE": {
+    "kind": "BORBOLETA",
+    "text": "O pó das asas<NEXT>repele água.<NEXT>Assim, pode",
+    "text2": "coletar mel mesmo<NEXT>sob as chuvas mais<NEXT>fortes.",
+    "source_sha256": "dda7859dd840b6ce14009c4cd606dc66a8dae4e7b213a5a5c0c1906dfc3bed87"
+  },
+  "WEEDLE": {
+    "kind": "INSETO PEL.",
+    "text": "Ataca com o ferrão<NEXT>venenoso de 5 cm<NEXT>da cabeça. Vive",
+    "text2": "sob as folhas que<NEXT>come.",
+    "source_sha256": "6f60776df7d736c1f73d8af1659181a8d5ce70244501444352cc0d9ba865344d"
+  },
+  "KAKUNA": {
+    "kind": "CASULO",
+    "text": "Dessa forma, vira<NEXT>adulto. À medida<NEXT>que o corpo fica",
+    "text2": "mais mole, o<NEXT>casulo endurece.",
+    "source_sha256": "de4804d837fabab036f0cd95bcf793b0309f01f545b8140d80cc939004532d17"
+  },
+  "BEEDRILL": {
+    "kind": "ABELHA VEN.",
+    "text": "Tem três ferrões<NEXT>venenosos. O da<NEXT>cauda secreta o",
+    "text2": "veneno mais<NEXT>potente.",
+    "source_sha256": "8c80201e18c1eb0a3bf030e0869659f73c91200d6298eca5ae97e90fe8bc5206"
+  },
+  "PIDGEY": {
+    "kind": "PASSARINHO",
+    "text": "Comum no mato e em<NEXT>florestas, é<NEXT>dócil. Afasta",
+    "text2": "inimigos ao<NEXT>levantar areia com<NEXT>as asas.",
+    "source_sha256": "dedbfd349a1997cfcb696195dbea60e3a1f729e6d0b49a787b9021642f6cd42e"
+  },
+  "PIDGEOTTO": {
+    "kind": "PÁSSARO",
+    "text": "Prende a presa com<NEXT>garras fortes e a<NEXT>leva por mais de",
+    "text2": "96 km até seu<NEXT>ninho.",
+    "source_sha256": "359fb75c7556abd0320d9796a1951971f526e9a7767b23830ff1be19407b2765"
+  },
+  "PIDGEOT": {
+    "kind": "PÁSSARO",
+    "text": "Abre bem suas<NEXT>belas asas para<NEXT>assustar inimigos.",
+    "text2": "Pode voar ao dobro<NEXT>da velocidade do<NEXT>som.",
+    "source_sha256": "08cacbbbb7caf618e2a409af8b8d42c35aed8bd6e534706625c131669919d63c"
+  },
+  "RATTATA": {
+    "kind": "RATO",
+    "text": "Vive onde há<NEXT>comida e passa o<NEXT>dia todo buscando",
+    "text2": "algo para comer,<NEXT>sem descanso.",
+    "source_sha256": "bc6b4de558c32e5ea43feeda4ef5be2494af8945a66de3dfa4b7a93f2267c7cc"
+  },
+  "RATICATE": {
+    "kind": "RATO",
+    "text": "Os bigodes dão<NEXT>equilíbrio. Suas<NEXT>presas nunca param",
+    "text2": "de crescer, então<NEXT>as desgasta<NEXT>roendo.",
+    "source_sha256": "4eb2f8a9fbb8b27ae1f8889d58606982943982dc97ab2c9a5967c7b3233f0395"
+  },
+  "SPEAROW": {
+    "kind": "PASSARINHO",
+    "text": "Defende muito seu<NEXT>território. Agita<NEXT>as asas curtas sem",
+    "text2": "parar e voa em<NEXT>alta velocidade.",
+    "source_sha256": "8ebddf570d3436f686ac9a8990df1c83f6b5c0b9590023d3d585c3d36640e8b5"
+  },
+  "FEAROW": {
+    "kind": "BICO",
+    "text": "Usa bem seu bico<NEXT>fino e longo para<NEXT>pegar e comer",
+    "text2": "insetos pequenos<NEXT>ocultos sob a<NEXT>terra.",
+    "source_sha256": "38bc2dc6655236d6797c41eedcca2f53c4458550cf5e9e40248778955ecf213b"
+  },
+  "EKANS": {
+    "kind": "COBRA",
+    "text": "Sempre se oculta<NEXT>no mato. Ao nascer<NEXT>não tem veneno:",
+    "text2": "sua mordida dói,<NEXT>mas é inofensiva.",
+    "source_sha256": "dda10f5efaaabeac488add97b58da3e717d8f8bae54ca922b8fc51fb69407c6f"
+  },
+  "ARBOK": {
+    "kind": "NAJA",
+    "text": "É muito vingativo.<NEXT>Após escolher uma<NEXT>presa, a persegue",
+    "text2": "sem desistir, por<NEXT>mais longe que vá.",
+    "source_sha256": "7d7c5f5ca594ddbe2ac83fda3a459f1557de20794c8cf15e4a3fad097de8c479"
+  },
+  "PIKACHU": {
+    "kind": "RATO",
+    "text": "Ergue a cauda para<NEXT>sondar os<NEXT>arredores. Nessa",
+    "text2": "posição, às vezes<NEXT>um raio a atinge.",
+    "source_sha256": "1ce03b7d91013fc6d8260029499228644314ca19ba6a42b4268f33228ce6c2cc"
+  },
+  "RAICHU": {
+    "kind": "RATO",
+    "text": "Quando as bolsas<NEXT>elétricas das<NEXT>bochechas enchem,",
+    "text2": "as duas orelhas<NEXT>ficam bem<NEXT>erguidas.",
+    "source_sha256": "7d17331ad2f886c57f3bbb43320cee11c878b391b5d10f2142ba014a5c1e8eb5"
+  },
+  "SANDSHREW": {
+    "kind": "RATO",
+    "text": "Não gosta de água.<NEXT>Vive em tocas<NEXT>fundas em áreas",
+    "text2": "secas. Vira uma<NEXT>bola num instante.",
+    "source_sha256": "fd6bb02a8a2a067be15e25e394dcc14289c6dde0d32ed09973c0cd6f7f98e8ed"
+  },
+  "SANDSLASH": {
+    "kind": "RATO",
+    "text": "Ao cavar depressa,<NEXT>pode quebrar<NEXT>garras e espinhos.",
+    "text2": "Eles crescem de<NEXT>novo em um dia.",
+    "source_sha256": "9e720107c973ec843dccefcffe5fdfa2c9d221c42ba264195168e24dda8a4b82"
+  },
+  "NIDORAN_F": {
+    "kind": "ESPINHO VEN",
+    "text": "Não é de brigar,<NEXT>mas, se ameaçado,<NEXT>atormenta os",
+    "text2": "rivais com<NEXT>espinhos<NEXT>venenosos.",
+    "source_sha256": "a9c4862481497eb8a70981d92737ca33803ae4dde470f97177857e809b30ced6"
+  },
+  "NIDORINA": {
+    "kind": "ESPINHO VEN",
+    "text": "É calma e<NEXT>carinhosa. Como<NEXT>seu chifre cresce",
+    "text2": "devagar, prefere<NEXT>não lutar.",
+    "source_sha256": "5a497382cd25b8ce804952190b281ca95275676d0e3b51942b95151c581eeb93"
+  },
+  "NIDOQUEEN": {
+    "kind": "BROCA",
+    "text": "Bloqueia a entrada<NEXT>do ninho com seu<NEXT>corpo duro e",
+    "text2": "escamoso para<NEXT>defender os<NEXT>filhotes.",
+    "source_sha256": "bf871e685efbfea38864970f37ea324bf7a5eb256d3a5ab19d581719ab3b9402"
+  },
+  "NIDORAN_M": {
+    "kind": "ESPINHO VEN",
+    "text": "Ergue as orelhas<NEXT>grandes para<NEXT>sondar os",
+    "text2": "arredores. Se<NEXT>sentir perigo,<NEXT>ataca primeiro.",
+    "source_sha256": "d9278fed45eaf1aeb072165e7665d01704b355f2d2e94a24695e465a762d077c"
+  },
+  "NIDORINO": {
+    "kind": "ESPINHO VEN",
+    "text": "Irrita-se fácil.<NEXT>Quando agitado,<NEXT>perfura inimigos",
+    "text2": "com o chifre e<NEXT>injeta um veneno<NEXT>potente.",
+    "source_sha256": "a55659dbacf9e77fa2d55a6001e6a589eee3ff0f5884c43b1d1c8e501c1db056"
+  },
+  "NIDOKING": {
+    "kind": "BROCA",
+    "text": "Sua cauda é grossa<NEXT>e forte. Ao<NEXT>envolver um rival,",
+    "text2": "pode quebrar sua<NEXT>coluna sem<NEXT>esforço.",
+    "source_sha256": "ef4ce5525fc3d8fee45b84d050823845e3e561ec38cc85ea9d6d31b377a7c0d7"
+  },
+  "CLEFAIRY": {
+    "kind": "FADA",
+    "text": "Seus modos e seu<NEXT>grito fofos o<NEXT>tornam muito",
+    "text2": "popular. Porém, é<NEXT>raro encontrar<NEXT>este POKéMON.",
+    "source_sha256": "8a7f88e22820615b048ac4872e888ea6da03dbe9fa5e6c2df995b7a01fa6d7fd"
+  },
+  "CLEFABLE": {
+    "kind": "FADA",
+    "text": "Os ouvidos muito<NEXT>sensíveis captam<NEXT>sons distantes.",
+    "text2": "Por isso, prefere<NEXT>locais calmos.",
+    "source_sha256": "3c27c3ae227c8c9e5249ba61f854add6cda981549ac85041a51892893c566e45"
+  },
+  "VULPIX": {
+    "kind": "RAPOSA",
+    "text": "Se um inimigo mais<NEXT>forte o atacar,<NEXT>finge estar ferido",
+    "text2": "para enganá-lo e<NEXT>fugir.",
+    "source_sha256": "9361b0a176cf31a666a3446089a2d47bf55530d3f0dea61a54a33d884295ccb1"
+  },
+  "NINETALES": {
+    "kind": "RAPOSA",
+    "text": "Suas nove belas<NEXT>caudas contêm uma<NEXT>energia incrível",
+    "text2": "que pode mantê-lo<NEXT>vivo por mil anos.",
+    "source_sha256": "a1b9f00c2991421d4c1212e89cfa5298659cc39d398b4d8e910d4ba35dd7c742"
+  },
+  "JIGGLYPUFF": {
+    "kind": "BALÃO",
+    "text": "Olhar em seus<NEXT>olhos redondos e<NEXT>fofos o faz cantar",
+    "text2": "uma melodia suave<NEXT>que adormece<NEXT>inimigos.",
+    "source_sha256": "41df6d42a218c2405c07d6f7ce74d6ddb9485b7a3da14fce2cade9c2afd8c58e"
+  },
+  "WIGGLYTUFF": {
+    "kind": "BALÃO",
+    "text": "Seu pelo é fino.<NEXT>Não o irrite: pode<NEXT>se inflar cada vez",
+    "text2": "mais e usar<NEXT>ESMAGAMENTO.",
+    "source_sha256": "faaf9915292924294b0fbd1f2183865da21a63d7e72024770fea59dbb2e06df7"
+  },
+  "ZUBAT": {
+    "kind": "MORCEGO",
+    "text": "Voa seguro no<NEXT>escuro. Emite<NEXT>gritos de",
+    "text2": "ultrassom para<NEXT>detectar os<NEXT>obstáculos.",
+    "source_sha256": "86d325ffc950f369c40f29294072c2a9de262323651cf97d73d67516cf388867"
+  },
+  "GOLBAT": {
+    "kind": "MORCEGO",
+    "text": "Bebe mais de 280<NEXT>ml de sangue de<NEXT>uma vez. Se beber",
+    "text2": "demais, fica<NEXT>pesado e voa mal.",
+    "source_sha256": "b6cb282c92a655ed205b30469af96a63f25d5fbfcfc736602a8555c62bbfed78"
+  },
+  "ODDISH": {
+    "kind": "ERVA",
+    "text": "Começa a se mover<NEXT>sob a luz da lua.<NEXT>Vaga por longe à",
+    "text2": "noite para<NEXT>espalhar sementes.",
+    "source_sha256": "c552849a320793bb9ed5bd1d7fb268a08014614d90f0e7cfd1644818d675526c"
+  },
+  "GLOOM": {
+    "kind": "ERVA",
+    "text": "Secreta um mel<NEXT>pegajoso que<NEXT>parece baba. É",
+    "text2": "doce, mas fede<NEXT>tanto que impede a<NEXT>aproximação.",
+    "source_sha256": "35e33e56b7f45bd7e3cd1ebc6c6c1ef3891b709331673a174d411ac9c48a8679"
+  },
+  "VILEPLUME": {
+    "kind": "FLOR",
+    "text": "O botão se abre<NEXT>com um estouro.<NEXT>Então espalha",
+    "text2": "pólen venenoso que<NEXT>causa alergia.",
+    "source_sha256": "bb6f3004079c713212f95b1bb555ee10802ff5ab3daef07384b5940b80b0260f"
+  },
+  "PARAS": {
+    "kind": "COGUMELO",
+    "text": "Conforme cresce,<NEXT>cogumelos<NEXT>orientais chamados",
+    "text2": "tochukaso começam<NEXT>a brotar nas<NEXT>costas.",
+    "source_sha256": "7107918a5f04c552f436b426d245fa4574e0a8705e90f9b2883efc23a0da486e"
+  },
+  "PARASECT": {
+    "kind": "COGUMELO",
+    "text": "Quanto maior for o<NEXT>cogumelo nas<NEXT>costas, mais",
+    "text2": "fortes serão os<NEXT>esporos que ele<NEXT>espalha.",
+    "source_sha256": "fc44a067140d1f8ed6b350f019338eb46e180d7b376cb38df3ca8551d1180048"
+  },
+  "VENONAT": {
+    "kind": "INSETO",
+    "text": "Exala veneno por<NEXT>todo o corpo. À<NEXT>noite, caça e come",
+    "text2": "insetos pequenos<NEXT>atraídos pela luz.",
+    "source_sha256": "564d813086bd46343b66f84bbe1c6210a2bd7924a98dce683572bb6ae9a98aa2"
+  },
+  "VENOMOTH": {
+    "kind": "MARIP. VEN.",
+    "text": "O pó escuro das<NEXT>asas é venenoso.<NEXT>Se for claro,",
+    "text2": "causa paralisia.",
+    "source_sha256": "b1deec887913f9fd054f38cb07053106da9687cfab666ab7ecc6bb291f5ae71b"
+  },
+  "DIGLETT": {
+    "kind": "TOUPEIRA",
+    "text": "Se cavar por um<NEXT>campo, deixa a<NEXT>terra bem arada e",
+    "text2": "ideal para o<NEXT>plantio.",
+    "source_sha256": "1cb235bb17fa6a0b2acfb34d571ef1d5ff9453063be932ab9a948b7239d58ea7"
+  },
+  "DUGTRIO": {
+    "kind": "TOUPEIRA",
+    "text": "Muito fortes,<NEXT>cavam até o solo<NEXT>mais duro e chegam",
+    "text2": "a mais de 96 km de<NEXT>profundidade.",
+    "source_sha256": "56a7ce00fca8ec9753007866a763727e97b0e2419109d9b7fbf5eb7d27f7523f"
+  },
+  "MEOWTH": {
+    "kind": "ARRANHADOR",
+    "text": "Adora tudo que<NEXT>brilha, em<NEXT>especial moedas,",
+    "text2": "que apanha e<NEXT>guarda em segredo.",
+    "source_sha256": "cc26c2422d679a2981dc42b79ddcd2e386746dde16c079ece3416986b99c4611"
+  },
+  "PERSIAN": {
+    "kind": "GATO FINO",
+    "text": "Seus músculos<NEXT>ágeis o deixam<NEXT>andar sem fazer",
+    "text2": "barulho. Ataca num<NEXT>instante.",
+    "source_sha256": "2fcb747447c2d5f4b14d0f1faf4a3c5c30a1ef0975e891a3432c0a78fbe3740a"
+  },
+  "PSYDUCK": {
+    "kind": "PATO",
+    "text": "Se a dor de cabeça<NEXT>piora, exibe<NEXT>poderes estranhos,",
+    "text2": "mas parece não<NEXT>lembrar disso<NEXT>depois.",
+    "source_sha256": "ae0e77e05bb6cf1a28c6f7745e3986eb02c638ec8fe4f4f9b942b7c958465c03"
+  },
+  "GOLDUCK": {
+    "kind": "PATO",
+    "text": "Surge junto à água<NEXT>ao anoitecer. Se<NEXT>sua testa brilhar,",
+    "text2": "pode usar poderes<NEXT>telecinéticos.",
+    "source_sha256": "0b2028e8930caf5bff8dba4406c3f7a534fcd010661746be6980ec0d45f96013"
+  },
+  "MANKEY": {
+    "kind": "PORCO-SÍMIO",
+    "text": "Se fica furioso<NEXT>sem motivo, não<NEXT>distingue amigos",
+    "text2": "de inimigos. É<NEXT>perigoso se<NEXT>aproximar.",
+    "source_sha256": "fcc984068ffd8a73aeb176cb8ce358a9686903e329c721c15e078121998e8873"
+  },
+  "PRIMEAPE": {
+    "kind": "PORCO-SÍMIO",
+    "text": "Basta sentir que<NEXT>alguém o observa<NEXT>para ficar",
+    "text2": "furioso. Persegue<NEXT>quem cruza seu<NEXT>olhar.",
+    "source_sha256": "03b00301fe97d18bba92d64aa22bf64822f590ace75a449b21283528be06e4f9"
+  },
+  "GROWLITHE": {
+    "kind": "CÃOZINHO",
+    "text": "Muito leal, late<NEXT>sem medo para<NEXT>qualquer inimigo",
+    "text2": "para proteger seu<NEXT>Treinador.",
+    "source_sha256": "1772dac99babf8fcc175492d8a30ceb56faae9eed485bc7f471591868358db08"
+  },
+  "ARCANINE": {
+    "kind": "LENDÁRIO",
+    "text": "Seu magnífico<NEXT>latido impõe<NEXT>tamanha majestade",
+    "text2": "que todos se<NEXT>curvam ao ouvi-lo.",
+    "source_sha256": "3d50144daec676a629c17a8f4c9ee0a0b5935636fd0ddfd6959a52d97764d55d"
+  },
+  "POLIWAG": {
+    "kind": "GIRINO",
+    "text": "O sentido da<NEXT>espiral na barriga<NEXT>varia de região.",
+    "text2": "Acredita-se que o<NEXT>Equador influa<NEXT>nisso.",
+    "source_sha256": "0f6d4ba96e7d08912c1bd4eb915d453db3e3e90f5e0f2043ffd6351393b162f0"
+  },
+  "POLIWHIRL": {
+    "kind": "GIRINO",
+    "text": "A pele de quase<NEXT>todo o corpo é<NEXT>úmida. Já a pele",
+    "text2": "na espiral da<NEXT>barriga é lisa ao<NEXT>toque.",
+    "source_sha256": "7ce5c09e892ba847160014d795847f1ec5136275a970110f0692c4e615d143c0"
+  },
+  "POLIWRATH": {
+    "kind": "GIRINO",
+    "text": "É um nadador hábil<NEXT>e cheio de energia<NEXT>que usa todos os",
+    "text2": "músculos, mas vive<NEXT>em terra firme.",
+    "source_sha256": "81b278ebffa087d2ccd5cc253b6a738b59550631f1a956a0843643b90b63b2c9"
+  },
+  "ABRA": {
+    "kind": "PSÍQUICO",
+    "text": "Ao se teleportar<NEXT>de forma<NEXT>aleatória, cria a",
+    "text2": "ilusão de que fez<NEXT>cópias de si<NEXT>mesmo.",
+    "source_sha256": "2e8466b7e7139e2a8d992205491d07c0321bf9681e23d740c15e16fabf3e3af7"
+  },
+  "KADABRA": {
+    "kind": "PSÍQUICO",
+    "text": "Ao usar poderes,<NEXT>emite ondas alfa<NEXT>especiais que",
+    "text2": "fazem máquinas<NEXT>falharem.",
+    "source_sha256": "41df49759e3f9363accc300587bcaa0bd8a51b51c96d2135536711d8e2720268"
+  },
+  "ALAKAZAM": {
+    "kind": "PSÍQUICO",
+    "text": "Suas células<NEXT>cerebrais se<NEXT>multiplicam até",
+    "text2": "sua morte. Por<NEXT>isso, lembra de<NEXT>tudo.",
+    "source_sha256": "f7759d0b82e25ecf2e385b6094fd8cafdbe03a8e60ed8e8d6efb79390acf57e5"
+  },
+  "MACHOP": {
+    "kind": "SUPERFORTE",
+    "text": "Adora exercitar os<NEXT>músculos. Nunca se<NEXT>satisfaz, mesmo se",
+    "text2": "treinar duro o dia<NEXT>inteiro.",
+    "source_sha256": "90076e0f6187826a0cb63607c40faa712d6e0b6df8fa0a062ae5db2656c00baa"
+  },
+  "MACHOKE": {
+    "kind": "SUPERFORTE",
+    "text": "Os músculos de seu<NEXT>corpo têm enorme<NEXT>poder. Até parado,",
+    "text2": "passa uma incrível<NEXT>sensação de força.",
+    "source_sha256": "c16a38424358f4bafffaa13b20c1718fd68625a2d17cd9e38d5a827de8a0e763"
+  },
+  "MACHAMP": {
+    "kind": "SUPERFORTE",
+    "text": "Prende os membros<NEXT>do rival com os<NEXT>quatro braços",
+    "text2": "fortes e o lança<NEXT>além do horizonte.",
+    "source_sha256": "c78a537bdde4ccb1f037d9a05b75b86cf23c1a235cda32eb314b22787bfa9448"
+  },
+  "BELLSPROUT": {
+    "kind": "FLOR",
+    "text": "Finca os pés no<NEXT>solo para absorver<NEXT>água. Enquanto",
+    "text2": "está enraizado,<NEXT>não pode fugir dos<NEXT>inimigos.",
+    "source_sha256": "dfbd2de9f359ec8baea7b70126b56b32d964a806d08da230914f140efd4dd27f"
+  },
+  "WEEPINBELL": {
+    "kind": "CARNÍVORO",
+    "text": "Se a presa é maior<NEXT>que sua boca,<NEXT>corta-a com folhas",
+    "text2": "afiadas e come<NEXT>cada pedaço.",
+    "source_sha256": "6fbb410877f4309d9b0b0476ac2be2c4d78234c39a7113c8f617ffd7eec8004a"
+  },
+  "VICTREEBEL": {
+    "kind": "CARNÍVORO",
+    "text": "Este temível<NEXT>POKéMON planta<NEXT>atrai presas com",
+    "text2": "mel perfumado e as<NEXT>dissolve na boca.",
+    "source_sha256": "811baeef7819dd529db5a0c655413098abbf626c5a88ed30378e472affc5af03"
+  },
+  "TENTACOOL": {
+    "kind": "ÁGUA-VIVA",
+    "text": "Vaga nas ondas. É<NEXT>tão difícil vê-lo<NEXT>na água que pode",
+    "text2": "passar<NEXT>despercebido até<NEXT>dar uma ferroada.",
+    "source_sha256": "d4774431bf7fcb91856b4b0495255fab8ae5dbed1f0686b94264504d96a0b7c6"
+  },
+  "TENTACRUEL": {
+    "kind": "ÁGUA-VIVA",
+    "text": "Em combate,<NEXT>estende todos os<NEXT>80 tentáculos para",
+    "text2": "prender o rival<NEXT>numa rede<NEXT>venenosa.",
+    "source_sha256": "6d016d8bcd9327c48fdd9f16414ee244ece07c7cbe75271e0a297773625b8b95"
+  },
+  "GEODUDE": {
+    "kind": "ROCHA",
+    "text": "Usa os braços para<NEXT>subir encostas<NEXT>íngremes com",
+    "text2": "firmeza. Agita os<NEXT>punhos se ficar<NEXT>bravo.",
+    "source_sha256": "8249889c3140e854a189ad69732ddd459421067a07c5125306a345704ec86bb7"
+  },
+  "GRAVELER": {
+    "kind": "ROCHA",
+    "text": "Anda devagar,<NEXT>então rola para se<NEXT>mover. Ignora",
+    "text2": "qualquer objeto<NEXT>que esteja em seu<NEXT>caminho.",
+    "source_sha256": "2a52ffea62096f79789522623943ad91bc9d2689dfa1177359cbb3f8fbe8e62d"
+  },
+  "GOLEM": {
+    "kind": "MEGATON",
+    "text": "Pode explodir o<NEXT>próprio corpo. Usa<NEXT>a força da",
+    "text2": "explosão para<NEXT>saltar de montanha<NEXT>em montanha.",
+    "source_sha256": "ef705ae006f2ed7fb3bd51a2e502a37b0eab95918ea1e94e1449624c37caaf65"
+  },
+  "PONYTA": {
+    "kind": "CAVALO FOGO",
+    "text": "Se sente algo<NEXT>atrás de si, dá um<NEXT>coice com cascos",
+    "text2": "mais duros que<NEXT>diamante.",
+    "source_sha256": "09b11e8225b59a73a9e4f780d17b5ea9d4e93f865b9124b01e002d2035021105"
+  },
+  "RAPIDASH": {
+    "kind": "CAVALO FOGO",
+    "text": "Acelera tão rápido<NEXT>que alcança sua<NEXT>velocidade máxima",
+    "text2": "de 240 km/h após<NEXT>só dez passos.",
+    "source_sha256": "c2d7ee6360eb4bc0868f135a2ecdc6134103bc334a2d18983e218eed2c31fa4f"
+  },
+  "SLOWPOKE": {
+    "kind": "LERDO",
+    "text": "A ponta da cauda<NEXT>solta uma seiva<NEXT>doce. Embora pouco",
+    "text2": "nutritiva, a cauda<NEXT>é gostosa de<NEXT>mastigar.",
+    "source_sha256": "e9a9e07102bd886935b7ac02e8eef27c292104cc5ce80b7a0382cd10bf1f8fed"
+  },
+  "SLOWBRO": {
+    "kind": "EREMITA",
+    "text": "Já era distraído<NEXT>por natureza. Com<NEXT>o veneno que",
+    "text2": "SHELLDER libera,<NEXT>perdeu a sensação<NEXT>de dor.",
+    "source_sha256": "4f9114f1fafacca0733d057b63fced429b67b7c7931160bc8b996551c55b6bc9"
+  },
+  "MAGNEMITE": {
+    "kind": "ÍMÃ",
+    "text": "As peças ao lado<NEXT>do corpo geram<NEXT>energia",
+    "text2": "antigravitacional<NEXT>que o mantém no<NEXT>ar.",
+    "source_sha256": "f65bbd3f4522f168eb5dcfe93f697ef2b210f763fb87eadb32ace6c949cdb8f0"
+  },
+  "MAGNETON": {
+    "kind": "ÍMÃ",
+    "text": "O magnetismo que<NEXT>une os MAGNEMITE é<NEXT>tão forte que seca",
+    "text2": "toda a umidade ao<NEXT>redor.",
+    "source_sha256": "07ae3886807ed93ae16e8a412134cddb8aff7d3fa1390d3d87cb2f7c5dda5081"
+  },
+  "FARFETCH_D": {
+    "kind": "PATO BRAVO",
+    "text": "Se come o talo que<NEXT>leva como reserva<NEXT>de alimento, sai",
+    "text2": "correndo em busca<NEXT>de outro.",
+    "source_sha256": "96d28eb54843f3df86d11c1af67910bd6861e1843fb4f5568589a517612e561f"
+  },
+  "DODUO": {
+    "kind": "AVE GÊMEA",
+    "text": "Corre pelos campos<NEXT>com passos fortes,<NEXT>deixando pegadas",
+    "text2": "de até 10 cm de<NEXT>profundidade.",
+    "source_sha256": "c63713fdc12f7ac3c6d79deb56c9b9433a995ee815b50c124c5fc098256573d4"
+  },
+  "DODRIO": {
+    "kind": "AVE TRIGÊM.",
+    "text": "Se uma cabeça<NEXT>come, as outras<NEXT>também ficam",
+    "text2": "satisfeitas e<NEXT>param de discutir.",
+    "source_sha256": "02823fee9af6a6b5b8902b71537fbddcdff217826fb7627ad1b46ff44cbdb5ef"
+  },
+  "SEEL": {
+    "kind": "LEÃO-MAR.",
+    "text": "De dia, costuma<NEXT>dormir no fundo de<NEXT>águas rasas. Fecha",
+    "text2": "as narinas ao<NEXT>nadar.",
+    "source_sha256": "80bd97aae6efced8941e5d7988e19a9f5f6dd801b612223d76f13743e93c8edd"
+  },
+  "DEWGONG": {
+    "kind": "LEÃO-MAR.",
+    "text": "Adora mares<NEXT>gelados com blocos<NEXT>de gelo. Usa a",
+    "text2": "longa cauda para<NEXT>mudar rápido de<NEXT>direção.",
+    "source_sha256": "ab4a08b42fc5a57cd72965c22e6f8194be78bbd9d0d703fb91ab2c674cdec0fc"
+  },
+  "GRIMER": {
+    "kind": "LODO",
+    "text": "Onde passa, deixa<NEXT>tantos germes que<NEXT>nenhuma planta",
+    "text2": "volta a crescer<NEXT>ali.",
+    "source_sha256": "12199e0d358c8689d6117b9bdc3dabfe4b8d79248bf3b30a859ac3e7e8471924"
+  },
+  "MUK": {
+    "kind": "LODO",
+    "text": "Seu corpo é feito<NEXT>de um veneno<NEXT>forte. Tocar nele",
+    "text2": "causa uma febre<NEXT>que exige repouso.",
+    "source_sha256": "a009ffe62dcc79876fb390e078c5b09c7ba99a139b8e8dabf9f952ae7d5ad226"
+  },
+  "SHELLDER": {
+    "kind": "BIVALVE",
+    "text": "Grãos de areia na<NEXT>concha se misturam<NEXT>aos fluidos do",
+    "text2": "corpo e formam<NEXT>lindas pérolas.",
+    "source_sha256": "0f00664e7906e37dcc960e04da2df7a7999f8787e7b75efc4d6e735364f66b30"
+  },
+  "CLOYSTER": {
+    "kind": "BIVALVE",
+    "text": "Os que vivem em<NEXT>mares de correntes<NEXT>fortes desenvolvem",
+    "text2": "grandes espinhos<NEXT>afiados na concha.",
+    "source_sha256": "2736a3d8f72ebe3ebf2de49a55072e36cd854bededf4e9084cb778f08c1e2d32"
+  },
+  "GASTLY": {
+    "kind": "GÁS",
+    "text": "Seu corpo é feito<NEXT>de gás. Envolve e<NEXT>sufoca rivais de",
+    "text2": "qualquer tamanho.",
+    "source_sha256": "8147511389cf2b1fd4d445e23f9afd5f31d355241fb014422ce927dc8a7ebe4d"
+  },
+  "HAUNTER": {
+    "kind": "GÁS",
+    "text": "Sua língua é de<NEXT>gás. A vítima de<NEXT>sua lambida treme",
+    "text2": "sem parar até<NEXT>acabar morrendo.",
+    "source_sha256": "5ba0c75f23e479050a48a172e91967a8c58529e47770ad6ed94b676c57cf997e"
+  },
+  "GENGAR": {
+    "kind": "SOMBRA",
+    "text": "Para roubar a vida<NEXT>da presa, entra na<NEXT>sombra dela e",
+    "text2": "espera em silêncio<NEXT>uma oportunidade.",
+    "source_sha256": "8dd1c5272cf8e426694cfcbd6b1dde8dc5a0b51aa395231827e8ca4361522cfa"
+  },
+  "ONIX": {
+    "kind": "SERP. PEDRA",
+    "text": "Perfura o solo a<NEXT>80 km/h ao torcer<NEXT>e contorcer seu",
+    "text2": "enorme corpo<NEXT>rochoso.",
+    "source_sha256": "ded50dbd0ec69b34925ca740e0ea4c04b89424258e1d451dc3a23d84c32706de"
+  },
+  "DROWZEE": {
+    "kind": "HIPNOSE",
+    "text": "Lembra de todo<NEXT>sonho que come.<NEXT>Evita sonhos de",
+    "text2": "adultos, pois os<NEXT>das crianças são<NEXT>mais saborosos.",
+    "source_sha256": "edf8dcfd0c86d52c5ef86cedb2b441215b10877142623dd29e6a9375f39ff017"
+  },
+  "HYPNO": {
+    "kind": "HIPNOSE",
+    "text": "Sempre balança seu<NEXT>pêndulo num ritmo<NEXT>constante. Isso dá",
+    "text2": "sono em todos por<NEXT>perto.",
+    "source_sha256": "ce6b1bde2387533bfb56fe4cea5edd6b48da4776d9cc808084261379d84ca727"
+  },
+  "KRABBY": {
+    "kind": "CARANGUEJO",
+    "text": "Suas pinças se<NEXT>soltam facilmente.<NEXT>Se perde uma, por",
+    "text2": "algum motivo não<NEXT>consegue andar de<NEXT>lado.",
+    "source_sha256": "c00aedcce84f3168c210c552c1542e18bdd8178cd4fe8966152c2209260b7793"
+  },
+  "KINGLER": {
+    "kind": "PINÇADOR",
+    "text": "Suas pinças ficam<NEXT>enormes. Se as<NEXT>ergue depressa,",
+    "text2": "perde o equilíbrio<NEXT>e cambaleia.",
+    "source_sha256": "f9aa29464e42e317a8ea28065f42d66ac963b165b3b90e04aebc1bf5a41502bc"
+  },
+  "VOLTORB": {
+    "kind": "BOLA",
+    "text": "Foi descoberto<NEXT>quando surgiram as<NEXT>POKé BOLAS. Dizem",
+    "text2": "que existe alguma<NEXT>ligação entre<NEXT>eles.",
+    "source_sha256": "623b4d74cc2955cf583e6de67fd9f0ff833384e582f8f77fea32e98bfc6dfde3"
+  },
+  "ELECTRODE": {
+    "kind": "BOLA",
+    "text": "Guarda energia<NEXT>elétrica em<NEXT>excesso no corpo.",
+    "text2": "Até um pequeno<NEXT>choque o faz<NEXT>explodir.",
+    "source_sha256": "f1c8991690ceff8c0abb0de4f267b5ba48b4acfb13215126af51ed439464a57c"
+  },
+  "EXEGGCUTE": {
+    "kind": "OVO",
+    "text": "Usam uma telepatia<NEXT>que só eles captam<NEXT>para sempre formar",
+    "text2": "grupos de seis<NEXT>EXEGGCUTE.",
+    "source_sha256": "270ab5a8bc97868e67f01304a6be5ff4c5278ebb8828dbbd265a47324abe3000"
+  },
+  "EXEGGUTOR": {
+    "kind": "COCO",
+    "text": "Se uma cabeça cai,<NEXT>chama outras por<NEXT>telepatia para",
+    "text2": "formar um grupo de<NEXT>EXEGGCUTE.",
+    "source_sha256": "6b264e56ca608b934336a901fe89e787a177c3c834fbe44c8ff5cf8f8f3770d7"
+  },
+  "CUBONE": {
+    "kind": "SOLITÁRIO",
+    "text": "Sempre usa o<NEXT>crânio da mãe<NEXT>falecida. Por",
+    "text2": "isso, ninguém sabe<NEXT>como é seu rosto<NEXT>oculto.",
+    "source_sha256": "9b35eda836df618d92a8441517de11e4d660c463f603e9eb272c6e18f86ab143"
+  },
+  "MAROWAK": {
+    "kind": "GUARDA-OSSO",
+    "text": "Coleta ossos de um<NEXT>local ignorado.<NEXT>Dizem que há um",
+    "text2": "cemitério de<NEXT>MAROWAK em algum<NEXT>lugar do mundo.",
+    "source_sha256": "d8cc05dd03ee7cb2536d699b0fd22f479f42632c42565e8afa49ae2d50d46a8a"
+  },
+  "HITMONLEE": {
+    "kind": "CHUTADOR",
+    "text": "Se começa a chutar<NEXT>sem parar, suas<NEXT>pernas se esticam",
+    "text2": "ainda mais para<NEXT>atingir um rival<NEXT>em fuga.",
+    "source_sha256": "a863351d064c880b67616a77cf9566ba65a8ea2858f12826adaba52f4d2da38f"
+  },
+  "HITMONCHAN": {
+    "kind": "SOCADOR",
+    "text": "Seus socos cortam<NEXT>o ar tão rápido<NEXT>que até um leve",
+    "text2": "raspão pode causar<NEXT>queimaduras.",
+    "source_sha256": "25141fd6d4ea80469c89db24742ce34ae0f3f6f7f4823c7311aac6a06ac94cc8"
+  },
+  "LICKITUNG": {
+    "kind": "LAMBEDOR",
+    "text": "Sua longa língua,<NEXT>coberta de saliva<NEXT>pegajosa, gruda em",
+    "text2": "qualquer coisa e é<NEXT>muito útil.",
+    "source_sha256": "26297ec5b541e138e061b0bef28818b18be0e7796fb0c0d7dd9f391658bc4430"
+  },
+  "KOFFING": {
+    "kind": "GÁS VEN.",
+    "text": "Os gases venenosos<NEXT>em seu corpo são<NEXT>um pouco mais",
+    "text2": "leves que o ar e o<NEXT>mantêm flutuando.",
+    "source_sha256": "cfdd5c0d86270aa2b803e765520d425ca02db188f2a41f310284bcf53926e225"
+  },
+  "WEEZING": {
+    "kind": "GÁS VEN.",
+    "text": "Seus gases<NEXT>venenosos são<NEXT>muito diluídos",
+    "text2": "para produzir<NEXT>perfumes de alta<NEXT>qualidade.",
+    "source_sha256": "6df8d11acdf5a8cd9d1053721f5351e11d3079feaeccae2abfe83b2179fa0a61"
+  },
+  "RHYHORN": {
+    "kind": "ESPINHOS",
+    "text": "Não liga para o<NEXT>que está em seu<NEXT>caminho. Apenas",
+    "text2": "avança e destrói<NEXT>todos os<NEXT>obstáculos.",
+    "source_sha256": "deeec744cfc547f42a29dbdd683d6a07ac08969cec9d7d77a89772b01c380c36"
+  },
+  "RHYDON": {
+    "kind": "BROCA",
+    "text": "Seu cérebro<NEXT>evoluiu ao andar<NEXT>em duas patas. A",
+    "text2": "pele grossa o<NEXT>protege até no<NEXT>magma.",
+    "source_sha256": "cf82b49dae6a1a52339b51797548e500cf47aeb736266d43530b426824d17ccc"
+  },
+  "CHANSEY": {
+    "kind": "OVO",
+    "text": "É raro e difícil<NEXT>de capturar. Dizem<NEXT>que traz",
+    "text2": "felicidade ao<NEXT>Treinador que o<NEXT>captura.",
+    "source_sha256": "9a4f4c9359c87e3952a07e7df624859b5331221b7dba778f7b5a1da2738062b7"
+  },
+  "TANGELA": {
+    "kind": "VINHA",
+    "text": "Enrola suas vinhas<NEXT>em tudo que se<NEXT>move. As leves",
+    "text2": "vibrações fazem<NEXT>cócegas em quem<NEXT>fica preso.",
+    "source_sha256": "69f4bf2a146b99d0a0832258d52e43943018c9f03e883809aed97daa9088888c"
+  },
+  "KANGASKHAN": {
+    "kind": "MATERNO",
+    "text": "Para proteger o<NEXT>filhote, nunca<NEXT>desiste da luta,",
+    "text2": "por mais ferido<NEXT>que esteja.",
+    "source_sha256": "6de2b26a28a7b62422951529acb8ba1380f4eb65bd5f1dd2d73ff218afdfddc3"
+  },
+  "HORSEA": {
+    "kind": "DRAGÃO",
+    "text": "Suas grandes<NEXT>nadadeiras se<NEXT>movem rápido,",
+    "text2": "deixando-o nadar<NEXT>de costas sem se<NEXT>virar.",
+    "source_sha256": "ba3a18ad0f94df3dff685fc645733fdac8dd54cb8b8f531616ce89d358a9e56d"
+  },
+  "SEADRA": {
+    "kind": "DRAGÃO",
+    "text": "As pontas das<NEXT>nadadeiras soltam<NEXT>veneno. Elas e",
+    "text2": "seus ossos são<NEXT>valiosos na<NEXT>medicina natural.",
+    "source_sha256": "fe72e6b4b94073c4590d2a33a4d5f1cfc9f10ad5674d819e2f97762a1e7af41b"
+  },
+  "GOLDEEN": {
+    "kind": "PEIXE-OURO",
+    "text": "Nada sem parar<NEXT>contra correntes<NEXT>fortes a uma",
+    "text2": "velocidade<NEXT>constante de cinco<NEXT>nós.",
+    "source_sha256": "88f35cf480fbdabd4136347b8cd85533408378dd79c8a09782767f74b318fbab"
+  },
+  "SEAKING": {
+    "kind": "PEIXE-OURO",
+    "text": "Fura rochas no<NEXT>leito do rio com o<NEXT>chifre. Os ninhos",
+    "text2": "impedem que a água<NEXT>leve os ovos.",
+    "source_sha256": "e8adf658330832c21134f2a9dd935448ac80a16f82f0ad806ea64e3549f15324"
+  },
+  "STARYU": {
+    "kind": "ESTRELA",
+    "text": "Mesmo com o corpo<NEXT>rasgado,<NEXT>regenera-se se o",
+    "text2": "núcleo brilhante<NEXT>no centro ficar<NEXT>intacto.",
+    "source_sha256": "daf3f9bf137a4fc6f62349139f845c01d09a0fb3716bdb1d002595aea756c518"
+  },
+  "STARMIE": {
+    "kind": "MISTERIOSO",
+    "text": "Seja qual for seu<NEXT>ambiente, seu<NEXT>corpo cresce numa",
+    "text2": "forma geométrica<NEXT>simétrica.",
+    "source_sha256": "bf9b7813492e92003c705b3d7d8936bf99318bed7bbbde1aa97ab926372ae411"
+  },
+  "MR__MIME": {
+    "kind": "BARREIRA",
+    "text": "As pontas dos<NEXT>dedos emitem um<NEXT>campo de força que",
+    "text2": "endurece o ar e<NEXT>cria uma parede<NEXT>real.",
+    "source_sha256": "61ee312fb2ecc63f4d5c5cd6edd88f34036037040a96f2ba2df62ada56a02947"
+  },
+  "SCYTHER": {
+    "kind": "LOUVA-DEUS",
+    "text": "Ao se mover, vira<NEXT>um borrão. Suas<NEXT>cores o tornam",
+    "text2": "invisível quando<NEXT>se esconde no<NEXT>mato.",
+    "source_sha256": "976a7571fdfc587760215de8f55158c65daece52ecc89cf30067155c59058562"
+  },
+  "JYNX": {
+    "kind": "HUMANOIDE",
+    "text": "Fala uma língua<NEXT>parecida com a<NEXT>humana, mas parece",
+    "text2": "usar a dança para<NEXT>se comunicar.",
+    "source_sha256": "db3467360bd6ad209584af8b575cc4006fd171b68dc20635def17793d003cdfc"
+  },
+  "ELECTABUZZ": {
+    "kind": "ELÉTRICO",
+    "text": "Seu corpo libera<NEXT>eletricidade sem<NEXT>parar. Chegar",
+    "text2": "perto faz seus<NEXT>cabelos ficarem em<NEXT>pé.",
+    "source_sha256": "bdd5b8604920e006e0d4dece5913b97a1a1dcf3174b7ddf0316524882896bbd4"
+  },
+  "MAGMAR": {
+    "kind": "COSPE-FOGO",
+    "text": "A superfície<NEXT>ardente do corpo<NEXT>emite um brilho",
+    "text2": "ondulante,<NEXT>parecido com o do<NEXT>sol.",
+    "source_sha256": "8e3bda0fa0a7943a85e3a2b590eb4baff01dd1382a31610d7ff6a5605d11e4a1"
+  },
+  "PINSIR": {
+    "kind": "BESOURO",
+    "text": "Ataca agitando<NEXT>seus longos<NEXT>chifres. No frio,",
+    "text2": "esconde-se no<NEXT>fundo das<NEXT>florestas.",
+    "source_sha256": "29505968468ac050cd10445d1db62ecb1c81f0dbe4bc83efb6a1b27224e6b5a5"
+  },
+  "TAUROS": {
+    "kind": "TOURO BRAVO",
+    "text": "Chicoteia-se com<NEXT>as três caudas<NEXT>para aumentar sua",
+    "text2": "vontade de lutar e<NEXT>avança a toda<NEXT>velocidade.",
+    "source_sha256": "c92fcd227bda062e63f0704ed5a8d6d198344d5e48d3bf66f8542268b4eb0215"
+  },
+  "MAGIKARP": {
+    "kind": "PEIXE",
+    "text": "Salta e se debate<NEXT>sem motivo. Assim,<NEXT>predadores como",
+    "text2": "PIDGEOTTO o pegam<NEXT>facilmente no ar.",
+    "source_sha256": "0395845a368df742b2d8e3dfb591d8b4c5fcbf8a2dcddec4040c7ee2e0b7f1dd"
+  },
+  "GYARADOS": {
+    "kind": "ATROZ",
+    "text": "Ao surgir, começa<NEXT>a destruir tudo.<NEXT>Só deixa de ficar",
+    "text2": "furioso quando<NEXT>arrasa tudo ao<NEXT>redor.",
+    "source_sha256": "ac7de581bdab15e24baa0efc83546988231f7eb0735a9783dcdaf6c957ca84f2"
+  },
+  "LAPRAS": {
+    "kind": "TRANSPORTE",
+    "text": "Leva pessoas pelo<NEXT>mar em suas<NEXT>costas. Se está de",
+    "text2": "bom humor, pode<NEXT>emitir um canto<NEXT>encantador.",
+    "source_sha256": "cd402e07681bfec8ff9436a82bef99edc62a5664b166d79522611e03d09a7250"
+  },
+  "DITTO": {
+    "kind": "TRANSFORMA",
+    "text": "Sua transformação<NEXT>é perfeita. Porém,<NEXT>se o fizerem rir,",
+    "text2": "não consegue<NEXT>manter o disfarce.",
+    "source_sha256": "6b650ef8ca1356ee54072190168348ca01f96f9313299acc9622eb4d347b7ddf"
+  },
+  "EEVEE": {
+    "kind": "EVOLUÇÃO",
+    "text": "O ambiente afeta<NEXT>seu DNA instável.<NEXT>Se o ambiente",
+    "text2": "muda, ele evolui.",
+    "source_sha256": "c0e9a2c2d791b1e9245c7b5073ae8d2eaefc37fd29231c4e1ceedf0a952098f5"
+  },
+  "VAPOREON": {
+    "kind": "JATO BOLHAS",
+    "text": "Prefere belas<NEXT>praias. Suas<NEXT>células lembram",
+    "text2": "moléculas de água,<NEXT>e pode se<NEXT>dissolver nela.",
+    "source_sha256": "88ad3c7fda37acae7247f97f9d1fe792a8d22e8b4502a3470e48994f246f57d3"
+  },
+  "JOLTEON": {
+    "kind": "RELÂMPAGO",
+    "text": "Quando se carrega<NEXT>de eletricidade,<NEXT>cada pelo de seu",
+    "text2": "corpo fica ereto e<NEXT>pontudo.",
+    "source_sha256": "308e3eed2a241bb4d9ea8dc86ca0c7b7fb4e3411623ee2bf2bd057a8dcb2fc2c"
+  },
+  "FLAREON": {
+    "kind": "CHAMA",
+    "text": "Afofa a gola de<NEXT>pelos para esfriar<NEXT>o corpo, cuja",
+    "text2": "temperatura pode<NEXT>chegar a 900<NEXT>graus.",
+    "source_sha256": "481a4b6b5e13f827a9310d51f7edb685fd36b16dea273d45eb1297333675c953"
+  },
+  "PORYGON": {
+    "kind": "VIRTUAL",
+    "text": "Um POKéMON<NEXT>artificial criado<NEXT>por pesquisas. Só",
+    "text2": "tem movimentos<NEXT>básicos<NEXT>programados.",
+    "source_sha256": "c5cca3466cfe8da0c8414fd91129abf9824694c6b06c1edcbf19a1ef59755b6c"
+  },
+  "OMANYTE": {
+    "kind": "ESPIRAL",
+    "text": "Dizem que este<NEXT>antigo POKéMON<NEXT>percorria o mar",
+    "text2": "torcendo seus dez<NEXT>tentáculos com<NEXT>destreza.",
+    "source_sha256": "0e4eea97eec7c545d97c4687b351d2ad5a486b85550f189a937035fcef30d56f"
+  },
+  "OMASTAR": {
+    "kind": "ESPIRAL",
+    "text": "Ao envolver a<NEXT>presa, não a solta<NEXT>mais. Rasga-a com",
+    "text2": "suas presas<NEXT>afiadas para<NEXT>comê-la.",
+    "source_sha256": "8ecd8540769cbcab1afda078a7084b0af2c35ab07b800d744fcb1db22dbe204d"
+  },
+  "KABUTO": {
+    "kind": "MARISCO",
+    "text": "Este POKéMON viveu<NEXT>em tempos antigos.<NEXT>Em raras ocasiões,",
+    "text2": "foi achado como<NEXT>fóssil vivo.",
+    "source_sha256": "208096c64df26df914b7f899be81603b09235ecce7aec1e983bd95a97954f6a2"
+  },
+  "KABUTOPS": {
+    "kind": "MARISCO",
+    "text": "Com garras<NEXT>afiadas, este<NEXT>feroz POKéMON",
+    "text2": "antigo rasga<NEXT>presas e suga seus<NEXT>fluidos.",
+    "source_sha256": "63cbb0832b973acf773fe372790c1a74b0ef498be3a01c0f0700e0607ad2dfb4"
+  },
+  "AERODACTYL": {
+    "kind": "FÓSSIL",
+    "text": "Dizem que este<NEXT>feroz POKéMON<NEXT>cruzava os céus",
+    "text2": "antigos emitindo<NEXT>gritos agudos.",
+    "source_sha256": "ce115487093fb721a804c0105d040b99d3d03de344029efe5ff60654b6018717"
+  },
+  "SNORLAX": {
+    "kind": "DORMINHOCO",
+    "text": "Seus sucos<NEXT>digestivos<NEXT>dissolvem qualquer",
+    "text2": "veneno. Pode até<NEXT>comer coisas do<NEXT>chão.",
+    "source_sha256": "8f6e22273ae5d429e9d461b88ae72d8a4783f7ec77559f07a6c509d4083da856"
+  },
+  "ARTICUNO": {
+    "kind": "GELO",
+    "text": "Esta ave lendária<NEXT>gela a umidade do<NEXT>ar para criar neve",
+    "text2": "enquanto voa.",
+    "source_sha256": "114e4243fc242ad31af740d1947a192ac7d2f775fe32f438c198764876d4066d"
+  },
+  "ZAPDOS": {
+    "kind": "ELÉTRICO",
+    "text": "Dizem que esta ave<NEXT>lendária só surge<NEXT>quando uma nuvem",
+    "text2": "de tempestade se<NEXT>divide em duas.",
+    "source_sha256": "046327429490935f8d5d0785c76f50b35b9263ec61ef44e2b9c9babdf30c678d"
+  },
+  "MOLTRES": {
+    "kind": "CHAMA",
+    "text": "Dizem que esta ave<NEXT>lendária traz uma<NEXT>primavera precoce",
+    "text2": "às terras geladas<NEXT>que visita.",
+    "source_sha256": "879a792bd5ab84b068f54529d5b16361ec8220d171340a506e266f11c73b20dd"
+  },
+  "DRATINI": {
+    "kind": "DRAGÃO",
+    "text": "É cheio de energia<NEXT>vital. Troca de<NEXT>pele sem parar e",
+    "text2": "fica cada vez<NEXT>maior.",
+    "source_sha256": "f272d6b5fdb311990658f0280b09c1725bdda5d2aaca2c33fa245de2ef545b16"
+  },
+  "DRAGONAIR": {
+    "kind": "DRAGÃO",
+    "text": "Suas esferas<NEXT>cristalinas<NEXT>parecem lhe dar o",
+    "text2": "poder de controlar<NEXT>o clima<NEXT>livremente.",
+    "source_sha256": "c78ad8e07fc91466bdcabf62d464bb5b49cbf05d936c8d59a7d469d42a04fff1"
+  },
+  "DRAGONITE": {
+    "kind": "DRAGÃO",
+    "text": "Este POKéMON<NEXT>marinho é tão<NEXT>robusto que voa",
+    "text2": "livremente sobre<NEXT>mares revoltos sem<NEXT>dificuldade.",
+    "source_sha256": "5f5f19ad5956b4e8528c5c7ccb87738a0d570861bd99b14e8de90c16f19dbe4c"
+  },
+  "MEWTWO": {
+    "kind": "GENÉTICO",
+    "text": "Costuma ficar<NEXT>imóvel para poupar<NEXT>energia e liberar",
+    "text2": "todo seu poder<NEXT>durante a batalha.",
+    "source_sha256": "6b879962e591a40525da389ae6e0f982540c8b4d0f88119b711f37d2fd827022"
+  },
+  "MEW": {
+    "kind": "NOVA ESP.",
+    "text": "Dizem que seu DNA<NEXT>contém os códigos<NEXT>genéticos de todos",
+    "text2": "os POKéMON. Assim,<NEXT>usa todo tipo de<NEXT>técnica.",
+    "source_sha256": "bdebfd000971cf8af06a87f863f0e3843dac365bd49823a982ada2e1a16c7007"
+  },
+  "CHIKORITA": {
+    "kind": "FOLHA",
+    "text": "Suas folhas de<NEXT>aroma agradável<NEXT>podem detectar a",
+    "text2": "umidade e a<NEXT>temperatura.",
+    "source_sha256": "ffe6c387bb8ff10778fa527d3e6d33d7ad19779668b07508e21432df33a1d70a"
+  },
+  "BAYLEEF": {
+    "kind": "FOLHA",
+    "text": "Um aroma picante<NEXT>vem de seu<NEXT>pescoço. Ele age",
+    "text2": "como um<NEXT>estimulante que<NEXT>restaura a saúde.",
+    "source_sha256": "9e470c4bb48c10812a27cecdf38f954a5ade2dfd5d2cc8e78d1d9e7b750e25d1"
+  },
+  "MEGANIUM": {
+    "kind": "ERVA",
+    "text": "Seu sopro pode<NEXT>reviver plantas e<NEXT>grama mortas,",
+    "text2": "devolvendo-lhes a<NEXT>saúde.",
+    "source_sha256": "0dac8146d9fe87884c24b9c4e9416a54ec430acb98f780eb12ea3b0b891d6188"
+  },
+  "CYNDAQUIL": {
+    "kind": "RATO FOGO",
+    "text": "Costuma ficar<NEXT>curvado. Se fica<NEXT>bravo ou surpreso,",
+    "text2": "lança chamas pelas<NEXT>costas.",
+    "source_sha256": "99362afe7cbd5d050aba2985fa01c2be13d248e50a54e29fa44a0398e3f3dbec"
+  },
+  "QUILAVA": {
+    "kind": "VULCÃO",
+    "text": "É todo coberto de<NEXT>pelos que não<NEXT>pegam fogo.",
+    "text2": "Resiste a qualquer<NEXT>tipo de ataque de<NEXT>fogo.",
+    "source_sha256": "c510a71a27961722c97c9d17f434f567d7153c5bcd465bd6ed8c5a7fef36ea18"
+  },
+  "TYPHLOSION": {
+    "kind": "VULCÃO",
+    "text": "Seu golpe secreto<NEXT>é devastador: roça<NEXT>os pelos em chamas",
+    "text2": "para criar grandes<NEXT>explosões.",
+    "source_sha256": "8a78bcad347522c839aa8f82f973ccee87e727915296cedc30e174af1d495fd4"
+  },
+  "TOTODILE": {
+    "kind": "MANDÍBULA",
+    "text": "É pequeno, mas<NEXT>duro e valente.<NEXT>Não hesita em",
+    "text2": "morder qualquer<NEXT>coisa que se mova.",
+    "source_sha256": "f196e218031e68a86249cbf235fa4a4e201d1c6f45a53e46a0855d1dcd69df55"
+  },
+  "CROCONAW": {
+    "kind": "MANDÍBULA",
+    "text": "Abre bem as<NEXT>enormes mandíbulas<NEXT>para atacar. Se",
+    "text2": "perde presas ao<NEXT>morder, elas<NEXT>crescem de novo.",
+    "source_sha256": "20bf5533642d04d9e3ab9e3e484241db289cc1bb1b59034c3307a141b4f74765"
+  },
+  "FERALIGATR": {
+    "kind": "MANDÍBULA",
+    "text": "Fora da água, mal<NEXT>sustenta seu peso<NEXT>e fica de quatro.",
+    "text2": "Ainda assim,<NEXT>move-se rápido.",
+    "source_sha256": "fac6735fc8ba25c97afb385e8429a6d32a5f367b87d7ab3e94f3893c9987b8b3"
+  },
+  "SENTRET": {
+    "kind": "SENTINELA",
+    "text": "Fica sobre a cauda<NEXT>para ver longe. Se<NEXT>avista um inimigo,",
+    "text2": "grita alto para<NEXT>alertar os outros.",
+    "source_sha256": "8233b40c38e578072edf338230fec43d42876430297d6c0db5d1d709513de371"
+  },
+  "FURRET": {
+    "kind": "CORPO LONGO",
+    "text": "Não dá para saber<NEXT>onde sua cauda<NEXT>começa. Mesmo com",
+    "text2": "pernas curtas,<NEXT>caça RATTATA com<NEXT>rapidez.",
+    "source_sha256": "5d2ce5fdf02aec34846c6e16fcfb2de48f67873028c1a1a5655d958a891fe9fe"
+  },
+  "HOOTHOOT": {
+    "kind": "CORUJA",
+    "text": "Tem noção perfeita<NEXT>do tempo. Aconteça<NEXT>o que acontecer,",
+    "text2": "inclina a cabeça<NEXT>num ritmo exato.",
+    "source_sha256": "d9e3a1b208d5aeb419f1c2e5ec5b8cbaa0834d79ed5f3e7792a9ed5d6791605f"
+  },
+  "NOCTOWL": {
+    "kind": "CORUJA",
+    "text": "Quando precisa<NEXT>pensar, gira a<NEXT>cabeça 180 graus",
+    "text2": "para aguçar sua<NEXT>capacidade mental.",
+    "source_sha256": "8eda3c92cacaa8a0f937b21a22014db151626bbf94698a660f736c99072b79e1"
+  },
+  "LEDYBA": {
+    "kind": "CINCO EST.",
+    "text": "Quando esfria,<NEXT>muitos LEDYBA vêm<NEXT>de toda parte e se",
+    "text2": "juntam para se<NEXT>aquecer.",
+    "source_sha256": "f8337584007b701c5f8cf8a3d286305c95b68868dbbe1277502057664b3d3f38"
+  },
+  "LEDIAN": {
+    "kind": "CINCO EST.",
+    "text": "As estrelas nas<NEXT>costas aumentam ou<NEXT>diminuem conforme",
+    "text2": "a quantidade de<NEXT>estrelas no céu<NEXT>noturno.",
+    "source_sha256": "d9c578b16233a2bd12239e423aa53eef8b94a42aa609dded975061f9b38e3bf6"
+  },
+  "SPINARAK": {
+    "kind": "COSPE-FIO",
+    "text": "Tece uma teia com<NEXT>fios finos, mas<NEXT>resistentes. Então",
+    "text2": "espera com<NEXT>paciência que uma<NEXT>presa caia nela.",
+    "source_sha256": "7220bd2fab502244a35df19be0512e7a19360cb0afb085fa021b328f179254ff"
+  },
+  "ARIADOS": {
+    "kind": "PERNA LONGA",
+    "text": "Solta sem parar um<NEXT>fio especial pela<NEXT>parte de trás. O",
+    "text2": "fio leva de volta<NEXT>ao seu ninho.",
+    "source_sha256": "0c7f64be2f29cc03f7dc65c4f0181c002f991ff86393abe739929ae4d5da87c3"
+  },
+  "CROBAT": {
+    "kind": "MORCEGO",
+    "text": "As asas nas pernas<NEXT>o fazem voar<NEXT>rápido, mas também",
+    "text2": "dificultam parar<NEXT>para descansar.",
+    "source_sha256": "738f26bd18543e9f29d34f15c74cbfefffbe63451e39f024edd46f7512900579"
+  },
+  "CHINCHOU": {
+    "kind": "PESCADOR",
+    "text": "No escuro do fundo<NEXT>do mar, só<NEXT>consegue se",
+    "text2": "comunicar com suas<NEXT>luzes que piscam<NEXT>sem parar.",
+    "source_sha256": "3beacee5c2f4fdbc268f9bb40f527cae3e82d12692a2c56b07d2961a6a5dde02"
+  },
+  "LANTURN": {
+    "kind": "LUZ",
+    "text": "Cega a presa com<NEXT>uma luz intensa e<NEXT>a engole de uma",
+    "text2": "vez enquanto ela<NEXT>está imóvel.",
+    "source_sha256": "2739f7b238dd0e3b274ce14d8f8f35e953de4a10be03da4aa5f5ae202a1c47a5"
+  },
+  "PICHU": {
+    "kind": "RATINHO",
+    "text": "Apesar do tamanho,<NEXT>pode dar choque<NEXT>até em adultos.",
+    "text2": "Porém, também se<NEXT>assusta ao fazer<NEXT>isso.",
+    "source_sha256": "89dbee5a35cc2ea30f80d8a4e967c2bc7868413581f48043691fcec04cc45334"
+  },
+  "CLEFFA": {
+    "kind": "ESTRELA",
+    "text": "Quando muitos<NEXT>meteoros iluminam<NEXT>o céu noturno, os",
+    "text2": "avistamentos de<NEXT>CLEFFA aumentam de<NEXT>modo estranho.",
+    "source_sha256": "b8bcca972d63f93e3ab06c24a864d11f951411636a25fa1f4338556b1884b0e4"
+  },
+  "IGGLYBUFF": {
+    "kind": "BALÃO",
+    "text": "Seu corpo tão<NEXT>flexível e<NEXT>elástico o faz",
+    "text2": "quicar sem parar,<NEXT>a qualquer hora e<NEXT>em qualquer lugar.",
+    "source_sha256": "63a00a6b42b983f2014121e98960e5561ede99f9ef064271f7cf27671358118a"
+  },
+  "TOGEPI": {
+    "kind": "BOLA ESPIN.",
+    "text": "Um provérbio diz<NEXT>que terá<NEXT>felicidade quem",
+    "text2": "fizer um TOGEPI<NEXT>adormecido ficar<NEXT>em pé.",
+    "source_sha256": "b1df83b2aa9252f39b11b69b01f55b2336865df28e6619422edefe39ae66881a"
+  },
+  "TOGETIC": {
+    "kind": "FELICIDADE",
+    "text": "Fica triste longe<NEXT>de pessoas boas.<NEXT>Pode flutuar no ar",
+    "text2": "sem mover as asas.",
+    "source_sha256": "1df2a087ec44de858bdeca9a097c204db2bce9fe616b82489d572db1afbfd424"
+  },
+  "NATU": {
+    "kind": "PASSARINHO",
+    "text": "Costuma buscar<NEXT>comida no chão.<NEXT>Raramente, pula",
+    "text2": "nos galhos para<NEXT>bicar brotos.",
+    "source_sha256": "0cfce0036ddbad82d38f693d344828b1e1ca4426b7bc50cf821e041d967cb99e"
+  },
+  "XATU": {
+    "kind": "MÍSTICO",
+    "text": "Na América do Sul,<NEXT>dizem que o olho<NEXT>direito vê o",
+    "text2": "futuro e o<NEXT>esquerdo vê o<NEXT>passado.",
+    "source_sha256": "b4dac677f3327905f520e63902303e39ccf1b728fc350fd3ae1a28757ad5ff7a"
+  },
+  "MAREEP": {
+    "kind": "LÃ",
+    "text": "Sua lã cresce sem<NEXT>parar. No verão,<NEXT>perde toda a lã,",
+    "text2": "mas ela volta a<NEXT>crescer em uma<NEXT>semana.",
+    "source_sha256": "fb76e5ae37c342d1bbc777b7f32b42380573b9eabed5d572bd2e7c69c3de93b4"
+  },
+  "FLAAFFY": {
+    "kind": "LÃ",
+    "text": "Sua lã fofa guarda<NEXT>eletricidade com<NEXT>facilidade. A pele",
+    "text2": "de borracha o<NEXT>protege dos<NEXT>choques.",
+    "source_sha256": "a74ccb71e5a71acf0e1e1d2ef545b1c2da754dda06ad471b24d4f7ee02df02e2"
+  },
+  "AMPHAROS": {
+    "kind": "LUZ",
+    "text": "A luz forte de sua<NEXT>cauda é vista de<NEXT>longe. Desde",
+    "text2": "tempos antigos, é<NEXT>valorizado como<NEXT>farol.",
+    "source_sha256": "0869cf93c967594a8df2c9b42880579b6444fb6cd86b13405eae126e7b3446b5"
+  },
+  "BELLOSSOM": {
+    "kind": "FLOR",
+    "text": "É comum nos<NEXT>trópicos. Ao<NEXT>dançar, suas",
+    "text2": "pétalas se roçam e<NEXT>fazem um agradável<NEXT>som de sinos.",
+    "source_sha256": "428cc5374f702d348a514ccf1d69b505813ec7af986c52dc95eced1d61c252fe"
+  },
+  "MARILL": {
+    "kind": "RATO D'ÁGUA",
+    "text": "A ponta da cauda<NEXT>serve de boia e o<NEXT>impede de afundar,",
+    "text2": "mesmo numa<NEXT>correnteza<NEXT>violenta.",
+    "source_sha256": "1a07e88e1bbf42840fef620b81942c52cc322c0bc4e19643c7f70708cc6a48a4"
+  },
+  "AZUMARILL": {
+    "kind": "COELHO ÁGUA",
+    "text": "Ao brincar na<NEXT>água, enrola as<NEXT>orelhas longas",
+    "text2": "para não molhar a<NEXT>parte de dentro.",
+    "source_sha256": "c4959d74367f799457ace55cc37a9288147e00251992789e7737d4bb95ac53ed"
+  },
+  "SUDOWOODO": {
+    "kind": "IMITAÇÃO",
+    "text": "Finge ser árvore<NEXT>para evitar<NEXT>ataques. Odeia",
+    "text2": "água e some quando<NEXT>começa a chover.",
+    "source_sha256": "3e04ef8adc9fdd2d646d1bb9de27d8f2d2ed7c7b1d2ff836547bcd6cd4db08d1"
+  },
+  "POLITOED": {
+    "kind": "SAPO",
+    "text": "Quando três ou<NEXT>mais se reúnem,<NEXT>cantam bem alto,",
+    "text2": "num som que lembra<NEXT>um berro.",
+    "source_sha256": "924474c93e931182c447e9af7da9b0da784ca12137b0e3fdc28e0073845a36e5"
+  },
+  "HOPPIP": {
+    "kind": "ALGODÃO",
+    "text": "Seu corpo é tão<NEXT>leve que precisa<NEXT>se agarrar ao chão",
+    "text2": "com os pés para<NEXT>não ser levado<NEXT>pelo vento.",
+    "source_sha256": "4702b8a7c14d7820455b7ae9959c20b930bd2777ce456f782ec2242d8c594254"
+  },
+  "SKIPLOOM": {
+    "kind": "ALGODÃO",
+    "text": "Abre as pétalas<NEXT>para absorver luz<NEXT>solar. Também",
+    "text2": "flutua no ar para<NEXT>chegar mais perto<NEXT>do sol.",
+    "source_sha256": "6cebd756eb3d6c6bfcfe4d157a52dc90ddf3eeea95a192b1f0cca08eadd1b29f"
+  },
+  "JUMPLUFF": {
+    "kind": "ALGODÃO",
+    "text": "Vaga nos ventos<NEXT>das estações e<NEXT>espalha esporos de",
+    "text2": "algodão pelo mundo<NEXT>para gerar<NEXT>descendentes.",
+    "source_sha256": "0fedc170c4df0081209a13d922cadca91ab899d1566e00f9ec32b302c2d55d91"
+  },
+  "AIPOM": {
+    "kind": "CAUDA LONGA",
+    "text": "Vive em árvores<NEXT>altas. Ao saltar<NEXT>entre galhos, usa",
+    "text2": "bem a cauda para<NEXT>se equilibrar.",
+    "source_sha256": "027d7540e7612cbe746faea6cbb8b6891e5f8d4088d0d71ac1f71ed48788f600"
+  },
+  "SUNKERN": {
+    "kind": "SEMENTE",
+    "text": "Vive bebendo<NEXT>apenas gotas de<NEXT>orvalho sob folhas",
+    "text2": "de plantas. Dizem<NEXT>que não come mais<NEXT>nada.",
+    "source_sha256": "3df37b310d58321b4244790d82a72478d9a6dee477ba8796fe47ad81649b9a4e"
+  },
+  "SUNFLORA": {
+    "kind": "SOL",
+    "text": "Durante o dia,<NEXT>corre de um lado<NEXT>para o outro.",
+    "text2": "Quando o sol se<NEXT>põe, para por<NEXT>completo.",
+    "source_sha256": "6ba730e99bb49d108f66a2d7b0c2dbc0a798ee8cb4f68498f19cdf8082311a01"
+  },
+  "YANMA": {
+    "kind": "ASA CLARA",
+    "text": "Seus grandes olhos<NEXT>veem 360 graus.<NEXT>Olha em todas as",
+    "text2": "direções buscando<NEXT>insetos para<NEXT>comer.",
+    "source_sha256": "965ecb05376c20b807eb9678627c2986e9e536a699f2b6fe931598c6cbb12b60"
+  },
+  "WOOPER": {
+    "kind": "PEIXE ÁGUA",
+    "text": "Quando anda em<NEXT>terra, cobre o<NEXT>corpo com uma",
+    "text2": "camada viscosa e<NEXT>venenosa.",
+    "source_sha256": "78a21899b6ecd79fad412c6d1dbf7dec9eddf700f4467d4444c62b113f333c11"
+  },
+  "QUAGSIRE": {
+    "kind": "PEIXE ÁGUA",
+    "text": "Por ser tranquilo<NEXT>e distraído, bate<NEXT>a cabeça em rochas",
+    "text2": "e cascos de barcos<NEXT>ao nadar.",
+    "source_sha256": "1b324d1356527e55e0fefb827d8032197eee9b5096cc5487640c70c3fe001eae"
+  },
+  "ESPEON": {
+    "kind": "SOL",
+    "text": "Ao sentir<NEXT>correntes de ar,<NEXT>pode prever o",
+    "text2": "clima ou o próximo<NEXT>movimento do<NEXT>rival.",
+    "source_sha256": "85a5fee1a504479a10916e2f5773e0058aa223f32eeeb40b4a56c6e256bc1db9"
+  },
+  "UMBREON": {
+    "kind": "LUAR",
+    "text": "Quando escurece,<NEXT>os anéis de seu<NEXT>corpo brilham e",
+    "text2": "causam medo em<NEXT>todos por perto.",
+    "source_sha256": "4c11be2ae08f6233d40a726c22fa84072663bd720eba58d21aa8d3cc442cc60d"
+  },
+  "MURKROW": {
+    "kind": "ESCURIDÃO",
+    "text": "Se é perseguido,<NEXT>atrai o inimigo<NEXT>para trilhas",
+    "text2": "escuras nas<NEXT>montanhas, onde<NEXT>ele se perde.",
+    "source_sha256": "e3dba0823a54e9aeded8a5b6d35ebc4f6825399adbaf97bb5afaed0fe93864df"
+  },
+  "SLOWKING": {
+    "kind": "REAL",
+    "text": "Uma mordida na<NEXT>cabeça de SLOWPOKE<NEXT>levou toxinas ao",
+    "text2": "cérebro e liberou<NEXT>um poder<NEXT>extraordinário.",
+    "source_sha256": "11e29089077087b6fdb1431e71bbaa5bf8562ba934be36c4ccfa6835289b3a51"
+  },
+  "MISDREAVUS": {
+    "kind": "GRITO",
+    "text": "Adora morder e<NEXT>puxar cabelos por<NEXT>trás, sem aviso,",
+    "text2": "só para ver a<NEXT>reação de susto<NEXT>das pessoas.",
+    "source_sha256": "83a272b7bc7f56501a939b724c229f8b971df366817205c476bc5ea0d944bd45"
+  },
+  "UNOWN": {
+    "kind": "SÍMBOLO",
+    "text": "Seu corpo fino e<NEXT>plano vive grudado<NEXT>nas paredes. Sua",
+    "text2": "forma parece ter<NEXT>algum significado.",
+    "source_sha256": "cce8f2fed172e56573bcc4e333e1f1bc0723ba83a2b56a91a14d4b301cc7ff85"
+  },
+  "WOBBUFFET": {
+    "kind": "PACIENTE",
+    "text": "Vive quieto no<NEXT>escuro para<NEXT>esconder sua cauda",
+    "text2": "negra. Nunca é o<NEXT>primeiro a atacar.",
+    "source_sha256": "1b98e822dde51944355af440cd5689b12566177f041b85070f0f9f08ca6d132f"
+  },
+  "GIRAFARIG": {
+    "kind": "PESCOÇO GR.",
+    "text": "A cauda tem um<NEXT>pequeno cérebro e<NEXT>pode morder",
+    "text2": "sozinha ao sentir<NEXT>um cheiro<NEXT>atraente.",
+    "source_sha256": "6d69cfa5e1ae0964c7a16041ef943f97a4d20c7020be0dba52874bece3ed82f9"
+  },
+  "PINECO": {
+    "kind": "BICHO-CESTO",
+    "text": "Fica pendurado<NEXT>esperando insetos<NEXT>voadores se",
+    "text2": "aproximarem. Quase<NEXT>não se move por<NEXT>conta própria.",
+    "source_sha256": "38a7272d7b878c7e51de03c2cab089c5214b08243848e6af6cc1cb2377f43fe9"
+  },
+  "FORRETRESS": {
+    "kind": "BICHO-CESTO",
+    "text": "Fica preso à<NEXT>árvore, sem se<NEXT>mover. Espalha",
+    "text2": "pedaços de sua<NEXT>concha dura para<NEXT>afastar inimigos.",
+    "source_sha256": "55c7b21200ba70e81cc93e058afb320a03468745b611907323e5348612f4dc4d"
+  },
+  "DUNSPARCE": {
+    "kind": "COBRA TERRA",
+    "text": "Se é visto, escapa<NEXT>cavando com a<NEXT>cauda. Pode",
+    "text2": "flutuar um pouco<NEXT>usando suas asas.",
+    "source_sha256": "357e40e7c3dcae3f61c68bc4389262d5420bb8486723b61a455a93a9ff040367"
+  },
+  "GLIGAR": {
+    "kind": "ESCORP. VOO",
+    "text": "Costuma se agarrar<NEXT>a penhascos. Ao<NEXT>ver uma presa,",
+    "text2": "abre as asas e<NEXT>plana para baixo<NEXT>para atacar.",
+    "source_sha256": "c61ab6fe0bf088b2d7ba3f814eb592ce4b75a71d9b2386d940049dcfa7925057"
+  },
+  "STEELIX": {
+    "kind": "COBRA FERRO",
+    "text": "Dizem que, se um<NEXT>ONIX vive mais de<NEXT>cem anos, seu",
+    "text2": "corpo muda e fica<NEXT>como diamante.",
+    "source_sha256": "53af76c434b508e000a3a76e97662a4b6a1e55fcfc7ece60a49ee9e82587e601"
+  },
+  "SNUBBULL": {
+    "kind": "FADA",
+    "text": "É ativo e<NEXT>brincalhão. Por<NEXT>ser tão carinhoso,",
+    "text2": "muitas mulheres<NEXT>gostam de brincar<NEXT>com ele.",
+    "source_sha256": "ae8d0b7ec1abcf77c5ba32e0e7f0956c4e56860c9da09798421fa3df4f838589"
+  },
+  "GRANBULL": {
+    "kind": "FADA",
+    "text": "Suas presas pesam<NEXT>tanto que mantém a<NEXT>cabeça baixa.",
+    "text2": "Porém, sua MORDIDA<NEXT>é poderosa.",
+    "source_sha256": "31cf4ff35d28fe572c47bfefea3df20d513575601d128b72284311a490ff0d14"
+  },
+  "QWILFISH": {
+    "kind": "BALÃO",
+    "text": "Os espinhos do<NEXT>corpo vieram de<NEXT>escamas. Injetam",
+    "text2": "uma toxina que<NEXT>causa desmaios.",
+    "source_sha256": "6b1f712704dbb39fe88ac43297de8b221be20893a94eb4b23a2de4dfa724c153"
+  },
+  "SCIZOR": {
+    "kind": "TESOURA",
+    "text": "Não usa as asas<NEXT>para voar. Bate-as<NEXT>muito rápido para",
+    "text2": "regular a<NEXT>temperatura do<NEXT>corpo.",
+    "source_sha256": "fa88750263382a4ce8282ace2fab33da3ec05796875c1e26e2df0dbe97bdeaef"
+  },
+  "SHUCKLE": {
+    "kind": "MOFO",
+    "text": "Guarda FRUTAS na<NEXT>concha. Para<NEXT>evitar ataques,",
+    "text2": "esconde-se sob<NEXT>rochas e fica<NEXT>totalmente imóvel.",
+    "source_sha256": "120b5ee3fb10329d7b1b9547d7334f6c7b3e074b42957b65cc01b84a17a11abf"
+  },
+  "HERACROSS": {
+    "kind": "CHIFRE ÚN.",
+    "text": "É dócil, mas, se o<NEXT>incomodam enquanto<NEXT>toma mel, afasta o",
+    "text2": "intruso com seu<NEXT>chifre.",
+    "source_sha256": "f49cb61aedf22afebf025153e6fe9b78fbb613f715fc5829d159a17d02a6f12b"
+  },
+  "SNEASEL": {
+    "kind": "GARRA AFI.",
+    "text": "De natureza cruel,<NEXT>expulsa PIDGEY dos<NEXT>ninhos e devora os",
+    "text2": "ovos deixados para<NEXT>trás.",
+    "source_sha256": "91c219fdca1b7e3eb3a004e53648218f0ba42980ae5ad8ce2f9d4f2d6d1895e5"
+  },
+  "TEDDIURSA": {
+    "kind": "URSINHO",
+    "text": "Antes de a comida<NEXT>ficar escassa no<NEXT>inverno, costuma",
+    "text2": "guardá-la em<NEXT>vários<NEXT>esconderijos.",
+    "source_sha256": "25c3004d0cf706b8f1dce7d268bbae494b3b9e4c4ec5bb676ac59a8e37a11c71"
+  },
+  "URSARING": {
+    "kind": "HIBERNANTE",
+    "text": "Distingue qualquer<NEXT>aroma e sempre<NEXT>acha alimentos",
+    "text2": "enterrados bem<NEXT>fundo no solo.",
+    "source_sha256": "24fc30afb044ad990bebe192d0458ce4bc9f30445a93baf3f28240b30dc0075b"
+  },
+  "SLUGMA": {
+    "kind": "LAVA",
+    "text": "É comum em áreas<NEXT>vulcânicas.<NEXT>Rasteja devagar,",
+    "text2": "sempre buscando<NEXT>locais quentes.",
+    "source_sha256": "c3f40b9c361b8faa0daff2bb8a75a3ca82818f5ceb36872d57c3fed9514b4347"
+  },
+  "MAGCARGO": {
+    "kind": "LAVA",
+    "text": "Às vezes, a concha<NEXT>frágil solta<NEXT>chamas intensas",
+    "text2": "que circulam por<NEXT>todo seu corpo.",
+    "source_sha256": "0e23b576bdb8b34aeb8adb6d2cb1453b74a8433225c8966257fc08b1ef38bf0e"
+  },
+  "SWINUB": {
+    "kind": "PORCO",
+    "text": "Se sente um cheiro<NEXT>atraente, sai<NEXT>correndo direto",
+    "text2": "para descobrir de<NEXT>onde ele vem.",
+    "source_sha256": "81eb7747dd8b47a7fd45894a53dd7e9eab0f5235d816f472472e910c23a36c06"
+  },
+  "PILOSWINE": {
+    "kind": "SUÍNO",
+    "text": "Ao investir contra<NEXT>um inimigo, os<NEXT>pelos das costas",
+    "text2": "ficam eretos. É<NEXT>muito sensível aos<NEXT>sons.",
+    "source_sha256": "07465a1b4b34a43b79b8f7fcd7e872e6caf7f5bc1ba2ff0e0580c6fb29d5ab85"
+  },
+  "CORSOLA": {
+    "kind": "CORAL",
+    "text": "Num país dos mares<NEXT>do sul, as pessoas<NEXT>vivem em vilas",
+    "text2": "construídas sobre<NEXT>grupos desses<NEXT>POKéMON.",
+    "source_sha256": "11d9df830c5de69f0a40d0c47aec922f7b161d76df23852cd5f380870d736de5"
+  },
+  "REMORAID": {
+    "kind": "JATO",
+    "text": "Usa a nadadeira<NEXT>dorsal como<NEXT>ventosa para se",
+    "text2": "prender sob<NEXT>MANTINE e comer<NEXT>suas sobras.",
+    "source_sha256": "e608facd7988193bb9788fcf66b18e20ac9ebbe57871fdd8994b42ece09139dc"
+  },
+  "OCTILLERY": {
+    "kind": "JATO",
+    "text": "Por instinto,<NEXT>entra em buracos<NEXT>nas rochas. Se",
+    "text2": "fica com sono,<NEXT>rouba o ninho de<NEXT>outro OCTILLERY.",
+    "source_sha256": "34084edc06f61b4e172995c9e5eb60625ab06ff8346c7deb6162329a2b5b1696"
+  },
+  "DELIBIRD": {
+    "kind": "ENTREGADOR",
+    "text": "Faz ninhos na<NEXT>beira de<NEXT>penhascos. Passa o",
+    "text2": "dia levando comida<NEXT>aos filhotes que o<NEXT>esperam.",
+    "source_sha256": "81aa01378020a43c8870b308b3a2d81c1cc03b5479bccaef9754d33f77e16fbb"
+  },
+  "MANTINE": {
+    "kind": "PIPA",
+    "text": "Nada livre no mar<NEXT>aberto. Se ganha<NEXT>velocidade, pode",
+    "text2": "saltar da água e<NEXT>voar sobre as<NEXT>ondas.",
+    "source_sha256": "506a2f7c14294251036ba59bd79d71a190aa0f22da207e2a7ca23869b792fdad"
+  },
+  "SKARMORY": {
+    "kind": "AVE ARMADA",
+    "text": "Faz ninhos entre<NEXT>espinhos. Os<NEXT>arranhões deixam",
+    "text2": "duras as asas dos<NEXT>filhotes.",
+    "source_sha256": "d883468d71f7657406c9d68161314f87d418ee0c7edb2dba7c3dd366be407338"
+  },
+  "HOUNDOUR": {
+    "kind": "SOMBRIO",
+    "text": "Para cercar<NEXT>presas, usam<NEXT>latidos que só",
+    "text2": "eles entendem para<NEXT>conferir onde cada<NEXT>um está.",
+    "source_sha256": "1c540903290a72a08b3d761ba95967266d23b2214a3fefa4fdb7b801fc1d1e59"
+  },
+  "HOUNDOOM": {
+    "kind": "SOMBRIO",
+    "text": "Ao ouvir seu uivo<NEXT>sinistro, outros<NEXT>POKéMON tremem e",
+    "text2": "voltam direto para<NEXT>seus ninhos.",
+    "source_sha256": "42d532ef0ba04dae17cdb4f265be9c2b65c76aa2d742cbf1f967cad37b509ef9"
+  },
+  "KINGDRA": {
+    "kind": "DRAGÃO",
+    "text": "Dorme no fundo do<NEXT>mar para acumular<NEXT>energia. Dizem que",
+    "text2": "causa tornados<NEXT>quando acorda.",
+    "source_sha256": "9e2d7926af6e1b5b4052ecc9d3302eb94bd48aa8b74d8448bfe0318fbfa4867e"
+  },
+  "PHANPY": {
+    "kind": "TROMBA",
+    "text": "Demonstra carinho<NEXT>batendo a tromba<NEXT>nos outros. Porém,",
+    "text2": "é tão forte que<NEXT>pode lançá-los<NEXT>longe.",
+    "source_sha256": "8de25b131f0b8e1baf8832a0080c3ab77f917a17c063b128223eeb6dd47e3199"
+  },
+  "DONPHAN": {
+    "kind": "ARMADURA",
+    "text": "Quanto maiores<NEXT>suas presas, maior<NEXT>sua posição no",
+    "text2": "bando. As presas<NEXT>levam muito tempo<NEXT>para crescer.",
+    "source_sha256": "4dfcaf427de65fddb057dd41d86db29d088b1aec35c8c39ed89b04da82e04be0"
+  },
+  "PORYGON2": {
+    "kind": "VIRTUAL",
+    "text": "Novas pesquisas<NEXT>melhoraram suas<NEXT>habilidades. Às",
+    "text2": "vezes, faz<NEXT>movimentos que não<NEXT>foram programados.",
+    "source_sha256": "5fa6010b17822cf6fcb4f5c3a7ea1e71c0c805e9294a6a300437cde728de394d"
+  },
+  "STANTLER": {
+    "kind": "CHIFRE GR.",
+    "text": "Quem olha<NEXT>fixamente seus<NEXT>chifres perde aos",
+    "text2": "poucos o controle<NEXT>dos sentidos e não<NEXT>fica mais em pé.",
+    "source_sha256": "220073c34fce0d885b470ada9ad77ab2e7a1727ef82edf7d6e0417013584051d"
+  },
+  "SMEARGLE": {
+    "kind": "PINTOR",
+    "text": "Quando se torna<NEXT>adulto, costuma<NEXT>deixar seus",
+    "text2": "companheiros<NEXT>marcarem pegadas<NEXT>em suas costas.",
+    "source_sha256": "3e57abb9ece2db10dd4abe4f828e8ee89e845aee47c492034579131d858d91ac"
+  },
+  "TYROGUE": {
+    "kind": "BRIGUENTO",
+    "text": "Embora pequeno,<NEXT>não pode ser<NEXT>ignorado. Soca sem",
+    "text2": "aviso qualquer<NEXT>alvo ao alcance.",
+    "source_sha256": "f89aa03506fc749d8dcc30a8146dceed6f9c77818f46474b2810b5c4ce713f54"
+  },
+  "HITMONTOP": {
+    "kind": "BANANEIRA",
+    "text": "Dá chutes enquanto<NEXT>gira. Se girar em<NEXT>alta velocidade,",
+    "text2": "pode perfurar o<NEXT>solo.",
+    "source_sha256": "a62d2214ef12a6b7e2424fa736ca8a6f77303caf410b7804f2ccc7d719d9e946"
+  },
+  "SMOOCHUM": {
+    "kind": "BEIJO",
+    "text": "Balança a cabeça<NEXT>devagar para a<NEXT>frente e para",
+    "text2": "trás, como se<NEXT>tentasse beijar<NEXT>alguém.",
+    "source_sha256": "813750abec0ec4f6f706553b3dc704806af13aa781187e70c94b2799bac117ee"
+  },
+  "ELEKID": {
+    "kind": "ELÉTRICO",
+    "text": "Mesmo na pior<NEXT>tempestade, brinca<NEXT>feliz se ouve",
+    "text2": "trovões no céu.",
+    "source_sha256": "6f45045618acbd2b8b5e1076e3a2cc196a52b83f59aedb1671389dd7de79e007"
+  },
+  "MAGBY": {
+    "kind": "BRASA",
+    "text": "Vive em crateras<NEXT>vulcânicas. Não o<NEXT>subestime: seu",
+    "text2": "corpo passa dos<NEXT>600 graus.",
+    "source_sha256": "16614ba6ab1ae4c1e0b2bd99cbf0085d1f6427f63f7f8401b3333ecff255d159"
+  },
+  "MILTANK": {
+    "kind": "VACA LEITE",
+    "text": "Logo após ter um<NEXT>filhote, seu leite<NEXT>contém muito mais",
+    "text2": "nutrientes que o<NEXT>normal.",
+    "source_sha256": "5e5174ed46aaea95cd768d4ca09661eb3466c96ebddd776db5d97785e6025346"
+  },
+  "BLISSEY": {
+    "kind": "FELICIDADE",
+    "text": "É muito bondoso.<NEXT>Se vê um POKéMON<NEXT>doente, cuida dele",
+    "text2": "até recuperar a<NEXT>saúde.",
+    "source_sha256": "feaed0bd17ec6237257c272e9a901ad3afec404d350580f3bf29e4ec2058be19"
+  },
+  "RAIKOU": {
+    "kind": "TROVÃO",
+    "text": "Corre pela terra<NEXT>emitindo um grito<NEXT>que parece o",
+    "text2": "estrondo de um<NEXT>trovão.",
+    "source_sha256": "ec9f4082fc9b2616d9324efcdaa26a9028aec8016b3f9255fe937b4f7125fb6a"
+  },
+  "ENTEI": {
+    "kind": "VULCÃO",
+    "text": "Corre pela terra.<NEXT>Dizem que um ENTEI<NEXT>nasce sempre que",
+    "text2": "surge um novo<NEXT>vulcão.",
+    "source_sha256": "0d25f2ddf01916e73d345158e45dbbfc1f26ee92cbe0bebe8972c93f9ad92669"
+  },
+  "SUICUNE": {
+    "kind": "AURORA",
+    "text": "Corre pela terra.<NEXT>Dizem que, por<NEXT>algum motivo,",
+    "text2": "ventos do norte<NEXT>sopram sempre que<NEXT>aparece.",
+    "source_sha256": "500f7801917d16d61a61515937b24e61d9d4a245902cb7a4b6da7fb8cfdabaae"
+  },
+  "LARVITAR": {
+    "kind": "PELE ROCHA",
+    "text": "Nasce no subsolo<NEXT>profundo. Só pode<NEXT>sair após comer",
+    "text2": "toda a terra ao<NEXT>seu redor.",
+    "source_sha256": "a6080148e0ae811b3b3d5ebfc7391d3bc940d0c0f8504df724d0e2d64c1f7bae"
+  },
+  "PUPITAR": {
+    "kind": "CASCO DURO",
+    "text": "Mesmo fechado na<NEXT>casca, move-se<NEXT>livremente. É",
+    "text2": "duro, veloz e tem<NEXT>enorme poder de<NEXT>destruição.",
+    "source_sha256": "c1b850177e64723af852b7cd179509db610d33aad2c5a548689d77e4d5fd71c0"
+  },
+  "TYRANITAR": {
+    "kind": "ARMADURA",
+    "text": "É tão forte que<NEXT>muda a paisagem.<NEXT>Sua natureza",
+    "text2": "insolente faz com<NEXT>que não ligue para<NEXT>os outros.",
+    "source_sha256": "028421418fdb90250bf8f7483d1bdbf29693124927bffa06256ea8e587fe3470"
+  },
+  "LUGIA": {
+    "kind": "MERGULHO",
+    "text": "Dizem que é o<NEXT>guardião dos<NEXT>mares. Há rumores",
+    "text2": "de que foi visto<NEXT>numa noite de<NEXT>tempestade.",
+    "source_sha256": "03e6da86c8577e49047c82033720270f32cf4c16a88b0a7d175684fcf9500baf"
+  },
+  "HO_OH": {
+    "kind": "ARCO-ÍRIS",
+    "text": "Uma lenda diz que<NEXT>seu corpo brilha<NEXT>em sete cores. Ao",
+    "text2": "voar, um arco-íris<NEXT>se forma atrás<NEXT>dele.",
+    "source_sha256": "b138c8c671f1854b5ecc899af861765d5177725b126e9209bf7f978b26cf9f13"
+  },
+  "CELEBI": {
+    "kind": "VIAJA-TEMPO",
+    "text": "Dizem que, ao<NEXT>sumir no fundo da<NEXT>mata, deixa um ovo",
+    "text2": "que trouxe do<NEXT>futuro.",
+    "source_sha256": "3270984298dc200b911c2066bc1c46b8bfbe412f298d15cddd7a6f89789c4962"
+  }
+}

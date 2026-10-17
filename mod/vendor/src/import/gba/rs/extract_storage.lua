@@ -115,7 +115,12 @@ function M.run(rom, cache, opts)
     closingBars[i + 1] = {x = i < 4 and i * 32 - 112 or i * 32 + 128, y = 80,
       dx = i < 4 and 16 or -16, targetX = target}
   end
-  manifest.pcScreenEffect = {bar = bar, bars = 8, centerY = 80, speed = 16, heightStep = 20,
+  -- PcChrome resolves this descriptor relative to pokemon/storage. The sprite
+  -- descriptor above retains its full generated path for other native users.
+  local effectBar = {}
+  for key, value in pairs(bar) do effectBar[key] = value end
+  effectBar.png = "pc_screen_bar.png"
+  manifest.pcScreenEffect = {bar = effectBar, bars = 8, centerY = 80, speed = 16, heightStep = 20,
     tileTag = 14, paletteTag = 0xDAD0, openingHalfHeight = 1, closingHalfHeight = 80,
     exitLeft = -8, exitRight = 248, visibleLeft = -16, visibleRight = 256,
     openingBars = openingBars, closingBars = closingBars,

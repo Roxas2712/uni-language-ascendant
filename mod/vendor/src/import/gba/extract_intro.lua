@@ -168,7 +168,9 @@ end
 
 --- Separate Title Screen Copyright and Press Start layers cleanly from ROM.
 -- Press Start uses indices 1..5 of pal bank 15.
--- Copyright notice uses indices 7..15.
+-- When the prompt blinks off, the cartridge replaces colors 1..5 with
+-- color 6 (black), not transparency. Keep that backing in the static layer:
+-- otherwise the border BG's unused brown band shows through every blink.
 local function bakeTitleLayers(tiles, pal, map, mapW, mapH)
   local tileCount = math.floor(#tiles / 32)
   local W, H = mapW * 8, mapH * 8
@@ -185,7 +187,8 @@ local function bakeTitleLayers(tiles, pal, map, mapW, mapH)
     local base = tid * 32
     local byte = tiles[base + sy * 4 + math.floor(sx / 2) + 1] or 0
     local idx = (sx % 2 == 0) and (byte % 16) or math.floor(byte / 16) % 16
-    if idx == 0 or (idx >= 1 and idx <= 5) then return 0, 0, 0, 0 end
+    if idx == 0 then return 0, 0, 0, 0 end
+    if idx >= 1 and idx <= 5 then idx = 6 end
     local r, g, b = bgr555_to_rgba(pal[idx] or 0, false)
     return r, g, b, 255
   end)

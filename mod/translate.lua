@@ -4,6 +4,7 @@ return function(mod, profile, bytes)
   local pending={texts={},names={}}
   local report={translated=0,total=0,names=0,missing={},display={abilities={},classes={},types={}}}
   local strings={}
+  local authoredDescriptions={}
   local function stringPair(english,german)
     if not english or english=='' or english==german then return end
     if strings[english]~=nil and strings[english]~=german then strings[english]=false
@@ -21,6 +22,12 @@ return function(mod, profile, bytes)
       local ir=IR.decode(bytes:sub(offset+1,math.min(#bytes,offset+(limit or 16384))),
         {dialect=dialect,battle=battle or nil})
       assert(fragment or ir[#ir] and ir[#ir].t=='eos','Unterminated German text at '..offset)
+      for _,seg in ipairs(ir) do
+        if seg.t=='ph' and profile.genderPlaceholders and seg.code and seg.code>=14 then
+          assert(profile.genderPlaceholders[seg.code], 'Unsupported PT-BR gender placeholder '..seg.code)
+          seg.name='ULA_PTBR_GENDER_'..seg.code
+        end
+      end
       return ir
     end
     local function plain(offset,limit)
@@ -73,21 +80,40 @@ return function(mod, profile, bytes)
         report.missing[#report.missing+1]=key
       end
     end
+    -- The patch adds gender-dependent words to its text encoding. Keep
+    -- both actual ROM strings; the engine selects them using the save gender.
+    for code,choices in pairs(profile.genderPlaceholders or {}) do
+      for _,gender in ipairs({'male','female'}) do
+        local label='ULA_PTBR_GENDER_'..code..'_'..gender
+        pending.texts[#pending.texts+1]={label,decode(choices[gender],false,64)}
+      end
+    end
+    report.display.genderPlaceholders=profile.genderPlaceholders and true or nil
     local F=profile.fields
     local function names(registry,base,stride,count,offset,indexFn)
       if not base or not stride or not count then return end
       for id,record in mod.content[registry]:each() do
         local n=indexFn and indexFn(id,record) or record.index
         if n and n>=0 and n<count then
-          local name=plain(base+n*stride+(offset or 0),registry=='items' and 14 or
+          local name=plain(base+n*stride+(offset or 0),registry=='items' and (F.ITEM_NAME_LENGTH or 14) or
             registry=='trainers' and 12 or stride)
           if name~='' then
             local patch={name=name}
             if registry=='items' then
-              local address=pointer(base+n*stride+20)
+              local address=pointer(base+n*stride+(F.ITEM_DESCRIPTION_OFFSET or 20))
               if address then patch.description=IR.toPlain(decode(address,false,4096),{}) end
             elseif registry=='pokemon' and record.dex and record.dexEntry then
-              patch.dexEntry={kind=plain(F.POKEDEX_ENTRIES+record.dex*F.POKEDEX_ENTRY_SIZE,12)}
+              local address=F.POKEDEX_ENTRIES+record.dex*F.POKEDEX_ENTRY_SIZE
+              patch.dexEntry={kind=plain(address,F.POKEDEX_NAME_LENGTH or 12)}
+              if profile.metricUnits then
+                local h=address+(F.POKEDEX_HEIGHT_OFFSET or 12)
+                local a,b,c,d=bytes:byte(h+1,h+4)
+                assert(d,'Truncated Pokédex measurements')
+                local height,weight=a+b*256,c+d*256
+                if height>0 and weight>0 then
+                  patch.dexEntry.heightM=height/10;patch.dexEntry.weightKg=weight/10
+                end
+              end
             end
             pending.names[#pending.names+1]={registry,id,patch}
             report.names=report.names+1
@@ -114,7 +140,7 @@ return function(mod, profile, bytes)
         report.display.types[id]=plain(F.TYPE_NAMES+id*(F.TYPE_NAME_LENGTH+1),F.TYPE_NAME_LENGTH+1)
       end
     end
-    if F.ABILITY_DESCRIPTIONS and mod.content.strings then
+    if (F.ABILITY_DESCRIPTIONS or profile.abilityDescriptions) and mod.content.strings then
       local cache=require('src.core.game3.dataset').cache()
       local function read(name) return assert(loadstring(assert(cache:read('data/generated/gba/pokemon/'..name..'.lua'))))() end
       local descriptions=read('descriptions')
@@ -123,10 +149,19 @@ return function(mod, profile, bytes)
         local base=kind=='abilities' and F.ABILITY_DESCRIPTIONS or F.MOVE_DESCRIPTIONS
         for id,name in pairs(original) do
           if kind=='abilities' or id>0 then
-            local ptr=pointer(base+(kind=='abilities' and id or id-1)*4)
-            if ptr then
+            local authored=kind=='abilities' and profile.abilityDescriptions or profile.moveDescriptions
+            local localized=authored and authored[id]
+            local ptr=base and pointer(base+(kind=='abilities' and id or id-1)*4)
+            if ptr or localized then
               local key=(kind=='abilities' and 'ABILITY_' or 'MOVE_')..name:upper():gsub('%s+','_'):gsub('[^%w_]','')
-              stringPair(descriptions[kind=='abilities' and 'ABILITIES' or 'MOVES'][key],IR.toPlain(decode(ptr,false,2048),{}))
+              local originalText=descriptions[kind=='abilities' and 'ABILITIES' or 'MOVES'][key]
+              if localized and originalText then
+                assert(not authoredDescriptions[originalText] or authoredDescriptions[originalText]==localized,
+                  'Conflicting authored descriptions: '..key)
+                authoredDescriptions[originalText]=localized
+              else
+                stringPair(originalText,IR.toPlain(decode(ptr,false,2048),{}))
+              end
             end
           end
         end
@@ -135,6 +170,9 @@ return function(mod, profile, bytes)
   end)
   for k in pairs(glyphs) do IR.CHARMAP[k]=previous[k] end
   assert(ok,err)
+  -- Reviewed compact descriptions take precedence over older native wording
+  -- of the same source phrase, including aliases in the text registry.
+  for source,target in pairs(authoredDescriptions) do strings[source]=target end
   -- Stage all parsing before registering anything. The engine also rolls back
   -- this mod's registry operations if validation fails during entry loading.
   for _,row in ipairs(pending.texts) do

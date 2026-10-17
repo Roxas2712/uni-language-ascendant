@@ -1,12 +1,30 @@
-# Uni-Language Ascendant 1.4.2
+# Uni-Language Ascendant 1.5.0
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
 Es ist kein spezieller Recompiler-Build erforderlich.
 
+**PT-BR für alle elf Editionen:** Rot, Blau, Gelb, Gold, Silber, Kristall,
+Rubin, Saphir, Emerald, Feuerrot und Blattgrün haben eigene Importprofile.
+Attackennamen, Status-/Menütexte und Grafikbeschriftungen werden lokalisiert.
+Gen3 ergänzt auch Itemnamen, Trainerklassen, Ortsnamen und native Nebenmenüs.
+Die Mod ergänzt die importierten Fanübersetzungen durch eigene Korrekturen.
+Der aktuelle Prüfstatus mit echten Spielszenen steht in [PT-BR.html](PT-BR.html).
+Das ist keine Aussage über einen vollständigen Story-Durchlauf jeder Edition.
+
+Die benötigten Basis- und Sprach-ROMs müssen exakt der [ROM-Liste](ROM-Liste.html)
+entsprechen. Saphir verwendet sein eigenes US-Spiel mit der Rubin-PT-BR-Quelle
+und gesonderten Saphir-Ergänzungen. Feuerrot/Blattgrün benötigen zum Erstellen
+der Sprach-ROM eine andere Basisrevision als zum Starten im Recompiler:
+Fanpatch-Basis 1.1, US-Laufzeitbasis 1.0.
+
+Korrektur zur früheren Doku: „Missão concluída! Poções, saúde e proteção.“ war
+ein künstlicher Schrift-Test, kein Joy-Dialog. Die aktuelle Doku verwendet echte
+NPC-Interaktion samt KP-Erholung und Rückkehr zur Feldsteuerung als Beleg.
+
 Neu in 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
 Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
-zuvor gewählte Sprach-ROM, startet die Mod auf Englisch. Die neun Menüsprachen
+zuvor gewählte Sprach-ROM, startet die Mod auf Englisch. Die zehn Menüsprachen
 und die Liste der benötigten ROMs bleiben unabhängig davon verfügbar.
 Emerald unterstützt zusätzlich Französisch, Italienisch und Spanisch. Die unten
 genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
@@ -14,13 +32,13 @@ genannten Testgrenzen und verbleibenden US-Textschlüssel gelten ausdrücklich.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.4.2.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.5.0.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.
 4. Die Mod für diese Edition aktivieren und das Spiel starten. Vor dem Titelbild
    erscheint die Sprachwahl mit den benötigten ROM-Versionen und SHA-1-Prüfsummen.
-5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES, übrige Editionen EN/DE). Bei einem Sprachwechsel startet die Engine neu;
+5. Beim ersten Start die Menüsprache wählen, anschließend die Spielsprache wählen (mit allen passenden Imports: Emerald EN/DE/FR/IT/ES/PT-BR, übrige Editionen EN/DE/PT-BR). Bei einem Sprachwechsel startet die Engine neu;
    anschließend die Edition im Launcher erneut starten. Die Auswahl wird pro
    Edition gespeichert. Ohne vorherige Auswahl startet die Mod im englischen Modus.
 
@@ -79,9 +97,10 @@ der Mod. Windows/Linux wurden nicht praktisch getestet.
 
 ## Technischer Aufbau
 
-Die ZIP enthält ausschließlich Mod-Code und Adressprofile. Deutsche Texte und
-Bilder werden beim ersten Spielstart aus der vom Nutzer importierten ROM gelesen. Keine ROM,
-keine extrahierten Spieltexte oder Bilder und kein Spielstand werden mitgeliefert.
+Die ZIP enthält Mod-Code, Adressprofile, eigene Übersetzungsergänzungen, Menü-Assets
+und die Dokumentation mit Prüfaufnahmen. Lokalisierte ROM-Texte und Spielgrafiken
+werden beim ersten Spielstart aus der importierten Sprach-ROM gelesen. ROMs,
+Fanpatches, importierte Sprachcaches und Spielstände werden nicht mitgeliefert.
 
 Die Mod verwendet die offiziellen Inhaltsregister für Text- und Namensänderungen.
 Private Import-Routinen erzeugen die Sprach- und Grafikdaten. Das Ergebnis wird
@@ -96,7 +115,7 @@ fehlenden deutschen Zeichen im Decoder werden nur während der synchronen
 Extraktion ergänzt und danach wiederhergestellt. Die aktiven Engine-Adressprofile bleiben unverändert. Der Recompiler führt
 weiterhin das US-Basisspiel mit dessen Spielregeln aus.
 
-Beim Update die vorhandene Beta im Mod-Manager ersetzen; die Mod-ID bleibt
+Beim Update die vorhandene Version im Mod-Manager ersetzen; die Mod-ID bleibt
 gleich. Individuelle Spitznamen in vorhandenen Spielständen bleiben erhalten.
 
 ## Weitere Sprachen
@@ -106,8 +125,8 @@ Headerkennung und Revision mit Text-, Grafik- und Weltprofilen sowie Zeichensatz
 Eine validierte Prüfsumme wählt das passende Profil; der Dateiname ist unerheblich.
 Mehrere Sprachen können gleichzeitig importiert sein; beim Start wird eine ausgewählt.
 
-**Enthalten: Deutsch für alle elf Editionen, zusätzlich Französisch, Italienisch
-und Spanisch für Emerald (Revision 0).** Englisch stammt aus dem US-Basisspiel.
+**Enthalten: Deutsch und PT-BR für alle elf Editionen, zusätzlich Französisch,
+Italienisch und Spanisch für Emerald (Revision 0).** Englisch stammt aus dem US-Basisspiel.
 Die drei neuen Profile wurden mit den bereitgestellten ROMs importiert und in
 Live-Szenen geprüft: Titel, Center, Markt, Dialog, Pokémon-Bericht und Speichern.
 Die Namenseingabe berücksichtigt acht Spalten in IT/ES und neun in FR/DE.

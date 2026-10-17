@@ -70,10 +70,21 @@ return function(mod,state,requirements,locales,order)
   local menu=state.stage=='menu'
   text(menu and '01' or '02',32,119,32,red)
   text(menu and t.menuTitle or t.gameTitle,92,119,28,ink,810)
-  text(menu and t.menuHint or t.beforeTitle,94,161,14,muted,menu and 810 or (#state.choices>3 and 610 or 810))
+  text(menu and t.menuHint or t.beforeTitle,94,161,14,muted,(menu and #order>9 or not menu and #state.choices>3) and 610 or 810)
   if menu then
-   for i,id in ipairs(order) do
-    local x=32+((i-1)%3)*304;local y=204+math.floor((i-1)/3)*93
+   local first=math.floor((state.uiIndex-1)/9)*9+1
+   if #order>9 then
+    local page=math.floor((state.uiIndex-1)/9)+1
+    text(page..' / '..math.ceil(#order/9),752,161,14,muted,65,'en')
+    for _,d in ipairs({{-1,824,'<'},{1,872,'>'}}) do
+     local direction=d[1]
+     panel(d[2],153,38,31,cream);text(d[3],d[2]+13,155,18)
+     hit(d[2],153,38,31,function() state.pageMenu(direction) end)
+    end
+   end
+   for i=first,math.min(first+8,#order) do
+    local id=order[i]
+    local x=32+((i-first)%3)*304;local y=204+math.floor((i-first)/3)*93
     local selected=i==state.uiIndex
     panel(x,y,288,77,selected and {.98,.86,.40} or cream)
     text(locales[id].native,x+20,y+12,24,ink,238,id)
@@ -108,10 +119,12 @@ return function(mod,state,requirements,locales,order)
     hit(x,201,286,82,function()state.index=i;state.noticeKey=nil end)
    end
    if #state.choices<=2 then wrapped(t.uiOnly,665,212,250,12,muted) end
+   local choiceNotice=state.choices[state.index].noticeKey
+   if choiceNotice then text(t[choiceNotice] or locales.en[choiceNotice],34,286,12,muted,890) end
    local row=requirements[state.page]
    panel(32,306,896,213,cream)
    text(t.romList..'  /  '..state.page..' / '..#requirements,50,317,15,teal,650)
-   text(t.generation..' '..row.generation..' · '..row.name,50,342,20,ink,700)
+   text(t.generation..' '..row.generation..' · '..(t['game_'..row.game] or row.name),50,342,20,ink,700)
    for _,d in ipairs({{-1,824,'<'},{1,872,'>'}}) do
     panel(d[2],320,38,30,{.88,.91,.86});text(d[3],d[2]+13,322,18)
     local direction=d[1];hit(d[2],320,38,30,function()state.page=(state.page-1+direction)%#requirements+1 end)

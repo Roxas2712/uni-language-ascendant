@@ -17,7 +17,7 @@ return function(mod,profile,bytes,own)
   local index=own('vendor/index.lua')
   local files=own('extract.lua')(profile.game,bytes,V,function(name)
     if index[name] then return assert(mod:read('vendor/'..name:gsub('%.','/')..'.lua')) end
-  end,require,profile.sha1,function(private,rom,out)
+  end,require,profile.sha1,not profile.skipWorld and function(private,rom,out)
     own("world.lua")(private,rom,own(profile.worldPath or "profiles/"..profile.game.."_world.lua"),require("src.core.game3.dataset").cache(),out)
   end,profile.glyphs)
   local report={count=0,bytes=0}

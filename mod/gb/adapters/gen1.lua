@@ -69,6 +69,27 @@ function Adapter.apply(mod, edition)
   end
 
   data.field = data.field or {}
+  local function catalog(name)
+    local raw = mod:readLocal('lang/' .. name .. '.lua')
+    if raw then return assert(require('src.core.SaveSerializer').decode(raw)) end
+  end
+  local credits = catalog('credits')
+  if credits then
+    data.field.credits = data.field.credits or {}
+    data.field.credits.screens = credits.screens
+    data.field.credits.theEnd = {
+      path = asset(mod, 'credits/the_end.png'), pattern = credits.pattern,
+    }
+  end
+  local diploma = catalog('diploma')
+  if diploma then
+    diploma.tiles = asset(mod, 'diploma/yellow_tiles.png')
+    data.field.yellowPages = data.field.yellowPages or {}
+    data.field.yellowPages.diploma = diploma
+    for label,text in pairs(assert(catalog('diploma_text'))) do
+      mod.content.text:override(label, text)
+    end
+  end
   data.field.title = data.field.title or {}
   local title = data.field.title
   local bubbleInfo = mod:info("assets/title/pika_bubble.png")
