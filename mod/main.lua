@@ -3,7 +3,12 @@ return function(mod)
  local function own(file, ...) return assert(loadstring(assert(mod:read(file)),'@rom_language/'..file))(...) end
  local started=love.timer.getTime()
  local language=own('startup.lua')(mod,version,own)
- if language=='en' then mod.exports.status='english';mod.exports.language='en';mod.exports.loadSeconds=love.timer.getTime()-started;return end
+ if language=='en' then
+  if require('src.core.GameVersion').generation()==2 then
+   own('gb/shared/official_mon_names.lua').installGen2ReturnCompatibility(require('src.script.gen2.Specials'))
+  end
+  mod.exports.status='english';mod.exports.language='en';mod.exports.loadSeconds=love.timer.getTime()-started;return
+ end
  local required
  for _,row in ipairs(own('rom_requirements.lua')) do if row.game==version then required=row.base.sha1 end end
  local marker=require('src.import.CacheFs').readAt(require('src.core.GameVersion').cachePrefix()..'rom-cache.complete')

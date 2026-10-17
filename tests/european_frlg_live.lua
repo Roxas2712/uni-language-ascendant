@@ -7,6 +7,7 @@ return function(game)
   local e=assert(game.mods.exports.german_rom_source)
   assert(e.status=='active' and e.language==lang,'Profile not active')
   assert(e.coverage.translated>9000,'FRLG text coverage too low')
+  for _,key in ipairs(e.coverage.missing or {})do print('EU_FRLG_FALLBACK_KEY',key)end
   local Pokemon=require('src.core.game3.pokemon')
   assert(Pokemon._names[1]==(lang=='fr' and 'BULBIZARRE' or 'BULBASAUR'),'Wrong species names')
   local base=assert(loadfile(love.filesystem.getSaveDirectory()..'/'..version..'/data/generated/gba/pokemon/stats.lua'))()

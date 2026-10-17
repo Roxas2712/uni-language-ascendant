@@ -37,7 +37,7 @@ def cmap_gen2(m,lang):
         for code,seq in enumerate(["c'","d'","j'","l'","m'","n'","p'","s'","'s","t'","u'","y'"],0xd4):cm[code]=seq
     cm.update({0x3f:'{ENEMY}',0x14:'{PLAYER}',0x1f:' ',0x22:'\n',0x25:'',0x49:'{MOM}',0x4a:'POKéMON',0x4b:'\v',0x4c:'\v',0x4e:'\n',0x4f:'\n',
                0x51:'\f',0x52:'{PLAYER}',0x53:'{RIVAL}',0x54:'POKé',0x55:'\v',0x56:'……',
-               0x59:'{TARGET}',0x5a:'{USER}',0x5b:'PC',0x5c:'TM',0x5d:'TRAINER',0x5e:'ROCKET',
+               0x59:'{TARGET}',0x5a:'{USER}',0x5b:'PC',0x5c:'CT' if lang=='fr' else 'MT',0x5d:{'es':'ENTREN.','fr':'DRESSEUR','it':'ALLEN.'}[lang],0x5e:'ROCKET',
                0x6d:':',0x70:'PO',0x71:'Ké',0xbc:'é',0xe1:'POKé',0xe2:'MON',0xf0:'¥',0xf2:'.'})
     return cm
 
@@ -236,6 +236,7 @@ class Builder:
         game=self.game;m=self.m;rom=self.rom
         spec=json.loads((ROOT/f'build/{game}-es-source-metadata.json').read_text())
         cm={int(k):v for k,v in spec['charmap'].items()}
+        cm.update({0x5c:'MT',0x5d:'ENTREN.'})
         for k,v in cm.items():
             for seq,value in [('\\n','\n'),('\\x0c','\f'),('\\x0b','\v')]:v=v.replace(seq,value)
             if re.fullmatch(r'<[^<>]+>',v):v='{'+v[1:-1]+'}'

@@ -47,6 +47,8 @@ function love.load()
   E.write=function()end
   local result={}
   result.title=E:extractTitle()
+  result.diploma=E:extractDiploma()
+  result.credits=E:extractCredits()
   result.menu={pokedex=E:pokedexGfx(),billsPc=E:billsPcGfx(),pokegear=E:pokegearGfx(),trainerCard=E:trainerCardGfx()}
   local function raw(label,size,w,h,path,bits,ink)
    local s=E:symbol(label);local bytes=E.rom:bytes(s.bank,s.address,size)

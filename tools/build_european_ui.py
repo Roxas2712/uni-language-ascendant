@@ -17,17 +17,16 @@ def run(draft=None):
  for line in (ROOT/'translations/european/gb-ui-overrides.tsv').read_text().splitlines():
   if not line or line.startswith('#'):continue
   cells=line.split('|');assert len(cells)==4,line
-  key,*values=[s.replace('\\n','\n').replace('\\f','\f') for s in cells]
+  key,*values=[s.replace('\\n','\n').replace('\\f','\f').replace('\\v','\v').replace('\\001','\1') for s in cells]
   data[key]=values
  for key,values in data.items():
   assert len(values)==3,key
   for i,lang in enumerate(('es','fr','it')):
    text=normalize(values[i],lang)
-   replacements={'es':{'fiesta':'equipo','Fiesta':'Equipo','FIESTA':'EQUIPO'},'fr':{'fête':'équipe','Fête':'Equipe','FETE':'EQUIPE'},'it':{'festa':'squadra','Festa':'Squadra','FESTA':'SQUADRA','SCATOLA':'BOX','scatola':'box'}}[lang]
-   for a,b in replacements.items():text=text.replace(a,b)
-   if key.startswith(' '):text=' '+text.lstrip()
-   if key.endswith(' '):text=text.rstrip()+' '
-   # Google drafts can translate the NEXT markup as a word. Treat markup
+   left=len(key)-len(key.lstrip(' '));right=len(key)-len(key.rstrip(' '))
+   if left:text=' '*left+text.lstrip(' ')
+   if right:text=text.rstrip(' ')+' '*right
+   # Drafts can translate the NEXT markup as a word. Treat markup
    # identity as a build invariant, including the two font ligature tokens.
    text=text.replace('<SIGUIENTE>','<NEXT>')
    assert sorted(TOKENS.findall(key))==sorted(TOKENS.findall(text)),(key,lang,text)

@@ -14,6 +14,13 @@ return function(mod)
  for key,value in pairs(catalog('dialogue')) do mod.content.text:override(key,value) end
  if generation==2 then for key,value in pairs(catalog('rom_text')) do mod.content.rom_text:override(key,value) end end
  local strings=catalog('strings')
+ local identities=catalog('mon_names')
+ local Names=mod.shared.monNames
+ if generation==1 then
+  mod.exports.identityCoverage={trades=Names.patchTrades(data.field and data.field.trades,identities.trades)}
+ else
+  mod.exports.identityCoverage=Names.patchGen2Data(data,identities)
+ end
  local patterns={}
  local function escaped(value)return (value:gsub('([%^%$%(%)%%%.%[%]%*%+%-%?])','%%%1'))end
  local token='%%[-+ #0-9%.]*[a-zA-Z]'
@@ -32,17 +39,23 @@ return function(mod)
   end
  end
  table.sort(patterns,function(a,b)if #a.source==#b.source then return a.source<b.source end;return #a.source>#b.source end)
+ local localized,count={},0
+ local function remember(source,target)
+  if count>=4096 then localized={};count=0 end
+  localized[source]=target;count=count+1;return target
+ end
  local function localize(text)
   if type(text)~='string' then return text end
   if strings[text] then return strings[text] end
+  if localized[text] then return localized[text] end
   for _,row in ipairs(patterns) do
    local captures={text:match(row.pattern)}
    if #captures==row.fields then
     local index=0
-    return (row.target:gsub(token,function()index=index+1;return captures[index] end))
+    return remember(text,(row.target:gsub(token,function()index=index+1;return captures[index] end)))
    end
   end
-  return text
+  return remember(text,text)
  end
  mod.exports.localizeUi=localize
  for key,value in pairs(strings) do mod.content.strings:override(key,value) end
@@ -84,9 +97,21 @@ return function(mod)
    local trainer=group and group.trainers[tonumber(index)]
    if trainer then trainer.name=value end
   end
+  local nativeStrings=catalog('script_strings')
+  mod.exports.identityCoverage.scriptFields=0
   for _,commands in pairs(data.gen2Scripts or {}) do
    if type(commands)=='table' then for _,cmd in ipairs(commands) do
-    if type(cmd)=='table' and cmd.op=='getstring' and strings[cmd.string] then cmd.string=strings[cmd.string] end
+    if type(cmd)=='table' then
+     if cmd.op=='getstring' then cmd.string=nativeStrings[cmd.string] or strings[cmd.string] or cmd.string end
+     if cmd.op=='givepoke' and tonumber(cmd.trainer or 0)~=0 then
+      for _,field in ipairs({'name','otName'})do
+       if nativeStrings[cmd[field]]then
+        cmd[field]=nativeStrings[cmd[field]]
+        mod.exports.identityCoverage.scriptFields=mod.exports.identityCoverage.scriptFields+1
+       end
+      end
+     end
+    end
    end end
   end
  end
@@ -108,6 +133,27 @@ return function(mod)
    return out
   end)
  end
+ -- Authored names live in the save and must survive language switches.
+ -- Only inspect these small collections when a fallback would change text.
+ local function savedName(text)
+  if #text>32 then return false end
+  local save=mod.game.save
+  if not save then return false end
+  for _,person in ipairs({'player','rival','mom'})do
+   local row=save[person]
+   if type(row)=='table' and row.name==text then return true end
+   if row==text then return true end
+  end
+  for _,name in pairs(save.boxNames or {})do if name==text then return true end end
+  local function contains(rows)
+   for _,mon in pairs(rows or {})do
+    if type(mon)=='table' and (mon.nickname==text or mon.ot==text or mon.otName==text)then return true end
+   end
+  end
+  if contains(save.party) or contains(save.box)then return true end
+  for _,box in pairs(save.boxes or {})do if contains(box)then return true end end
+  return false
+ end
  local Font=require('src.render.Font')
  local Runtime=require('src.mods.Runtime')
  local version=require('src.core.GameVersion')
@@ -128,10 +174,69 @@ return function(mod)
    return spans
   end
   Font.encode=function(text)
-   if patch.active and patch.active() and type(text)=='string' then text=patch.localize(text) end
+   if patch.active and patch.active() and type(text)=='string' then
+    local translated=patch.localize(text)
+    if translated~=text and not patch.savedName(text)then text=translated end
+   end
    return patch.original(text)
   end
  end
  patch.active=function() return Runtime.events==bus and version.get()==mod.edition and data.strings and data.strings[marker]=='active' end
- patch.strings=strings;patch.localize=localize;patch.fontmap=catalog('charmap')
+ patch.strings=strings;patch.localize=localize;patch.fontmap=catalog('charmap');patch.savedName=savedName
+ if generation==1 and identities.tradeOT then
+  local TradeAnim=require('src.ui.TradeAnim')
+  if not TradeAnim.__ulaNpcIdentity then
+   TradeAnim.__ulaNpcIdentity=TradeAnim.new
+   TradeAnim.new=function(game,opts)
+    if patch.active and patch.active() and not game.linkSession and opts
+        and opts.enemyName=='TRAINER' and opts.received and opts.sent
+        and opts.received.ot=='TRAINER' and opts.received.traded then
+     for _,row in ipairs(patch.data.field.trades)do
+      if row.give==opts.sent.species and row.get==opts.received.species
+          and row.nickname==opts.received.nickname then
+       opts.received.ot=patch.tradeOT.to;opts.enemyName=patch.tradeOT.to;break
+      end
+     end
+    end
+    return TradeAnim.__ulaNpcIdentity(game,opts)
+   end
+  end
+  patch.data=data;patch.tradeOT=identities.tradeOT
+ end
+ if generation==2 then
+  mod.exports.identityCoverage.specials=Names.installGen2Specials(require('src.script.gen2.Specials'),identities,patch.active)
+  -- Radio's own data view uses species strings as lookup keys and display
+  -- values. Localize that view together with its inverse caught/dex lookups;
+  -- canonical world, encounter and save identifiers stay untouched.
+  local Gear=require('src.ui.gen2.Pokegear')
+  if not Gear.__ulaRadioData then
+   Gear.__ulaRadioData=Gear.radioData
+   Gear.radioData=function(self)
+    local source=Gear.__ulaRadioData(self)
+    if not patch.active or not patch.active()then return source end
+    if self.__ulaRadioSource==source then return self.__ulaRadioLocalized end
+    local out,inverse={},{}
+    for k,v in pairs(source)do out[k]=v end
+    local function display(id)
+     local row=patch.data.pokemon[id];local name=row and row.name or id
+     inverse[name]=id;return name
+    end
+    out.species={};for i,id in pairs(source.species or {})do out.species[i]=display(id)end
+    out.dex={};for id,row in pairs(source.dex or {})do out.dex[display(id)]=row end
+    out.grass={}
+    for id,times in pairs(source.grass or {})do
+     out.grass[id]={}
+     for time,slots in pairs(times)do
+      local list={};out.grass[id][time]=list
+      for i,species in pairs(slots)do list[i]=display(species)end
+     end
+    end
+    out.caught=function(name)return source.caught(inverse[name] or name)end
+    self.__ulaRadioSource=source;self.__ulaRadioLocalized=out
+    return out
+   end
+  end
+  patch.data=data
+
+ end
 end

@@ -1,203 +1,555 @@
 {
-  "version": "1.4.3-europe-preview.2",
+  "version": "1.4.3-europe-preview.3",
   "tested": "2026-10-17",
   "platform": "macOS / LÖVE",
   "baseline": "5843925",
+  "engineCommit": "1925fa9f97661f1e2d0922f7c6eb9546d262fd29",
+  "runtimePayloadSha256": "0665ac7805c7d5daebb72c8a91a3fb9eab16ebfd77a7ffa438739131c92810e3",
   "unitChecks": [
     "unit",
     "startup_unit",
     "intro_unit",
     "preferences_unit",
-    "catalog"
+    "catalog",
+    "european_identities_unit"
   ],
   "liveProfiles": [
-    {
-      "game": "firered",
-      "language": "es",
-      "passed": true,
-      "log": "firered-es-europe-live.log"
-    },
-    {
-      "game": "firered",
-      "language": "it",
-      "passed": true,
-      "log": "firered-it-europe-live.log"
-    },
-    {
-      "game": "leafgreen",
-      "language": "es",
-      "passed": true,
-      "log": "leafgreen-es-europe-live.log"
-    },
-    {
-      "game": "leafgreen",
-      "language": "fr",
-      "passed": true,
-      "log": "leafgreen-fr-europe-live.log"
-    },
     {
       "game": "red",
       "language": "es",
       "passed": true,
-      "log": "red-es-europe-live.log"
+      "log": "red-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 11.15
     },
     {
       "game": "yellow",
       "language": "es",
       "passed": true,
-      "log": "yellow-es-europe-live.log"
+      "log": "yellow-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 10.99
     },
     {
       "game": "gold",
       "language": "es",
       "passed": true,
-      "log": "gold-es-europe-live.log"
+      "log": "gold-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 14.15
     },
     {
       "game": "gold",
       "language": "fr",
       "passed": true,
-      "log": "gold-fr-europe-live.log"
+      "log": "gold-fr-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 12.47
     },
     {
       "game": "gold",
       "language": "it",
       "passed": true,
-      "log": "gold-it-europe-live.log"
+      "log": "gold-it-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 12.96
     },
     {
       "game": "silver",
       "language": "es",
       "passed": true,
-      "log": "silver-es-europe-live.log"
+      "log": "silver-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 13.94
     },
     {
       "game": "silver",
       "language": "fr",
       "passed": true,
-      "log": "silver-fr-europe-live.log"
+      "log": "silver-fr-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 14.42
     },
     {
       "game": "crystal",
       "language": "es",
       "passed": true,
-      "log": "crystal-es-europe-live.log"
+      "log": "crystal-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 14.73
     },
     {
       "game": "crystal",
       "language": "it",
       "passed": true,
-      "log": "crystal-it-europe-live.log"
+      "log": "crystal-it-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 14.35
+    },
+    {
+      "game": "firered",
+      "language": "es",
+      "passed": true,
+      "log": "firered-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 20.32
+    },
+    {
+      "game": "firered",
+      "language": "it",
+      "passed": true,
+      "log": "firered-it-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 19.64
+    },
+    {
+      "game": "leafgreen",
+      "language": "es",
+      "passed": true,
+      "log": "leafgreen-es-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 22.56
+    },
+    {
+      "game": "leafgreen",
+      "language": "fr",
+      "passed": true,
+      "log": "leafgreen-fr-europe-live.log",
+      "fingerprint": "acd0124110c59386e4ab912e34527cad889d0c6f96cf8b44c3e139125399fe89",
+      "seconds": 21.96
     }
   ],
-  "limitations": "Scene and menu tests on macOS; full playthrough, every battle/link path and Windows/Linux remain untested. PT-BR merge remains separate.",
+  "gbMenuProfiles": [
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 7.29
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 7.54
+    },
+    {
+      "game": "gold",
+      "language": "es",
+      "passed": true,
+      "log": "gold-es-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 17.55
+    },
+    {
+      "game": "gold",
+      "language": "fr",
+      "passed": true,
+      "log": "gold-fr-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 21.24
+    },
+    {
+      "game": "gold",
+      "language": "it",
+      "passed": true,
+      "log": "gold-it-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 21.69
+    },
+    {
+      "game": "silver",
+      "language": "es",
+      "passed": true,
+      "log": "silver-es-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 18.56
+    },
+    {
+      "game": "silver",
+      "language": "fr",
+      "passed": true,
+      "log": "silver-fr-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 18.0
+    },
+    {
+      "game": "crystal",
+      "language": "es",
+      "passed": true,
+      "log": "crystal-es-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 16.14
+    },
+    {
+      "game": "crystal",
+      "language": "it",
+      "passed": true,
+      "log": "crystal-it-europe-menu.log",
+      "fingerprint": "311d0814d05e8e13e1c7abfffc4b1822d55dd722da3ed21f77c4873f68414a5a",
+      "seconds": 15.92
+    }
+  ],
+  "gbCatalogProfiles": [
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.07
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.61
+    },
+    {
+      "game": "gold",
+      "language": "es",
+      "passed": true,
+      "log": "gold-es-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.49
+    },
+    {
+      "game": "gold",
+      "language": "fr",
+      "passed": true,
+      "log": "gold-fr-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.28
+    },
+    {
+      "game": "gold",
+      "language": "it",
+      "passed": true,
+      "log": "gold-it-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 3.04
+    },
+    {
+      "game": "silver",
+      "language": "es",
+      "passed": true,
+      "log": "silver-es-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.5
+    },
+    {
+      "game": "silver",
+      "language": "fr",
+      "passed": true,
+      "log": "silver-fr-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.21
+    },
+    {
+      "game": "crystal",
+      "language": "es",
+      "passed": true,
+      "log": "crystal-es-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 3.28
+    },
+    {
+      "game": "crystal",
+      "language": "it",
+      "passed": true,
+      "log": "crystal-it-europe-catalog.log",
+      "fingerprint": "3631c616e948f0c7a202bb98c1fa6989122ea9de65e6d3386d54ed9d08068096",
+      "seconds": 2.2
+    }
+  ],
+  "gbGameplayProfiles": [
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 13.91
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 14.22
+    },
+    {
+      "game": "gold",
+      "language": "es",
+      "passed": true,
+      "log": "gold-es-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 11.26
+    },
+    {
+      "game": "gold",
+      "language": "fr",
+      "passed": true,
+      "log": "gold-fr-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 12.2
+    },
+    {
+      "game": "gold",
+      "language": "it",
+      "passed": true,
+      "log": "gold-it-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 11.31
+    },
+    {
+      "game": "silver",
+      "language": "es",
+      "passed": true,
+      "log": "silver-es-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 11.78
+    },
+    {
+      "game": "silver",
+      "language": "fr",
+      "passed": true,
+      "log": "silver-fr-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 11.61
+    },
+    {
+      "game": "crystal",
+      "language": "es",
+      "passed": true,
+      "log": "crystal-es-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 12.12
+    },
+    {
+      "game": "crystal",
+      "language": "it",
+      "passed": true,
+      "log": "crystal-it-europe-gameplay.log",
+      "fingerprint": "cc9e2be6933975e4092101c8f6c8fe8d3a1db73f1e36d43b09646e8d6ca6c29c",
+      "seconds": 11.38
+    }
+  ],
+  "gbLocalLinkProfiles": [
+    {
+      "game": "red",
+      "language": "es",
+      "passed": true,
+      "log": "red-es-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 3.02
+    },
+    {
+      "game": "yellow",
+      "language": "es",
+      "passed": true,
+      "log": "yellow-es-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 3.02
+    },
+    {
+      "game": "gold",
+      "language": "es",
+      "passed": true,
+      "log": "gold-es-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 2.92
+    },
+    {
+      "game": "gold",
+      "language": "fr",
+      "passed": true,
+      "log": "gold-fr-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 3.66
+    },
+    {
+      "game": "gold",
+      "language": "it",
+      "passed": true,
+      "log": "gold-it-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 5.43
+    },
+    {
+      "game": "silver",
+      "language": "es",
+      "passed": true,
+      "log": "silver-es-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 2.85
+    },
+    {
+      "game": "silver",
+      "language": "fr",
+      "passed": true,
+      "log": "silver-fr-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 4.83
+    },
+    {
+      "game": "crystal",
+      "language": "es",
+      "passed": true,
+      "log": "crystal-es-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 2.97
+    },
+    {
+      "game": "crystal",
+      "language": "it",
+      "passed": true,
+      "log": "crystal-it-europe-link.log",
+      "fingerprint": "04426b1eeaaad0b5ecc2f8e1f890c4346b3fd3eb1254ad13a925c66aecbd4c22",
+      "seconds": 2.73
+    }
+  ],
+  "processRestartChecks": [
+    {
+      "game": "red",
+      "mode": "english",
+      "passed": true,
+      "log": "red-europe-english.log"
+    },
+    {
+      "game": "yellow",
+      "mode": "english",
+      "passed": true,
+      "log": "yellow-europe-english.log"
+    },
+    {
+      "game": "gold",
+      "mode": "english",
+      "passed": true,
+      "log": "gold-europe-english.log"
+    },
+    {
+      "game": "silver",
+      "mode": "english",
+      "passed": true,
+      "log": "silver-europe-english.log"
+    },
+    {
+      "game": "crystal",
+      "mode": "english",
+      "passed": true,
+      "log": "crystal-europe-english.log"
+    },
+    {
+      "game": "red",
+      "mode": "disabled",
+      "passed": true,
+      "log": "red-europe-disabled.log"
+    },
+    {
+      "game": "yellow",
+      "mode": "disabled",
+      "passed": true,
+      "log": "yellow-europe-disabled.log"
+    },
+    {
+      "game": "gold",
+      "mode": "disabled",
+      "passed": true,
+      "log": "gold-europe-disabled.log"
+    },
+    {
+      "game": "silver",
+      "mode": "disabled",
+      "passed": true,
+      "log": "silver-europe-disabled.log"
+    },
+    {
+      "game": "crystal",
+      "mode": "disabled",
+      "passed": true,
+      "log": "crystal-europe-disabled.log"
+    }
+  ],
+  "translationReview": {
+    "method": "Complete AI editorial pass; no independent native-speaker certification",
+    "keysPerLanguage": 1520,
+    "languages": [
+      "es",
+      "fr",
+      "it"
+    ],
+    "staticEngineKeysAudited": 1499,
+    "missingAuditedKeys": 0,
+    "sourceLayer": "translations/european/gb-ui-overrides.tsv"
+  },
   "additionalChecks": {
     "uiCatalog": {
       "passed": true,
-      "keysPerLanguage": 856,
-      "languages": [
-        "es",
-        "fr",
-        "it"
-      ],
+      "keysPerLanguage": 1520,
       "profileCount": 9,
       "checks": [
-        "format/control identities",
+        "all compiled strings match reviewed source",
+        "printf/brace/control identities",
+        "exact whitespace padding",
         "fixed field geometry",
-        "generated profile synchronization"
+        "actual raster glyphs and TextBox pagination",
+        "native Gen2 descriptions and 251 Pokedex entries",
+        "fixed and composed radio lines"
       ]
     },
     "graphicsRoundtrip": {
       "passed": true,
       "profiles": 7,
-      "images": 290,
+      "images": 339,
       "checks": [
         "every RGBA pixel",
         "tile flips",
         "transparent color zero",
-        "image dimensions"
+        "image dimensions",
+        "native credits and diploma art"
       ]
     }
   },
   "graphicsRecipes": {
-    "gold_es": 72,
-    "gold_fr": 72,
-    "gold_it": 72,
-    "silver_es": 72,
-    "silver_fr": 72,
-    "crystal_es": 78,
-    "crystal_it": 78
+    "gold_es": 79,
+    "gold_fr": 79,
+    "gold_it": 79,
+    "silver_es": 79,
+    "silver_fr": 79,
+    "crystal_es": 85,
+    "crystal_it": 85
   },
-  "translationReview": "Supplemental engine UI: machine-assisted drafts with manual terminology/menu/fixed-field corrections; no complete native-speaker editorial review. Retail dialogue is decoded locally from exact ROM inputs.",
-  "gbMenuProfiles": [
-    {
-      "game": "gold",
-      "language": "es",
-      "passed": true,
-      "log": "gold-es-europe-menu.log"
-    },
-    {
-      "game": "gold",
-      "language": "fr",
-      "passed": true,
-      "log": "gold-fr-europe-menu.log"
-    },
-    {
-      "game": "gold",
-      "language": "it",
-      "passed": true,
-      "log": "gold-it-europe-menu.log"
-    },
-    {
-      "game": "silver",
-      "language": "es",
-      "passed": true,
-      "log": "silver-es-europe-menu.log"
-    },
-    {
-      "game": "silver",
-      "language": "fr",
-      "passed": true,
-      "log": "silver-fr-europe-menu.log"
-    },
-    {
-      "game": "crystal",
-      "language": "es",
-      "passed": true,
-      "log": "crystal-es-europe-menu.log"
-    },
-    {
-      "game": "crystal",
-      "language": "it",
-      "passed": true,
-      "log": "crystal-it-europe-menu.log"
-    },
-    {
-      "game": "red",
-      "language": "es",
-      "passed": true,
-      "log": "red-es-europe-menu.log"
-    },
-    {
-      "game": "yellow",
-      "language": "es",
-      "passed": true,
-      "log": "yellow-es-europe-menu.log"
-    }
+  "gbGameplayChecks": [
+    "real nurse healing and status cure",
+    "wild battle input through win callback",
+    "normal save writer and reload",
+    "persisted native NPC/gift identities",
+    "saved player/nickname/custom box name protection",
+    "native diploma render and credits completion"
   ],
-  "gbMenuChecks": [
-    "title and native world signs",
-    "start/options/party",
-    "uppercase/lowercase naming and player naming",
-    "four pack pockets",
-    "trainer card and badges",
-    "four Pokegear cards with bounded landmark lines",
-    "PC box",
-    "three Pokemon summary pages",
-    "unchanged base collision rows",
-    "localized type names and formatted UI fields"
+  "gameplaySpeed": "4X for full matrix; selected setup checks also ran at 1X",
+  "localLinkScope": "Two genuine ENet endpoints on localhost; handshake, accented names, strict mon rebuild, and all 64 native NPC trade records. No public relay or full two-device link battle tested.",
+  "nativeIdentities": {
+    "npcTradeRows": 64,
+    "gen2ShuckleProfiles": 7,
+    "crystalOddEggProfiles": 2,
+    "gen2SpearowScriptProfiles": 7,
+    "gen1TrainerOTProfiles": 2
+  },
+  "limitations": [
+    "No independent native-speaker sign-off",
+    "No complete manual playthrough or exhaustive battle/special-event coverage",
+    "Windows/Linux not run",
+    "No public relay or full two-device link battle",
+    "PT-BR development not merged",
+    "3 inherited FRLG English pluralization helper keys (sPluralTxt/sText_IES/sText_S) and 2 existing Emerald English credits keys remain"
   ],
-  "supplementalUiUnitTest": "tests/european_ui_catalog.py",
-  "gfxRoundtripTest": "tests/european_gfx_roundtrip.lua",
-  "menuScreenCaptures": 172
+  "privateInputs": "No ROMs, saves, extracted image files or compilation caches are included in the ZIP."
 }

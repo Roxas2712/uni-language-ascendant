@@ -28,6 +28,8 @@ function Adapter.apply(mod,edition)
  end
  data.gen2MenuGfx=data.gen2MenuGfx or {}
  merge(data.gen2MenuGfx,localPaths(layouts.menu))
+ if layouts.diploma then data.gen2Diploma=localPaths(layouts.diploma)end
+ if layouts.credits then data.gen2Credits=localPaths(layouts.credits)end
  if game.titleData and layouts.title then merge(game.titleData,localPaths(layouts.title)) end
  local world=mod:read('lang/world_layout.lua')
  if world then for id,blocks in pairs(assert(loadstring(world))()) do

@@ -2,7 +2,7 @@
 import copy,ctypes,hashlib,json,os,shutil,subprocess,sys
 from pathlib import Path
 from build_european_gb import ROOT,offset,read_symbols,lua
-from relocate_gb_refs import recover
+from relocate_gb_refs import recover,recover_code_pointer
 # Image helpers are developer-only; use the bundled Python with Pillow.
 from build_gb_assets import scan,unlz,raw_image,lib
 from PIL import Image
@@ -15,6 +15,7 @@ def plan(game,lang):
  spec=next(x for x in json.loads((ROOT/'build/european-inputs.json').read_text()) if x.get('game')==game and x.get('language')==lang)
  rom=Path(spec['file']).read_bytes();assert hashlib.sha1(rom).hexdigest()==spec['sha1']
  us=Path(next(x['file'] for x in json.loads((ROOT/'build/gb-rom-inventory.json').read_text()) if x['sha1']==m['romSha1'])).read_bytes()
+ assert hashlib.sha1(us).hexdigest()==m['romSha1']
  needs=json.loads((ROOT/f'build/{game}-gfx-needed.json').read_text())['needed']
  audit=json.loads((ROOT/f'build/{game}-{lang}-relocation.json').read_text())
  mapped={int(k):v for k,v in audit['mapped'].items()};done={};proof={};todo=dict(needs)
@@ -48,6 +49,22 @@ def plan(game,lang):
        _d,tz=unlz(rom,value);dest=value+tz;kind='adjacent complete LZ stream';break
      elif ni['size'] and prev+ni['size']==src:
       dest=value+ni['size'];kind='adjacent exact-size graphics';break
+   if dest is None and name in ('DiplomaGFX','TheEndGFX'):
+    syms=read_symbols(ROOT/('build/pokecrystal/pokecrystal.sym' if game=='crystal' else f'build/pokegold/poke{game}.sym'))
+    try:
+     if name=='DiplomaGFX':
+      candidate,refs=recover_code_pointer(us,rom,offset(*syms['PlaceDiplomaOnScreen']),33,a)
+      at=refs['code']
+      tilemap=offset(candidate//16384,int.from_bytes(rom[at+22:at+24],'little'))
+      assert tilemap==done.get('DiplomaPage1Tilemap')
+      assert rom[at+16:at+18]==b'\x00\x90' and rom[at+28:at+30]==b'\x68\x01'
+      raw,z=unlz(rom,candidate);assert len(raw)==1792
+     else:
+      begin=offset(*syms['Credits']);end=offset(*syms['Credits.execution_loop'])
+      candidate,refs=recover_code_pointer(us,rom,begin,end-begin,a,opcode=0x11,bank_operand=7)
+      at=refs['pointerOperand'];assert rom[at+6]==16
+     dest=candidate;kind={'instructionBlock':refs,'independentShapeChecks':True}
+    except (ValueError,AssertionError,IndexError):pass
    if dest is None and name=='LoadQuestionMarkPic.QuestionMarkLZ':
     other=next(x for x in json.loads((ROOT/'build/european-inputs.json').read_text()) if x.get('game')=='crystal' and x.get('language')==lang)
     reference=Path(other['file']).read_bytes()
@@ -175,5 +192,8 @@ def compile_assets(game,lang):
  print('EU_GFX_CATALOG',game,lang,len(recipes),'complete verified tile recipes',flush=True)
 
 if __name__=='__main__':
+ failed=[]
  for g,l in ([tuple(sys.argv[1:])] if len(sys.argv)>1 else PAIRS):
   if plan(g,l):compile_assets(g,l)
+  else:failed.append((g,l))
+ assert not failed, ('Unresolved graphics profiles',failed)

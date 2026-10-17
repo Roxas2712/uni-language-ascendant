@@ -14,6 +14,15 @@ files.extend(str(p.relative_to(root/'mod')) for p in sorted((root/'mod/fonts').i
 files.extend('intro/'+p for p in ['IntroScene.lua','VoxelBall.lua','SOURCE.txt','ASSET-SHA256.json','assets/ascendant-start.png','assets/ascendant-chime.wav','assets/pikachu-atlas.png','assets/eevee-atlas.png','assets/mew-atlas.png'])
 assert len(files)==len(set(files))
 version=json.loads((root/'mod/manifest.json').read_text())['version']
+qa=json.loads((root/'mod/EUROPE-QA.json').read_text())
+assert qa['version']==version, 'QA summary does not match packaged version'
+if qa.get('runtimePayloadSha256'):
+    payload=hashlib.sha256()
+    for path in sorted((root/'mod').rglob('*')):
+        if path.is_file() and path.suffix.lower() not in ('.md','.html','.txt') and not path.name.endswith('QA.json'):
+            payload.update(str(path.relative_to(root/'mod')).encode());payload.update(path.read_bytes())
+    assert payload.hexdigest()==qa['runtimePayloadSha256'], 'Runtime changed after QA; rerun checks and regenerate report'
+
 dest=root/'dist';dest.mkdir(exist_ok=True)
 out=dest/f'uni-language-ascendant-{version}.zip'
 with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:

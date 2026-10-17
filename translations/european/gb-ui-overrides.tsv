@@ -1,195 +1,1521 @@
-# English|Español|Français|Italiano
-PLAYER|JUGADOR|JOUEUR|GIOCATORE
-Player|Jugador|Joueur|Giocatore
-lower|minús|min.|min.
-UPPER|MAYÚS|MAJ.|MAIUS
-DEL|BOR|EFF|CANC
-END|FIN|FIN|FINE
-lower case|minúsculas|minuscules|minuscole
-UPPER CASE|MAYÚSCULAS|MAJUSCULES|MAIUSCOLE
-FIGHT|LUCHA|ATTAQUE|LOTTA
+# Complete reviewed ES / FR / IT engine UI layer. Literal keys; escaped control codes.
+YES|SÍ|OUI|SÌ
+NO|NO|NON|NO
+NEW GAME|NUEVO JUEGO|NOUV. PARTIE|NUOVO GIOCO
+CONTINUE|CONTINUAR|CONTINUER|CONTINUA
+OPTION|OPCIONES|OPTIONS|OPZIONI
+OPTIONS|OPCIONES|OPTIONS|OPZIONI
+SAVE|GUARDAR|SAUVER|SALVA
+QUIT|SALIR|QUITTER|ESCI
+EXIT|SALIR|RETOUR|ESCI
+CANCEL|CANCELAR|ANNULER|ANNULLA
+BACK|ATRÁS|RETOUR|INDIETRO
+OK|VALE|OK|OK
+ITEM|OBJETO|OBJET|STRUM.
+ITEMS|OBJETOS|OBJETS|STRUMENTI
+BAG|MOCHILA|SAC|ZAINO
 PACK|MOCHILA|SAC|ZAINO
+POKéDEX|POKéDEX|POKéDEX|POKéDEX
+POKéMON|POKéMON|POKéMON|POKéMON
+FIGHT|LUCHA|ATTAQUE|LOTTA
 RUN|HUIR|FUITE|FUGA
+STATS|DATOS|STATS|INFO
+SWITCH|CAMBIO|CHOIX|CAMBIA
+MOVE|MOV.|CAPACITE|MOSSA
+MOVES|MOVIMIENTOS|CAPACITES|MOSSE
+TYPE|TIPO|TYPE|TIPO
+ATTACK|ATAQUE|ATTAQUE|ATTACCO
+DEFENSE|DEFENSA|DEFENSE|DIFESA
+SPEED|VELOCIDAD|VITESSE|VELOCITÀ
+SPECIAL|ESPECIAL|SPECIAL|SPECIALE
+SPCL.ATK|AT.ESP.|ATT.SPE.|ATT.SP.
+SPCL.DEF|DEF.ESP.|DEF.SPE.|DIF.SP.
+NAME|NOMBRE|NOM|NOME
+LEVEL|NIVEL|NIVEAU|LIVELLO
+HP|PS|PV|PS
+POWER|POTENCIA|PUISSANCE|POTENZA
+ACCURACY|PRECISIÓN|PRECISION|PRECISIONE
+STATUS|ESTADO|STATUT|STATO
+USE|USAR|UTILISER|USA
+GIVE|DAR|DONNER|DAI
+TAKE|QUITAR|RETIRER|PRENDI
+TOSS|TIRAR|JETER|BUTTA
+REGISTER|REGISTRAR|SELECT|ASSEGNA
+SELL|VENDER|VENDRE|VENDI
+BUY|COMPRAR|ACHETER|COMPRA
+DEPOSIT|DEJAR|DEPOSER|DEPOSITA
+WITHDRAW|SACAR|RETIRER|RITIRA
+RELEASE|SOLTAR|RELACHER|LIBERA
+CHANGE BOX|CAMBIAR CAJA|CHANGER BOITE|CAMBIA BOX
+BILL'S PC|PC DE BILL|PC DE LEO|PC DI BILL
+SOMEONE'S PC|PC DE ALGUIEN|PC DE ???|PC DI QUALCUNO
+POKéGEAR|POKéGEAR|POKéMATOS|POKéGEAR
+MAP|MAPA|CARTE|MAPPA
+PHONE|TELÉFONO|TELEPHONE|TELEFONO
+RADIO|RADIO|RADIO|RADIO
+TIME|TIEMPO|HEURE|ORA
+TRAINER|ENTRENADOR|DRESSEUR|ALLENATORE
+BADGES|MED.|BADGES|MED.
+MONEY|DIN.|ARG.|SOLDI
+OWN|CAPT.|PRIS|PRESI
+SEEN|VISTOS|VUS|VISTI
+DATA|DATOS|INFOS|DATI
+CRY|GRITO|CRI|VERSO
+AREA|ÁREA|ZONE|AREA
+PRINT|IMPRIMIR|IMPRIMER|STAMPA
+SEARCH|BUSCAR|CHERCHER|CERCA
+ABC|ABC|ABC|ABC
+OLD|ANTIGUO|ANCIEN|VECCHIO
+NEW|NUEVO|NOUVEAU|NUOVO
+HT|ALT|TAIL.|ALT.
+WT|PESO|POIDS|PESO
+HALL OF FAME No|HALL FAMA N.|PANTHEON N.|SALA ONORE N.
+%s (%s)|%s (%s)|%s (%s)|%s (%s)
+%s x%d|%s x%d|%s x%d|%s x%d
+%s to box %d|%s a caja %d|%s vers boîte %d|%s al box %d
+LOAD REPORT|VER INFORME|VOIR RAPPORT|VEDI RAPPORTO
+A:CONTINUE|A:CONTINUAR|A:CONTINUER|A:CONTINUA
+There isn't any\nresponse...|No hay ninguna\nrespuesta...|Aucune\nréponse...|Nessuna\nrisposta...
+No! A new BADGE\nis required.|¡Necesitas otra\nMEDALLA!|Il te faut un\nautre BADGE.|Serve un'altra\nMEDAGLIA!
+{RAM:wNameBuffer} can't\nFLY here.|{RAM:wNameBuffer} no puede\nVOLAR aquí.|{RAM:wNameBuffer} ne peut\npas VOLER ici.|{RAM:wNameBuffer} non può\nVOLARE qui.
+No SURFing here!|¡No puedes hacer\nSURF aquí!|Impossible de\nSURFER ici !|Non puoi usare\nSURF qui!
+Nothing to CUT!|¡No hay nada que\nCORTAR!|Rien à COUPER !|Niente da\nTAGLIARE!
+{RAM:wNameBuffer} can't\nuse TELEPORT now.|{RAM:wNameBuffer} no puede\nteletransportarse.|{RAM:wNameBuffer} ne peut\npas se téléporter.|{RAM:wNameBuffer} non può\nteletrasportarsi.
+OAK: %s!\nThis isn't the\ntime to use that!|OAK: ¡%s!\n¡Ahora no puedes\nusarlo!|CHEN: %s !\nCe n'est pas le\nmoment !|OAK: %s!\nNon è il momento\ndi usarlo!
+FLY|VUELO|VOL|VOLO
+FLASH|DESTELLO|FLASH|FLASH
+CUT|CORTE|COUPE|TAGLIO
+SURF|SURF|SURF|SURF
+STRENGTH|FUERZA|FORCE|FORZA
+SOFTBOILED|AMORTIGUADOR|E-COQUE|COVAUOVA
+TELEPORT|TELETRANSP|TELEPORT|TELETRASPORTO
+DIG|EXCAVAR|TUNNEL|FOSSA
+Move POKéMON\nwhere?|¿Adónde mueves\nel POKéMON?|Déplacer le\nPOKéMON où ?|Dove sposti\nil POKéMON?
+Use TM on which\nPOKéMON?|¿Usar MT en qué\nPOKéMON?|Utiliser CT sur\nquel POKéMON ?|Usi la MT su quale\nPOKéMON?
+Use item on which\nPOKéMON?|¿Usar objeto en\nqué POKéMON?|Utiliser sur\nquel POKéMON ?|Usi lo strumento\nsu quale POKéMON?
+Bring out which\nPOKéMON?|¿Qué POKéMON\nsacas?|Retirer quel\nPOKéMON ?|Quale POKéMON\nvuoi ritirare?
+Choose a POKéMON.|Elige un POKéMON.|Choisis un POKéMON.|Scegli un POKéMON.
+No POKéMON!|¡Sin POKéMON!|Pas de POKéMON !|Nessun POKéMON!
+ABLE|APTO|APTE|ABILE
+NOT ABLE|NO APTO|INAPTE|NON ABILE
 FNT|DEB|K.O.|KO
+How many?|¿Cuántos?|Combien ?|Quanti?
+You can't carry\nany more items.|No puedes llevar\nmás objetos.|Tu ne peux plus\nporter d'objets.|Non puoi portare\naltri strumenti.
+No room left to\nstore items.|No queda espacio\npara más objetos.|Plus de place\npour les objets.|Non c'è spazio\nper gli strumenti.
+That's too impor-\ntant to toss!|¡Es demasiado\nimportante para\ntirarlo!|C'est trop\nimportant pour\nle jeter !|È troppo\nimportante per\nbuttarlo!
+Toss %s?|¿Tirar %s?|Jeter %s ?|Butti %s?
+WITHDRAW ITEM|SACAR OBJETO|RETIRER OBJET|RITIRA STRUM.
+DEPOSIT ITEM|DEJAR OBJETO|DEPOSER OBJET|DEPOSITA STRUM.
+TOSS ITEM|TIRAR OBJETO|JETER OBJET|BUTTA STRUM.
+LOG OFF|DESCONECTAR|DECONNEXION|DISCONNETTI
+POKéDEX   Seen:{NUM:wDexRatingNumMonsSeen, 1, 3}\n         Owned:{NUM:wDexRatingNumMonsOwned, 1, 3}|POKéDEX   Vist:{NUM:wDexRatingNumMonsSeen, 1, 3}\n         Capt:{NUM:wDexRatingNumMonsOwned, 1, 3}|POKéDEX   Vus:{NUM:wDexRatingNumMonsSeen, 1, 3}\n         Pris:{NUM:wDexRatingNumMonsOwned, 1, 3}|POKéDEX   Visti:{NUM:wDexRatingNumMonsSeen, 1, 3}\n         Presi:{NUM:wDexRatingNumMonsOwned, 1, 3}
+POKéDEX Rating{COLON}|Evaluación POKéDEX{COLON}|Bilan du POKéDEX{COLON}|Giudizio POKéDEX{COLON}
+Keep it up!|¡Sigue así!|Continue comme ça !|Continua così!
+LEVEL/|NIVEL/|NIVEAU/|LIVELLO/
+TYPE1/|TIPO1/|TYPE1/|TIPO1/
+TYPE2/|TIPO2/|TYPE2/|TIPO2/
+HALL OF FAME|HALL DE LA FAMA|PANTHEON|SALA D'ONORE
+PLAY TIME|TIEMPO|DUREE|TEMPO
+To %s|A %s|A %s|A %s
+AREA UNKNOWN|ÁREA DESCONOCIDA|ZONE INCONNUE|ZONA SCONOSCIUTA
+%s's NEST|NIDO DE %s|NID DE %s|NIDO DI %s
+YOUR NAME?|¿TU NOMBRE?|VOTRE NOM ?|IL TUO NOME?
+NEW NAME|NUEVO NOMBRE|NOUVEAU NOM|NUOVO NOME
+Player|Jugad.|Joueur|Gioc.
+Congrats! This|¡Felicidades!|Félicitations !|Complimenti!
+diploma certifies|Se certifica|Il est certifié|Si certifica
+that you have|que has|que tu as|che hai
+completed your|completado tu|complété ton|completato il tuo
+POKéDEX.|POKéDEX.|POKéDEX.|POKéDEX.
+GAME FREAK|GAME FREAK|GAME FREAK|GAME FREAK
+Diploma|Diploma|Diplôme|Diploma
+PLAYER|JUGADOR|JOUEUR|GIOCAT.
+Would you like to\nSAVE the game?|¿Quieres GUARDAR\nla partida?|Veux-tu SAUVER\nla partie ?|Vuoi SALVARE\nil gioco?
+Now saving...|Guardando...|Sauvegarde...|Salvataggio...
+%s saved\nthe game!|¡%s guardó\nla partida!|%s a sauvé\nla partie !|%s ha salvato\nil gioco!
+MODS|MODS|MODS|MOD
+RETURN TO MAIN\nMENU?|¿VOLVER AL\nMENÚ PRINCIPAL?|RETOUR AU\nMENU PRINCIPAL ?|TORNI AL\nMENU PRINCIPALE?
+BALL|BALL|BALL|BALL
+SEEN %3d  OWN %3d|VIST %3d CAPT %3d|VUS %3d PRIS %3d|VIST %3d PRES %3d
+PRNT|IMPR|IMPR|STMP
+Printed %s's\ndata!\f|¡Datos de %s\nimpresos!\f|Donnees de %s\nimprimees !\f|Dati di %s\nstampati!\f
+Printer error!\n%s|¡Error al imprimir!\n%s|Erreur imprimante !\n%s|Errore stampante!\n%s
+CONTENTS|CONTENIDO|SOMMAIRE|CONTENUTO
+A/L/R:STEP\nSELECT:RESET  START:ALL|A/L/R:PASO\nSELECT:RESET START:TODO|A/L/R:PAS\nSELECT:RESET START:TOUT|A/L/R:PASSO\nSELECT:RESET START:TUTTO
+RESET ALL PARAMS?|¿REINICIAR TODO?|TOUT REINITIALISER ?|AZZERARE TUTTO?
+No.%03d|No.%03d|No.%03d|N.%03d
+OT/%s|EO/%s|DO/%s|AO/%s
+IDNo.%05d|IDNo.%05d|IDNo.%05d|N.ID%05d
+HP Left|PS rest.|PV rest.|PS rim.
+Pts|Puntos|Points|Pt
+Radness|Estilo|Style|Stile
+Total|Total|Total|Totale
+Hi-Score!!|¡¡Nuevo récord!!|Nouveau record !!|Nuovo record!!
+PIKACHU'S BEACH|PLAYA DE PIKACHU|PLAGE DE PIKACHU|SPIAGGIA PIKACHU
+COIN|FICHA|JETON|GETTONE
+NO THANKS|NO, GRACIAS|NON MERCI|NO, GRAZIE
+You can't get off\nhere.|No puedes bajar\naquí.|Tu ne peux pas\ndescendre ici.|Non puoi\nscendere qui.
+No cycling\nallowed here.|No puedes ir en\nbici aquí.|Impossible de\nrouler à vélo ici.|Non puoi usare\nla BICI qui.
+No good! It's not\neven near water.|¡No! Aquí no\nhay agua cerca.|Non ! Il n'y a pas\nd'eau à proximité.|No! Non c'è\nacqua qui vicino.
+%s learned\n%s!|¡%s aprendió\n%s!|%s apprend\n%s !|%s impara\n%s!
+The TOWN MAP is\nunreadable here.|No puedes leer\nel MAPA aquí.|La CARTE est\nillisible ici.|La MAPPA è\nilleggibile qui.
+Is it OK to toss\n%s?|¿Quieres tirar\n%s?|Veux-tu jeter\n%s ?|Vuoi buttare\n%s?
+Threw away\n%s.|Tiraste\n%s.|Tu as jeté\n%s.|Hai buttato\n%s.
+GENGAR VS NIDORINO|GENGAR VS NIDORINO|GENGAR VS NIDORINO|GENGAR VS NIDORINO
+Nintendo|Nintendo|Nintendo|Nintendo
+Creatures inc.|Creatures inc.|Creatures inc.|Creatures inc.
+GAME FREAK inc.|GAME FREAK inc.|GAME FREAK inc.|GAME FREAK inc.
+Is there anything\nelse I can do?|¿Quieres algo\nmás?|Puis-je faire\nautre chose ?|Ti serve\naltro?
+You don't have\nenough money.|No tienes\nsuficiente dinero.|Vous n'avez pas\nassez d'argent.|Non hai\nabbastanza soldi.
+Here you are!\nThank you!|¡Aquí tienes!\n¡Gracias!|Voilà !\nMerci !|Ecco a te!\nGrazie!
+What would you\nlike to sell?|¿Qué te gustaría\nvender?|Que souhaiteriez-vous\nvendre ?|Cosa vorresti\nvendere?
+You don't have\nanything to sell.|No tienes\nnada que vender.|Vous n'avez rien\nà vendre.|Non hai\nnulla da vendere.
+I can't put a\nprice on that.|No puedo ponerle\nprecio a eso.|Je ne peux pas\nvendre cet objet.|Non posso dare\nun prezzo a questo.
+Hi there!\nMay I help you?|¡Hola!\n¿Puedo ayudarte?|Bonjour !\nPuis-je vous aider ?|Ciao!\nPosso aiutarti?
+First, what is\nyour name?|Primero, ¿cómo\nte llamas?|Tout d'abord,\nquel est ton nom ?|Prima di tutto,\ncome ti chiami?
+Right! So your\nname is {PLAYER}!|¡Bien! ¡Te llamas\n{PLAYER}!|Bien ! Tu es\n{PLAYER} !|Bene! Ti chiami\n{PLAYER}!
+RIVAL's NAME?|¿NOMBRE RIVAL?|NOM DU RIVAL ?|NOME RIVALE?
+NORMAL|NORMAL|NORMAL|NORMALE
+%dX|%dX|%dX|%dX
+OFF|NO|NON|NO
+TEXT SPEED|VELOCIDAD TEXTO|VITESSE TEXTE|VELOCITÀ TESTO
+BATTLE ANIMATION|ANIM. COMBATE|ANIM. COMBAT|ANIM. LOTTA
+ON|SÍ|OUI|SÌ
+BATTLE STYLE|TIPO COMBATE|STYLE COMBAT|STILE LOTTA
+SET|FIJO|DEFINI|FISSO
+SHIFT|CAMBIO|CHOIX|CAMBIO
+BATTLE LAYOUT|DISEÑO COMBATE|CADRE COMBAT|DISP. LOTTA
+WIDE|ANCHO|LARGE|LARGO
+OG|ORIGINAL|ORIGINAL|ORIGINALE
+BATTLE SIZE|TAMAÑO COMBATE|TAILLE COMBAT|DIM. LOTTA
+FILL|LLENAR|REMPLIR|RIEMPI
+FIXED|FIJO|FIXE|FISSO
+BATTLE HUD|PANEL COMBATE|PANNEAU COMBAT|PANNELLO LOTTA
+EXTENDED|AMPLIADO|ETENDU|ESTESO
+STANDARD|NORMAL|NORMAL|NORMALE
+BATTLE BG|FONDO COMBATE|FOND COMBAT|SFONDO LOTTA
+AUTO (FILL HUD)|AUTO (PANEL)|AUTO (PANNEAU)|AUTO (PANNELLO)
+BLACK|NEGRO|NOIR|NERO
+WORLD|MUNDO|MONDE|MONDO
+WHITE|BLANCO|BLANC|BIANCO
+UI LAYOUT|DISEÑO MENÚ|CADRE MENUS|DISP. MENU
+DYNAMIC|DINÁMICO|DYNAMIQUE|DINAMICO
+CENTERED|CENTRADO|CENTRE|CENTRATO
+RULESET|REGLAS|REGLES|REGOLE
+MUSIC VOL|VOLUMEN MÚSICA|VOLUME MUSIQUE|VOLUME MUSICA
+SFX VOL|VOLUMEN EFECTOS|VOLUME EFFETS|VOLUME EFFETTI
+PIKACHU VOL|VOLUMEN PIKACHU|VOLUME PIKACHU|VOLUME PIKACHU
+MUSIC FILTER|FILTRO MÚSICA|FILTRE MUSIQUE|FILTRO MUSICA
+AUDIO MODE|MODO AUDIO|MODE AUDIO|MODO AUDIO
+BOTH|AMBOS|LES DEUX|ENTRAMBI
+PERFORMANCE|RENDIM.|PERFORM.|PRESTAZ.
+COLORS|COLORES|COULEURS|COLORI
+TILT|INCLINACIÓN|INCLINAISON|INCLINAZIONE
+UI LETTERBOX|BANDAS DEL MENÚ|BANDES DU MENU|BANDE MENU
+SHADER FX|EFECTOS|EFFETS|EFFETTI
+SHADER FX 2|EFECTOS 2|EFFETS 2|EFFETTI 2
+ZOOM|ZOOM|ZOOM|ZOOM
+FIT|AJUSTAR|ADAPTER|ADATTA
+OUT%d|ALEJ.%d|REC.%d|RID.%d
+IN%d|ACERC.%d|AV.%d|ING.%d
+VOID FILL|RELLENO FONDO|REMPLIR FOND|RIEMPI SFONDO
+VIDEO MODE|MODO VÍDEO|MODE VIDEO|MODALITÀ VIDEO
+ORIENTATION|ORIENTACIÓN|ORIENTATION|ORIENTAMENTO
+FAITHFUL RATIO|PROPORCIÓN GB|FORMAT GB|PROPORZIONI GB
+SCREEN POS|POS. PANTALLA|POS. ECRAN|POS. SCHERMO
+MAX FPS|FPS MÁXIMOS|FPS MAXIMUM|FPS MASSIMI
+DISPLAY (%dHZ)|PANTALLA (%dHZ)|ECRAN (%dHZ)|SCHERMO (%dHZ)
+DISPLAY|PANTALLA|ECRAN|SCHERMO
+VSYNC|VSYNC|VSYNC|VSYNC
+UNAVAILABLE|NO DISPONIBLE|INDISPONIBLE|NON DISPONIBILE
+LOGIC CLOCK|RELOJ LÓGICO|HORLOGE LOGIQUE|OROLOGIO LOGICO
+OVERWORLD SPEED|VELOCIDAD MAPA|VITESSE CARTE|VELOCITÀ MAPPA
+BATTLE SPEED|VELOCIDAD COMBATE|VITESSE COMBAT|VELOCITÀ LOTTA
+MENU SPEED|VELOCIDAD MENÚ|VITESSE MENUS|VELOCITÀ MENU
+%d INSTALLED|%d INSTALADOS|%d INSTALLES|%d INSTALLATI
+CONTROLS|CONTROLES|COMMANDES|COMANDI
+DATE FORMAT|FORMATO DE FECHA|FORMAT DE DATE|FORMATO DATA
+TIME FORMAT|FORMATO DE HORA|FORMAT DE L'HEURE|FORMATO ORA
+TOUCH PAD|PAD TÁCTIL|PAVE TACTILE|PAD TATTILE
+VIBRATION|VIBRACIÓN|VIBRATION|VIBRAZIONE
+KEY BAR|BARRA DE TECLAS|BARRE DE TOUCHES|BARRA TASTI
+%d OPTIONS|%d OPCIONES|%d OPTIONS|%d OPZIONI
+COLOUR|COLOR|COULEUR|COLORE
+MONOCHROME|MONOCROMO|MONOCHROME|MONOCROMO
+Which move should\nbe forgotten?|¿Qué movimiento\ndebe olvidar?|Quelle capacité\nfaut-il oublier ?|Quale mossa\nvuoi far scordare?
+NAME/%s|NOMBRE/%s|NOM/%s|NOME/%s
+MONEY/¥%d|DINERO/¥%d|ARGENT/¥%d|SOLDI/¥%d
+TIME/  %d:%02d|TIEMPO/  %d:%02d|DUREE/  %d:%02d|TEMPO/  %d:%02d
+Nothing here.|Nada aquí.|Rien ici.|Niente qui.
+FLY TO?|¿VOLAR ADÓNDE?|VOLER OU ?|DOVE VOLI?
+T H E  E N D|F I N|F I N|F I N E
+GR. ???m|ALT. ???m|TAIL. ???m|ALT. ???m
+GEW. ???kg|PESO ???kg|POIDS ???kg|PESO ???kg
+No.|N.|No.|N.
+lb|lb|lb|lb
+GR. %.1fm|ALT. %.1fm|TAIL. %.1fm|ALT. %.1fm
+GEW. %.1fkg|PESO %.1fkg|POIDS %.1fkg|PESO %.1fkg
+SELECT:CLEAR ROW\nSTART:RESET ALL|SELECT:BORRAR FILA\nSTART:REINICIAR TODO|SELECT:EFFACER\nSTART:TOUT RESET|SELECT:CANC. RIGA\nSTART:AZZERA TUTTO
+RESET ALL BINDINGS?|¿REINICIAR TECLAS?|REINITIALISER ?|AZZERARE I TASTI?
+PRESS A BUTTON|PULSA UN BOTÓN|PRESSE UN BOUTON|PREMI UN TASTO
+RELEASE TO SET|SUELTA PARA FIJAR|RELACHE POUR FIXER|RILASCIA PER SALVARE
+ESC/2ND CANCELS|ESC/2: CANCELAR|ESC/2E: ANNULER|ESC/2: ANNULLA
+TOUCH B CANCELS|TOCA B: CANCELAR|TOUCHE B: ANNULER|TOCCA B: ANNULLA
+STATUS/|ESTADO /|ETAT /|STATO /
+OT/|EO/|DO/|AO/
+EXP POINTS|PUNTOS EXP|POINTS EXP|PUNTI ESP
+LEVEL UP|SIG. NIVEL|NIV. SUIV.|PROS. LIV.
+CONVERT|CONVERTIR|CONVERTIR|CONVERTI
+UPDATE|ACTUALIZAR|METTRE A JOUR|AGGIORNA
+DOWNLOAD SHADERS|DESCARGAR SHADERS|CHARGER SHADERS|SCARICA SHADER
+SELECT:EDIT PARAMS|SELECT:EDITAR|SELECT:REGLER|SELECT:MODIFICA
+...|...|...|...
+UP TO DATE|ACTUALIZADO|A JOUR|AGGIORNATO
+FAILED|FALLO|ECHEC|ERRORE
+Update the app|Actualiza la app|Mets à jour l'app|Aggiorna l'app
+Reinstall the app|Reinstala la app|Réinstalle l'app|Reinstalla l'app
+Darn!\nRan out of coins!|¡Vaya! ¡No te\nquedan fichas!|Zut ! Tu n'as\nplus de jetons !|Accidenti! Hai\nfinito i gettoni!
+Not enough\ncoins!|¡No tienes\nsuficientes fichas!|Pas assez\nde jetons !|Non hai\nabbastanza gettoni!
+SLOT MACHINE|TRAGAPERRAS|MACHINE A SOUS|SLOT MACHINE
+COINS %4d|FICHAS %4d|JETONS %4d|GETTONI %4d
+EXIT GAME|SALIR DEL JUEGO|QUITTER LE JEU|ESCI DAL GIOCO
+POKéMON YELLOW|POKéMON AMARILLO|POKéMON JAUNE|POKéMON GIALLO
+POKéMON BLUE|POKéMON AZUL|POKéMON BLEU|POKéMON BLU
+POKéMON RED|POKéMON ROJO|POKéMON ROUGE|POKéMON ROSSO
+What? There are\nno POKéMON here!|¿Qué? ¡Aquí no\nhay POKéMON!|Quoi ? Aucun\nPOKéMON ici !|Cosa? Non ci sono\nPOKéMON qui!
+You can't take\nany more POKéMON.\fDeposit POKéMON\nfirst.|No caben más\nPOKéMON.\fDeposita algún\nPOKéMON primero.|Plus de place\npour les POKéMON.\fDépose d'abord\nun POKéMON.|Non puoi ritirare\naltri POKéMON.\fDeposita prima\nun POKéMON.
+The party is full!|¡Equipo lleno!|Equipe complète !|Squadra al completo!
+You can't deposit\nthe last POKéMON!|¡Debes quedarte\ncon un POKéMON!|Tu dois garder\nun POKéMON !|Devi tenere\nalmeno un POKéMON!
+Oops! This Box is\nfull of POKéMON.|Esta CAJA ya está\nllena de POKéMON.|Cette BOITE est\npleine de POKéMON.|Questo BOX è\npieno di POKéMON.
+You need at least\none POKéMON!|¡Necesitas al\nmenos un POKéMON!|Il te faut au\nmoins un POKéMON !|Ti serve almeno\nun POKéMON!
+BOX %d is full!|¡CAJA %d llena!|BOITE %d pleine !|BOX %d pieno!
+%s was\nstored in Box %s.|%s está\nen la CAJA %s.|%s est\ndans la BOITE %s.|%s è\nnel BOX %s.
+%s looks\nunhappy about it!|¡%s no\nparece contento!|%s semble\nmécontent !|%s sembra\nscontento!
+Once released,\n%s is\ngone forever. OK?|Si lo sueltas,\n%s no\nvolverá. ¿Vale?|Une fois relâché,\n%s ne\nreviendra pas. OK ?|Se lo liberi,\n%s non\ntornerà più. OK?
+%s was\nreleased outside.\fBye %s!|Soltaste a\n%s.\f¡Adiós, %s!|%s a été\nrelâché.\fAdieu, %s !|Hai liberato\n%s.\fCiao, %s!
+BOX%2d|CAJA%2d|BOITE %2d|BOX%2d
+Choose a\n<PK><MN> BOX.|Elige una CAJA\n<PK><MN>.|Choisis une\nBOITE <PK><MN>.|Scegli un\nBOX <PK><MN>.
+BOX No.|CAJA No.|BOITE No.|BOX N.
+What?|¿Qué?|Quoi ?|Cosa?
+BOX No.%d|CAJA No.%d|BOITE No.%d|BOX N.%d
+Empty.|Vacío.|Vide.|Vuoto.
+:L%d No.%03d|:L%d No.%03d|:L%d No.%03d|:L%d N.%03d
+Printed BOX %d!\f|¡CAJA %d impresa!\f|BOITE %d imprimee !\f|BOX %d stampato!\f
+WITHDRAW <PK><MN>|SACAR <PK><MN>|RETIRER <PK><MN>|RITIRA <PK><MN>
+DEPOSIT <PK><MN>|DEJAR <PK><MN>|DEPOSER <PK><MN>|DEPOSITA <PK><MN>
+RELEASE <PK><MN>|SOLTAR <PK><MN>|RELACHER <PK><MN>|LIBERA <PK><MN>
+PRINT BOX|IMPRIMIR CAJA|IMPRIMER BOITE|STAMPA BOX
+SEE YA!|¡HASTA LUEGO!|A BIENTOT !|A PRESTO!
+The battle could not start.|No se pudo iniciar el combate.|Impossible de lancer le combat.|Impossibile iniziare la lotta.
+TM32|MT32|CT32|MT32
+TM29|MT29|CT29|MT29
+TM15|MT15|CT15|MT15
+MR.MIME|MR.MIME|M. MIME|MR.MIME
+EEVEE|EEVEE|EVOLI|EEVEE
+PORYGON|PORYGON|PORYGON|PORYGON
+TM25|MT25|CT25|MT25
+TM14|MT14|CT14|MT14
+TM38|MT38|CT38|MT38
+ABRA|ABRA|ABRA|ABRA
+EKANS|EKANS|ABO|EKANS
+SANDSHREW|SANDSHREW|SABELETTE|SANDSHREW
+DRATINI|DRATINI|MINIDRACO|DRATINI
+Which prize would\nyou like?|¿Qué premio\nquieres?|Quel lot\nveux-tu ?|Quale premio\nvuoi?
+OK, so you wanted\na %s?|¿Quieres\n%s?|Tu veux\n%s ?|Vuoi\n%s?
+Here you go!|¡Aquí tienes!|Et voilà !|Ecco qui!
+You don't have\nenough coins.|No tienes\nsuficientes fichas.|Tu n'as pas\nassez de jetons.|Non hai\nabbastanza gettoni.
+You have no room\nfor it.|No tienes\nespacio.|Tu n'as plus\nde place.|Non hai\nspazio.
+Oh. Please come\nback with coins!|¡Vuelve cuando\ntengas fichas!|Reviens avec\ndes jetons !|Torna quando\navrai dei gettoni!
+Oh? You don't have\na COIN CASE.|¿No tienes\nMONEDERO?|Tu n'as pas de\nBOITE JETON ?|Non hai un\nSALVADANAIO?
+%s.\nIs that right?|%s.\n¿Correcto?|%s.\nC'est bien ça ?|%s.\nConfermi?
+Sorry! You need\nmore coins.|¡Necesitas\nmás fichas!|Désolé ! Il te\nfaut plus de jetons.|Mi spiace! Serve\nqualche gettone in più.
+Sorry. You can't\ncarry any more.|No puedes llevar\nmás.|Désolé. Tu ne peux\npas en porter plus.|Mi spiace. Non\npuoi portarne altri.
+Welcome to the\nGAME CORNER.|Bienvenido\nal CASINO.|Bienvenue\nau CASINO.|Benvenuto\nal CASINÒ.
+Do you need some\ngame coins?|¿Necesitas\nfichas de juego?|Veux-tu\ndes jetons ?|Ti servono\ndei gettoni?
+Thank you!\nHere are 50 coins.|¡Gracias!\nAquí tienes 50 fichas.|Merci !\nVoici 50 jetons.|Grazie!\nEcco 50 gettoni.
+Thank you! Here\nare 500 coins.|¡Gracias! Aquí\ntienes 500 fichas.|Merci ! Voici\n500 jetons.|Grazie! Ecco\n500 gettoni.
+Whoops! Your COIN\nCASE is full.|¡Tu MONEDERO\nya está lleno!|Ta BOITE JETON\nest pleine !|Il tuo SALVADANAIO\nè pieno!
+No coins for you?\nCome again!|¿No quieres fichas?\n¡Hasta otra!|Pas de jetons ?\nA bientôt !|Non vuoi gettoni?\nTorna a trovarci!
+The hooked %s attacked!|¡El %s pescado atacó!|Le %s pêché attaque !|Il %s pescato attacca!
+%s fell out of the tree!|¡%s cayó del árbol!|%s tombe de l'arbre !|%s cade dall'albero!
+Wild %s appeared!|¡Un %s salvaje apareció!|Un %s sauvage apparaît !|Appare un %s selvatico!
+There's no will to battle!|¡No puede combatir!|Il ne peut pas combattre !|Non può lottare!
+An EGG can't battle!|¡Un HUEVO no lucha!|Un OEUF ne combat\npas !|Un UOVO non lotta!
+%s is already out.|¡%s\nya está luchando!|%s est\ndeja au combat !|%s è\ngià in campo!
+%s can't be recalled!|¡No puedes retirar a %s!|Impossible de rappeler %s !|Non puoi richiamare %s!
+Use next POKéMON?|¿Usar otro POKéMON?|Autre POKéMON ?|Usi un altro\nPOKéMON?
+There's no PP left for this move!|¡No quedan PP para ese movimiento!|Plus de PP pour cette capacité !|Questa mossa non ha più PP!
+The move is DISABLED!|¡Movimiento ANULADO!|Cette capacité est ENTRAVEE !|Questa mossa è BLOCCATA!
+Items can't be\nused here.|No puedes usar\nobjetos aquí.|Impossible d'utiliser\ndes objets ici.|Non puoi usare\nstrumenti qui.
+HM moves can't be\nforgotten now.|No puede olvidar\nmovimientos de MO.|Impossible d'oublier\nune CS maintenant.|Non può scordare\nle mosse delle MN.
+Stop learning\n%s?|¿Dejar de aprender\n%s?|Ne pas apprendre\n%s ?|Non vuoi insegnare\n%s?
+<PK><MN>|<PK><MN>|<PK><MN>|<PK><MN>
+%s wants to battle!|¡%s quiere combatir!|%s veut combattre !|%s vuole lottare!
+Go! %s!|¡Adelante, %s!|Vas-y, %s !|Vai, %s!
+Oh no! The POKéMON broke free!|¡Oh, no! ¡El POKéMON se liberó!|Oh non ! Le POKéMON s'est libéré !|Oh no! Il POKéMON si è liberato!
+Aww! It appeared to be caught!|¡Vaya! ¡Parecía atrapado!|Oh ! Je croyais le tenir !|Oh! Sembrava preso!
+Aargh! Almost had it!|¡Casi lo consigo!|Argh ! Presque !|Argh! C'ero quasi!
+Shoot! It was so close too!|¡Lástima! ¡Estuvo muy cerca!|Zut ! C'était si près !|Accidenti! C'ero quasi!
+The trainer blocked the BALL!|¡El entrenador bloqueó la BALL!|Le DRESSEUR bloque la BALL !|L'ALLENATORE blocca la BALL!
+Don't be a thief!|¡No seas ladrón!|Ne vole pas les POKéMON !|Non fare il ladro!
+Gotcha! %s was caught!|¡Bien! ¡%s atrapado!|Super ! %s est capturé !|Preso! %s è catturato!
+%s's data was newly added to the #DEX.|Datos de %s añadidos al #DEX.|Données de %s ajoutées au #DEX.|Dati di %s aggiunti al #DEX.
+%s was sent to BILL's PC.|%s fue enviado al PC de BILL.|%s est envoyé au PC de LEO.|%s è stato inviato al PC di BILL.
+Can't escape!|¡No puedes huir!|Fuite impossible !|Non puoi fuggire!
+Give a nickname to %s?|¿Poner un mote a %s?|Un surnom pour %s ?|Un soprannome per %s?
+Caught %s!|¡%s atrapado!|%s capturé !|%s catturato!
+You already caught a %s.|Ya capturaste un %s.|Tu as déjà capturé un %s.|Hai già catturato un %s.
+The POKéMON BOX is full. That can't be used now.|La CAJA POKéMON está llena. No puedes usarlo ahora.|La BOITE POKéMON est pleine. Impossible pour le moment.|Il BOX POKéMON è pieno. Non puoi usarlo ora.
+That isn't going to help here.|Eso no ayudará aquí.|Cela ne va pas aider ici.|Questo non aiuterà qui.
+%s's confused no more!|¡%s ya no está confuso!|%s n'est plus confus !|%s non è più confuso!
+%s came to its senses.|%s recuperó el sentido.|%s a repris ses esprits.|%s è tornato in sé.
 PSN|ENV|PSN|AVV
 BRN|QUE|BRU|BRU
 FRZ|CON|GEL|GEL
 PAR|PAR|PAR|PAR
 SLP|DOR|SOM|DRM
-HALL OF FAME No|HALL FAMA N.º|PANTHEON N.|SALA ONORE N.
-HALL OF FAME|HALL DE LA FAMA|PANTHEON|SALA D'ONORE
-No SURFing here!|¡Aquí no hay SURF!|Pas de SURF ici !|Niente SURF qui!
-Choose a POKéMON.|Elige un POKéMON.|Choisis un POKéMON.|Scegli un POKéMON.
-Congrats! This|¡Felicidades! Este|Bravo ! Ce|Complimenti! Il
-Now saving...|Guardando...|Sauvegarde...|Salvataggio...
-SEEN %3d  OWN %3d|VIST %3d CAPT %3d|VUS %3d PRIS %3d|VIST %3d PRES %3d
-SEEN|VISTOS|VUS|VISTI
-OWN|CAPT.|PRIS|PRESI
+Disabled!|¡Anulado!|Entravée !|Bloccata!
+TYPE/|TIPO/|TYPE/|TIPO/
+NO BATTLE|SIN COMBATE|PAS DE COMBAT|NESSUNA LOTTA
+Use on which <PK><MN>?|¿Usar en qué <PK><MN>?|Utiliser sur quel <PK><MN> ?|Utilizzare su quale <PK><MN>?
+Which <PK><MN>?|¿Cuál <PK><MN>?|Quel <PK><MN> ?|Quale <PK><MN>?
+Teach which <PK><MN>?|¿Enseñar a qué <PK><MN>?|Apprendre à quel <PK><MN> ?|Insegni a quale <PK><MN>?
+Move to where?|¿Mover adónde?|Déplacer où ?|Dove sposti?
+To which <PK><MN>?|¿A cuál <PK><MN>?|A quel <PK><MN> ?|A quale <PK><MN>?
+You have no <PK><MN>!|¡No tienes <PK><MN>!|Tu n'as pas de <PK><MN> !|Non hai <PK><MN>!
+EGG|HUEVO|OEUF|UOVO
+MAIL|CARTA|LETTRE|MESSAGGIO
+%s\nrecovered %dHP!|¡%s\nrecuperó %d PS!|%s\nrécupère %d PV !|%s\nrecupera %d PS!
+lower|minús|min.|min.
+DEL|BOR|EFF|CANC
+END|FIN|FIN|FINE
+UPPER|MAYÚS|MAJ.|MAIUS
+RIVAL'S NAME?|¿NOMBRE RIVAL?|NOM DU RIVAL ?|NOME RIVALE?
+MOTHER'S NAME?|¿NOMBRE MAMÁ?|NOM DE MAMAN ?|NOME MAMMA?
+BOX NAME?|¿NOMBRE CAJA?|NOM BOITE ?|NOME BOX?
+NICKNAME?|¿MOTE?|SURNOM ?|SOPRANNOME?
+%s'S|DE %s|DE %s|DI %s
+This certifies|Se certifica|Il est certifié|Si certifica
+completed the|completado el|complété le|completato il
+new #DEX.|nuevo #DEX.|nouveau #DEX.|nuovo #DEX.
+Congratulations!|¡Felicidades!|Félicitations !|Congratulazioni!
+POKéMON\ndatabase|Base de datos\nPOKéMON|Base de données\nPOKéMON|Database\nPOKéMON
+Party <PK><MN>\nstatus|Estado del\nequipo <PK><MN>|Etat de\nl'équipe <PK><MN>|Stato della\nsquadra <PK><MN>
+Contains\nitems|Guarda tus\nobjetos|Contient\ntes objets|Contiene\nstrumenti
+<PO><KE>GEAR|<PO><KE>GEAR|<PO><KE>MATOS|<PO><KE>GEAR
+Trainer's\nkey device|Herramienta del\nENTRENADOR|Appareil du\nDRESSEUR|Dispositivo\ndell'ALLENATORE
+Your own\nstatus|Tus datos de\nENTRENADOR|Tes infos\nde DRESSEUR|I tuoi dati\nALLENATORE
+Save your\nprogress|Guarda tus\nprogresos|Sauve\nta progression|Salva i tuoi\nprogressi
+Change\nsettings|Cambia las\nopciones|Modifie\nles options|Modifica\nle opzioni
+Installed\nadd-ons|Complementos\ninstalados|Extensions\ninstallées|Mod\ninstallate
+Return to\nthe title|Vuelve a la\npantalla inicial|Reviens à\nl'écran titre|Torna alla\nschermata titolo
+Quit and\nbe judged.|Termina y pasa\na la evaluación.|Quitte et passe\nau classement.|Esci e vai\nalla premiazione.
 CAUGHT|CAPT.|PRIS|PRESI
-RESET ALL PARAMS?|¿REINICIAR TODO?|TOUT REINITIALISER ?|AZZERARE TUTTO?
-IDNo.%05d|IDNo.%05d|IDNo.%05d|N.ID%05d
-ID No|N.º ID|N. ID|N. ID
-PIKACHU'S BEACH|PLAYA DE PIKACHU|PLAGE DE PIKACHU|SPIAGGIA PIKACHU
-GENGAR VS NIDORINO|GENGAR VS NIDORINO|GENGAR VS NIDORINO|GENGAR VS NIDORINO
-BATTLE ANIMATION|ANIM. COMBATE|ANIM. COMBAT|ANIM. LOTTA
-BATTLE LAYOUT|DISEÑO COMBATE|CADRE COMBAT|LAYOUT LOTTA
-BATTLE SIZE|TAMAÑO COMBATE|TAILLE COMBAT|DIM. LOTTA
-BATTLE BG|FONDO COMBATE|FOND COMBAT|SFONDO LOTTA
-BATTLE HUD|PANEL COMBATE|PANNEAU COMBAT|PANNELLO LOTTA
-AUTO (FILL HUD)|AUTO (PANEL)|AUTO (PANNEAU)|AUTO (PANNELLO)
-UI LAYOUT|DISEÑO MENÚ|CADRE MENUS|LAYOUT MENU
-UI LETTERBOX|BANDAS DEL MENÚ|BANDES DU MENU|BANDE MENU
-OVERWORLD SPEED|VELOCIDAD MAPA|VITESSE CARTE|VELOCITÀ MAPPA
-BATTLE SPEED|VELOCIDAD COMBATE|VITESSE COMBAT|VELOCITÀ LOTTA
-MENU SPEED|VELOCIDAD MENÚ|VITESSE MENUS|VELOCITÀ MENU
-TEXT SPEED|VELOCIDAD TEXTO|VITESSE TEXTE|VELOCITÀ TESTO
-BATTLE STYLE|TIPO COMBATE|STYLE COMBAT|STILE LOTTA
-SHIFT|CAMBIO|CHOIX|CAMBIO
-SET|FIJO|DEFINI|FISSO
-ON|SÍ|OUI|SÌ
-OFF|NO|NON|NO
-WIDE|ANCHO|LARGE|LARGO
-FIXED|FIJO|FIXE|FISSO
-FILL|LLENAR|REMPLIR|RIEMPI
-EXTENDED|AMPLIADO|ETENDU|ESTESO
-STANDARD|NORMAL|NORMAL|NORMALE
-DYNAMIC|DINÁMICO|DYNAMIQUE|DINAMICO
-CENTERED|CENTRADO|CENTRE|CENTRATO
-RULESET|REGLAS|REGLES|REGOLE
-AUDIO MODE|MODO AUDIO|MODE AUDIO|MODO AUDIO
-MUSIC VOL|VOLUMEN MÚSICA|VOLUME MUSIQUE|VOLUME MUSICA
-SFX VOL|VOLUMEN EFECTOS|VOLUME EFFETS|VOLUME EFFETTI
-PIKACHU VOL|VOLUMEN PIKACHU|VOLUME PIKACHU|VOLUME PIKACHU
-MUSIC FILTER|FILTRO MÚSICA|FILTRE MUSIQUE|FILTRO MUSICA
-RESET ALL BINDINGS?|¿REINICIAR TECLAS?|REINITIALISER ?|AZZERARE I TASTI?
-PRESS A BUTTON|PULSA UN BOTÓN|PRESSE UN BOUTON|PREMI UN TASTO
-RELEASE TO SET|SUELTA PARA FIJAR|RELACHE POUR FIXER|RILASCIA PER FISSARE
-DOWNLOAD SHADERS|DESCARGAR SHADERS|CHARGER SHADERS|SCARICA SHADER
-SELECT:EDIT PARAMS|SELECT:EDITAR|SELECT:REGLER|SELECT:MODIFICA
-Update the app|Actualizar app|Mise à jour app|Aggiorna app
-Reinstall the app|Reinstalar app|Réinstaller app|Reinstalla app
-The party is full!|¡Equipo lleno!|Equipe complete !|Squadra al completo!
-BOX %d is full!|¡CAJA %d llena!|BOITE %d pleine !|BOX %d pieno!
-Printed BOX %d!\f|¡CAJA %d impresa!\f|BOITE %d imprimee !\f|BOX %d stampato!\f
-%s is already out.|¡%s\nya está luchando!|%s est\ndeja au combat !|%s è\ngià in campo!
-An EGG can't battle!|¡Un HUEVO no lucha!|Un OEUF ne combat\npas !|Un UOVO non lotta!
-Use next POKéMON?|¿Usar otro POKéMON?|Autre POKéMON ?|Usi un altro\nPOKéMON?
-Can't escape!|¡No puedes huir!|Fuite impossible !|Non puoi fuggire!
+BALLS:|BALLS:|BALLS:|BALL:
+None|Ninguno|Aucun|Nessuno
+Would you like to\nend the Contest?|¿Quieres terminar\nel Concurso?|Veux-tu terminer\nle Concours ?|Vuoi terminare\nla Gara?
+Return to the\ntitle screen?|¿Volver a la\npantalla inicial?|Revenir à\nl'écran titre ?|Torni alla\nschermata titolo?
+ OPTION | OPCIÓN | OPTION | OPZIONE 
+ SEARCH | BUSCAR | RECHERCHE | CERCA 
+A-Z|A-Z|A-Z|A-Z
+TYPE1|TIPO1|TYPE1|TIPO1
+TYPE2|TIPO2|TYPE2|TIPO2
 BEGIN SEARCH!!|¡INICIAR BÚSQUEDA!|LANCER RECHERCHE !|INIZIA RICERCA!
 No <PK><MN> found!|¡No hay <PK><MN>!|Aucun <PK><MN> !|Nessun <PK><MN>!
  PAGE AREA CRY PRNT| PÁG. ÁREA GR. IMPR| PAGE ZONE CRI IMPR| PAG. ZONA VERS STMP
+m|m|m|m
+kg|kg|kg|kg
+%s'S NEST|NIDO DE %s|NID DE %s|NIDO DI %s
 NEW POKéDEX MODE|POKéDEX NUEVO|NOUVEAU POKéDEX|NUOVO POKéDEX
+<PK><MN> are listed by|<PK><MN> ordenados|<PK><MN> classés par|<PK><MN> in ordine
+evolution type.|por evolución.|évolution.|di evoluzione.
 OLD POKéDEX MODE|POKéDEX VIEJO|ANCIEN POKéDEX|VECCHIO POKéDEX
+official type.|por número.|ordre numérique.|per numero.
 A to Z MODE|MODO A-Z|MODE A-Z|MODO A-Z
 <PK><MN> are listed|<PK><MN> ordenados|Liste des <PK><MN>|<PK><MN> elencati
 alphabetically.|alfabéticamente.|par ordre alpha.|in ordine A-Z.
+UNOWN MODE|MODO UNOWN|MODE ZARBI|MODO UNOWN
 UNOWN are listed|UNOWN ordenados|Liste des ZARBI|UNOWN elencati
 in catching order.|por captura.|par capture.|per cattura.
-UNOWN MODE|MODO UNOWN|MODE ZARBI|MODO UNOWN
+START>CANCEL|START:CANCELAR|START:ANNULER|START:ANNULLA
+READ MAIL|LEER CARTA|LIRE LETTRE|LEGGI MESSAGGIO
 PUT IN PACK|A LA MOCHILA|DANS LE SAC|NELLO ZAINO
+ATTACH MAIL|ADJUNTAR CARTA|JOINDRE LETTRE|ALLEGA MESSAGGIO
+{STRBUF} was\nsent to {STRBUF}.|{STRBUF} fue\nenviado a {STRBUF}.|{STRBUF} a été\nenvoyé à {STRBUF}.|{STRBUF} è stato\ninviato a {STRBUF}.
+For {STRBUF}'s\n{STRBUF},|Para {STRBUF}:\n{STRBUF},|Pour {STRBUF}:\n{STRBUF},|Per {STRBUF}:\n{STRBUF},
+{STRBUF} sends\n{STRBUF}.|{STRBUF} envía\n{STRBUF}.|{STRBUF} envoie\n{STRBUF}.|{STRBUF} invia\n{STRBUF}.
+{STRBUF} bids\nfarewell to|{STRBUF} se\ndespide de|{STRBUF} dit\nadieu à|{STRBUF} dice\naddio a
+{STRBUF}.|{STRBUF}.|{STRBUF}.|{STRBUF}.
+Take good care of\n{STRBUF}.|Cuida bien de\n{STRBUF}.|Prends soin de\n{STRBUF}.|Abbi cura di\n{STRBUF}.
+You don't want to\ntrade? Aww…|¿No quieres\nintercambiar? Oh...|Tu ne veux pas\néchanger ? Oh...|Non vuoi fare\nlo scambio? Oh...
+Huh? That's not\n{STRBUF}. What a letdown…|¿Eh? ¡No es\n{STRBUF}! Qué pena...|Hein ? Ce n'est pas\n{STRBUF}. Quel dommage...|Eh? Non è\n{STRBUF}. Che delusione...
+Hi, how's my old\n{STRBUF} doing?|¿Cómo está mi\nantiguo {STRBUF}?|Comment va mon\nancien {STRBUF} ?|Come sta il mio\nvecchio {STRBUF}?
+OK, connect the\nGame Link Cable.|Bien, conecta el\ncable Game Link.|Branche le câble\nGame Link.|Bene, collega il\ncavo Game Link.
+%s knows\n%s.|%s conoce\n%s.|%s connaît\n%s.|%s conosce\n%s.
+There is a POKéMON\nholding MAIL.|Un POKéMON lleva\nCARTA.|Un POKéMON tient\nune LETTRE.|Un POKéMON tiene\nun MESSAGGIO.
+Please remove the\nMAIL.|Quítale la\nCARTA, por favor.|Retire la LETTRE,\ns'il te plaît.|Togli il\nMESSAGGIO.
+MOVE <PK><MN> W/O MAIL|MOVER <PK><MN> SIN CARTA|BOUGER <PK><MN> SANS LETTRE|SPOSTA <PK><MN> SENZA MSG.
+MAIL BOX|BUZÓN|BOITE LETTRES|CASELLA POSTA
+DECORATION|DECORACIÓN|DECORATION|DECORAZIONE
+%s saved\nthe game.|%s guardó\nla partida.|%s a sauvé\nla partie.|%s ha salvato\nil gioco.
 Could not save.|Error al guardar.|Echec sauvegarde.|Errore salvataggio.
+Which BOX?|¿Qué CAJA?|Quelle BOITE ?|Quale BOX?
+What? %s\nis evolving!|¿Qué? ¡%s\nestá evolucionando!|Quoi ? %s\névolue !|Cosa? %s\nsi sta evolvendo!
+Huh? %s\nstopped evolving!|¿Eh? ¡%s\ndejó de evolucionar!|Hein ? %s\na arrêté d'évoluer !|Eh? %s\nha smesso di evolversi!
+Congratulations!\nYour %s|¡Felicidades!\nTu %s|Félicitations !\nTon %s|Complimenti!\nIl tuo %s
+evolved into\n%s!|ha evolucionado a\n%s!|a évolué en\n%s !|si è evoluto in\n%s!
+%s wants to\nlearn %s!|¡%s quiere\naprender %s!|%s veut\napprendre %s !|%s vuole\nimparare %s!
+№.|№.|№.|№.
+<LV>|<LV>|<LV>|<LV>
+♂|♂|♂|♂
+♀|♀|♀|♀
+⁂|⁂|⁂|⁂
+/|/|/|/
+<ID>№|<ID>№|<ID>№|<ID>№
+TURN OFF|APAGAR|ETEINDRE|SPEGNI
+{PLAYER} turned on\nthe PC.|{PLAYER} encendió\nel PC.|{PLAYER} a allumé\nle PC.|{PLAYER} ha acceso\nil PC.
+There's no room\nfor more items.|No hay espacio\npara más objetos.|Plus de place\npour les objets.|Non c'è spazio\nper altri strumenti.
+Withdrew %d\n%s(S).|Sacaste %d\n%s.|Retrait de %d\n%s.|Hai ritirato %d\n%s.
+How many do you\nwant to withdraw?|¿Cuántos\nquieres sacar?|Combien veux-tu\nen retirer ?|Quanti ne vuoi\nritirare?
+There's no room to\nstore items.|No queda espacio\npara más objetos.|Plus de place\npour les objets.|Non c'è spazio\nper altri strumenti.
+Deposited %d\n%s(S).|Dejaste %d\n%s.|Dépôt de %d\n%s.|Hai depositato %d\n%s.
 No items here!|¡No hay objetos!|Aucun objet !|Nessuno strumento!
+How many do you\nwant to deposit?|¿Cuántos\nquieres dejar?|Combien veux-tu\nen déposer ?|Quanti ne vuoi\ndepositare?
+That's too impor-\ntant to toss out!|¡Es demasiado\nimportante para\ntirarlo!|C'est trop\nimportant pour\nle jeter !|È troppo\nimportante per\nbuttarlo!
+Toss out how many\n%s(S)?|¿Cuántos tiras de\n%s?|Combien jeter de\n%s ?|Quanti butti di\n%s?
+Throw away %d\n%s(S)?|¿Tiras %d\n%s?|Jeter %d\n%s ?|Butti %d\n%s?
+Discarded\n%s(S).|Tiraste\n%s.|Tu as jeté\n%s.|Hai buttato\n%s.
+What do you want\nto do?|¿Qué quieres\nhacer?|Que veux-tu\nfaire ?|Cosa vuoi\nfare?
+BILL's PC|PC de BILL|PC de LEO|PC di BILL
+%s's PC|PC de %s|PC de %s|PC di %s
+PROF.OAK's PC|PC del PROF.OAK|PC du PROF.CHEN|PC del PROF.OAK
+The link to PROF.\nOAK's PC closed.|Se cerró el PC\ndel PROF. OAK.|Déconnexion du PC\ndu PROF. CHEN.|Chiuso il PC\ndel PROF. OAK.
+…\nLink closed…|...\nConexión cerrada...|...\nConnexion fermée...|...\nConnessione chiusa...
+BILL's PC\naccessed.\n\n#MON Storage\nSystem opened.|Accediste al PC\nde BILL.\n\nAlmacenamiento\n#MON abierto.|Connexion au PC\nde LEO.\n\nStockage des\n#MON ouvert.|Accesso al PC\ndi BILL.\n\nArchivio #MON\naperto.
+Accessed own PC.\n\nItem Storage\nSystem opened.|Accediste a tu PC.\n\nAlmacenamiento\nde objetos abierto.|Connexion à ton PC.\n\nStockage des\nobjets ouvert.|Accesso al tuo PC.\n\nArchivio degli\nstrumenti aperto.
+PROF.OAK's PC\naccessed.\n\n#DEX Rating\nSystem opened.|Accediste al PC\ndel PROF. OAK.\n\nEvaluación del\n#DEX abierta.|Connexion au PC\ndu PROF. CHEN.\n\nBilan du\n#DEX ouvert.|Accesso al PC\ndel PROF. OAK.\n\nGiudizio del\n#DEX aperto.
+Want to get your\n#DEX rated?|¿Quieres evaluar\ntu #DEX?|Faire le bilan\nde ton #DEX ?|Vuoi un giudizio\nsul tuo #DEX?
 Access whose PC?|¿Qué PC usas?|Quel PC utiliser ?|Quale PC usi?
- STOCK <PK><MN> | <PK><MN> GUARDADOS | <PK><MN> STOCKES | <PK><MN> NEL BOX 
-NO CARD DATA|SIN DATOS|AUCUNE DONNEE|NESSUN DATO
-NO SAVE FILE|SIN PARTIDA|AUCUNE SAUVEGARDE|NESSUN SALVATAGGIO
-Saving… Leave ON!|Guardando...\n¡No apagues!|Sauvegarde...\nNe pas eteindre !|Salvataggio...\nNon spegnere!
-Choose a <PK><MN>.|Elige un <PK><MN>.|Choisis un <PK><MN>.|Scegli un <PK><MN>.
-There's no room!|¡No hay espacio!|Pas de place !|Non c'è spazio!
-NO THANKS|NO, GRACIAS|NON MERCI|NO, GRAZIE
-Printed %s's\ndata!\f|¡Datos de %s\nimpresos!\f|Donnees de %s\nimprimees !\f|Dati di %s\nstampati!\f
-OT/|EO/|DO/|AO/
-OT/%s|EO/%s|DO/%s|AO/%s
-TYPE/|TIPO/|TYPE/|TIPO/
-TYPE1/|TIPO1/|TYPE1/|TIPO1/
-TYPE2/|TIPO2/|TYPE2/|TIPO2/
-STATS|DATOS|STATS|INFO
-SWITCH|CAMBIO|ECHANGE|SCAMBIA
-SOFTBOILED|AMORTIGUADOR|E-COQUE|COVAUOVA
-FLASH|DESTELLO|FLASH|FLASH
-FLY|VUELO|VOL|VOLO
-CUT|CORTE|COUPE|TAGLIO
-SURF|SURF|SURF|SURF
-STRENGTH|FUERZA|FORCE|FORZA
-DIG|EXCAVAR|TUNNEL|FOSSA
-TM32|MT32|CT32|MT32
-TM29|MT29|CT29|MT29
-TM15|MT15|CT15|MT15
-TM25|MT25|CT25|MT25
-TM14|MT14|CT14|MT14
-TM38|MT38|CT38|MT38
-MR.MIME|MR.MIME|M. MIME|MR.MIME
-EEVEE|EEVEE|EVOLI|EEVEE
-SANDSHREW|SANDSHREW|SABELETTE|SANDSHREW
-DRATINI|DRATINI|MINIDRACO|DRATINI
-EGG|HUEVO|OEUF|UOVO
-CRY|GRITO|CRI|VERSO
-PRNT|IMPR|IMPR|STMP
-HP Left|PS rest.|PV rest.|PS rim.
-HP|PS|PV|PS
+SAVING… DON'T TURN\nOFF THE POWER.|GUARDANDO...\nNO APAGUES.|SAUVEGARDE...\nNE PAS ETEINDRE.|SALVATAGGIO...\nNON SPEGNERE.
+Would you like to\nsave the game?|¿Quieres guardar\nla partida?|Veux-tu sauver\nla partie ?|Vuoi salvare\nil gioco?
+PLAYER %s|JUGADOR %s|JOUEUR %s|GIOCATORE %s
+SAVED|GUARDADO|SAUVEGARDE|SALVATO
+HELD|EQUIPADO|TENU|TENUTO
+PP|PP|PP|PP
+What level do you\nwant to challenge?|¿A qué nivel\nquieres competir?|A quel niveau\nveux-tu jouer ?|A quale livello\nvuoi gareggiare?
+A party POKéMON\ntops this level.|Un POKéMON supera\neste nivel.|Un POKéMON dépasse\nce niveau.|Un POKéMON supera\nquesto livello.
+%s may go\nonly to BATTLE\n\nROOMS that are\nLv.70 or higher.|%s solo puede\nir a SALAS de\n\nCOMBATE de nivel\n70 o superior.|%s ne peut\naller qu'en SALLE\n\nde COMBAT de\nniveau 70 ou plus.|%s può andare\nsolo nelle SALE\n\nLOTTA di livello\n70 o superiore.
+Cancel your BATTLE\nROOM challenge?|¿Cancelar el reto\nde la SALA COMBATE?|Annuler le défi\nde la SALLE COMBAT ?|Annulli la sfida\nnella SALA LOTTA?
+RIGHT SIDE|LADO DERECHO|COTE DROIT|LATO DESTRO
+LEFT SIDE|LADO IZQUIERDO|COTE GAUCHE|LATO SINISTRO
+Play with\n3 coins?|¿Juegas con\n3 fichas?|Jouer avec\n3 jetons ?|Giochi con\n3 gettoni?
+Not enough\ncoins.|No tienes\nsuficientes fichas.|Pas assez\nde jetons.|Non hai\nabbastanza gettoni.
+Choose a\ncard.|Elige\nuna carta.|Choisis\nune carte.|Scegli\nuna carta.
+Place\nyour bet|Haz tu\napuesta|Fais\nta mise|Fai la\ntua puntata
+Play\nagain?|¿Juegas\notra vez?|Encore\nune partie ?|Giochi\nancora?
+The cards\nshuffled.|Cartas\nbarajadas.|Cartes\nmélangées.|Carte\nmescolate.
+Yeah!|¡Sí!|Ouais !|Sì!
+Darn…|Vaya...|Zut...|Accidenti...
+Hello! Sorry to\nkeep you waiting!\fWelcome to the\nworld of POKéMON!\fMy name is OAK.\fPeople call me the\nPOKéMON PROF.|¡Hola! ¡Perdona\nla espera!\f¡Bienvenido al\nmundo POKéMON!\fMe llamo OAK.\fMe llaman el\nPROF. POKéMON.|Bonjour ! Désolé\npour l'attente !\fBienvenue dans le\nmonde des POKéMON !\fJe m'appelle CHEN.\fOn me surnomme le\nPROF. POKéMON.|Ciao! Scusa\nper l'attesa!\fBenvenuto nel\nmondo dei POKéMON!\fMi chiamo OAK.\fMi chiamano il\nPROF. POKéMON.
+Now, what did you\nsay your name was?|Recuérdame, ¿cómo\nte llamabas?|Rappelle-moi,\nquel est ton nom ?|Ricordami, come\nti chiami?
+READ|LEER|LIRE|LEGGI
+1X|1X|1X|1X
+2X|2X|2X|2X
+3X|3X|3X|3X
 AUTO|AUTO|AUTO|AUTO
+HIGH|ALTO|ELEVE|ALTA
+BALANCED|EQUILIBRADO|EQUILIBRE|BILANCIATO
+LOW|BAJO|FAIBLE|BASSO
+WATER|AGUA|EAU|ACQUA
+TREES|ÁRBOLES|ARBRES|ALBERI
+FADE |FUNDIDO |FONDU |DISSOLV. 
+GEN 2|GEN 2|GEN 2|GEN 2
+DMG|DMG|DMG|DMG
+CLASSIC|CLÁSICO|CLASSIQUE|CLASSICO
+GREEN|VERDE|VERT|VERDE
+LIME|LIMA|VERT CITRON|VERDE LIME
+OLIVE|OLIVA|OLIVE|OLIVA
+AMBER|ÁMBAR|AMBRE|AMBRA
+ORANGE|NARANJA|ORANGE|ARANCIONE
+RED|ROJO|ROUGE|ROSSO
+ROSE|ROSA|ROSE|ROSA
+MAGENTA|MAGENTA|MAGENTA|MAGENTA
+PURPLE|PÚRPURA|VIOLET|VIOLA
+INDIGO|ÍNDIGO|INDIGO|INDIGO
+BLUE|AZUL|BLEU|BLU
+CYAN|CIAN|CYAN|CIANO
+TEAL|TURQUESA|BLEU VERT|VERDE PETROLIO
+MINT|MENTA|MENTHE|MENTA
+SAND|ARENA|SABLE|SABBIA
+BROWN|MARRÓN|MARRON|MARRONE
+SILVER|PLATA|ARGENT|ARGENTO
+MONO|MONO|MONO|MONO
+PALETTE|PALETA|PALETTE|TAVOLOZZA
+FULL|COMPLETO|COMPLET|COMPLETO
+WINDOWED|CON VENTANA|FENETRE|FINESTRATO
+CENTER|CENTRO|CENTRE|CENTRO
+TOP|SUPERIOR|HAUT|SUPERIORE
+SKIN|TEMA|THEME|TEMA
+LIGHT|SUAVE|LEGER|LEGGERO
+STRONG|FUERTE|FORT|FORTE
+ADAPTIVE|ADAPTABLE|ADAPTATIF|ADATTIVO
+4X|4X|4X|4X
+EXT ONLY|SOLO EXT.|EXT. SEUL|SOLO EST.
+GAME ONLY|SOLO JUEGO|JEU SEUL|SOLO GIOCO
+FAST|RÁPIDO|RAPIDE|VELOCE
+MID |MEDIO |MOYEN |MED 
+SLOW|LENTO|LENT|LENTO
+BATTLE SCENE|ANIM. COMBATE|ANIM. COMBAT|ANIM. LOTTA
+ON |SÍ |OUI |SÌ 
+SET  |FIJO  |DEFINI  |FISSO  
+SOUND|SONIDO|SON|SUONO
+MONO  |MONO  |MONO  |MONO  
+STEREO|ESTÉREO|STEREO|STEREO
+LIGHTEST|MUY CLARO|TRES CLAIR|CHIARISSIMO
+LIGHTER |CLARO |CLAIR |CHIARO 
+NORMAL  |NORMAL  |NORMAL  |NORMALE  
+DARKER  |OSCURO  |FONCE  |SCURO  
+DARKEST |MUY OSCURO |TRES FONCE |SCURISSIMO 
+MENU ACCOUNT|AYUDA MENÚ|AIDE MENUS|AIUTO MENU
+FRAME|MARCO|CADRE|CORNICE
+GAME SPEED|VELOCIDAD JUEGO|VITESSE JEU|VELOCITÀ GIOCO
+COLOR|COLOR|COULEUR|COLORE
+TOUCH LAYOUT|DISEÑO TÁCTIL|DISP. TACTILE|DISP. TATTILE
+OG  |ORIG.  |ORIG.  |ORIG.  
+FILL |LLENAR |REMPLIR |RIEMPI 
+VIDEO|VÍDEO|VIDEO|VIDEO
+GRAPHICS|GRÁFICOS|GRAPHIQUES|GRAFICA
+AUDIO|AUDIO|AUDIO|AUDIO
 BATTLE OPTIONS|COMBATE|COMBAT|LOTTA
-PERFORMANCE|RENDIM.|PERFORM.|PRESTAZ.
-SPECIAL|ESPECIAL|SPECIAL|SPECIALE
-CONVERT|CONVERTIR|CONVERTIR|CONVERTI
-EKANS|EKANS|ABO|EKANS
-NICKNAME?|¿APODO?|SURNOM ?|SOPRANNOME?
-TM/HM|MT/MO|CT/CS|MT/MN
-ATTK/|ATQ/|ATT/|ATT/
-PARTY <PK><MN>|EQUIPO <PK><MN>|EQUIPE <PK><MN>|SQUADRA <PK><MN>
-GAME FREAK inc.|GAME FREAK inc.|GAME FREAK inc.|GAME FREAK inc.
-No.|N.º|No.|N.
-GR. ???m|ALT. ???m|TAIL. ???m|ALT. ???m
-GEW. ???kg|PESO ???kg|POIDS ???kg|PESO ???kg
-GR. %.1fm|ALT. %.1fm|TAIL. %.1fm|ALT. %.1fm
-GEW. %.1fkg|PESO %.1fkg|POIDS %.1fkg|PESO %.1fkg
+EXTRAS|EXTRAS|SUPPLEMENTS|EXTRA
+:TYPE|:TIPO|:TYPE|:TIPO
+ ALPH RUINS STAMP| SELLO RUINAS ALFA| TAMPON RUINES ALPH| TIMBRO ROVINE ALFA
+Do what?|¿Hacer qué?|Faire quoi ?|Fare cosa?
+VACANT|VACANTE|VACANT|LIBERO
+A▶PRINT|A▶IMPRIMIR|A▶IMPRIMER|A▶STAMPA
+B▶CANCEL|B▶CANCELAR|B▶ANNULER|B▶ANNULLA
+L▶BEFORE|L▶ANTES|L▶AVANT|L▶PRIMA
+R▶NEXT|R▶SIGUIENTE|R▶SUIVANT|R▶DOPO
+ STOCK <PK><MN> | <PK><MN> GUARDADOS | <PK><MN> STOCKES | <PK><MN> NEL BOX 
+ THIS <PK><MN> | ESTE <PK><MN> | CE <PK><MN> | QUESTO <PK><MN> 
+HEALTH|SALUD|SANTE|SALUTE
+Switch #MON?|¿Cambiar #MON?|Changer de #MON ?|Cambi #MON?
+You already caught\na %s.|Ya capturaste\nun %s.|Tu as déjà capturé\nun %s.|Hai già catturato\nun %s.
+CLOCK|RELOJ|HORLOGE|OROLOGIO
+AM|AM|AM|AM
+PM|PM|PM|PM
+DAY|DÍA|JOUR|GIORNO
+sweet and adorably|es tan adorable y|est vraiment très|è dolce e molto
+wiggly and slickly|es ágil y muy|est souple et très|è agile e molto
+aptly named and|su nombre ya es|son nom est si|di nome è già
+undeniably kind of|sin duda es muy|est sans doute|è davvero molto
+so, so unbearably|es demasiado|est beaucoup trop|è fin troppo
+wow, impressively|¡guau!, es muy|waouh, il est si|wow, è proprio
+almost poisonously|es casi venenoso y|est presque trop|è quasi troppo
+ooh, so sensually|¡oh!, es tan|oh, il est si|oh, è così
+so mischievously|es tan travieso y|est malicieux et|è birbante e così
+so very topically|ahora es muy|est en ce moment|adesso è così
+sure addictively|es tan adictivo y|est captivant et|è coinvolgente e
+looks in water is|en el agua es|dans l'eau, il est|in acqua è
+evolution must be|al evolucionar, es|évolué, il est|se evolve, è
+provocatively|es tan sugerente y|est si attirant et|è così intrigante
+so flipped out and|es tan loco y muy|est fou et très|è folle e molto
+heart-meltingly|es enternecedor y|est si touchant et|è così tenero e
+cute.|lindo.|mignon.|carino.
+weird.|raro.|bizarre.|strano.
+pleasant.|agradable.|agréable.|piacevole.
+bold, sort of.|atrevido, quizá.|plutôt audacieux.|un po' audace.
+frightening.|aterrador.|effrayant.|spaventoso.
+suave & debonair!|¡fino y elegante!|chic et raffiné !|fine ed elegante!
+powerful.|potente.|puissant.|potente.
+exciting.|emocionante.|passionnant.|emozionante.
+now!|¡ahora!|maintenant !|ora!
+inspiring.|inspirador.|inspirant.|stimolante.
+friendly.|amigable.|amical.|amichevole.
+hot, hot, hot!|¡muy, muy fogoso!|très, très chaud !|molto focoso!
+stimulating.|estimulante.|stimulant.|stimolante.
+guarded.|reservado.|réservé.|riservato.
+lovely.|precioso.|charmant.|adorabile.
+speedy.|rápido.|rapide.|veloce.
+is cute.|es lindo.|est mignon.|è carino.
+is sort of lazy.|es algo vago.|est un peu lent.|è un po' pigro.
+is always happy.|siempre es feliz.|est toujours gai.|è sempre felice.
+is quite noisy.|es muy ruidoso.|est très bruyant.|è rumoroso.
+is precocious.|es precoz.|est précoce.|è precoce.
+is somewhat bold.|es algo atrevido.|est assez hardi.|è un po' audace.
+is too picky!|¡es muy exigente!|est exigeant !|è troppo esigente!
+is sort of OK.|está bastante bien|est plutôt bien.|è piuttosto OK.
+is just so-so.|es regular.|est moyen.|è così così.
+is actually great.|es genial.|est vraiment bien.|è fantastico.
+is just my type.|es mi tipo.|est à mon goût.|è il mio tipo.
+is so cool, no?|es genial, ¿no?|est super, non ?|è forte, no?
+is inspiring!|¡es inspirador!|est inspirant !|è stimolante!
+is kind of weird.|es algo raro.|est assez bizarre.|è un po' strano.
+is right for me?|¿es para mí?|me convient ?|è adatto a me?
+is definitely odd!|¡es muy extraño!|est bien étrange !|è proprio strano!
+… …Ahem, we are|... Ejem, somos|... Hum, nous,|... Ehm, siamo
+TEAM ROCKET!|¡TEAM ROCKET!|la TEAM ROCKET !|il TEAM ROCKET!
+After three years|Tras tres años|Après trois ans|Dopo tre anni
+of preparation, we|de preparativos,|de préparatifs,|di preparativi,
+have risen again|hemos resurgido|nous renaissons|siamo risorti
+from the ashes!|¡de las cenizas!|de nos cendres !|dalle ceneri!
+GIOVANNI! Can you|¡GIOVANNI! ¿Nos|GIOVANNI ! Tu nous|GIOVANNI! Ci
+hear? We did it!|oyes? ¡Lo hicimos!|entends ? Enfin !|senti? Eccoci qui!
+Where is our Boss?|¿Y nuestro jefe?|Où est le chef ?|Dov'è il capo?
+Is he listening?|¿Estará oyéndonos?|Il nous écoute ?|Ci starà sentendo?
+SUNDAY|DOMINGO|DIMANCHE|DOMENICA
+MONDAY|LUNES|LUNDI|LUNEDÌ
+TUESDAY|MARTES|MARDI|MARTEDÌ
+WEDNESDAY|MIÉRCOLES|MERCREDI|MERCOLEDÌ
+THURSDAY|JUEVES|JEUDI|GIOVEDÌ
+FRIDAY|VIERNES|VENDREDI|VENERDÌ
+SATURDAY|SÁBADO|SAMEDI|SABATO
+MARY: PROF.OAK'S|ROSA: PROF. OAK|LULA: PROF. CHEN|LORI: PROF. OAK
+POKéMON TALK!|¡CHARLA POKéMON!|PARLONS POKéMON !|PARLIAMO POKéMON!
+With me, MARY!|¡Conmigo, ROSA!|Avec moi, LULA !|Con me, LORI!
+OAK: %s|OAK: %s|CHEN: %s|OAK: %s
+may be seen around|puede verse por|peut se voir vers|si può vedere a
+%s.|%s.|%s.|%s.
+MARY: %s's|ROSA: %s|LULA: %s|LORI: %s
+POKéMON Channel|Canal POKéMON|Chaîne POKéMON|Canale POKéMON
+BEN: POKéMON MUSIC|BEN: POKéMÚSICA|BEN: POKéMUSIQUE|BEN: POKéMUSICA
+CHANNEL!|¡EL CANAL!|LE CANAL !|IL CANALE!
+It's me, DJ BEN!|¡Soy DJ BEN!|Ici DJ BEN !|Sono DJ BEN!
+FERN: POKéMUSIC!|FERN: ¡POKéMÚSICA!|FERN: POKéMUSIQUE!|FERN: POKéMUSICA!
+With DJ FERN!|¡Con DJ FERN!|Avec DJ FERN !|Con DJ FERN!
+Today's %s,|Hoy es %s,|Ce jour: %s,|Oggi è %s,
+so chill out to|relájate con|détends-toi avec|rilassati con
+so let us jam to|¡a bailar con|alors dansons sur|balliamo con
+POKéMON Lullaby!|¡Nana POKéMON!|Berceuse POKéMON !|Ninnananna POKéMON!
+POKéMON March!|¡Marcha POKéMON!|Marche POKéMON !|Marcia POKéMON!
+REED: Yeehaw! How|REED: ¡Yuju!|REED: Youpi !|REED: Evviva!
+y'all doin' now?|¿Cómo estáis?|Comment ça va ?|Come va?
+Whether you're up|Estéis felices|Que ça aille bien|Che siate felici
+or way down low,|o un poco tristes,|ou plutôt mal,|o un po' tristi,
+don't you miss the|¡no os perdáis el|ne manquez pas le|non perdetevi i
+LUCKY NUMBER SHOW!|NÚMERO DE SUERTE!|NUMERO CHANCE !|NUMERI FORTUNATI!
+This week's Lucky|Esta semana el|Cette semaine, le|Questa settimana
+I'll repeat that!|¡Lo repito!|Je répète !|Lo ripeto!
+Match it and go to|Si coincide, ve a|Si ça concorde:|Se coincide, vai a
+…Repeating myself|...Repetirme|... Me répéter,|... Ripetermi
+gets to be a drag…|me aburre...|c'est lassant...|è noioso...
+Number is %05d!|¡Núm. %05d!|Le No. est %05d !|Il numero è %05d!
+the RADIO TOWER!|¡la TORRE RADIO!|la TOUR RADIO !|la TORRE RADIO!
+PLACES AND PEOPLE!|¡GENTE Y LUGARES!|LIEUX ET GENS !|LUOGHI E PERSONE!
+Brought to you by|Presentado por|Présenté par|Offerto da
+me, DJ LILY!|¡DJ LILY!|moi, DJ LILY !|me, DJ LILY!
+%s %s|%s %s|%s %s|%s %s
+……|......|......|......
+You're out of the service area.|Estás fuera de cobertura.|Tu es hors couverture.|Sei fuori copertura.
+Whom do you want to call?|¿A quién llamas?|Qui veux-tu appeler ?|Chi vuoi chiamare?
+Press any button to exit.|Pulsa un botón para salir.|Presse un bouton pour sortir.|Premi un tasto per uscire.
+Delete this stored phone number?|¿Borrar este número?|Supprimer ce numéro ?|Elimini questo numero?
+Huh? Sorry, wrong number!|¿Eh? ¡Lo siento, número equivocado!|Hein ? Désolé, mauvais numéro !|Eh? Scusa, numero sbagliato!
+Click!|¡Clic!|Clic !|Clic!
+That number is out of the area.|Ese número está fuera de cobertura.|Ce numéro est hors couverture.|Quel numero è fuori copertura.
+Just go talk to that person!|¡Ve a hablar con esa persona!|Va lui parler directement !|Vai a parlare con quella persona!
+CALL|LLAMAR|APPELER|CHIAMA
+DELETE|BORRAR|SUPPRIMER|ELIMINA
+Where?|¿Dónde?|Où ?|Dove?
+NO CARD DATA|SIN DATOS|AUCUNE DONNEE|NESSUN DATO
 ZEPHYR|CÉFIRO|ZEPHYR|ZEFIRO
-PLAIN|PLANICIE|PLAINE|PIANA
 HIVE|COLMENA|ESSAIM|ALVEARE
+PLAIN|PLANICIE|PLAINE|PIANA
 FOG|NIEBLA|BRUME|NEBBIA
 STORM|TORMENTA|CHOC|TEMPESTA
 MINERAL|MINERAL|MINERAL|MINERALE
 GLACIER|GLACIAR|GLACIER|GELO
 RISING|DRAGÓN|LEVER|LEVANTE
 BOULDER|ROCA|ROCHE|SASSO
+CASCADE|CASCADA|CASCADE|CASCATA
 THUNDER|TRUENO|FOUDRE|TUONO
+RAINBOW|ARCO IRIS|ARC-EN-CIEL|ARCOBALENO
+SOUL|ALMA|AME|ANIMA
 MARSH|PANTANO|MARAIS|PALUDE
-POKé BALLS|POKé BALL|POKé BALLS|POKé BALL
-PORYGON|PORYGON|PORYGON|PORYGON
-SHADER FX|EFECTOS|EFFETS|EFFETTI
-SHADER FX 2|EFECTOS 2|EFFETS 2|EFFETTI 2
-GEN 2|GEN 2|GEN 2|GEN 2
-Use TM on which\nPOKéMON?|¿Usar MT en qué\nPOKéMON?|Utiliser CT sur\nquel POKéMON ?|Usi la MT su quale\nPOKéMON?
-Use item on which\nPOKéMON?|¿Usar objeto en\nqué POKéMON?|Utiliser sur\nquel POKéMON ?|Usi lo strumento\nsu quale POKéMON?
-Bring out which\nPOKéMON?|¿Qué POKéMON\nsacas?|Retirer quel\nPOKéMON ?|Quale POKéMON\nvuoi ritirare?
-What? There are\nno POKéMON here!|¿Qué? ¡Aquí no\nhay POKéMON!|Quoi ? Aucun\nPOKéMON ici !|Cosa? Non ci sono\nPOKéMON qui!
-You can't take\nany more POKéMON.\fDeposit POKéMON\nfirst.|No caben más\nPOKéMON.\fDeposita algún\nPOKéMON primero.|Plus de place\npour les POKéMON.\fDépose d'abord\nun POKéMON.|Non puoi ritirare\naltri POKéMON.\fDeposita prima\nun POKéMON.
-You can't take\nany more POKéMON.|No caben más\nPOKéMON.|Plus de place\npour les POKéMON.|Non puoi ritirare\naltri POKéMON.
-You can't deposit\nthe last POKéMON!|¡No puedes dejar\nal último POKéMON!|Tu dois garder\nun POKéMON !|Non puoi posare\nl'ultimo POKéMON!
-You need at least\none POKéMON!|¡Necesitas al\nmenos un POKéMON!|Il te faut au\nmoins un POKéMON !|Ti serve almeno\nun POKéMON!
-POKéMON\ndatabase|Base de datos\nPOKéMON|Base de données\nPOKéMON|Database\nPOKéMON
-There is a POKéMON\nholding MAIL.|Un POKéMON lleva\nCARTA.|Un POKéMON tient\nune LETTRE.|Un POKéMON tiene\nuna MESSAGGIO.
-A party POKéMON\ntops this level.|Un POKéMON supera\neste nivel.|Un POKéMON dépasse\nce niveau.|Un POKéMON supera\nquesto livello.
-POKéMON March!|¡Marcha POKéMON!|Marche POKéMON !|Marcia POKéMON!
-MARY: PROF.OAK'S|ROSA: PROF. OAK|LULA: PROF. CHEN|LORI: PROF. OAK
+VOLCANO|VOLCÁN|VOLCAN|VULCANO
+EARTH|TIERRA|TERRE|TERRA
+JOHTO BADGES|MEDALLAS JOHTO|BADGES JOHTO|MEDAGLIE JOHTO
+KANTO BADGES|MEDALLAS KANTO|BADGES KANTO|MEDAGLIE KANTO
 NAME/|NOM./|NOM/|NOME/
-MONEY|DIN.|ARG.|SOLDI
-PLAY TIME|TIEMPO|DUREE|TEMPO
-BADGES|MED.|BADGES|MED.
-There is a POKéMON\nholding MAIL.|Un POKéMON lleva\nCARTA.|Un POKéMON tient\nune LETTRE.|Un POKéMON tiene\nun MESSAGGIO.
-BOX NAME?|¿NOMBRE CAJA?|NOM BOITE ?|NOME BOX?
-RIVAL's NAME?|¿NOMBRE RIVAL?|NOM DU RIVAL ?|NOME RIVALE?
-RIVAL'S NAME?|¿NOMBRE RIVAL?|NOM DU RIVAL ?|NOME RIVALE?
-MOTHER'S NAME?|¿NOMBRE MAMÁ?|NOM DE MAMAN ?|NOME MAMMA?
-HALL OF FAME No|HALL FAMA N.|PANTHEON N.|SALA ONORE N.
-No.|N.|No.|N.
 ID No|N. ID|N. ID|N. ID
-L▶BEFORE|L▶ANTES|L▶AVANT|L▶PRIMA
-EXP POINTS|PUNTOS EXP|POINTS EXP|PUNTI ESP
-LEVEL UP|SIG. NIVEL|NIV. SUIV.|PROS. LIV.
-SWITCH|CAMBIO|CHOIX|CAMBIA
-RELEASE <PK><MN>|LIBERAR <PK><MN>|RELACHER <PK><MN>|LIBERA <PK><MN>
-Release <PK><MN>?|¿Liberar <PK><MN>?|Relâcher <PK><MN> ?|Liberi <PK><MN>?
-Released <PK><MN>.\fBye,\n%s!|Liberaste a <PK><MN>.\f¡Adiós,\n%s!|<PK><MN> relâché.\fAu revoir,\n%s !|<PK><MN> liberato.\fCiao,\n%s!
-Party <PK><MN>\nstatus|Estado del\nequipo <PK><MN>|Etat de\nl'équipe <PK><MN>|Stato della\nsquadra <PK><MN>
-<PO><KE>GEAR|<PO><KE>GEAR|<PO><KE>MATOS|<PO><KE>GEAR
+NO SAVE FILE|SIN PARTIDA|AUCUNE SAUVEGARDE|NESSUN SALVATAGGIO
+Now on:|Ahora suena:|A l'antenne:|In onda:
+POKé BALLS|POKé BALL|POKé BALLS|POKé BALL
+KEY ITEMS|OBJETOS CLAVE|OBJETS RARES|STRUM. BASE
+TM/HM|MT/MO|CT/CS|MT/MN
+SEL|SEL|SEL.|SEL
+Throw away how\nmany?|¿Cuántos\nquieres tirar?|Combien veux-tu\nen jeter ?|Quanti ne vuoi\nbuttare?
+Where should this\nbe moved to?|¿Adónde quieres\nmoverlo?|Où veux-tu\nle déplacer ?|Dove lo vuoi\nspostare?
+You don't have a\n#MON!|¡No tienes\nningún #MON!|Tu n'as pas\nde #MON !|Non hai\nun #MON!
+An EGG can't hold\nan item.|Un HUEVO no puede\nllevar un objeto.|Un OEUF ne tient\npas d'objet.|Un UOVO non può\ntenere strumenti.
+Coins:\n%d|Fichas:\n%d|Jetons:\n%d|Gettoni:\n%d
+You now have\n%d points.|Ahora tienes\n%d puntos.|Tu as maintenant\n%d points.|Ora hai\n%d punti.
+{PLAYER} used the\n%s.|{PLAYER} utilizó el\n%s.|{PLAYER} a utilisé le\n%s.|{PLAYER} ha utilizzato\n%s.
+There was a trophy\ninside!\f{PLAYER} sent the\ntrophy home.|¡Había un trofeo\ndentro!\f{PLAYER} envió el\ntrofeo a casa.|Un trophée\nà l'intérieur !\f{PLAYER} a envoyé le\ntrophée chez lui.|Dentro c'era\nun trofeo!\f{PLAYER} ha spedito\nil trofeo a casa.
+Threw away\n%s(S).|Tiraste\n%s.|Tu as jeté\n%s.|Hai buttato\n%s.
+%s can't learn %s!|¡%s no puede aprender %s!|%s ne peut pas apprendre %s !|%s non può imparare %s!
+%s already knows %s!|¡%s ya conoce %s!|%s connaît déjà %s !|%s conosce già %s!
+Registered the\n%s.|Registraste\n%s.|Tu as enregistré\n%s.|Hai assegnato\n%s.
+You can't register\nthat item.|No puedes\nregistrar eso.|Impossible de\nsélectionner ça.|Non puoi\nassegnare questo.
+Zzz... Hm? Wha...?\nYou woke me up!|Zzz... ¿Eh?\n¡Me has despertado!|Zzz... Hein ?\nTu m'as réveillé !|Zzz... Eh?\nMi hai svegliato!
+What time is it?|¿Qué hora es?|Quelle heure est-il ?|Che ore sono?
+What?\n%s?|¿Qué?\n¿%s?|Quoi ?\n%s ?|Cosa?\n%s?
+How many minutes?|¿Cuántos minutos?|Combien de minutes ?|Quanti minuti?
+Whoa!\n%d min.?|¡Vaya!\n¿%d min.?|Waouh !\n%d min. ?|Wow!\n%d min.?
+%s!\nIt's so dark!|¡%s!\n¡Qué oscuro está!|%s !\nIl fait si sombre !|%s!\nÈ così buio!
+%s!\nI overslept!|¡%s!\n¡Me quedé dormido!|%s !\nJ'ai trop dormi !|%s!\nHo dormito troppo!
+%s!\nYikes! I over-\nslept!|¡%s!\n¡Vaya! ¡Me quedé\ndormido!|%s !\nAïe ! J'ai\ntrop dormi !|%s!\nAccidenti! Ho\ndormito troppo!
+What day is it?|¿Qué día es?|Quel jour est-on ?|Che giorno è?
+%s, is that right?|%s, ¿verdad?|%s, c'est ça ?|%s, giusto?
+%s o'clock|%s en punto|%s heures|Ore %s
+%d min.|%d min.|%d min.|%d min.
+POKéRUS|POKéRUS|POKéRUS|POKéRUS
+TO|A|A|A
+ATTK/|ATQ/|ATT/|ATT/
+<ID>№.|<ID>№.|<ID>№.|<ID>№.
+It's making sounds<NEXT>inside. It's going<NEXT>to hatch soon!|Se oyen ruidos<NEXT>dentro. ¡Pronto<NEXT>saldrá del HUEVO!|Il fait du bruit<NEXT>dedans. Il va<NEXT>bientôt éclore !|Fa rumore<NEXT>dentro. Si schiuderà<NEXT>presto!
+It moves around<NEXT>inside sometimes.<NEXT>It must be close<NEXT>to hatching.|A veces se mueve<NEXT>dentro. Debe de<NEXT>estar a punto de<NEXT>salir del HUEVO.|Il bouge parfois<NEXT>à l'intérieur.<NEXT>Il va bientôt<NEXT>éclore.|A volte si muove<NEXT>al suo interno.<NEXT>La schiusa deve<NEXT>essere vicina.
+Wonder what's<NEXT>inside? It needs<NEXT>more time, though.|¿Qué habrá<NEXT>dentro? Aún<NEXT>necesita tiempo.|Que contient-il ?<NEXT>Il lui faut<NEXT>encore du temps.|Chissà cosa c'è<NEXT>dentro? Serve<NEXT>ancora del tempo.
+This EGG needs a<NEXT>lot more time to<NEXT>hatch.|Este HUEVO aún<NEXT>tardará mucho<NEXT>en abrirse.|Cet OEUF mettra<NEXT>encore longtemps<NEXT>à éclore.|Questo UOVO<NEXT>impiegherà molto<NEXT>a schiudersi.
+Boy|Niño|Garçon|Ragazzo
+Girl|Chica|Fille|Ragazza
+Are you a boy?\nOr are you a girl?|¿Eres chico?\n¿O eres chica?|Es-tu un garçon ?\nOu une fille ?|Sei un ragazzo?\nO una ragazza?
+Bet how many\ncoins?|¿Cuántas fichas\napuestas?|Combien de jetons\nveux-tu miser ?|Quanti gettoni\nvuoi puntare?
+Start!|¡Empieza!|C'est parti !|Si comincia!
+Darn… Ran out of\ncoins…|Vaya... No quedan\nmás fichas...|Zut... Plus\nde jetons...|Accidenti... Ho\nfinito i gettoni...
+Play again?|¿Otra partida?|Rejouer ?|Giochi ancora?
+Darn!|¡Vaya!|Zut !|Accidenti!
+    lined up!\nWon %d coins!|    ¡alineados!\n¡Ganaste %d fichas!|    alignés !\nGain de %d jetons !|    in fila!\nHai vinto %d gettoni!
+Points|Puntos|Points|Punti
+Saving… Leave ON!|Guardando...\n¡No apagues!|Sauvegarde...\nNe pas eteindre !|Salvataggio...\nNon spegnere!
+No releasing EGGS!|¡No sueltes HUEVOS!|Pas de lâcher d'OEUF !|Non liberare UOVA!
+PARTY <PK><MN>|EQUIPO <PK><MN>|EQUIPE <PK><MN>|SQUADRA <PK><MN>
+BOX%d|CAJA%d|BOITE %d|BOX%d
+Choose a <PK><MN>.|Elige un <PK><MN>.|Choisis un <PK><MN>.|Scegli un <PK><MN>.
+What's up?|¿Qué pasa?|Quoi de neuf ?|Che succede?
+It's your last <PK><MN>!|¡Es tu último <PK><MN>!|C'est ton dernier <PK><MN> !|È il tuo ultimo <PK><MN>!
+No more usable <PK><MN>!|¡No te quedan <PK><MN> sanos!|Plus de <PK><MN> valides !|Non hai altri <PK><MN> in forma!
+Remove MAIL.|Quita la CARTA.|Retire la LETTRE.|Togli il MESSAGGIO.
+There's no room!|¡No hay espacio!|Pas de place !|Non c'è spazio!
+Release <PK><MN>?|¿Soltar <PK><MN>?|Relâcher <PK><MN> ?|Liberi <PK><MN>?
+Released <PK><MN>.\fBye,\n%s!|Soltaste a <PK><MN>.\f¡Adiós,\n%s!|<PK><MN> relâché.\fAdieu,\n%s !|<PK><MN> liberato.\fCiao,\n%s!
+Got %s!|¡Recibiste %s!|Tu reçois %s !|Hai ricevuto %s!
+Stored %s!|¡Guardaste %s!|%s a été stocké !|Hai depositato %s!
+No save.|Sin partida.|Pas de sauvegarde.|Nessun salvataggio.
+There is no POKéMON there.|No hay ningún POKéMON allí.|Il n'y a pas de POKéMON là-bas.|Non ci sono POKéMON lì.
+The BOX is full.|La CAJA está llena.|La BOITE est pleine.|Il BOX è pieno.
+You can't take\nany more POKéMON.|No caben más\nPOKéMON.|Plus de place\npour les POKéMON.|Non puoi ritirare\naltri POKéMON.
+It's already there.|Ya está allí.|Il est déjà là.|È già lì.
+You'll need a\nPOKéMON to call\fwith.|Necesitas un\nPOKéMON para\fllamar.|Il te faut un\nPOKéMON pour\fappeler.|Ti serve un\nPOKéMON per\fchiamare.
+TRADING BOARD|TABLÓN CAMBIOS|TABLEAU ECHANGES|BACHECA SCAMBI
+INFO|INFO|INFOS|INFO
+Lv%d|Lv%d|Lv%d|Lv%d
+BATTLE|COMBATE|COMBAT|LOTTA
+TRADE|CAMBIO|ECHANGE|SCAMBIO
+Do what with\n%s?|¿Qué hacer con\n%s?|Que faire avec\n%s ?|Fare cosa con\n%s?
+%s looks\nbusy right now.|%s parece\nocupado ahora.|%s semble\noccupé en ce moment.|%s sembra\noccupato adesso.
+Waiting for\n%s…|Esperando\n%s...|En attente de\n%s...|In attesa di\n%s...
+%s\nsaid no.|%s\ndijo que no.|%s\na dit non.|%s\nha detto di no.
+%s\ndidn't answer.|%s\nno respondió.|%s\nn'a pas répondu.|%s\nnon ha risposto.
+%s\nhas left.|%s\nse ha ido.|%s\nest parti.|%s\nè uscito.
+%s can't\ndo that now.|%s no puede\nhacer eso ahora.|%s ne peut\npas faire ça.|%s non può\nfarlo ora.
+%s wants\nto BATTLE!\fWill you accept?|¡%s quiere\nCOMBATIR!\f¿Aceptas?|%s veut\nCOMBATTRE !\fTu acceptes ?|%s vuole\nLOTTARE!\fAccetti?
+%s wants\nto TRADE!\fWill you accept?|¡%s quiere\nINTERCAMBIAR!\f¿Aceptas?|%s veut\nECHANGER !\fTu acceptes ?|%s vuole fare\nuno SCAMBIO!\fAccetti?
+Linking up with\n%s…|Vinculación con\n%s...|Connexion avec\n%s...|Collegamento con\n%s...
+Getting ready to\nBATTLE %s…|Preparando el\ncombate con %s...|Préparation du\ncombat: %s...|Preparazione alla\nlotta con %s...
+Getting ready to\nTRADE: %s…|Preparando el\ncambio: %s...|Préparation de\nl'échange: %s...|Preparazione allo\nscambio: %s...
+%s\ncanceled.|%s\nlo canceló.|%s\na annulé.|%s\nha annullato.
+The request was\ncanceled.|La petición fue\ncancelada.|La demande a\nété annulée.|La richiesta è\nstata annullata.
+%s\nplays %s!\fImport %s\nto see them here.|%s juega\na %s.\fImporta %s\npara verlo aquí.|%s joue à\n%s.\fImporte %s\npour le voir ici.|%s gioca a\n%s.\fImporta %s\nper vederlo qui.
+Linking to the\nUNION ROOM…|Conectando a la\nSALA UNIÓN...|Connexion à la\nSALLE UNION...|Connessione alla\nSALA CONTATTO...
+No link could be\nmade.\fNo other TRAINERS\nare here for now.|No hay conexión.\fNo hay otros\nENTRENADORES aquí.|Connexion échouée.\fAucun autre\nDRESSEUR ici.|Connessione non\nriuscita.\fNessun altro\nALLENATORE qui.
+The UNION ROOM\nlink is too old.\fNo other TRAINERS\nare here for now.|El servidor de la\nSALA UNIÓN es viejo.\fNo hay otros\nENTRENADORES aquí.|Serveur de SALLE\nUNION trop ancien.\fAucun autre\nDRESSEUR ici.|Server della SALA\nCONTATTO obsoleto.\fNessun altro\nALLENATORE qui.
+This game is too\nold to link up.\fUpdate it to meet\nother TRAINERS.|Actualiza el juego\npara conectarte\fy conocer a otros\nENTRENADORES.|Mets le jeu à jour\npour te connecter\fet rencontrer\nd'autres DRESSEURS.|Aggiorna il gioco\nper connetterti\fe incontrare altri\nALLENATORI.
+The UNION ROOM\ncouldn't be used.\fNo other TRAINERS\nare here for now.|No se pudo entrar\nen la SALA UNIÓN.\fNo hay otros\nENTRENADORES aquí.|SALLE UNION\nindisponible.\fAucun autre\nDRESSEUR ici.|SALA CONTATTO\nnon disponibile.\fNessun altro\nALLENATORE qui.
+The link was lost.\nReconnecting…|Conexión perdida.\nReconectando...|Connexion perdue.\nReconnexion...|Connessione persa.\nRiconnessione...
+The link couldn't\nbe made again.\fNo other TRAINERS\nare here for now.|No hay conexión\nde nuevo.\fNo hay otros\nENTRENADORES aquí.|Reconnexion\nimpossible.\fAucun autre\nDRESSEUR ici.|Riconnessione\nnon riuscita.\fNessun altro\nALLENATORE qui.
+With %s,\nwhat'll you do?|Con %s,\n¿qué quieres hacer?|Avec %s,\nque veux-tu faire ?|Con %s,\ncosa vuoi fare?
+%s is\nbusy right now.|%s está\nocupado ahora.|%s est\noccupé en ce moment.|%s è\noccupato adesso.
+%s said no.|%s dijo que no.|%s a dit non.|%s ha detto di no.
+%s didn't\nanswer.|%s no\nrespondió.|%s n'a\npas répondu.|%s non ha\nrisposto.
+%s left the\nUNION ROOM.|%s salió de\nla SALA UNIÓN.|%s a quitté\nla SALLE UNION.|%s ha lasciato\nla SALA CONTATTO.
+%s can't do\nthat right now.|%s no puede\nhacer eso ahora.|%s ne peut\npas faire ça.|%s non può\nfarlo adesso.
+%s wants\nto battle. OK?|%s quiere\ncombatir. ¿Vale?|%s veut\ncombattre. OK ?|%s vuole\nlottare. OK?
+%s wants\nto trade. OK?|%s quiere\nun cambio. ¿Vale?|%s veut\néchanger. OK ?|%s vuole uno\nscambio. OK?
+Getting ready to\nbattle %s…|Preparando el\ncombate con %s...|Préparation du\ncombat: %s...|Preparazione alla\nlotta con %s...
+Getting ready to\ntrade with %s…|Preparando el\ncambio con %s...|Préparation de\nl'échange: %s...|Preparazione allo\nscambio con %s...
+%s cancelled.|%s canceló.|%s a annulé.|%s ha annullato.
+%s is playing\n%s.\fImport %s\nto see them here.|%s juega\na %s.\fImporta %s\npara verlo aquí.|%s joue à\n%s.\fImporte %s\npour le voir ici.|%s gioca a\n%s.\fImporta %s\nper vederlo qui.
+Connecting to the\nUNION ROOM…|Conectando a la\nSALA UNIÓN...|Connexion à la\nSALLE UNION...|Connessione alla\nSALA CONTATTO...
+Couldn't connect.\fNo other trainers\ncan be seen now.|Conexión fallida.\fNo se ven otros\nentrenadores.|Connexion échouée.\fAucun autre\ndresseur visible.|Connessione non\nriuscita.\fNessun altro\nallenatore visibile.
+The UNION ROOM\nserver is too old.\fNo other trainers\ncan be seen now.|El servidor de la\nSALA UNIÓN es viejo.\fNo se ven otros\nentrenadores.|Serveur de SALLE\nUNION trop ancien.\fAucun autre\ndresseur visible.|Server della SALA\nCONTATTO obsoleto.\fNessun altro\nallenatore visibile.
+This game is too\nold to link up.\fUpdate it to meet\nother trainers.|Actualiza el juego\npara conectarte\fy conocer a otros\nentrenadores.|Mets le jeu à jour\npour te connecter\fet rencontrer\nd'autres dresseurs.|Aggiorna il gioco\nper connetterti\fe incontrare altri\nallenatori.
+Couldn't enter\nthe UNION ROOM.\fNo other trainers\ncan be seen now.|No se pudo entrar\nen la SALA UNIÓN.\fNo se ven otros\nentrenadores.|SALLE UNION\nindisponible.\fAucun autre\ndresseur visible.|SALA CONTATTO\nnon disponibile.\fNessun altro\nallenatore visibile.
+Couldn't link up\nagain.\fNo other trainers\ncan be seen now.|Reconexión\nfallida.\fNo se ven otros\nentrenadores.|Reconnexion\nimpossible.\fAucun autre\ndresseur visible.|Riconnessione\nnon riuscita.\fNessun altro\nallenatore visibile.
+Your games can't\nlink up for this.|Los juegos no son\ncompatibles aquí.|Vos jeux sont\nincompatibles ici.|I giochi non sono\ncompatibili qui.
+lower case|minúsculas|minuscules|minuscole
+UPPER CASE|MAYÚSCULAS|MAJUSCULES|MAIUSCOLE
+%s\nflew up high!|¡%s\nvoló muy alto!|%s\ns'envole !|%s\nvola in alto!
+%s\ndug a hole!|¡%s\ncavó un hoyo!|%s\ncreuse un trou !|%s\nscava una fossa!
+%s\nmade a whirlwind!|¡%s\ncreó un torbellino!|%s\ncrée un tourbillon !|%s\ncrea un vortice!
+%s\ntook in sunlight!|¡%s\nabsorbió luz solar!|%s\nabsorbe le soleil !|%s\nassorbe la luce!
+%s\nlowered its head!|¡%s\nbajó la cabeza!|%s\nbaisse la tête !|%s\nabbassa la testa!
+%s\nis glowing!|¡%s\nestá brillando!|%s\nrayonne !|%s\nsi illumina!
+Enemy %s|%s enemigo|%s ennemi|%s nemico
+%s wants\nto fight!|¡%s quiere\ncombatir!|%s veut\ncombattre !|%s vuole\nlottare!
+SILPH SCOPE\nunveiled the\vGHOST's identity!|¡El SCOPE SILPH\nreveló al\vFANTASMA!|Le SCOPE SYLPHE\na révélé le\vSPECTRE !|La SPETTROSONDA\nha rivelato lo\vSPETTRO!
+Do it! %s!|¡Adelante, %s!|Vas-y, %s !|Forza, %s!
+Get'm! %s!|¡A por él, %s!|Attrape-le, %s !|Prendilo, %s!
+FOE|RIVAL|ENNEMI|NEMICO
+POKé BALL|POKé BALL|POKé BALL|POKé BALL
+GHOST: Get out...\nGet out...|FANTASMA: Fuera...\nFuera...|SPECTRE: Va-t'en...\nVa-t'en...|SPETTRO: Via...\nVa' via...
+%s\nis charging up!|¡%s\nestá cargando!|%s\nse charge !|%s\nsi sta caricando!
+%s gained\n%d EXP. Points!|¡%s ganó\n%d puntos EXP!|%s gagne\n%d points EXP !|%s riceve\n%d punti ESP!
+%s gained\nwith EXP.ALL,\v%d EXP. Points!|¡%s ganó\ncon REPARTIR EXP\v%d puntos EXP!|%s gagne\navec MULTI EXP\v%d points EXP !|%s riceve con\nCONDIVIDI ESP\v%d punti ESP!
+%s gained\na boosted\v%d EXP. Points!|¡%s ganó\nuna bonificación:\v%d puntos EXP!|%s reçoit\nun bonus:\v%d points EXP !|%s riceve\nun bonus di\v%d punti ESP!
+%s grew\nto level %d!|¡%s subió\nal nivel %d!|%s monte\nau niveau %d !|%s sale\nal livello %d!
+%s is\nabout to use\v%s!|¡%s va\na enviar a\v%s!|%s va\nenvoyer\v%s !|%s sta\nper mandare\v%s!
+Will %s\nchange POKéMON?|¿Cambiará %s\nde POKéMON?|%s va-t-il\nchanger de POKéMON ?|%s cambia\nPOKéMON?
+{RIVAL}: Yeah! Am\nI great or what?|{RIVAL}: ¡Sí!\n¡Soy el mejor!|{RIVAL}: Ouais !\nJe suis le meilleur !|{RIVAL}: Sì!\nSono il migliore!
+%s is out of\nuseable POKéMON!|¡A %s no le\nquedan POKéMON!|%s n'a plus\nde POKéMON valides !|%s non ha più\nPOKéMON in forma!
+%s blacked\nout!|¡%s se\ndesmayó!|%s est\nhors-jeu !|%s è\nfuori gioco!
+%s used\nSAFARI BALL!|¡%s usó\nSAFARI BALL!|%s lance\nune SAFARI BALL !|%s usa\nuna SAFARI BALL!
+No! There's no\nrunning from a\vtrainer battle!|¡No puedes huir\nde un combate\vcontra entrenadores!|Impossible de fuir\nun combat contre\vun DRESSEUR !|Non puoi fuggire\nda una lotta con\vun ALLENATORE!
+You missed the\nPOKéMON!|¡No acertaste\nal POKéMON!|Tu as raté\nle POKéMON !|Hai mancato\nil POKéMON!
+Darn! The POKéMON\nbroke free!|¡El POKéMON\nse escapó!|Zut ! Le POKéMON\ns'est échappé !|Il POKéMON\nè scappato!
+But every BOX\nis full!|¡Todas las CAJAS\nestán llenas!|Toutes les BOITES\nsont pleines !|Tutti i BOX\nsono pieni!
+BAIT|CEBO|APPAT|ESCA
+THROW ROCK|TIRAR PIEDRA|JETER PIERRE|LANCIA SASSO
+disabled!|¡anulado!|entravée !|bloccata!
+WHICH TECHNIQUE?|¿QUÉ MOVIMIENTO?|QUELLE CAPACITE ?|QUALE MOSSA?
+%s\nwas afflicted\nby %s!|¡%s\nsufre\n%s!|%s\nsubit\n%s !|%s\nsubisce\n%s!
+EVADE|EVASIÓN|ESQUIVE|ELUSIONE
+%s's\n%s\ngreatly rose!|%s:\n¡%s\nsubió mucho!|%s:\n%s\nmonte beaucoup !|%s:\n%s\nsale molto!
+%s's\n%s rose!|%s:\n¡%s subió!|%s:\n%s monte !|%s:\n%s sale!
+%s's\n%s fell!|%s:\n¡%s bajó!|%s:\n%s baisse !|%s:\n%s scende!
+%s's\n%s\ngreatly fell!|%s:\n¡%s\nbajó mucho!|%s:\n%s\nbaisse beaucoup !|%s:\n%s\nscende molto!
+Sucked health from\n%s!|¡Absorbió salud de\n%s!|Absorbe la santé de\n%s !|Assorbe salute da\n%s!
+%s's\ndream was eaten!|¡El sueño de\n%s fue devorado!|Le rêve de\n%s est dévoré !|Il sogno di\n%s è divorato!
+What will|¿Qué hará|Que va faire|Cosa farà
+ do?| ?| ?| ?
+%s's\nhurt by poison!|¡El veneno hiere\na %s!|Le poison blesse\n%s !|Il veleno ferisce\n%s!
+%s's\nhurt by the burn!|¡La quemadura hiere\na %s!|La brûlure blesse\n%s !|La scottatura ferisce\n%s!
+Hello there!\nWelcome to the\vworld of POKéMON!\fMy name is OAK!\nPeople call me\vthe POKéMON PROF!|¡Hola!\n¡Bienvenido al\vmundo POKéMON!\f¡Me llamo OAK!\nMe llaman el\vPROF. POKéMON.|Bonjour !\nBienvenue dans le\vmonde des POKéMON !\fJe m'appelle CHEN !\nOn me surnomme le\vPROF. POKéMON.|Ciao!\nBenvenuto nel\vmondo dei POKéMON!\fMi chiamo OAK!\nMi chiamano il\vPROF. POKéMON.
+This world is\ninhabited by\vcreatures called\vPOKéMON!|¡En este mundo\nviven criaturas\vllamadas\vPOKéMON!|Ce monde est\npeuplé de\vcréatures nommées\vPOKéMON !|Questo mondo è\nabitato da\vcreature chiamate\vPOKéMON!
+\fFor some people,\nPOKéMON are\vpets. Others use\vthem for fights.\fMyself...\fI study POKéMON\nas a profession.|\fAlgunos crían\na los POKéMON\vcomo mascotas.\vOtros combaten.\fYo...\fLos estudio\ncomo profesión.|\fCertains élèvent\nles POKéMON.\vD'autres les font\vcombattre.\fQuant à moi...\fJe les étudie\npar profession.|\fAlcuni allevano\ni POKéMON. Altri\vli usano nelle\vlotte.\fIo...\fLi studio\nper professione.
+{PLAYER}!\fYour very own\nPOKéMON legend is\vabout to unfold!\fA world of dreams\nand adventures\vwith POKéMON\vawaits! Let's go!|¡{PLAYER}!\fTu propia leyenda\nPOKéMON está\va punto de empezar.\f¡Te esperan sueños\ny aventuras\vcon los POKéMON!\v¡Vamos!|{PLAYER} !\fTa propre légende\nPOKéMON va\vcommencer !\fUn monde de rêves\net d'aventures\vavec les POKéMON\vt'attend ! Allons-y !|{PLAYER}!\fLa tua leggenda\nPOKéMON sta\vper iniziare!\fUn mondo di sogni\ne avventure con\vi POKéMON ti\vaspetta! Andiamo!
+This is my grand-\nson. He's been\vyour rival since\vyou were a baby.\f...Erm, what is\nhis name again?|Este es mi nieto.\nSois rivales\vdesde que erais\vpequeños.\f... ¿Cómo se\nllamaba?|Voici mon petit-\nfils. Il est\vton rival depuis\vtoujours.\f... Comment\ns'appelle-t-il déjà ?|Questo è mio\nnipote. È il tuo\vrivale fin da\vquando eri piccolo.\f... Come si\nchiama, già?
+That's right! I\nremember now! His\vname is {RIVAL}!|¡Ya me acuerdo!\n¡Se llama\v{RIVAL}!|Ah oui ! Il\ns'appelle\v{RIVAL} !|Ora ricordo!\nSi chiama\v{RIVAL}!
+%s is\ntaken out.\vGot %s.|Sacaste a\n%s.\vRecibiste %s.|%s est\nretiré.\vTu reçois %s.|%s è\nstato ritirato.\vRicevi %s.
+When you change a\nPOKéMON BOX, data\vwill be saved.\fIs that okay?|Al cambiar de\nCAJA POKéMON,\vse guardará.\f¿De acuerdo?|Changer de BOITE\nPOKéMON demande\vune sauvegarde.\fD'accord ?|Cambiando BOX\nPOKéMON, i dati\vsaranno salvati.\fVa bene?
+Something broke\nduring the link.|Error durante\nla conexión.|Erreur pendant\nla connexion.|Errore durante\nla connessione.
+The link was\nbroken.|Se cortó\nla conexión.|La connexion\na été coupée.|La connessione\nsi è interrotta.
+%s\ndid not learn\v%s.|%s\nno aprendió\v%s.|%s\nn'a pas appris\v%s.|%s\nnon ha imparato\v%s.
+%s is\ntrying to learn\v%s.\fBut %s\ncan't learn more\vthan four moves.\fDelete an older\nmove to make room\vfor %s?|¡%s quiere\naprender\v%s!\fPero %s solo\npuede conocer\vcuatro movimientos.\f¿Olvidará uno\npara aprender\v%s?|%s veut\napprendre\v%s !\fMais %s ne\npeut connaître que\vquatre capacités.\fEn oublier une\npour apprendre\v%s ?|%s vuole\nimparare\v%s!\fMa %s può\nconoscere solo\vquattro mosse.\fNe scorda una\nper imparare\v%s?
+1, 2 and…\001 Poof!\001\f%s forgot\n%s.\fAnd…\f%s learned\n%s!|1, 2 y...\001 ¡Puf!\001\f%s olvidó\n%s.\fY...\f¡%s aprendió\n%s!|1, 2 et...\001 Pouf !\001\f%s oublie\n%s.\fEt...\f%s apprend\n%s !|1, 2 e...\001 Puf!\001\f%s scorda\n%s.\fE...\f%s impara\n%s!
+An item in your\nPACK may be\fregistered for use\non SELECT Button.|Puedes registrar\nun objeto de la\fMOCHILA para usar\ncon el botón SELECT.|Sélectionne un\nobjet du SAC pour\fl'utiliser avec\nle bouton SELECT.|Puoi assegnare\nuno strumento\fdello ZAINO al\ntasto SELECT.
+OAK: {PLAYER}!\nThis isn't the\vtime to use that!|OAK: ¡{PLAYER}!\n¡Ahora no puedes\vusar eso!|CHEN: {PLAYER} !\nCe n'est pas le\vmoment !|OAK: {PLAYER}!\nNon è il momento\vdi usarlo!
+The REPEL used\nearlier is still\vin effect.|El REPELENTE\nque usaste sigue\vactivo.|Le REPOUSSE\nutilisé fait\vencore effet.|Il REPELLENTE\nusato prima fa\vancora effetto.
+There was a trophy\ninside!\fThe trophy was\nsent home.|¡Había un trofeo\ndentro!\fEl trofeo fue\nenviado a casa.|Un trophée\nà l'intérieur !\fLe trophée a été\nenvoyé chez toi.|Dentro c'era\nun trofeo!\fIl trofeo è stato\nspedito a casa.
+In the launcher|En el lanzador|Dans le lanceur|Nel launcher
+Waiting in a lobby|Esperando en una sala|En attente dans un salon|In attesa in una sala
+Browsing the online lobby|En el vestíbulo en línea|Dans le salon en ligne|Nella sala online
+In battle|En combate|En combat|In lotta
+Wild battle|Combate salvaje|Combat sauvage|Lotta selvatica
+Trainer battle|Combate de entrenadores|Combat de DRESSEURS|Lotta con ALLENATORE
+Link battle|Combate por conexión|Combat en connexion|Lotta in connessione
+Title screen|Pantalla inicial|Ecran titre|Schermata titolo
+Saved to\n%s.|Guardado en\n%s.|Sauvé dans\n%s.|Salvato in\n%s.
+Saved as\n%s\vin the save\nfolder.|Guardado como\n%s\ven la carpeta\nde guardado.|Sauvé sous\n%s\vdans le dossier\nde sauvegarde.|Salvato come\n%s\vnella cartella\ndei salvataggi.
+Level %d|Nivel %d|Niveau %d|Livello %d
+A blinding FLASH\nlights the area!|¡DESTELLO\nilumina la zona!|Un FLASH éclaire\nla zone !|Un FLASH illumina\nla zona!
+{RAM:wNameBuffer} used\nSTRENGTH.|{RAM:wNameBuffer} usó\nFUERZA.|{RAM:wNameBuffer} utilise\nFORCE.|{RAM:wNameBuffer} usa\nFORZA.
+{RAM:wNameBuffer} can\nmove boulders.|{RAM:wNameBuffer} puede\nmover rocas.|{RAM:wNameBuffer} peut\ndéplacer des rochers.|{RAM:wNameBuffer} può\nspostare i massi.
+Crammed full of\nPOKéMON books!|¡Libros sobre\nPOKéMON por doquier!|Plein de livres\nsur les POKéMON !|Pieno di libri\nsui POKéMON!
+There's a slew of\nPOKéMON stuff!|¡Un montón de\ncosas de POKéMON!|Plein de choses\nsur les POKéMON !|Tante cose\nsui POKéMON!
+An elevator!|¡Un ascensor!|Un ascenseur !|Un ascensore!
+POKéMON LEAGUE HQ|SEDE LIGA POKéMON|QG LIGUE POKéMON|SEDE LEGA POKéMON
+%s found\n%d coins!|¡%s encontró\n%d fichas!|%s trouve\n%d jetons !|%s trova\n%d gettoni!
+{RAM}\nPOKéMON GYM\nLEADER: {RAM}|{RAM}\nGIMNASIO POKéMON\nLÍDER: {RAM}|{RAM}\nARENE POKéMON\nCHAMPION: {RAM}|{RAM}\nPALESTRA POKéMON\nCAPO: {RAM}
+Bingo!|¡Bingo!|Bingo !|Bingo!
+Hey! There's a\nswitch under the\ntrash!\fThe 1st electric\nlock opened!|¡Hay un botón\nbajo la basura!\n¡La primera\fcerradura\neléctrica se abrió!|Un bouton sous\nles ordures !\nLa première\fserrure électrique\ns'est ouverte !|Un pulsante sotto\ni rifiuti!\nLa prima\fserratura elettrica\nsi è aperta!
+The 2nd electric\nlock opened!\fThe motorized door\nopened!|¡Se abrió la otra\ncerradura eléctrica!\f¡La puerta\nse abrió!|La deuxième serrure\ns'est ouverte !\fLa porte\ns'est ouverte !|La seconda serratura\nsi è aperta!\fLa porta\nsi è aperta!
+Nope! There's\nonly trash here.\fHey! The electric\nlocks were reset!|No, solo hay\nbasura...\f¡Las cerraduras\nvuelven a cerrarse!|Non, juste\ndes ordures...\fLes serrures se\nsont refermées !|No, solo\nrifiuti...\fLe serrature si\nsono richiuse!
+{PLAYER} initiated\nTELEPORTER's Cell\nSeparator!|¡{PLAYER} activó\nel separador\ncelular!|{PLAYER} active\nle séparateur\ncellulaire !|{PLAYER} attiva\nil separatore\ncellulare!
+BILL's favorite\nPOKéMON list!|¡Los POKéMON\nfavoritos de BILL!|Les POKéMON\nfavoris de LEO !|I POKéMON\npreferiti di BILL!
+{PLAYER} got on\n{RAM:wNameBuffer}!|¡{PLAYER} montó en\n{RAM:wNameBuffer}!|{PLAYER} monte sur\n{RAM:wNameBuffer} !|{PLAYER} sale su\n{RAM:wNameBuffer}!
+{RAM:wNameBuffer} hacked\naway with CUT!|¡{RAM:wNameBuffer} usó\nCORTE!|{RAM:wNameBuffer} utilise\nCOUPE !|{RAM:wNameBuffer} usa\nTAGLIO!
+Gyaoo!|¡Gyaoo!|Gyaoo !|Gyaoo!
+<PK><MN>LEAGUE|LIGA <PK><MN>|LIGUE <PK><MN>|LEGA <PK><MN>
+Accessed PROF.\nOAK's PC.\fAccessed POKéDEX\nRating System.|Accediste al PC\ndel PROF. OAK.\fEvaluación del\nPOKéDEX abierta.|Connexion au PC\ndu PROF. CHEN.\fBilan du\nPOKéDEX ouvert.|Accesso al PC\ndel PROF. OAK.\fGiudizio del\nPOKéDEX aperto.
+Want to get your\nPOKéDEX rated?|¿Quieres evaluar\ntu POKéDEX?|Faire le bilan\nde ton POKéDEX ?|Vuoi un giudizio\nsul tuo POKéDEX?
+Closed link to\nPROF.OAK's PC.|Se cerró el PC\ndel PROF. OAK.|Déconnexion du PC\ndu PROF. CHEN.|Chiuso il PC\ndel PROF. OAK.
+POKéDEX comp-\nletion is:\f{NUM:hDexRatingNumMonsSeen} POKéMON seen\n{NUM:hDexRatingNumMonsOwned} POKéMON owned\fPROF.OAK's\nRating:|Estado del\nPOKéDEX:\f{NUM:hDexRatingNumMonsSeen} POKéMON vistos\n{NUM:hDexRatingNumMonsOwned} POKéMON tuyos\fEvaluación del\nPROF. OAK:|Bilan du\nPOKéDEX:\f{NUM:hDexRatingNumMonsSeen} POKéMON vus\n{NUM:hDexRatingNumMonsOwned} POKéMON pris\fAvis du\nPROF. CHEN:|Stato del\nPOKéDEX:\f{NUM:hDexRatingNumMonsSeen} POKéMON visti\n{NUM:hDexRatingNumMonsOwned} POKéMON presi\fGiudizio del\nPROF. OAK:
+PIKACHU looks\ncontent.|PIKACHU parece\ncontento.|PIKACHU semble\ncontent.|PIKACHU sembra\ncontento.
+Welcome to our\nPOKéMON CENTER!|¡Bienvenido al\nCENTRO POKéMON!|Bienvenue au\nCENTRE POKéMON !|Benvenuto al\nCENTRO POKéMON!
+Shall we heal your\nPOKéMON?|¿Curamos a tus\nPOKéMON?|Soigner tes\nPOKéMON ?|Vuoi curare i\ntuoi POKéMON?
+OK. We'll need\nyour POKéMON.|Bien. Danos tus\nPOKéMON.|Bien. Confie-nous\ntes POKéMON.|Bene. Affidaci\ni tuoi POKéMON.
+HEAL|CURAR|SOIGNER|CURA
+Your POKéMON are\nfighting fit!|¡Tus POKéMON\nestán sanos!|Tes POKéMON sont\nen pleine forme !|I tuoi POKéMON\nsono in forma!
+I like shorts!\nThey're comfy and\neasy to wear!|¡Me gustan los\npantalones cortos!\n¡Son tan cómodos!|J'aime les shorts !\nIls sont tellement\nconfortables !|Adoro i calzoncini!\nSono così comodi\ne facili da portare!
+%s received\nthe %s!|¡%s recibió\n%s!|%s reçoit\n%s !|%s riceve\n%s!
+%s received\n%s!|¡%s recibió\n%s!|%s reçoit\n%s !|%s riceve\n%s!
+Go right ahead!|¡Adelante!|Vas-y !|Vai pure!
+You don't have the\nBOULDERBADGE yet!|¡No tienes la\nMEDALLA ROCA!|Tu n'as pas le\nBADGE ROCHE !|Non hai la\nMEDAGLIA SASSO!
+Oh! That is the\n{RAM}!|¡Oh! ¡Es\n{RAM}!|Oh ! C'est\n{RAM} !|Oh! È\n{RAM}!
+You don't have the\n{RAM} yet!|¡Aún no tienes\n{RAM}!|Tu n'as pas encore\n{RAM} !|Non hai ancora\n{RAM}!
+You need a\nBICYCLE for the\nCycling Road!|¡Necesitas una\nBICI para ir por\nel CAMINO de BICI!|Il faut une\nBICYCLETTE pour\nla PISTE CYCLABLE !|Serve una BICI\nper la\nPISTA CICLABILE!
+ [%s %s.%s]| [%s %s.%s]| [%s %s.%s]| [%s %s.%s]
+You can't carry\nany more items!|¡No puedes llevar\nmás objetos!|Tu ne peux plus\nporter d'objets !|Non puoi portare\naltri strumenti!
+{PLAYER} got\n%s!|¡{PLAYER} recibió\n%s!|{PLAYER} reçoit\n%s !|{PLAYER} riceve\n%s!
+Do you want to\ngive a nickname\nto %s?|¿Quieres poner\nun mote a\n%s?|Veux-tu donner\nun surnom à\n%s ?|Vuoi dare un\nsoprannome a\n%s?
+There's no more\nroom for POKéMON!\v%s was\vsent to POKéMON\vBOX %s on PC!|¡No caben más\nPOKéMON!\v¡%s fue\venviado a la\vCAJA %s del PC!|Plus de place\npour les POKéMON !\v%s est\venvoyé dans la\vBOITE %s du PC !|Non c'è posto\nper altri POKéMON!\v%s è\vinviato al\vBOX %s del PC!
+Link battle needs\nthe same version\nand mods.|La conexión exige\nla misma versión\ny las mismas mods.|La connexion exige\nla même version\net les mêmes mods.|La connessione\nrichiede versioni\ne mod uguali.
+Your %s can't\nbattle on the\nother game.|Tu %s no puede\ncombatir en el\notro juego.|Ton %s ne peut\npas combattre dans\nl'autre jeu.|Il tuo %s non\npuò lottare\nnell'altro gioco.
+Their %s isn't\nin this game.\n(%s)|Su %s no está\nen este juego.\n(%s)|Son %s n'est\npas dans ce jeu.\n(%s)|Il suo %s non è\nin questo gioco.\n(%s)
+%s sent\nout %s!|¡%s envió\na %s!|%s envoie\n%s !|%s manda\n%s!
+There's no will\nto fight!|¡No puede\ncombatir!|Il ne peut\npas combattre !|Non può\nlottare!
+Link desync!\n%s differs.\fAre both games\nthe same version\nand mods?|¡Desincronización!\n%s difiere.\f¿Tenéis la misma\nversión y mods?|Désynchronisation !\n%s diffère.\fMême version et\nmêmes mods ?|Desincronizzazione!\n%s differisce.\fStesse versioni\ne stesse mod?
+%s is\nalready out!|¡%s ya\nestá luchando!|%s est déjà\nau combat !|%s è\ngià in campo!
+%s ran out of\ntime!|¡Se acabó el\ntiempo de %s!|%s n'a plus\nde temps !|%s ha finito\nil tempo!
+%s left the\nbattle.|%s salió\ndel combate.|%s a quitté\nle combat.|%s ha lasciato\nla lotta.
+Time's up! You\nforfeit the match.|¡Tiempo agotado!\nPierdes el combate.|Temps écoulé !\nTu perds le match.|Tempo scaduto!\nPerdi la lotta.
+%s's %s can't\nbattle on this\ngame.|%s: su %s no\npuede combatir\nen este juego.|%s: son %s ne\npeut pas combattre\ndans ce jeu.|%s: il suo %s\nnon può lottare\nin questo gioco.
+%s's %s can't\nbattle on this\ngame.\n(%s)|%s: su %s no\npuede combatir\nen este juego.\n(%s)|%s: son %s ne\npeut pas combattre\ndans ce jeu.\n(%s)|%s: il suo %s\nnon può lottare\nin questo gioco.\n(%s)
+%s vs %s!|¡%s contra %s!|%s contre %s !|%s contro %s!
+%s is out of\nPOKéMON!\f%s wins!|¡A %s no le\nquedan POKéMON!\f¡%s gana!|%s n'a plus\nde POKéMON !\f%s gagne !|%s non ha più\nPOKéMON!\f%s vince!
+can't reach relay %s:%d\n(%s)|Sin acceso al relé %s:%d\n(%s)|Relais inaccessible %s:%d\n(%s)|Relè irraggiungibile %s:%d\n(%s)
+The other side\nsent bad data.|El otro lado\nenvió datos erróneos.|L'autre joueur a\nenvoyé des données erronées.|L'altro giocatore\nha inviato dati errati.
+The relay stopped\nanswering.|El relé dejó\nde responder.|Le relais ne\nrépond plus.|Il relè non\nrisponde più.
+no answer from\n%s|Sin respuesta de\n%s|Pas de réponse de\n%s|Nessuna risposta da\n%s
+Items can't be used in a link battle!|¡No puedes usar objetos en combates por conexión!|Pas d'objets en combat par connexion !|Non puoi usare strumenti in una lotta in connessione!
+No running from a link battle!|¡No puedes huir de combates por conexión!|Impossible de fuir un combat par connexion !|Non puoi fuggire da una lotta in connessione!
+Link desync! %s differs. Are both games the same version and mods?|¡Desincronización! %s difiere. ¿Tenéis la misma versión y mods?|Désynchronisation ! %s diffère. Même version et mêmes mods ?|Desincronizzazione! %s differisce. Stesse versioni e mod?
+%s ran from the battle!|¡%s huyó del combate!|%s a fui le combat !|%s è fuggito dalla lotta!
+%s left the battle.|%s salió del combate.|%s a quitté le combat.|%s ha lasciato la lotta.
+%s ran out of time!|¡Se acabó el tiempo de %s!|%s n'a plus de temps !|%s ha finito il tempo!
+Time's up! You forfeit the match.|¡Tiempo agotado! Pierdes el combate.|Temps écoulé ! Tu perds le match.|Tempo scaduto! Perdi la lotta.
+The match ended.|El combate ha terminado.|Le combat est terminé.|La lotta è finita.
+Link error:\n%s|Error de conexión:\n%s|Erreur de connexion:\n%s|Errore di connessione:\n%s
+Not an IP address.|No es una dirección IP.|Ce n'est pas une adresse IP.|Non è un indirizzo IP.
+Link battle\ncan't start.|El combate por\nconexión no se inicia.|Impossible de lancer\nle combat en connexion.|La lotta in\nconnessione non parte.
+The trade stopped:\n%s.|Se detuvo el cambio:\n%s.|L'échange s'arrête:\n%s.|Scambio interrotto:\n%s.
+The trade was\ncancelled.|Se canceló\nel intercambio.|L'échange a\nété annulé.|Lo scambio è\nstato annullato.
+HOST A GAME|CREAR PARTIDA|CREER PARTIE|CREA PARTITA
+JOIN A GAME|UNIRSE|REJOINDRE|UNISCITI
+UDP port %s|Puerto UDP %s|Port UDP %s|Porta UDP %s
+Friend joins at:|Tu amigo se une en:|Ton ami rejoint via:|L'amico si unisce a:
+Waiting for join...|Esperando al otro...|En attente d'un ami...|Attesa dell'amico...
+Port: %s|Puerto: %s|Port: %s|Porta: %s
+A: connect  B: back|A:CONECTAR B:ATRÁS|A:LIER B:RETOUR|A:CONNETTI B:INDIETRO
+Calling...|Llamando...|Appel...|Chiamata...
+LEVELS:|NIVELES:|NIVEAUX:|LIVELLI:
+A: continue  B: back|A:SEGUIR B:ATRÁS|A:SUITE B:RETOUR|A:AVANTI B:INDIETRO
+Checking the|Comprobando|Vérification de|Verifica
+other game...|el otro juego...|l'autre jeu...|dell'altro gioco...
+Waiting for the|Esperando a que|Attente du choix|Attesa della scelta
+host to choose...|el anfitrión elija...|de l'hôte...|dell'ospite...
+A: trade anyway|A:CAMBIAR IGUAL|A:ECHANGER QUAND MEME|A:SCAMBIA COMUNQUE
+Exchanging data...|Intercambiando datos...|Echange de données...|Scambio dei dati...
+%s's\n%s rose.|%s:\n%s subió.|%s:\n%s monte.|%s:\n%s sale.
+NO MODS INSTALLED|SIN MODS INSTALADAS|AUCUNE MOD INSTALLEE|NESSUNA MOD INSTALLATA
+SAVE CURRENT AS..|GUARDAR ACTUAL...|SAUVER PROFIL...|SALVA ATTUALE...
+EXPORT..|EXPORTAR...|EXPORTER...|ESPORTA...
+IMPORT..|IMPORTAR...|IMPORTER...|IMPORTA...
+OPTIONS..|OPCIONES...|OPTIONS...|OPZIONI...
+PERMISSIONS..|PERMISOS...|PERMISSIONS...|PERMESSI...
+DON'T TRY HERE|NO PROBAR AQUÍ|NE PAS TESTER ICI|NON PROVARE QUI
+TRY HERE ANYWAY|PROBAR IGUAL|TESTER QUAND MEME|PROVA COMUNQUE
+VIEW ERROR..|VER ERROR...|VOIR ERREUR...|VEDI ERRORE...
+CART SETS ORDER|ORDEN DEL CARTUCHO|ORDRE DU CARTOUCHE|ORDINE CARTUCCIA
+APPLY & RESTART|APLICAR Y REINICIAR|APPLIQUER/RELANCER|APPLICA E RIAVVIA
+DISCARD CHANGES|DESCARTAR CAMBIOS|ANNULER MODIFS|ANNULLA MODIFICHE
+DATA & API ONLY|SOLO DATOS Y API|DONNEES ET API|SOLO DATI E API
+DISABLE BOTH?|¿DESACTIVAR AMBAS?|DESACTIVER LES DEUX ?|DISATTIVI ENTRAMBE?
+PROFILE NAME?|¿NOMBRE PERFIL?|NOM DU PROFIL ?|NOME PROFILO?
+RENAME?|¿CAMBIAR NOMBRE?|RENOMMER ?|RINOMINI?
+RESET DEFAULTS|RESTABLECER|REINITIALISER|RIPRISTINA
+NO CHANGES|SIN CAMBIOS|AUCUN CHANGEMENT|NESSUNA MODIFICA
+A:OK|A:VALE|A:OK|A:OK
+B:DONE (NO RESTART)|B:SALIR SIN REINICIO|B:FIN SANS RELANCER|B:FINE SENZA RIAVVIO
+MOD MANAGER|GESTOR DE MODS|GESTION DES MODS|GESTIONE MOD
+%s downloads across all releases|%s descargas entre todas las versiones|%s téléchargements, toutes versions|%s download in tutte le versioni
+%s downloads|%s descargas|%s téléchargements|%s download
+%s recently|%s recientemente|%s récemment|%s di recente
+%s in the last %d days|%s en los últimos %d días|%s sur les %d derniers jours|%s negli ultimi %d giorni
+Updated %s|Actualizado %s|Mis à jour %s|Aggiornato %s
+Released %s|Publicado %s|Publié %s|Pubblicato %s
+Released %s  -  Updated %s|Publicado %s - Actualizado %s|Publié %s - Mis à jour %s|Pubblicato %s - Aggiornato %s
+Names are 3 to 16 characters.|Los nombres tienen entre 3 y 16 caracteres.|Les noms font de 3 à 16 caractères.|I nomi devono avere da 3 a 16 caratteri.
+Sign-in didn't work: %s|No se pudo iniciar sesión: %s|Echec de connexion: %s|Accesso non riuscito: %s
+The server kept your old name.|El servidor mantuvo tu nombre anterior.|Le serveur a gardé ton ancien nom.|Il server ha mantenuto il tuo vecchio nome.
+This build is too old for online play. Please update.|Esta versión es antigua para jugar en línea. Actualízala.|Cette version est trop ancienne pour jouer en ligne. Mets-la à jour.|Questa versione è troppo vecchia per giocare online. Aggiornala.
+That room wasn't found.|No se encontró esa sala.|Ce salon est introuvable.|Sala non trovata.
+That room is full.|Esa sala está llena.|Ce salon est plein.|La sala è piena.
+That room has expired.|Esa sala ha caducado.|Ce salon a expiré.|La sala è scaduta.
+Your game doesn't match the room.|Tu juego no coincide con el de la sala.|Ton jeu ne correspond pas au salon.|Il tuo gioco non corrisponde a quello della sala.
+Your team doesn't meet the room's rule.|Tu equipo no cumple la regla de la sala.|Ton équipe ne respecte pas la règle du salon.|La tua squadra non rispetta la regola della sala.
+That match is too far along to watch.|Ese combate está demasiado avanzado para observarlo.|Ce match est trop avancé pour le regarder.|La lotta è troppo avanzata per poterla guardare.
+The relay didn't accept your sign-in.|El relé rechazó tu inicio de sesión.|Le relais a refusé ta connexion.|Il relè ha rifiutato il tuo accesso.
+This relay isn't running online play.|Este relé no ofrece juego en línea.|Ce relais ne propose pas de jeu en ligne.|Questo relè non offre il gioco online.
+The relay forgot your session.|El relé perdió tu sesión.|Le relais a perdu ta session.|Il relè ha perso la tua sessione.
+You were away too long to rejoin.|Has tardado demasiado en volver.|Ton absence a été trop longue pour revenir.|Sei rimasto assente troppo a lungo per rientrare.
+You're already in a room.|Ya estás en una sala.|Tu es déjà dans un salon.|Sei già in una sala.
+That room has all the spectators it can take.|Esa sala no admite más espectadores.|Ce salon n'accepte plus de spectateurs.|La sala non accetta altri spettatori.
+The relay couldn't read your game's profile.|El relé no pudo leer el perfil de tu juego.|Le relais n'a pas pu lire le profil de ton jeu.|Il relè non ha potuto leggere il profilo del tuo gioco.
+The relay couldn't read your team.|El relé no pudo leer tu equipo.|Le relais n'a pas pu lire ton équipe.|Il relè non ha potuto leggere la tua squadra.
+That tournament wasn't found.|No se encontró ese torneo.|Ce tournoi est introuvable.|Torneo non trovato.
+That tournament has already started.|Ese torneo ya ha empezado.|Ce tournoi a déjà commencé.|Il torneo è già iniziato.
+That tournament is full.|Ese torneo está lleno.|Ce tournoi est complet.|Il torneo è al completo.
+Only the tournament's creator can do that.|Solo el creador del torneo puede hacer eso.|Seul le créateur du tournoi peut faire ça.|Solo il creatore del torneo può farlo.
+The PIN didn't match.|El PIN no coincide.|Le code PIN ne correspond pas.|Il PIN non corrisponde.
+That room needs a PIN.|Esa sala necesita un PIN.|Ce salon exige un code PIN.|La sala richiede un PIN.
+Too many tries. Please try again later.|Demasiados intentos. Prueba más tarde.|Trop de tentatives. Réessaie plus tard.|Troppi tentativi. Riprova più tardi.
+That room can't have that many players.|Esa sala no admite tantos jugadores.|Ce salon ne peut pas accueillir autant de joueurs.|La sala non può ospitare tanti giocatori.
+That room isn't taking that right now.|Esa sala no acepta eso ahora.|Ce salon n'accepte pas ça pour le moment.|La sala non accetta questa richiesta ora.
+That invite has expired.|Esa invitación ha caducado.|Cette invitation a expiré.|L'invito è scaduto.
+That tournament is private.|Ese torneo es privado.|Ce tournoi est privé.|Il torneo è privato.
+That group is gone.|Ese grupo ya no existe.|Ce groupe n'existe plus.|Il gruppo non esiste più.
+That group is full.|Ese grupo está lleno.|Ce groupe est complet.|Il gruppo è al completo.
+The group needs more members.|El grupo necesita más miembros.|Le groupe a besoin de membres supplémentaires.|Al gruppo servono altri membri.
+Only the group's leader can do that.|Solo el líder del grupo puede hacer eso.|Seul le chef du groupe peut faire ça.|Solo il capogruppo può farlo.
+You're already in a group.|Ya estás en un grupo.|Tu es déjà dans un groupe.|Sei già in un gruppo.
+That activity isn't available.|Esa actividad no está disponible.|Cette activité est indisponible.|L'attività non è disponibile.
+You're already waiting for a partner.|Ya estás esperando a un compañero.|Tu attends déjà un partenaire.|Sei già in attesa di un compagno.
+Too many requests. Please wait a moment.|Demasiadas solicitudes. Espera un momento.|Trop de demandes. Patiente un instant.|Troppe richieste. Attendi un momento.
+The relay couldn't read your trainer.|El relé no pudo leer tu entrenador.|Le relais n'a pas pu lire ton dresseur.|Il relè non ha potuto leggere il tuo allenatore.
+The relay couldn't read your game list.|El relé no pudo leer tu lista de juegos.|Le relais n'a pas pu lire ta liste de jeux.|Il relè non ha potuto leggere il tuo elenco di giochi.
+The host removed you from the room.|El anfitrión te expulsó de la sala.|L'hôte t'a exclu du salon.|L'ospite ti ha espulso dalla sala.
+The host closed the room.|El anfitrión cerró la sala.|L'hôte a fermé le salon.|L'ospite ha chiuso la sala.
+The room was closed for being idle.|La sala se cerró por inactividad.|Le salon a fermé pour inactivité.|La sala è stata chiusa per inattività.
+You fell too far behind to keep watching.|Te has quedado demasiado atrás para seguir observando.|Tu as pris trop de retard pour continuer à regarder.|Sei rimasto troppo indietro per continuare a guardare.
+The creator removed you from the tournament.|El creador te expulsó del torneo.|Le créateur t'a exclu du tournoi.|Il creatore ti ha espulso dal torneo.
+The creator closed the tournament.|El creador cerró el torneo.|Le créateur a fermé le tournoi.|Il creatore ha chiuso il torneo.
+The tournament was closed for being idle.|El torneo se cerró por inactividad.|Le tournoi a fermé pour inactivité.|Il torneo è stato chiuso per inattività.
+The invite was accepted.|Se aceptó la invitación.|L'invitation a été acceptée.|L'invito è stato accettato.
+The invite was declined.|Se rechazó la invitación.|L'invitation a été refusée.|L'invito è stato rifiutato.
+There was no answer.|No hubo respuesta.|Aucune réponse.|Nessuna risposta.
+That trainer appears to be busy.|Ese entrenador parece ocupado.|Ce dresseur semble occupé.|L'allenatore sembra occupato.
+That trainer isn't online.|Ese entrenador no está en línea.|Ce dresseur n'est pas en ligne.|L'allenatore non è online.
+You can't invite yourself.|No puedes invitarte a ti mismo.|Tu ne peux pas t'inviter toi-même.|Non puoi invitare te stesso.
+That trainer left.|Ese entrenador se fue.|Ce dresseur est parti.|L'allenatore è uscito.
+The other trainer left.|El otro entrenador se fue.|L'autre dresseur est parti.|L'altro allenatore è uscito.
+Too many invites. Please wait a moment.|Demasiadas invitaciones. Espera un momento.|Trop d'invitations. Patiente un instant.|Troppi inviti. Attendi un momento.
+Your games don't match.|Vuestros juegos no coinciden.|Vos jeux ne correspondent pas.|I vostri giochi non corrispondono.
+That room is gone.|Esa sala ya no existe.|Ce salon n'existe plus.|La sala non esiste più.
+That trainer isn't in this Union Room.|Ese entrenador no está en esta Sala Unión.|Ce dresseur n'est pas dans cette Salle Union.|L'allenatore non è in questa Sala Contatto.
+The tournament closed: %s|El torneo se cerró: %s|Le tournoi a fermé: %s|Torneo chiuso: %s
+The room closed: %s|La sala se cerró: %s|Le salon a fermé: %s|Sala chiusa: %s
+Couldn't join: %s|No se pudo entrar: %s|Impossible de rejoindre: %s|Impossibile entrare: %s
+Tries left: %d.|Intentos restantes: %d.|Essais restants: %d.|Tentativi rimasti: %d.
+Try again in %d min.|Reintenta en %d min.|Réessaie dans %d min.|Riprova tra %d min.
+The invite closed: %s|La invitación se cerró: %s|L'invitation a fermé: %s|Invito chiuso: %s
+Cancel|Cancelar|Annuler|Annulla
+Unknown|Desconocido|Inconnu|Sconosciuto
+Welcome to the\nTRADING BOARD.\fYou may register\nyour POKéMON and\voffer it up for\va trade.\fWould you like to\nregister one of\vyour POKéMON?|Bienvenido al\nTABLÓN DE CAMBIOS.\fPuedes registrar\nun POKéMON para\vofrecerlo en\vun intercambio.\f¿Quieres\nregistrar un\vPOKéMON?|Bienvenue au\nTABLEAU ECHANGES.\fTu peux inscrire\nun POKéMON pour\vle proposer en\véchange.\fVeux-tu inscrire\nun de tes\vPOKéMON ?|Benvenuto alla\nBACHECA SCAMBI.\fPuoi registrare\nun POKéMON e\voffrirlo per\vuno scambio.\fVuoi registrare\nun tuo\vPOKéMON?
+This TRADING BOARD\nis used for\voffering a POKéMON\vfor a trade.\fAll you need to do\nis register a\vPOKéMON for a\vtrade.\fAnother TRAINER\nmay offer a party\vPOKéMON in return\vfor the trade.|Este TABLÓN sirve\npara ofrecer un\vPOKéMON en\vintercambio.\fSolo tienes que\nregistrar un\vPOKéMON para\vintercambiarlo.\fOtro ENTRENADOR\npuede ofrecerte\vun POKéMON de\vsu equipo.|Ce TABLEAU sert\nà proposer un\vPOKéMON pour\vun échange.\fIl te suffit\nd'inscrire un\vPOKéMON à\véchanger.\fUn autre DRESSEUR\npeut proposer un\vPOKéMON de son\véquipe en retour.|Questa BACHECA\nserve a offrire\vun POKéMON per\vuno scambio.\fTi basta\nregistrare un\vPOKéMON per\vuno scambio.\fUn ALLENATORE\npuò offrirti un\vPOKéMON della\vsua squadra.
+Which of your\nparty POKéMON will\vyou offer in\vtrade?|¿Qué POKéMON de\ntu equipo quieres\vofrecer en\vintercambio?|Quel POKéMON de\nton équipe veux-tu\vproposer en\véchange ?|Quale POKéMON\ndella tua squadra\vvuoi offrire in\vscambio?
+Please choose the\ntype of POKéMON\vthat you would\vlike in the trade.|Elige el tipo\nde POKéMON que\vquieres recibir\ven el intercambio.|Choisis le type\nde POKéMON que\vtu souhaites\ven échange.|Scegli il tipo\ndi POKéMON che\vvuoi ricevere\vnello scambio.
+Registration has\nbeen canceled.|Se canceló\nel registro.|Inscription\nannulée.|Registrazione\nannullata.
+Registration has\nbeen completed.|Se completó\nel registro.|Inscription\nterminée.|Registrazione\ncompletata.
+Cancel the\nregistration of\vyour Lv.%s %s?|¿Cancelar el\nregistro de\vNv.%s %s?|Annuler\nl'inscription de\vNv.%s %s ?|Annulli la\nregistrazione di\vLv.%s %s?
+The registration\nhas been canceled.|El registro fue\ncancelado.|L'inscription\na été annulée.|La registrazione\nè stata annullata.
+%s checked the\nTRADING BOARD.|%s miró el\nTABLÓN DE CAMBIOS.|%s regarde le\nTABLEAU ECHANGES.|%s guarda la\nBACHECA SCAMBI.
+You don't have a\n%s-type POKéMON\vthat %s wants.|No tienes un\nPOKéMON de tipo %s\vque quiera %s.|Tu n'as pas le\nPOKéMON de type %s\vque veut %s.|Non hai un\nPOKéMON di tipo %s\vche %s vuole.
+Would you like to\nask %s to\vmake a trade?|¿Quieres pedirle\na %s\vun intercambio?|Veux-tu proposer\nun échange\và %s ?|Vuoi chiedere\na %s\vuno scambio?
+Mods that change link play are on, so this game can't go online.|Hay mods que alteran la conexión. Este juego no puede jugar en línea.|Des mods modifient la connexion. Ce jeu ne peut pas aller en ligne.|Alcune mod cambiano la connessione. Questo gioco non può andare online.
+Give a nickname to\n%s?|¿Poner un mote a\n%s?|Un surnom pour\n%s ?|Un soprannome per\n%s?
+%s grew to\nlevel %d!|¡%s subió\nal nivel %d!|%s monte\nau niveau %d !|%s sale\nal livello %d!
+%s's %s rose!|%s: ¡%s subió!|%s: %s monte !|%s: %s sale!
+%s's %s fell!|%s: ¡%s bajó!|%s: %s baisse !|%s: %s scende!
+%s made a whirlwind!|¡%s creó un torbellino!|%s crée un tourbillon !|%s crea un vortice!
+%s took in sunlight!|¡%s absorbió luz solar!|%s absorbe le soleil !|%s assorbe la luce!
+%s lowered its head!|¡%s bajó la cabeza!|%s baisse la tête !|%s abbassa la testa!
+%s is glowing!|¡%s está brillando!|%s rayonne !|%s si illumina!
+%s flew up high!|¡%s está cargando!|%s se charge !|%s si sta caricando!
+%s\nsent out\v%s!|¡%s envió\na %s!|%s envoie\n%s !|%s manda\n%s!
+There's no PP left\nfor this move!|¡No quedan PP para ese movimiento!|Plus de PP pour cette capacité !|Questa mossa non ha più PP!
+%s dug a hole!|¡%s\ncavó un hoyo!|%s\ncreuse un trou !|%s\nscava una fossa!
+%s gained a boosted %d EXP. Points!|¡%s ganó\nuna bonificación:\v%d puntos EXP!|%s reçoit\nun bonus:\v%d points EXP !|%s riceve\nun bonus di\v%d punti ESP!
+%s gained %d EXP. Points!|¡%s ganó\n%d puntos EXP!|%s gagne\n%d points EXP !|%s riceve\n%d punti ESP!
+%s grew to level %d!|¡%s subió\nal nivel %d!|%s monte\nau niveau %d !|%s sale\nal livello %d!
+%s learned %s!|¡%s aprendió\n%s!|%s apprend\n%s !|%s impara\n%s!
+%s did not learn %s.|%s\nno aprendió\v%s.|%s\nn'a pas appris\v%s.|%s\nnon ha imparato\v%s.
+No! There's no running from a trainer battle!|¡No puedes huir\nde un combate\vcontra entrenadores!|Impossible de fuir\nun combat contre\vun DRESSEUR !|Non puoi fuggire\nda una lotta con\vun ALLENATORE!
+{PLAYER} received\n%s.|{PLAYER} recibió\n%s.|{PLAYER} reçoit\n%s.|{PLAYER} riceve\n%s.
+{PLAYER} put the\n%s in\nthe %s.|{PLAYER} guardó\n%s en\n%s.|{PLAYER} range\n%s dans\n%s.|{PLAYER} mette\n%s in\n%s.
+The %s\nis full…|No cabe más en\n%s...|%s\nest plein...|%s\nè pieno...
+It's a fruit-\nbearing tree.|Es un árbol\ncon frutos.|C'est un arbre\nfruitier.|È un albero\nda frutto.
+There's nothing\nhere…|No hay nada\naquí...|Il n'y a rien\nici...|Non c'è nulla\nqui...
+Hey! It's\n%s!|¡Mira! ¡Es\n%s!|Oh ! C'est\n%s !|Oh! È\n%s!
+But the PACK is\nfull…|Pero la MOCHILA\nestá llena...|Mais le SAC\nest plein...|Ma lo ZAINO\nè pieno...
+Obtained\n%s!|¡Recibiste\n%s!|Tu reçois\n%s !|Ricevi\n%s!
+Give a nickname to\nthe {STRBUF} you\nreceived?|¿Poner un mote al\n{STRBUF} que\nrecibiste?|Un surnom pour\nle {STRBUF}\nreçu ?|Un soprannome per\nil {STRBUF}\nricevuto?
+Placing third was\n%s,\fwho caught a\n%s!|¡En tercer lugar,\n%s,\fque capturó\nun %s!|En troisième,\n%s,\fqui a capturé\nun %s !|Al terzo posto,\n%s,\fche ha catturato\nun %s!
+Placing second was\n%s,\fwho caught a\n%s!|¡En segundo lugar,\n%s,\fque capturó\nun %s!|En deuxième,\n%s,\fqui a capturé\nun %s !|Al secondo posto,\n%s,\fche ha catturato\nun %s!
+This Bug-Catching\nContest winner is\f%s,\nwho caught a\n%s!|¡El ganador del\nConcurso es\f%s,\nque capturó\nun %s!|Le vainqueur du\nConcours est\f%s,\nqui a capturé\nun %s !|Il vincitore\ndella Gara è\f%s,\nche ha catturato\nun %s!
+The score was\n%d points!|¡La puntuación\nfue de %d puntos!|Le score est de\n%d points !|Il punteggio è\ndi %d punti!
+The winning score\nwas %d points!|¡El ganador obtuvo\n%d puntos!|Le vainqueur a\n%d points !|Il vincitore ha\n%d punti!
+It's {STRBUF}\nthat was left with\nthe DAY-CARE MAN.|Es {STRBUF},\nque dejaste en\nla GUARDERÍA.|C'est {STRBUF},\nlaissé à la\nPENSION.|È {STRBUF},\nlasciato al\nSIGNORE PENSIONE.
+It's {STRBUF}\nthat was left with\nthe DAY-CARE LADY.|Es {STRBUF},\nque dejaste en\nla GUARDERÍA.|C'est {STRBUF},\nlaissé à la\nPENSION.|È {STRBUF},\nlasciato alla\nSIGNORA PENSIONE.
+It's brimming with\nenergy.|Está lleno de\nenergía.|Il déborde\nd'énergie.|È pieno\ndi energia.
+It has no interest\nin {STRBUF}.|No le interesa\n{STRBUF}.|Il ne s'intéresse\npas à {STRBUF}.|Non si interessa\na {STRBUF}.
+It appears to care\nfor {STRBUF}.|Parece que quiere\na {STRBUF}.|Il semble tenir\nà {STRBUF}.|Sembra tenere\na {STRBUF}.
+It's friendly with\n{STRBUF}.|Se lleva bien con\n{STRBUF}.|Il s'entend bien\navec {STRBUF}.|Va d'accordo con\n{STRBUF}.
+It shows interest\nin {STRBUF}.|Se interesa por\n{STRBUF}.|Il s'intéresse\nà {STRBUF}.|Si interessa\na {STRBUF}.
+Um… Oh, yes, I'm\nthe MOVE DELETER.\fI can make #MON\nforget moves.\fShall I make a\n#MON forget?|Soy el\nQUITAMOVIMIENTOS.\fPuedo hacer que\nlos #MON olviden\nmovimientos.\f¿Quieres que uno\nolvide alguno?|Je suis\nl'EFFACEUR.\fJe fais oublier\ndes capacités\naux #MON.\fVeux-tu en\neffacer une ?|Sono\nl'ELIMINAMOSSE.\fFaccio scordare\nle mosse\nai #MON.\fVuoi farne\nscordare una?
+No? Come visit me\nagain.|¿No? Vuelve\ncuando quieras.|Non ? Reviens\nquand tu veux.|No? Torna\nquando vuoi.
+Which #MON?|¿Qué #MON?|Quel #MON ?|Quale #MON?
+An EGG doesn't\nknow any moves!|¡Un HUEVO no\nconoce movimientos!|Un OEUF ne connaît\npas de capacités !|Un UOVO non\nconosce mosse!
+That #MON knows\nonly one move.|Ese #MON solo\nconoce un movimiento.|Ce #MON ne connaît\nqu'une capacité.|Quel #MON conosce\nuna sola mossa.
+Which move should\nit forget, then?|¿Qué movimiento\ndebe olvidar?|Quelle capacité\ndoit-il oublier ?|Quale mossa\ndeve scordare?
+Oh, make it forget\n{STRBUF}?|¿Debe olvidar\n{STRBUF}?|Lui faire oublier\n{STRBUF} ?|Deve scordare\n{STRBUF}?
+Done! Your #MON\nforgot the move.|¡Tu #MON olvidó\nel movimiento!|Ton #MON a oublié\nla capacité !|Il tuo #MON ha\nscordato la mossa!
+Hello, hello! I'm\nthe NAME RATER.\fI rate the names\nof #MON.\fWould you like me\nto rate names?|¡Hola! Soy el\nINSPECTOR DE MOTES.\fEvalúo los motes\nde los #MON.\f¿Quieres que\nevalúe alguno?|Bonjour ! Je juge\nles surnoms.\fJ'évalue les noms\ndes #MON.\fVeux-tu mon avis\nsur un surnom ?|Ciao! Sono il\nGIUDICENOME.\fGiudico i nomi\ndei #MON.\fVuoi un giudizio\nsu un nome?
+OK, then. Come\nagain sometime.|Bien. Vuelve\ncuando quieras.|Bien. Reviens\nquand tu veux.|Bene. Torna\nquando vuoi.
+Which #MON's\nnickname should I\vrate for you?|¿De qué #MON\nquieres que\vevalúe el mote?|Quel surnom\nde #MON dois-je\vévaluer ?|Di quale #MON\ndevo giudicare\vil soprannome?
+Whoa… That's just\nan EGG.|Pero...\n¡Es un HUEVO!|Mais...\nC'est un OEUF.|Ma...\nÈ un UOVO!
+Hm… {STRBUF}?\nWhat a great name!\vIt's perfect.\fTreat {STRBUF}\nwith loving care.|¿{STRBUF}?\n¡Qué gran mote!\vEs perfecto.\fCuida mucho de\n{STRBUF}.|{STRBUF} ?\nQuel beau nom !\vIl est parfait.\fPrends soin de\n{STRBUF}.|{STRBUF}?\nChe bel nome!\vÈ perfetto.\fAbbi cura di\n{STRBUF}.
+Hm… {STRBUF}…\nThat's a fairly\vdecent name.\fBut, how about a\nslightly better\vnickname?\fWant me to give it\na better name?|{STRBUF}...\nEs un mote\vbastante bueno.\fPero podría\nser aún mejor.\f¿Quieres que\nlo cambiemos?|{STRBUF}...\nC'est un\vassez bon nom.\fMais on peut\nfaire mieux.\fVeux-tu un\nmeilleur nom ?|{STRBUF}...\nÈ un nome\vabbastanza bello.\fMa si potrebbe\nmigliorare.\fVuoi dargli un\nnome migliore?
+All right. What\nname should we\vgive it, then?|Bien. ¿Qué\nnombre quieres\vponerle?|Bien. Quel\nnom veux-tu\vlui donner ?|Bene. Che nome\nvuoi dargli,\vallora?
+That's a better\nname than before!\fWell done!|¡Ese mote es\nmejor que antes!\f¡Bien hecho!|Ce nom est\nbien meilleur !\fBravo !|È un nome\nmigliore di prima!\fBravo!
+It might look the\nsame as before,\fbut this new name\nis much better!\fWell done!|Parece el mismo\nde antes,\f¡pero este mote\nes mucho mejor!\f¡Bien hecho!|Il semble pareil\nqu'avant,\fmais ce nom est\nbien meilleur !\fBravo !|Sembra uguale\na prima,\fma questo nome\nè molto migliore!\fBravo!
+All right. This\n#MON is now\vnamed {STRBUF}.|Ahora este\n#MON se llama\v{STRBUF}.|Ce #MON\ns'appelle désormais\v{STRBUF}.|Ora questo\n#MON si chiama\v{STRBUF}.
+%s DST,\nis that OK?|%s, hora verano.\n¿Correcto?|%s, heure d'été.\nC'est ça ?|%s, ora legale.\nConfermi?
+%s,\nis that OK?|%s,\n¿correcto?|%s,\nc'est ça ?|%s,\nconfermi?
+You have no coins.|No tienes fichas.|Tu n'as pas de jetons.|Non hai gettoni.
+You don't have a\nCOIN CASE.|No tienes\nMONEDERO.|Tu n'as pas de\nBOITE JETON.|Non hai un\nSALVADANAIO.
+Current #DEX\ncompletion level:|Estado actual\ndel #DEX:|Bilan actuel\ndu #DEX:|Stato attuale\ndel #DEX:
+%d #MON seen\n%d #MON owned\fPROF.OAK's\nRating:|%d #MON vistos\n%d #MON tuyos\fEvaluación del\nPROF. OAK:|%d #MON vus\n%d #MON pris\fAvis du\nPROF. CHEN:|%d #MON visti\n%d #MON presi\fGiudizio del\nPROF. OAK:
+Look for #MON\nin grassy areas!|¡Busca #MON\nen la hierba!|Cherche des #MON\ndans les herbes !|Cerca i #MON\nnell'erba alta!
+Good. I see you\nunderstand how to\vuse # BALLS.|Bien. Ya sabes\ncómo usar las\v# BALL.|Bien. Tu sais\ncomment utiliser\vles # BALL.|Bene. Sai come\nusare le\v# BALL.
+You're getting\ngood at this.\fBut you have a\nlong way to go.|¡Estás mejorando!\fPero aún te\nqueda mucho.|Tu progresses !\fMais il te reste\ndu chemin à faire.|Stai migliorando!\fMa la strada è\nancora lunga.
+You need to fill\nup the #DEX.\fCatch different\nkinds of #MON!|Debes completar\nel #DEX.\f¡Captura distintos\ntipos de #MON!|Remplis ton\n#DEX.\fCapture diverses\nespèces de #MON !|Devi completare\nil #DEX.\fCattura tante\nspecie di #MON!
+You're trying--I\ncan see that.\fYour #DEX is\ncoming together.|Veo que te\nesfuerzas.\fTu #DEX va\ncogiendo forma.|Tu fais des\nefforts, ça se voit.\fTon #DEX\nprend forme.|Vedo che ti\nstai impegnando.\fIl tuo #DEX\nprende forma.
+To evolve, some\n#MON grow,\fothers use the\neffects of STONES.|Algunos #MON\nevolucionan al crecer.\fOtros necesitan\nPIEDRAS.|Certains #MON\névoluent en grandissant.\fD'autres grâce\naux PIERRES.|Alcuni #MON\nevolvono crescendo.\fAltri grazie\nalle PIETRE.
+Have you gotten a\nfishing ROD? You\fcan catch #MON\nby fishing.|¿Tienes una CAÑA?\f¡Puedes capturar\n#MON pescando!|As-tu une CANNE ?\fTu peux capturer\ndes #MON en pêchant.|Hai una CANNA?\fPuoi catturare\n#MON pescando.
+Excellent! You\nseem to like col-\vlecting things!|¡Excelente!\n¡Te gusta\vcoleccionar!|Excellent ! Tu\naimes collectionner\vdes choses !|Eccellente!\nTi piace\vcollezionare!
+Some #MON only\nappear during\fcertain times of\nthe day.|Algunos #MON\nsolo aparecen\fa ciertas horas\ndel día.|Certains #MON\nn'apparaissent\fqu'à certaines\nheures du jour.|Alcuni #MON\nappaiono solo\fin certi momenti\ndella giornata.
+Your #DEX is\nfilling up. Keep\vup the good work!|¡Tu #DEX\nva llenándose!\v¡Sigue así!|Ton #DEX\nse remplit.\vContinue !|Il tuo #DEX\nsi riempie.\vContinua così!
+I'm impressed.\nYou're evolving\f#MON, not just\ncatching them.|Me impresiona.\nEvolucionas #MON,\fno solo\nlos capturas.|Impressionnant.\nTu fais évoluer\ftes #MON au lieu\nde juste les capturer.|Notevole.\nFai evolvere i\f#MON, non ti limiti\na catturarli.
+Have you met KURT?\nHis custom #\vBALLS should help.|¿Conoces a CÉSAR?\nSus # BALL\vson muy útiles.|Tu connais FARGAS ?\nSes # BALL\vte seront utiles.|Conosci FRANZ?\nLe sue # BALL\vti saranno utili.
+Wow. You've found\nmore #MON than\fthe last #DEX\nresearch project.|¡Has encontrado\nmás #MON que en\fel último estudio\ndel #DEX!|Tu as trouvé plus\nde #MON que lors\fdu dernier projet\nsur le #DEX !|Hai trovato più\n#MON che nello\fscorso progetto\nsul #DEX!
+Are you trading\nyour #MON?\fIt's tough to do\nthis alone!|¿Intercambias\ntus #MON?\f¡Es difícil\nhacerlo sin ayuda!|Tu échanges\ntes #MON ?\fC'est difficile\ntout seul !|Scambi i\ntuoi #MON?\fÈ dura fare\ntutto da soli!
+Wow! You've hit\n200! Your #DEX\vis looking great!|¡Ya son 200!\n¡Tu #DEX\vestá genial!|Déjà 200 !\nTon #DEX est\vformidable !|Sei già a 200!\nIl tuo #DEX è\vfantastico!
+You've found so\nmany #MON!\fYou've really\nhelped my studies!|¡Has encontrado\ntantos #MON!\f¡Me ayudas mucho\nen mis estudios!|Tu as trouvé\ntant de #MON !\fTu m'aides beaucoup\ndans mes recherches !|Hai trovato\ncosì tanti #MON!\fMi hai aiutato\nmolto negli studi!
+Magnificent! You\ncould become a\f#MON professor\nright now!|¡Magnífico!\n¡Podrías ser\fprofesor #MON\nahora mismo!|Magnifique !\nTu pourrais être\fprofesseur #MON\ndès maintenant !|Magnifico!\nPotresti diventare\fprofessore #MON\nsubito!
+Your #DEX is\namazing! You're\fready to turn\nprofessional!|¡Tu #DEX\nes increíble!\f¡Puedes ser\nun profesional!|Ton #DEX\nest incroyable !\fTu es prêt à\ndevenir pro !|Il tuo #DEX\nè incredibile!\fSei pronto a\ndiventare un pro!
+Whoa! A perfect\n#DEX! I've\fdreamt about this!\nCongratulations!|¡Un #DEX\nperfecto!\f¡Mi sueño!\n¡Felicidades!|Un #DEX\nparfait !\fJ'en rêvais !\nFélicitations !|Un #DEX\nperfetto!\fEra il mio sogno!\nComplimenti!
+Wow, that's a cute\n#MON.\fWhere did you get\nit?\f…\fSo, you're leaving\non an adventure…\fOK!\nI'll help too.\fBut what can I do\nfor you?\fI know! I'll save\nmoney for you.\fOn a long journey,\nmoney's important.\fDo you want me to\nsave your money?|¡Qué #MON\ntan bonito!\f¿Dónde lo\nconseguiste?\f...\fAsí que vas\na vivir aventuras...\f¡Bien!\nTe ayudaré.\f¿Qué puedo\nhacer por ti?\f¡Ya sé! Guardaré\ndinero para ti.\fEl dinero es útil\nen un viaje largo.\f¿Quieres que\nguarde tu dinero?|Quel joli\n#MON !\fOù l'as-tu\ntrouvé ?\f...\fAlors, tu pars\nà l'aventure...\fBien !\nJe vais t'aider.\fQue puis-je\nfaire pour toi ?\fJe sais ! Je vais\ngarder ton argent.\fC'est important\nen voyage.\fVeux-tu que\nje le garde ?|Che bel\n#MON!\fDove l'hai\ntrovato?\f...\fQuindi parti\nall'avventura...\fBene!\nTi aiuterò.\fCosa posso\nfare per te?\fLo so! Terrò\nda parte i soldi.\fSono importanti\nin un lungo viaggio.\fVuoi che\nli tenga io?
+OK, I'll take care\nof your money.\f…|Bien, cuidaré\nde tu dinero.\f...|Bien, je garderai\nton argent.\f...|Bene, terrò\nda parte i soldi.\f...
+Be careful.\f#MON are your\nfriends. You need\vto work as a team.\fNow, go on!|Ten cuidado.\fLos #MON son\ntus amigos.\v¡Trabajad en equipo!\f¡Ahora, adelante!|Fais attention.\fLes #MON sont\ntes amis.\vTravaillez en équipe.\fAllez, en route !|Fai attenzione.\fI #MON sono\ntuoi amici.\vLavorate insieme.\fOra vai!
+Hi! Welcome home!\nYou're trying very\vhard, I see.\fI've kept your\nroom tidy.\fOr is this about\nyour money?|¡Hola! ¡Ya estás\nen casa! Veo que\vte esfuerzas mucho.\fHe mantenido\ntu cuarto ordenado.\f¿O vienes por\ntu dinero?|Bienvenue !\nTu fais beaucoup\vd'efforts, je vois.\fJ'ai rangé\nta chambre.\fOu viens-tu pour\nton argent ?|Bentornato!\nVedo che ti\vimpegni molto.\fHo tenuto in\nordine la tua stanza.\fO sei qui per\ni tuoi soldi?
+How much do you\nwant to save?|¿Cuánto quieres\nguardar?|Combien veux-tu\népargner ?|Quanto vuoi\nmettere da parte?
+How much do you\nwant to take?|¿Cuánto quieres\nsacar?|Combien veux-tu\nretirer ?|Quanto vuoi\nritirare?
+Do you want to\nsave some money?|¿Quieres guardar\nalgo de dinero?|Veux-tu mettre de\nl'argent de côté ?|Vuoi mettere dei\nsoldi da parte?
+You haven't saved\nthat much.|No tienes tanto\ndinero guardado.|Tu n'as pas autant\nd'économies.|Non hai risparmiato\ncosì tanto.
+You can't take\nthat much.|No puedes\nsacar tanto.|Tu ne peux pas\nen retirer autant.|Non puoi\nritirare tanto.
+You don't have\nthat much.|No tienes\ntanto dinero.|Tu n'as pas\nautant d'argent.|Non hai\ncosì tanti soldi.
+You can't save\nthat much.|No puedes\nguardar tanto.|Tu ne peux pas\nen épargner autant.|Non puoi\nmetterne via tanto.
+OK, I'll save your\nmoney. Trust me!\f{PLAYER}, stick\nwith it!|Bien, guardaré\ntu dinero. ¡Confía!\f¡{PLAYER}, sigue\nasí!|Je garderai\nton argent. Promis !\f{PLAYER},\npersévère !|Bene, terrò i\nsoldi. Fidati!\f{PLAYER},\nnon mollare!
+Your money's safe\nhere! Get going!|¡Tu dinero está\na salvo! ¡Adelante!|Ton argent est\nen sûreté ! Vas-y !|I tuoi soldi sono\nal sicuro! Vai!
+{PLAYER}, don't\ngive up!|¡{PLAYER}, no\nte rindas!|{PLAYER},\nn'abandonne pas !|{PLAYER},\nnon arrenderti!
+Just do what\nyou can.|Haz lo que\npuedas.|Fais de\nton mieux.|Fai quello\nche puoi.
+Which #MON\nshould I photo-\ngraph?|¿A qué #MON\nquieres que haga\nuna foto?|Quel #MON\ndois-je\nphotographier ?|Quale #MON\ndevo\nfotografare?
+All righty. Hold\nstill for a bit.|Bien. Quédate\nquieto un momento.|Bien. Ne bouge\nplus un instant.|Bene. Resta\nfermo un attimo.
+Oh, no picture?\nCome again, OK?|¿No quieres foto?\n¡Vuelve cuando quieras!|Pas de photo ?\nReviens, d'accord ?|Niente foto?\nTorna quando vuoi!
+An EGG? My talent\nis worth more…|¿Un HUEVO? Mi\ntalento vale más...|Un OEUF ? Mon\ntalent vaut mieux...|Un UOVO? Il mio\ntalento vale di più...
+There is already a\nsave file. Is it\vOK to overwrite?|Ya existe una\npartida guardada.\v¿Sobrescribirla?|Il existe déjà\nune sauvegarde.\vL'écraser ?|Esiste già\nun salvataggio.\vVuoi sovrascriverlo?
+There is another\nsave file. Is it\vOK to overwrite?|Hay otra\npartida guardada.\v¿Sobrescribirla?|Il existe une\nautre sauvegarde.\vL'écraser ?|Esiste un altro\nsalvataggio.\vVuoi sovrascriverlo?
+{STRBUF}?\nIs that right?|¿{STRBUF}?\n¿Es correcto?|{STRBUF} ?\nC'est ça ?|{STRBUF}?\nConfermi?
+You don't have\nenough points.|No tienes\nsuficientes puntos.|Tu n'as pas\nassez de points.|Non hai\nabbastanza punti.
+Oh. Please come\nback again!|¡Vuelve\ncuando quieras!|Reviens\nquand tu veux !|Torna\nquando vuoi!
+I see all.\nI know all…\fCertainly, I know\nof your #MON!|Lo veo todo.\nLo sé todo...\f¡Hasta conozco\na tus #MON!|Je vois tout.\nJe sais tout...\fEt je connais\nmême tes #MON !|Vedo tutto.\nSo tutto...\fConosco perfino\ni tuoi #MON!
+Whaaaat? I can't\ntell a thing!\fHow could I not\nknow of this?|¿Qué? ¡No puedo\nver nada!\f¿Cómo puedo no\nsaber nada de esto?|Quoi ? Je ne\nvois rien !\fComment puis-je\nignorer cela ?|Cosa? Non\nvedo nulla!\fCome posso non\nsaperne nulla?
+Hm… I see you met\n%s here:\v%s!|Veo que conociste\na %s en\v%s.|Tu as rencontré\n%s ici:\v%s !|Vedo che hai\nincontrato %s\va %s!
+The time was\n%s!\fIts level was %s!\fAm I good or what?|¡Era de\n%s!\f¡Y de nivel %s!\f¡Soy muy bueno!|C'était de\n%s !\fEt au niveau %s !\fJe suis doué, non ?|Era di\n%s!\fAl livello %s!\fSono bravo, no?
+Hm… %s\ncame from %s\vin a trade?\f%s\nwas where %s\vmet %s!|%s vino\nde %s\vpor intercambio.\f%s fue donde\n%s conoció\va %s.|%s vient\nde %s\vpar échange.\f%s est le lieu\noù %s a\vrencontré %s.|%s proviene\nda %s\vcon uno scambio.\f%s è il luogo\ndove %s ha\vincontrato %s.
+What!? Incredible!\fI don't understand\nhow, but it is\fincredible!\nYou are special.\fI can't tell where\nyou met it, but it\vwas at level %s.\fAm I good or what?|¡Increíble!\fNo entiendo\ncómo, ¡pero es\fincreíble!\nEres especial.\fNo sé dónde lo\nconociste, pero\vestaba al nivel %s.\f¡Soy muy bueno!|Incroyable !\fJe ne comprends\npas comment, mais\fc'est incroyable !\nTu es spécial.\fJe ne vois pas le\nlieu, mais il\vétait au niveau %s.\fJe suis doué, non ?|Incredibile!\fNon so come,\nma è proprio\fincredibile!\nSei speciale.\fNon so dove, ma\nquando l'hai avuto\vera al livello %s.\fSono bravo, no?
+Hey!\fThat's an EGG!\fYou can't say that\nyou've met it yet…|¡Eh!\f¡Es un HUEVO!\fAún no puedes\nhaberlo conocido...|Hé !\fC'est un OEUF !\fTu ne l'as pas\nencore rencontré...|Ehi!\fÈ un UOVO!\fNon puoi averlo\ngià incontrato...
+Fufufu! I saw that\nyou'd do nothing!|¡Je, je! ¡Ya sabía\nque no harías nada!|Héhé ! Je savais\nque tu ne ferais rien !|Eheh! Sapevo che\nnon avresti fatto nulla!
+Incidentally…\fIt would be wise\nto raise your\f#MON with a\nlittle more care.|Por cierto...\fSería mejor\nque cuidaras\fun poco más\na tu #MON.|Au fait...\fTu devrais\nélever tes\f#MON avec\nun peu plus de soin.|A proposito...\fDovresti\nallevare i tuoi\f#MON con\npiù cura.
+Incidentally…\fIt seems to have\ngrown a little.\f%s seems\nto be becoming\vmore confident.|Por cierto...\fHa crecido\nun poco.\f%s parece\nque está ganando\vconfianza.|Au fait...\fIl a un peu\ngrandi.\f%s semble\ngagner en\vconfiance.|A proposito...\fSembra un po'\ncresciuto.\f%s sembra\nacquistare\vfiducia.
+Incidentally…\f%s has\ngrown. It's gained\vmuch strength.|Por cierto...\f%s ha\ncrecido y ganado\vmucha fuerza.|Au fait...\f%s a\ngrandi et acquis\vbeaucoup de force.|A proposito...\f%s è\ncresciuto e ha\vacquisito forza.
+Incidentally…\fIt certainly has\ngrown mighty!\fThis %s\nmust have come\fthrough numerous\n#MON battles.\fIt looks brimming\nwith confidence.|Por cierto...\f¡Se ha vuelto\nmuy fuerte!\fEste %s\ndebe de haber\fvivido muchos\ncombates #MON.\f¡Está lleno\nde confianza!|Au fait...\fIl est devenu\ntrès fort !\fCe %s\na dû disputer\fbeaucoup de\ncombats #MON.\fIl déborde\nde confiance !|A proposito...\fÈ diventato\nmolto forte!\fQuesto %s\ndeve aver fatto\ftante lotte\ntra #MON.\fÈ pieno\ndi fiducia!
+Incidentally…\fI'm impressed by\nyour dedication.\fIt's been a long\ntime since I've\fseen a #MON as\nmighty as this\v%s.\fI'm sure that\nseeing %s\fin battle would\nexcite anyone.|Por cierto...\fMe impresiona\ntu dedicación.\fHacía tiempo\nque no veía\fun #MON tan\nfuerte como\v%s.\fSeguro que ver\na %s\fcombatiendo\nentusiasma a todos.|Au fait...\fTon dévouement\nm'impressionne.\fCela fait\nlongtemps\fque je n'ai vu\nun #MON aussi fort\vque %s.\fVoir %s\ncombattre\fdoit passionner\ntout le monde.|A proposito...\fMi colpisce\nla tua dedizione.\fDa tempo non\nvedevo\fun #MON forte\ncome questo\v%s.\fVedere %s\nin lotta\fdeve emozionare\nchiunque.
+Morning|Mañana|Matin|Mattina
+Day|Día|Jour|Giorno
+Night|Noche|Nuit|Notte
+???|???|???|???
+Excuse me.\nYou're not ready.|Perdona. Aún\nno estás listo.|Pardon. Tu n'es\npas encore prêt.|Scusa. Non sei\nancora pronto.
+Only three POKéMON\nmay be entered.|Solo puedes\nllevar tres POKéMON.|Trois POKéMON\npeuvent participer.|Puoi iscrivere\nsolo tre POKéMON.
+The {STRBUF} POKéMON\nmust all be different kinds.|Los {STRBUF} POKéMON\ndeben ser distintos.|Les {STRBUF} POKéMON\ndoivent être différents.|I {STRBUF} POKéMON\ndevono essere diversi.
+The {STRBUF} POKéMON\nmust not hold the same items.|Los {STRBUF} POKéMON\nno pueden llevar\nel mismo objeto.|Les {STRBUF} POKéMON\nne peuvent pas tenir\nle même objet.|I {STRBUF} POKéMON\nnon possono tenere\nlo stesso strumento.
+You can't take an\nEGG!|¡No puedes\nllevar un HUEVO!|Tu ne peux pas\nprendre d'OEUF !|Non puoi\nportare un UOVO!
+Please return when\nyou're ready.|Vuelve cuando\nestés listo.|Reviens quand\ntu seras prêt.|Torna quando\nsarai pronto.
+Challenge|Desafío|Défi|Sfida
+Explanation|Explicación|Explications|Spiegazione
+I'm sorry, the\nUNION ROOM isn't\vopen to you yet.|La SALA UNIÓN\naún no está\vabierta para ti.|La SALLE UNION\nne t'est pas\vencore accessible.|La SALA CONTATTO\nnon è ancora\vaperta per te.
+To enter the UNION\nROOM, you must\vhave at least two\vPOKéMON.|Para entrar en\nla SALA UNIÓN\vnecesitas al menos\vdos POKéMON.|Pour entrer dans\nla SALLE UNION,\vil te faut au moins\vdeux POKéMON.|Per entrare nella\nSALA CONTATTO\vdevi avere almeno\vdue POKéMON.
+Welcome to the\nUNION ROOM.\fTrainers from\nevery generation\vgather here.\fWould you like\nto go in?|Bienvenido a la\nSALA UNIÓN.\fAquí se reúnen\nENTRENADORES de\vtodas las generaciones.\f¿Quieres\nentrar?|Bienvenue dans\nla SALLE UNION.\fDes DRESSEURS de\ntoutes générations\vs'y retrouvent.\fVeux-tu\nentrer ?|Benvenuto nella\nSALA CONTATTO.\fQui si incontrano\nALLENATORI di\vogni generazione.\fVuoi\nentrare?
+Your game will be\nsaved before you\vgo in. OK?|Se guardará\nantes de entrar.\v¿De acuerdo?|Le jeu sera sauvé\navant d'entrer.\vD'accord ?|Il gioco si salva\nprima di entrare.\vVa bene?
+Please come\nback anytime.|Vuelve cuando\nquieras.|Reviens quand\ntu veux.|Torna quando\nvuoi.
+Your POKéMON are\nall rested.\fRight this way.|Tus POKéMON\nhan descansado.\fPor aquí.|Tes POKéMON\nse sont reposés.\fPar ici.|I tuoi POKéMON\nsono riposati.\fDa questa parte.
+A POKéMON could be\nin this tree.\fWant to HEADBUTT\nit?|Podría haber un\nPOKéMON aquí.\f¿Quieres usar\nGOLPE CABEZA?|Un POKéMON se\ncache peut-être ici.\fUtiliser\nCOUP D'BOULE ?|Qui potrebbe\nesserci un POKéMON.\fVuoi usare\nBOTTINTESTA?
+{STRBUF} did a\nHEADBUTT!|¡{STRBUF} usó\nGOLPE CABEZA!|{STRBUF} utilise\nCOUP D'BOULE !|{STRBUF} usa\nBOTTINTESTA!
+Nope. Nothing…|No hay nada...|Non. Rien...|No. Nulla...
+Oh!\nA bite!|¡Oh!\n¡Ha picado!|Oh !\nCa mord !|Oh!\nHa abboccato!
+Not even a nibble!|¡Ni una picada!|Pas même une touche !|Non abbocca nulla!
+{STRBUF} used\nSWEET SCENT!|¡{STRBUF} usó\nDULCE AROMA!|{STRBUF} utilise\nDOUX PARFUM !|{STRBUF} usa\nPROFUMINO!
+Looks like there's\nnothing here…|Parece que no\nhay nada aquí...|Il semble n'y\navoir rien ici...|Sembra che non\nci sia nulla qui...
+{PLAYER}'s POKéMON\nwere all healed!|¡Todos los POKéMON\nde {PLAYER} se curaron!|Les POKéMON de\n{PLAYER} sont soignés !|I POKéMON di\n{PLAYER} sono guariti!
+Gold cache incomplete:\n%s|Caché de Oro incompleta:\n%s|Cache Or incomplet:\n%s|Cache Oro incompleta:\n%s
+Font load failed:\n%s|No se cargó la fuente:\n%s|Chargement de police échoué:\n%s|Caricamento carattere fallito:\n%s
+%s is missing.\nRe-import the Gold ROM.|Falta %s.\nVuelve a importar Oro.|%s manque.\nRéimporte la ROM Or.|Manca %s.\nReimporta la ROM Oro.
+Failed to boot %s:\n%s|No se inició %s:\n%s|Démarrage de %s échoué:\n%s|Avvio di %s fallito:\n%s
+ANNOUNCER: BEEEP!\fTime's up!|¡PIIIP!\f¡Se acabó el tiempo!|BIIIP !\fTemps écoulé !|BIIIP!\fTempo scaduto!
+ANNOUNCER: The\nContest is over!|¡El Concurso\nha terminado!|Le Concours\nest terminé !|La Gara\nè finita!
+{PLAYER} sprinkled\nwater.\fBut nothing\nhappened…|{PLAYER} echó\nagua.\fPero no pasó\nnada...|{PLAYER} verse\nde l'eau.\fMais il ne se\npasse rien...|{PLAYER} versa\ndell'acqua.\fMa non succede\nnulla...
+REPEL's effect\nwore off.|Se acabó el efecto\ndel REPELENTE.|L'effet du REPOUSSE\nest terminé.|L'effetto del\nREPELLENTE è finito.
+%s\nfainted!|¡%s\nse debilitó!|%s\nest K.O. !|%s\nè esausto!
+You have no more\nPOKéMON that can\vfight!|¡No te quedan\nPOKéMON capaces\vde combatir!|Tu n'as plus de\nPOKéMON capables\vde combattre !|Non hai più\nPOKéMON in grado\vdi lottare!
+%s came\nout of its EGG!|¡%s salió\ndel HUEVO!|%s est sorti\nde son OEUF !|%s esce\ndall'UOVO!
+{PLAYER} got on the\n{STRBUF}.|{PLAYER} montó en\n{STRBUF}.|{PLAYER} monte sur\n{STRBUF}.|{PLAYER} sale su\n{STRBUF}.
+{PLAYER} got off\nthe {STRBUF}.|{PLAYER} bajó de\n{STRBUF}.|{PLAYER} descend de\n{STRBUF}.|{PLAYER} scende da\n{STRBUF}.
+You can't get off\nhere!|¡No puedes bajar\naquí!|Tu ne peux pas\ndescendre ici !|Non puoi\nscendere qui!
+{PLAYER} found\n{STRBUF}.|{PLAYER} encontró\n{STRBUF}.|{PLAYER} trouve\n{STRBUF}.|{PLAYER} trova\n{STRBUF}.
+But {PLAYER} has\nno space left…|Pero a {PLAYER}\nno le queda sitio...|Mais {PLAYER}\nn'a plus de place...|Ma {PLAYER} non\nha più spazio...
+Yes! ITEMFINDER\nindicates there's\nan item nearby.|¡El BUSCAOBJETOS\nindica un objeto\ncerca de aquí!|Le CHERCH'OBJET\nindique un objet\nà proximité !|Il DETECTOR\nindica uno\nstrumento vicino!
+Nope! ITEMFINDER\nisn't responding.|El BUSCAOBJETOS\nno responde.|Le CHERCH'OBJET\nne réagit pas.|Il DETECTOR\nnon reagisce.
+{PLAYER} found\n{STRBUF}!|¡{PLAYER} encontró\n{STRBUF}!|{PLAYER} trouve\n{STRBUF} !|{PLAYER} trova\n{STRBUF}!
+But {PLAYER} can't\ncarry any more\vitems!|¡Pero {PLAYER} no\npuede llevar\vmás objetos!|Mais {PLAYER} ne\npeut plus porter\vd'objets !|Ma {PLAYER} non\npuò portare\valtri strumenti!
+Sorry! A new BADGE\nis required.|Necesitas otra\nMEDALLA.|Il te faut\nun autre BADGE.|Serve un'altra\nMEDAGLIA.
+Can't use that\nhere.|No puedes\nusarlo aquí.|Impossible\nde l'utiliser ici.|Non puoi\nusarlo qui.
+Not enough HP!|¡PS insuficientes!|Pas assez de PV !|PS insufficienti!
+{STRBUF} used\nCUT!|¡{STRBUF} usó\nCORTE!|{STRBUF} utilise\nCOUPE !|{STRBUF} usa\nTAGLIO!
+There's nothing to\nCUT here.|No hay nada que\nCORTAR aquí.|Rien à\nCOUPER ici.|Non c'è nulla\nda TAGLIARE qui.
+This tree can be\nCUT!|¡Este árbol puede\nCORTARSE!|Cet arbre peut\nêtre COUPE !|Questo albero si\npuò TAGLIARE!
+{STRBUF} used\nSURF!|¡{STRBUF} usó\nSURF!|{STRBUF} utilise\nSURF !|{STRBUF} usa\nSURF!
+You can't SURF\nhere.|No puedes hacer\nSURF aquí.|Impossible de\nSURFER ici.|Non puoi usare\nSURF qui.
+You're already\nSURFING.|Ya estás\nhaciendo SURF.|Tu es déjà\nen train de SURFER.|Stai già\nusando SURF.
+The water is calm.\nWant to SURF?|El agua está calma.\n¿Quieres hacer SURF?|L'eau est calme.\nUtiliser SURF ?|L'acqua è calma.\nVuoi usare SURF?
+{STRBUF} used\nWATERFALL!|¡{STRBUF} usó\nCASCADA!|{STRBUF} utilise\nCASCADE !|{STRBUF} usa\nCASCATA!
+Wow, it's a huge\nwaterfall.|¡Es una cascada\nenorme!|Quelle immense\ncascade !|È una cascata\nenorme!
+Do you want to use\nWATERFALL?|¿Quieres usar\nCASCADA?|Veux-tu utiliser\nCASCADE ?|Vuoi usare\nCASCATA?
+{STRBUF} used\nSTRENGTH!|¡{STRBUF} usó\nFUERZA!|{STRBUF} utilise\nFORCE !|{STRBUF} usa\nFORZA!
+{STRBUF} can\nmove boulders.|{STRBUF} puede\nmover rocas.|{STRBUF} peut\ndéplacer des rochers.|{STRBUF} può\nspostare i massi.
+A #MON may be\nable to move this.|Un #MON podría\nmover esto.|Un #MON pourrait\ndéplacer ça.|Un #MON potrebbe\nspostarlo.
+Boulders may now\nbe moved!|¡Ya puedes\nmover las rocas!|Les rochers peuvent\nêtre déplacés !|Ora puoi\nspostare i massi!
+{STRBUF} used\nDIG!|¡{STRBUF} usó\nEXCAVAR!|{STRBUF} utilise\nTUNNEL !|{STRBUF} usa\nFOSSA!
+{PLAYER} used an\nESCAPE ROPE.|{PLAYER} usó una\nCUERDA HUIDA.|{PLAYER} utilise\nune CORDE SORTIE.|{PLAYER} usa una\nFUNE DI FUGA.
+Return to the last\n#MON CENTER.|Vuelve al último\nCENTRO #MON.|Retour au dernier\nCENTRE #MON.|Torna all'ultimo\nCENTRO #MON.
+{STRBUF} used\nWHIRLPOOL!|¡{STRBUF} usó\nTORBELLINO!|{STRBUF} utilise\nSIPHON !|{STRBUF} usa\nMULINELLO!
+It's a vicious\nwhirlpool!\fA #MON may be\nable to pass it.|¡Es un torbellino\nmuy fuerte!\fUn #MON podría\natravesarlo.|Un tourbillon\nviolent !\fUn #MON pourrait\nle traverser.|È un vortice\nviolento!\fUn #MON potrebbe\nattraversarlo.
+A whirlpool is in\nthe way.\fWant to use\nWHIRLPOOL?|Un torbellino\nimpide el paso.\f¿Quieres usar\nTORBELLINO?|Un tourbillon\nbarre le passage.\fUtiliser\nSIPHON ?|Un vortice\nblocca la strada.\fVuoi usare\nMULINELLO?
+Fly to %s?|¿Volar a %s?|Voler vers %s ?|Voli a %s?
+The boulder fell\nthrough.|La roca cayó\npor el agujero.|Le rocher est\ntombé dans le trou.|Il masso è\ncaduto nel buco.
+The boulder fell\nthrough!|¡La roca cayó\npor el agujero!|Le rocher est\ntombé dans le trou !|Il masso è\ncaduto nel buco!
+%s BED|CAMA %s|LIT %s|LETTO %s
+%s CARPET|ALFOMBRA %s|TAPIS %s|TAPPETO %s
+%s POSTER|PÓSTER %s|POSTER %s|POSTER %s
+%s DOLL|MUÑECO %s|POUPEE %s|BAMBOLA %s
+BIG %s|%s GRANDE|GRAND %s|%s GRANDE
+Set up the\n%s.|Colocaste\n%s.|Tu installes\n%s.|Hai sistemato\n%s.
+Put away the\n%s.|Retiraste\n%s.|Tu ranges\n%s.|Hai riposto\n%s.
+There's nothing to\nput away.|No hay nada\nque retirar.|Il n'y a rien\nà ranger.|Non c'è nulla\nda riporre.
+That's already set\nup.|Eso ya está\ncolocado.|C'est déjà\ninstallé.|È già\nsistemato.
+There's nothing to\nchoose.|No hay nada\nque elegir.|Il n'y a rien\nà choisir.|Non c'è nulla\nda scegliere.
+Put away the\n%s|Retiraste\n%s|Tu ranges\n%s|Hai riposto\n%s
+and set up the\n%s.|y colocaste\n%s.|et installes\n%s.|e sistemato\n%s.
+RING!…RING!…\n%s|¡RIIING!\n%s|DRING !\n%s|DRIN!\n%s
+It won't have any\neffect.|No tendrá\nningún efecto.|Cela n'aura\naucun effet.|Non avrà\nalcun effetto.
+That can't be used\non an EGG.|No puedes usarlo\nen un HUEVO.|Inutilisable\nsur un OEUF.|Non puoi usarlo\nsu un UOVO.
+That can't be used\non this #MON.|No puedes usarlo\nen este #MON.|Inutilisable\nsur ce #MON.|Non puoi usarlo\nsu questo #MON.
+PP was restored.|Se restauraron los PP.|Les PP sont restaurés.|PP ripristinati.
+%s's PP\nis maxed out.|%s ya tiene\nel máximo de PP.|Les PP de %s\nsont au maximum.|I PP di %s\nsono al massimo.
+%s's PP\nincreased.|Subieron los PP\nde %s.|Les PP de %s\naugmentent.|I PP di %s\naumentano.
+%s's\ncured of poison.|%s se curó\ndel veneno.|%s n'est\nplus empoisonné.|%s guarisce\ndal veleno.
+%s's\nrid of paralysis.|%s se curó\nde la parálisis.|%s n'est\nplus paralysé.|%s guarisce\ndalla paralisi.
+%s's\nburn was healed.|%s se curó\nde la quemadura.|La brûlure de\n%s est soignée.|%s guarisce\ndalla scottatura.
+%s\nwas defrosted.|%s se\ndescongeló.|%s est\ndégelé.|%s si è\nscongelato.
+%s\nwoke up.|%s\nse despertó.|%s\nse réveille.|%s\nsi sveglia.
+%s's\nhealth returned.|%s recuperó\nla salud.|%s retrouve\nla santé.|%s recupera\nla salute.
+%s\nis revitalized.|%s\nrevivió.|%s\nest ranimé.|%s\nè rivitalizzato.
+MORN|MAÑANA|MATIN|MATTINA
+NITE|NOCHE|NUIT|NOTTE
+Hi, {PLAYER}!\nHow are you?|¡Hola, {PLAYER}!\n¿Cómo estás?|Salut, {PLAYER} !\nComment vas-tu ?|Ciao, {PLAYER}!\nCome stai?
+I found a useful\nitem shopping, so|Vi un objeto\nmuy útil y|J'ai trouvé un\nobjet utile et|Ho visto uno\nstrumento utile e
+While shopping\ntoday, I saw this\nadorable doll, so|Hoy de compras\nvi un muñeco\ntan bonito y|En faisant les\ncourses, j'ai vu\nune jolie poupée et|Oggi ho visto\nuna bambola\ncosì carina e
+I bought it with\nyour money. Sorry!|lo compré con tu\ndinero. ¡Perdona!|je l'ai acheté\navec ton argent !|l'ho presa coi\ntuoi soldi. Scusa!
+It's in your PC.\nYou'll like it!|Está en tu PC.\n¡Te gustará!|Il est dans ton PC.\nCa te plaira !|È nel tuo PC.\nTi piacerà!
+It's in your room.\nYou'll love it!|Está en tu cuarto.\n¡Te encantará!|C'est dans ta chambre.\nTu vas adorer !|È in camera tua.\nTi piacerà molto!
+ 50 :  ¥1000| 50 :  ¥1000| 50 :  ¥1000| 50 :  ¥1000
+500 : ¥10000|500 : ¥10000|500 : ¥10000|500 : ¥10000
+Welcome!\fWe exchange your\ncoins for fabulous\vprizes!|¡Bienvenido!\f¡Cambiamos tus\nfichas por premios\vfabulosos!|Bienvenue !\fNous échangeons\ntes jetons contre\vdes lots fabuleux !|Benvenuto!\fScambiamo i\ngettoni con premi\vmeravigliosi!
+Welcome!\fWe exchange your\ngame coins for\vfabulous prizes!|¡Bienvenido!\f¡Cambiamos tus\nfichas por premios\vfabulosos!|Bienvenue !\fNous échangeons\ntes jetons contre\vdes lots fabuleux !|Benvenuto!\fScambiamo i\ngettoni con premi\vmeravigliosi!
+OK. Please save\nyour coins and\vcome again!|¡Guarda tus\nfichas y vuelve\vcuando quieras!|Garde tes jetons\net reviens\vquand tu veux !|Conserva i tuoi\ngettoni e torna\vquando vuoi!
+Do you need game\ncoins?\fOh, you don't have\na COIN CASE for\vyour coins.|¿Necesitas\nfichas de juego?\fNo tienes\nMONEDERO para\vguardarlas.|Veux-tu des\njetons ?\fTu n'as pas de\nBOITE JETON pour\vles garder.|Ti servono\ndei gettoni?\fNon hai un\nSALVADANAIO per\vconservarli.
+%s\nis about to use\v%s.\fWill %s\nchange POKéMON?|%s va\na enviar a\v%s.\f¿Cambiará %s\nde POKéMON?|%s va\nenvoyer\v%s.\f%s va-t-il\nchanger de POKéMON ?|%s sta\nper mandare\v%s.\f%s cambia\nPOKéMON?
+I collect #MON.\nDo you have\v{STRBUF}?\fWant to trade it\nfor my {STRBUF}?|Colecciono #MON.\n¿Tienes\v{STRBUF}?\f¿Lo cambiarías\npor mi {STRBUF}?|Je collectionne\nles #MON. As-tu\v{STRBUF} ?\fTu l'échanges\ncontre mon {STRBUF} ?|Colleziono #MON.\nHai\v{STRBUF}?\fLo scambi col\nmio {STRBUF}?
+Yay! I got myself\n{STRBUF}!\vThanks!|¡Ya tengo\na {STRBUF}!\v¡Gracias!|Super ! J'ai\n{STRBUF} !\vMerci !|Evviva! Ho\n{STRBUF}!\vGrazie!
+{PLAYER} traded\n{STRBUF} for\v{STRBUF}.|{PLAYER} cambió\n{STRBUF} por\v{STRBUF}.|{PLAYER} échange\n{STRBUF} contre\v{STRBUF}.|{PLAYER} scambia\n{STRBUF} con\v{STRBUF}.
+%s is\nnot compatible\vwith %s.|%s no es\ncompatible\vcon %s.|%s n'est\npas compatible\vavec %s.|%s non è\ncompatibile\vcon %s.
+When you change a\n#MON BOX, data\vwill be saved. OK?|Al cambiar de\nCAJA #MON,\vse guardará. ¿Vale?|Changer de BOITE\n#MON demande\vune sauvegarde. OK ?|Cambiando BOX\n#MON i dati\vsi salvano. OK?
+Bzzzzt! You must\nhave a #MON to\vuse this!|¡Necesitas\nun #MON para\vusar esto!|Il faut\nun #MON pour\vutiliser ça !|Devi avere\nun #MON per\vusare questo!
+This world is in-\nhabited by crea-\vtures that we call\vPOKéMON.|En este mundo\nviven criaturas\va las que llamamos\vPOKéMON.|Ce monde est\npeuplé de\vcréatures nommées\vPOKéMON.|Questo mondo è\nabitato da\vcreature chiamate\vPOKéMON.
+People and POKéMON\nlive together by\fsupporting each\nother.\fSome people play\nwith POKéMON, some\vbattle with them.|Las personas y\nlos POKéMON\fconviven y se\nayudan entre sí.\fAlgunos juegan\ncon los POKéMON,\votros combaten.|Gens et POKéMON\nvivent ensemble\fen s'aidant\nmutuellement.\fCertains jouent\navec les POKéMON,\vd'autres combattent.|Persone e POKéMON\nvivono insieme\faiutandosi\na vicenda.\fAlcuni giocano\ncon i POKéMON,\valtri ci lottano.
+But we don't know\neverything about\vPOKéMON yet.\fThere are still\nmany mysteries to\vsolve.\fThat's why I study\nPOKéMON every day.|Aún no sabemos\ntodo sobre\vlos POKéMON.\fTodavía hay\nmisterios que\vresolver.\fPor eso los\nestudio cada día.|Nous ignorons\nencore tant de\vchoses sur eux.\fIl reste beaucoup\nde mystères\và résoudre.\fJe les étudie\ndonc chaque jour.|Non sappiamo\nancora tutto\vsui POKéMON.\fRestano tanti\nmisteri da\vrisolvere.\fPerciò li studio\nogni giorno.
+{PLAYER}, are you\nready?\fYour very own\nPOKéMON story is\vabout to unfold.\fYou'll face fun\ntimes and tough\vchallenges.\fA world of dreams\nand adventures\fwith POKéMON\nawaits! Let's go!\fI'll be seeing you\nlater!|{PLAYER}, ¿estás\nlisto?\fTu propia\nhistoria POKéMON\vva a comenzar.\fTendrás momentos\ndivertidos y\vgrandes retos.\fUn mundo de\nsueños y aventuras\fcon los POKéMON\n¡te espera! ¡Vamos!\f¡Hasta\nluego!|{PLAYER}, tu es\nprêt ?\fTa propre\nhistoire POKéMON\vva commencer.\fTu vivras des\nmoments heureux et\vde grands défis.\fUn monde de rêves\net d'aventures\favec les POKéMON\nt'attend ! Allons-y !\fA plus\ntard !|{PLAYER}, sei\npronto?\fLa tua storia\nPOKéMON sta\vper iniziare.\fAvrai momenti\ndivertenti e\vsfide difficili.\fUn mondo di sogni\ne avventure\fcon i POKéMON\nti aspetta! Andiamo!\fCi vediamo\npiù tardi!
+%s got %s%d for winning!|¡%s ganó %s%d!|%s gagne %s%d !|%s vince %s%d!
+%s got %s%d\nfor winning!\vSent some to MOM!|¡%s ganó %s%d!\n¡Y envió una parte\va MAMÁ!|%s gagne %s%d !\nUne part est envoyée\và MAMAN !|%s vince %s%d!\nUna parte è inviata\valla MAMMA!
+Sent half to MOM!|¡Envió la mitad\na MAMÁ!|La moitié est\nenvoyée à MAMAN !|Metà è inviata\nalla MAMMA!
+Sent all to MOM!|¡Envió todo\na MAMÁ!|Tout est envoyé\nà MAMAN !|Tutto è inviato\nalla MAMMA!
+%s picked up %s%d!|¡%s recogió %s%d!|%s ramasse %s%d !|%s raccoglie %s%d!
+EVASION|EVASIÓN|ESQUIVE|ELUSIONE
+%s's %s sharply rose!|%s: ¡%s subió mucho!|%s: %s monte beaucoup !|%s: %s sale molto!
+%s's %s sharply fell!|%s: ¡%s bajó mucho!|%s: %s baisse beaucoup !|%s: %s scende molto!
+It started to rain!|¡Empezó a llover!|Il commence à pleuvoir !|Inizia a piovere!
+This tree can be\nCUT!\fWant to use CUT?|¡Este árbol puede\nCORTARSE!|Cet arbre peut\nêtre COUPE !|Questo albero si\npuò TAGLIARE!
+A #MON may be\nable to move this.\fWant to use\nSTRENGTH?|Un #MON podría\nmover esto.|Un #MON pourrait\ndéplacer ça.|Un #MON potrebbe\nspostarlo.
+PARKBALL×%02d|PARQUE BALL×%02d|PARC BALL×%02d|PARK BALL×%02d
+The sunlight got bright!|¡El sol brilla con fuerza!|Le soleil brille fort !|La luce del sole si fa intensa!
+A sandstorm brewed!|¡Se levantó una tormenta de arena!|Une tempête de sable se lève !|Si scatena una tempesta di sabbia!
+Rain continues to fall.|Sigue lloviendo.|La pluie continue.|La pioggia continua.
+The sunlight is strong.|El sol es intenso.|Le soleil brille fort.|La luce solare è intensa.
+The sandstorm rages.|La tormenta de arena arrecia.|La tempête de sable fait rage.|La tempesta di sabbia infuria.
+The rain stopped.|Dejó de llover.|La pluie s'arrête.|La pioggia cessa.
+The sunlight faded.|Se atenuó el sol.|Le soleil faiblit.|Il sole si affievolisce.
+The sandstorm subsided.|Cesó la tormenta de arena.|La tempête de sable cesse.|La tempesta di sabbia cessa.
+It doesn't affect\n%s!|¡No afecta a\n%s!|Cela n'affecte pas\n%s !|Non ha effetto su\n%s!
+The SUBSTITUTE took damage for %s!|¡El SUSTITUTO recibió el daño por %s!|Le CLONE subit les dégâts pour %s !|Il SOSTITUTO subisce i danni per %s!
+%s's SUBSTITUTE broke!|¡El SUSTITUTO de %s se rompió!|Le CLONE de %s se brise !|Il SOSTITUTO di %s si rompe!
+A critical hit!|¡Un golpe crítico!|Coup critique !|Brutto colpo!
+It's super-\neffective!|¡Es muy\neficaz!|C'est super\nefficace !|È super\nefficace!
+It's not very\neffective…|No es muy\neficaz...|Ce n'est pas très\nefficace...|Non è molto\nefficace...
+%s endured the hit!|¡%s aguantó el golpe!|%s endure le coup !|%s resiste al colpo!
+%s hung on with %s!|¡%s aguantó con %s!|%s tient bon avec %s !|%s resiste con %s!
+%s's %s won't rise anymore!|%s: ¡%s no sube más!|%s: %s est au maximum !|%s: %s non può salire più!
+%s's %s won't drop anymore!|%s: ¡%s no baja más!|%s: %s est au minimum !|%s: %s non può scendere più!
+%s has no move to use!|¡%s no tiene movimientos!|%s n'a pas de capacité !|%s non ha mosse da usare!
+%s\nused %s!|¡%s\nusó %s!|%s\nutilise %s !|%s\nusa %s!
+But it failed!|¡Pero falló!|Mais cela échoue !|Ma fallisce!
+%s protected itself!|¡%s se protegió!|%s se protège !|%s si protegge!
+%s's attack missed!|¡El ataque de %s falló!|L'attaque de %s rate !|L'attacco di %s fallisce!
+Magnitude %d!|¡Magnitud %d!|Ampleur %d !|Magnitudo %d!
+%s made a SUBSTITUTE!|¡%s creó un SUSTITUTO!|%s crée un CLONE !|%s crea un SOSTITUTO!
+Hit %d times!|¡Golpeó %d veces!|Touché %d fois !|Colpito %d volte!
+Coins scattered\neverywhere!|¡Cayeron monedas\npor todas partes!|Des pièces\ns'éparpillent !|Monete sparse\novunque!
+%s is hit with recoil!|¡%s se hirió por el retroceso!|%s est blessé par le recul !|%s subisce il contraccolpo!
+%s's energy was drained!|¡Absorbieron la energía de %s!|L'énergie de %s est absorbée !|L'energia di %s è assorbita!
+%s was trapped!|¡%s quedó atrapado!|%s est piégé !|%s è intrappolato!
+%s\nstole %s\vfrom its foe!|¡%s\nrobó %s\va su rival!|%s\nvole %s\và son adversaire !|%s\nruba %s\val nemico!
+But nothing\nhappened.|Pero no pasó\nnada.|Mais il ne se\npasse rien.|Ma non succede\nnulla.
+It didn't affect\n%s!|No afectó a\n%s.|Cela n'a pas affecté\n%s !|Non ha avuto effetto\nsu %s!
+%s\nSKETCHED\v%s!|¡%s\ncopió\v%s!|%s\ngribouille\v%s !|%s\nfa uno SCHIZZO di\v%s!
+%s\nstarted to have a\vNIGHTMARE!|¡%s\nempezó a tener una\vPESADILLA!|%s\ncommence à faire un\vCAUCHEMAR !|%s\ninizia ad avere un\vINCUBO!
+%s\ncopied the stat\fchanges of\n%s!|¡%s\ncopió los cambios\fde características\nde %s!|%s\ncopie les changements\fde statistiques\nde %s !|%s\ncopia i cambiamenti\fdi statistiche\ndi %s!
+%s's\nshrouded in MIST!|¡%s se cubre\nde NEBLINA!|%s se couvre\nde BRUME !|%s si copre\ndi NEBBIA!
+%s's\ngetting pumped!|¡%s\nse está preparando!|%s\nse concentre !|%s\nsi concentra!
+Both POKéMON will\nfaint in 3 turns!|¡Ambos POKéMON se\ndebilitarán en 3 turnos!|Les deux POKéMON\nseront K.O. dans 3 tours !|Entrambi i POKéMON\nsaranno esausti tra 3 turni!
+%s got an ENCORE!|¡%s recibió OTRA VEZ!|%s reçoit un ENCORE !|%s riceve un RIPETI!
+%s's %s was disabled!|%s: ¡%s fue anulado!|%s: %s est entravée !|%s: %s è bloccata!
+%s took aim!|¡%s apuntó!|%s vise !|%s prende la mira!
+%s identified %s!|¡%s identificó a %s!|%s identifie %s !|%s identifica %s!
+%s's protected by MIST.|La NEBLINA protege a %s.|La BRUME protège %s.|La NEBBIA protegge %s.
+Spikes were scattered all around!|¡Se esparcieron PÚAS por todas partes!|Des PICOTS sont dispersés partout !|PUNTE sono sparse ovunque!
+%s braced itself!|¡%s se preparó!|%s se tient prêt !|%s si prepara!
+%s is storing energy!|¡%s acumula energía!|%s stocke de l'énergie !|%s accumula energia!
+%s unleashed energy!|¡%s liberó energía!|%s libère de l'énergie !|%s libera energia!
+%s TRANSFORMED into %s!|¡%s se TRANSFORMÓ en %s!|%s se TRANSFORME en %s !|%s si TRASFORMA in %s!
+It's a one-hit KO!|¡K.O. en un golpe!|K.O. en un coup !|KO in un colpo!
+%s's attack!|¡Ataque de %s!|Attaque de %s !|Attacco di %s!
+%s's HP is full!|¡%s tiene todos sus PS!|Les PV de %s sont au maximum !|%s ha tutti i PS!
+%s fell asleep and became healthy!|¡%s se durmió y recuperó la salud!|%s s'endort et retrouve la santé !|%s si addormenta e recupera la salute!
+%s went to sleep!|¡%s se durmió!|%s s'endort !|%s si addormenta!
+%s regained health!|¡%s recuperó salud!|%s retrouve de la santé !|%s recupera salute!
+%s passed the baton!|¡%s pasó el RELEVO!|%s passe le RELAIS !|%s passa la STAFFETTA!
+%s used BIND on %s!|¡%s ATÓ a %s!|%s ETREINT %s !|%s lega %s!
+%s was WRAPPED by %s!|¡%s fue atrapado por %s!|%s est LIGOTE par %s !|%s è avvolto da %s!
+%s was CLAMPED by %s!|¡%s fue apresado por %s!|%s est pris dans l'étau de %s !|%s è stretto da %s!
+%s's SPCL.DEF rose!|¡Subió la DEF.ESP. de %s!|La DEF.SPE. de %s monte !|La DIF.SP. di %s sale!
+%s's DEFENSE rose!|¡Subió la DEFENSA de %s!|La DEFENSE de %s monte !|La DIFESA di %s sale!
+%s's covered by a veil!|¡Un velo cubre a %s!|Un voile couvre %s !|Un velo copre %s!
+%s's ATTACK won't rise anymore!|¡El ATAQUE de %s no sube más!|L'ATTAQUE de %s est au maximum !|L'ATTACCO di %s non può salire più!
+%s cut its own HP and put a CURSE on %s!|¡%s perdió PS y lanzó una MALDICIÓN a %s!|%s perd des PV et MAUDIT %s !|%s perde PS e MALEDICE %s!
+%s\ncut its HP and|¡%s\nperdió PS y|%s\nperd des PV et|%s\nperde PS e
+maximized ATTACK!|maximizó el ATAQUE!|maximise l'ATTAQUE !|massimizza l'ATTACCO!
+%s evaded the attack!|¡%s esquivó el ataque!|%s esquive l'attaque !|%s evita l'attacco!
+%s was seeded!|¡%s fue infectado por semillas!|%s reçoit des graines !|%s è pieno di semi!
+It didn't affect %s!|¡No afectó a %s!|Cela n'affecte pas %s !|Non ha effetto su %s!
+%s's %s was reduced by %d!|%s: ¡%s bajó %d PP!|%s: %s perd %d PP !|%s: %s perde %d PP!
+%s can't escape now!|¡%s ya no puede huir!|%s ne peut plus fuir !|%s non può più fuggire!
+%s\nfell in love!|¡%s\nse enamoró!|%s\ntombe amoureux !|%s\nsi innamora!
+%s fled in fear!|¡%s huyó de miedo!|%s fuit de peur !|%s fugge per la paura!
+%s was blown away!|¡%s fue arrastrado!|%s est soufflé !|%s è spazzato via!
+%s was dragged out!|¡%s fue obligado a salir!|%s est forcé de sortir !|%s è costretto a uscire!
+%s fled from battle!|¡%s huyó del combate!|%s fuit le combat !|%s fugge dalla lotta!
+ fell asleep!| se durmió!| s'endort !| si addormenta!
+%s woke up!|¡%s se despertó!|%s se réveille !|%s si sveglia!
+%s is fast asleep!|¡%s está dormido!|%s dort profondément !|%s dorme profondamente!
+ was poisoned!| fue envenenado!| est empoisonné !| è avvelenato!
+ is hurt by poison!| sufre por el veneno!| souffre du poison !| soffre per il veleno!
+ was badly poisoned!| fue muy envenenado!| est gravement empoisonné !| è molto avvelenato!
+ is paralyzed! It may be unable to move!| está paralizado! ¡Quizá no se mueva!| est paralysé ! Il ne pourra peut-être pas agir !| è paralizzato! Potrebbe non riuscire a muoversi!
+ was burned!| fue quemado!| est brûlé !| è scottato!
+ is hurt by its burn!| sufre por la quemadura!| souffre de sa brûlure !| soffre per la scottatura!
+ was frozen solid!| fue congelado!| est gelé !| è congelato!
+CONFUSED|CONFUSO|CONFUS|CONFUSO
+ became confused!| se confundió!| devient confus !| è confuso!
+%s fell asleep!|¡%s se durmió!|%s s'endort !|%s si addormenta!
+%s was poisoned!|¡%s fue envenenado!|%s est empoisonné !|%s è avvelenato!
+%s was badly poisoned!|¡%s fue muy envenenado!|%s est gravement empoisonné !|%s è molto avvelenato!
+%s is paralyzed! It may be unable to move!|¡%s está paralizado! ¡Quizá no se mueva!|%s est paralysé ! Il ne pourra peut-être pas agir !|%s è paralizzato! Potrebbe non riuscire a muoversi!
+%s was burned!|¡%s fue quemado!|%s est brûlé !|%s è scottato!
+%s was frozen solid!|¡%s fue congelado!|%s est gelé !|%s è congelato!
+%s became confused!|¡%s se confundió!|%s devient confus !|%s è confuso!
+%s is hurt by poison!|¡%s sufre por el veneno!|%s souffre du poison !|%s soffre per il veleno!
+%s is hurt by its burn!|¡%s sufre por la quemadura!|%s souffre de sa brûlure !|%s soffre per la scottatura!
+%s is protected by SAFEGUARD!|¡VELO SAGRADO protege a %s!|RUNE PROTECT protège %s !|SALVAGUARDIA protegge %s!
+%s%s|%s%s|%s%s|%s%s
+%s's already confused!|¡%s ya está confuso!|%s est déjà confus !|%s è già confuso!
+Enemy %s fainted!|¡%s enemigo se debilitó!|%s ennemi est K.O. !|%s nemico è esausto!
+%s fainted!|¡%s se debilitó!|%s est K.O. !|%s è esausto!
+You have no more POKéMON!|¡No te quedan POKéMON!|Tu n'as plus de POKéMON !|Non hai più POKéMON!
+%s was defeated!|¡%s fue derrotado!|%s est vaincu !|%s è sconfitto!
+1, 2 and…|1, 2 y...|1, 2 et...|1, 2 e...
+Poof! %s forgot %s!|¡Puf! ¡%s olvidó %s!|Pouf ! %s oublie %s !|Puf! %s scorda %s!
+%s's %s activated!|%s: ¡Se activó %s!|%s: %s s'active !|%s: %s si attiva!
+%s began to nap!|¡%s empezó a dormitar!|%s fait une sieste !|%s schiaccia un pisolino!
+%s won't obey!|¡%s no obedece!|%s n'obéit pas !|%s non obbedisce!
+%s is loafing around.|%s está holgazaneando.|%s paresse.|%s sta oziando.
+%s turned away!|¡%s miró para otro lado!|%s se détourne !|%s si gira dall'altra parte!
+%s ignored orders!|¡%s ignoró las órdenes!|%s ignore les ordres !|%s ignora gli ordini!
+Used the %s.|Usaste %s.|Tu utilises %s.|Hai usato %s.
+%s is hurt by SPIKES!|¡Las PÚAS hieren a %s!|Les PICOTS blessent %s !|Le PUNTE feriscono %s!
+Got away safely!|¡Escapaste sin problemas!|Fuite réussie !|Fuga riuscita!
+Wild %s fled!|¡%s salvaje huyó!|%s sauvage s'enfuit !|%s selvatico fugge!
+%s withdrew %s!|¡%s retiró a %s!|%s rappelle %s !|%s richiama %s!
+%s used %s!|¡%s usó %s!|%s utilise %s !|%s usa %s!
+%s has no moves left!|¡%s no tiene más movimientos!|%s n'a plus de capacités !|%s non ha più mosse!
+%s's PERISH count is %d!|¡La cuenta de %s es %d!|Le compte REQUIEM de %s est %d !|Il conto ULTIMOCANTO di %s è %d!
+LEECH SEED saps %s!|¡DRENADORAS absorbe a %s!|VAMPIGRAINE draine %s !|PARASSISEME assorbe %s!
+%s\nhas a NIGHTMARE!|¡%s\ntiene una PESADILLA!|%s\nfait un CAUCHEMAR !|%s\nha un INCUBO!
+%s's hurt by the CURSE!|¡La MALDICIÓN hiere a %s!|La MALEDICTION blesse %s !|La MALEDIZIONE ferisce %s!
+%s was released from %s!|¡%s se liberó de %s!|%s est libéré de %s !|%s si libera da %s!
+%s's hurt by %s!|¡%s sufre por %s!|%s est blessé par %s !|%s è ferito da %s!
+Your|Tu equipo|Ton équipe|La tua squadra
+Enemy|El rival|L'ennemi|Il nemico
+%s POKéMON's LIGHT SCREEN fell!|%s: ¡PANTALLA LUZ se acabó!|%s: MUR LUMIERE disparaît !|%s: SCHERMO LUCE svanisce!
+%s POKéMON's REFLECT faded!|%s: ¡REFLEJO se acabó!|%s: PROTECTION disparaît !|%s: RIFLESSO svanisce!
+%s's ENCORE ended!|¡Terminó OTRA VEZ de %s!|L'ENCORE de %s se termine !|Il RIPETI di %s finisce!
+%s's move is no longer disabled!|¡El movimiento de %s ya no está anulado!|La capacité de %s n'est plus entravée !|La mossa di %s non è più bloccata!
+contribution is not a table|contribution is not a table|contribution is not a table|contribution is not a table
+Zzz... Hm? Wha...?\nYou woke me up!\fWill you check the\nclock for me?|Zzz... ¿Eh?\n¡Me has despertado!\f¿Me ayudas con\nel reloj?|Zzz... Hein ?\nTu m'as réveillé !\fVérifie l'heure\npour moi, veux-tu ?|Zzz... Eh?\nMi hai svegliato!\fMi controlli\nl'orologio?
+OAK's <PK><MN> Talk|OAK: <PK><MN>|CHEN: <PK><MN>|OAK: <PK><MN>
+POKéDEX Show|Show POKéDEX|Emission POKéDEX|Show POKéDEX
+POKéMON Music|Música POKéMON|Musique POKéMON|Musica POKéMON
+Lucky Channel|Canal Suerte|Canal Chance|Canale Fortuna
+Places & People|Gente y Lugares|Lieux et Gens|Luoghi e Persone
+Let's All Sing!|¡Todos a cantar!|Chantons tous !|Cantiamo tutti!
+POKé FLUTE|POKé FLAUTA|POKé FLUTE|POKé FLAUTO
+BUENA's Password|Contraseña BUENA|Mot de passe BUENA|Password di BUENA
