@@ -3,7 +3,7 @@ return function(game)
   local compile=dofile(os.getenv('GERMAN_MOD_ROOT')..'/mod/compiler.lua')
   local memory,writes,calls,applied={},0,0,0
   local cache={read=function(_,p)return memory[p]end,write=function(_,p,b)memory[p]=b;writes=writes+1;return true end,delete=function(_,p)memory[p]=nil;return true end}
-  local mod={cache=cache,log={warn=function()end},content={text={override=function(_,k,v)assert(k=='sample' and v[1].s=='ÄÖÜ');applied=applied+1 end}}}
+  local mod={read=function(_,path)local f=assert(io.open(os.getenv('GERMAN_MOD_ROOT')..'/mod/'..path,'rb'));local s=f:read('*a');f:close();return s end,cache=cache,log={warn=function()end},content={text={override=function(_,k,v)assert(k=='sample' and v[1].s=='ÄÖÜ');applied=applied+1 end}}}
   local function build()
    calls=calls+1
    return {files={['a.bin']='abc\0xyz'},operations={{registry='text',method='override',key='sample',value={{t='text',s='ÄÖÜ'}}}},report={display={abilities={[0]='NONE',[65]='NOTDÜNGER'}}}}

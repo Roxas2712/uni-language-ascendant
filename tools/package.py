@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib, json, re, zipfile
 
 root=Path(__file__).resolve().parents[1]
-files=['manifest.json','main.lua','startup.lua','startup_view.lua','locales.lua','intro.lua','preferences.lua','Weitere-Sprachen.html','adapters.lua','options_schema.lua','rom_requirements.lua','translate.lua','extract.lua','assets.lua','world.lua','compiler.lua','catalog.lua','overlay.lua','README.md','ROM-Liste.html','Performance.html','LICENSE.MD','VENDOR.md','vendor/index.lua']
+files=['manifest.json','main.lua','startup.lua','startup_view.lua','locales.lua','intro.lua','preferences.lua','Weitere-Sprachen.html','adapters.lua','options_schema.lua','rom_requirements.lua','translate.lua','extract.lua','assets.lua','world.lua','compiler.lua','cache_codec.lua','catalog.lua','overlay.lua','README.md','ROM-Liste.html','Performance.html','LICENSE.MD','VENDOR.md','vendor/index.lua']
 files.extend(['latin_glyphs.lua','authored.lua','compat.lua','ptbr_names.lua','ptbr_moves.lua','ptbr_types.lua','ptbr_abilities.lua','ptbr_ability_descriptions.lua','ptbr_move_descriptions.lua','ptbr_gender.lua','ptbr_graphics.lua','ptbr_world_graphics.lua','ptbr_title_graphics.lua','ptbr_asset_text.lua','ptbr_credits.lua','ptbr_summary_graphics.lua','ptbr_pixel_labels.lua','ptbr_pokenav.lua','ptbr_pokenav_trainers.lua','ptbr_side_assets.lua','ptbr_scene_paths.lua','ptbr_scene_text.lua','ptbr_scene_authored.lua', 'ptbr_scene_bindings.lua','ptbr_easy_chat_ui.lua','ptbr_easy_chat.lua','ptbr_easy_chat_words.lua','profiles/sapphire_ptbr.lua'])
 files.extend('profiles/'+game+'_ptbr_authored.lua' for game in ['emerald','ruby','sapphire'])
 files.extend('profiles/'+game+'_ptbr/'+name+'.lua' for game in ['firered','leafgreen'] for name in ['profile','assets','world','authored'])

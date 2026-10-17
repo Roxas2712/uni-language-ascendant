@@ -9,7 +9,7 @@ Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 
 ## Brazilian Portuguese for Gen1–Gen3
 
-Version 1.5.0 contains PT-BR profiles for all eleven editions: Red,
+Version 1.5.1 contains PT-BR profiles for all eleven editions: Red,
 Blue, Yellow, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed and LeafGreen.
 It combines exact fan-translation ROM imports with authored corrections, move
 names and native UI/graphic localization. See the generated
@@ -44,9 +44,9 @@ reinstallation starts fresh. The first-run notice explains this in English.
 
 Build with `python3 tools/package.py`. No ROM or fanpatch is included.
 
-## Install version 1.5.0
+## Install version 1.5.1
 
-1. Download [uni-language-ascendant-1.5.0.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.5.0).
+1. Download [uni-language-ascendant-1.5.1.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.5.1).
 2. Import the matching US base ROM in Gen1Recomp.
 3. Install the ZIP through the mod manager, enable the mod for your game, and
    import your language ROM under **Uni-Language Ascendant → Imports**.
@@ -83,19 +83,38 @@ source and attribution notices.
 
 ## Verification and limitations
 
-The version 1.5.0 report records the current gameplay checks, exact runtime and
+The version 1.5.1 report records the current gameplay checks, exact runtime and
 test-helper fingerprints, screenshot hashes and paired English/PT-BR performance
 runs for every edition. The report builder refuses final output when a required
 run is missing, stale, failed or only a focused sample. See
 [PT-BR.html](mod/PT-BR.html) and [PT-BR-QA.json](docs/PT-BR-QA.json).
 
-The release passes 58 functional groups, 44 paired performance runs, 69 Python
-unit tests and nine Lua unit groups. All 22 PT-BR measurements hit the language
-cache. On the tested M3 Mac, Emerald's median observed rate was 59.84 FPS in both
-languages, while its cached PT-BR mod load took 3.79 seconds and its measured Lua
-heap was 211.8 MiB versus 96.1 MiB in English. These are stationary overworld
-measurements under VSync and background load, not a universal performance guarantee
-or process-RAM figures. The report includes every edition and all raw measurements.
+The release passes 58 functional groups, 44 paired English/PT-BR performance
+runs, 70 Python tests, nine Lua unit groups, the binary-cache suite and ZIP
+install/update/uninstall checks. All 22 PT-BR measurements hit the language cache.
+Every compiled payload from all **25 localized profiles** was compared with 1.5.0:
+final text values and graphics are preserved. Differently packed Emerald contest
+maps were compared as rendered indexed pixels, not assumed equivalent.
+
+A separate warm-cache comparison alternated 1.5.0 / 1.5.1 / 1.5.1 / 1.5.0 in
+Emerald PT-BR. Median mod load fell from **4.41 to 2.71 seconds**
+(39%); sampled Lua heap fell from **211.9 to 151.0 MiB**
+(29%). Peak process RAM was 601.6 / 455.3 MiB.
+See [the optimization evidence](docs/Optimization-1.5.1.json) for all runs, hashes
+and methods. These are stationary overworld measurements on an M3 Mac under
+VSync and background load, without forced Lua collection. They are not a
+whole-story or worst-case performance guarantee.
+
+The cache now uses a bounded data-only binary format. Superseded intermediate
+operations are removed; Gen3 compilation tables are loaded only on cache misses.
+Large Gen3 raw graphics stay losslessly compressed until first use, then their
+decoded bytes are reused. PNGs and manifests stay immediately readable, and full
+exported-asset inspection still returns all files. Savings depend on which screens
+have been visited.
+
+**The first start after upgrading rebuilds the language cache once.** Later starts
+reuse it. Imported ROMs, language preferences, intro status and saves are preserved.
+Damaged cache payloads are rejected before application and rebuilt automatically.
 
 Earlier version 1.4.2 passed unit checks for game/import filtering, fallback selection,
 all nine menu locales, preferences and intro lifecycle. Live Emerald runs checked
@@ -173,3 +192,18 @@ and refuses to overwrite an existing output file. The profile builder separately
 pins the source and target SHA-1 values. `tools/export_asset_metadata.lua` records
 metadata using the shipped private extractors without altering engine/vendor
 files; `tools/build_emerald_ptbr.py --help` lists its private inputs.
+
+
+For the cache implementation, run the headless LÖVE integrity suite:
+
+```sh
+GERMAN_MOD_ROOT="$PWD" QA_ENGINE=/path/to/gen1recomp love tests/cache_unit
+```
+
+`tests/run_ptbr.py` and `tests/run_gen1_ptbr.py` accept `--mode snapshot` to
+fingerprint the complete localized payload and `--mod-root` to compare an archived
+release in the same isolated QA profile. Preserve the generated snapshot before
+running the other version. `tools/compare_cache_snapshots.py` compares the two
+snapshots against their private cache directories; it checks actual pixel output
+when equivalent contest tiles are packed in a different order. No ROM or cache
+payload belongs in the public repository.

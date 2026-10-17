@@ -4,8 +4,8 @@ return function(mod)
  local started=love.timer.getTime()
  local language=own('startup.lua')(mod,version,own)
  if language=='en' then mod.exports.status='english';mod.exports.language='en';mod.exports.loadSeconds=love.timer.getTime()-started;return end
- local required
- for _,row in ipairs(own('rom_requirements.lua')) do if row.game==version then required=row.base.sha1 end end
+ local required,requirements
+ for _,row in ipairs(own('rom_requirements.lua')) do if row.game==version then required=row.base.sha1;requirements=row end end
  local marker=require('src.import.CacheFs').readAt(require('src.core.GameVersion').cachePrefix()..'rom-cache.complete')
  if not required or not marker or marker:sub(-40)~=required then
   mod.exports.status='needs_base';mod.exports.startup.noticeKey='wrongBase'
@@ -14,15 +14,18 @@ return function(mod)
  local adapters=own('adapters.lua')
  local adapter=assert(adapters[require('src.core.GameVersion').generation()],'No language adapter for this generation')
  if adapter~='main.lua' then own(adapter)(mod,version,own,language);mod.exports.loadSeconds=love.timer.getTime()-started;return end
- local selected,profile,info
+ local selected,source,info
  for _,entry in ipairs(own('catalog.lua')) do
   if entry.game==version and entry.language==language then
    local candidate=mod.imports:info(entry.sourceId or entry.id)
    if candidate then
-    local p=own(entry.profile)
-    assert(candidate.md5==p.md5 and candidate.size==p.size,'ROM does not match language profile')
+    local identity
+    for _,row in ipairs(requirements.sources)do
+     if row.language==language and row.md5==candidate.md5 and row.size==candidate.size then identity=row end
+    end
+    assert(identity,'ROM does not match language profile')
     assert(not selected,'Multiple language ROMs installed for this game; keep one active import.')
-    selected,profile,info=entry,p,candidate
+    selected,source,info=entry,identity,candidate
    end
   end
  end
@@ -34,15 +37,10 @@ return function(mod)
  if version=='ruby' or version=='sapphire' then
   assert(require('src.import.gba.versions').BUILD==version,'Uni-Language Ascendant requires the matching USA 1.0 base game.')
  end
- profile.glyphs,profile.assetsPath,profile.worldPath=selected.glyphsPath and own(selected.glyphsPath,selected.language) or selected.glyphs,selected.assets,selected.world
- for code,text in pairs(profile.decodeGlyphs or {}) do profile.glyphs[code]=text end
- if selected.authored then profile.authored=own(selected.authored) end
- if language=='pt-BR' then profile.abilityDescriptions=own('ptbr_ability_descriptions.lua');profile.moveDescriptions=own('ptbr_move_descriptions.lua') end
- profile.metricUnits=selected.language=='pt-BR'
  local W=require('src.import.LuaWriter')
  local function hash(bytes) return love.data.encode('string','hex',love.data.hash('string','sha256',bytes)) end
- local recipe={'compiler-v2',profile.sha1,version}
- local paths={'main.lua','catalog.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua',selected.profile,selected.assets,selected.world}
+ local recipe={'compiler-v3',source.sha1,version}
+ local paths={'main.lua','catalog.lua','rom_requirements.lua','cache_codec.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua',selected.profile,selected.assets,selected.world}
  if selected.authored then paths[#paths+1]=selected.authored;paths[#paths+1]='authored.lua' end
  if language=='pt-BR' then
   paths[#paths+1]='ptbr_moves.lua';paths[#paths+1]='ptbr_names.lua';paths[#paths+1]='ptbr_graphics.lua'
@@ -98,7 +96,15 @@ return function(mod)
  end
  if version=='leafgreen' or version=='firered' then recipe[#recipe+1]=hash(assert(base:read('data/generated/gba/region_map/names.lua'))) end
  local key=hash(table.concat(recipe,'\n'))
- local files,result=own('compiler.lua')(mod,key,function()
+ local files,result,materialize=own('compiler.lua')(mod,key,function()
+  -- Address maps and authored IR are needed only on a cache miss.
+  local profile=own(selected.profile)
+  assert(profile.sha1==source.sha1 and profile.md5==info.md5 and profile.size==info.size,'Profile identity mismatch')
+  profile.glyphs,profile.assetsPath,profile.worldPath=selected.glyphsPath and own(selected.glyphsPath,selected.language) or selected.glyphs,selected.assets,selected.world
+  for code,text in pairs(profile.decodeGlyphs or {}) do profile.glyphs[code]=text end
+  if selected.authored then profile.authored=own(selected.authored) end
+  if language=='pt-BR' then profile.abilityDescriptions=own('ptbr_ability_descriptions.lua');profile.moveDescriptions=own('ptbr_move_descriptions.lua') end
+  profile.metricUnits=selected.language=='pt-BR'
   local chunks={}
   for offset=0,info.size-1,4*1024*1024 do
    local length=math.min(4*1024*1024,info.size-offset)
@@ -201,9 +207,9 @@ return function(mod)
   report.count,report.bytes=0,0
   for _,data in pairs(assets) do report.count=report.count+1;report.bytes=report.bytes+#data end
   return {files=assets,operations=operations,report=translated}
- end)
+ end,{lazyAssets=true})
  if result.display.genderPlaceholders then own('ptbr_gender.lua')() end
- own('overlay.lua')(mod,version,files,result.display,own('ptbr_easy_chat_ui.lua'))
+ own('overlay.lua')(mod,version,files,result.display,own('ptbr_easy_chat_ui.lua'),materialize)
  own('compat.lua')(mod)
  mod.exports.loadSeconds=love.timer.getTime()-started
  mod.exports.status='active'
