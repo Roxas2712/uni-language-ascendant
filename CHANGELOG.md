@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0-merged-preview.1
+
+- Combine European preview 5 with PT-BR 1.5.2: 38 localized profiles.
+- Preserve optimized caches and disabled language choices.
+- Record fresh integration checks separately from historical branch QA.
+
 ## 1.4.3-europe-preview.5
 
 - Translate the remaining shared mod-contribution diagnostic in ES/FR/IT.
@@ -18,6 +24,20 @@
 - Correct the SPEED settings/stat meaning collision and dynamic zoom labels.
 - Add bounded source, real-font/menu, native credit-pointer, cold/warm cache,
   save and English/disabled lifecycle checks for all twelve GBA profiles.
+## 1.5.1
+
+- Load compiled operations from a bounded binary data format and defer large
+  Gen3 address/translation tables until a cache rebuild is actually needed.
+- Remove superseded operation history while preserving final values, patch
+  chains and first-touch ordering.
+- Keep large Gen3 raw graphics losslessly compressed until first use, then reuse
+  the decoded bytes. Full exported asset inspection still exposes every file.
+- Validate stored and expanded cache payloads before applying translations;
+  damaged caches rebuild automatically.
+- Rebuild the language cache once after updating; preserve imported ROMs,
+  language choices, intro status and saves.
+- Add complete before/after content comparison and controlled release-to-release
+  performance evidence alongside the native gameplay checks.
 
 ## 1.4.2
 

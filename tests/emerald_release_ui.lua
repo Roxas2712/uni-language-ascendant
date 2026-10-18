@@ -3,7 +3,9 @@ return function(game)
  if love.setDeprecationOutput then love.setDeprecationOutput(false) end
  local ok,err=xpcall(function()
   local lang=os.getenv('QA_LANGUAGE');local e=assert(game.mods.exports.german_rom_source);local ui=assert(e.startup)
-  assert(ui.open and #ui.choices==5)
+  assert(ui.open and #ui.choices>=10)
+  local enabled=0;for _,choice in ipairs(ui.choices) do if choice.available then enabled=enabled+1 end end
+  assert(enabled==(tonumber(os.getenv('QA_CHOICES')) or 5),'incorrect available-language count')
   local function shot(name)
    wait(4);local done=false
    love.graphics.captureScreenshot(function(data)
@@ -33,7 +35,7 @@ return function(game)
   wait(60);require('src.ui.game3.map_name_popup').dismiss()
   require('src.ui.game3.hud').openMessage(game,require('src.core.game3.rom_text').plain('gText_WouldYouLikeToRestYourPkmn'))
   wait(10);require('src.ui.game3.message').advance();shot('dialogue')
-  print('RELEASE_UI_OK',lang,'five languages, scaled mouse pages, reveal dialogue')
+  print('RELEASE_UI_OK',lang,'imported languages, scaled mouse pages, reveal dialogue')
  end,debug.traceback)
  if not ok then print('RELEASE_UI_FAILED',err)end
  love.event.quit(ok and 0 or 1)

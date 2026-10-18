@@ -23,5 +23,9 @@ elseif language == 'es' then
 elseif language == 'it' then
  glyphs[0x5E],glyphs[0x5F],glyphs[0x60],glyphs[0x61]='POKé','','MEL',''
  glyphs[0x62],glyphs[0x63]='LA','LE'
+elseif language == 'pt-BR' then
+ -- Zambrakas 2013 repurposes these font cells in every Latin font face.
+ glyphs[0x0C],glyphs[0x21]='Í','í'
+ glyphs[0xF1],glyphs[0xF2],glyphs[0xF4],glyphs[0xF5]='Ã','Õ','ã','õ'
 end
 return glyphs

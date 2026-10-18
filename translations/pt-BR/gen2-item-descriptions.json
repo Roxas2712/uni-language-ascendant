@@ -1,0 +1,678 @@
+{
+  "MASTER_BALL": {
+    "source_sha256": "f2f9c921cf3f6190c5357c6148edc706c3134f641890688583df9acb830ff2ba",
+    "text": "A melhor BOLA.\nNunca falha."
+  },
+  "ULTRA_BALL": {
+    "source_sha256": "7517842c942523334313260fca7538e6a6bbb3dff7a648c9d2d1716429fdc230",
+    "text": "BOLA com alta\nchance de captura."
+  },
+  "BRIGHTPOWDER": {
+    "source_sha256": "66af29191fc0975defabdf925fa1a8b228efbabdf904ee0a8df18c455fd3a4f1",
+    "text": "Reduz a precisão\nrival. (PORTAR)"
+  },
+  "GREAT_BALL": {
+    "source_sha256": "16710ce7ef8a5acb52a7ab9a0f592eae5a0e0abf940c2383736a6e4fc2cb9895",
+    "text": "BOLA com boa\nchance de captura."
+  },
+  "POKE_BALL": {
+    "source_sha256": "78ed9d5e95736c75e50ce0e3f63d624c93b7d39c88c627dc8d1b7822acc33aff",
+    "text": "Usada para\ncapturar POKéMON."
+  },
+  "BICYCLE": {
+    "source_sha256": "02adf1b943c9180ea299b062a1b75a449d254d76887ad353db0659fe95bb7dca",
+    "text": "Bicicleta dobrável\npara andar rápido."
+  },
+  "MOON_STONE": {
+    "source_sha256": "7a3b1eb7d5f8aaf0a9b08056efa0dd1c9580b28fec75a5f3bdff8ef0f4e52588",
+    "text": "Evolui certos\nPOKéMON."
+  },
+  "ANTIDOTE": {
+    "source_sha256": "eeb71e6ff64fd1e97b363a46ccb35d339b41f4c71600e91f6aed8b5860d40eb6",
+    "text": "Cura POKéMON\nenvenenados."
+  },
+  "BURN_HEAL": {
+    "source_sha256": "58ab599d03e96ddad0f37c009d57e0b7542d7797afd8303f8d5daf58a477631c",
+    "text": "Cura POKéMON\ncom queimaduras."
+  },
+  "ICE_HEAL": {
+    "source_sha256": "f58984b4b3442f49d067c36abf97780882945e641987c48d2bbbd9bd6e93649c",
+    "text": "Descongela\num POKéMON."
+  },
+  "AWAKENING": {
+    "source_sha256": "7673bdd7ef762e1619913230c30b5f63cf55e6f10a3ef287724c88e2e4470ea1",
+    "text": "Acorda POKéMON\nadormecidos."
+  },
+  "PARLYZ_HEAL": {
+    "source_sha256": "5168bbcfaf6f19f0608ea288dfb22d421e0b3fd3219b89cc0591094630ee5461",
+    "text": "Cura POKéMON\nparalisados."
+  },
+  "FULL_RESTORE": {
+    "source_sha256": "710b60e0e659101a2d369996b561cf5bf073f529aed6a12d2ca3a1138d8970fc",
+    "text": "Restaura todos os\nPS e o estado."
+  },
+  "MAX_POTION": {
+    "source_sha256": "7638d5215bc7cb4a92a344fa07e78371fb637555749c82d8439c9ce7610c7a6f",
+    "text": "Restaura todos os\nPS de um POKéMON."
+  },
+  "HYPER_POTION": {
+    "source_sha256": "22c23bc6e244d43fd7566976dd2d0160c89ba1a0ab85c2f92bfac7560f413943",
+    "text": "Restaura 200 PS\nde um POKéMON."
+  },
+  "SUPER_POTION": {
+    "source_sha256": "2955882d9d9173cbc29f14dbd1b6477eee6580f569e3a424e6d7cbf27835fd60",
+    "text": "Restaura 50 PS\nde um POKéMON."
+  },
+  "POTION": {
+    "source_sha256": "09e6e46ffca45ef03d291d2bbf87d3c315deeeb70451b17a2a8cffb6d70af988",
+    "text": "Restaura 20 PS\nde um POKéMON."
+  },
+  "ESCAPE_ROPE": {
+    "source_sha256": "1a1734cbb724e7bbb100bc45de5c2abb4251c002ae6d8721503ef8e450e78888",
+    "text": "Permite fugir de\ncavernas etc."
+  },
+  "REPEL": {
+    "source_sha256": "52b7a5670c5b52b269cb982b92bf2defd1982f331ecbc196a4b6c7193f722f96",
+    "text": "Repele os fracos\npor 100 passos."
+  },
+  "MAX_ELIXER": {
+    "source_sha256": "d0e59839eee18ce515a8c12c90af187f99ce80c290fe890303aa3f5b54991648",
+    "text": "Restaura todo PP\nde um POKéMON."
+  },
+  "FIRE_STONE": {
+    "source_sha256": "7a3b1eb7d5f8aaf0a9b08056efa0dd1c9580b28fec75a5f3bdff8ef0f4e52588",
+    "text": "Evolui certos\nPOKéMON."
+  },
+  "THUNDERSTONE": {
+    "source_sha256": "7a3b1eb7d5f8aaf0a9b08056efa0dd1c9580b28fec75a5f3bdff8ef0f4e52588",
+    "text": "Evolui certos\nPOKéMON."
+  },
+  "WATER_STONE": {
+    "source_sha256": "7a3b1eb7d5f8aaf0a9b08056efa0dd1c9580b28fec75a5f3bdff8ef0f4e52588",
+    "text": "Evolui certos\nPOKéMON."
+  },
+  "HP_UP": {
+    "source_sha256": "ee5577092b79724c38589a774dfc020a5fc2a7d417c26c9ac5c5ee454e0e5108",
+    "text": "Aumenta os PS\nde um POKéMON."
+  },
+  "PROTEIN": {
+    "source_sha256": "793f178a85935ca7738ef714fea8058ee88242c834c175424b7a8c79ba76bf8b",
+    "text": "Aumenta o ATAQUE\nde um POKéMON."
+  },
+  "IRON": {
+    "source_sha256": "291a4193a4a22dbb1f0a09edb87881cbfa0bf085118d0138ac5b3068362c1c6a",
+    "text": "Aumenta a DEFESA\nde um POKéMON."
+  },
+  "CARBOS": {
+    "source_sha256": "c9d3a85b910e4087210ba3ba727da91b1facf207549f7fef52c5703795b582eb",
+    "text": "Eleva VELOCIDADE\nde um POKéMON."
+  },
+  "LUCKY_PUNCH": {
+    "source_sha256": "515efc0072ad97ccca8285e598a7680d1cee0a43ffd5ff5000389a5d77d669cf",
+    "text": "Mais críticos\npara CHANSEY."
+  },
+  "CALCIUM": {
+    "source_sha256": "ab12e186ebbb817dd34d62fc0f1ec80b4532d13c96b54488195de1b664a548e5",
+    "text": "Eleva atributos\nESPECIAIS."
+  },
+  "RARE_CANDY": {
+    "source_sha256": "b3e008f7e0e21a1e0e3aff416d8fa4fb4f29ae055a208a6687b66bb34ed3d020",
+    "text": "Sobe um nível\nde um POKéMON."
+  },
+  "X_ACCURACY": {
+    "source_sha256": "325ab220f9a449086df527433481ba2cfc1bf7d6588be0767ff35caeaf6d9c4f",
+    "text": "Eleva a precisão.\n(Uma batalha)"
+  },
+  "LEAF_STONE": {
+    "source_sha256": "7a3b1eb7d5f8aaf0a9b08056efa0dd1c9580b28fec75a5f3bdff8ef0f4e52588",
+    "text": "Evolui certos\nPOKéMON."
+  },
+  "METAL_POWDER": {
+    "source_sha256": "537278206cba3610329b55463af46483aee625156af89c93a0cf1d119f35c16a",
+    "text": "Eleva a DEFESA de\nDITTO. (PORTAR)"
+  },
+  "NUGGET": {
+    "source_sha256": "130c50d5a03aaa9c7e266ccb39d6a0ef57776493ff731f7592dd1d640eafa22f",
+    "text": "Feito de ouro\npuro. Vale muito."
+  },
+  "POKE_DOLL": {
+    "source_sha256": "86b8b3ffefde869b027faafa7dca1d600156d83ecfd2fdb514e023615cf5b0fa",
+    "text": "Permite fugir de\nPOKéMON selvagens."
+  },
+  "FULL_HEAL": {
+    "source_sha256": "6d2656d70542764b9a5de1e313bcb72adf757c4fac9ffbf3e2f785160659d945",
+    "text": "Cura problemas\nde estado."
+  },
+  "REVIVE": {
+    "source_sha256": "53d479cd5d67e35c909c4dac12ac359f315bdbd64c69aa061c00aca660c951ba",
+    "text": "Revive POKéMON com\nmetade dos PS."
+  },
+  "MAX_REVIVE": {
+    "source_sha256": "d151d91441cc3098e0139d34cfbbbe58fbe50852866fd354c17fedf8de5aeb7d",
+    "text": "Revive POKéMON com\ntodos os PS."
+  },
+  "GUARD_SPEC": {
+    "source_sha256": "534b033467c5e6fcbc7b14c7c27b3e6f3c744bc9a6765cde51bae4de8015d078",
+    "text": "Evita perda de\natrib. (1 batalha)"
+  },
+  "SUPER_REPEL": {
+    "source_sha256": "fd8bb8ccf7d503cfabbd8fbdc05c13fcaa8a8f36f29be05076aadff3448a123f",
+    "text": "Repele os fracos\npor 200 passos."
+  },
+  "MAX_REPEL": {
+    "source_sha256": "728e4e2e68c2c21aaa9bf6d1f05c6555b119019c70a7b186b64c0741b2f8b76f",
+    "text": "Repele os fracos\npor 250 passos."
+  },
+  "DIRE_HIT": {
+    "source_sha256": "12eb2d84232b02fe07fb5fc5f6d9335bab4de127a513293adb0ae9c5097e5cdf",
+    "text": "Mais críticos.\n(Uma batalha)"
+  },
+  "FRESH_WATER": {
+    "source_sha256": "2955882d9d9173cbc29f14dbd1b6477eee6580f569e3a424e6d7cbf27835fd60",
+    "text": "Restaura 50 PS\nde um POKéMON."
+  },
+  "SODA_POP": {
+    "source_sha256": "92843f1db9f06a33a1a354fdb4f4948981d3e9a4ffc7c8d16b91d50737ff8025",
+    "text": "Restaura 60 PS\nde um POKéMON."
+  },
+  "LEMONADE": {
+    "source_sha256": "91a5b93c6d924673ea229643e183a430989ce22ad071f0be7aebe5f04100e5a9",
+    "text": "Restaura 80 PS\nde um POKéMON."
+  },
+  "X_ATTACK": {
+    "source_sha256": "f70643595b4d851d0bdf9e9cf5834cda3d63ff89ba905119e0650eb98bf71fa2",
+    "text": "Eleva o ATAQUE.\n(Uma batalha)"
+  },
+  "X_DEFEND": {
+    "source_sha256": "ba0ecb53aa217a9fd29983e214a6b04a7379f29afa9a0ed2ecbd3aa3a062e64c",
+    "text": "Eleva a DEFESA.\n(Uma batalha)"
+  },
+  "X_SPEED": {
+    "source_sha256": "cf425196812a249dedc6d51906d873fe7b2c82561ab3f5d46a6ba4f14277cf90",
+    "text": "Eleva VELOCIDADE.\n(Uma batalha)"
+  },
+  "X_SPECIAL": {
+    "source_sha256": "0e68d20cd7f9df715c63604fb75b198d211665529e5b44d1ec75037079ca6b57",
+    "text": "Eleva ESPECIAIS.\n(Uma batalha)"
+  },
+  "COIN_CASE": {
+    "source_sha256": "062c36788378150e1f8cbb10b738e458a418fa7122fdf1b36ad7a3e8553f38a1",
+    "text": "Guarda até 9.999\nfichas de jogo."
+  },
+  "ITEMFINDER": {
+    "source_sha256": "f122e1bb388081aa03b4545b15a820d4ad597d7fed5c094b122ebf7d13cec64f",
+    "text": "Detecta itens\nocultos por perto."
+  },
+  "EXP_SHARE": {
+    "source_sha256": "d7bbd73c46a19eaa7d61cb2c835cd89d7c8e0c3049377bbdd930e82a74c15610",
+    "text": "Divide a EXP.\nganha. (PORTAR)"
+  },
+  "OLD_ROD": {
+    "source_sha256": "f6c3d99e7fcc834eeb09fe8149002ff5295cf1a394e5a84a37f1af7324796c90",
+    "text": "Use junto à água\npara pescar."
+  },
+  "GOOD_ROD": {
+    "source_sha256": "a65ab645966f7a2f77b03b69036161b44058729501b52301b408daccc5cc4031",
+    "text": "Uma boa VARA para\npescar POKéMON."
+  },
+  "SILVER_LEAF": {
+    "source_sha256": "20e6bdb406d96f0c78a4bd8a527986cc1f11082e9ded0a718efd25339955d918",
+    "text": "Uma estranha\nfolha prateada."
+  },
+  "SUPER_ROD": {
+    "source_sha256": "79548f6e574a646573b112448af68411155080f248b3c3e254df3475028606b1",
+    "text": "A melhor VARA para\npescar POKéMON."
+  },
+  "PP_UP": {
+    "source_sha256": "9164d8f3381bd092d4587c642243dd85be9d34748ec9504cebbe35c603f11ba1",
+    "text": "Aumenta PP máximo\nde um golpe."
+  },
+  "ETHER": {
+    "source_sha256": "84f0a79e77b73f04d77130d39762c7fe3013b9a1d23e6171e16b0b1b443d0ef7",
+    "text": "Restaura 10 PP\nde um golpe."
+  },
+  "MAX_ETHER": {
+    "source_sha256": "4f8140e696b63fbd84523823fc180053adeb6443acc4a8e40b426b0f0cf90c3d",
+    "text": "Restaura todo PP\nde um golpe."
+  },
+  "ELIXER": {
+    "source_sha256": "d850136f74fdfb9302e920240980358ab936d8c1aeba205b7b042fdc26ca534b",
+    "text": "Restaura 10 PP\nde cada golpe."
+  },
+  "RED_SCALE": {
+    "source_sha256": "c86c8dcabccaf2f41ecc861715564f1e2eae73e8e0066a48eb5299c51dcd96b8",
+    "text": "Uma escama de\nGYARADOS vermelho."
+  },
+  "SECRETPOTION": {
+    "source_sha256": "88888dad2270dcb7cb3512eb2f81879a402f18f47b22b1cf7602e9e753707ccf",
+    "text": "Cura totalmente\nqualquer POKéMON."
+  },
+  "S_S_TICKET": {
+    "source_sha256": "bd494d13225681496aae7495e4361b0809f02b8bd567270f44a9aea640a8f275",
+    "text": "Uma passagem\npara o S.S.AQUA."
+  },
+  "MYSTERY_EGG": {
+    "source_sha256": "9ec217421077dcc8488305b1789d2db8937ddee438dce44685e77802b0be0351",
+    "text": "Um OVO recebido\ndo SR.POKéMON."
+  },
+  "SILVER_WING": {
+    "source_sha256": "b40272d20ee4ac0510d43805b25fa1795619422e4f343283c67fe86a39b928fa",
+    "text": "Uma estranha\npena prateada."
+  },
+  "MOOMOO_MILK": {
+    "source_sha256": "3df3cae99523ff00c8157e99da60c5ea3b3a7a45aebb618d17948b6b08832488",
+    "text": "Restaura 100 PS\nde um POKéMON."
+  },
+  "QUICK_CLAW": {
+    "source_sha256": "bff7f007a16a4051c3be7fd0ce71bdc43a3f0209b0453609032abb3ddf684ad1",
+    "text": "Pode agir antes\ndo alvo. (PORTAR)"
+  },
+  "PSNCUREBERRY": {
+    "source_sha256": "6022be188a1420399104390ecc18854bda7b60e7d0a93d3ab9223112c8166e8f",
+    "text": "Cura o veneno\nsozinha. (PORTAR)"
+  },
+  "GOLD_LEAF": {
+    "source_sha256": "04128a971f3eadbce42894d97384818f9a6a2c01a96bb407c2b11076d3f09df1",
+    "text": "Uma estranha\nfolha dourada."
+  },
+  "SOFT_SAND": {
+    "source_sha256": "ce5ab714abbefe9ff67796da3776b2055a955d5dced4d3b68846b3bff3cff93b",
+    "text": "Reforça golpes de\nTERRA. (PORTAR)"
+  },
+  "SHARP_BEAK": {
+    "source_sha256": "b232722ae42b73611d1314d531dca29340e2e89ced22fff1e78f8fcd7d84d25a",
+    "text": "Reforça golpes de\nVOADOR. (PORTAR)"
+  },
+  "PRZCUREBERRY": {
+    "source_sha256": "0287b87dc3572484c7133a8e312816898702bc9c10f00c7b3fbad3c173a1b285",
+    "text": "Cura paralisia\nsozinha. (PORTAR)"
+  },
+  "BURNT_BERRY": {
+    "source_sha256": "abfd2eef3e5ce90ff5c7016bc1348e68eacd01dc9bbac227b3e23cf8cb938818",
+    "text": "Descongela\nsozinha. (PORTAR)"
+  },
+  "ICE_BERRY": {
+    "source_sha256": "b91116dcac568f13fdc716dc513621e8728f9ff96a7c2149607658a55e64cabc",
+    "text": "Cura queimaduras.\n(PORTAR)"
+  },
+  "POISON_BARB": {
+    "source_sha256": "16b1790335644ebe34c35af24c63a8e4d55a32e3e9529c0f1b45b97760d409e7",
+    "text": "Reforça golpes de\nVENENO. (PORTAR)"
+  },
+  "KINGS_ROCK": {
+    "source_sha256": "967f6685a69d26d13cc276a87e7786751a6c734b5f2092bdb3d7839e3705bfba",
+    "text": "Pode fazer o alvo\nhesitar. (PORTAR)"
+  },
+  "BITTER_BERRY": {
+    "source_sha256": "591ccf9c160dff6fbb17341b94a4dc29b519df2699c60b1a5be0790bf7a558ea",
+    "text": "Cura a confusão\nsozinha. (PORTAR)"
+  },
+  "MINT_BERRY": {
+    "source_sha256": "78e6ea4ff7ff4573b42da77dafaee071bd199c00f43a8740c503f1325963c41e",
+    "text": "Acorda POKéMON\nsozinho. (PORTAR)"
+  },
+  "RED_APRICORN": {
+    "source_sha256": "566f574900f1a7446d64101359e12c695e0bb4c3274c6c5edb607490e2116db1",
+    "text": "Um APRICORN\nvermelho."
+  },
+  "TINYMUSHROOM": {
+    "source_sha256": "db8c4cdd2bfa3b0bc54ff236d8fc214b115e2752aeca27df24bb3e9bb567f116",
+    "text": "Cogumelo comum.\nVale pouco."
+  },
+  "BIG_MUSHROOM": {
+    "source_sha256": "53a198a5c27ed283c1d6c32b94c24e81ab17a3a495272732293732f67334367a",
+    "text": "Cogumelo raro.\nVale muito."
+  },
+  "SILVERPOWDER": {
+    "source_sha256": "f32c66016c45706b186b2c0f8469aa689b6d0a84220a820a2035a607c3b23d98",
+    "text": "Reforça golpes de\nINSETO. (PORTAR)"
+  },
+  "BLU_APRICORN": {
+    "source_sha256": "b0732912464bdf2160d29fa2d69984bf8a361eef1191854aff8292d66bd54c72",
+    "text": "Um APRICORN azul."
+  },
+  "AMULET_COIN": {
+    "source_sha256": "c5b2628b861d0db8874f81d1349fa46f96a385343fba5c457a3eb2fec851de65",
+    "text": "Dobra o dinheiro\nganho. (PORTAR)"
+  },
+  "YLW_APRICORN": {
+    "source_sha256": "88401a35c4da5550ebc0656853a497d0a73e1ea04f90f332c79044a82f63d238",
+    "text": "Um APRICORN\namarelo."
+  },
+  "GRN_APRICORN": {
+    "source_sha256": "cd77d932bc8a59ba0ae579067b74e8093d71240d6551f39671e02bccf35c094b",
+    "text": "Um APRICORN verde."
+  },
+  "CLEANSE_TAG": {
+    "source_sha256": "66d6037443af9d0cbe6bc8c6d980435c4cc72581516ad0297bfdd862879cc3a5",
+    "text": "Repele POKéMON\nselvagem. (PORTAR)"
+  },
+  "MYSTIC_WATER": {
+    "source_sha256": "df0077b8d8440087cc20d4ec971287bb21ba961670f59efb646d0dc330d859b1",
+    "text": "Reforça golpes de\nÁGUA. (PORTAR)"
+  },
+  "TWISTEDSPOON": {
+    "source_sha256": "77d1f0953fd29faf10dd129c79cf77157ae602f925371f05890c385e34ef72e2",
+    "text": "Reforça PSÍQUICO.\n(PORTAR)"
+  },
+  "WHT_APRICORN": {
+    "source_sha256": "a22ed3e054f3922dfa1e0666911726a8a378531fa35ef7f4c8336f19327bbeca",
+    "text": "Um APRICORN\nbranco."
+  },
+  "BLACKBELT_I": {
+    "source_sha256": "e355bf3b387d2f19b0cfd02115d51af16e6b04f381b3a301365660c16e2c4601",
+    "text": "Reforça golpes de\nLUTA. (PORTAR)"
+  },
+  "BLK_APRICORN": {
+    "source_sha256": "79a75eaf5cd742be3fcb1dfe4e21540cbd2a35f04127976d7c64e0bd96c26846",
+    "text": "Um APRICORN preto."
+  },
+  "PNK_APRICORN": {
+    "source_sha256": "35b407bf80ce0c69028ca19fe3b688a8b8f7e119c71f8f9f315353a97eb8f526",
+    "text": "Um APRICORN rosa."
+  },
+  "BLACKGLASSES": {
+    "source_sha256": "35c07ab6683030229e2d0cc47f6e54d2c8737cc57cef66f77c6872976cbf111e",
+    "text": "Reforça SOMBRIO.\n(PORTAR)"
+  },
+  "SLOWPOKETAIL": {
+    "source_sha256": "1023169503f4fc2ae518f09c263e2932f85524ae09fa7672a6883cc4e02a6069",
+    "text": "Muito saborosa.\nVale muito."
+  },
+  "PINK_BOW": {
+    "source_sha256": "9762406136709988b74db693c34942b71279eefb00c0f271416cff2427c49caf",
+    "text": "Reforça golpes de\nNORMAL. (PORTAR)"
+  },
+  "STICK": {
+    "source_sha256": "f413f89b5cdd77c4a58afcc444044a5818d992004852178c62e562b326bea627",
+    "text": "Um galho comum.\nVale pouco."
+  },
+  "SMOKE_BALL": {
+    "source_sha256": "d65ef861045718a50915fad25144e33a8eb11a3c8ed233312c920aae51d37ed6",
+    "text": "Foge de POKéMON\nselvagem. (PORTAR)"
+  },
+  "NEVERMELTICE": {
+    "source_sha256": "e9f3ee9a999c87eea00388e84e4025f7eefae5fdf50b19f90c90a063870e4450",
+    "text": "Reforça golpes de\nGELO. (PORTAR)"
+  },
+  "MAGNET": {
+    "source_sha256": "f0fc18a362a5b420a071f4e5edf72788d2f5cdbf858aecbd4820c965f76cc70f",
+    "text": "Reforça ELÉTRICO.\n(PORTAR)"
+  },
+  "MIRACLEBERRY": {
+    "source_sha256": "aa8d9594922286b154c409c43f37508bc9c357633d3c1bb257615fad2ca9ee19",
+    "text": "Cura problemas de\nestado. (PORTAR)"
+  },
+  "PEARL": {
+    "source_sha256": "581f2ccd0ee9f106b678c405ebf1e5082b07086ad8b86e9088c165b17ebd9718",
+    "text": "Uma bela pérola.\nVale pouco."
+  },
+  "BIG_PEARL": {
+    "source_sha256": "d80b335b04f4af5a405739d72af8c64e958bca6f702bda1b277caf198091a279",
+    "text": "Pérola grande.\nBela e valiosa."
+  },
+  "EVERSTONE": {
+    "source_sha256": "8ed4da6adfd528f7bd33b9267dd8dca64382f7ba9553d02e90db6463ff21bdba",
+    "text": "Impede a evolução.\n(PORTAR)"
+  },
+  "SPELL_TAG": {
+    "source_sha256": "8764e226e95259ad6a174da4f779b204fe695e85f667ac8d74ff27a8e624d610",
+    "text": "Reforça FANTASMA.\n(PORTAR)"
+  },
+  "RAGECANDYBAR": {
+    "source_sha256": "09e6e46ffca45ef03d291d2bbf87d3c315deeeb70451b17a2a8cffb6d70af988",
+    "text": "Restaura 20 PS\nde um POKéMON."
+  },
+  "MIRACLE_SEED": {
+    "source_sha256": "22a32784c9cfdbd690808d752bff4fdd8ccc395335c5b1080489338cc0a07605",
+    "text": "Reforça golpes de\nPLANTA. (PORTAR)"
+  },
+  "THICK_CLUB": {
+    "source_sha256": "de289de0fcc5c9b7622926ea40fabd8861210c3054cbe0a5e33717f71495d6c8",
+    "text": "Um tipo de osso.\nVale pouco."
+  },
+  "FOCUS_BAND": {
+    "source_sha256": "985053e4e64ce8033cf8afa4593b7ec2cd3b3382827116969e6e9dfb381ff371",
+    "text": "Pode evitar um\ndesmaio. (PORTAR)"
+  },
+  "ENERGYPOWDER": {
+    "source_sha256": "a0e518b5e7115b399395e2e9ac95697ec4cd60ffd36c171e549a192e1ca517db",
+    "text": "Restaura 50 PS.\nÉ amargo."
+  },
+  "ENERGY_ROOT": {
+    "source_sha256": "530732ca7bf1b9254d08d908e13bddff0f2c0d342856793de3e01a7edfab5bad",
+    "text": "Restaura 200 PS.\nÉ amarga."
+  },
+  "HEAL_POWDER": {
+    "source_sha256": "abd167bbce1086dc1ebf6aa5b05afc375740ffc53bcee7b2d09f953e83d34b8f",
+    "text": "Cura problemas de\nestado. Amargo."
+  },
+  "REVIVAL_HERB": {
+    "source_sha256": "c68e047a73349060df38768e270d91768260910a5a5f2cbe00dc28348864a318",
+    "text": "Revive POKéMON.\nÉ amarga."
+  },
+  "HARD_STONE": {
+    "source_sha256": "7f8aaf7b9ec4639986f268329a5841509076fe8b87c267edabb7495abe915549",
+    "text": "Reforça golpes de\nPEDRA. (PORTAR)"
+  },
+  "LUCKY_EGG": {
+    "source_sha256": "fa64ad2bd183f019b44c9bde856b5e6219271f4dbf706d2af6b7c5a12fad40ca",
+    "text": "Ganha EXP. extra.\n(PORTAR)"
+  },
+  "CARD_KEY": {
+    "source_sha256": "6bdcc6862dc9e7d4c6978d801100d83b14e76b49d3b9734fea7c4f73a626dae2",
+    "text": "Abre as portas da\nTORRE DE RÁDIO."
+  },
+  "MACHINE_PART": {
+    "source_sha256": "38bc40774b9a67b99979b87375d9c415938da4f031da73e01035b8de6a32b3c5",
+    "text": "Uma peça de\nmáquina da USINA."
+  },
+  "LOST_ITEM": {
+    "source_sha256": "76312356ca1a266720a2a35b10435bd2472340a701ee4ed14a234aed58de4d17",
+    "text": "BONECA POKé que a\nIMITADORA perdeu."
+  },
+  "STARDUST": {
+    "source_sha256": "1912a586ef4fcf0fd672757d0a10fcfc24052744cca1452e60162de1bbb7b160",
+    "text": "Bela areia rubra.\nVale muito."
+  },
+  "STAR_PIECE": {
+    "source_sha256": "4eaebdae9ae394a8df331c4185aae567118e2d7e50bdd653121cbe4cb7e43bc8",
+    "text": "Pedaço de gema.\nVale muito mesmo."
+  },
+  "BASEMENT_KEY": {
+    "source_sha256": "34943623e9847ff526b3fdc537dedb3d5031b6ced9f70f434978693cb3751c2d",
+    "text": "Abre portas."
+  },
+  "PASS": {
+    "source_sha256": "de0256fe39b2359c165c2376f05c2edad3d1094970e4dba7731abbf417ceb2f8",
+    "text": "Uma passagem para\no TREM MAGNÉTICO."
+  },
+  "CHARCOAL": {
+    "source_sha256": "bb77d5f32a4522ceabb3cc1342114cbe08338cf0495268447a98c59f6e91253a",
+    "text": "Reforça golpes de\nFOGO. (PORTAR)"
+  },
+  "BERRY_JUICE": {
+    "source_sha256": "09e6e46ffca45ef03d291d2bbf87d3c315deeeb70451b17a2a8cffb6d70af988",
+    "text": "Restaura 20 PS\nde um POKéMON."
+  },
+  "SCOPE_LENS": {
+    "source_sha256": "339fce3bd4d93c9add327d839719ecd8e598e7064b48b410b319f222ca9412fc",
+    "text": "Mais críticos.\n(PORTAR)"
+  },
+  "METAL_COAT": {
+    "source_sha256": "e5175c3302a204015693116ad6d4c518e51d8839ee840f47d6c82b4199bd2272",
+    "text": "Reforça golpes de\nAÇO. (PORTAR)"
+  },
+  "DRAGON_FANG": {
+    "source_sha256": "0cdcb286483d66ea373833e35d9ca5c9a165483e5fe05940ab1277cc35e24a66",
+    "text": "Reforça golpes de\nDRAGÃO. (PORTAR)"
+  },
+  "LEFTOVERS": {
+    "source_sha256": "d19c1e31e343dd77118ea578cc61f33a59f9b14938f0961d1814385eca8b9be4",
+    "text": "Restaura PS na\nbatalha. (PORTAR)"
+  },
+  "MYSTERYBERRY": {
+    "source_sha256": "845506702502386432b20dac57ccf8b37096e50b6ff03b058fd7e79c235b7380",
+    "text": "Restaura PP\nsozinha. (PORTAR)"
+  },
+  "DRAGON_SCALE": {
+    "source_sha256": "1d0bb137f3e7933d00c74642227879fbeac78c58553c711f4520e9999c9a1f59",
+    "text": "Um item raro\ndo tipo DRAGÃO."
+  },
+  "BERSERK_GENE": {
+    "source_sha256": "19f98e8aa43d86f1cd107e71443a168f651ef54daafd2b7c4200a82c44d3271f",
+    "text": "Eleva ATAQUE e\ncausa confusão."
+  },
+  "SACRED_ASH": {
+    "source_sha256": "f7cdbb0dc1922d528c0f04dd244df9ba70d7a5cbb54dccb162ea57f96e12b723",
+    "text": "Revive e cura\ntodos desmaiados."
+  },
+  "HEAVY_BALL": {
+    "source_sha256": "62910763f509f1ab982b614dd88ea375c1920338d1de2b4ecfbab51c99c5502a",
+    "text": "Uma BOLA para\nPOKéMON pesados."
+  },
+  "FLOWER_MAIL": {
+    "source_sha256": "426e75ced3f34c4fdbcbf4554412075e62915f3c936419d87e2204f1c38f3d76",
+    "text": "CARTA com flores.\n(PORTAR)"
+  },
+  "LEVEL_BALL": {
+    "source_sha256": "b39d217d538503fec0d555d34918290c33871d7e92782433dd6ca8c812e9781c",
+    "text": "BOLA para POKéMON\nde nível menor."
+  },
+  "LURE_BALL": {
+    "source_sha256": "84b96748ad8b59c7189f58a90be6157b77d519fdf38526cb8a3d5e84769f7464",
+    "text": "BOLA para POKéMON\npescados com VARA."
+  },
+  "FAST_BALL": {
+    "source_sha256": "e20d2c0f20adb62981a0be7fbfbc04f0bfe8748d07c521814eccf4362b25e34e",
+    "text": "Uma BOLA para\nPOKéMON velozes."
+  },
+  "LIGHT_BALL": {
+    "source_sha256": "2c7683a39c45b5d44713ea85db742dd89aa67ef27894dca41f6d0f97fd11e246",
+    "text": "Esfera elétrica\nestranha. (PORTAR)"
+  },
+  "FRIEND_BALL": {
+    "source_sha256": "db6c2aca6e7cf2d646c400a1def69831411a4394b3b3910e46b87ad78a2d561a",
+    "text": "BOLA que torna o\nPOKéMON amigável."
+  },
+  "MOON_BALL": {
+    "source_sha256": "e788e9bee4945ec479fc251af43890ee1de10f8c36735b22c7637763f505d46c",
+    "text": "BOLA para evolução\ncom PEDRA DA LUA."
+  },
+  "LOVE_BALL": {
+    "source_sha256": "58b11062ec91b1a05ecfef04a831855e66efd537c2c5a008d93c2a736ed7dc89",
+    "text": "Captura POKéMON\ndo sexo oposto."
+  },
+  "NORMAL_BOX": {
+    "source_sha256": "e7a236d3d7c15e93a5b05d0a095c2bfd857bddf691e4bb275eb8c6d9faef7163",
+    "text": "Abra e descubra\no que há dentro."
+  },
+  "GORGEOUS_BOX": {
+    "source_sha256": "e7a236d3d7c15e93a5b05d0a095c2bfd857bddf691e4bb275eb8c6d9faef7163",
+    "text": "Abra e descubra\no que há dentro."
+  },
+  "SUN_STONE": {
+    "source_sha256": "7a3b1eb7d5f8aaf0a9b08056efa0dd1c9580b28fec75a5f3bdff8ef0f4e52588",
+    "text": "Evolui certos\nPOKéMON."
+  },
+  "POLKADOT_BOW": {
+    "source_sha256": "9762406136709988b74db693c34942b71279eefb00c0f271416cff2427c49caf",
+    "text": "Reforça golpes de\nNORMAL. (PORTAR)"
+  },
+  "UP_GRADE": {
+    "source_sha256": "d212bc327e525e486c561d17f05732bccb752b74fcd3d87fa9480eb297c55098",
+    "text": "Uma caixa estranha\nfeita pela SILPH."
+  },
+  "BERRY": {
+    "source_sha256": "7c091e45f10afbbf314c5ead1b434dce0cc40b32ad3c07b4a5eb05bcc7c9e176",
+    "text": "Cura 10 PS\nsozinha. (PORTAR)"
+  },
+  "GOLD_BERRY": {
+    "source_sha256": "3d92062bceb623e2f82b38bb347f53da78f3b726bc11a0e5bb9e2a64a3dec02e",
+    "text": "Cura 30 PS\nsozinha. (PORTAR)"
+  },
+  "SQUIRTBOTTLE": {
+    "source_sha256": "92a4dbcc349883e1b17d8855f126655c1f6ca4b6f5a0c7c26425770721c5b245",
+    "text": "Garrafa usada para\nregar plantas."
+  },
+  "PARK_BALL": {
+    "source_sha256": "b4e22058ab9a2d98c2ab8c7e0f9072821761e24bfc773a3ea5480d3224f01ee4",
+    "text": "BOLA do CONCURSO\nDE CAPTURA."
+  },
+  "RAINBOW_WING": {
+    "source_sha256": "baff7ee257c6496e5e3c9305c317da1df97a112b22d6a707ce5f87770bb653b4",
+    "text": "Pena mística\ncom muitas cores."
+  },
+  "BRICK_PIECE": {
+    "source_sha256": "b8be48f3d218e1bf54ac9c4d03cf1efa501b7d29a055f5f9275a6d7755c63f97",
+    "text": "Um pedaço raro\nde tijolo."
+  },
+  "SURF_MAIL": {
+    "source_sha256": "70b463b0821c81eebda61d69242d802c529154845a186c3fbac9dbe812b96b5e",
+    "text": "CARTA de LAPRAS.\n(PORTAR)"
+  },
+  "LITEBLUEMAIL": {
+    "source_sha256": "9447116ace916eded83ba156bb52786b160fdff1c2b930d8029a6ccdc2b10e87",
+    "text": "CARTA de DRATINI.\n(PORTAR)"
+  },
+  "PORTRAITMAIL": {
+    "source_sha256": "64241c28cb561c566134416f82125c7d59f3e1bbd052aca345b0f1856c68de18",
+    "text": "CARTA com retrato\nde quem a segura."
+  },
+  "LOVELY_MAIL": {
+    "source_sha256": "954906d2c45bde05a397ef3cde23b831f65792aa206d6321576ccab4e3060e1a",
+    "text": "CARTA de corações.\n(PORTAR)"
+  },
+  "EON_MAIL": {
+    "source_sha256": "0d07005c8ccce409e9f6494eec562fde101397b489f3a4bd1e40efcfcbcf29b2",
+    "text": "CARTA de EEVEE.\n(PORTAR)"
+  },
+  "MORPH_MAIL": {
+    "source_sha256": "cc8963fdf55e265cbdbcfd2b493cc523266b9186ce81660fb55cca358b5c2508",
+    "text": "CARTA de DITTO.\n(PORTAR)"
+  },
+  "BLUESKY_MAIL": {
+    "source_sha256": "e96ab4341ae2d03fd8f8b6f99dc987d12cc221b9c8eb5cc0e4b4da55297790b2",
+    "text": "CARTA com céu.\n(PORTAR)"
+  },
+  "MUSIC_MAIL": {
+    "source_sha256": "5bef7121ff4ab3fbb6243bc1bc6de4626b46b67cd0f2bfc1baa819152032b2b6",
+    "text": "CARTA de NATU.\n(PORTAR)"
+  },
+  "MIRAGE_MAIL": {
+    "source_sha256": "c709a807334468ae747d8c1dc3adb37c08f7f52286fb8a89a6f56f749a7a41bd",
+    "text": "CARTA de MEW.\n(PORTAR)"
+  },
+  "GUARD_SPEC_CRYSTAL": {
+    "source_sha256": "2f8748eef94736c05c9498a101d762d99e3b2e3eef7a24bfe29fe766013ba111",
+    "text": "Evita perda de\natrib. (1 batalha)"
+  },
+  "X_SPECIAL_CRYSTAL": {
+    "source_sha256": "4615dacf6d78111e7cb65675ba409befed754c470a70775b5e14e90bd080eb6c",
+    "text": "Eleva ATQ. ESP.\n(Uma batalha)"
+  },
+  "EXP_SHARE_CRYSTAL": {
+    "source_sha256": "d7cd51c6ba6cd81694147c04d4d1f71219d7e68a98c9e959d714051bbb88455e",
+    "text": "Divide a EXP.\nganha. (PORTAR)"
+  },
+  "CLEAR_BELL_CRYSTAL": {
+    "source_sha256": "a57c0501b80d88336c940a59f8c3db7007ea47ce7a302139f73c4f21e3a1e658",
+    "text": "Produz um\nsuave tilintar."
+  },
+  "GS_BALL_CRYSTAL": {
+    "source_sha256": "affd7f226876dd62eb607f5f1273ff6647ea84c8e419ce255dcb455ea14242e5",
+    "text": "Uma BOLA\nmisteriosa."
+  },
+  "BLUE_CARD_CRYSTAL": {
+    "source_sha256": "fa3775daa4aea7c6e39a59e298012b3889ec1d3078d2a93b0b4cf58df76e43ef",
+    "text": "Cartão para\nguardar pontos."
+  },
+  "EGG_TICKET_CRYSTAL": {
+    "source_sha256": "10876b3bda4376ebb55b431027e64a695f41f1b8af9af875ad8e72690ffaebbb",
+    "text": "Use no balcão de\ntrocas GOLDENROD."
+  },
+  "BRICK_PIECE_CRYSTAL": {
+    "source_sha256": "7d1e4845162863e61f094ed1f2e84bdf41b6488e4fa08878e9183a1c255f9a30",
+    "text": "Um raro pedaço\nde ladrilho."
+  }
+}

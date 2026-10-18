@@ -1,0 +1,86 @@
+{
+  "version": "1.5.2",
+  "scope": "Pre-title language picker, UI strings and fonts only. Historical gameplay/performance report remains version 1.5.1; no new full gameplay/performance matrix is claimed.",
+  "zip_sha256": "5e58d76332ceeb982920251f85ad6b59e6a90baa543c05ae0a929d80270f59c7",
+  "zip_bytes": 9687455,
+  "archive_files": 372,
+  "changed_archive_files": [
+    "README.md",
+    "fonts/ascendant-jp.otf",
+    "fonts/ascendant-kr.otf",
+    "fonts/ascendant-sc.otf",
+    "fonts/ascendant-tc.otf",
+    "locales.lua",
+    "manifest.json",
+    "options_schema.lua",
+    "startup.lua",
+    "startup_view.lua"
+  ],
+  "unchanged_archive_files": 362,
+  "translation_and_compiler_bytes_unchanged_from": "1.5.1",
+  "tests": [
+    {
+      "kind": "native-engine-menu",
+      "game": "emerald",
+      "passed": true,
+      "log_sha256": "f90cae1d3818597588bdcdf12c53f1821721889598b645d389a9b17c4867be36",
+      "driver_sha256": "f22d308eb6c8a5fdc4bd248731925c9002462b59963705687fdc1eac99300f58",
+      "checks": [
+        "ten locale glyph sets",
+        "mouse and keyboard paging",
+        "disabled keyboard/controller/mouse Start",
+        "preferences unchanged on disabled selection",
+        "Back",
+        "reset cancellation",
+        "start English"
+      ]
+    },
+    {
+      "kind": "native-engine-menu",
+      "game": "sapphire",
+      "passed": true,
+      "log_sha256": "7e89eaaab8a2058343235241013005205e7580eb0dfcdfcd936fc8ac59ddc12c",
+      "driver_sha256": "f22d308eb6c8a5fdc4bd248731925c9002462b59963705687fdc1eac99300f58",
+      "checks": [
+        "ten locale glyph sets",
+        "mouse and keyboard paging",
+        "disabled keyboard/controller/mouse Start",
+        "preferences unchanged on disabled selection",
+        "Back",
+        "reset cancellation",
+        "start English"
+      ]
+    },
+    {
+      "kind": "startup-unit",
+      "passed": true,
+      "editions": 11,
+      "checks": [
+        "missing imports",
+        "unsupported profiles",
+        "keyboard/controller rejection",
+        "shared Sapphire source",
+        "alternate revisions",
+        "saved language fallback",
+        "ten locale keys"
+      ]
+    },
+    {
+      "kind": "python-unit",
+      "passed": true,
+      "count": 70
+    },
+    {
+      "kind": "native-zip-install",
+      "passed": true,
+      "upgrade_from": "1.5.1",
+      "checks": [
+        "profile and intro preserved",
+        "import sentinel preserved",
+        "save-area sentinel preserved",
+        "uninstall clears profile",
+        "reinstall starts fresh"
+      ]
+    }
+  ]
+}

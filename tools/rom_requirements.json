@@ -18,6 +18,15 @@
         "size": 1048576
       },
       {
+        "language": "pt-BR",
+        "name": "Vermelho · fan translation",
+        "version": "hydhyro · 98cec899e9ad",
+        "import_id": "red_ptbr",
+        "size": 1048576,
+        "sha1": "a2a0e2a3d6ef4d5771aa33682d31eaefd03c32ba",
+        "md5": "b002d19d15337b3132637364258605ee"
+      },
+      {
         "language": "es",
         "name": "Edicion Roja (Spain) (SGB Enhanced)",
         "version": "1.0 / Revision 0",
@@ -44,6 +53,15 @@
         "sha1": "20e72dc6f41493eee1fdd0cef54214e6c3389688",
         "md5": "a1ec7f07c7b4251d5fafc50622d546f8",
         "size": 1048576
+      },
+      {
+        "language": "pt-BR",
+        "name": "Azul · fan translation",
+        "version": "hydhyro · 98cec899e9ad",
+        "import_id": "blue_ptbr",
+        "sha1": "ec9e33447d9bdbf95c2d57f487e25a57854a1adf",
+        "md5": "64bdddd54bfe775b910ec89a58740031",
+        "size": 1048576
       }
     ]
   },
@@ -63,6 +81,15 @@
         "version": "1.0 / Revision 0",
         "sha1": "42f3714eec6eca25200d42461ff08d57c98f6d1d",
         "md5": "e93f10168e3c9b9d18e3ad4a1415e1d0",
+        "size": 1048576
+      },
+      {
+        "language": "pt-BR",
+        "name": "Amarelo · fan translation",
+        "version": "hydhyro · fbb76167ed98",
+        "import_id": "yellow_ptbr",
+        "sha1": "2b94c64b1944fb6866fd0c28149f86c11bc86253",
+        "md5": "186578eb92a67f04940a94fd43dd4836",
         "size": 1048576
       },
       {
@@ -92,6 +119,15 @@
         "sha1": "9254195d461ea942eaaa08cc4b83de3cf82aea0d",
         "md5": "7542ec9b695d4fe38adfdaaa57364d83",
         "size": 2097152
+      },
+      {
+        "language": "pt-BR",
+        "name": "Ouro · fan translation",
+        "version": "PT-BR · exact hash required",
+        "import_id": "gold_ptbr",
+        "md5": "a663443555efaf74dfbbf264f12b25bc",
+        "size": 2097152,
+        "sha1": "652c0208a5c54313e2d3efb336346e59a17cbab6"
       },
       {
         "language": "es",
@@ -138,6 +174,15 @@
         "size": 2097152
       },
       {
+        "language": "pt-BR",
+        "name": "Prata · fan translation",
+        "version": "PT-BR · exact hash required",
+        "import_id": "silver_ptbr",
+        "md5": "7454208311f121e492e6634d13612f25",
+        "size": 2097152,
+        "sha1": "9d9536f14a1874d27ea9167fdf00b80439204a6d"
+      },
+      {
         "language": "es",
         "name": "Edicion Plata (Spain) (SGB Enhanced)",
         "version": "1.0 / Revision 0",
@@ -171,6 +216,15 @@
         "version": "1.0 / Revision 0",
         "sha1": "accb584293ba056152f1fd908439b019017ff2fe",
         "md5": "a35c0fa2e3b3d1c1779cd9f2352bc427",
+        "size": 2097152
+      },
+      {
+        "language": "pt-BR",
+        "name": "Cristal · fan translation",
+        "version": "PT-BR · exact hash required",
+        "import_id": "crystal_ptbr",
+        "sha1": "e41c519d7ca680facf546fa34b7b00f3149f428f",
+        "md5": "56c2dcb22ace6a4de161e1a6699ddefd",
         "size": 2097152
       },
       {
@@ -210,6 +264,15 @@
         "size": 16777216
       },
       {
+        "language": "pt-BR",
+        "name": "FireRed · fan translation",
+        "version": "Breno · based on USA 1.1; mod gameplay base is USA 1.0",
+        "import_id": "firered_ptbr",
+        "size": 16777216,
+        "sha1": "51ab6d001412cdc3d6da16fb824ab8084123b1dd",
+        "md5": "dfc02ad742baa5d557dcb0213b0b50dc"
+      },
+      {
         "language": "es",
         "name": "Edicion Rojo Fuego (Spain)",
         "version": "1.0 / Revision 0",
@@ -243,6 +306,15 @@
         "version": "1.0 / Revision 0",
         "sha1": "0802d1fb185ee3ed48d9a22afb25e66424076dac",
         "md5": "4dd5e72f942a921d3fe53d21a39f4cba",
+        "size": 16777216
+      },
+      {
+        "language": "pt-BR",
+        "name": "LeafGreen · fan translation",
+        "version": "Breno · based on USA 1.1; mod gameplay base is USA 1.0",
+        "import_id": "leafgreen_ptbr",
+        "sha1": "b32c63d5d1454d851cef16699f3ce757798553a2",
+        "md5": "790d40d042401d1dea843fa7f52e2448",
         "size": 16777216
       },
       {
@@ -280,6 +352,15 @@
         "sha1": "1c2a53332382e14dab8815e3a6dd81ad89534050",
         "md5": "1af28ea547d4116dc752c93f7f694239",
         "size": 16777216
+      },
+      {
+        "language": "pt-BR",
+        "import_id": "ruby_ptbr",
+        "name": "Ruby · Português (Brasil), OJ Abreu",
+        "version": "OJ Abreu fan translation",
+        "sha1": "90f1464f77c57b4eef45ee07df140d402162eee3",
+        "md5": "7088f5789736f6fcedc687b385033003",
+        "size": 16777216
       }
     ]
   },
@@ -299,6 +380,15 @@
         "version": "1.1 / Revision 1",
         "sha1": "7e6e034f9cdca6d2c4a270fdb50a94def5883d17",
         "md5": "9d816b369343d39b94af9a8b0ce7f63b",
+        "size": 16777216
+      },
+      {
+        "language": "pt-BR",
+        "import_id": "ruby_ptbr",
+        "name": "Pokémon Ruby PT-BR (OJ Abreu) · gemeinsame Textquelle für Sapphire",
+        "version": "OJ Abreu fan translation",
+        "sha1": "90f1464f77c57b4eef45ee07df140d402162eee3",
+        "md5": "7088f5789736f6fcedc687b385033003",
         "size": 16777216
       }
     ]
@@ -343,6 +433,15 @@
         "version": "1.0 / Revision 0",
         "sha1": "fe1558a3dcb0360ab558969e09b690888b846dd9",
         "md5": "67b770405f7b87589e0342513b25fe9b",
+        "size": 16777216
+      },
+      {
+        "language": "pt-BR",
+        "import_id": "emerald_ptbr",
+        "name": "Pokémon Emerald · Português (Brasil)",
+        "version": "Zambrakas 2013-12-08 · no day/night patch",
+        "sha1": "18a2b0acdba046c71b8677bb58c9ee7d36f7a91f",
+        "md5": "5f91214a7b563c858a94920796817d83",
         "size": 16777216
       }
     ]

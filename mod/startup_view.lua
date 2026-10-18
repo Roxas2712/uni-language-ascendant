@@ -4,6 +4,7 @@ return function(mod,state,requirements,locales,order)
  local fonts={}
  local family={ja='jp',ko='kr',['zh-Hans']='sc',['zh-Hant']='tc'}
  local ink={.10,.17,.24};local muted={.35,.43,.48};local cream={.97,.96,.90};local red={.83,.22,.25};local teal={.09,.48,.48}
+ local disabled={.79,.81,.80};local disabledInk={.36,.39,.39}
  local function color(c) G.setColor(c[1],c[2],c[3],1) end
  local function font(size,locale)
   local f=family[locale or state.uiLanguage] or 'jp';local k=f..size
@@ -70,10 +71,21 @@ return function(mod,state,requirements,locales,order)
   local menu=state.stage=='menu'
   text(menu and '01' or '02',32,119,32,red)
   text(menu and t.menuTitle or t.gameTitle,92,119,28,ink,810)
-  text(menu and t.menuHint or t.beforeTitle,94,161,14,muted,menu and 810 or (#state.choices>3 and 610 or 810))
+  text(menu and t.menuHint or t.beforeTitle,94,161,14,muted,(menu and #order>9 or not menu and #state.choices>3) and 610 or 810)
   if menu then
-   for i,id in ipairs(order) do
-    local x=32+((i-1)%3)*304;local y=204+math.floor((i-1)/3)*93
+   local first=math.floor((state.uiIndex-1)/9)*9+1
+   if #order>9 then
+    local page=math.floor((state.uiIndex-1)/9)+1
+    text(page..' / '..math.ceil(#order/9),752,161,14,muted,65,'en')
+    for _,d in ipairs({{-1,824,'<'},{1,872,'>'}}) do
+     local direction=d[1]
+     panel(d[2],153,38,31,cream);text(d[3],d[2]+13,155,18)
+     hit(d[2],153,38,31,function() state.pageMenu(direction) end)
+    end
+   end
+   for i=first,math.min(first+8,#order) do
+    local id=order[i]
+    local x=32+((i-first)%3)*304;local y=204+math.floor((i-first)/3)*93
     local selected=i==state.uiIndex
     panel(x,y,288,77,selected and {.98,.86,.40} or cream)
     text(locales[id].native,x+20,y+12,24,ink,238,id)
@@ -102,16 +114,20 @@ return function(mod,state,requirements,locales,order)
    for i=first,math.min(first+2,#state.choices) do
     local c=state.choices[i]
     local x=32+(i-first)*302
-    panel(x,201,286,82,i==state.index and {.98,.86,.40} or cream)
-    text(c.id=='en' and t.english or c.id=='de' and t.german or c.name,x+18,212,24,ink,250)
-    text(c.available and (c.id=='en' and t.baseReady or t.romReady) or t.romMissing,x+18,249,13,c.available and teal or red,256)
+    panel(x,201,286,82,c.available and (i==state.index and {.98,.86,.40} or cream) or disabled)
+    if i==state.index and not c.available then color(disabledInk);G.setLineWidth(3);G.rectangle('line',x+5,206,276,72,8,8) end
+    text(c.id=='en' and t.english or c.id=='de' and t.german or c.name,x+18,212,24,c.available and ink or disabledInk,250,c.id)
+    text(c.available and (c.id=='en' and t.baseReady or t.romReady) or (c.supported and t.romMissing or t.unavailableShort),x+18,249,13,c.available and teal or disabledInk,256)
     hit(x,201,286,82,function()state.index=i;state.noticeKey=nil end)
    end
    if #state.choices<=2 then wrapped(t.uiOnly,665,212,250,12,muted) end
+   local current=state.choices[state.index]
+   local choiceNotice=current.supported and current.noticeKey
+   if choiceNotice then text(t[choiceNotice] or locales.en[choiceNotice],34,286,12,muted,890) end
    local row=requirements[state.page]
    panel(32,306,896,213,cream)
    text(t.romList..'  /  '..state.page..' / '..#requirements,50,317,15,teal,650)
-   text(t.generation..' '..row.generation..' · '..row.name,50,342,20,ink,700)
+   text(t.generation..' '..row.generation..' · '..(t['game_'..row.game] or row.name),50,342,20,ink,700)
    for _,d in ipairs({{-1,824,'<'},{1,872,'>'}}) do
     panel(d[2],320,38,30,{.88,.91,.86});text(d[3],d[2]+13,322,18)
     local direction=d[1];hit(d[2],320,38,30,function()state.page=(state.page-1+direction)%#requirements+1 end)
@@ -124,10 +140,11 @@ return function(mod,state,requirements,locales,order)
    local wanted=state.choices[state.index].id
    local source=wanted=='en' and row.sources[1] or nil
    for _,r in ipairs(row.sources) do if r.language==wanted then source=r;break end end
-   if source then rom(t.source,source,435) end
+   if source then rom(t.source,source,435)
+   elseif wanted~='en' then wrapped(t.unavailable,50,435,850,16,muted) end
    text(t.exact,50,493,11,muted,850)
-   panel(654,540,274,51,teal);text(t.start..'  >',675,549,21,cream,232)
-   hit(654,540,274,51,state.confirm)
+   panel(654,540,274,51,current.available and teal or disabled);text(t.start..'  >',675,549,21,current.available and cream or disabledInk,232)
+   if current.available then hit(654,540,274,51,state.confirm) end
    wrapped(state.noticeKey and t[state.noticeKey] or t.switchHint,34,532,590,12,state.noticeKey and red or muted)
    text(t.controls,34,625,12,ink,894)
   end

@@ -1,142 +1,80 @@
-# European expansion preview
-
-13 additional profiles based on v1.4.2. Preview 5 adds a focused editorial pass
-and short font/UI/profile regressions; complete playthroughs remain outside
-this preview’s validation. Preview 4 completes the known GBA registry
-gaps, adds 245 supplemental GBA UI entries per language (DE/ES/FR/IT), and fixes
-regional item plurals. It retains Preview 3’s complete AI editorial review of 1,520 supplemental
-GB/GBC strings per language, native NPC/gift identities, endgame graphics
-and broader gameplay, localhost link and save/restart regression tests. See [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md)
-for coverage, QA limits, missing ROMs and PT-BR merge status, and
-[LICENSE-POLICY.md](LICENSE-POLICY.md) for the existing GPL obligations.
-
 # Uni-Language Ascendant
 
-A standalone language mod for **Gen1Recomp**. Import the exact English base game,
-then your own supported language ROM. The mod compiles localized text and graphics
-once and reuses its local cache on later launches.
-
-Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
+Standalone language mod for **Gen1Recomp**, based on the Pokémon Gen 1
+Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
-## Install the stable release 1.4.2
+## Combined preview 1.6.0-merged-preview.1
 
-1. Download [uni-language-ascendant-1.4.2.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.4.2).
-2. Import the matching US base ROM in Gen1Recomp.
-3. Install the ZIP through the mod manager, enable the mod for your game, and
-   import your language ROM under **Uni-Language Ascendant → Imports**.
-4. Launch the game, choose your menu language, then your game language.
+Combines the released **PT-BR 1.5.2** runtime with **European preview 5**.
+There are **38 localized profiles** across eleven editions, plus the English base.
+The optimized binary cache, lazy graphics loading, disabled-language picker,
+European menu/graphic translations and PT-BR corrections are included together.
 
-The game picker and mod options show only supported languages with an imported
-ROM for the current edition. English is always available. Menu languages and the
-ROM requirements list remain available independently. If a previously selected
-ROM is missing, the mod starts in English.
-
-**Updating preserves your mod profile. Uninstalling deletes it; reinstalling
-starts fresh.** The first-run Ascendant intro, Back navigation and Reset profile
-are included. Changing game language requires a restart.
-
-For this branch, build the preview with `python3 tools/package.py` and install
-the resulting `dist/uni-language-ascendant-1.4.3-europe-preview.5.zip` through
-the same mod manager. PT-BR development remains separate.
-
-## Supported profiles in this preview
-
-| Games | Game languages |
+| Editions | Game languages besides English |
 | --- | --- |
-| Red, Yellow | English base + German, Spanish |
-| Blue | English base + German |
-| Gold | English base + German, French, Italian, Spanish |
-| Silver | English base + German, French, Spanish |
-| Crystal | English base + German, Italian, Spanish |
-| FireRed | English base + German, Italian, Spanish |
-| LeafGreen | English base + German, French, Spanish |
-| Ruby, Sapphire | English base + German |
-| Emerald | English base + German, French, Italian, Spanish |
+| Red, Yellow | German, Brazilian Portuguese, Spanish |
+| Blue, Ruby, Sapphire | German, Brazilian Portuguese |
+| Gold, Emerald | German, Brazilian Portuguese, Spanish, French, Italian |
+| Silver, LeafGreen | German, Brazilian Portuguese, Spanish, French |
+| Crystal, FireRed | German, Brazilian Portuguese, Spanish, Italian |
 
-Menu languages: English, German, French, Italian, Spanish, Japanese, Korean,
-Simplified Chinese and Traditional Chinese. A translated menu does not imply a
-game-language profile exists.
+Ten independently selectable menu languages: English, German, French, Italian,
+Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese and Brazilian
+Portuguese. Menu support does not imply a game-language profile exists.
+Unavailable game languages remain visible and disabled; missing imports and
+unsupported profiles have distinct explanations.
 
-Exact versions and SHA-1 checksums are in [the ROM catalog](tools/rom_requirements.json)
-and the bundled [ROM-Liste.html](mod/ROM-Liste.html). Sapphire requires the listed
-German revision 1.1 with the English 1.0 base; other revisions are not interchangeable.
-No ROMs, decoded game data, saves, personal profiles or compilation caches are
-included. The Ascendant intro assets and menu fonts are distributed with their
-source and attribution notices.
+## Install the combined preview
 
-## Verification and limitations
+1. Import the exact supported English US base game in Gen1Recomp.
+2. Install `dist/uni-language-ascendant-1.6.0-merged-preview.1.zip` through the mod
+   manager and enable it for the desired game.
+3. Import the exact language ROM under **Uni-Language Ascendant → Imports**.
+4. Launch, select a menu language and then an available game language.
 
-Version 1.4.2 passed unit checks for game/import filtering, fallback selection,
-all nine menu locales, preferences and intro lifecycle. Live Emerald runs checked
-English-only and English/Spanish imports, fallback from an absent French import,
-and the five-language picker including mouse paging and a French in-game dialogue.
-ZIP install, update, uninstall and reinstall were tested separately.
+The ZIP is built locally with `python3 tools/package.py`; this combined preview
+has not been published as a GitHub release. The exact ROM versions and SHA-1
+identities are listed in [the ROM checklist](mod/ROM-Liste.html) and
+[the source catalog](tools/rom_requirements.json). File names do not identify a
+revision. Sapphire PT-BR reuses the exact Ruby PT-BR source import with separate
+Sapphire recipes and authored text. FRLG PT-BR fanpatch sources use revision 1.1;
+the recompiler runtime uses its supported US 1.0 base. Do not interchange them.
+[Fan translation sources and patch identities](tools/ptbr_sources.json) retain
+their attribution. No ROM, fanpatch, save or compilation cache is distributed.
 
-The 1.4.1 Emerald FR/IT/ES text correction checks cover 176 added or changed keys
-across cold and warm loads. Each profile maps 15,653 of 15,655 text keys; two
-credit identities are now explicitly preserved as proper names in Preview 4. This is not a full-playthrough certification.
-See [the detailed mod documentation](mod/README.md) and
-[performance measurements](mod/Performance.html) for earlier coverage and limits.
+**Updates preserve imported ROMs, preferences, intro state and saves.** The first
+launch rebuilds the language cache once. Uninstalling deletes the mod profile;
+reinstalling starts fresh. The intro runs once per profile. Back, Reset profile
+and the ROM requirements view remain available. Missing saved imports fall back
+to English; changing the active game language requires a restart.
 
-Tested against upstream commit `1925fa9f97661f1e2d0922f7c6eb9546d262fd29`, on macOS
-with the separate Metal configuration fix. Windows and Linux have not been
-practically tested. The mod does not include an engine build or the Metal fix.
+## Verification
 
-## Development
+Fresh integration checks and exact payload fingerprints are recorded in
+[MERGE-QA.json](mod/MERGE-QA.json), with readable scope in
+[MERGED-PREVIEW.md](mod/MERGED-PREVIEW.md). They cover the combined payload.
 
-- `mod/`: complete distributable runtime, address profiles, intro, fonts and docs.
-- `tools/`: packaging, catalog generation and profile development tools.
-- `tests/`: unit checks and live drivers for an isolated upstream engine.
-- `compatibility/`: pinned upstream and ROM identity metadata.
+The prior branches' evidence is retained with its original version:
 
-Build the installable archive with Python 3:
+- [European preview 5](mod/EUROPE-PREVIEW.md) and [European QA](mod/EUROPE-QA.json).
+- [PT-BR gameplay report](mod/PT-BR.html) and [1.5.1 QA](docs/PT-BR-QA.json).
+- [Cache optimization evidence](docs/Optimization-1.5.1.json) and
+  [1.5.2 language-picker release checks](docs/Release-1.5.2.json).
 
-```sh
-python3 tools/package.py
-```
+Those historical reports are not fresh merged-version results. Scoped fixtures
+prepare maps, inventory or Pokémon; they do not inject displayed dialogue.
+No complete story playthrough, independent native-speaker certification,
+Windows/Linux integration test or two-device multiplayer test is claimed.
+The European UI source audit covers a defined set of engine strings; it is not
+an assertion that every possible dialogue branch has been reviewed.
 
-The packager uses an explicit runtime allowlist and rejects ROM/save files in
-the archive. Build products go into ignored `dist/`; installable ZIPs and their
-SHA-256 checksums are published as release assets.
+Remaining language profiles and exact future inputs are listed in
+[Weitere-Sprachen.html](mod/Weitere-Sprachen.html). Available profiles are filtered
+out of that checklist automatically.
 
-Run the independent startup/preferences/intro tests with LuaJIT:
+## License
 
-```sh
-luajit tests/startup_unit.lua "$PWD"
-luajit tests/preferences_unit.lua "$PWD"
-luajit tests/intro_unit.lua "$PWD"
-```
-
-The remaining tests require the pinned engine under `build/upstream-engine`,
-LÖVE, private ROM inputs and dedicated QA save identities. Set `LOVE` to your
-LÖVE executable, `LUAJIT` to LuaJIT and `ULA_GB_REFERENCE` to the private Gen1/Gen2
-reference directory where applicable. These private inputs are deliberately not
-part of this repository. Some profile-generation scripts consume intermediate
-files under `build/`; they are development tools, not a one-command universal
-ROM importer. The existing address profiles are sufficient to build the mod ZIP.
-
-New languages require verified text/graphics profiles and catalog entries.
-New generations also require an appropriate engine and runtime adapter.
-
-## Attribution
-
-See [LICENSE.MD](LICENSE.MD) and [VENDOR.md](mod/VENDOR.md) for upstream code,
-the German Universal reference, Noto fonts and the shared Origami Ascendant intro.
-
-
-The European preview matrix is reproducible with private ROM imports and an
-isolated `ula-europe-expansion-qa` identity:
-
-```sh
-LOVE=/path/to/love LUAJIT=/path/to/luajit python3 tests/run_european_release.py
-```
-
-It includes all 13 scene profiles, nine GB/GBC menu/catalog/gameplay/localhost
-link profiles, ten English/disabled process restarts, and six unit/catalog checks.
-The complete source-key audit is `tools/audit_european_ui.py`. The authoritative
-reviewed ES/FR/IT layer is `translations/european/gb-ui-overrides.tsv`; regenerate
-with `tools/build_european_ui.py` then `tools/sync_european_ui.py`. Native ROM
-names are generated by `tools/build_european_gifts.py`; private evidence remains
-under ignored `build/`. The matrix is targeted integration coverage, not a full
-playthrough or native-speaker certification.
+GPLv3 applies. Existing source and attribution requirements are preserved;
+see [LICENSE.MD](LICENSE.MD), [LICENSE-POLICY.md](LICENSE-POLICY.md) and
+[VENDOR.md](mod/VENDOR.md). Intro assets and bundled font notices remain included.

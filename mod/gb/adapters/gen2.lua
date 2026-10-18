@@ -17,6 +17,8 @@ local function installChoiceGeometry()
   local Chrome = require("src.ui.gen2.Chrome")
 
   local function germanRuntimeActive()
+    local pt=Font.__ulaPtbrGen2
+    if pt and pt.active and pt.active() then return true end
     local gold = Font.__deutschGoldActive
     if type(gold) == "function" and gold() then return true end
     local silver = Font.__deutschSilverActive
@@ -357,6 +359,7 @@ function Adapter.apply(mod, edition)
 
   local gfx = data.gen2MenuGfx
   if type(gfx) == "table" then
+    route(gfx.battleHud, "hpBar", mod, "battle/hud/hp_bar.png")
     route(gfx.battleHud, "battleExtra", mod,
       "fonts/font_battle_extra.png")
     route(gfx.pack, "menu", mod, "pack/menu.png")
@@ -364,9 +367,10 @@ function Adapter.apply(mod, edition)
     route(gfx.pokegear, "tiles", mod, "pokegear/gear.png")
     -- TrainerCard's styled path draws ID-Nr. from the last two `card` tiles
     -- and ORDEN from the last five `leaders` tiles. Both sheets come from the
-    -- matching German ROM; the status/OAM/badge sheets are byte-identical and
-    -- deliberately stay on the imported game data.
+    -- matching language ROM when supplied. PT-BR also localizes the status
+    -- plaque; OAM and badge geometry stay on the imported game data.
     route(gfx.trainerCard, "card", mod, "trainer_card/card.png")
+    route(gfx.trainerCard, "status", mod, "trainer_card/status.png")
     if edition == "crystal" then
       route(gfx.trainerCard, "cardFemale", mod,
         "trainer_card/card_f.png")
@@ -374,6 +378,9 @@ function Adapter.apply(mod, edition)
     route(gfx.trainerCard, "leaders", mod,
       "trainer_card/leaders.png")
   end
+
+  route(data.gen2Credits, 'theEnd', mod, 'credits/theend.png')
+  route(data.gen2Diploma, 'image', mod, 'diploma/diploma.png')
 
   for _, record in pairs(data.gen2Tilesets or {}) do
     if type(record) == "table" then

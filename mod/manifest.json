@@ -1,7 +1,7 @@
 {
   "id": "german_rom_source",
   "name": "Uni-Language Ascendant",
-  "version": "1.4.3-europe-preview.5",
+  "version": "1.6.0-merged-preview.1",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -24,7 +24,7 @@
   "permissions": [
     "engine_internals"
   ],
-  "description": "Original Ascendant intro, nine menu languages, Back and Reset profile. Uninstalling deletes the mod profile; reinstalling starts fresh. German ROM profiles for all 11 Gen1–Gen3 editions; Emerald also French, Italian and Spanish. Compile once from your own language ROM; exact US base required. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp)",
+  "description": "Language profiles for all eleven Gen1–Gen3 editions: German and Brazilian Portuguese, plus supported Spanish, French and Italian editions. Ten menu languages, native graphics, authored UI and optimized language caches. Exact personal ROM imports required; see bundled scoped QA reports. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp).",
   "optional_imports": [
     {
       "id": "leafgreen_de",
@@ -139,6 +139,86 @@
       "file": "emerald_es.gba",
       "size": 16777216,
       "md5": "67b770405f7b87589e0342513b25fe9b"
+    },
+    {
+      "id": "emerald_ptbr",
+      "name": "Emerald PT-BR · Zambrakas 2013-12-08",
+      "description": "SHA-1 18a2b0acdba046c71b8677bb58c9ee7d36f7a91f; Basis: Pokémon Emerald (USA / English) 1.0 / Revision 0.",
+      "file": "emerald_ptbr.gba",
+      "size": 16777216,
+      "md5": "5f91214a7b563c858a94920796817d83"
+    },
+    {
+      "id": "ruby_ptbr",
+      "name": "Ruby PT-BR · OJ Abreu",
+      "description": "SHA-1 90f1464f77c57b4eef45ee07df140d402162eee3; Basis: Pokémon Ruby (USA / English) 1.0 / Revision 0 / Pokémon Sapphire (USA / English) 1.0 / Revision 0.",
+      "file": "ruby_ptbr.gba",
+      "size": 16777216,
+      "md5": "7088f5789736f6fcedc687b385033003"
+    },
+    {
+      "id": "red_ptbr",
+      "name": "Red · Português (Brasil)",
+      "file": "red_ptbr.gbc",
+      "md5": "b002d19d15337b3132637364258605ee",
+      "size": 1048576,
+      "description": "SHA-1 a2a0e2a3d6ef4d5771aa33682d31eaefd03c32ba; Basis: Pokémon Red (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "blue_ptbr",
+      "name": "Blue · Português (Brasil)",
+      "file": "blue_ptbr.gbc",
+      "md5": "64bdddd54bfe775b910ec89a58740031",
+      "size": 1048576,
+      "description": "SHA-1 ec9e33447d9bdbf95c2d57f487e25a57854a1adf; Basis: Pokémon Blue (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "yellow_ptbr",
+      "name": "Yellow · Português (Brasil)",
+      "file": "yellow_ptbr.gbc",
+      "md5": "186578eb92a67f04940a94fd43dd4836",
+      "size": 1048576,
+      "description": "SHA-1 2b94c64b1944fb6866fd0c28149f86c11bc86253; Basis: Pokémon Yellow (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "gold_ptbr",
+      "name": "Gold · Português (Brasil)",
+      "file": "gold_ptbr.gbc",
+      "md5": "a663443555efaf74dfbbf264f12b25bc",
+      "size": 2097152,
+      "description": "SHA-1 652c0208a5c54313e2d3efb336346e59a17cbab6; Basis: Pokémon Gold (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "silver_ptbr",
+      "name": "Silver · Português (Brasil)",
+      "file": "silver_ptbr.gbc",
+      "md5": "7454208311f121e492e6634d13612f25",
+      "size": 2097152,
+      "description": "SHA-1 9d9536f14a1874d27ea9167fdf00b80439204a6d; Basis: Pokémon Silver (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "crystal_ptbr",
+      "name": "Crystal · Português (Brasil)",
+      "file": "crystal_ptbr.gbc",
+      "md5": "56c2dcb22ace6a4de161e1a6699ddefd",
+      "size": 2097152,
+      "description": "SHA-1 e41c519d7ca680facf546fa34b7b00f3149f428f; Basis: Pokémon Crystal (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "firered_ptbr",
+      "name": "Firered · Português (Brasil)",
+      "file": "firered_ptbr.gba",
+      "md5": "dfc02ad742baa5d557dcb0213b0b50dc",
+      "size": 16777216,
+      "description": "SHA-1 51ab6d001412cdc3d6da16fb824ab8084123b1dd; Basis: Pokémon FireRed (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "leafgreen_ptbr",
+      "name": "Leafgreen · Português (Brasil)",
+      "file": "leafgreen_ptbr.gba",
+      "md5": "790d40d042401d1dea843fa7f52e2448",
+      "size": 16777216,
+      "description": "SHA-1 b32c63d5d1454d851cef16699f3ce757798553a2; Basis: Pokémon LeafGreen (USA / English) 1.0 / Revision 0."
     },
     {
       "id": "firered_es",

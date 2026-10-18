@@ -1,0 +1,1684 @@
+{
+  "scope": "Reviewed exact unchanged FR source identities; excludes translated lines. Does not certify changed prose, graphics or gameplay.",
+  "entries": [
+    {
+      "source_sha256": "f547b6f0209070df359a0c6257c847237f96f0b5462582bfab580ca776da1734",
+      "keys": [
+        "sFemaleNameChoices[9]",
+        "gNameChoice_June"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "c19b42381627c395957788f2facf970f6ba247c6543d2e1299d890d4dd6a6876",
+      "keys": [
+        "g3:0817f871"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "5f56d0911e1486bbc071bfb407acde00b7774bb39b81bb2f4a17df5b151a860f",
+      "keys": [
+        "gText_10P30P50P50P"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "11da0d4ec8b7387a8bd00a9743d61a86d25d8c5237c587f63fefc39d12fb6282",
+      "keys": [
+        "sTrainerCardColorNames[0]",
+        "gText_BronzeCard"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "94e8f0e01949dd1dcbee675cc286ce1b7268404d92b4fcdaf918bdca2ff16f09",
+      "keys": [
+        "gSaveStatName_Pokedex",
+        "gText_MenuPokedex",
+        "gText_TrainerCardPokedex",
+        "gText_Pokedex",
+        "Help_Text_Pokedex",
+        "sStartMenuActionTable[0]"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "fbe45ecace89dd5f8801dab754683253596c29b6d2405ec6b5631e26e629045c",
+      "keys": [
+        "gString_Bill",
+        "gFameCheckerBillName",
+        "sNonTrainerNamePointers[2]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "7118e58adf52713babbb6933b7c75d7eed924c02e34acefc5081778d076c8498",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_ABCDE"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "a3de3d4063aa0128b37c573bac372a58ec6e3c89507b2211baf61ac80ef786e5",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[2]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "87bd1a208c73374ee3d1ff5ab088accd71c07fc6d9d1cc2b154a78bcc86fdf0a",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_FGHIJ"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "762730fdffe93ec611ef394b52261ca48ce1877c4e90e5a5eb18b1ce0539c588",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_KLMNO"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "ea3f1f3f081897457ac34a7751349859d72226d34c8c86c3a3d042d44e3a38ab",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_PQRST"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "6514f18acb086fef0c0ea1ed5a55e98c9aa42a18f7ec5eb7ed920b917e5e6bd9",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_UVWXY"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "7b6b7802e55a6b949c8eddd1d75bf24d2a66b044cc56a346d13dcc75628f49e8",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_Z"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "db62848c3ff6f03c63a4b0f447b0dd2f4310786a7f310ac0e5a3302dd30b96ae",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_fghij"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "9b746613d7d7b99533bdd0019af1c851c15aecf9948a296fb3075f9cdec8be0b",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_klmno"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "1dbca7bb4aeebfc3b5fb87fb179dd0544c160804541cd9e825b0d38ddca5bf3d",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_pqrst"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "3fc7a83e61df9fc884c98b0e0a61440492215e8c2167b4bbd27cd22829fd17da",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_uvwxy"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "a86d0b4664a576a19c062460c26f9d171e624dbac939530a249b8eefca8e25ef",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_z"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "225fecba55df0e7bce1ed13bd7f7c0719fb1bb4c1dc3b25847334f2d62a9d302",
+      "keys": [
+        "gText_Vaporeon"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b906e84656def5d8a772984b24505045551fe483cda0598146b25a97996663a5",
+      "keys": [
+        "gText_Vermilion",
+        "sSeagallopDestStrings[0]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "1f05f798a74398bef6de5c1148b47873c573f370fe59edcfc7756cb4573b8d99",
+      "keys": [
+        "g3:0818f95a",
+        "g3:0818845f"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "52d54763fec09c483303aac81bbc75f1acc2895d42462b417365ac8efc61d8d4",
+      "keys": [
+        "gText_Item",
+        "sCursorOptions[3]",
+        "Help_Text_Item"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "75857e5353fdac2d1871799509046105d0d79576c7b72bcaa7c161792cc176dc",
+      "keys": [
+        "gText_Jolteon"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "78e286af014af1234108ff8872e6965cf5f8904c92db173f218d139ab0a55468",
+      "keys": [
+        "gText_Kanto",
+        "gText_Diploma_Kanto"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "d2fd3704b7042337a565f1c1b8b818da0db80abea577125448269908cda071bf",
+      "keys": [
+        "gText_Koga",
+        "sFlavorTextOriginObjectNameTexts[37]",
+        "gFameCheckerFlavorTextOriginObjectName_Koga1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "1eccf3fd5cbf2f384b69a7f5aff936776fa979a772318a141b75f6669fcb00ee",
+      "keys": [
+        "g3:081878f8"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "aa25b0ef002d2182ea96dec043aed8a2295bb5b8384251749d972c758f2b6c26",
+      "keys": [
+        "g3:08175a5b"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "a6b7986117941e818830ef14b4471efe1bf5de032fe37781f8d168de6c022d4c",
+      "keys": [
+        "g3:08184c1d"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "a9364dfda8621fe6826345b2aa97647ede50b510d8c76d11ee055b5e86414819",
+      "keys": [
+        "sButtonTypeOptions[1]",
+        "gText_ButtonTypeLR"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "a663581652f9a40affe3b16735fcf87b3a25de664e13e7678e31ea6454dacc06",
+      "keys": [
+        "sButtonTypeOptions[2]",
+        "gText_ButtonTypeLEqualsA"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "aedc39d4dddd4c80cdad9f3cb20b31bca092d6d299004f87e86dc8dc3f64daa0",
+      "keys": [
+        "g3:081a3609"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "3711ef507e3a4fa648cb5c07b16c398fc45a815f5df160c1c440e9476e060f34",
+      "keys": [
+        "g3:081a4e26"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "d461597db1551721c16bbf1b6b0650b0da7e0dcd4902da267216f772bebbbd9b",
+      "keys": [
+        "g3:0819625b"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "3513c9613fb237f6bd4b0e0238c2f56bbcfb022bc5cb0980725a08c80e41f1a0",
+      "keys": [
+        "g3:08196272"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "02b845bc1408013ece9ad53c69d842851f4b6e6cfa5f31025d7e9ea1e3ff0fdd",
+      "keys": [
+        "g3:081829f4"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "d1982aa5855146736a94226140dafe3c5e1ee6ce95c7ea2a98e61322075d0385",
+      "keys": [
+        "g3:081936de"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "249381be1a1385853db68a4231643f2a787a506486839a2076ab875fa3c19e4b",
+      "keys": [
+        "g3:081936ee"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "271a624e77da23c974a7cfd85db364340f67b630172cc75c1d91dc2d72744673",
+      "keys": [
+        "g3:0819396b"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "1ee3282afc97123e001abb1ae24c2c2f11a996e9f5fa64be1ce39eeefadfed3e",
+      "keys": [
+        "sFlavorTextOriginLocationTexts[91]",
+        "sFlavorTextOriginLocationTexts[92]",
+        "gText_QuestLog_SilphCo",
+        "sLocationNameTexts[41]",
+        "gFameCheckerFlavorTextOriginLocation_Giovanni2",
+        "gFameCheckerFlavorTextOriginLocation_Giovanni1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "df9728ccdaebef12bead67f9b123b460d9e1ab39102e3635f82bb94f10c69120",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[13]",
+        "gFameCheckerFlavorTextOriginObjectName_Brock1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "465343b7583aeeb6fed7c20ea5909cf644fc32ad40d144a519fcf604aaebfa71",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[19]",
+        "gFameCheckerFlavorTextOriginObjectName_Misty1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "c5a2af4081b94795d891fc2c4ee730a1b5a44f9ca9bc5b1c5d98cc10ca1f4126",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[1]",
+        "gFameCheckerFlavorTextOriginObjectName_ProfOak1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "8917d3636472b120b18c29ea834ffb7ef7f956f7b1f1adea1030106795bc5963",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[20]",
+        "gFameCheckerFlavorTextOriginObjectName_Misty2"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "8aab94673420d379480552ed246757777ef3905c1c96998c1ec45cbbdf2ad278",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[26]",
+        "sFlavorTextOriginObjectNameTexts[27]",
+        "gFameCheckerFlavorTextOriginObjectName_LtSurge2",
+        "gFameCheckerFlavorTextOriginObjectName_LtSurge3"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "f9f605181816a94bf7550c92974c301fb14681823fe8aec692bacf390df46d64",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[28]",
+        "gFameCheckerFlavorTextOriginObjectName_LtSurge4"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "f66911e6979c1e3e763f4a3ab6b19b35531750d2d19e4ec4404dd512052d1042",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[31]",
+        "sFlavorTextOriginObjectNameTexts[34]",
+        "gFameCheckerFlavorTextOriginObjectName_Erika4",
+        "gFameCheckerFlavorTextOriginObjectName_Erika1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "3a0c88ab2fbc18c2f679bd5d4a5f278d3b7a1ae2ff5088a649eccf7bcf32f0e1",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[32]",
+        "gFameCheckerFlavorTextOriginObjectName_Erika2"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "bb11349e5333a649fe82f140048094a1aa757f7cf7d3d1698adc517c44c3d23e",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[33]",
+        "gFameCheckerFlavorTextOriginObjectName_Erika3"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "3657c3b1612bed48a36dc17436d09934407ea1a717124338869498d2f0c36353",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[38]",
+        "gFameCheckerFlavorTextOriginObjectName_Koga2"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "9ad99e89150dc7db7c025d857855eb98d6f6239074a388cee962973dd5bdeb49",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[39]",
+        "gFameCheckerFlavorTextOriginObjectName_Koga3"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "831cade1dce6e8c14c93fcb32259a9432a8b88663c40b5fe76a42c6f3decc1b8",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[44]",
+        "sFlavorTextOriginObjectNameTexts[45]",
+        "gFameCheckerFlavorTextOriginObjectName_Sabrina2",
+        "gFameCheckerFlavorTextOriginObjectName_Sabrina3"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "040e81a05147a8a4d6bddda3176fb8d8e2bc8716e3f3dc334be410c7a7baf2e0",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[47]",
+        "gFameCheckerFlavorTextOriginObjectName_Sabrina5"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "671df9ec9f30bd8699760456c3aa3ef9e74ba418f9cc149685698791bfe966b3",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[49]",
+        "gFameCheckerFlavorTextOriginObjectName_Blaine1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "fe1c3f03a080fac4b91be2748f6e0e9145c208cfc87843299feaebfd1efd9168",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[4]",
+        "sFlavorTextOriginObjectNameTexts[66]",
+        "sFlavorTextOriginObjectNameTexts[70]",
+        "gFameCheckerFlavorTextOriginObjectName_ProfOak4",
+        "gFameCheckerFlavorTextOriginObjectName_Agatha0",
+        "gFameCheckerFlavorTextOriginObjectName_Agatha4"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "14b596a4b6cc30748d2d0e97a61f75d5c14cbc26c7dab7f611a5aed0e9fc1fbc",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[50]",
+        "gFameCheckerFlavorTextOriginObjectName_Blaine2"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "668c019579f6d269b0cd6cf812b2b41dd6f66d6e7e6bd5e0f9221bfab19ed0b4",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[54]",
+        "sFlavorTextOriginObjectNameTexts[55]",
+        "gFameCheckerFlavorTextOriginObjectName_Lorelei0",
+        "gFameCheckerFlavorTextOriginObjectName_Lorelei1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e188d98bbbb850c9f6135b0b5ef5a81d3a94bbecf814aec9d668f9c92c7d29cc",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[60]",
+        "sFlavorTextOriginObjectNameTexts[61]",
+        "gFameCheckerFlavorTextOriginObjectName_Bruno1",
+        "gFameCheckerFlavorTextOriginObjectName_Bruno0"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "f92419d37edc46a04aade7529d71b41c044893185eacdc53e785e41f92a71484",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[72]",
+        "sFlavorTextOriginObjectNameTexts[73]",
+        "gFameCheckerFlavorTextOriginObjectName_Lance0",
+        "gFameCheckerFlavorTextOriginObjectName_Lance1"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b980c597a7e89619a6323dfd1d0a52f6d1f8d9a893cb53f90a9a37c994940377",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[81]",
+        "sFlavorTextOriginObjectNameTexts[82]",
+        "sFlavorTextOriginObjectNameTexts[83]",
+        "gFameCheckerFlavorTextOriginObjectName_Bill3",
+        "gFameCheckerFlavorTextOriginObjectName_Bill4",
+        "gFameCheckerFlavorTextOriginObjectName_Bill5"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "35ade01a8c738f6a0e5fb315903bf6f9d396e0db79e9e0e0bf2f0df2fd007503",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[90]",
+        "sFlavorTextOriginObjectNameTexts[93]",
+        "gFameCheckerFlavorTextOriginObjectName_Giovanni0",
+        "gFameCheckerFlavorTextOriginObjectName_Giovanni3"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "037fad9814db482b964babad2aaab420d4f2ad1b9580e0a7c7f9ae5a6809b872",
+      "keys": [
+        "sFlavorTextOriginObjectNameTexts[95]",
+        "gFameCheckerFlavorTextOriginObjectName_Giovanni5"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "8a5f4d6d819d59571f86f6f05a3a81ffffeed4fbeaff9d6d327a77fb4cc3abd1",
+      "keys": [
+        "sJPText_PP"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "b0758ffb6a3743d8133cb0b7fe70e535043da8e2be69e1d8d4e0be89845b13e3",
+      "keys": [
+        "gCreditsString_Tetsuya_Watanabe_Akito_Mori_Hisashi_Sogabe_Sousuke_Tamada"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "de3e12eab899ce3e97882009fbf76e2fb70d0d0e46e4a3d6e9cc4c93ee80ce57",
+      "keys": [
+        "gCreditsString_Tetsuya_Watanabe_Koji_Nishino_Takao_Unno"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "0a216e2c35513968410cfd8221628f127418e2ca3f2f9f312d751fa6c7bb323f",
+      "keys": [
+        "gCreditsString_Thomas_Hertzog_Kathy_Huguenard_Mika_Kurosawa"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "42e98e25ef7edb2ee9466571d4ff9a95bc4b418b72315084039967629a7cb36e",
+      "keys": [
+        "gCreditsString_Tsunekaz_Ishihara"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "2904be5f81684fa8d90a7c5bdc8ab063f4471e2fd2768b354299f05b34d7e216",
+      "keys": [
+        "gEasyChatGroupName_Pokemon",
+        "gText_MenuPokemon",
+        "sEasyChatGroupNamePointers[21]",
+        "gText_Pokemon2",
+        "Help_Text_Pokemon",
+        "sStartMenuActionTable[1]"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "733f543b28d3c8e172755fdbea1c41216f4df7f52726dc5f6818f936f598e43f",
+      "keys": [
+        "gExpandedPlaceholder_Aqua"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "7b95fb722bde60587beeead2902bcb15f85615574aabaa58b81c52fb10ca8e3d",
+      "keys": [
+        "gExpandedPlaceholder_Archie"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "5e05aaa3b32bd0d2c114818b8b55cad419376d66fb10cc7e7ac9e15897abf264",
+      "keys": [
+        "gExpandedPlaceholder_Green",
+        "gNameChoice_Green",
+        "sRivalNameChoices[0]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "62497ee202b1628abb47f2f6d3837f30769960b0240811e1fc82bd2ecbca1b4c",
+      "keys": [
+        "gExpandedPlaceholder_Groudon"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e39b74eee3fb2ff841a6c3d035585eab448d7b2d82865c287707314a782c9087",
+      "keys": [
+        "gExpandedPlaceholder_Kyogre"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "89a1757eb6fed33dfa0ea7b6975644ef5dd23b2c08f002835a5815e9af4b74d5",
+      "keys": [
+        "gExpandedPlaceholder_Magma"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "34f7203387321c6f1afd1a89dd486078c79fd7d218e44e5612348f1e9904d1c9",
+      "keys": [
+        "gExpandedPlaceholder_Maxie"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "14b1800df511771867af69187670ce116c5aecb5584ee97e91e66e20c46203db",
+      "keys": [
+        "gExpandedPlaceholder_Red",
+        "sMaleNameChoices[0]",
+        "gNameChoice_Red",
+        "sFemaleNameChoices[0]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "699de3ce6560e829a6a63f806ed63d5be4b02eb9d185dddcb87d7b1c95c54181",
+      "keys": [
+        "gExpandedPlaceholder_Ruby"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "8a7b0d4e45670c651ed28ae05df2592e0be86197d783f236f1994f0a0d180650",
+      "keys": [
+        "gExpandedPlaceholder_Sapphire"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "898037a541718a7e513d72776896be908dc17fdb798ad7dec87bab678785a309",
+      "keys": [
+        "gFameCheckerDaisyName",
+        "sNonTrainerNamePointers[1]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "bb55e1ab817ad1a39a3a5e5fbae5eab5d284ae4852674f1e566221a463366ddd",
+      "keys": [
+        "g3:08187429"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "a9f071985b9d87a750eb87d494bd666d2cc86998d6a2fea0018fdc240313ad33",
+      "keys": [
+        "g3:0819f94f"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "bf00412effface38dade23178db8408c9ed79ed6dda0e81f0e893648fb38fd0f",
+      "keys": [
+        "gText_MoveInterfacePP"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "9402872a022fd5972339f4322a86bfb8ed1ac08e8f0a5952e2d62b5863dcdf96",
+      "keys": [
+        "gText_NamingScreenKeyboard_ABCDEF"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "b4c75db1b227bb42bbcfaffb455383db2ba546f8dad23774adca16a79ff42cdc",
+      "keys": [
+        "gText_NamingScreenKeyboard_GHIJKL"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "60cd5507655be87a3ab21bd751a9ca7de55de460b138633835da49e6d192bb85",
+      "keys": [
+        "gText_NamingScreenKeyboard_MNOPQRS",
+        "sEasyChatKeyboardAlphabet[2]",
+        "gText_EasyChatKeyboard_MNOPQRS"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "e476989b6087dbe080325871378c7f0b5d36bd4af074757d30381e25730d259f",
+      "keys": [
+        "gText_NamingScreenKeyboard_TUVWXYZ",
+        "sEasyChatKeyboardAlphabet[3]",
+        "gText_EasyChatKeyboard_TUVWXYZ"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "600bdf22195084fda992edbc52f27e52219f1d930e05953fcef703beeb2e7c6b",
+      "keys": [
+        "gText_NamingScreenKeyboard_abcdef"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "61eb374b593a2a336090666d6213911cd90434c05a513c63174b569e0d53fef6",
+      "keys": [
+        "gText_NamingScreenKeyboard_ghijkl"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "e894fd7b55f7efcbef22faa7d0eb6fd44df4ddb427f65b5d6515834a4d37f113",
+      "keys": [
+        "gText_NamingScreenKeyboard_mnopqrs"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "4364253ff50a013df3848576d617456714791317f74c1a64b0bab265d53277ba",
+      "keys": [
+        "gText_NamingScreenKeyboard_tuvwxyz"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "bdaf0690e4fa1a69073ad70db7c9c7ee068b09fc46c1e05c1201557005588dac",
+      "keys": [
+        "g3:0819bcbc"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "4d5b96a5a216fc1adf57a6e95f5a7dd29816557a2f0bb72bfe0d660084c96c42",
+      "keys": [
+        "g3:0819bec3",
+        "g3:081953ee"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "b01ee1fe3344eb70a7bbc524c2434c985f83398399bc56ef9caacfa87506dc29",
+      "keys": [
+        "gText_RegionMap_AButtonOK"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "c2823fae31d52ccb0f527ac0ed347a48aeeca62e008930ba633c1873e31a3508",
+      "keys": [
+        "gFameCheckerMrFujiName",
+        "sNonTrainerNamePointers[3]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "cfe3f49961e789f293e07b541c66196c22370d73d04af1bf57990b827131525b",
+      "keys": [
+        "gNameChoice_Ash",
+        "sMaleNameChoices[2]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "cf9c81844cb31fd0891d6eee978f79d54e8f485ac31985ef0c71ab8e945dd57c",
+      "keys": [
+        "gNameChoice_Cassie",
+        "sFemaleNameChoices[10]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "175b4d803c6b40b71bbce8b81294bde1357d730e044fb37d85e3d1e824f7d842",
+      "keys": [
+        "gNameChoice_Gary",
+        "sRivalNameChoices[1]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "ac40bed377d599dc072026c7d65739d86e219f3f385f22d32cf965950b8846a0",
+      "keys": [
+        "gNameChoice_Geki",
+        "sMaleNameChoices[4]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "87de194e4668102a378b4178db27260a7401b86220fa6e0d6cee35cc9c86b37e",
+      "keys": [
+        "gNameChoice_Hillary",
+        "sFemaleNameChoices[5]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "658ec5586f63ead85855f715fe9ddd5424719a460b654887b65fa1331d462190",
+      "keys": [
+        "gNameChoice_Hiro",
+        "sMaleNameChoices[12]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a8b301a42950dd55bbad9d5dd98a362ec28f658bafa99738e8286fd6a7e59b39",
+      "keys": [
+        "gNameChoice_Jodi",
+        "sFemaleNameChoices[3]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "13a3b19b818726935c01a0f5f033cc1517139acfbee5fa7d85de0c230677b6d0",
+      "keys": [
+        "gNameChoice_Jon",
+        "sMaleNameChoices[14]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e87d6bf2e14e9eca3c3a867d505aa35ca6c00e3a9b83e3cbf8c2b3b6e3b9b104",
+      "keys": [
+        "gNameChoice_Jonn",
+        "sMaleNameChoices[7]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "29e1f7a71e2ce7429e5e2c0c76e3876f4e44f26a86d25e3993c4c460020c010e",
+      "keys": [
+        "gNameChoice_Kaz",
+        "sRivalNameChoices[2]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "001e0a7a272a6fbb6b66a8a953aacf79f1ae98c2aca8e6d7e69941e0f00f5c2c",
+      "keys": [
+        "g3:08179f09"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "016f9eb3e454aaf208f81f27a762efb70cce3694107555bbffeb1eb2786b6fab",
+      "keys": [
+        "g3:08179f62"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "f9979bd0959bf6f443677aa379fe8ba9ec1bddd76394482e38b702a05cbccd6c",
+      "keys": [
+        "g3:0817a1aa"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "eb6d739de84d04ed1ded5597ddb36685eb6a5d60289a0f9d371f12c5ee6cf977",
+      "keys": [
+        "g3:0817a272"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "7bb6495ac9887ada7a26723f6e2f8ab35c5e479bff649437a23c880c94d3142a",
+      "keys": [
+        "g3:0817a2dc"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "6fced0f4575d02078078eca01bc9dd9ad60e77e6925a8ab1fd1d2d1b988bf4f0",
+      "keys": [
+        "sEasyChatKeyboardAlphabet[1]",
+        "gText_EasyChatKeyboard_GHIJKL"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "eca534f8234e038d5b5e87c65cd7ea1b1397d988a18428e9639a59dea4dea3ee",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[10]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a4cea6c8fa3162151bcc81191c30e2ac86aabb0407df1e05e7eab5aa54f950b7",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[11]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e4a07aeecac7c613b6b31d79e8b21ae34f439e3652103271ff0865120254be6a",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[12]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "09084ad6b423929a1132c0a4b3695ce5ce677a3bd77bfc18ab86cfa339571777",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[13]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e506d0234591232b30105babc24003b1c1770e81e7643d1dc694adbfed8e673c",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[15]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "4fc2a2736dd850f65d129dbf004be76d24da8a9dbc8dbbedb26a24de6dec60a3",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[1]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "110c797ccce6d05dfcb2f99e40ba954083f554b9ad18435943c56d993db3bc6f",
+      "keys": [
+        "gText_Diploma_GameFreak"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "f76080249229d9d7cc2e9b528247971a7396f0c30e18f5a489538f851ba529b8",
+      "keys": [
+        "sMaleNameChoices[10]",
+        "gNameChoice_Taylor"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b7821575b7ac8a3c75f45f2a793fbc1b91ea8d0042585e88bc25ddf7dcc9ca56",
+      "keys": [
+        "sMaleNameChoices[11]",
+        "gNameChoice_Oscar"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "5394caf27e547d927dee41891c35a87fe414331f041e23cae27267af63317687",
+      "keys": [
+        "sMaleNameChoices[13]",
+        "gNameChoice_Max"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a032457cebe523ee4ce9d0857d691a66b0d49353a5c02c1f0d8d4c09ab16d9e6",
+      "keys": [
+        "sMaleNameChoices[15]",
+        "gNameChoice_Ralph"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "d6822d1e8c8deea022d6628f53ce225cd4d7d146d799b7163795b2aedb8de25e",
+      "keys": [
+        "sMaleNameChoices[16]",
+        "gNameChoice_Kay"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e6d433bdbd85ca28a5199cb651b674570c92c46147f79c33e298cafe8d140d15",
+      "keys": [
+        "sMaleNameChoices[17]",
+        "gNameChoice_Tosh"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "8dc90bb9d37bd977c06b975052ae568c522d91e8e9a84a9949817810968049a9",
+      "keys": [
+        "sMaleNameChoices[18]",
+        "gNameChoice_Roak"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "69c829d05da0fa39f4971d2aa04cdfed16e2946b599eec92990381bcf886bd8f",
+      "keys": [
+        "sMaleNameChoices[1]",
+        "gTypeNames[10]",
+        "sListMenuItems_TypeNames[1]",
+        "gNameChoice_Fire",
+        "sFemaleNameChoices[1]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "291782e50bacc6a093af791d3f3db14bb3ab2a6e025924cb9977922268b852c9",
+      "keys": [
+        "sMaleNameChoices[3]",
+        "gNameChoice_Kene"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "9a9de71c3d08b454280a009ed8bf430e7f45b9da36327a9c88cb90c7da51825b",
+      "keys": [
+        "sMaleNameChoices[5]",
+        "gNameChoice_Jak"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a1f11adff48cd65da108142a7dd045281d55dba7972ae5527068e0af9a88dffa",
+      "keys": [
+        "sMaleNameChoices[6]",
+        "gNameChoice_Janne"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "2600d36e34eac424c9bd9bb2e2be7696cef712f6c3a79caa0fa6e78031cc11f0",
+      "keys": [
+        "sMaleNameChoices[8]",
+        "gNameChoice_Kamon"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "65990d8f9be35167bd80ea47876b5b991c74d711d1b59e045de8c839cc5e0c94",
+      "keys": [
+        "sMaleNameChoices[9]",
+        "gNameChoice_Karl"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "8e4e6c464c4e9da20014be94256a26f5423bab6459dae910ed240160ada2ce0b",
+      "keys": [
+        "gText_PokedexPokemon"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "399c45dbc8130bff02c07d20ae14e116d54da829b04f98f38f06783779c3d355",
+      "keys": [
+        "gTrainerClassNames[81]",
+        "gTrainerClassNames[89]"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "338ed778d5b18081b9b5f0a3ccd72d339f9ab3ccfe03b977562349e2b70864f8",
+      "keys": [
+        "gTrainerClassNames[97]"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "bdf6cd3f25851dd049a48572b3d5a887eb954d614a905a610929eb8cc1c01cb1",
+      "keys": [
+        "gTypeNames[0]",
+        "sListMenuItems_TypeNames[0]",
+        "gText_Normal"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "8ef560e5a7d89b3a39c2a99805d69b8fbc81ad8b4bb4379ec0349d0eb19d0e2d",
+      "keys": [
+        "g3:081a92a3"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "de43bc1fafc6dd9a66a15dbffef8c7adc47f2f3969d68956299a391f3a9470a9",
+      "keys": [
+        "g3:081a92a7"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "d4664e7bd275c79b916de6190abbeef2ea3559de1184af42666e5f274e9b619d",
+      "keys": [
+        "g3:081a92ab"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "41ecf978738bd4ac54b96c0b055867f55d87f7e8f6bec352cac7822d5fcaca47",
+      "keys": [
+        "g3:081a92af"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "beaeef3cda12bb15213705a2f7ebebbdb0764c87e8b0baddb424a0302c2de700",
+      "keys": [
+        "g3:081a92b3"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "81fe9a0645be25dab904a3dd98e90f8a474638b6730508b3448627739158b732",
+      "keys": [
+        "g3:081a92b7"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "6d5c3ed0e917a6035eee238870d38593fb73779ae9609e18f689a1579f58603d",
+      "keys": [
+        "gText_OK",
+        "gText_PartyMenu_OK"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "84f838103acddb81d75184591543d3b143fab1ea19a96ce9a7c77a3b00fcaa8f",
+      "keys": [
+        "gText_Ok"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "e722bb85a66e5bc5acf09a06ce81246cd5ff1ffbcbd996d0328c3ae5b39ca08a",
+      "keys": [
+        "g3:0818be9b"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "e8b483325863234a1dabeba9660c877b2c41d6230a593a838bc50ba4ee578f1a",
+      "keys": [
+        "gNameChoice_Kiko",
+        "sFemaleNameChoices[13]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "f1429b3977919457c85ad9a5a8385e16fffd8a9342a820b4f73ea9628e9696d8",
+      "keys": [
+        "gNameChoice_Leaf"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b1c50ce3661a7bc5159b5d9c926a6246a7e3168cb321d382b15b86fd6a48938e",
+      "keys": [
+        "gNameChoice_Makey",
+        "sFemaleNameChoices[6]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "f73bae9656aac096e45a2d7395390d72aa74ecf70105803d8cecd0582669c4b1",
+      "keys": [
+        "gNameChoice_Michi",
+        "sFemaleNameChoices[7]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "51bf09e376c9144c34433df6538c70697cd179d7f69b3332eb438694a1ad16d1",
+      "keys": [
+        "gNameChoice_Mina",
+        "sFemaleNameChoices[14]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "214d6c06422c88a2d3a1c91f47cdfdaeb07bdd5ab10f3f3fc19e7d97e171b47f",
+      "keys": [
+        "gNameChoice_Momo",
+        "sFemaleNameChoices[17]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "9d826c08aa14b7b336cf80c16d8ca8a3e59f6e28f1a8c716143f23c3b5f49140",
+      "keys": [
+        "gNameChoice_Norie",
+        "sFemaleNameChoices[15]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "ad74ad89dd77da357f04119cbac1df00c62e51a16fc994a9d32c2c354b431b42",
+      "keys": [
+        "gNameChoice_Omi",
+        "sFemaleNameChoices[2]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e190f31dcafa75148b620d4bf20724dca89a2bcb4e12b240fdfdbbd8d1f0b0c8",
+      "keys": [
+        "gNameChoice_Paula",
+        "sFemaleNameChoices[8]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "1f6d3f3f3612a58cf79fa5c8c443f61ab69d49241a5ca8bea71f75a86e3d3d67",
+      "keys": [
+        "gNameChoice_Rey",
+        "sFemaleNameChoices[11]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "9881f4f78ab0a49a50c9316c04b381068081732b86759b3d0eba731d4dabb767",
+      "keys": [
+        "gNameChoice_Sai",
+        "sFemaleNameChoices[16]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "65b120817edca818a617d197ec98f84aee4cd52dfc6b9b09a93c5bc47ada6056",
+      "keys": [
+        "gNameChoice_Seda",
+        "sFemaleNameChoices[12]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "006455bd77344b5d2430eb39dc7c881ed87999a9115ec6b7910d380201bf2b5e",
+      "keys": [
+        "gNameChoice_Suzi",
+        "sFemaleNameChoices[18]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b9ec6f4c281ba2bf8fad1f12e41fde5f68958cf3943fa8552c2d4d86e2a8ef24",
+      "keys": [
+        "gNameChoice_Toru",
+        "sRivalNameChoices[3]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "28f676d1fb7284025294f852483d4aa70c3a00ab50ce0d2655a20211f7f4c38d",
+      "keys": [
+        "g3:08181286"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "1e5da17edd028d890059468a74d5f018fad224e6b3b504d70eb27bd1a25bba43",
+      "keys": [
+        "g3:08177f9f"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "a9201ab3f84ea21fa2599f063908967e4ca15b8f091b36df49a07c86a91ca8ad",
+      "keys": [
+        "g3:0819455a"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "9eaa2d8679446a62ce86c8ea39d2b7069fe5debcb8e5aa34c68f29d7383282a9",
+      "keys": [
+        "g3:08194571"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "df1c691851990784063288944c227e8b6702d8b050a324065ab1abe7d5558b42",
+      "keys": [
+        "g3:0818f32c"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "f08e2199b9592dda9d931b67e41fb5e4f25e52d57c98027ae38fb1dadc103bd8",
+      "keys": [
+        "gText_SpaceMin"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "b8f66daf7328317e7bd12607227ecfe887884d48727a692023ffb4b6e04b592d",
+      "keys": [
+        "g3:081a92bc"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "3f57fe8fce70a024a5fe2afda0210e437de39d7e794619ab92207498d14ace5f",
+      "keys": [
+        "sText_MagnitudeStrength",
+        "STRINGID_MAGNITUDESTRENGTH"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "478b6a3308097a47b1ef1756022b329b6fa17d8523cc7de6f1af7f80e3f0705d",
+      "keys": [
+        "g3:08174444"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "017653c580908dc9cd5a410df63c13cdfd721e00797fff2bf1e40e6659200189",
+      "keys": [
+        "sSoundOptions[0]",
+        "gText_SoundMono"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "9a0ab17cee61d5a9dbc1b9e19f481adf5c9c08f97e89b7f4a76165930499fcbf",
+      "keys": [
+        "g3:081916ea"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "74e106d6061219675e4163f9b159d7ed9d0026b7c08ac7823a7e76b639539034",
+      "keys": [
+        "g3:0818f899"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "d99e887bda38a9ff661ab7428d7dab5f9925c1027cac7495eceb9166bbb540c7",
+      "keys": [
+        "g3:0819ac4b"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "3d1419a8becf9c49903b2eb87fe00ab975054d7be9d80b9c2e8644f4b8a89825",
+      "keys": [
+        "gText_Flareon"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "bb629adcc9adb1f6d93a4580c1e94e9315729965dc4e413afb41df10c593cea4",
+      "keys": [
+        "gText_Par"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "5a537471ee8675e712acb7179f423fde0f52230ef6c79c928ce930c991461fd7",
+      "keys": [
+        "g3:08180075"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "02014be04cb59ca313bb84c34a98500f15ee4b7bf9626837bb8a1bad192a8aa7",
+      "keys": [
+        "g3:081915bb"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "9e98325a81ae7aab1749a8eaafa60e3ca1444e0810c8bdbe1fa788fc25c82075",
+      "keys": [
+        "Text_Gyaoo",
+        "g3:081a6448"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "1b3fdc14e414be28e88bdf37b70bd11643a22246ae3eba83fd5ca49551cae061",
+      "keys": [
+        "gCreditsString_Go_Ichinose"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "5a44d92c1c6e90ee8d1f9c6b2e8d4815c4d0475df9a85ff4061ef1ae87615d2d",
+      "keys": [
+        "gCreditsString_Go_Ichinose_Junichi_Masuda"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "9542b675e5e4fcd2c5f155bd5e56ae6cf3c9a3b4a01fb85312fe40c530d3d37a",
+      "keys": [
+        "gCreditsString_Hiro_Nakamura_Hiroyuki_Uesugi_Teruki_Murakawa_Kazuya_Suyama"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a19c938a65b167721062aef4b1d562c029c0c5ea23fb0b42685110a8a1a13451",
+      "keys": [
+        "gCreditsString_Hiroki_Enomoto_Kazuyuki_Terada_Yuri_Sakurai_Yumi_Funasaka_Naoko_Yanase"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a29b25f6c3bc75ef09b36d60049d8d411ceff726c0817c04591b2c30db610cb3",
+      "keys": [
+        "gCreditsString_Hiroyuki_Jinnai_Takehiro_Izushi_Hiroaki_Tsuru"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "d6252fcbac0fd75a43da2992b33096a96b07367d5fb0cf0b5dbdb346a2f379cd",
+      "keys": [
+        "gCreditsString_Hiroyuki_Nakamura_Masao_Taya_Satoshi_Nohara_Miyuki_Iwasawa_Daisuke_Goto"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "d13c83000448c9feb13e0e0213c29edffdb46483bbf7e0f69a92fa1949d82de6",
+      "keys": [
+        "gCreditsString_Hitomi_Sato_Satoshi_Tajiri"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "935dd9d40b35d2c3f13a3871f49eb7f4a4270a569bd5b879f6a26ea7d7c80454",
+      "keys": [
+        "gCreditsString_Hitomi_Sato_Shigeru_Ohmori_Tadashi_Takahashi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "0371e0dbd00b26ad2010e7e5634b854ab1eb1e931976260a66ad6103ba01893c",
+      "keys": [
+        "gCreditsString_Hitoshi_Yamagami_Gakuji_Nomoto"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "dd4923eb24f3592496c2a1749a6e3ff16160e36ba974ad9f694cdf63c2340b9d",
+      "keys": [
+        "gCreditsString_Junichi_Masuda"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "ddfb38832c5b8bd78b18eef62840a0c2e789511053e24f8e45b8d29f50df1356",
+      "keys": [
+        "gCreditsString_Junichi_Masuda_Koji_Nishino_Tetsuji_Ohta"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a05e2ac8b52c186e0b79754ab08f4926a19df4b8e543177634f8346a17ebc8ab",
+      "keys": [
+        "gCreditsString_Ken_Sugimori_Hironobu_Yoshida"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "54fe7187076dbbbc0038a5544bf624ad014c5fbdcdd131578e526092d1fa6c70",
+      "keys": [
+        "gCreditsString_Ken_Sugimori_Motofumi_Fujiwara_Shigeki_Morimoto_Hironobu_Yoshida"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "882753d877f458c5ad6ede53dafe9578146fc043d7d2ec568ecc5ce9eeab399f",
+      "keys": [
+        "gCreditsString_Ken_Sugimori_Shigeki_Morimoto"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e62fa88f182eb60dd6fc276085c2b6fe75f66390572dae0b1b56890d3d71bb78",
+      "keys": [
+        "gCreditsString_Kenji_Matsushima"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "4066a33cb75fd40edfb62b2a8e6c560cf901093b99990e1159bf6706f1faad1b",
+      "keys": [
+        "gCreditsString_Kenji_Tominaga_Kenjiro_Ito_Tomotaka_Komura_Michiko_Takizawa"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b62edf62791e3ce292ff1226bab2e3704fa694fa46cb33cf2b8178689099f74a",
+      "keys": [
+        "gCreditsString_Koji_Nishino_Tetsuji_Ohta_Shigeki_Morimoto"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "e4efe13777bac7e4b0ff4c8893cbf070c06d4ada662014c6002f2bec1a9006bc",
+      "keys": [
+        "gCreditsString_Makiko_Takada_Mikiko_Ohashi_Shusaku_Egami_Takanao_Kondo_Rui_Kawaguchi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "fe32bc55294691188f17921fc3164120aec5de741d0d4dbde478d8e46415ec45",
+      "keys": [
+        "gCreditsString_NCL_Super_Mario_Club"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b48d0b198cde15d3417b90cd88d42aebda608879c86bce5a1cb321f984943189",
+      "keys": [
+        "gCreditsString_Nicola_Pratt_Barlow_Shellie_Dow_Anthony_Howitt_Naoko_Saeki_Kyoko_Onishi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "93b210b4d58e6f5cc9fe92efc08cc0750eec25dbb36bf95529cacd12767dbefa",
+      "keys": [
+        "gCreditsString_Satoru_Iwata"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "70880df3cac462b92a0a2b7ff9ed75ba197258e242a91f886a6d7860fab4f82c",
+      "keys": [
+        "gCreditsString_Satoshi_Nohara_Shigeru_Ohmori"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "1ca632ca7e8f96a262a612d0ce9100c626ce566c26dc76fa09b52e49963c427f",
+      "keys": [
+        "gCreditsString_Satoshi_Ohta_Asuka_Iwashita_Takao_Unno_Kanako_Eo_Aimi_Tomita"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "73110f1d1a1d0643d14bc4d8f5d563e4e1404fca4b6ac68440451e0a8a8b79cb",
+      "keys": [
+        "gCreditsString_Satoshi_Tajiri"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "dbc3d71eed9585c671e9509f4a5ba3b16e62dc5fa74b44158d19ef369230db86",
+      "keys": [
+        "gCreditsString_Takao_Unno_Asuka_Iwashita_Kanako_Eo_Hiroki_Fuchino"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "4960465e5b328493a90eea37720c031d508c9683b45b2c79220f9285eec0f80d",
+      "keys": [
+        "gCreditsString_Takehiro_Izushi_Motoyasu_Tojima_Hitoshi_Yamagami_Hiroyuki_Uesugi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "f063452b5a9ad83f04702101dd9a108ba4a58c9c3c007fe6eab2430dd6157079",
+      "keys": [
+        "gCreditsString_Teruki_Murakawa_Souichi_Yamamoto_Kimiko_Nakamichi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "6b6d8f3f92b10bfea78e37c5b15131656f71b4d6b9c893c88ca7eaf8640ee585",
+      "keys": [
+        "gCreditsString_Teruki_Murakawa_Souichi_Yamamoto_Yuichiro_Ito_Akira_Kinashi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "ebe79bfa466e9dbb165336c430501d73f20fd99c56074cfe11e979c831279bca",
+      "keys": [
+        "Help_Text_PP"
+      ],
+      "reason": "same-portuguese-term-or-standard-symbol"
+    },
+    {
+      "source_sha256": "d54121d0f1a33e81dfe1393d2be11f8f4e038858466f416c03e1586ec744554f",
+      "keys": [
+        "g3:081a929f"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "84eab0ecbffc820c425927a60e5f2e0959d995c16852c535b8383cdba67c2975",
+      "keys": [
+        "g3:0818964d"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "2348be9c5a8971b8951daacc14cb1b205e15d646bb6334fad99d5c963fb9f367",
+      "keys": [
+        "gCreditsString_Teruyuki_Yoshioka_Takao_Nakano_Satoshi_Mitsuhara_Daisuke_Hoshino"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "fe3bbe9e3f115efeceee3d511aa89925247f229a84aab42260234a55b22c2130",
+      "keys": [
+        "gNameChoice_Amanda",
+        "sFemaleNameChoices[4]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "91edf96986a1c9c8bd4903b07ed56a6acee0354f985c8a9b585cd1cd0345bb00",
+      "keys": [
+        "gText_Eevee"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "2e9aa3cb4bfc1d7059693a66eeede96b4522c1ebeb6432a68753809289690f99",
+      "keys": [
+        "sText_Letters"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "47482720fccbe26c1f440352cc01f6fb46864893d630caf2bc569031c46defd8",
+      "keys": [
+        "g3:08176bc8"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "73b9da70eaa989d89c7d7925885a772f9d4aa74e4216e78d558738b392467eac",
+      "keys": [
+        "gCreditsString_Akira_Kinashi"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "862ba2c3905e64ed09676dd2ee2016ddd70cfc427ae469c645f76f275b904da8",
+      "keys": [
+        "gCreditsString_Atsuko_Nishida_Muneo_Saito_Rena_Yoshikawa_Jun_Okutani"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "5ce3dfc171e32d45f1fae8d20929ac44f24b299af417fbf056b917b17330800a",
+      "keys": [
+        "gCreditsString_Azusa_Tajima_Akira_Kinashi_Kazuki_Yoshihara_Retsuji_Nomoto"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "47847215984492e79814c3866a4a6754da200977dd3c97e7ebb6fda2ddcdc652",
+      "keys": [
+        "gText_UnionRoomChatKeyboard_abcde"
+      ],
+      "reason": "alphabet-or-keyboard"
+    },
+    {
+      "source_sha256": "e878065bf019c69f4ddf16deee706d0d22207b7edea23ed6c98b5cf09c4c4c71",
+      "keys": [
+        "g3:08173b61"
+      ],
+      "reason": "nonverbal-cry-or-interjection"
+    },
+    {
+      "source_sha256": "a644c8a4e1f399b30d387e7e4340b664aa4a06c776805eb7c3ed12e976740e20",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[3]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "b10242c64d581e524048ae1d9319cb53817a86a4fc769558acb915f69119a1e2",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[5]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "1ab2132e928cff184758bce11752f2798a8c1f64e93de7479556a870a6059844",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[6]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "2aaf2629d4b07f546c8b93b19a7d6f991950594f8e0bb7cc0f5b178306957239",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[7]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "a73eb4e81a820a1be7de8acb9eb4aa63b9e0ff53c9e70f3d36faacefd0a425d7",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[8]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    },
+    {
+      "source_sha256": "d802c5f14f35479f13cff0d244c15f346addbe6eddaadbe87039afb8eb084963",
+      "keys": [
+        "sFameCheckerNameAndQuotesPointers[9]"
+      ],
+      "reason": "proper-person-place-pokemon-or-organization-name"
+    }
+  ]
+}

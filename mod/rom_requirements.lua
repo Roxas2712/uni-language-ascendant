@@ -16,6 +16,14 @@ return {{
 ["size"]=1048576,
 ["version"]="1.0 / Revision 0",
 },{
+["import_id"]="red_ptbr",
+["language"]="pt-BR",
+["md5"]="b002d19d15337b3132637364258605ee",
+["name"]="Vermelho · fan translation",
+["sha1"]="a2a0e2a3d6ef4d5771aa33682d31eaefd03c32ba",
+["size"]=1048576,
+["version"]="hydhyro · 98cec899e9ad",
+},{
 ["language"]="es",
 ["md5"]="463c241c8721ab1d1da17c91de9f8a32",
 ["name"]="Edicion Roja (Spain) (SGB Enhanced)",
@@ -39,6 +47,14 @@ return {{
 ["sha1"]="20e72dc6f41493eee1fdd0cef54214e6c3389688",
 ["size"]=1048576,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="blue_ptbr",
+["language"]="pt-BR",
+["md5"]="64bdddd54bfe775b910ec89a58740031",
+["name"]="Azul · fan translation",
+["sha1"]="ec9e33447d9bdbf95c2d57f487e25a57854a1adf",
+["size"]=1048576,
+["version"]="hydhyro · 98cec899e9ad",
 }},
 },{
 ["base"]={
@@ -56,6 +72,14 @@ return {{
 ["sha1"]="42f3714eec6eca25200d42461ff08d57c98f6d1d",
 ["size"]=1048576,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="yellow_ptbr",
+["language"]="pt-BR",
+["md5"]="186578eb92a67f04940a94fd43dd4836",
+["name"]="Amarelo · fan translation",
+["sha1"]="2b94c64b1944fb6866fd0c28149f86c11bc86253",
+["size"]=1048576,
+["version"]="hydhyro · fbb76167ed98",
 },{
 ["language"]="es",
 ["md5"]="f0da8b1cff3aab898ecde9dcbda6d817",
@@ -80,6 +104,14 @@ return {{
 ["sha1"]="9254195d461ea942eaaa08cc4b83de3cf82aea0d",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="gold_ptbr",
+["language"]="pt-BR",
+["md5"]="a663443555efaf74dfbbf264f12b25bc",
+["name"]="Ouro · fan translation",
+["sha1"]="652c0208a5c54313e2d3efb336346e59a17cbab6",
+["size"]=2097152,
+["version"]="PT-BR · exact hash required",
 },{
 ["language"]="es",
 ["md5"]="9462bc81907e38c59acccd739690e6f9",
@@ -119,6 +151,14 @@ return {{
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
 },{
+["import_id"]="silver_ptbr",
+["language"]="pt-BR",
+["md5"]="7454208311f121e492e6634d13612f25",
+["name"]="Prata · fan translation",
+["sha1"]="9d9536f14a1874d27ea9167fdf00b80439204a6d",
+["size"]=2097152,
+["version"]="PT-BR · exact hash required",
+},{
 ["language"]="es",
 ["md5"]="2d83fb454dd5687a802425c501854dc2",
 ["name"]="Edicion Plata (Spain) (SGB Enhanced)",
@@ -149,6 +189,14 @@ return {{
 ["sha1"]="accb584293ba056152f1fd908439b019017ff2fe",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="crystal_ptbr",
+["language"]="pt-BR",
+["md5"]="56c2dcb22ace6a4de161e1a6699ddefd",
+["name"]="Cristal · fan translation",
+["sha1"]="e41c519d7ca680facf546fa34b7b00f3149f428f",
+["size"]=2097152,
+["version"]="PT-BR · exact hash required",
 },{
 ["language"]="es",
 ["md5"]="8a626340f6b16ba45c1d4e07f2134875",
@@ -181,6 +229,14 @@ return {{
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
 },{
+["import_id"]="firered_ptbr",
+["language"]="pt-BR",
+["md5"]="dfc02ad742baa5d557dcb0213b0b50dc",
+["name"]="FireRed · fan translation",
+["sha1"]="51ab6d001412cdc3d6da16fb824ab8084123b1dd",
+["size"]=16777216,
+["version"]="Breno · based on USA 1.1; mod gameplay base is USA 1.0",
+},{
 ["language"]="es",
 ["md5"]="c629272c5e0111930a240623b6c239f0",
 ["name"]="Edicion Rojo Fuego (Spain)",
@@ -212,6 +268,14 @@ return {{
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
 },{
+["import_id"]="leafgreen_ptbr",
+["language"]="pt-BR",
+["md5"]="790d40d042401d1dea843fa7f52e2448",
+["name"]="LeafGreen · fan translation",
+["sha1"]="b32c63d5d1454d851cef16699f3ce757798553a2",
+["size"]=16777216,
+["version"]="Breno · based on USA 1.1; mod gameplay base is USA 1.0",
+},{
 ["language"]="es",
 ["md5"]="765178ed4d402033ef7ed6b82d059f5a",
 ["name"]="Edicion Verde Hoja (Spain)",
@@ -242,6 +306,14 @@ return {{
 ["sha1"]="1c2a53332382e14dab8815e3a6dd81ad89534050",
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="ruby_ptbr",
+["language"]="pt-BR",
+["md5"]="7088f5789736f6fcedc687b385033003",
+["name"]="Ruby · Português (Brasil), OJ Abreu",
+["sha1"]="90f1464f77c57b4eef45ee07df140d402162eee3",
+["size"]=16777216,
+["version"]="OJ Abreu fan translation",
 }},
 },{
 ["base"]={
@@ -259,6 +331,14 @@ return {{
 ["sha1"]="7e6e034f9cdca6d2c4a270fdb50a94def5883d17",
 ["size"]=16777216,
 ["version"]="1.1 / Revision 1",
+},{
+["import_id"]="ruby_ptbr",
+["language"]="pt-BR",
+["md5"]="7088f5789736f6fcedc687b385033003",
+["name"]="Pokémon Ruby PT-BR (OJ Abreu) · gemeinsame Textquelle für Sapphire",
+["sha1"]="90f1464f77c57b4eef45ee07df140d402162eee3",
+["size"]=16777216,
+["version"]="OJ Abreu fan translation",
 }},
 },{
 ["base"]={
@@ -297,5 +377,13 @@ return {{
 ["sha1"]="fe1558a3dcb0360ab558969e09b690888b846dd9",
 ["size"]=16777216,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="emerald_ptbr",
+["language"]="pt-BR",
+["md5"]="5f91214a7b563c858a94920796817d83",
+["name"]="Pokémon Emerald · Português (Brasil)",
+["sha1"]="18a2b0acdba046c71b8677bb58c9ee7d36f7a91f",
+["size"]=16777216,
+["version"]="Zambrakas 2013-12-08 · no day/night patch",
 }},
 }}

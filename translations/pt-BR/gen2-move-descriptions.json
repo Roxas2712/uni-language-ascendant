@@ -1,0 +1,1010 @@
+{
+  "POUND": {
+    "source_sha256": "122860da483de8a5607299f8a33c9a34af6c503d5c9dd020d4c58773370c8c7b",
+    "text": "Bate com as patas\nou com a cauda."
+  },
+  "KARATE_CHOP": {
+    "source_sha256": "54d643b3e8a412e3fbe3507061a85b02ac33d177c455e1336c7bcd3b8cfaaed5",
+    "text": "Alta chance de\nacerto crítico."
+  },
+  "RAZOR_LEAF": {
+    "source_sha256": "54d643b3e8a412e3fbe3507061a85b02ac33d177c455e1336c7bcd3b8cfaaed5",
+    "text": "Alta chance de\nacerto crítico."
+  },
+  "CRABHAMMER": {
+    "source_sha256": "54d643b3e8a412e3fbe3507061a85b02ac33d177c455e1336c7bcd3b8cfaaed5",
+    "text": "Alta chance de\nacerto crítico."
+  },
+  "SLASH": {
+    "source_sha256": "54d643b3e8a412e3fbe3507061a85b02ac33d177c455e1336c7bcd3b8cfaaed5",
+    "text": "Alta chance de\nacerto crítico."
+  },
+  "AEROBLAST": {
+    "source_sha256": "54d643b3e8a412e3fbe3507061a85b02ac33d177c455e1336c7bcd3b8cfaaed5",
+    "text": "Alta chance de\nacerto crítico."
+  },
+  "CROSS_CHOP": {
+    "source_sha256": "54d643b3e8a412e3fbe3507061a85b02ac33d177c455e1336c7bcd3b8cfaaed5",
+    "text": "Alta chance de\nacerto crítico."
+  },
+  "DOUBLESLAP": {
+    "source_sha256": "007c59cca7a1da12c038aa2f63a1be05900232557b87fb4440291958179b4ddf",
+    "text": "Dá de 2 a 5 tapas\nseguidos."
+  },
+  "COMET_PUNCH": {
+    "source_sha256": "b9b7fa83eb4784c38d5960b14d4739d7b7658d3d7a5f108362d47f1679774547",
+    "text": "Dá de 2 a 5 socos\nseguidos."
+  },
+  "MEGA_PUNCH": {
+    "source_sha256": "e3587e970d3808292a919faa1f71aee4f22dca70a518e7842e64b5daa444b1df",
+    "text": "Um soco lançado\ncom muita força."
+  },
+  "PAY_DAY": {
+    "source_sha256": "9298d5bd2528d87c6ca22d61f91704ee47b7027aa8b924bb5ed5db6d1875dddd",
+    "text": "Joga moedas para\nrecolher depois."
+  },
+  "FIRE_PUNCH": {
+    "source_sha256": "b3791ba8c05c7c5ce88a5261d839f4d68624f1edc4b8c8d5c5aefb2fab6b8a82",
+    "text": "Soco de fogo.\nPode queimar."
+  },
+  "ICE_PUNCH": {
+    "source_sha256": "86611d9076eb247b453f404d94a425d4151df2b5dd9aecef92d88251178c1a0c",
+    "text": "Soco de gelo.\nPode congelar."
+  },
+  "THUNDERPUNCH": {
+    "source_sha256": "880faf38f5f7a48d90e6fff2baedeab42c2836e1d75637362ea0eec1ef5c5863",
+    "text": "Soco elétrico.\nPode paralisar."
+  },
+  "SCRATCH": {
+    "source_sha256": "3d47adb74f7469ae0b077c91f28edd957bc28106b466472d4c85e3af02a76c38",
+    "text": "Arranha com\ngarras afiadas."
+  },
+  "VICEGRIP": {
+    "source_sha256": "306c277179fccf5441fffe913717461193bb4740aeb97fc0ed5af7d748202566",
+    "text": "Aperta com\npinças poderosas."
+  },
+  "GUILLOTINE": {
+    "source_sha256": "1ecd2cf73a9d5227d1b230f76bd659d10aa7f2e68ea520ead54e08c4e2d0060f",
+    "text": "Pinças nocauteiam\ncom um só golpe."
+  },
+  "RAZOR_WIND": {
+    "source_sha256": "34d8a5d221ba2b8b10561e089007ee577ac78a7b70d1b92482ca497da6882def",
+    "text": "1º turno: prepara.\n2º turno: ataca."
+  },
+  "SOLARBEAM": {
+    "source_sha256": "34d8a5d221ba2b8b10561e089007ee577ac78a7b70d1b92482ca497da6882def",
+    "text": "1º turno: prepara.\n2º turno: ataca."
+  },
+  "SKULL_BASH": {
+    "source_sha256": "34d8a5d221ba2b8b10561e089007ee577ac78a7b70d1b92482ca497da6882def",
+    "text": "1º turno: prepara.\n2º turno: ataca."
+  },
+  "SKY_ATTACK": {
+    "source_sha256": "34d8a5d221ba2b8b10561e089007ee577ac78a7b70d1b92482ca497da6882def",
+    "text": "1º turno: prepara.\n2º turno: ataca."
+  },
+  "SWORDS_DANCE": {
+    "source_sha256": "0895014e0581758de5d363b65c87187e6b7797a61026a843741d9dc01704918e",
+    "text": "Dança que aumenta\no ATAQUE."
+  },
+  "CUT": {
+    "source_sha256": "21a4f7f42f811fa6b2ac9ac5bc02db10352118e7ddba151b4ef4e53825cce6d3",
+    "text": "Corta com garras,\nfoices etc."
+  },
+  "GUST": {
+    "source_sha256": "14a34a1bcde3f2dc6492add6e602eca18f3e081361da745277498f01d6428488",
+    "text": "Cria uma forte\nrajada de vento."
+  },
+  "WING_ATTACK": {
+    "source_sha256": "dcc767e542134ba98574d4eb10039dfc650795f4bc1a6ca8cc38543058adef59",
+    "text": "Atinge o alvo\ncom as asas."
+  },
+  "WHIRLWIND": {
+    "source_sha256": "0447746633f220cea12c54dcee7e768b1e359622bf73aba9d91f1f5f14c3166b",
+    "text": "Afasta o alvo e\nencerra a batalha."
+  },
+  "FLY": {
+    "source_sha256": "f85c9372a082c5d58c5f903cfe11381d03cd83cae8bdc37223c2e65900475848",
+    "text": "1º turno: voa.\n2º turno: ataca."
+  },
+  "BIND": {
+    "source_sha256": "7b049a29b0f53c29df5f3a0562b4876effa64b4726a7de59abf738b3200d7e3a",
+    "text": "Prende o alvo\npor 2 a 5 turnos."
+  },
+  "SLAM": {
+    "source_sha256": "7edaa44e5b3f00a58e1f1617d409961339332a717082be0d8b9063c06612228e",
+    "text": "Bate com a cauda,\nvinhas etc."
+  },
+  "VINE_WHIP": {
+    "source_sha256": "37051718ae469223e7d1976fc99fe996f8c141139733f6093e68741765fb9b51",
+    "text": "Chicoteia com\nvinhas finas."
+  },
+  "STOMP": {
+    "source_sha256": "5a509ade1af173dbb24cf3b0664240815aa8748f7e33c3c30d60a1c170b0677a",
+    "text": "Golpe que pode\ncausar hesitação."
+  },
+  "BITE": {
+    "source_sha256": "5a509ade1af173dbb24cf3b0664240815aa8748f7e33c3c30d60a1c170b0677a",
+    "text": "Golpe que pode\ncausar hesitação."
+  },
+  "LOW_KICK": {
+    "source_sha256": "5a509ade1af173dbb24cf3b0664240815aa8748f7e33c3c30d60a1c170b0677a",
+    "text": "Golpe que pode\ncausar hesitação."
+  },
+  "BONE_CLUB": {
+    "source_sha256": "5a509ade1af173dbb24cf3b0664240815aa8748f7e33c3c30d60a1c170b0677a",
+    "text": "Golpe que pode\ncausar hesitação."
+  },
+  "ROCK_SLIDE": {
+    "source_sha256": "5a509ade1af173dbb24cf3b0664240815aa8748f7e33c3c30d60a1c170b0677a",
+    "text": "Golpe que pode\ncausar hesitação."
+  },
+  "HYPER_FANG": {
+    "source_sha256": "5a509ade1af173dbb24cf3b0664240815aa8748f7e33c3c30d60a1c170b0677a",
+    "text": "Golpe que pode\ncausar hesitação."
+  },
+  "DOUBLE_KICK": {
+    "source_sha256": "995c8d63b4d312ae56f2a6d8e6832cc247457e0850af836dfbecc06edd55f32d",
+    "text": "Chuta o alvo\nduas vezes."
+  },
+  "MEGA_KICK": {
+    "source_sha256": "3a8e97b976f64a5619c6094ea2434a7f8572dc91ff724e281f08f5cc7eec6746",
+    "text": "Um chute muito\npoderoso."
+  },
+  "JUMP_KICK": {
+    "source_sha256": "464b9ea7d5a3c8c5953931a221ddf14c4d856f2af9d7d9660037bcd5d93fc869",
+    "text": "Se errar, pode\nferir o usuário."
+  },
+  "ROLLING_KICK": {
+    "source_sha256": "8f6f644b1e95c6f027c956890adcbd8b324c2729e2ea98379aab0e1c87893f19",
+    "text": "Um chute rápido\ncom um giro."
+  },
+  "SAND_ATTACK": {
+    "source_sha256": "a30d2d5c37fa30a2a8e0864247ef2d0c3ca32cc3ecd6de1f93e42ba5c31c513d",
+    "text": "Areia reduz a\nprecisão do alvo."
+  },
+  "HEADBUTT": {
+    "source_sha256": "5856337049a5b46653fbf1a07cb9aaae7fb2b2e914fa1650c19e558231659218",
+    "text": "Golpe que pode\nfazer hesitar."
+  },
+  "HORN_ATTACK": {
+    "source_sha256": "a0519975d99f7dc4d70874c2a082c5ba980d85149dd70dce7536f6d64b4e98f3",
+    "text": "Ataca o alvo\ncom um chifre."
+  },
+  "FURY_ATTACK": {
+    "source_sha256": "14c409aeeded8c440d7acd0ae37fe143dd7bed478bf2ca05cbbc1b516e3a3a6c",
+    "text": "Perfura o alvo\nde 2 a 5 vezes."
+  },
+  "HORN_DRILL": {
+    "source_sha256": "e4c847c512b8843f4b4b6fbaf4e3af52aad0025cf6ccf181a4875d297c4c0c2e",
+    "text": "Broca nocauteia\ncom um só golpe."
+  },
+  "TACKLE": {
+    "source_sha256": "78644741df06d9031e28cf927533e951798b2fbc33026f0e9ab4740fbf9fa855",
+    "text": "Avança usando\no corpo inteiro."
+  },
+  "BODY_SLAM": {
+    "source_sha256": "aaf53522d7721d59c91d469a8dd5c66a7fa40912eb92608ec69fe83b78b49717",
+    "text": "Golpe que pode\ncausar paralisia."
+  },
+  "THUNDERSHOCK": {
+    "source_sha256": "aaf53522d7721d59c91d469a8dd5c66a7fa40912eb92608ec69fe83b78b49717",
+    "text": "Golpe que pode\ncausar paralisia."
+  },
+  "THUNDERBOLT": {
+    "source_sha256": "aaf53522d7721d59c91d469a8dd5c66a7fa40912eb92608ec69fe83b78b49717",
+    "text": "Golpe que pode\ncausar paralisia."
+  },
+  "THUNDER": {
+    "source_sha256": "aaf53522d7721d59c91d469a8dd5c66a7fa40912eb92608ec69fe83b78b49717",
+    "text": "Golpe que pode\ncausar paralisia."
+  },
+  "LICK": {
+    "source_sha256": "aaf53522d7721d59c91d469a8dd5c66a7fa40912eb92608ec69fe83b78b49717",
+    "text": "Golpe que pode\ncausar paralisia."
+  },
+  "SPARK": {
+    "source_sha256": "aaf53522d7721d59c91d469a8dd5c66a7fa40912eb92608ec69fe83b78b49717",
+    "text": "Golpe que pode\ncausar paralisia."
+  },
+  "WRAP": {
+    "source_sha256": "083a2594babb0abdecf114ef768dd796f3c84dbe344fd4552a6bfaa41b010568",
+    "text": "Aperta o alvo\npor 2 a 5 turnos."
+  },
+  "TAKE_DOWN": {
+    "source_sha256": "d99debef6ab40e47dd53391370a22916c011632bb04b7c2f82454c766cc2826d",
+    "text": "Investida que\ntambém fere você."
+  },
+  "DOUBLE_EDGE": {
+    "source_sha256": "d99debef6ab40e47dd53391370a22916c011632bb04b7c2f82454c766cc2826d",
+    "text": "Investida que\ntambém fere você."
+  },
+  "THRASH": {
+    "source_sha256": "4cf4f3de96d6b7acd630d22a48ddbb6a8e1f6544a339e219041d49c307459876",
+    "text": "Dura 2 a 3 turnos.\nDepois o confunde."
+  },
+  "PETAL_DANCE": {
+    "source_sha256": "4cf4f3de96d6b7acd630d22a48ddbb6a8e1f6544a339e219041d49c307459876",
+    "text": "Dura 2 a 3 turnos.\nDepois o confunde."
+  },
+  "OUTRAGE": {
+    "source_sha256": "4cf4f3de96d6b7acd630d22a48ddbb6a8e1f6544a339e219041d49c307459876",
+    "text": "Dura 2 a 3 turnos.\nDepois o confunde."
+  },
+  "TAIL_WHIP": {
+    "source_sha256": "96bb0d3a9ae5577ac444591d630dda0037fd41d1bf0ce6888fcbce17d3ce8968",
+    "text": "Baixa a DEFESA\ndo alvo."
+  },
+  "POISON_STING": {
+    "source_sha256": "252573480eed45ad11bdd0086539f4a2ea22e654d21c441ebb7c5a1bfc6ef769",
+    "text": "Golpe que pode\nenvenenar o alvo."
+  },
+  "TWINEEDLE": {
+    "source_sha256": "c538a15478fe74147866dea6bf6fb4e10da618351e405deaccf6b2532e655a80",
+    "text": "Fere duas vezes\ncom ferrões."
+  },
+  "PIN_MISSILE": {
+    "source_sha256": "50eea58d58b225bf604feaef1d91f54a885cef39d9b028b894f4dc47221f1626",
+    "text": "Dispara agulhas\nde 2 a 5 vezes."
+  },
+  "LEER": {
+    "source_sha256": "c01fa3f53bbd3525fdacd139f0b70e23de05d84ca3fc329b161139011be94c28",
+    "text": "Reduz a DEFESA\ndo alvo."
+  },
+  "GROWL": {
+    "source_sha256": "24cbbed58644a9c8b8d33a1a63ae4474577ae16fd28815fe31b45e1e55055a31",
+    "text": "Reduz o ATAQUE\ndo alvo."
+  },
+  "ROAR": {
+    "source_sha256": "fe074ef23645fe091239b6ccb3941a7deee57f64c7b2c1ad9b0994b49e1c15fb",
+    "text": "Assusta os rivais\nselvagens e foge."
+  },
+  "SING": {
+    "source_sha256": "f0600359046a12da76b822a0b779984a7ba6dcf5642cfc952a8bb2ae0eb08c96",
+    "text": "Pode fazer\no alvo dormir."
+  },
+  "SLEEP_POWDER": {
+    "source_sha256": "f0600359046a12da76b822a0b779984a7ba6dcf5642cfc952a8bb2ae0eb08c96",
+    "text": "Pode fazer\no alvo dormir."
+  },
+  "LOVELY_KISS": {
+    "source_sha256": "f0600359046a12da76b822a0b779984a7ba6dcf5642cfc952a8bb2ae0eb08c96",
+    "text": "Pode fazer\no alvo dormir."
+  },
+  "SUPERSONIC": {
+    "source_sha256": "2e92b9782089172a37793eed943b6c4ae01de776eea91a4467cec81d0a240591",
+    "text": "Ondas sonoras\ncausam confusão."
+  },
+  "SONICBOOM": {
+    "source_sha256": "72c580c05ca5b2a4e1efbe6d4cd4bfc985cddeeef6f03d9da85e1fa3eb354f32",
+    "text": "Sempre causa\n20 PS de dano."
+  },
+  "DISABLE": {
+    "source_sha256": "58a1fd7e92341aacc224394d3f8d54feb62841bfc3d30845f754307d414d5fd1",
+    "text": "Bloqueia o último\ngolpe do alvo."
+  },
+  "ACID": {
+    "source_sha256": "54fdee528e2dbccb4eb436039a7cfa4d48186ed5050434a7ed448bf81f94a9b1",
+    "text": "Golpe que pode\nbaixar a DEFESA."
+  },
+  "ROCK_SMASH": {
+    "source_sha256": "54fdee528e2dbccb4eb436039a7cfa4d48186ed5050434a7ed448bf81f94a9b1",
+    "text": "Golpe que pode\nbaixar a DEFESA."
+  },
+  "EMBER": {
+    "source_sha256": "96cc91a7b720e354486b4b5298524c37053893c225a77ec45858adab10087b92",
+    "text": "Golpe que pode\nqueimar o alvo."
+  },
+  "FLAMETHROWER": {
+    "source_sha256": "96cc91a7b720e354486b4b5298524c37053893c225a77ec45858adab10087b92",
+    "text": "Golpe que pode\nqueimar o alvo."
+  },
+  "SACRED_FIRE": {
+    "source_sha256": "96cc91a7b720e354486b4b5298524c37053893c225a77ec45858adab10087b92",
+    "text": "Golpe que pode\nqueimar o alvo."
+  },
+  "MIST": {
+    "source_sha256": "f5336b4b2563fe246d3bff9e23c79833f510ce957ee76ceb4fecc44050367c86",
+    "text": "Impede a redução\ndos atributos."
+  },
+  "WATER_GUN": {
+    "source_sha256": "b945dfbbd895bd4829bf28a53881f5d57e8193722d5ff1562d698a37a2b850b4",
+    "text": "Ataca com\njatos de água."
+  },
+  "HYDRO_PUMP": {
+    "source_sha256": "558a0578351538229205e3096e15342e279338caba8d9492cfdefc0b3b4de08f",
+    "text": "Um poderoso\ngolpe de ÁGUA."
+  },
+  "SURF": {
+    "source_sha256": "0ce144b19f47630cc985f103b9b0f31290082bb927373945c5e92eddbde29b7d",
+    "text": "Um forte\ngolpe de ÁGUA."
+  },
+  "ICE_BEAM": {
+    "source_sha256": "d1187e020930329784beb7db6c33a0a063c973d4d01132ed7768266ec3a8e330",
+    "text": "Golpe que pode\ncongelar o alvo."
+  },
+  "BLIZZARD": {
+    "source_sha256": "d1187e020930329784beb7db6c33a0a063c973d4d01132ed7768266ec3a8e330",
+    "text": "Golpe que pode\ncongelar o alvo."
+  },
+  "PSYBEAM": {
+    "source_sha256": "fd8db8eaa1c442010cdd16e241c76fa07b94229742fef6858bd1161c3dfd3ebf",
+    "text": "Golpe que pode\nconfundir o alvo."
+  },
+  "BUBBLEBEAM": {
+    "source_sha256": "61cf774cbf5222d0a91eb89f6e1083185e3fb7f849d0360371ff1bb8c3855b2b",
+    "text": "Golpe que pode\nbaixar VELOCIDADE."
+  },
+  "CONSTRICT": {
+    "source_sha256": "61cf774cbf5222d0a91eb89f6e1083185e3fb7f849d0360371ff1bb8c3855b2b",
+    "text": "Golpe que pode\nbaixar VELOCIDADE."
+  },
+  "AURORA_BEAM": {
+    "source_sha256": "5869f96a2ada6f904f44a70d10898362de012c9b37b9e30fc1935280807857d3",
+    "text": "Golpe que pode\nbaixar o ATAQUE."
+  },
+  "HYPER_BEAM": {
+    "source_sha256": "3ff1bc318a6abaef9e07b7e69f715f805cbc4e144c81658150c14ddeebfaf68a",
+    "text": "1º turno: ataca.\n2º turno: repousa."
+  },
+  "PECK": {
+    "source_sha256": "876694ef7d9e58ec1509c433fce1fc3a0aa7add7b976640fa0f7abaae83d7581",
+    "text": "Bica o alvo\ncom o bico etc."
+  },
+  "DRILL_PECK": {
+    "source_sha256": "5be2007742d9d10c31b8ef526902873d0c143251eaa1304a146ab24bafdc72f8",
+    "text": "Bicada forte\ncom um giro."
+  },
+  "SUBMISSION": {
+    "source_sha256": "5b857dfad20815f67c1b18e3a57a066924cdb56cc246667c5f06c69a4752788d",
+    "text": "Golpe que também\nfere o usuário."
+  },
+  "COUNTER": {
+    "source_sha256": "6ba7e93a5997b5ef97736aeb0da5eaa4afd84881453f40939748950e5566c749",
+    "text": "Devolve em dobro\num golpe físico."
+  },
+  "SEISMIC_TOSS": {
+    "source_sha256": "922d5ee671283bbbd4d33fe2b5948f922f5edeefe262bddffdb21fc45cc16316",
+    "text": "Dano em PS igual\nao seu nível."
+  },
+  "NIGHT_SHADE": {
+    "source_sha256": "922d5ee671283bbbd4d33fe2b5948f922f5edeefe262bddffdb21fc45cc16316",
+    "text": "Dano em PS igual\nao seu nível."
+  },
+  "STRENGTH": {
+    "source_sha256": "ef817086dd46352cbca7111927dcdb7a3702c5ebd29fea112ad89abe1b32c565",
+    "text": "Um poderoso\nataque físico."
+  },
+  "ABSORB": {
+    "source_sha256": "ece4484d0b82828b875342ff963be9203dff3aebc92495888290bdb661ee490e",
+    "text": "Absorve metade\ndo dano causado."
+  },
+  "MEGA_DRAIN": {
+    "source_sha256": "ece4484d0b82828b875342ff963be9203dff3aebc92495888290bdb661ee490e",
+    "text": "Absorve metade\ndo dano causado."
+  },
+  "LEECH_LIFE": {
+    "source_sha256": "ece4484d0b82828b875342ff963be9203dff3aebc92495888290bdb661ee490e",
+    "text": "Absorve metade\ndo dano causado."
+  },
+  "GIGA_DRAIN": {
+    "source_sha256": "ece4484d0b82828b875342ff963be9203dff3aebc92495888290bdb661ee490e",
+    "text": "Absorve metade\ndo dano causado."
+  },
+  "LEECH_SEED": {
+    "source_sha256": "3be36a6c0db79125861643681d5c7bc80eb86a0f3b61460b2d5c138508e92a19",
+    "text": "Rouba PS do alvo\na cada turno."
+  },
+  "GROWTH": {
+    "source_sha256": "2c3748320e0ff7e1e430d01299c460513973608bc913f9ac1539bdb807608fe9",
+    "text": "Aumenta o\nATQ. ESPECIAL."
+  },
+  "POISONPOWDER": {
+    "source_sha256": "3c415e01fb6edf68cb00d145a9e444df0a9eb12e96bab6ed5285193953045f35",
+    "text": "Pode envenenar\no alvo."
+  },
+  "POISON_GAS": {
+    "source_sha256": "3c415e01fb6edf68cb00d145a9e444df0a9eb12e96bab6ed5285193953045f35",
+    "text": "Pode envenenar\no alvo."
+  },
+  "STUN_SPORE": {
+    "source_sha256": "673a4db63db04f364aa0db17202dba3772c12d9b16a25d589e8b75209dcd1aad",
+    "text": "Pode paralisar\no alvo."
+  },
+  "STRING_SHOT": {
+    "source_sha256": "3653535f7b974b6de49f72d831a1037b5defc6c2e85b1c2218c79138b008e1dd",
+    "text": "Reduz a\nVELOCIDADE rival."
+  },
+  "DRAGON_RAGE": {
+    "source_sha256": "a4441ec3b1912cde3b893616ffca56270acbb8271b18cd868190ad8662d727da",
+    "text": "Sempre causa\n40 PS de dano."
+  },
+  "FIRE_SPIN": {
+    "source_sha256": "f82f42e7e2ec5a378ff42a0ca87111e40f36d4dc4fa557595abaa8de42f05521",
+    "text": "Prende com fogo\npor 2 a 5 turnos."
+  },
+  "THUNDER_WAVE": {
+    "source_sha256": "692d016c96c8e4f36fca5a9a530cf5946b9053cea9c54a65b6e644f60627a204",
+    "text": "Pode causar\nparalisia."
+  },
+  "GLARE": {
+    "source_sha256": "692d016c96c8e4f36fca5a9a530cf5946b9053cea9c54a65b6e644f60627a204",
+    "text": "Pode causar\nparalisia."
+  },
+  "ROCK_THROW": {
+    "source_sha256": "09e5d50bb4da9212f290d14e15515388963fce0bf582eb515aaef9f58f6bce5b",
+    "text": "Derruba pedras\nsobre o alvo."
+  },
+  "EARTHQUAKE": {
+    "source_sha256": "4ad000170df6141aa7e7174dd11f1add1bc80c8e30ede0376b2901e440d23c67",
+    "text": "Forte, mas inútil\ncontra voadores."
+  },
+  "FISSURE": {
+    "source_sha256": "2f8b45b4ccade05307fe16b33aa400b658fb9532bf33413936e7184ac806aac2",
+    "text": "Golpe de TERRA.\nNocaute imediato."
+  },
+  "DIG": {
+    "source_sha256": "d2353f579bbc72cfe57a98ec19ab39561902e13e402f3cbfb71e18bd84d9e0e8",
+    "text": "1º turno: cava.\n2º turno: ataca."
+  },
+  "TOXIC": {
+    "source_sha256": "e0b614bf3d53a54cac9787dfed801fbbfdce08a0cb99283cd43c72cb8b8e5a37",
+    "text": "Envenena e causa\ndano crescente."
+  },
+  "CONFUSION": {
+    "source_sha256": "1b7ce6b4945e5ca1f8dd06a9479e67a0cde80f76d533dd45a17a60aa9af9cb8b",
+    "text": "Golpe que pode\ncausar confusão."
+  },
+  "DIZZY_PUNCH": {
+    "source_sha256": "1b7ce6b4945e5ca1f8dd06a9479e67a0cde80f76d533dd45a17a60aa9af9cb8b",
+    "text": "Golpe que pode\ncausar confusão."
+  },
+  "PSYCHIC_M": {
+    "source_sha256": "40f52c4ffd15633fa7da64fc90b65d88b65a2d034b2b2dc13bec4509b923c52a",
+    "text": "Pode reduzir a\nDEF. ESPECIAL."
+  },
+  "CRUNCH": {
+    "source_sha256": "40f52c4ffd15633fa7da64fc90b65d88b65a2d034b2b2dc13bec4509b923c52a",
+    "text": "Pode reduzir a\nDEF. ESPECIAL."
+  },
+  "SHADOW_BALL": {
+    "source_sha256": "40f52c4ffd15633fa7da64fc90b65d88b65a2d034b2b2dc13bec4509b923c52a",
+    "text": "Pode reduzir a\nDEF. ESPECIAL."
+  },
+  "HYPNOSIS": {
+    "source_sha256": "8a4183f2995d65a5ccc35823ebe94e7191e7b0bceb2ef3e008a8e3c1fb722f06",
+    "text": "Pode fazer\no alvo adormecer."
+  },
+  "MEDITATE": {
+    "source_sha256": "394591a54de85635637ca38ecb828f9b7041deb7f74a6bd4bcaa931295ab666d",
+    "text": "Aumenta o ATAQUE\ndo usuário."
+  },
+  "AGILITY": {
+    "source_sha256": "ef7cc78094abe392b4494c9602df25c011efb5f0a8899e532ddcd76b174de109",
+    "text": "Aumenta muito\na VELOCIDADE."
+  },
+  "QUICK_ATTACK": {
+    "source_sha256": "b3c3295a47220ab6f270c961fe00950a47c22db80980a0516f9aef693ac080f7",
+    "text": "Permite atacar\nprimeiro."
+  },
+  "RAGE": {
+    "source_sha256": "bc38c4e46ed9af48302b9c4773d3c83d3b57909e7d8b599547f7b9f0b6b91089",
+    "text": "Aumenta o ATAQUE\nao sofrer golpes."
+  },
+  "TELEPORT": {
+    "source_sha256": "83206ff7c615144400f6171bdd23cbba1b92fa30a29ebbfa9b9bd84310eb6b90",
+    "text": "Permite fugir\nda batalha."
+  },
+  "MIMIC": {
+    "source_sha256": "dbc60f802ff9fb8c2d5a78c84ddd393bc366ba263c798eea149fd70d8ca3c61e",
+    "text": "Copia um golpe\nusado pelo alvo."
+  },
+  "SCREECH": {
+    "source_sha256": "648f4516d9cf8537fd4e02ee4ded27a1361b2dd3cceff9c15b2f90cfdf891d39",
+    "text": "Reduz muito a\nDEFESA rival."
+  },
+  "DOUBLE_TEAM": {
+    "source_sha256": "1033803eb5dd738b1f747600d5809b11757d9761bca8e43f65d0b851e6b4e9f5",
+    "text": "Aumenta a evasão\ndo usuário."
+  },
+  "MINIMIZE": {
+    "source_sha256": "1033803eb5dd738b1f747600d5809b11757d9761bca8e43f65d0b851e6b4e9f5",
+    "text": "Aumenta a evasão\ndo usuário."
+  },
+  "RECOVER": {
+    "source_sha256": "0307042055c5a30724254ab6568655eb64dc83724fee12cd38b7d2421890d926",
+    "text": "Recupera metade\ndos PS máximos."
+  },
+  "MILK_DRINK": {
+    "source_sha256": "0307042055c5a30724254ab6568655eb64dc83724fee12cd38b7d2421890d926",
+    "text": "Recupera metade\ndos PS máximos."
+  },
+  "HARDEN": {
+    "source_sha256": "dbae760f70f498fb3c86b9b3b234b050cfb905debabdb939b3d127f297aff1f5",
+    "text": "Aumenta a DEFESA\ndo usuário."
+  },
+  "SMOKESCREEN": {
+    "source_sha256": "7afef148a91613e564d3b3a95bbb7d3bac5be80cba9bcfc661c54f0a2535a2bc",
+    "text": "Baixa a precisão\ndo alvo."
+  },
+  "CONFUSE_RAY": {
+    "source_sha256": "a387cf1cfd4b0237b8a1c1ca74170c7942ca0a387f8ab48ee014b64edac0248c",
+    "text": "Causa confusão\nno alvo."
+  },
+  "SWEET_KISS": {
+    "source_sha256": "a387cf1cfd4b0237b8a1c1ca74170c7942ca0a387f8ab48ee014b64edac0248c",
+    "text": "Causa confusão\nno alvo."
+  },
+  "WITHDRAW": {
+    "source_sha256": "177a99f6bf8701f63fd22196275ea95f889e94a874f12b8c9959610431fe2dd4",
+    "text": "Eleva a DEFESA\ndo usuário."
+  },
+  "DEFENSE_CURL": {
+    "source_sha256": "177a99f6bf8701f63fd22196275ea95f889e94a874f12b8c9959610431fe2dd4",
+    "text": "Eleva a DEFESA\ndo usuário."
+  },
+  "BARRIER": {
+    "source_sha256": "95bb35ffe056c860a2b84ca10507682d52d03bcf4246a0aa3cff96b8600fe55b",
+    "text": "Aumenta muito a\nDEFESA do usuário."
+  },
+  "LIGHT_SCREEN": {
+    "source_sha256": "fc713fa1019adf556d719d1a5e9f5ba9a7f53d37173ad523f8d78335c780a275",
+    "text": "Luz aumenta a\nDEF. ESPECIAL."
+  },
+  "HAZE": {
+    "source_sha256": "f275ca52b921055611b9b23ba4c8c548ddd720a17f9d7273107c9ebd76005a19",
+    "text": "Anula alterações\nnos atributos."
+  },
+  "REFLECT": {
+    "source_sha256": "25277f2c3decb5a954dc4395e468ff3227bf957808a578a83667b72f8e1aaf66",
+    "text": "Barreira aumenta\na DEFESA."
+  },
+  "FOCUS_ENERGY": {
+    "source_sha256": "49472f5aa3f677b7e47a204de947c4b34e58362382be903557417a94ee47fe80",
+    "text": "Aumenta a chance\nde golpe crítico."
+  },
+  "BIDE": {
+    "source_sha256": "264a7bcace0039c86802320154f97c3469d946cd0348aba35434fb5884c4a384",
+    "text": "Espera 2-3 turnos.\nDevolve em dobro."
+  },
+  "METRONOME": {
+    "source_sha256": "e53b18f22d10532a9d8f2aa36b897555ee380694bb59b8dc5cc4e8112231927e",
+    "text": "Usa um golpe\nqualquer ao acaso."
+  },
+  "MIRROR_MOVE": {
+    "source_sha256": "f24d272ce3a62e8cf2b0db68c653a6b8c9dc0cdb752caf70ba3cedfbbe6841e3",
+    "text": "Revida com\no mesmo golpe."
+  },
+  "SELFDESTRUCT": {
+    "source_sha256": "7406a8169d2a7a81a093f3cd321b54600d994cfa5f49fcee19c28833a7d9d481",
+    "text": "Forte, mas faz\nvocê desmaiar."
+  },
+  "EGG_BOMB": {
+    "source_sha256": "d04f54502b70b4af3205936bab3821bafac8e61e580b6ee1be9df26bcce447b1",
+    "text": "Arremessa ovos\ncontra o alvo."
+  },
+  "SMOG": {
+    "source_sha256": "106aff8ea657c426729c5d0dc59f284115ff385df9cc9dd61c7f3ae4933f9046",
+    "text": "Golpe que pode\nenvenenar."
+  },
+  "SLUDGE": {
+    "source_sha256": "106aff8ea657c426729c5d0dc59f284115ff385df9cc9dd61c7f3ae4933f9046",
+    "text": "Golpe que pode\nenvenenar."
+  },
+  "SLUDGE_BOMB": {
+    "source_sha256": "106aff8ea657c426729c5d0dc59f284115ff385df9cc9dd61c7f3ae4933f9046",
+    "text": "Golpe que pode\nenvenenar."
+  },
+  "FIRE_BLAST": {
+    "source_sha256": "ab281f41937e93f9582b11854b10eafc7ea5e0b889fc60664cd87e8d825d2613",
+    "text": "Ataque que pode\ncausar queimadura."
+  },
+  "WATERFALL": {
+    "source_sha256": "23b87a52db3dbfdc135399c97b549eae61eb4498d3e5216435c101ca13373253",
+    "text": "Uma investida\naquática."
+  },
+  "CLAMP": {
+    "source_sha256": "4fb11a375816da0c455769752f64a6f6738eeabcc42db9391da4d642bd2def6b",
+    "text": "Aprisiona o alvo\npor 2 a 5 turnos."
+  },
+  "WHIRLPOOL": {
+    "source_sha256": "4fb11a375816da0c455769752f64a6f6738eeabcc42db9391da4d642bd2def6b",
+    "text": "Aprisiona o alvo\npor 2 a 5 turnos."
+  },
+  "SWIFT": {
+    "source_sha256": "d51061243aff2b91d2b1a547988f96980941b7ac80934bcf48b99a51bc189cc5",
+    "text": "Um ataque que\nnunca erra."
+  },
+  "FAINT_ATTACK": {
+    "source_sha256": "d51061243aff2b91d2b1a547988f96980941b7ac80934bcf48b99a51bc189cc5",
+    "text": "Um ataque que\nnunca erra."
+  },
+  "SPIKE_CANNON": {
+    "source_sha256": "a4df2f54a5bf176dbcd85f455cb7dd5c51c35994fac310d6e71be80a2ec21273",
+    "text": "Dispara espinhos\nde 2 a 5 vezes."
+  },
+  "AMNESIA": {
+    "source_sha256": "8e05b4cb571ffa11584e39b5869c118815b7210d9e3a23e69052e6753f29c893",
+    "text": "Aumenta muito a\nDEF. ESPECIAL."
+  },
+  "KINESIS": {
+    "source_sha256": "9f88d9ae62b019be81dd1a97c4179a6e8aeddcdd3b6bbe02ae4c7ec4269ba044",
+    "text": "Reduz a precisão\ndo alvo."
+  },
+  "MUD_SLAP": {
+    "source_sha256": "9f88d9ae62b019be81dd1a97c4179a6e8aeddcdd3b6bbe02ae4c7ec4269ba044",
+    "text": "Reduz a precisão\ndo alvo."
+  },
+  "SOFTBOILED": {
+    "source_sha256": "1247cbd6bee43711a50bfd9326c8464e1c386585c1603389c76a4c4555ffcb3d",
+    "text": "Restaura metade\ndos PS máximos."
+  },
+  "HI_JUMP_KICK": {
+    "source_sha256": "2bfbe969380ad4a5e5e03ad08c2ec6d71333d39712c24d87f5815022fbb4ec20",
+    "text": "Pode errar e\nferir o usuário."
+  },
+  "DREAM_EATER": {
+    "source_sha256": "50ebc0d65505802eeca4bc42c843ad5702617371912635085aa328cec66a001d",
+    "text": "Rouba PS de\num alvo dormindo."
+  },
+  "BARRAGE": {
+    "source_sha256": "0b9df2514a72f4e08bf059328b7012f219479eeffff1807c299ffa43eaeefb64",
+    "text": "Joga esferas\nde 2 a 5 vezes."
+  },
+  "TRANSFORM": {
+    "source_sha256": "0ab9c41c7d68f1b62c47d4d7bd9e80ece4a54e923dcebbeb0677b922217d0cf8",
+    "text": "Assume a forma\ndo alvo."
+  },
+  "BUBBLE": {
+    "source_sha256": "9107de530173b786ad9b54e1451e0cdcb8847e0b0e705ce9fd37a0170fecc6d8",
+    "text": "Pode diminuir\na VELOCIDADE."
+  },
+  "SPORE": {
+    "source_sha256": "e53d513794c765bf89d36b4af0badb924d82df50572ee6f8451799eb43106615",
+    "text": "Um golpe que\ninduz o sono."
+  },
+  "FLASH": {
+    "source_sha256": "330d1c38daa0297be3e2894e500187c67cc5d9e5519344ebfa74a03bef5e9420",
+    "text": "Ofusca o alvo e\nreduz a precisão."
+  },
+  "PSYWAVE": {
+    "source_sha256": "a402409ac5acdf187e79b29198dd06e52eba00c5223d7ad052f781c90d77fbee",
+    "text": "Ataque com\npoder variável."
+  },
+  "SPLASH": {
+    "source_sha256": "d063b02c3d4c8fa8f1a00f95f8c2b3ed289549e8c1fcf54d3c34d0bd116e6e52",
+    "text": "Não produz\nefeito algum."
+  },
+  "ACID_ARMOR": {
+    "source_sha256": "d879ef16ca046e7bf0ac0f81cb0ccf81f429bdcc9d825a24fe308b5d4569afbd",
+    "text": "Eleva muito a\nDEFESA do usuário."
+  },
+  "EXPLOSION": {
+    "source_sha256": "6963c5983a0446f9cca0664e9632146ca222db754a7f964d36cbfd9dd9608bff",
+    "text": "Muito forte, mas\nfaz você desmaiar."
+  },
+  "FURY_SWIPES": {
+    "source_sha256": "10eb071028a1e00850888c7f09a18970e2e10cec0a4fd6a86f553e38228a8e27",
+    "text": "Arranha rápido\nde 2 a 5 vezes."
+  },
+  "BONEMERANG": {
+    "source_sha256": "2d66f00d12d29d675cd075d1f027e7ca037cdd1d83a5b04da670326102d3d705",
+    "text": "Um golpe que\nacerta duas vezes."
+  },
+  "REST": {
+    "source_sha256": "b697831c812171c4520edcae98da6d83695183a43cc493ab65ed7cbf7c65426c",
+    "text": "Dorme 2 turnos\npara se curar."
+  },
+  "SHARPEN": {
+    "source_sha256": "aef2e8d02e2d209ade94df1b305f4da2069842dd19f65bee90181a2cb07eb643",
+    "text": "Golpe que eleva\nseu ATAQUE."
+  },
+  "CONVERSION": {
+    "source_sha256": "901071030f6c9268cd402e4948bf1764f6eae5d24978c46b1ddc4ef1df686e48",
+    "text": "Muda para o tipo\nde um dos golpes."
+  },
+  "TRI_ATTACK": {
+    "source_sha256": "3c84c256357ddfd70daf706c917c2ec10605fadbda35574d7ebf5af3a318d489",
+    "text": "Dispara três\ntipos de raios."
+  },
+  "SUPER_FANG": {
+    "source_sha256": "2a22ac89dda7077a790b1f5c72528477828990a8d85095baa93e05fd41cc868b",
+    "text": "Reduz à metade\nos PS do alvo."
+  },
+  "SUBSTITUTE": {
+    "source_sha256": "5aba9ccd2fc08e5272890a8a0d3eab66996f4b94e883dde66cc88de592a08691",
+    "text": "Cria isca com\n1/4 dos seus PS."
+  },
+  "STRUGGLE": {
+    "source_sha256": "fbccf1b4da65a23f96f9017d70f023003144ed07211d52e63676d87f1d8b27a6",
+    "text": "Usado apenas\nquando acaba o PP."
+  },
+  "SKETCH": {
+    "source_sha256": "1d25765922faac305fed877c629f41b37ab0dedb0635fae226b1803e1346c210",
+    "text": "Copia um golpe\npara sempre."
+  },
+  "TRIPLE_KICK": {
+    "source_sha256": "1057f3b90cd8ba49b901e2d98001bdfa6b79bf933d51f1c7e2d1953905985fe0",
+    "text": "Três acertos com\nforça crescente."
+  },
+  "THIEF": {
+    "source_sha256": "50ebb4157f0a9202ebeb134b509a6014e9ce0010a80a615ec6c44ecc5a6ad9a0",
+    "text": "Pode roubar um\nitem segurado."
+  },
+  "SPIDER_WEB": {
+    "source_sha256": "ec25e12af37a5a375ea205aee9dc70aa3fa2eec82d3c3c8d21f59170fdc16101",
+    "text": "Impede a fuga\nou a troca."
+  },
+  "MEAN_LOOK": {
+    "source_sha256": "ec25e12af37a5a375ea205aee9dc70aa3fa2eec82d3c3c8d21f59170fdc16101",
+    "text": "Impede a fuga\nou a troca."
+  },
+  "MIND_READER": {
+    "source_sha256": "5c166cfe4ad0980804fb9c7464f148bb5a4b4cc6521c330d427a48baac566561",
+    "text": "Garante o acerto\ndo próximo golpe."
+  },
+  "LOCK_ON": {
+    "source_sha256": "5c166cfe4ad0980804fb9c7464f148bb5a4b4cc6521c330d427a48baac566561",
+    "text": "Garante o acerto\ndo próximo golpe."
+  },
+  "NIGHTMARE": {
+    "source_sha256": "01ffbc0da12d55d696678f1eb086d21a35367f2003de1bcd7194b8202214436b",
+    "text": "Dormindo, perde\n1/4 PS por turno."
+  },
+  "FLAME_WHEEL": {
+    "source_sha256": "70b6d66719db26e38c69639eccd703d899de985f2b55883507d1d501aca8ccc8",
+    "text": "Golpe que pode\ncausar queimadura."
+  },
+  "SNORE": {
+    "source_sha256": "02423926bd764d7e93fab8bcde4f6a1dc1a2cbe49fb77baae900e856a695991a",
+    "text": "Só pode ser usado\nenquanto dorme."
+  },
+  "CURSE": {
+    "source_sha256": "26947bbf1db682a53c478fca750c1db1e17674111096cfbb6bcc87a9f8dc2f02",
+    "text": "Age diferente no\ntipo FANTASMA."
+  },
+  "FLAIL": {
+    "source_sha256": "4bb90a0c802d36d2b0dfa9c8a7a9bdc7bf40b8ac2d41cf53e5b28e40b4d0c846",
+    "text": "Mais forte com\npoucos PS."
+  },
+  "REVERSAL": {
+    "source_sha256": "4bb90a0c802d36d2b0dfa9c8a7a9bdc7bf40b8ac2d41cf53e5b28e40b4d0c846",
+    "text": "Mais forte com\npoucos PS."
+  },
+  "CONVERSION2": {
+    "source_sha256": "c40613c98f6d0e10b26b460fc22f24932c0eecd6727795bd9e0543c2e4644eb5",
+    "text": "Muda o tipo para\nficar resistente."
+  },
+  "COTTON_SPORE": {
+    "source_sha256": "a5598d46ab244aa51190e930fc7c103aa49eaf149ea7e5fa8d45aea38c87b3a0",
+    "text": "Reduz muito a\nVELOCIDADE rival."
+  },
+  "SCARY_FACE": {
+    "source_sha256": "a5598d46ab244aa51190e930fc7c103aa49eaf149ea7e5fa8d45aea38c87b3a0",
+    "text": "Reduz muito a\nVELOCIDADE rival."
+  },
+  "SPITE": {
+    "source_sha256": "b4e880aaf65bfb360e60ef88a8f7e635c6f8ce1c2d8d85bebfe58a21e4c29897",
+    "text": "Reduz PP do último\ngolpe do alvo."
+  },
+  "POWDER_SNOW": {
+    "source_sha256": "7591a31fdc4b900ddfefbc0e61866527b30ef4e9dcea6156dc0f49f72e00c44a",
+    "text": "Ataque que pode\ncongelar."
+  },
+  "PROTECT": {
+    "source_sha256": "45b1176bcb6e4a1960a1b01271019fcc7450207fd087bb3c5739cdff71b86802",
+    "text": "Bloqueia um turno.\nPode falhar."
+  },
+  "MACH_PUNCH": {
+    "source_sha256": "4dcbd9b5f55ee8ebe94fa9176be432ef351e1433e86baf885a050ee7deed36f0",
+    "text": "Soco rápido que\nacerta primeiro."
+  },
+  "BELLY_DRUM": {
+    "source_sha256": "f42507f9a7434efaa16a0067e17a98efe109d11694743748248e87fc2d008f1b",
+    "text": "Gasta PS para\nmaximizar ATAQUE."
+  },
+  "OCTAZOOKA": {
+    "source_sha256": "be697401f6abe5984d19314f9844005e688eb10cccbfa8669ce3db8889d7a316",
+    "text": "Pode reduzir\na precisão."
+  },
+  "SPIKES": {
+    "source_sha256": "a6341f438a957f6b1a308de96c022c54bc53164f38c579613beb8a03e79983d2",
+    "text": "Fere o inimigo\nque entra na luta."
+  },
+  "ZAP_CANNON": {
+    "source_sha256": "6b73240d921c602b20a566a3f381cdc6f68bd7d836a05522ba7152075c71ea1e",
+    "text": "Golpe que sempre\ncausa paralisia."
+  },
+  "FORESIGHT": {
+    "source_sha256": "de794dfdd95202cdddfd79a831e93f4ee5a07cc4be81201caf07b663152d45a5",
+    "text": "Anula reduções\nde precisão."
+  },
+  "DESTINY_BOND": {
+    "source_sha256": "5d5e16fe6b46d302cde68c300d73b9306a22e5f4b47868667417012a5ed35300",
+    "text": "O alvo desmaia\nse você desmaiar."
+  },
+  "PERISH_SONG": {
+    "source_sha256": "bc2450d9e4f066d8c1cc6d88c6846538ba22d60f89aa880c14400ac925662696",
+    "text": "Ambos desmaiam\napós 3 turnos."
+  },
+  "ICY_WIND": {
+    "source_sha256": "d744ea156fb1cd91e2b9e797ae54c151ba3e1d190644f2e78421530d8a15a317",
+    "text": "Golpe gelado que\nreduz VELOCIDADE."
+  },
+  "DETECT": {
+    "source_sha256": "125311bb77b2145334d225fa45b992f1de16b9fa2146ac1171f17f36ca486b9f",
+    "text": "Evita neste turno.\nPode falhar."
+  },
+  "BONE_RUSH": {
+    "source_sha256": "34368e8a2f500ab7f89d08923b311a0fab166a55b3df00aa5e39210a23fd8020",
+    "text": "Um ataque que\nacerta 2-5 vezes."
+  },
+  "SANDSTORM": {
+    "source_sha256": "d0d913c8d6110bd4875c9f073cfac68720909fb7c4cee8de7355fc169b279833",
+    "text": "Causa dano\na cada turno."
+  },
+  "ENDURE": {
+    "source_sha256": "141f0af0fd8f4632680fadeda3cce15dcb97de6fd3caa026e714c8b24de8256f",
+    "text": "Sempre preserva\nao menos 1 PS."
+  },
+  "CHARM": {
+    "source_sha256": "e5d5824686bbbb43020ec205384ebfaccc357341bb5f4e1215fbdf0450f705e4",
+    "text": "Reduz muito o\nATAQUE rival."
+  },
+  "ROLLOUT": {
+    "source_sha256": "fa4a442337e0f9e4a6e35a4ad156a1d69b3082194a3fb11b049956d955eb5ac7",
+    "text": "Ataca por 5 turnos\ncom força maior."
+  },
+  "FALSE_SWIPE": {
+    "source_sha256": "8437f9584f6c70699e51c2b0fa4f480cfeaf3110514d81cad8091bcef8deb2b5",
+    "text": "Deixa o alvo com\nao menos 1 PS."
+  },
+  "SWAGGER": {
+    "source_sha256": "05bbc74440ffbffd7440f0100c5eeeba8c9da164e6b9fb4eee9f32ad916dd9aa",
+    "text": "Confunde o alvo e\neleva seu ATAQUE."
+  },
+  "FURY_CUTTER": {
+    "source_sha256": "2f2edff14a3805146cdcaaf313bcdfcd8c533612961b143cfeb55fd5d168e708",
+    "text": "Acertos seguidos\nelevam o poder."
+  },
+  "STEEL_WING": {
+    "source_sha256": "55a76039222c5e61b235bad5f218df1a1c41125644ccf4090d9a5216cea030d7",
+    "text": "Asas rígidas\natingem o alvo."
+  },
+  "ATTRACT": {
+    "source_sha256": "04040bf093cd2e1bceffce1e3ebde89031ed8ce60495d95079771cb8b5588bb4",
+    "text": "Apaixona o sexo\noposto."
+  },
+  "SLEEP_TALK": {
+    "source_sha256": "a895b3fe26309ac30c98168d4c1aff82ea5fe19e2093026b2e63d526a54bd173",
+    "text": "Usa golpe ao acaso\nenquanto dorme."
+  },
+  "HEAL_BELL": {
+    "source_sha256": "6d2656d70542764b9a5de1e313bcb72adf757c4fac9ffbf3e2f785160659d945",
+    "text": "Cura problemas\nde estado."
+  },
+  "RETURN": {
+    "source_sha256": "faac8f0911dafa1f6e2358bc7086375ca272b4c4b2cdce0f74ebd8b30cb4f436",
+    "text": "Mais amizade,\nmais força."
+  },
+  "PRESENT": {
+    "source_sha256": "1adeeea80d274704878edb780f8044f6eb26ff507d1262a1b799d18bc65d3497",
+    "text": "Uma bomba que\npode restaurar PS."
+  },
+  "FRUSTRATION": {
+    "source_sha256": "c9390610860af7eb2080fb4dc0969c52a6818c84965f2c675bfcd2fa3b905734",
+    "text": "Menos amizade,\nmais força."
+  },
+  "SAFEGUARD": {
+    "source_sha256": "f60d71ef94d981df26282d94afe68efe18154c934a0161dd67c883bda535cb04",
+    "text": "Evita problemas\nde estado."
+  },
+  "PAIN_SPLIT": {
+    "source_sha256": "f4a0e0cc472c24cbd3c907e3e31a52adbfc8372ce4c3f1d102a038d13c00a6d6",
+    "text": "Soma PS de ambos\ne divide por dois."
+  },
+  "MAGNITUDE": {
+    "source_sha256": "bbccd83547a4e0ce9f7d904d13edeb38359915c82555fb1a67c437554ce717b4",
+    "text": "Golpe de TERRA com\npoder aleatório."
+  },
+  "DYNAMICPUNCH": {
+    "source_sha256": "3768729a4e6a69ac20a55c72bc5246bba3957526448816df6fa7d9abede9bf5d",
+    "text": "Golpe que sempre\ncausa confusão."
+  },
+  "MEGAHORN": {
+    "source_sha256": "92f489d1f8296720a5fdb2c762c7a055e93dde87006263b2df99f05eaa582501",
+    "text": "Uma poderosa\ninvestida."
+  },
+  "DRAGONBREATH": {
+    "source_sha256": "371570f9785c798401bbe2c8d644701c374286abf31ec46fd97ee5324ec6b152",
+    "text": "Um forte ataque\ncom um sopro."
+  },
+  "BATON_PASS": {
+    "source_sha256": "d6c8e97b1bcad59162bcdc87e194a8a46a1f1ae553fb7a2d9545844ff700f9a8",
+    "text": "Troca de POKéMON\nmantendo efeitos."
+  },
+  "ENCORE": {
+    "source_sha256": "164f4e7f08568b5f55470e8c28f39f687ce0e2e9801ded1f357be2391b463959",
+    "text": "Faz repetir o\ngolpe 2 a 6 vezes."
+  },
+  "PURSUIT": {
+    "source_sha256": "535923cc3e4702203e85edbbceb29496a2c524318ef7753d205a4bc4f9614e67",
+    "text": "Golpe forte contra\nquem vai trocar."
+  },
+  "RAPID_SPIN": {
+    "source_sha256": "931d2a775619df6d093e33daaafffe4267b98a9f92a13637f17202c702ca00ca",
+    "text": "Ataque com giro\nmuito veloz."
+  },
+  "SWEET_SCENT": {
+    "source_sha256": "0fe8968a333f4ba082323288efb1d0fb08c2bc523e67c414d366ebcd0b048d2d",
+    "text": "Reduz a evasão\ndo alvo."
+  },
+  "IRON_TAIL": {
+    "source_sha256": "86d309c7ad6951530f8a425762302e460426373743b0d9ddb239af6a6d53f903",
+    "text": "Pode diminuir\na DEFESA rival."
+  },
+  "METAL_CLAW": {
+    "source_sha256": "26bd0fcd5dc0b9331fe321e30de87997c6699eab6a8fc9029b694f5a73583ba2",
+    "text": "Pode aumentar\nseu ATAQUE."
+  },
+  "VITAL_THROW": {
+    "source_sha256": "d302105788e64f0bc2d5fe1b43925357f0d99b98f5119210c90b86bc41ff21e2",
+    "text": "Ataca por último,\nmas nunca erra."
+  },
+  "MORNING_SUN": {
+    "source_sha256": "d5bf7b50d7e6fec6aa21fbc590fbb960004d9990abceec7789a4b26da97f762c",
+    "text": "Restaura PS.\nVaria com a hora."
+  },
+  "SYNTHESIS": {
+    "source_sha256": "d5bf7b50d7e6fec6aa21fbc590fbb960004d9990abceec7789a4b26da97f762c",
+    "text": "Restaura PS.\nVaria com a hora."
+  },
+  "MOONLIGHT": {
+    "source_sha256": "d5bf7b50d7e6fec6aa21fbc590fbb960004d9990abceec7789a4b26da97f762c",
+    "text": "Restaura PS.\nVaria com a hora."
+  },
+  "HIDDEN_POWER": {
+    "source_sha256": "e9cc55b6d848bdcdd7f81d15441a534b5f14045262bf0cd06cf4b631078d90a7",
+    "text": "O poder varia\ncom o POKéMON."
+  },
+  "TWISTER": {
+    "source_sha256": "e44f7db716786d84c56b9a8695616c925ace57a746d1bb51b1e6160839c7beb5",
+    "text": "Ataca criando\num tornado."
+  },
+  "RAIN_DANCE": {
+    "source_sha256": "860d7d7c122020c974cce4a3fd8537e67ec19b65945790ef87c6da8781488d1d",
+    "text": "Reforça ÁGUA\npor 5 turnos."
+  },
+  "SUNNY_DAY": {
+    "source_sha256": "8d7ac743dd0be2bf99dd0562ff28ca99a3a2cac229a854531458b97828668043",
+    "text": "Reforça FOGO\npor 5 turnos."
+  },
+  "MIRROR_COAT": {
+    "source_sha256": "f6334006f968a017515bbf7654f693dbea32b010c30393e1a935a8146d00a827",
+    "text": "Devolve em dobro\num golpe especial."
+  },
+  "PSYCH_UP": {
+    "source_sha256": "43249aeff80a7a2d2794e6d9cd79fb8290d5be017885d6d5b8b0ce91fee42239",
+    "text": "Copia alterações\nde atributos."
+  },
+  "EXTREMESPEED": {
+    "source_sha256": "b336533d37c6bc591039109ff3a2ef0bcbd9b95c178761cdee1e85cb15013889",
+    "text": "Golpe forte que\natinge primeiro."
+  },
+  "ANCIENTPOWER": {
+    "source_sha256": "8d4aa6dc4ce05f8556c7699e03fa83994ff5c4c567b5d6a5bc66dabdb4eb0645",
+    "text": "Pode elevar\ncada atributo."
+  },
+  "FUTURE_SIGHT": {
+    "source_sha256": "7e21584ec7fa6c2029b287ee7a745045dc17139a326e0fbed0b652daeb1fa006",
+    "text": "Golpe que atinge\nno terceiro turno."
+  },
+  "BEAT_UP": {
+    "source_sha256": "566f9af7dbe7a1cfa85f813661f63cd71b3485047cfe49a2c5437e9dc4469f04",
+    "text": "POKéMON da equipe\natacam juntos."
+  },
+  "MIRROR_COAT_CRYSTAL": {
+    "source_sha256": "fc6c299bc73ec222a1ac47dba9e8b8b0c31995e4553b9fb5223820f8fc832f72",
+    "text": "Devolve em dobro\num golpe especial."
+  }
+}
