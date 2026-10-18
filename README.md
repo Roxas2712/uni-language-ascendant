@@ -1,6 +1,8 @@
 # European expansion preview
 
-13 additional profiles based on v1.4.2. Preview 4 completes the known GBA registry
+13 additional profiles based on v1.4.2. Preview 5 adds a focused editorial pass
+and short font/UI/profile regressions; complete playthroughs remain outside
+this preview’s validation. Preview 4 completes the known GBA registry
 gaps, adds 245 supplemental GBA UI entries per language (DE/ES/FR/IT), and fixes
 regional item plurals. It retains Preview 3’s complete AI editorial review of 1,520 supplemental
 GB/GBC strings per language, native NPC/gift identities, endgame graphics
@@ -35,7 +37,7 @@ starts fresh.** The first-run Ascendant intro, Back navigation and Reset profile
 are included. Changing game language requires a restart.
 
 For this branch, build the preview with `python3 tools/package.py` and install
-the resulting `dist/uni-language-ascendant-1.4.3-europe-preview.4.zip` through
+the resulting `dist/uni-language-ascendant-1.4.3-europe-preview.5.zip` through
 the same mod manager. PT-BR development remains separate.
 
 ## Supported profiles in this preview

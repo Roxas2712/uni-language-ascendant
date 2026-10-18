@@ -1,4 +1,4 @@
-# Europäische Sprachprofile · 1.4.3-europe-preview.4
+# Europäische Sprachprofile · 1.4.3-europe-preview.5
 
 Ausgangspunkt ist der unveränderte Release 1.4.2 (Commit 5843925).
 Die parallele PT-BR-Entwicklung ist in dieser separaten Arbeitskopie nicht enthalten.
@@ -144,6 +144,27 @@ GB/GBC-Ergebnisse aus Preview 3 werden mit Herkunftsvermerk übernommen; deren
 Quellen und der gemeinsame Startpfad sind unverändert. Die privaten Logs und
 Bilder bleiben außerhalb der ZIP. Eine unabhängige muttersprachliche Abnahme
 und komplette manuelle Spieldurchläufe bleiben offen.
+
+## Kurzfristiges Nachlektorat in Preview 5
+
+Alle 5.540 Zellen der ergänzenden Kataloge werden erneut automatisch auf
+Format-/Steuerzeichen und mögliche englische Satzreste geprüft: 1.520 GB/GBC-
+Schlüssel in drei und 245 GBA-Schlüssel in vier Sprachen. Der gezielte zweite
+KI-Lektoratsdurchgang betrachtet dabei Satzfragmente, Meldungen mit mehreren
+Platzhaltern, Ereignisbegriffe und mögliche Geschlechtsannahmen.
+
+Fünf Formulierungen sind verbessert: die bisher englische Meldung
+„contribution is not a table“ in ES/FR/IT, die französische Startfehlermeldung
+und die spanische Meldung für einen beschäftigten Link-Partner. Die letzte
+Formulierung passt jetzt auch bei weiblichen oder unbekannten Trainern.
+Offizielle ROM-Dialoge, Eigennamen und Spielregeln sind unverändert.
+
+Neun GB/GBC-Katalogtests prüfen die aktualisierten Texte mit den echten
+Rasterfonts und dem TextBox-Umbruch. Die 24 GBA-Profilläufe (neu/Cache) und
+zehn Englisch-/Deaktivierungsstarts werden ebenfalls mit diesem Stand geprüft.
+Breitere Szenen-/Spielprüfungen aus früheren Previews sind im Bericht als
+übernommene Ergebnisse gekennzeichnet. Vollständige Spieldurchläufe und eine
+unabhängige muttersprachliche Abnahme sind nicht Bestandteil dieser Kurzprüfung.
 
 ## Verbleibende Grenzen
 

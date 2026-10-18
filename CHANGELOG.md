@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.3-europe-preview.5
+
+- Translate the remaining shared mod-contribution diagnostic in ES/FR/IT.
+- Improve the French boot failure and remove a Spanish gender assumption
+  in the link-partner busy message.
+- Screen all supplemental catalog cells and rerun short font/profile checks.
+- Keep complete playthrough and independent native-speaker review claims open.
+
 ## 1.4.3-europe-preview.4
 
 - Add 245 supplemental GBA UI entries in German, Spanish, French and Italian.

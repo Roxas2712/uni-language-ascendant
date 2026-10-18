@@ -1272,7 +1272,7 @@ Looks like there's\nnothing here…|Parece que no\nhay nada aquí...|Il semble n
 Gold cache incomplete:\n%s|Caché de Oro incompleta:\n%s|Cache Or incomplet:\n%s|Cache Oro incompleta:\n%s
 Font load failed:\n%s|No se cargó la fuente:\n%s|Chargement de police échoué:\n%s|Caricamento carattere fallito:\n%s
 %s is missing.\nRe-import the Gold ROM.|Falta %s.\nVuelve a importar Oro.|%s manque.\nRéimporte la ROM Or.|Manca %s.\nReimporta la ROM Oro.
-Failed to boot %s:\n%s|No se inició %s:\n%s|Démarrage de %s échoué:\n%s|Avvio di %s fallito:\n%s
+Failed to boot %s:\n%s|No se inició %s:\n%s|Échec du lancement\n%s : %s|Avvio di %s fallito:\n%s
 ANNOUNCER: BEEEP!\fTime's up!|¡PIIIP!\f¡Se acabó el tiempo!|BIIIP !\fTemps écoulé !|BIIIP!\fTempo scaduto!
 ANNOUNCER: The\nContest is over!|¡El Concurso\nha terminado!|Le Concours\nest terminé !|La Gara\nè finita!
 {PLAYER} sprinkled\nwater.\fBut nothing\nhappened…|{PLAYER} echó\nagua.\fPero no pasó\nnada...|{PLAYER} verse\nde l'eau.\fMais il ne se\npasse rien...|{PLAYER} versa\ndell'acqua.\fMa non succede\nnulla...
@@ -1509,7 +1509,7 @@ Enemy|El rival|L'ennemi|Il nemico
 %s POKéMON's REFLECT faded!|%s: ¡REFLEJO se acabó!|%s: PROTECTION disparaît !|%s: RIFLESSO svanisce!
 %s's ENCORE ended!|¡Terminó OTRA VEZ de %s!|L'ENCORE de %s se termine !|Il RIPETI di %s finisce!
 %s's move is no longer disabled!|¡El movimiento de %s ya no está anulado!|La capacité de %s n'est plus entravée !|La mossa di %s non è più bloccata!
-contribution is not a table|contribution is not a table|contribution is not a table|contribution is not a table
+contribution is not a table|La contribución\nno es una tabla.|La contribution\nn'est pas une table.|Il contributo\nnon è una tabella.
 Zzz... Hm? Wha...?\nYou woke me up!\fWill you check the\nclock for me?|Zzz... ¿Eh?\n¡Me has despertado!\f¿Me ayudas con\nel reloj?|Zzz... Hein ?\nTu m'as réveillé !\fVérifie l'heure\npour moi, veux-tu ?|Zzz... Eh?\nMi hai svegliato!\fMi controlli\nl'orologio?
 OAK's <PK><MN> Talk|OAK: <PK><MN>|CHEN: <PK><MN>|OAK: <PK><MN>
 POKéDEX Show|Show POKéDEX|Emission POKéDEX|Show POKéDEX

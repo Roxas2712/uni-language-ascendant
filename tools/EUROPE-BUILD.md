@@ -63,3 +63,13 @@ bounds/glyph checks; these checks do not replace complete playthrough testing.
   GB/profile sources and the shared startup path against commit 8d22d8f.
 - Run `package.py` after report generation. The `mod/gba/` runtime modules
   and catalog are on its explicit allowlist; private caches remain excluded.
+
+## Preview-5 focused editorial checks
+
+Run `editorial_qa_report.py` after the nine current
+`european_catalog_live.lua` runs, all 34 current GBA runs, and the seven unit
+checks recorded in `build/editorial-unit.log`. It verifies the exact five
+reviewed catalog-cell changes against ed95763, screens all 5,540 cells, and
+checks that engine code and native ROM recipes did not change. Earlier broader
+GB results retain explicit historical provenance; the report makes no complete
+playthrough or independent native-speaker certification claim.

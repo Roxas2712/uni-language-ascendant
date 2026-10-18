@@ -1,11 +1,12 @@
 # Supplemental European GB/GBC interface
 
-`gb-ui.json` holds 856 English engine UI keys with Spanish, French and Italian
+`gb-ui.json` holds 1,520 English engine UI keys with Spanish, French and Italian
 values. It supplements the retail dialogue/name recipes; it is not a dump of ROM
 text. The first 70 phrases were authored for preview 1. Preview 2 adds
-machine-assisted drafts of public engine UI literals, with manual terminology,
-compact fixed-field labels and menu corrections. It has not received a complete
-native-speaker editorial review.
+machine-assisted drafts of public engine UI literals. Preview 3 completed an AI
+editorial pass, including terminology, sentence fragments and fixed fields.
+Preview 5 adds a focused second pass and short regression checks. This is not
+an independent native-speaker review.
 
 `gb-ui-overrides.tsv` is the manual correction layer, separated with `|` so that
 font/control markup stays legible. Literal `\n` and `\f` represent line/page breaks.

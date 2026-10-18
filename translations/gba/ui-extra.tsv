@@ -24,7 +24,7 @@ Waiting for %s to answer\nthe battle request...|Warte auf %s...\nKampfanfrage ge
 Waiting for %s to answer\nthe trade request...|Warte auf %s...\nTauschanfrage gesendet.|Esperando a %s...\nSolicitud de intercambio enviada.|En attente de %s...\nDemande d'échange envoyée.|In attesa di %s...\nRichiesta di scambio inviata.
 %s turned down the battle.|%s lehnt den Kampf ab.|%s ha rechazado el combate.|%s a refusé le combat.|%s ha rifiutato la lotta.
 %s turned down the trade.|%s lehnt den Tausch ab.|%s ha rechazado el intercambio.|%s a refusé l'échange.|%s ha rifiutato lo scambio.
-%s seems to be busy right now.|%s ist gerade beschäftigt.|%s parece estar ocupado.|%s semble avoir à faire.|%s sembra avere da fare.
+%s seems to be busy right now.|%s ist gerade beschäftigt.|%s no parece estar disponible.|%s semble avoir à faire.|%s sembra avere da fare.
 The link with %s was lost.|Verbindung zu %s verloren.|Se ha perdido la conexión con %s.|La connexion avec %s a été perdue.|La connessione con %s si è interrotta.
 %s from POKéMON %s wants to battle!\nWill you accept?|%s aus POKéMON %s will kämpfen!\nNimmst du an?|¡%s de POKéMON %s quiere combatir!\n¿Aceptas?|%s de POKéMON %s veut combattre !\nAcceptes-tu ?|%s di POKéMON %s vuole lottare!\nAccetti?
 %s from POKéMON %s wants to trade!\nWill you accept?|%s aus POKéMON %s will tauschen!\nNimmst du an?|¡%s de POKéMON %s quiere intercambiar!\n¿Aceptas?|%s de POKéMON %s veut échanger !\nAcceptes-tu ?|%s di POKéMON %s vuole fare uno scambio!\nAccetti?

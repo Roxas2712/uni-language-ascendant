@@ -1,4 +1,4 @@
-# Uni-Language Ascendant 1.4.3-europe-preview.4
+# Uni-Language Ascendant 1.4.3-europe-preview.5
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
@@ -12,6 +12,8 @@ KI-Lektorat. Offizielle Tausch- und Geschenk-Namen werden aus der Sprach-ROM
 übernommen und im Spielstand erhalten.
 Preview 4 ergänzt 245 GBA-UI-Einträge je Sprache (DE/ES/FR/IT), korrigiert
 englische Plural-Endungen und schließt die bekannten GBA-Registerlücken.
+Preview 5 verbessert fünf weitere Formulierungen und prüft die aktualisierten
+Kataloge mit kurzen Schrift-/Menü-/Profiltests.
 Umfang und Prüfgrenzen stehen in [EUROPE-PREVIEW.md](EUROPE-PREVIEW.md),
 die Ergebnisse in [EUROPE-QA.json](EUROPE-QA.json). Eine unabhängige
 muttersprachliche Abnahme und vollständige manuelle Spieldurchläufe bleiben offen.
@@ -26,7 +28,7 @@ genannten Testgrenzen gelten ausdrücklich; Abspann-Eigennamen bleiben erhalten.
 ## Installation
 
 1. Das passende US-Basisspiel in Gen1Recomp importieren.
-2. `uni-language-ascendant-1.4.3-europe-preview.4.zip` über den Mod-Manager installieren.
+2. `uni-language-ascendant-1.4.3-europe-preview.5.zip` über den Mod-Manager installieren.
 3. Bei **Uni-Language Ascendant** die Imports öffnen und die passende
    Sprach-ROM auswählen. Nur die gewünschte Edition ist nötig; die anderen
    Dateien dürfen fehlen.

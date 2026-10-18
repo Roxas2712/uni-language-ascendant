@@ -6366,7 +6366,7 @@
   ],
   "Failed to boot %s:\n%s": [
     "No se inició %s:\n%s",
-    "Démarrage de %s échoué:\n%s",
+    "Echec du lancement\n%s : %s",
     "Avvio di %s fallito:\n%s"
   ],
   "ANNOUNCER: BEEEP!\fTime's up!": [
@@ -7550,9 +7550,9 @@
     "La mossa di %s non è più bloccata!"
   ],
   "contribution is not a table": [
-    "contribution is not a table",
-    "contribution is not a table",
-    "contribution is not a table"
+    "La contribución\nno es una tabla.",
+    "La contribution\nn'est pas une table.",
+    "Il contributo\nnon è una tabella."
   ],
   "Zzz... Hm? Wha...?\nYou woke me up!\fWill you check the\nclock for me?": [
     "Zzz... ¿Eh?\n¡Me has despertado!\f¿Me ayudas con\nel reloj?",
