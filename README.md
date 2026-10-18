@@ -28,13 +28,13 @@ unsupported profiles have distinct explanations.
 ## Install the combined preview
 
 1. Import the exact supported English US base game in Gen1Recomp.
-2. Install `dist/uni-language-ascendant-1.6.0-merged-preview.1.zip` through the mod
+2. Download [uni-language-ascendant-1.6.0-merged-preview.1.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.6.0-merged-preview.1) and install it through the mod
    manager and enable it for the desired game.
 3. Import the exact language ROM under **Uni-Language Ascendant → Imports**.
 4. Launch, select a menu language and then an available game language.
 
-The ZIP is built locally with `python3 tools/package.py`; this combined preview
-has not been published as a GitHub release. The exact ROM versions and SHA-1
+This combined preview is available as a [GitHub prerelease](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.6.0-merged-preview.1).
+The ZIP can also be built with `python3 tools/package.py`. The exact ROM versions and SHA-1
 identities are listed in [the ROM checklist](mod/ROM-Liste.html) and
 [the source catalog](tools/rom_requirements.json). File names do not identify a
 revision. Sapphire PT-BR reuses the exact Ruby PT-BR source import with separate

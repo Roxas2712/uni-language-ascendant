@@ -33,7 +33,7 @@ unsupported profiles have distinct explanations.
 3. Import the exact language ROM under **Uni-Language Ascendant → Imports**.
 4. Launch, select a menu language and then an available game language.
 
-This is the locally built combined preview, not a published GitHub release. The exact ROM versions and SHA-1
+This combined preview is available as a [GitHub prerelease](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.6.0-merged-preview.1). The exact ROM versions and SHA-1
 identities are listed in [the ROM checklist](ROM-Liste.html) and
 the source catalog in the repository. File names do not identify a
 revision. Sapphire PT-BR reuses the exact Ruby PT-BR source import with separate
