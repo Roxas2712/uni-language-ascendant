@@ -1,16 +1,17 @@
-# Combined preview 1.6.0-merged-preview.1
+# Release 1.7.0 – integration scope
 
-PT-BR 1.5.2 (e79e37d) and European preview 5 (9e846d9) are combined.
-38 localized profiles across eleven editions; the English base remains available.
+PT-BR 1.5.2 (e79e37d), the European language expansion and Asian Gen2 profiles are combined.
+41 localized profiles across eleven editions; the English base remains available.
 The ten-language picker, exact ROM checks, binary cache, lazy assets, native
 European UI/graphics and authored PT-BR corrections are included.
 
 Fresh integration checks are recorded in MERGE-QA.json. The final matrix has
-85 short automated process runs: 24 European GBA cold/warm checks, 10 English/
+113 automated process runs: 24 European GBA cold/warm checks, 10 English/
 disabled restarts, 9 European GB/GBC font/catalog runs, 22 PT-BR cold/warm runs,
 3 representative PT-BR gameplay fixtures (Red, Gold, Emerald), 6 German GB/GBC
-payload checks and 11 per-edition language-picker checks. All 38 profiles are
-started. There are also 70 Python tests, 14 Lua groups, binary-cache integrity
+payload checks and 11 per-edition language-picker checks, plus 28 Asian Gen2 runs covering actual
+dialogues, gameplay, menus, titles, credits, cache regeneration and language switching.
+All 41 profiles are started. There are also 85 Python tests, 18 Lua groups, binary-cache integrity
 checks and bounded engine UI source audits.
 
 All eleven PT-BR payloads are compared with 11 reference starts of committed
@@ -24,9 +25,9 @@ preserved: five empty placeholders/dummies, two line-break helpers, one space
 and one decorative ?{PKMN}? control string. They are not untranslated dialogue.
 The corresponding original registry values were inspected separately.
 
-The ZIP update from 1.5.2 is checked in a dedicated installation test, including
+The ZIP update from the previous 1.6.0 preview is checked in a dedicated installation test, including
 preferences, intro status, import and save sentinels, uninstall and reinstall.
- Historical evidence in
+Historical evidence in
 EUROPE-QA.json (preview 5), PT-BR.html and docs/PT-BR-QA.json (1.5.1) describes the
 original branches and must not be read as fresh tests of this merged payload.
 There are no full-story playthroughs or independent native-speaker certification.

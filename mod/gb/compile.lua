@@ -4,17 +4,49 @@ return function(rom,p,root,own)
  local R=require('src.import.Rom')
  local files,report={}, {dialogue=0,assets=0,catalogs={},language=p.language or 'de'}
  local function decode(r)
-  if r.parts then
+  if r.format then
+   local text=decode(r.format)
+   if r.parameters then
+    text=text:gsub('{([A-Z]+)}',function(token)
+     if token=='DONE' or token=='PROMPT'then return ''end
+     return assert(r.parameters[token],'Unbound native template field '..token)
+    end)
+   end
+   return (text:gsub('{DONE}',''):gsub('{PROMPT}',''):gsub('^[\n\r\v\f]+',''):gsub('[\n\r\v\f]+$',''))
+  elseif r.parts then
    local out={}
    for _,part in ipairs(r.parts) do
     if part.token then out[#out+1]=part.token elseif part.number then out[#out+1]=('%0'..part.width..'d'):format(part.number) else
      assert(part.off>=0 and part.off+part.size<=#rom,'Text span outside ROM')
      local chars={}
-     for j=part.off+1,part.off+part.size do chars[#chars+1]=assert(p.charmap[tostring(rom:byte(j))]) end
+     local j,last=part.off+1,part.off+part.size
+     while j<=last do
+      local first=rom:byte(j);local code=tostring(first);j=j+1
+      if p.encoding=='korean-gen2' and first>=1 and first<=11 then
+       assert(j<=last,'Truncated Korean character in text recipe')
+       code=code..':'..rom:byte(j);j=j+1
+      end
+      chars[#chars+1]=assert(p.charmap[code],'Unknown ROM character '..code)
+     end
      out[#out+1]=table.concat(chars)
     end
    end
    return table.concat(out)
+  elseif r.tilemap then
+   local b=r.tilemap;assert(b.off>=0 and b.size>0 and b.off+b.size<=#rom,'Tilemap outside ROM')
+   assert(b.cells>0 and b.cells<=360 and b.fill>=0 and b.fill<=255,'Invalid tilemap dimensions')
+   local out={};local i,last=b.off+1,b.off+b.size;local terminated=false
+   while i<=last do
+    local tile=rom:byte(i);i=i+1
+    if tile==255 then assert(i==last+1,'Trailing tilemap bytes');terminated=true;break end
+    local count=1
+    if b.rle then assert(i<=last,'Truncated tilemap run');count=rom:byte(i);i=i+1;assert(count>0,'Empty tilemap run')end
+    assert(#out+count<=b.cells,'Tilemap overflow')
+    for _=1,count do out[#out+1]=tile end
+   end
+   assert(terminated,'Unterminated tilemap')
+   while #out<b.cells do out[#out+1]=b.fill end
+   return out
   elseif r.bytes then
    local b=r.bytes;assert(b.off>=0 and b.off+b.size<=#rom,'Byte recipe outside ROM')
    return {rom:byte(b.off+1,b.off+b.size)}

@@ -129,3 +129,10 @@ Three additional private extractor changes support these profiles:
 
 These changes are confined to the mod's private importer copies. The installed
 engine files remain unchanged.
+
+
+## Asian Gen2 profiles
+
+Korean symbol/reference work uses [Narishma-gb/pokegold-kr](https://github.com/Narishma-gb/pokegold-kr) at `c90f31dadef17f033a8f1bdada701b26cef18241`. Both locally rebuilt outputs were checked against the exact supplied retail SHA-1 identities. No ROM, extracted font bitmap, or complete extracted cartridge script is distributed. Profiles contain offsets and character maps; source bytes are read from the user's verified import.
+
+Japanese character encoding follows the explicit Japanese charmap in the pinned local [pret/pokecrystal](https://github.com/pret/pokecrystal) reference. Japanese target addresses are a separate bounded map/script/CPU-reference checkpoint, not addresses borrowed from the incomplete [pokekuristaru](https://github.com/PikalaxALT/pokekuristaru) tree. All catalogued dialogue and named text slots are covered. Japanese Crystal includes 152 authored US-compatibility translations; Korean Gold/Silver include 17 each. Their provenance is listed in ASIAN-QA.json. Engine UI/battle templates are separately authored translations, distinct from cartridge-derived dialogue.

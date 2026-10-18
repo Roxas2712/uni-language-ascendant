@@ -28,7 +28,11 @@ function Adapter.apply(mod,edition)
  end
  data.gen2MenuGfx=data.gen2MenuGfx or {}
  merge(data.gen2MenuGfx,localPaths(layouts.menu))
- if layouts.diploma then data.gen2Diploma=localPaths(layouts.diploma)end
+ if layouts.pokegear then data.gen2MenuGfx.pokegear=data.gen2MenuGfx.pokegear or {};merge(data.gen2MenuGfx.pokegear,localPaths(layouts.pokegear))end
+ if layouts.diploma then
+  if layouts.diploma.nativeAsian then data.gen2Diploma=data.gen2Diploma or {};merge(data.gen2Diploma,localPaths(layouts.diploma))
+  else data.gen2Diploma=localPaths(layouts.diploma)end
+ end
  if layouts.credits then data.gen2Credits=localPaths(layouts.credits)end
  if game.titleData and layouts.title then merge(game.titleData,localPaths(layouts.title)) end
  local world=mod:read('lang/world_layout.lua')
@@ -52,7 +56,9 @@ function Adapter.apply(mod,edition)
  route(gfx.pokegear,'tiles','pokegear/gear.png')
  route(gfx.trainerCard,'card','trainer_card/card.png')
  route(gfx.trainerCard,'cardFemale','trainer_card/card_f.png')
+ route(gfx.trainerCard,'status','trainer_card/status.png')
  route(gfx.trainerCard,'leaders','trainer_card/leaders.png')
+ route(data.gen2Credits,'theEnd','credits/theend.png')
  local title=game.titleData
  route(title,'screen',edition=='crystal' and 'title/crystal_screen.png' or 'title/title_screen.png')
  route(title,'screenGray',edition=='crystal' and 'title/crystal_screen_gray.png' or 'title/title_screen_gray.png')

@@ -1,0 +1,15 @@
+local root=assert(arg[1]);local M=dofile(root..'/mod/gb/runtime/asian_input.lua')
+local function yes()return true end
+local function typeKeys(keys)local s='';for ch in keys:gmatch('[%z\1-\127\194-\244][\128-\191]*')do s=M.add(s,ch,true,5,yes)end;return s end
+assert(typeKeys('ㅌㅔㅅㅡㅌㅡ')=='테스트')
+assert(typeKeys('ㅎㅏㄴㄱㅡㄹ')=='한글')
+assert(typeKeys('ㄱㅏㄴㅏ')=='가나')
+assert(typeKeys('ㄷㅏㄹㄱㅏ')=='달가')
+assert(typeKeys('ㄱㅗㅏ')=='과')
+assert(M.delete('한글',true)=='한그')
+assert(M.delete('한그',true)=='한ㄱ')
+assert(M.delete('テスト',false)=='テス')
+assert(M.add('テスト','ト',false,3,yes)=='テスト')
+assert(M.add('가','ㅅ',true,5,function()return false end)=='가')
+assert(M.add('ㄱ','ㅏ',true,5,yes)=='가')
+print('ASIAN_INPUT_UNIT_OK')

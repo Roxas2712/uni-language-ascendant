@@ -7,13 +7,38 @@ return function(mod)
  local generation=require('src.core.GameVersion').generation()
  local data=assert(mod.game.data)
  for seq,code in pairs(catalog('charmap')) do mod.content.font:register('charmap:ula-european:'..seq,{seq=seq,code=code}) end
- mod.content.font:override('main',{image=mod.path..'/assets/fonts/font.png',base=0x80,glyphsPerRow=16})
+ if mod:info('assets/fonts/font.png') then
+  mod.content.font:override('main',{image=mod.path..'/assets/fonts/font.png',base=0x80,glyphsPerRow=16})
+ end
+ local fontPages=catalog('font_pages')
+ local tallGlyphs={}
+ for id,page in pairs(fontPages.pages or {}) do
+  mod.content.font:register('ula-asian-'..id,{image=mod.path..'/'..page.path,base=page.base,glyphsPerRow=16})
+  for code=page.base,page.base+510,2 do tallGlyphs[code]=true end
+ end
+ if fontPages.kana then
+  local page=fontPages.kana
+  mod.content.font:register('ula-asian-kana',{image=mod.path..'/'..page.path,base=page.base,glyphsPerRow=16})
+ end
+ for id,page in pairs(fontPages.singlePages or {})do
+  mod.content.font:register('ula-asian-single-'..id,{image=mod.path..'/'..page.path,base=page.base,glyphsPerRow=16})
+ end
  if generation==1 then
   mod.content.font:register('font_battle_extra',{image=mod.path..'/assets/battle/font_battle_extra.png',base=0x62,glyphsPerRow=15})
  end
- for key,value in pairs(catalog('dialogue')) do mod.content.text:override(key,value) end
- if generation==2 then for key,value in pairs(catalog('rom_text')) do mod.content.rom_text:override(key,value) end end
  local strings=catalog('strings')
+ local function overrideText(cat,registry)
+  for key,value in pairs(catalog(cat))do
+   -- Resolve source strings from the user's imported base, rather than
+   -- distributing a second cartridge's extracted dialogue in the profile.
+   local source=cat=='dialogue' and generation==2 and data.gen2Text or data.text
+   local original=source and source[key]
+   if fontPages.lookupDialogue and type(original)=='string' and original~='' and not strings[original] then strings[original]=value end
+   registry:override(key,value)
+  end
+ end
+ overrideText('dialogue',mod.content.text)
+ if generation==2 then overrideText('rom_text',mod.content.rom_text)end
  local identities=catalog('mon_names')
  local Names=mod.shared.monNames
  if generation==1 then
@@ -52,7 +77,9 @@ return function(mod)
    local captures={text:match(row.pattern)}
    if #captures==row.fields then
     local index=0
-    return remember(text,(row.target:gsub(token,function()index=index+1;return captures[index] end)))
+    local rendered=row.target:gsub('%%(%d+)%$[-+ #0-9%.]*[a-zA-Z]',function(position)return captures[tonumber(position)] or ''end)
+    if rendered==row.target then rendered=row.target:gsub(token,function()index=index+1;return captures[index] end)end
+    return remember(text,rendered)
    end
   end
   return remember(text,text)
@@ -123,6 +150,7 @@ return function(mod)
   local fontmap=catalog('charmap')
   mod.hooks:wrap('ui.naming.grid',function(next,base,ctx)
    local grid=next(base,ctx)
+   if mod.language=='ko' or mod.language=='ja' then return grid end
    local out={};for i,row in ipairs(grid) do out[i]={};for j,c in ipairs(row) do out[i][j]=c end end
    local chars=accent[mod.language]
    -- Keep a font-based fallback for development callers without a language.
@@ -162,7 +190,7 @@ return function(mod)
  mod.content.strings:override(marker,'active')
  local patch=Font.__ulaEuropeanStrings
  if not patch then
-  patch={original=Font.encode,split=Font.split};Font.__ulaEuropeanStrings=patch
+  patch={original=Font.encode,split=Font.split,drawCode=Font.drawCode};Font.__ulaEuropeanStrings=patch
   Font.split=function(text)
    local spans=patch.split(text)
    if patch.active and patch.active() and type(text)=='string' then
@@ -181,8 +209,22 @@ return function(mod)
    return patch.original(text)
   end
  end
+ if not patch.asianDrawInstalled then
+  patch.drawCode=Font.drawCode
+  Font.drawCode=function(code,x,y)
+   if patch.active and patch.active() and patch.tallGlyphs[code] then
+    patch.drawCode(code,x,y-8);patch.drawCode(code+1,x,y)
+   elseif patch.active and patch.active() and patch.composite[code] then
+    local glyph=patch.composite[code]
+    patch.drawCode(glyph.base,x,y);patch.drawCode(glyph.mark,x,y-8)
+   else patch.drawCode(code,x,y) end
+  end
+  patch.asianDrawInstalled=true
+ end
  patch.active=function() return Runtime.events==bus and version.get()==mod.edition and data.strings and data.strings[marker]=='active' end
  patch.strings=strings;patch.localize=localize;patch.fontmap=catalog('charmap');patch.savedName=savedName
+ patch.tallGlyphs=tallGlyphs
+ patch.composite=fontPages.composite or {}
  if generation==1 and identities.tradeOT then
   local TradeAnim=require('src.ui.TradeAnim')
   if not TradeAnim.__ulaNpcIdentity then
@@ -237,6 +279,8 @@ return function(mod)
    end
   end
   patch.data=data
-
+  if mod.language=='ja' or mod.language=='ko' then
+   mod.shared.asianArguments(mod,catalog('text_arguments'),patch.active)
+  end
  end
 end

@@ -1,5 +1,7 @@
 return {
 ["de"]={
+["japanesePreview"]="Japanisches Kristall: ROM-Texte plus 152 Übersetzungen für den US-Spielablauf.",
+["koreanPreview"]="Koreanisches Gold/Silber: ROM-Texte plus Übersetzungen für US-spezifische Abläufe.",
 ["unavailableShort"]="Noch nicht verfügbar",
 ["unavailable"]="Diese Sprache ist für diese Edition noch nicht verfügbar.",
 ["back"]="Zurück",
@@ -56,6 +58,8 @@ return {
 ["wrongBase"]="Die US-Basis-ROM passt nicht zur unterstützten Version. Prüfe die SHA-1.",
 },
 ["en"]={
+["japanesePreview"]="Japanese Crystal: ROM text plus 152 translations for the US game flow.",
+["koreanPreview"]="Korean Gold/Silver: ROM text plus translations for US-specific game flow.",
 ["unavailableShort"]="Not yet available",
 ["unavailable"]="This language is not yet available for this edition.",
 ["back"]="Back",
@@ -112,6 +116,8 @@ return {
 ["wrongBase"]="The US base ROM does not match the supported version. Check its SHA-1.",
 },
 ["es"]={
+["japanesePreview"]="Cristal japonés: textos de la ROM y 152 traducciones para la versión estadounidense.",
+["koreanPreview"]="Oro/Plata coreanos: textos de la ROM y traducciones para eventos estadounidenses.",
 ["unavailableShort"]="Aún no disponible",
 ["unavailable"]="Este idioma aún no está disponible para esta edición.",
 ["back"]="Atrás",
@@ -168,6 +174,8 @@ return {
 ["wrongBase"]="La ROM base de EE. UU. no coincide con la versión admitida. Comprueba su SHA-1.",
 },
 ["fr"]={
+["japanesePreview"]="Cristal japonais : textes de la ROM et 152 traductions pour la version américaine.",
+["koreanPreview"]="Or/Argent coréens : textes de la ROM et traductions des événements américains.",
 ["unavailableShort"]="Pas encore disponible",
 ["unavailable"]="Cette langue n’est pas encore disponible pour cette édition.",
 ["back"]="Retour",
@@ -224,6 +232,8 @@ return {
 ["wrongBase"]="La ROM de base américaine ne correspond pas à la version prévue. Vérifiez son SHA-1.",
 },
 ["it"]={
+["japanesePreview"]="Cristallo giapponese: testi della ROM e 152 traduzioni per la versione americana.",
+["koreanPreview"]="Oro/Argento coreani: testi della ROM e traduzioni degli eventi americani.",
 ["unavailableShort"]="Non ancora disponibile",
 ["unavailable"]="Questa lingua non è ancora disponibile per questa edizione.",
 ["back"]="Indietro",
@@ -280,6 +290,8 @@ return {
 ["wrongBase"]="La ROM base USA non corrisponde alla versione supportata. Controlla lo SHA-1.",
 },
 ["ja"]={
+["japanesePreview"]="日本語クリスタル：ROMの文章と、米国版の進行に合わせた152件の翻訳を使用。",
+["koreanPreview"]="韓国語の金・銀：ROMの文章と、米国版固有の進行に合わせた翻訳を使用。",
 ["unavailableShort"]="未対応",
 ["unavailable"]="このバージョンでは、この言語はまだ利用できません。",
 ["back"]="戻る",
@@ -336,6 +348,8 @@ return {
 ["wrongBase"]="米国版ベースROMが対応バージョンと一致しません。SHA-1を確認してください。",
 },
 ["ko"]={
+["japanesePreview"]="일본어 크리스탈: ROM 텍스트와 미국판 진행을 위한 번역 152개를 사용합니다.",
+["koreanPreview"]="한국어 금·은: ROM 텍스트와 미국판 고유 진행을 위한 번역을 사용합니다.",
 ["unavailableShort"]="아직 지원되지 않음",
 ["unavailable"]="이 버전에서는 아직 이 언어를 사용할 수 없습니다.",
 ["back"]="뒤로",
@@ -392,6 +406,8 @@ return {
 ["wrongBase"]="미국판 기본 ROM이 지원 버전과 일치하지 않습니다. SHA-1을 확인하세요.",
 },
 ["pt-BR"]={
+["japanesePreview"]="Crystal japonês: textos da ROM e 152 traduções para os eventos da versão dos EUA.",
+["koreanPreview"]="Gold/Silver coreanos: textos da ROM e traduções para eventos exclusivos dos EUA.",
 ["unavailableShort"]="Ainda indisponível",
 ["unavailable"]="Este idioma ainda não está disponível para esta edição.",
 ["back"]="Voltar",
@@ -448,6 +464,8 @@ return {
 ["wrongBase"]="A ROM base dos EUA não corresponde à versão compatível. Verifique o SHA-1.",
 },
 ["zh-Hans"]={
+["japanesePreview"]="日语水晶：采用ROM原文及适配美版流程的152条译文。",
+["koreanPreview"]="韩语金银：采用ROM原文及适配美版特有流程的译文。",
 ["unavailableShort"]="暂不支持",
 ["unavailable"]="此版本暂不支持该语言。",
 ["back"]="返回",
@@ -504,6 +522,8 @@ return {
 ["wrongBase"]="美版基础ROM与支持的版本不符。请检查SHA-1。",
 },
 ["zh-Hant"]={
+["japanesePreview"]="日語水晶：採用ROM原文及適配美版流程的152條譯文。",
+["koreanPreview"]="韓語金銀：採用ROM原文及適配美版特有流程的譯文。",
 ["unavailableShort"]="暫不支援",
 ["unavailable"]="此版本暫不支援此語言。",
 ["back"]="返回",

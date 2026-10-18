@@ -359,20 +359,6 @@
       "status": "Profil fehlt – noch nicht unterstützt/getestet"
     },
     {
-      "name": "Pocket Monsters - Crystal Version (Japan)",
-      "file": "Pocket Monsters - Crystal Version (Japan).gbc",
-      "size": 2097152,
-      "md5": "9c3ae66bffb28ea8ed2896822da02992",
-      "sha1": "95127b901bbce2407daf43cce9f45d4c27ef635d",
-      "generation": 2,
-      "reference": "https://github.com/libretro/libretro-database/blob/master/metadat/no-intro/Nintendo%20-%20Game%20Boy%20Color.dat",
-      "language": "ja",
-      "game": "crystal",
-      "edition": "Kristall",
-      "revision": 0,
-      "status": "Profil fehlt – noch nicht unterstützt/getestet"
-    },
-    {
       "name": "Pocket Monsters - FireRed (Japan)",
       "file": "Pocket Monsters - FireRed (Japan).gba",
       "size": 16777216,
@@ -439,34 +425,6 @@
       "language": "ja",
       "game": "emerald",
       "edition": "Smaragd",
-      "revision": 0,
-      "status": "Profil fehlt – noch nicht unterstützt/getestet"
-    },
-    {
-      "name": "Pocket Monsters Geum (Korea)",
-      "file": "Pocket Monsters Geum (Korea).gbc",
-      "size": 2097152,
-      "md5": "82bd1d9171e60f147d9eeea13ef07a12",
-      "sha1": "c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65",
-      "generation": 2,
-      "reference": "https://github.com/libretro/libretro-database/blob/master/metadat/no-intro/Nintendo%20-%20Game%20Boy%20Color.dat",
-      "language": "ko",
-      "game": "gold",
-      "edition": "Gold",
-      "revision": 0,
-      "status": "Profil fehlt – noch nicht unterstützt/getestet"
-    },
-    {
-      "name": "Pocket Monsters Eun (Korea)",
-      "file": "Pocket Monsters Eun (Korea).gbc",
-      "size": 2097152,
-      "md5": "f5e14b069eaddee42735572bd23f7ef8",
-      "sha1": "cb22d7e03a74dc3a563fde6be8626626b2b392e7",
-      "generation": 2,
-      "reference": "https://github.com/libretro/libretro-database/blob/master/metadat/no-intro/Nintendo%20-%20Game%20Boy%20Color.dat",
-      "language": "ko",
-      "game": "silver",
-      "edition": "Silber",
       "revision": 0,
       "status": "Profil fehlt – noch nicht unterstützt/getestet"
     },

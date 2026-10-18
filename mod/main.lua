@@ -7,6 +7,7 @@ return function(mod)
   if require('src.core.GameVersion').generation()==2 then
    own('gb/shared/official_mon_names.lua').installGen2ReturnCompatibility(require('src.script.gen2.Specials'))
   end
+  if require('src.core.GameVersion').generation()==2 then own('gb/runtime/asian_fallback.lua')(mod,version,own,language) end
   mod.exports.status='english';mod.exports.language='en';mod.exports.loadSeconds=love.timer.getTime()-started;return
  end
  local required,requirements
@@ -18,7 +19,7 @@ return function(mod)
  end
  local adapters=own('adapters.lua')
  local adapter=assert(adapters[require('src.core.GameVersion').generation()],'No language adapter for this generation')
- if adapter~='main.lua' then own(adapter)(mod,version,own,language);mod.exports.loadSeconds=love.timer.getTime()-started;return end
+ if adapter~='main.lua' then own(adapter)(mod,version,own,language);if require('src.core.GameVersion').generation()==2 then own('gb/runtime/asian_fallback.lua')(mod,version,own,language) end;mod.exports.loadSeconds=love.timer.getTime()-started;return end
  local selected,source,info
  for _,entry in ipairs(own('catalog.lua')) do
   if entry.game==version and entry.language==language then

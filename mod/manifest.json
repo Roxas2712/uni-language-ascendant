@@ -1,7 +1,7 @@
 {
   "id": "german_rom_source",
   "name": "Uni-Language Ascendant",
-  "version": "1.6.0-merged-preview.1",
+  "version": "1.7.0",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -24,7 +24,7 @@
   "permissions": [
     "engine_internals"
   ],
-  "description": "Language profiles for all eleven Gen1–Gen3 editions: German and Brazilian Portuguese, plus supported Spanish, French and Italian editions. Ten menu languages, native graphics, authored UI and optimized language caches. Exact personal ROM imports required; see bundled scoped QA reports. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp).",
+  "description": "Standalone language mod for eleven Gen1–Gen3 editions: German and PT-BR, supported European profiles, Japanese Crystal and Korean Gold/Silver. Ten menu languages, exact ROM checks, native graphics and cached compilation.",
   "optional_imports": [
     {
       "id": "leafgreen_de",
@@ -336,6 +336,30 @@
       "format": "raw",
       "size": 2097152,
       "md5": "7c513823f65b92a75e29067745839cc8"
+    },
+    {
+      "id": "gold_ko",
+      "name": "Pocket Monsters Geum (Korea)",
+      "file": "gold_ko.gbc",
+      "size": 2097152,
+      "md5": "82bd1d9171e60f147d9eeea13ef07a12",
+      "description": "SHA-1 c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65; Basis: Pokémon Gold (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "silver_ko",
+      "name": "Pocket Monsters Eun (Korea)",
+      "file": "silver_ko.gbc",
+      "size": 2097152,
+      "md5": "f5e14b069eaddee42735572bd23f7ef8",
+      "description": "SHA-1 cb22d7e03a74dc3a563fde6be8626626b2b392e7; Basis: Pokémon Silver (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "crystal_ja",
+      "name": "Pocket Monsters - Crystal Version (Japan)",
+      "file": "crystal_ja.gbc",
+      "size": 2097152,
+      "md5": "9c3ae66bffb28ea8ed2896822da02992",
+      "description": "SHA-1 95127b901bbce2407daf43cce9f45d4c27ef635d; Basis: Pokémon Crystal (USA / English) 1.0 / Revision 0."
     }
   ]
 }

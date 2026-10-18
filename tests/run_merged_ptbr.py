@@ -35,7 +35,18 @@ def run(game,mode,driver='merged_snapshot_live.lua',marker='CACHE_SNAPSHOT_OK'):
  (QA/'options.lua').write_text('return {mods={german_rom_source=true},modOptions={german_rom_source={language="auto",showPicker=false}}}')
  log=OUT/f'{game}-ptbr-{mode}.log'
  env=dict(os.environ,POKEPORT_IDENTITY=IDENTITY,POKEPORT_VERSION=game,POKEPORT_DRIVER=str(R/'tests'/driver),GERMAN_MOD_ROOT=str(R),SHOT_DIR=str(OUT),QA_LANGUAGE='pt-BR',QA_CACHE_STATE='warm' if mode=='warm' else 'cold',QA_MODE='smoke',QA_EXPECT_COVERED='0' if mode=='baseline' else '1')
- with log.open('w') as f:p=subprocess.run([str(LOVE),str(ENGINE)],env=env,stdout=f,stderr=subprocess.STDOUT,timeout=200)
+ # Make reference/cold checks reproducible even when this disposable QA
+ # identity contains a cache from an earlier run. Retain old indexes for the
+ # later baseline payload comparison; never touch ordinary player caches.
+ indexes={}
+ if mode in ('baseline','cold'):
+  for index in (QA/'mod_cache/german_rom_source/compiled').glob('*/index.lua'):
+   indexes[index]=index.read_bytes();index.unlink()
+ try:
+  with log.open('w') as f:p=subprocess.run([str(LOVE),str(ENGINE)],env=env,stdout=f,stderr=subprocess.STDOUT,timeout=200)
+ finally:
+  for index,data in indexes.items():
+   if not index.exists():index.write_bytes(data)
  text=log.read_text();ok=p.returncode==0 and marker in text and not any(x in text.lower() for x in ('draw failed:', 'update failed:', 'entry failed:', 'stack traceback:','hot-path pcall failed'))
  row={'game':game,'language':'pt-BR','mode':mode,'passed':ok,'log':log.name,'logSha256':hashlib.sha256(log.read_bytes()).hexdigest(),'runtimePayloadSha256':digest(BASE/'mod') if mode=='baseline' else fp,'driver':driver,'driverSha256':hashlib.sha256((R/'tests'/driver).read_bytes()).hexdigest()};results.append(row)
  (OUT/'ptbr-results.json').write_text(json.dumps(results,indent=2)+'\n');print(game,mode,'PASS' if ok else 'FAIL',flush=True)

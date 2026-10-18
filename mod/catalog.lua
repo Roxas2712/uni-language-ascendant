@@ -1,6 +1,9 @@
 -- Profiles are selected by validated ROM digest, never by a guessed filename.
 -- More languages/revisions can be added without changing the compiler.
 return {
+ {["id"]="crystal_ja",["game"]="crystal",["language"]="ja",["name"]="日本語",["generation"]=2,["root"]="gb/profiles/crystal_ja/",["profile"]="gb/profiles/crystal_ja/profile.lua",["runtime"]="gb/runtime/european.lua",["adapter"]="gb/adapters/european.lua",["shared"]="gb/shared/",["noticeKey"]="japanesePreview"},
+ {["id"]="silver_ko",["game"]="silver",["language"]="ko",["name"]="한국어",["generation"]=2,["root"]="gb/profiles/silver_ko/",["profile"]="gb/profiles/silver_ko/profile.lua",["runtime"]="gb/runtime/european.lua",["adapter"]="gb/adapters/european.lua",["shared"]="gb/shared/",["noticeKey"]="koreanPreview"},
+ {["id"]="gold_ko",["game"]="gold",["language"]="ko",["name"]="한국어",["generation"]=2,["root"]="gb/profiles/gold_ko/",["profile"]="gb/profiles/gold_ko/profile.lua",["runtime"]="gb/runtime/european.lua",["adapter"]="gb/adapters/european.lua",["shared"]="gb/shared/",["noticeKey"]="koreanPreview"},
  {id='crystal_it',game='crystal',language='it',name='Italiano',generation=2,profile='gb/profiles/crystal_it/profile.lua',root='gb/profiles/crystal_it/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
  {id='crystal_es',game='crystal',language='es',name='Español',generation=2,profile='gb/profiles/crystal_es/profile.lua',root='gb/profiles/crystal_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
  {id='yellow_es',game='yellow',language='es',name='Español',generation=1,profile='gb/profiles/yellow_es/profile.lua',root='gb/profiles/yellow_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/gen1.lua',shared='gb/shared/'},

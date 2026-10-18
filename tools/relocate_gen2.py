@@ -19,8 +19,10 @@ def offset(bank, address):
 
 
 class Mapper:
-    def __init__(self, source, target, manifest, opcodes):
+    def __init__(self, source, target, manifest, opcodes, target_map_groups=None, target_opcodes=None):
         self.source, self.target, self.m, self.ops = source, target, manifest, opcodes
+        self.target_map_groups = target_map_groups
+        self.target_opcodes = target_opcodes
         self.maps = collections.defaultdict(set)
         self.texts, self.strings, self.queue, self.seen, self.failures = {}, {}, [], set(), []
 
@@ -55,19 +57,21 @@ class Mapper:
         bank, addr = self.m['symbols']['MapGroupPointers']
         # All seven supplied EUR cartridges retain this pointer-table anchor.
         # Verify every map's IDs, dimensions and every non-pointer event byte.
-        self.add((bank, addr), (bank, addr))
+        target_bank, target_addr = self.target_map_groups or (bank, addr)
+        self.add((bank, addr), (target_bank, target_addr))
         for name, spec in self.m['maps'].items():
             attrs = []
-            for r in (self.source, self.target):
-                group = self.word(r, bank, addr + (spec['group'] - 1) * 2)
+            for r, group_bank, group_addr in ((self.source,bank,addr),(self.target,target_bank,target_addr)):
+                group = self.word(r, group_bank, group_addr + (spec['group'] - 1) * 2)
                 at = group + (spec['map'] - 1) * 9
-                row = self.read(r, bank, at, 9)
+                row = self.read(r, group_bank, at, 9)
                 ab, aa = row[0], int.from_bytes(row[3:5], 'little')
                 data = self.read(r, ab, aa, 12)
                 assert data[1:3] == bytes([spec['height'], spec['width']]), name
                 attrs.append((row, data, ab, aa))
             a, b = attrs
-            assert a[0][:3] + a[0][5:] == b[0][:3] + b[0][5:], (name, 'map header')
+            header_pair=(a[0][:3]+a[0][5:],b[0][:3]+b[0][5:])
+            assert header_pair[0]==header_pair[1] or header_pair==getattr(self,'regional_headers',{}).get(name), (name, 'map header')
             assert a[1][:3] + a[1][11:] == b[1][:3] + b[1][11:], (name, 'map attributes')
             self.add((a[2], a[3]), (b[2], b[3]))
             sb, tb = a[1][6], b[1][6]
@@ -94,14 +98,18 @@ class Mapper:
                 sc += 1; tc += 1
                 for i in range(count):
                     x, y = self.read(self.source, sb, sc, stride), self.read(self.target, tb, tc, stride)
-                    if ptr is None: assert x == y, (name, kind)
+                    if ptr is None:
+                        # Exact reviewed regional warp differences affect map
+                        # destinations, not the independent NPC text graph.
+                        assert x==y or (x,y)==getattr(self,'regional_warps',{}).get((name,i)), (name, kind, i,x.hex(),y.hex())
                     else:
                         checked_x,checked_y=x,y
                         if name=='ROUTE_40' and kind=='objects' and i==0 and x[1]==19 and y[1]==22:
                             checked_x=x[:1]+y[1:2]+x[2:]
                         if name=='ROUTE_40' and kind=='objects' and i==11 and x[2]==20 and y[2]==16:
                             checked_x=x[:2]+y[2:3]+x[3:]
-                        assert checked_x[:ptr] + checked_x[ptr+2:] == checked_y[:ptr] + checked_y[ptr+2:], (name, kind, i, x.hex(), y.hex())
+                        pair=(checked_x[:ptr]+checked_x[ptr+2:],checked_y[:ptr]+checked_y[ptr+2:])
+                        assert pair[0]==pair[1] or pair==getattr(self,'regional_events',{}).get((name,kind,i)), (name, kind, i, x.hex(), y.hex())
                         pa, pb = int.from_bytes(x[ptr:ptr+2], 'little'), int.from_bytes(y[ptr:ptr+2], 'little')
                         typ = (x[7] & 15) if kind == 'objects' else x[2] if kind == 'bg' else 0
                         if pa == 0 or pb == 0: assert pa == pb
@@ -166,21 +174,35 @@ class Mapper:
                 for _ in range(2048):
                     op = self.read(self.source, ab, aa)[0]
                     top = self.read(self.target, bb, ba)[0]
-                    locale_landmark = op == 0x44 and top == 0xa3 and self.m['romSha1'] != 'f4cd194bdee0d04ca4eac29e09b8e4e9d818c133'
-                    locale_wait = op == 0x55 and top == 0x54 and self.m['romSha1']=='f4cd194bdee0d04ca4eac29e09b8e4e9d818c133'
-                    assert op == top or locale_landmark or locale_wait, ('opcode', hex(aa), hex(ba), op)
+                    locale_landmark = self.target_opcodes is None and op == 0x44 and top == 0xa3 and self.m['romSha1'] != 'f4cd194bdee0d04ca4eac29e09b8e4e9d818c133'
+                    locale_wait = self.target_opcodes is None and op == 0x55 and top == 0x54 and self.m['romSha1']=='f4cd194bdee0d04ca4eac29e09b8e4e9d818c133'
+                    target_name = self.target_opcodes.get(top) if self.target_opcodes else None
+                    source_name = self.ops.get(str(op),{}).get('name')
+                    text_family = {'writetext':'write','farwritetext':'write','jumptext':'jump','farjumptext':'jump'}
+                    equivalent_text = target_name in text_family and source_name in text_family and text_family[target_name]==text_family[source_name]
+                    landmark_to_string = source_name in ('getlandmarkname','gettrainerclassname') and target_name=='getstring'
+                    same_command = self.target_opcodes is not None and (target_name == source_name or equivalent_text or landmark_to_string)
+                    assert same_command or (self.target_opcodes is None and (op == top or locale_landmark or locale_wait)), ('opcode', hex(aa), hex(ba), op, top)
                     info = self.ops[str(op)]; name, size = info['name'], info['size']
                     if name == 'givepoke': size = 8 if self.read(self.source, ab, aa+4)[0] else 4
                     target_size = 2 if locale_landmark else size
+                    if equivalent_text:target_size = 3 if target_name.startswith('far') else 2
+                    if landmark_to_string:target_size=3
                     x = self.read(self.source, ab, aa+1, size); y = self.read(self.target, bb, ba+1, target_size)
                     ignored = set()
                     def near(i=0, kind='script'):
                         ignored.update((i, i+1))
-                        self.pointer((ab, int.from_bytes(x[i:i+2], 'little')), (bb, int.from_bytes(y[i:i+2], 'little')), kind)
+                        target = (y[0],int.from_bytes(y[1:3],'little')) if equivalent_text and target_size==3 else (bb,int.from_bytes(y[i:i+2],'little'))
+                        self.pointer((ab, int.from_bytes(x[i:i+2], 'little')), target, kind)
                     def far(i=0, kind='script'):
                         ignored.update((i, i+1, i+2))
-                        self.pointer((x[i], int.from_bytes(x[i+1:i+3], 'little')), (y[i], int.from_bytes(y[i+1:i+3], 'little')), kind)
-                    if name in ('writetext','jumptext','jumptextfaceplayer'): near(kind='text')
+                        target = (bb,int.from_bytes(y[:2],'little')) if equivalent_text and target_size==2 else (y[i],int.from_bytes(y[i+1:i+3],'little'))
+                        self.pointer((x[i], int.from_bytes(x[i+1:i+3], 'little')), target, kind)
+                    if landmark_to_string:
+                        assert x[1]==y[2],'Landmark string buffer changed'
+                        assert 0x4000<=int.from_bytes(y[:2],'little')<0x8000,'Landmark string outside bank'
+                        ignored.update((0,1))
+                    elif name in ('writetext','jumptext','jumptextfaceplayer'): near(kind='text')
                     elif name in ('farwritetext','farjumptext'): far(kind='text')
                     elif name in ('scall','sjump','iffalse','iftrue','sdefer','stopandsjump'): near()
                     elif name in ('ifequal','ifnotequal','ifgreater','ifless'): near(1)
@@ -214,9 +236,11 @@ class Mapper:
             b = tuple(target)
             x, y = self.read(self.source,*a,4), self.read(self.target,*b,4)
             if x[0] == 0x16:
-                assert y[0] == 0x16
+                if y[0]!=0x16:
+                    assert self.target_opcodes is not None,(key,target,x.hex(),y.hex())
+                    text_shape(self.target,*b)
                 aa = (x[3],int.from_bytes(x[1:3],'little'))
-                bb = (y[3],int.from_bytes(y[1:3],'little'))
+                bb = (y[3],int.from_bytes(y[1:3],'little')) if y[0]==0x16 else b
                 self.pointer(aa,bb,'text')
                 queue.append((f'{aa[0]:02x}:{aa[1]:04x}',list(bb)))
 

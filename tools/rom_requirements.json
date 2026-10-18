@@ -152,6 +152,15 @@
         "sha1": "032608fe8947b627584a4a0eccc7bf9ad3588426",
         "md5": "89bb59dc49b59b0cd30b7384d9860bb8",
         "size": 2097152
+      },
+      {
+        "language": "ko",
+        "name": "Pocket Monsters Geum (Korea)",
+        "sha1": "c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65",
+        "md5": "82bd1d9171e60f147d9eeea13ef07a12",
+        "size": 2097152,
+        "version": "1.0 / Revision 0",
+        "import_id": "gold_ko"
       }
     ]
   },
@@ -197,6 +206,15 @@
         "sha1": "a4a7e8079b7a53e4d9ef43382bbb1090b9d45d1a",
         "md5": "72448fe75f534f70cd90469da95ef76f",
         "size": 2097152
+      },
+      {
+        "language": "ko",
+        "name": "Pocket Monsters Eun (Korea)",
+        "sha1": "cb22d7e03a74dc3a563fde6be8626626b2b392e7",
+        "md5": "f5e14b069eaddee42735572bd23f7ef8",
+        "size": 2097152,
+        "version": "1.0 / Revision 0",
+        "import_id": "silver_ko"
       }
     ]
   },
@@ -242,6 +260,15 @@
         "sha1": "6cee05e5b95beeae74b8365ad18ec4a07a8c4af8",
         "md5": "7c513823f65b92a75e29067745839cc8",
         "size": 2097152
+      },
+      {
+        "language": "ja",
+        "name": "Pocket Monsters - Crystal Version (Japan)",
+        "sha1": "95127b901bbce2407daf43cce9f45d4c27ef635d",
+        "md5": "9c3ae66bffb28ea8ed2896822da02992",
+        "size": 2097152,
+        "version": "1.0 / Revision 0",
+        "import_id": "crystal_ja"
       }
     ]
   },

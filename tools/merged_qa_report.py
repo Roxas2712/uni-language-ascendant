@@ -48,10 +48,24 @@ rows=json.loads((B/'picker-results.json').read_text());assert len(rows)==17
 for row in rows:
  assert row['runtimePayloadSha256']==fp
  checks.append(dict(log_check(row,B/row['log']),suite='Merged language matrix and German GB'))
+asian=json.loads((R/'mod/ASIAN-QA.json').read_text())
+assert asian['version']==json.loads((R/'mod/manifest.json').read_text())['version']
+assert len(asian['profiles'])==3 and not asian['japaneseUnmapped']
+for source,sha in asian['sourceSha256'].items():
+ assert hashlib.sha256((R/source).read_bytes()).hexdigest()==sha,source
+for game,language in [('gold','ko'),('silver','ko'),('crystal','ja')]:
+ modes=['final-cold','cold-verify','warm','extended','menus','credits','art','switch-request','switch-english']
+ if game=='crystal':modes.append('regional')
+ for mode in modes:
+  row=json.loads((R/f'build/asian-gen2/live/{game}-{mode}.evidence.json').read_text())
+  assert (row['game'],row['language'],row['mode'])==(game,language,mode)
+  assert row['runtimePayloadSha256']==fp
+  for helper,sha in row['helpersSha256'].items():assert hashlib.sha256((R/'tests'/helper).read_bytes()).hexdigest()==sha,helper
+  checks.append(dict(log_check(row,R/'build/asian-gen2/live'/row['log']),suite='Asian Gen2 real gameplay and layouts'))
 expectedProfiles={(r['game'],s['language']) for r in json.loads((R/'tools/rom_requirements.json').read_text()) for s in r['sources']}
 startedProfiles={(x['game'],x['language']) for x in checks if x.get('mode') in ('cold','warm','de-snapshot') or x.get('suite')=='European GB/GBC catalog and rendering'}
-assert len(expectedProfiles)==38 and expectedProfiles<=startedProfiles
-assert len(checks)==85
+assert len(expectedProfiles)==41 and expectedProfiles<=startedProfiles
+assert len(checks)==113
 comparisons=json.loads((B/'ptbr-comparisons.json').read_text());assert len(comparisons)==11 and all(x['passed'] for x in comparisons)
 for row in comparisons:
  for mode,key in (('baseline','beforeSnapshotSHA256'),('cold','afterSnapshotSHA256')):
@@ -60,16 +74,18 @@ assert '\nOK\n' in (B/'python-tests.log').read_text()
 assert 'ALL_LUA_SYNTAX_OK' in (B/'syntax.log').read_text()
 assert '1499 keys; 0 missing' in (B/'european-audit.log').read_text()
 assert '245 catalog keys per language; 0 missing' in (B/'gba-audit.log').read_text()
-lua=(B/'lua-tests.log').read_text();assert 'CATALOG_OK 11 editions, 38 language profiles' in lua and 'AUTHORED_UNIT_OK' in lua and 'DISABLED_LANGUAGES_UNIT_OK' in lua
+lua=(B/'lua-tests.log').read_text();assert 'CATALOG_OK 11 editions, 41 language profiles' in lua and 'AUTHORED_UNIT_OK' in lua and 'DISABLED_LANGUAGES_UNIT_OK' in lua
 cache=(B/'cache-unit.log').read_text();assert 'COMPILER_TEST_OK' in cache and 'CACHE_LAZY_ASSETS_OK' in cache and 'CACHE_CODEC_UNIT_OK' in cache
 report={'version':json.loads((R/'mod/manifest.json').read_text())['version'],'status':'passed-scoped-integration','runtimePayloadSha256':fp,
+ 'testIncidents':['The first PT-BR reference attempt lacked local baseline evidence; references were regenerated from committed 1.5.2. A retained test cache then violated the cold-start assertion; the isolated runner now explicitly invalidates indexes for cold/reference runs and preserves them for comparison.', 'One initial Red language-picker invocation observed a closed picker. An unchanged direct diagnostic, an unchanged direct picker check and the full repeated matrix passed. The initial cause was not established.'],
  'sources':{'europeanPreview5':'9e846d9','ptbr1_5_2':'e79e37d','releasedMainEquivalentTree':'2c274e3','historicalReports':['EUROPE-QA.json: 1.4.3-europe-preview.5','PT-BR.html and docs/PT-BR-QA.json: 1.5.1','docs/Release-1.5.2.json: picker-only release checks']},
- 'localizedProfiles':38,'editionCount':11,'fullStoryPlaythrough':False,'freshLiveProcessRuns':len(checks),'baselineReferenceRuns':11,
+ 'localizedProfiles':41,'editionCount':11,'fullStoryPlaythrough':False,'freshLiveProcessRuns':len(checks),'baselineReferenceRuns':11,
+ 'asianReportSha256':hashlib.sha256((R/'mod/ASIAN-QA.json').read_bytes()).hexdigest(),
  'checks':checks,'ptbrPayloadPreservation':{'comparisons':comparisons,'scope':'All final registry values and all graphics of the eleven PT-BR profiles. Equivalent manifest ordering and rendered contest tile packing are verified explicitly. Cold and warm payloads agree. Coverage report metadata may gain categories and is excluded from equivalence.'},
  'preservedUnmappedFRLGEntries':{'countPerEdition':9,'scope':'five empty placeholders/dummies, two newline helpers, one space and one decorative ?{PKMN}? control string; original IR inspected; unchanged by merge'},
  'unitLogSha256':{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in [B/'python-tests.log',B/'lua-tests.log',B/'syntax.log',B/'cache-unit.log',B/'european-audit.log',B/'gba-audit.log']},
- 'unitChecks':{'pythonTests':70,'luaGroups':14,'binaryCacheSuite':True,'allLuaSyntax':True},
+ 'unitChecks':{'pythonTests':85,'luaGroups':18,'binaryCacheSuite':True,'allLuaSyntax':True},
  'sourceAudits':{'GBEngineUIKeys':1499,'GBAStaticKeys':180,'authoredGBAKeysPerLanguage':245,'missingInAuditedScopes':0},
  'limitations':['No full-story playthroughs','No independent native-speaker certification','No Windows/Linux integration runs','No two-device multiplayer or public relay integration test','Historical branch performance runs are not new merged performance measurements']}
 for p in (R/'mod/MERGE-QA.json',R/'MERGE-QA.json'):p.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-print('MERGED_QA_OK',len(checks),'fresh runs; 11 baseline references; 38 profiles;',fp)
+print('MERGED_QA_OK',len(checks),'fresh runs; 11 baseline references; 41 profiles;',fp)

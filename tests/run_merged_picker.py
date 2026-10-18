@@ -6,7 +6,7 @@ QA.mkdir(exist_ok=True);dest=QA/'mods/german_rom_source'
 if dest.exists():shutil.rmtree(dest)
 shutil.copytree(R/'mod',dest);imports=dest/'baseroms';imports.mkdir()
 requirements=json.loads((R/'tools/rom_requirements.json').read_text());manifest=json.loads((R/'mod/manifest.json').read_text())
-roots=[SAVE/'ula-europe-expansion-qa/mods/german_rom_source/baseroms',SAVE/'ula-gba-completion-qa/mods/german_rom_source/baseroms',R.parent/'German-ROM-Mod/build/upstream-engine/mods/german_rom_source/baseroms',SAVE/'german-rom-mod-ptbr-gen1-qa/mods/german_rom_source/baseroms',SAVE/'german-rom-mod-ptbr-qa/mods/german_rom_source/baseroms']
+roots=[SAVE/'ula-asian-gen2-qa/mods/german_rom_source/baseroms',SAVE/'ula-europe-expansion-qa/mods/german_rom_source/baseroms',SAVE/'ula-gba-completion-qa/mods/german_rom_source/baseroms',R.parent/'German-ROM-Mod/build/upstream-engine/mods/german_rom_source/baseroms',SAVE/'german-rom-mod-ptbr-gen1-qa/mods/german_rom_source/baseroms',SAVE/'german-rom-mod-ptbr-qa/mods/german_rom_source/baseroms']
 for spec in manifest['optional_imports']:
  source=next((p/spec['file'] for p in roots if (p/spec['file']).exists()),None);assert source,spec['id']
  data=source.read_bytes();assert len(data)==spec['size'] and hashlib.md5(data).hexdigest()==spec['md5'],spec['id'];(imports/spec['file']).write_bytes(data)

@@ -1,0 +1,25 @@
+{
+  "version": "1.7.0",
+  "zipSha256": "7187303bd4004405ff88ee8e333294d73235046e849b32ba3fbc1d490ed9c99b",
+  "zipBytes": 12875156,
+  "archiveFiles": 635,
+  "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
+  "archiveIntegrity": true,
+  "noRomsSavesOrCaches": true,
+  "licensePreserved": true,
+  "upgradeFrom": "1.6.0-merged-preview.1",
+  "installation": {
+    "passed": true,
+    "identity": "ula-release-170-install-qa",
+    "driverSha256": "2af9d8adc0357294fbf6142306a6c9100c3f88dcf5b32e7270088f3ded071b86",
+    "logSha256": "cc39056cb6afc4a6c04396faadd734823da5d511ab036328962a0f06b2951860",
+    "checks": [
+      "fresh install",
+      "update preserves preferences and intro state",
+      "update preserves import sentinel",
+      "save-area sentinel survives",
+      "uninstall clears profile",
+      "reinstall starts fresh"
+    ]
+  }
+}

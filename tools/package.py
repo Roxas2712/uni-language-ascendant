@@ -7,7 +7,7 @@ files=['manifest.json','main.lua','startup.lua','startup_view.lua','locales.lua'
 files.extend(['latin_glyphs.lua','authored.lua','compat.lua','ptbr_names.lua','ptbr_moves.lua','ptbr_types.lua','ptbr_abilities.lua','ptbr_ability_descriptions.lua','ptbr_move_descriptions.lua','ptbr_gender.lua','ptbr_graphics.lua','ptbr_world_graphics.lua','ptbr_title_graphics.lua','ptbr_asset_text.lua','ptbr_credits.lua','ptbr_summary_graphics.lua','ptbr_pixel_labels.lua','ptbr_pokenav.lua','ptbr_pokenav_trainers.lua','ptbr_side_assets.lua','ptbr_scene_paths.lua','ptbr_scene_text.lua','ptbr_scene_authored.lua', 'ptbr_scene_bindings.lua','ptbr_easy_chat_ui.lua','ptbr_easy_chat.lua','ptbr_easy_chat_words.lua','profiles/sapphire_ptbr.lua'])
 files.extend('profiles/'+game+'_ptbr_authored.lua' for game in ['emerald','ruby','sapphire'])
 files.extend('profiles/'+game+'_ptbr/'+name+'.lua' for game in ['firered','leafgreen'] for name in ['profile','assets','world','authored'])
-files.extend(['LICENSE-POLICY.md','EUROPE-PREVIEW.md','EUROPE-QA.json','MERGE-QA.json','MERGED-PREVIEW.md'])
+files.extend(['LICENSE-POLICY.md','EUROPE-PREVIEW.md','EUROPE-QA.json','MERGE-QA.json','MERGED-PREVIEW.md','ASIAN-PREVIEW.md','ASIAN-QA.json'])
 files.append('PT-BR.html')
 files.extend(['ptbr_items.lua','ptbr_item_descriptions.lua','ptbr_classes.lua','ptbr_text_layout.lua'])
 for game in ['firered','leafgreen','ruby','sapphire','emerald','emerald_fr','emerald_it','emerald_es','emerald_ptbr','ruby_ptbr','firered_es','firered_it','leafgreen_es','leafgreen_fr']:

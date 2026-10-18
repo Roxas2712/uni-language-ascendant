@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.7.0
+
+- Publish the combined language package as a regular release, with 41 localized
+  profiles across eleven editions and ten selectable menu languages.
+- Add Japanese Crystal and Korean Gold/Silver with native text, fonts, naming,
+  title/menu graphics and overworld signage.
+- Cover all 508 previously unfilled Crystal slots: 356 additional native ROM
+  mappings and 152 explicitly authored US-compatibility translations.
+- Fit Asian text in party, PC, Pack, summary, battle and Pokédex screens; support
+  taller Hangul, Japanese voiced marks and native text-parameter order.
+- Verify the current package across all profiles and retain PT-BR payloads,
+  optimized cache behavior, disabled-language choices and exact ROM identities.
+- Record actual game scenarios and scope limits in MERGE-QA.json / ASIAN-QA.json;
+  no full-story playthrough or regional-mechanics replacement is claimed.
+
 ## 1.6.0-merged-preview.1
 
 - Combine European preview 5 with PT-BR 1.5.2: 38 localized profiles.

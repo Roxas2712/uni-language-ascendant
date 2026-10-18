@@ -17,7 +17,7 @@ return function(mod,version,own,language)
  assert(info.md5==profile.md5 and info.size==profile.size,'ROM/profile mismatch')
  local S=require('src.core.SaveSerializer')
  local function hash(s) return love.data.encode('string','hex',love.data.hash('string','sha256',s)) end
- local paths={'main.lua','catalog.lua','cache_codec.lua','compiler.lua','gb/main.lua','gb/compile.lua','gb/overlay.lua','gb/adapters/gen1.lua','gb/adapters/gen2.lua','gb/shared/dex_units.lua','gb/shared/official_mon_names.lua',root..'profile.lua',root..'assets.lua'}
+ local paths={'main.lua','catalog.lua','cache_codec.lua','compiler.lua','gb/main.lua','gb/runtime/asian_layout.lua','gb/runtime/asian_input.lua','gb/runtime/asian_arguments.lua','gb/runtime/asian_marquee.lua','gb/compile.lua','gb/overlay.lua','gb/adapters/gen1.lua','gb/adapters/gen2.lua','gb/shared/dex_units.lua','gb/shared/official_mon_names.lua',root..'profile.lua',root..'assets.lua'}
  local gen=require('src.core.GameVersion').generation()==2 and 'gen2' or 'gen1'
  local runtime=selected.runtime
  paths[#paths+1]=runtime
@@ -73,7 +73,10 @@ return function(mod,version,own,language)
   proxy.shared.dexMetrics=own('gb/shared/dex_units.lua').normalizeCatalog(own('gb/shared/gen2/dex_metrics.lua'))
  end
  own(selected.adapter).apply(proxy,version)
+ proxy.shared.asianArguments=own('gb/runtime/asian_arguments.lua')
  own(runtime)(proxy)
+ own('gb/runtime/asian_layout.lua')(proxy,profile.encoding)
+ if profile.encoding=='korean-gen2' or profile.encoding=='japanese-gen2' then own('gb/runtime/asian_marquee.lua')(require('src.render.Font').__ulaEuropeanStrings.active);own('gb/runtime/asian_input.lua').install(proxy,require('src.render.Font').__ulaEuropeanStrings) end
  mod.exports.status='active';mod.exports.language=selected.language;mod.exports.cacheKey=key
  mod.exports.coverage=report;mod.exports.assets=files
  mod.log:info('ROM language %s: %s, %d dialogue entries, %d graphics (%s).',selected.language,version,report.dialogue,report.assets,report.cacheHit and 'cached' or 'compiled')

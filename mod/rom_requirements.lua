@@ -133,6 +133,14 @@ return {{
 ["sha1"]="032608fe8947b627584a4a0eccc7bf9ad3588426",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="gold_ko",
+["language"]="ko",
+["md5"]="82bd1d9171e60f147d9eeea13ef07a12",
+["name"]="Pocket Monsters Geum (Korea)",
+["sha1"]="c0ff3999e1093e1af59ef3eea3f1bfd7c1f18a65",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -172,6 +180,14 @@ return {{
 ["sha1"]="a4a7e8079b7a53e4d9ef43382bbb1090b9d45d1a",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
+},{
+["import_id"]="silver_ko",
+["language"]="ko",
+["md5"]="f5e14b069eaddee42735572bd23f7ef8",
+["name"]="Pocket Monsters Eun (Korea)",
+["sha1"]="cb22d7e03a74dc3a563fde6be8626626b2b392e7",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -209,6 +225,14 @@ return {{
 ["md5"]="7c513823f65b92a75e29067745839cc8",
 ["name"]="Cristallo (Italy)",
 ["sha1"]="6cee05e5b95beeae74b8365ad18ec4a07a8c4af8",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
+},{
+["import_id"]="crystal_ja",
+["language"]="ja",
+["md5"]="9c3ae66bffb28ea8ed2896822da02992",
+["name"]="Pocket Monsters - Crystal Version (Japan)",
+["sha1"]="95127b901bbce2407daf43cce9f45d4c27ef635d",
 ["size"]=2097152,
 ["version"]="1.0 / Revision 0",
 }},
