@@ -1,5 +1,7 @@
 return {
 ["de"]={
+["unavailableShort"]="Noch nicht verfügbar",
+["unavailable"]="Diese Sprache ist für diese Edition noch nicht verfügbar.",
 ["back"]="Zurück",
 ["base"]="Basisspiel",
 ["baseReady"]="US-Basisspiel bereit",
@@ -54,6 +56,8 @@ return {
 ["wrongBase"]="Die US-Basis-ROM passt nicht zur unterstützten Version. Prüfe die SHA-1.",
 },
 ["en"]={
+["unavailableShort"]="Not yet available",
+["unavailable"]="This language is not yet available for this edition.",
 ["back"]="Back",
 ["base"]="Base game",
 ["baseReady"]="US base game ready",
@@ -108,6 +112,8 @@ return {
 ["wrongBase"]="The US base ROM does not match the supported version. Check its SHA-1.",
 },
 ["es"]={
+["unavailableShort"]="Aún no disponible",
+["unavailable"]="Este idioma aún no está disponible para esta edición.",
 ["back"]="Atrás",
 ["base"]="Juego base",
 ["baseReady"]="Juego base de EE. UU. listo",
@@ -162,6 +168,8 @@ return {
 ["wrongBase"]="La ROM base de EE. UU. no coincide con la versión admitida. Comprueba su SHA-1.",
 },
 ["fr"]={
+["unavailableShort"]="Pas encore disponible",
+["unavailable"]="Cette langue n’est pas encore disponible pour cette édition.",
 ["back"]="Retour",
 ["base"]="Jeu de base",
 ["baseReady"]="Jeu de base américain prêt",
@@ -216,6 +224,8 @@ return {
 ["wrongBase"]="La ROM de base américaine ne correspond pas à la version prévue. Vérifiez son SHA-1.",
 },
 ["it"]={
+["unavailableShort"]="Non ancora disponibile",
+["unavailable"]="Questa lingua non è ancora disponibile per questa edizione.",
 ["back"]="Indietro",
 ["base"]="Gioco base",
 ["baseReady"]="Gioco base USA pronto",
@@ -270,6 +280,8 @@ return {
 ["wrongBase"]="La ROM base USA non corrisponde alla versione supportata. Controlla lo SHA-1.",
 },
 ["ja"]={
+["unavailableShort"]="未対応",
+["unavailable"]="このバージョンでは、この言語はまだ利用できません。",
 ["back"]="戻る",
 ["base"]="ベースゲーム",
 ["baseReady"]="米国版のベースゲームを確認済み",
@@ -324,6 +336,8 @@ return {
 ["wrongBase"]="米国版ベースROMが対応バージョンと一致しません。SHA-1を確認してください。",
 },
 ["ko"]={
+["unavailableShort"]="아직 지원되지 않음",
+["unavailable"]="이 버전에서는 아직 이 언어를 사용할 수 없습니다.",
 ["back"]="뒤로",
 ["base"]="기본 게임",
 ["baseReady"]="미국판 기본 게임 준비 완료",
@@ -378,6 +392,8 @@ return {
 ["wrongBase"]="미국판 기본 ROM이 지원 버전과 일치하지 않습니다. SHA-1을 확인하세요.",
 },
 ["pt-BR"]={
+["unavailableShort"]="Ainda indisponível",
+["unavailable"]="Este idioma ainda não está disponível para esta edição.",
 ["back"]="Voltar",
 ["base"]="Jogo base",
 ["baseReady"]="Jogo base dos EUA pronto",
@@ -432,6 +448,8 @@ return {
 ["wrongBase"]="A ROM base dos EUA não corresponde à versão compatível. Verifique o SHA-1.",
 },
 ["zh-Hans"]={
+["unavailableShort"]="暂不支持",
+["unavailable"]="此版本暂不支持该语言。",
 ["back"]="返回",
 ["base"]="基础游戏",
 ["baseReady"]="美版基础游戏已就绪",
@@ -486,6 +504,8 @@ return {
 ["wrongBase"]="美版基础ROM与支持的版本不符。请检查SHA-1。",
 },
 ["zh-Hant"]={
+["unavailableShort"]="暫不支援",
+["unavailable"]="此版本暫不支援此語言。",
 ["back"]="返回",
 ["base"]="基礎遊戲",
 ["baseReady"]="美版基礎遊戲已就緒",

@@ -9,12 +9,14 @@ Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 
 ## Brazilian Portuguese for Gen1–Gen3
 
-Version 1.5.1 contains PT-BR profiles for all eleven editions: Red,
+Version 1.5.2 contains PT-BR profiles for all eleven editions: Red,
 Blue, Yellow, Gold, Silver, Crystal, Ruby, Sapphire, Emerald, FireRed and LeafGreen.
 It combines exact fan-translation ROM imports with authored corrections, move
 names and native UI/graphic localization. See the generated
 [gameplay report](mod/PT-BR.html) and [machine-readable QA](docs/PT-BR-QA.json)
-for the current verification status. A profile being enabled is not a claim that
+for the version 1.5.1 gameplay verification. Version 1.5.2 changes only the
+pre-title language picker, its menu strings and fonts; its targeted checks are
+recorded in [the 1.5.2 release report](docs/Release-1.5.2.json). A profile being enabled is not a claim that
 every story or multiplayer branch has been played.
 
 The source ROM and revision must match [the ROM checklist](mod/ROM-Liste.html).
@@ -44,17 +46,20 @@ reinstallation starts fresh. The first-run notice explains this in English.
 
 Build with `python3 tools/package.py`. No ROM or fanpatch is included.
 
-## Install version 1.5.1
+## Install version 1.5.2
 
-1. Download [uni-language-ascendant-1.5.1.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.5.1).
+1. Download [uni-language-ascendant-1.5.2.zip](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.5.2).
 2. Import the matching US base ROM in Gen1Recomp.
 3. Install the ZIP through the mod manager, enable the mod for your game, and
    import your language ROM under **Uni-Language Ascendant → Imports**.
 4. Launch the game, choose your menu language, then your game language.
 
-The game picker and mod options show only supported languages with an imported
-ROM for the current edition. English is always available. Menu languages and the
-ROM requirements list remain available independently. If a previously selected
+The game picker shows all ten languages. Unavailable languages are greyed out
+per edition: “Not yet available” means the edition has no supported profile;
+“Language ROM missing” means its supported ROM still needs importing. Neither
+can start the game. The stock launcher options list only usable languages.
+English is always available. Menu languages and the ROM requirements list
+remain available independently. If a previously selected
 ROM is missing, the mod starts in English.
 
 **Updating preserves your mod profile. Uninstalling deletes it; reinstalling

@@ -8,16 +8,26 @@ return function(mod,version,own)
  local order={'en','de','fr','it','es','ja','ko','zh-Hans','zh-Hant','pt-BR'}
  local savedUI=preferences:read('preferences/ui-language.txt')
  local uiLanguage=locales[savedUI] and savedUI or 'en'
- local choices={{id='en',name='English',available=true}}
- local known={en=true}
+ local choices,byLanguage,known={},{},{en=true}
+ for _,id in ipairs(order) do
+  local choice={id=id,name=locales[id].native,available=id=='en',supported=id=='en'}
+  choices[#choices+1]=choice;byLanguage[id]=choice
+ end
  for _,entry in ipairs(catalog) do
-  if entry.game==version and not known[entry.language] and mod.imports:info(entry.sourceId or entry.id)~=nil then
-   known[entry.language]=true
-   choices[#choices+1]={id=entry.language,name=entry.name,available=true,noticeKey=entry.noticeKey}
+  if entry.game==version then
+   local choice=byLanguage[entry.language]
+   if not choice then
+    choice={id=entry.language,name=entry.name,available=false}
+    choices[#choices+1]=choice;byLanguage[entry.language]=choice
+   end
+   choice.supported=true;choice.noticeKey=entry.noticeKey
+   if mod.imports:info(entry.sourceId or entry.id)~=nil then
+    choice.available=true;known[entry.language]=true
+   end
   end
  end
- -- Use the same installed, per-game languages in both entry points. Menu
- -- localization and the ROM requirements list remain independent of imports.
+ -- The stock launcher has no disabled choice rows. Only the in-game picker
+ -- shows unavailable languages; launcher overrides remain safe to select.
  mod.options:define(own('options_schema.lua')(choices))
  local saved=preferences:read('preferences/'..version..'.txt')
  local language=preferences.fresh and 'auto' or mod.options:get('language')
@@ -79,8 +89,8 @@ return function(mod,version,own)
   for _,c in ipairs(choices) do if c.id==id then choice=c end end
   if not choice then return false,'Unknown language' end
   if not choice.available then
-   state.noticeKey='missing'
-   return false,'Missing ROM'
+   state.noticeKey=choice.supported and 'missing' or 'unavailable'
+   return false,choice.supported and 'Missing ROM' or 'Unsupported language'
   end
   if id~='en' and mod.exports.status~='active' and id==language then
    state.noticeKey='inactive'
