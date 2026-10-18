@@ -37,6 +37,8 @@ mods['src.ui.game3.stack'].top=function()return {id=blender.STACK_ID,mod=host}en
 local Help=mods['src.ui.game3.help_system']
 Help.installPack=function(pack)Help.pack=pack end
 Help.show=function()return Help.pack end
+local function copy(v)if type(v)~='table'then return v end;local o={};for k,x in pairs(v)do o[k]=copy(x)end;return o end
+local nativeBase={};for name,value in pairs(mods)do if name:match('^src%.[%w_]+%.game3%.')then nativeBase[name]=copy(value)end end
 for name,value in pairs(mods)do package.loaded[name]=value end
 love={image={newImageData=noop},graphics={newImage=noop},data={newByteData=noop}}
 local function mod()return {events={on=noop},exports={},read=function(_,path)local f=assert(io.open(root..'/mod/'..path));local s=f:read('*a');f:close();return s end}end
@@ -90,3 +92,14 @@ assert(reads==0 and Blob.readFs(path)=='tiles')
 assert(m.exports.assets.extra=='bytes' and m.exports.assets==files and reads==1)
 local count=0;for _ in pairs(m.exports.assets)do count=count+1 end;assert(count==2 and reads==1)
 print('LAZY_EXPORTS_UNIT_OK full inspection materializes once')
+
+-- Simulate the engine's real Game3 module eviction between two languages.
+local persistentRead,persistentImage=Cache.readAt,love.graphics.newImage
+for name,value in pairs(nativeBase)do package.loaded[name]=copy(value)end
+Runtime.events={};version='ruby';enabled=true
+local freshNaming=package.loaded['src.ui.game3.naming'];local freshPokemon=package.loaded['src.core.game3.pokemon']
+apply(mod(),'ruby',{[manifest]='return {title="NOME ATUAL?"}'},{language='pt-BR',abilities={[1]='HABILIDADE'},classes={}})
+assert(freshNaming.templateFromManifest({title='YOUR NAME?'})=='NOME ATUAL?','Naming localization lost after native module reload')
+assert(freshPokemon.abilityName(1)=='HABILIDADE','Ability localization lost after native module reload')
+assert(Cache.readAt==persistentRead and love.graphics.newImage==persistentImage,'Process-wide readers were wrapped again')
+print('OVERLAY_NATIVE_RELOAD_UNIT_OK fresh naming/ability hooks, stable process readers')

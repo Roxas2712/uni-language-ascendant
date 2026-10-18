@@ -60,7 +60,7 @@ return function(mod,version,own)
  local originals,wrappers={},{}
  local oldVolume
  local intro
- local showPicker=preferences.fresh or state.stage=='notice' or mod.options:get('showPicker')~=false
+ local showPicker=not mod.exports.sessionBoot and (preferences.fresh or state.stage=='notice' or mod.options:get('showPicker')~=false)
  local function restore()
   state.open=false
   if intro then intro:close();intro=nil;state.intro=nil end
@@ -173,7 +173,7 @@ return function(mod,version,own)
  local function install()
   if not game then return end
   local Intro=own('intro.lua')
-  local pending=Intro.pending(mod,preferences)
+  local pending=not mod.exports.sessionBoot and Intro.pending(mod,preferences)
   if not showPicker and not pending then return end
   state.open=true
   if showPicker then draw=own('startup_view.lua')(mod,state,requirements,locales,order) end
@@ -194,7 +194,13 @@ return function(mod,version,own)
   local marker='mod.german_rom_source.picker'
   mod.events:on(marker,function() end)
   local function wrap(name,fn)
-   originals[name]=game[name];wrappers[name]=fn;game[name]=fn
+   local base=game[name];originals[name]=base
+   local wrapped=function(self,...)
+    -- A later mod/session wrapper may still delegate to this function.
+    if not state.open then if base then return base(self,...)end;return end
+    return fn(self,...)
+   end
+   wrappers[name]=wrapped;game[name]=wrapped
   end
   wrap('draw',function() if intro then intro:draw() else draw() end end)
   wrap('update',function(self,dt)

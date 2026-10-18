@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://roxas2712.github.io/uni-language-ascendant/sitemap.xml

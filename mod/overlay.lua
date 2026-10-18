@@ -23,6 +23,13 @@ return function(mod,game,files,display,easyChatUI,materialize)
       return glyphId(ch)
     end
   end
+    local function imageBytes(path)
+      local s=active()
+      if not s or type(path)~='string' or not path:match('%.png$') then return nil end
+      local prefix=s.game..'/'
+      if path:sub(1,#prefix)==prefix then path=path:sub(#prefix+1) end
+      return s.files[path]
+    end
   if not Cache._germanROMRead then
     Cache._germanROMRead=Cache.readAt
     Cache.readAt=function(path,...)
@@ -56,13 +63,6 @@ return function(mod,game,files,display,easyChatUI,materialize)
     -- generated PNGs owned by this overlay, including those direct loads.
     local imageData=love.image.newImageData
     local newImage=love.graphics.newImage
-    local function imageBytes(path)
-      local s=active()
-      if not s or type(path)~='string' or not path:match('%.png$') then return nil end
-      local prefix=s.game..'/'
-      if path:sub(1,#prefix)==prefix then path=path:sub(#prefix+1) end
-      return s.files[path]
-    end
     love.image.newImageData=function(path,...)
       local data=imageBytes(path)
       if data then return imageData(love.data.newByteData(data)) end
@@ -73,7 +73,12 @@ return function(mod,game,files,display,easyChatUI,materialize)
       if data then return newImage(imageData(love.data.newByteData(data)),...) end
       return newImage(path,...)
     end
-    local Indexed=require('src.core.game3.indexed_png')
+  end
+  -- Native Game3 modules are replaced on session handoff; their UI hooks
+  -- need a fresh installation independently of the process-wide readers.
+  local Indexed=require('src.core.game3.indexed_png')
+  if not Indexed.__ulaLanguageOverlayNative then
+    Indexed.__ulaLanguageOverlayNative=true
     local indexedLoad=Indexed.load
     Indexed.load=function(path)
       local data=imageBytes(path)

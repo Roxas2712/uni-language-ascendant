@@ -22,9 +22,9 @@ Native Titel und Diplom sowie der echte Port-Abspann wurden gerendert. Der Abspa
 
 | Profil | Kalt | Cache | Lua-Heap nativ / Englisch |
 |---|---:|---:|---:|
-| gold ko | 517 ms | 266 ms | 38.4 / 31.1 MiB |
-| silver ko | 533 ms | 288 ms | 38.3 / 31.2 MiB |
-| crystal ja | 577 ms | 269 ms | 41.8 / 32.9 MiB |
+| gold ko | 201 ms | 119 ms | 38.4 / 31.1 MiB |
+| silver ko | 317 ms | 140 ms | 38.3 / 31.2 MiB |
+| crystal ja | 273 ms | 154 ms | 41.8 / 32.9 MiB |
 
 Die Performancewerte stammen aus den vorherigen Entwicklungsprüfungen; sie sind kein neuer Release-Benchmark. Messumfang: je 360 Update-/Draw-Frames in einer Szene auf diesem Mac mit VSync. Andere Anwendungen liefen parallel; insbesondere enthält Gold/Englisch einen Draw-Ausreißer von etwa einer Sekunde. Kristall nativ und Englisch hatten zudem deutlich unterschiedliche Frame-Ausgabezeiten (ca. 0,8 gegenüber 6,8 Sekunden für 360 Frames). Daraus wird kein Geschwindigkeitsvergleich abgeleitet. Die Messung isoliert keinen Übersetzungs-Overhead. Keine Messung des gesamten Prozessspeichers, kein Benchmark aller Szenen und kein Nachweis eines generell fehlenden Overheads. Details, Grenzen und Dateiprüfsummen stehen in ASIAN-QA.json.
 

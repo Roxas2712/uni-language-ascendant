@@ -4,9 +4,10 @@ Standalone language mod for **Gen1Recomp**, based on the Pokémon Gen 1
 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
-## Release 1.7.0
+## Release 1.8.0
 
-Includes PT-BR and the European language expansion, plus **Japanese Crystal** and **Korean Gold/Silver**.
+Adds an in-game **ASCENDANT → UNI-LANGUAGE** menu, safe language handoffs and
+interrupted-switch recovery. Retains PT-BR and the European expansion, plus **Japanese Crystal** and **Korean Gold/Silver**.
 There are **41 localized profiles** across eleven editions, plus the English base.
 The optimized binary cache, lazy graphics loading, disabled-language picker,
 European menu/graphic translations and PT-BR corrections are included together.
@@ -31,12 +32,12 @@ unsupported profiles have distinct explanations.
 ## Install
 
 1. Import the exact supported English US base game in Gen1Recomp.
-2. Install `uni-language-ascendant-1.7.0.zip` through the mod
+2. Install `uni-language-ascendant-1.8.0.zip` through the mod
    manager and enable it for the desired game.
 3. Import the exact language ROM under **Uni-Language Ascendant → Imports**.
 4. Launch, select a menu language and then an available game language.
 
-Available as a regular [GitHub release](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.7.0). The exact ROM versions and SHA-1
+Available as a regular [GitHub release](https://github.com/Roxas2712/uni-language-ascendant/releases/tag/v1.8.0). The exact ROM versions and SHA-1
 identities are listed in [the ROM checklist](ROM-Liste.html) and
 the source catalog in the repository. File names do not identify a
 revision. Sapphire PT-BR reuses the exact Ruby PT-BR source import with separate
@@ -49,7 +50,15 @@ their attribution. No ROM, fanpatch, save or compilation cache is distributed.
 launch rebuilds the language cache once. Uninstalling deletes the mod profile;
 reinstalling starts fresh. The intro runs once per profile. Back, Reset profile
 and the ROM requirements view remain available. Missing saved imports fall back
-to English; changing the active game language requires a restart.
+to English. During settled offline play, open **ASCENDANT → UNI-LANGUAGE** to import
+another supported language ROM and switch without closing the application.
+The in-process handoff preserves unsaved progress and reloads the enabled mods.
+The first compilation takes longer than a cached switch. Desktop uses a native
+file picker; other platforms can import through the launcher. Menu language
+changes immediately. Unavailable game languages remain greyed out.
+
+Live switching, real nurse interactions, import validation, progress retention
+and tested Ascendant combinations are documented in [Live-switch QA](LIVE-SWITCH.md).
 
 ## Verification
 

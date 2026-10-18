@@ -1,6 +1,9 @@
 return function(mod)
  local version=require('src.core.GameVersion').get()
  local function own(file, ...) return assert(loadstring(assert(mod:read(file)),'@rom_language/'..file))(...) end
+ local session=own('session.lua')(mod,version,own)
+ mod.exports.session=session
+ session:install()
  local started=love.timer.getTime()
  local language=own('startup.lua')(mod,version,own)
  if language=='en' then
@@ -46,7 +49,7 @@ return function(mod)
  local W=require('src.import.LuaWriter')
  local function hash(bytes) return love.data.encode('string','hex',love.data.hash('string','sha256',bytes)) end
  local recipe={'compiler-v3',source.sha1,version}
- local paths={'main.lua','catalog.lua','rom_requirements.lua','cache_codec.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua','gba/ui.lua','gba/policy.lua','gba/runtime.lua',selected.profile,selected.assets,selected.world}
+ local paths={'main.lua','session.lua','session_engine.lua','session_menu.lua','session_locales.lua','catalog.lua','rom_requirements.lua','cache_codec.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua','gba/ui.lua','gba/policy.lua','gba/runtime.lua',selected.profile,selected.assets,selected.world}
  if selected.authored then paths[#paths+1]=selected.authored;paths[#paths+1]='authored.lua' end
  if language=='pt-BR' then
   paths[#paths+1]='ptbr_moves.lua';paths[#paths+1]='ptbr_names.lua';paths[#paths+1]='ptbr_graphics.lua'

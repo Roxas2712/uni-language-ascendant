@@ -1,0 +1,21 @@
+{
+  "version": "1.8.0",
+  "status": "passed",
+  "archive": "uni-language-ascendant-1.8.0.zip",
+  "archiveSha256": "26a6d99c467057763a0ecf2a0f4f7e49333cba041a015e1caa2ca8eed0f12936",
+  "archiveBytes": 12893259,
+  "entries": 641,
+  "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+  "previousVersion": "1.7.0",
+  "previousArchiveSha256": "7187303bd4004405ff88ee8e333294d73235046e849b32ba3fbc1d490ed9c99b",
+  "testDriverSha256": "1539bdb359ac498893281e632ef5e339bdf1d96385c5681dcff0a4a78d78eb2e",
+  "testLogSha256": "cc39056cb6afc4a6c04396faadd734823da5d511ab036328962a0f06b2951860",
+  "checks": [
+    "Stock launcher installs ZIP and all four new session files",
+    "Update from v1.7.0 preserves profile, intro marker, imported input sentinel and interrupted-switch backup",
+    "Uninstall removes personal profile and recovery backup",
+    "Reinstall starts without the old profile or input sentinel",
+    "Separate normal-save sentinel is preserved",
+    "ZIP integrity and runtime payload verified; no source ROMs or saves included"
+  ]
+}

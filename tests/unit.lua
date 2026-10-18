@@ -41,7 +41,7 @@ local loadMod=dofile(root..'/mod/main.lua')
 require('src.core.GameVersion').set('leafgreen')
 local function mainMod(info,read)
  return {exports={},log={warn=function() end},imports={info=function() return info end,read=read},
-  read=function(_,file) if file=='startup.lua' then return "return function() return 'de' end" end;local f=assert(io.open(root..'/mod/'..file));local s=f:read('*a');f:close();return s end}
+  read=function(_,file) if file=='session.lua' then return 'return function()return{install=function()end}end' end;if file=='startup.lua' then return "return function() return 'de' end" end;local f=assert(io.open(root..'/mod/'..file));local s=f:read('*a');f:close();return s end}
 end
 local no=mainMod(nil,function() error('missing ROM was read') end)
 loadMod(no);assert(no.exports.status=='needs_import','missing source state')

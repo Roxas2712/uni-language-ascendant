@@ -32,7 +32,7 @@ for game,lang in [('gold','ko'),('silver','ko'),('crystal','ja')]:
  for row in latin:
   value=row['text'].split(' :: ',1)[1]
   import re
-  ordinary=re.sub(r'<[^>]+>|FPS|HZ|PP|kg','',value)
+  ordinary=re.sub(r'<[^>]+>|ASCENDANT|FPS|HZ|PP|kg','',value)
   assert not re.search('[A-Za-z]{2,}',ordinary),(game,'Visible untranslated UI',value)
  assert 'ASIAN_REAL_CREDITS_OK'in checked(game,'credits')
  for mode,marker in [('switch-request','ASIAN_SWITCH_REQUEST_OK'),('switch-english','ASIAN_SWITCH_ENGLISH_OK')]:checked(game,mode,marker)

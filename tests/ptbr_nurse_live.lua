@@ -8,7 +8,7 @@ return function(game,capture,lang)
  if #game.session.party==0 then assert(Party.giveMon(game.session,1,15,nil,{fixedPersonality=0})) end
  local mon=game.session.party[1];mon.hp=1
  local version=require('src.core.GameVersion').get()
- local key=(version=='ruby' or version=='sapphire') and 'gText_NurseJoy_ThankYouForWaiting' or 'gText_RestoredPkmnToFullHealth'
+ local key=(version=='ruby' or version=='sapphire') and 'gText_NurseJoy_ThankYouForWaiting' or (version=='firered'or version=='leafgreen')and'Text_RestoredPkmnToFullHealth'or'gText_RestoredPkmnToFullHealth'
  local expected=require('src.core.game3.rom_text').plain(key)
  local tail=assert(expected:match('([^\n]+)%s*$')):gsub('%s+',' ')
  local seen,shot={},false

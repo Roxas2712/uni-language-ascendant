@@ -6,7 +6,8 @@ local function check(opts)
  local schema
  local selected,events={},{}
  local saves=0
- local game={draw=function() end,update=function() end,mods={modOptions={}},options={}}
+ local ticks,draws=0,0
+ local game={draw=function() draws=draws+1 end,update=function() ticks=ticks+1 end,mods={modOptions={}},options={}}
  local originalUpdate=game.update
  local Save={loadOptions=function() return {unrelated='keep',modOptions={other={x=7}}} end,defaultOptions=function()return {}end,
   saveOptions=function(value) assert(value.unrelated=='keep' and value.modOptions.other.x==7);saves=saves+1;return true end}
@@ -37,7 +38,7 @@ local function check(opts)
  mod.exports.language=language;mod.exports.status=language=='en' and 'english' or 'active'
  events['game.ready']()
  local ui=mod.exports.startup
- return {ui=ui,language=language,game=game,original=originalUpdate,store=store,schema=schema,restarts=function()return restarts end,saves=function()return saves end,events=events}
+ return {ui=ui,language=language,game=game,original=originalUpdate,store=store,schema=schema,restarts=function()return restarts end,saves=function()return saves end,events=events,ticks=function()return ticks end,draws=function()return draws end}
 end
 local a=check({language='auto'})
 assert(a.ui.stage=='menu' and a.ui.chooseMenu('ja') and a.ui.stage=='game' and a.store['preferences/ui-language.txt']=='ja')
@@ -107,3 +108,15 @@ local shared=check({game='sapphire',realCatalog=true,ruby_ptbr=true})
 assert(choice(shared.ui,'pt-BR').available,'Sapphire shared source must enable PT-BR')
 for id,strings in pairs(locales) do for key in pairs(locales.en) do assert(type(strings[key])=='string',id..'/'..key) end end
 print('DISABLED_LANGUAGES_UNIT_OK all 11 editions, missing imports, unsupported profiles, keyboard/controller rejection, shared source, ten locale keys')
+
+-- Other mods can wrap the picker callbacks before it closes. Their wrappers
+-- must survive; the retired picker must then delegate to normal gameplay.
+local late=check({language='en'});late.ui.chooseMenu('en')
+local update,draw=late.game.update,late.game.draw
+local outerUpdate=function(g,dt)return update(g,dt)end
+local outerDraw=function(g)return draw(g)end
+late.game.update,late.game.draw=outerUpdate,outerDraw
+assert(late.ui.choose('en')and late.game.update==outerUpdate and late.game.draw==outerDraw)
+late.game:update(1/60);late.game:draw()
+assert(late.ticks()==1 and late.draws()==1,'Closed startup picker blocked a later session wrapper')
+print('STARTUP_LAYERING_UNIT_OK late update/draw wrappers keep working after picker close')

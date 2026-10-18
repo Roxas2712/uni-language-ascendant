@@ -1,2309 +1,976 @@
 {
-  "version": "1.7.0",
+  "version": "1.8.0",
   "status": "passed-scoped-integration",
-  "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-  "testIncidents": [
-    "The first PT-BR reference attempt lacked local baseline evidence; references were regenerated from committed 1.5.2. A retained test cache then violated the cold-start assertion; the isolated runner now explicitly invalidates indexes for cold/reference runs and preserves them for comparison.",
-    "One initial Red language-picker invocation observed a closed picker. An unchanged direct diagnostic, an unchanged direct picker check and the full repeated matrix passed. The initial cause was not established."
-  ],
-  "sources": {
-    "europeanPreview5": "9e846d9",
-    "ptbr1_5_2": "e79e37d",
-    "releasedMainEquivalentTree": "2c274e3",
-    "historicalReports": [
-      "EUROPE-QA.json: 1.4.3-europe-preview.5",
-      "PT-BR.html and docs/PT-BR-QA.json: 1.5.1",
-      "docs/Release-1.5.2.json: picker-only release checks"
-    ]
-  },
+  "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
   "localizedProfiles": 41,
   "editionCount": 11,
   "fullStoryPlaythrough": false,
-  "freshLiveProcessRuns": 113,
-  "baselineReferenceRuns": 11,
-  "asianReportSha256": "563e34802b1eab1b67825f15114be4622910ae7c4e9751f02534c28d69722a5f",
+  "freshLiveProcessRuns": 28,
+  "handoffProcessRuns": 21,
+  "freshLaunchRecoveryProcessRuns": 6,
+  "firstProfileProcessRuns": 1,
+  "successfulLiveHandoffs": 103,
+  "realHealingInteractionsAfterHandoff": 62,
+  "liveSwitchReportSha256": "fbe7fdef4deb64a670e0e206636245a4baae3b2a9f0a3f9a9bff3248f93403cd",
+  "regressionBaseline": {
+    "path": "docs/Regression-Baseline-1.8.json",
+    "sha256": "5e3b60b008132d37b75e05e45ed1f2a0071b20fc4f5f0435ef1bf43c7fafda3f",
+    "runtimePayloadSha256": "33ad3c34b7392ec21bd0591b74bfa016b9f2d6eb6165d8e32e223b81add66557",
+    "isolatedProcessRuns": 113,
+    "referenceRuns": 11,
+    "scope": "The full translation/graphics regression passed on this exact pre-final runtime. Its source hashes are retained. It is not relabelled as 113 new runs of the final runtime."
+  },
+  "finalRuntimeDelta": {
+    "overlay.lua": {
+      "before": "4dfafefcc50e68ad360adc908b71ebd2e4160daaa9b48754805c04969f04b655",
+      "after": "1ce885347b9d753e3c2b05d3f8820fddfa65eba38f4415d132af7ff3c0c9d81c"
+    },
+    "session.lua": {
+      "before": "d8b8fb16a08d2522235b098df0738db32bca206e063d1e086f4e3f92184e9588",
+      "after": "f109c995757ce1145686346422a948c5bdde7fb258a0c26b3103c90ce18272b0"
+    },
+    "session_engine.lua": {
+      "before": "76e6f2b880a691940c566a80ced85bd8ed50a90f7f435fca12679fb541c689fb",
+      "after": "a7eb8e1ef09164522273aef9b64ddb7c2d0744bc8c42bcffbd0caa7a24c6ce14"
+    },
+    "session_menu.lua": {
+      "before": "787cd6e055a159a574d71a519176604207b1e1ad9c111989e3ef955a662160c4",
+      "after": "248e591078b9a6735e752fd21d6f84e33306cbc62779f14456ad0c17028cb387"
+    },
+    "startup.lua": {
+      "before": "cada1b93c5a0cf3033b0fd17bcf2416c56e3459c8f71669d85bd6b76645726ca",
+      "after": "05e0a1bcabd14ee90636c82aaf3c973c6ca19d5dd28610f05a3eb3e5d10ad1b1"
+    }
+  },
+  "finalRuntimeDeltaScope": [
+    "Promote only UNI-LANGUAGE to the shared KASC root while preserving the other host entries",
+    "Clear stale held/queued inputs when entering or leaving the language UI",
+    "Closed startup callbacks delegate correctly through later mod/session wrappers",
+    "Reinstall localized native Gen3 UI consumers after their modules are replaced; keep process-wide readers installed once; drop retired GBA payloads",
+    "Flush retired LuaJIT traces only at the completed language-session boundary",
+    "Fall back to English for an invalid stored menu locale; keep the completed startup locale and re-read current profile before persisting a live change",
+    "Exclude time spent outside the application when recovering an interrupted handoff"
+  ],
   "checks": [
     {
-      "game": "firered",
-      "language": "de",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-de-gba-cold.log",
-      "seconds": 12.69,
-      "coverage": {
-        "authored": [],
-        "translated": 9063,
-        "creditRows": 43,
-        "cacheKey": "2d244b6edc7dc871b78bfc2197281fb9fca571b0f413d6f2165205e64672af2e",
-        "game": "firered",
-        "nativeStringOverrides": 8,
-        "uiKeys": 245,
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "total": 9066,
-        "language": "de",
-        "mode": "cold",
-        "missing": []
-      },
-      "logSha256": "1515ce095044a30f78d6958c662d3df7abe68f00e2542930ef27ce2d235916d3",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "de",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-de-gba-warm.log",
-      "seconds": 5.08,
-      "coverage": {
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "creditRows": 43,
-        "mode": "warm",
-        "authored": [],
-        "game": "firered",
-        "translated": 9063,
-        "missing": [],
-        "uiKeys": 245,
-        "nativeStringOverrides": 8,
-        "cacheKey": "2d244b6edc7dc871b78bfc2197281fb9fca571b0f413d6f2165205e64672af2e",
-        "language": "de",
-        "total": 9066
-      },
-      "logSha256": "4a5b79eccb4e793e4f5b720741db5bdd481b11f9ad11fb5fc57ca3829ffddbe1",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "es",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-es-gba-cold.log",
-      "seconds": 7.87,
-      "coverage": {
-        "authored": [],
-        "creditRows": 43,
-        "game": "firered",
-        "uiKeys": 245,
-        "nativeStringOverrides": 5,
-        "missing": [],
-        "translated": 9063,
-        "cacheKey": "0780e0ff0bb4d212d12b335691a23d6df676e873eb47cc1c6d995812b3ae05d0",
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "language": "es",
-        "mode": "cold",
-        "total": 9066,
-        "covered": 9066,
-        "retainedProperNames": []
-      },
-      "logSha256": "eab98f62be8f30aab02d4c999859e2b28723ad8e0c88a9377fb1d32b29c5a7e2",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "es",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-es-gba-warm.log",
-      "seconds": 5.94,
-      "coverage": {
-        "translated": 9063,
-        "cacheKey": "0780e0ff0bb4d212d12b335691a23d6df676e873eb47cc1c6d995812b3ae05d0",
-        "total": 9066,
-        "nativeStringOverrides": 5,
-        "mode": "warm",
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "creditRows": 43,
-        "language": "es",
-        "uiKeys": 245,
-        "missing": [],
-        "game": "firered",
-        "authored": []
-      },
-      "logSha256": "34b993e8ec764e19e622c9e5bb0633c18864ca55a549253b19ca0c0ad488f165",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "it",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-it-gba-cold.log",
-      "seconds": 9.2,
-      "coverage": {
-        "game": "firered",
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "cacheKey": "5439b411cf49e2da89e68b124b934dde5c45dda102b9bd95896df1b5e57d3e67",
-        "mode": "cold",
-        "creditRows": 43,
-        "authored": [],
-        "translated": 9063,
-        "nativeStringOverrides": 8,
-        "uiKeys": 245,
-        "missing": [],
-        "total": 9066,
-        "language": "it"
-      },
-      "logSha256": "5275ad918af7da520ec34c71b209b7cb1116cf247c2a55b1f7e86be2d8359343",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "it",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-it-gba-warm.log",
-      "seconds": 6.68,
-      "coverage": {
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "cacheKey": "5439b411cf49e2da89e68b124b934dde5c45dda102b9bd95896df1b5e57d3e67",
-        "missing": [],
-        "mode": "warm",
-        "authored": [],
-        "translated": 9063,
-        "uiKeys": 245,
-        "nativeStringOverrides": 8,
-        "creditRows": 43,
-        "game": "firered",
-        "total": 9066,
-        "language": "it",
-        "covered": 9066,
-        "retainedProperNames": []
-      },
-      "logSha256": "48abf213036e08b212125d29b0b52423d41c924bccd72551796d6eb4efcf6dd1",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "de",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-de-gba-cold.log",
-      "seconds": 9.99,
-      "coverage": {
-        "authored": [],
-        "cacheKey": "4810c3fab57413f46c7a9e42e9360cfec89b9d9d3ea214d4a69acb9d70926c33",
-        "language": "de",
-        "total": 9066,
-        "uiKeys": 245,
-        "nativeStringOverrides": 8,
-        "missing": [],
-        "translated": 9063,
-        "mode": "cold",
-        "creditRows": 43,
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "game": "leafgreen",
-        "covered": 9066,
-        "retainedProperNames": []
-      },
-      "logSha256": "9e288cc668ced1bd0a041cbfba04aa55ceb11cb16fadb7147af646110064e957",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "de",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-de-gba-warm.log",
-      "seconds": 5.8,
-      "coverage": {
-        "language": "de",
-        "total": 9066,
-        "creditRows": 43,
-        "uiKeys": 245,
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "mode": "warm",
-        "authored": [],
-        "game": "leafgreen",
-        "cacheKey": "4810c3fab57413f46c7a9e42e9360cfec89b9d9d3ea214d4a69acb9d70926c33",
-        "nativeStringOverrides": 8,
-        "translated": 9063,
-        "missing": []
-      },
-      "logSha256": "378ed0726e886f4f723180566f55d415416239374f7149449e17aeab8d943398",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "es",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-es-gba-cold.log",
-      "seconds": 10.52,
-      "coverage": {
-        "uiKeys": 245,
-        "nativeStringOverrides": 5,
-        "mode": "cold",
-        "creditRows": 43,
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "cacheKey": "b2b81fe69a7c0dde66ce7f318010ea7d4aed3fd3b22b1de17f17afe7adf36d05",
-        "total": 9066,
-        "language": "es",
-        "missing": [],
-        "authored": [],
-        "translated": 9063,
-        "game": "leafgreen"
-      },
-      "logSha256": "1711aee16c904c0ef8d96784cea6b923c4960ac36129e587eac1b2a2994ce799",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "es",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-es-gba-warm.log",
-      "seconds": 5.92,
-      "coverage": {
-        "total": 9066,
-        "mode": "warm",
-        "covered": 9066,
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "nativeStringOverrides": 5,
-        "cacheKey": "b2b81fe69a7c0dde66ce7f318010ea7d4aed3fd3b22b1de17f17afe7adf36d05",
-        "creditRows": 43,
-        "uiKeys": 245,
-        "game": "leafgreen",
-        "missing": [],
-        "language": "es",
-        "translated": 9063,
-        "authored": []
-      },
-      "logSha256": "93bbc99f1dd6ad94e6bfef3a980183d68a74bf766620da8f99e4b56771a10746",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "fr",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-fr-gba-cold.log",
-      "seconds": 10.87,
-      "coverage": {
-        "uiKeys": 245,
-        "mode": "cold",
-        "language": "fr",
-        "retainedProperNames": [],
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ],
-        "cacheKey": "4468ee5dd912d0512be15975b7a4251909aeb79ad6485cbef48f7fb74e506e93",
-        "game": "leafgreen",
-        "missing": [],
-        "authored": [],
-        "translated": 9063,
-        "covered": 9066,
-        "nativeStringOverrides": 6,
-        "creditRows": 43,
-        "total": 9066
-      },
-      "logSha256": "030b83dbd7774267dec7339ee15929c2d5c339a6eb04f7712d8bbbea7d33e4e2",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "fr",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-fr-gba-warm.log",
-      "seconds": 6.31,
-      "coverage": {
-        "covered": 9066,
-        "retainedProperNames": [],
-        "total": 9066,
-        "authored": [],
-        "cacheKey": "4468ee5dd912d0512be15975b7a4251909aeb79ad6485cbef48f7fb74e506e93",
-        "language": "fr",
-        "nativeStringOverrides": 6,
-        "translated": 9063,
-        "game": "leafgreen",
-        "creditRows": 43,
-        "missing": [],
-        "uiKeys": 245,
-        "mode": "warm",
-        "inapplicable": [
-          "sPluralTxt",
-          "sText_IES",
-          "sText_S"
-        ]
-      },
-      "logSha256": "91d65603560be471739966bb8fed3c5d556f86d857fc76c5da5e6ee4940f6023",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "ruby",
-      "language": "de",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "ruby-de-gba-cold.log",
-      "seconds": 11.07,
-      "coverage": {
-        "total": 13457,
-        "mode": "cold",
-        "cacheKey": "a7345613671e6e2bae0b375c260e9cf024893bb0b1290a32ceee1dfc5d671531",
-        "creditRows": 245,
-        "translated": 13443,
-        "nativeStringOverrides": 3,
-        "game": "ruby",
-        "uiKeys": 245,
-        "authored": [
-          "Text_Version"
-        ],
-        "missing": [],
-        "language": "de",
-        "covered": 13457,
-        "retainedProperNames": [
-          "Text_ABA",
-          "Text_Fujihara",
-          "Text_Hertzog",
-          "Text_Howitt",
-          "Text_Lillygren",
-          "Text_Maurer",
-          "Text_McMahill",
-          "Text_NFotB",
-          "Text_Ogasawara",
-          "Text_Okada",
-          "Text_RNZFotB",
-          "Text_Ridgeway",
-          "Text_Tilden"
-        ],
-        "inapplicable": []
-      },
-      "logSha256": "cbcb9e5c0e566ca9dc8f21cc44067e107213aa8cada1c921ee11e3603dbb5e64",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "ruby",
-      "language": "de",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "ruby-de-gba-warm.log",
-      "seconds": 7.09,
-      "coverage": {
-        "authored": [
-          "Text_Version"
-        ],
-        "cacheKey": "a7345613671e6e2bae0b375c260e9cf024893bb0b1290a32ceee1dfc5d671531",
-        "retainedProperNames": [
-          "Text_ABA",
-          "Text_Fujihara",
-          "Text_Hertzog",
-          "Text_Howitt",
-          "Text_Lillygren",
-          "Text_Maurer",
-          "Text_McMahill",
-          "Text_NFotB",
-          "Text_Ogasawara",
-          "Text_Okada",
-          "Text_RNZFotB",
-          "Text_Ridgeway",
-          "Text_Tilden"
-        ],
-        "inapplicable": [],
-        "language": "de",
-        "game": "ruby",
-        "uiKeys": 245,
-        "covered": 13457,
-        "nativeStringOverrides": 3,
-        "creditRows": 245,
-        "missing": [],
-        "translated": 13443,
-        "mode": "warm",
-        "total": 13457
-      },
-      "logSha256": "8e129bca1332dc04f64abf61ce47a8a2e05a94c1cfc0100b7f588fedfe05e81c",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "sapphire",
-      "language": "de",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "sapphire-de-gba-cold.log",
-      "seconds": 10.75,
-      "coverage": {
-        "authored": [
-          "Category_EnglishVersionCoordinators",
-          "Category_NOAProductTesting",
-          "Category_Translator",
-          "Text_Version"
-        ],
-        "uiKeys": 245,
-        "creditRows": 245,
-        "inapplicable": [],
-        "covered": 13457,
-        "retainedProperNames": [
-          "Text_ABA",
-          "Text_Fujihara",
-          "Text_Hertzog",
-          "Text_Howitt",
-          "Text_Lillygren",
-          "Text_Maurer",
-          "Text_McMahill",
-          "Text_NFotB",
-          "Text_Ogasawara",
-          "Text_Okada",
-          "Text_RNZFotB",
-          "Text_Ridgeway",
-          "Text_Tilden"
-        ],
-        "language": "de",
-        "cacheKey": "602faa04f79b9095b5281f9cad06d0a7a9fcba5ba0c4441881b6da6e3f08f6a8",
-        "total": 13457,
-        "nativeStringOverrides": 3,
-        "missing": [],
-        "game": "sapphire",
-        "mode": "cold",
-        "translated": 13440
-      },
-      "logSha256": "f772d11ad764561cd5ba6442baa616dcbc634e0c603d7f409b5ee743be143be2",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "sapphire",
-      "language": "de",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "sapphire-de-gba-warm.log",
-      "seconds": 6.7,
-      "coverage": {
-        "authored": [
-          "Category_EnglishVersionCoordinators",
-          "Category_NOAProductTesting",
-          "Category_Translator",
-          "Text_Version"
-        ],
-        "nativeStringOverrides": 3,
-        "covered": 13457,
-        "retainedProperNames": [
-          "Text_ABA",
-          "Text_Fujihara",
-          "Text_Hertzog",
-          "Text_Howitt",
-          "Text_Lillygren",
-          "Text_Maurer",
-          "Text_McMahill",
-          "Text_NFotB",
-          "Text_Ogasawara",
-          "Text_Okada",
-          "Text_RNZFotB",
-          "Text_Ridgeway",
-          "Text_Tilden"
-        ],
-        "inapplicable": [],
-        "mode": "warm",
-        "creditRows": 245,
-        "total": 13457,
-        "cacheKey": "602faa04f79b9095b5281f9cad06d0a7a9fcba5ba0c4441881b6da6e3f08f6a8",
-        "language": "de",
-        "uiKeys": 245,
-        "translated": 13440,
-        "missing": [],
-        "game": "sapphire"
-      },
-      "logSha256": "ee839d71747dd6a470195909dc242a9c95b9107e3c7d2d036664895a5008385e",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "de",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-de-gba-cold.log",
-      "seconds": 13.16,
-      "coverage": {
-        "cacheKey": "f3b5665b1f89c8be937445cabbae2b2f4a473951236c154829347550ad47299b",
-        "creditRows": 275,
-        "translated": 15653,
-        "mode": "cold",
-        "authored": [],
-        "nativeStringOverrides": 8,
-        "uiKeys": 245,
-        "missing": [],
-        "inapplicable": [],
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "covered": 15655,
-        "game": "emerald",
-        "language": "de",
-        "total": 15655
-      },
-      "logSha256": "a3cb179744a3aef87b1796a80d38f75a8be2ddb49d92963190d74051f4c56362",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "de",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-de-gba-warm.log",
-      "seconds": 7.67,
-      "coverage": {
-        "mode": "warm",
-        "cacheKey": "f3b5665b1f89c8be937445cabbae2b2f4a473951236c154829347550ad47299b",
-        "uiKeys": 245,
-        "nativeStringOverrides": 8,
-        "creditRows": 275,
-        "translated": 15653,
-        "authored": [],
-        "language": "de",
-        "covered": 15655,
-        "inapplicable": [],
-        "game": "emerald",
-        "missing": [],
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "total": 15655
-      },
-      "logSha256": "b1dc6b284b01e4a7348115ef8f4ef3f5eab2162a24717b900b98c785297400a4",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "es",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-es-gba-cold.log",
-      "seconds": 15.82,
-      "coverage": {
-        "nativeStringOverrides": 8,
-        "translated": 15653,
-        "mode": "cold",
-        "authored": [],
-        "cacheKey": "a79a5b039a36769397fa1c5eee2a0b21b2d1a0e398634c07382964d7625416f3",
-        "creditRows": 275,
-        "covered": 15655,
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "inapplicable": [],
-        "missing": [],
-        "game": "emerald",
-        "language": "es",
-        "total": 15655,
-        "uiKeys": 245
-      },
-      "logSha256": "aaee50a3ea04052f8d291d1de4554f9f24c578edc3c3af73a9421b69de131646",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "es",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-es-gba-warm.log",
-      "seconds": 9.37,
-      "coverage": {
-        "authored": [],
-        "language": "es",
-        "creditRows": 275,
-        "translated": 15653,
-        "inapplicable": [],
-        "missing": [],
-        "uiKeys": 245,
-        "nativeStringOverrides": 8,
-        "total": 15655,
-        "game": "emerald",
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "covered": 15655,
-        "cacheKey": "a79a5b039a36769397fa1c5eee2a0b21b2d1a0e398634c07382964d7625416f3",
-        "mode": "warm"
-      },
-      "logSha256": "7a254612e13488faba6f565862f68c34240cf0bf5e901671d3608fb668cd06dd",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "fr",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-fr-gba-cold.log",
-      "seconds": 12.15,
-      "coverage": {
-        "mode": "cold",
-        "cacheKey": "50609f57a2e2f0d7111cbe184d1c8e1a87874c9c2e32bc5d6455951ec542b529",
-        "creditRows": 275,
-        "nativeStringOverrides": 10,
-        "uiKeys": 245,
-        "translated": 15653,
-        "authored": [],
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "inapplicable": [],
-        "language": "fr",
-        "total": 15655,
-        "missing": [],
-        "game": "emerald",
-        "covered": 15655
-      },
-      "logSha256": "b46d0adc0e8772b3160e9d6e9072d4efe8badf30ed2d85d34a7254b8fe30bd4a",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "fr",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-fr-gba-warm.log",
-      "seconds": 8.46,
-      "coverage": {
-        "total": 15655,
-        "uiKeys": 245,
-        "covered": 15655,
-        "cacheKey": "50609f57a2e2f0d7111cbe184d1c8e1a87874c9c2e32bc5d6455951ec542b529",
-        "translated": 15653,
-        "creditRows": 275,
-        "language": "fr",
-        "game": "emerald",
-        "nativeStringOverrides": 10,
-        "missing": [],
-        "authored": [],
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "inapplicable": [],
-        "mode": "warm"
-      },
-      "logSha256": "b5c8616d5597b84cbd4a8c3e29dd1ce8399686afc4736e919ea57e55e42d97f1",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "it",
-      "mode": "cold",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-it-gba-cold.log",
-      "seconds": 14.8,
-      "coverage": {
-        "creditRows": 275,
-        "inapplicable": [],
-        "covered": 15655,
-        "mode": "cold",
-        "translated": 15653,
-        "nativeStringOverrides": 8,
-        "total": 15655,
-        "authored": [],
-        "missing": [],
-        "game": "emerald",
-        "uiKeys": 245,
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "language": "it",
-        "cacheKey": "01e818635cac6a85ef35d25a3f63278a8edf4122d40c8628458db8953905bdab"
-      },
-      "logSha256": "f6ea97844d22cbbd81483bab9f2e30a81d897dfeecfc9b34e19505e684bac66a",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "it",
-      "mode": "warm",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-it-gba-warm.log",
-      "seconds": 8.39,
-      "coverage": {
-        "game": "emerald",
-        "cacheKey": "01e818635cac6a85ef35d25a3f63278a8edf4122d40c8628458db8953905bdab",
-        "creditRows": 275,
-        "retainedProperNames": [
-          "sCreditsText_NicolaPrattBarlow",
-          "sCreditsText_RoyalNewZealandFederationBlind"
-        ],
-        "language": "it",
-        "covered": 15655,
-        "nativeStringOverrides": 8,
-        "uiKeys": 245,
-        "total": 15655,
-        "authored": [],
-        "inapplicable": [],
-        "mode": "warm",
-        "translated": 15653,
-        "missing": []
-      },
-      "logSha256": "b77981f3aa30c4d5af035ddbca6b7fc1953a6a5007a8e671a2eed152071e8938",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "de",
-      "mode": "english",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-de-gba-english.log",
-      "seconds": 2.51,
-      "logSha256": "2826f011170430cd849d0f0cf26b71ecd493e178c871dcc6c92f03202d725152",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "firered",
-      "language": "de",
-      "mode": "disabled",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "firered-de-gba-disabled.log",
-      "seconds": 1.88,
-      "logSha256": "c571167823135a97bc975db9125ece5e7dee00b03f91441cd6ebf7d962720987",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "de",
-      "mode": "english",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-de-gba-english.log",
-      "seconds": 2.22,
-      "logSha256": "d6fdfb7b2a06e426876ccf469d9c54f0b289a6441cf35721cfcdd213dbab64c8",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "leafgreen",
-      "language": "de",
-      "mode": "disabled",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "leafgreen-de-gba-disabled.log",
-      "seconds": 2.22,
-      "logSha256": "ae73f3556d90a28b3fb193d3e0b6e41ae4d0b97a0ad1ca1beab5150481d32ee4",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "ruby",
-      "language": "de",
-      "mode": "english",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "ruby-de-gba-english.log",
-      "seconds": 3.12,
-      "logSha256": "c43d037ce795658831ee6a6cb44a2b3da59f17a7c677560c3cab6aa1d0e1c088",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "ruby",
-      "language": "de",
-      "mode": "disabled",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "ruby-de-gba-disabled.log",
-      "seconds": 2.16,
-      "logSha256": "1eaa5a839ae87cdd322f84879c1126c5d90112573822d86bbc728d98554d04c9",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "sapphire",
-      "language": "de",
-      "mode": "english",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "sapphire-de-gba-english.log",
-      "seconds": 3.11,
-      "logSha256": "44c0242b79e2480a39b5d359869b9c9b6db7ae01efdbbad14140de93ab0c97f6",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "sapphire",
-      "language": "de",
-      "mode": "disabled",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "sapphire-de-gba-disabled.log",
-      "seconds": 2.54,
-      "logSha256": "ab8d7dc9725b00665cd77cc68c853232dda85684bd02da6e52a9dd0fc7481cda",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "de",
-      "mode": "english",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-de-gba-english.log",
-      "seconds": 2.58,
-      "logSha256": "959988e7d5c66706e80751c276deb65c4ff60ebfdb0ea18cd781177f36c4e32d",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "emerald",
-      "language": "de",
-      "mode": "disabled",
-      "passed": true,
-      "fingerprint": "4e013bdfb66132330a33c3ce7ac4e39816ff573452287b6aef8a80a1eff63076",
-      "log": "emerald-de-gba-disabled.log",
-      "seconds": 2.02,
-      "logSha256": "c9cac1bd46892fd49645baa3e721b57c250413415a3a6ebb4d72fa5848bb549d",
-      "suite": "European GBA",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
       "game": "red",
-      "language": "es",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "red-es-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 1.8,
-      "logSha256": "1ff9efac36d9a17a8390f384ebb8f03d70815e388d7c9aa4d82cdcfb86b8ef9c",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "yellow",
-      "language": "es",
-      "passed": true,
-      "log": "yellow-es-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 1.76,
-      "logSha256": "5c24e1d0dd72abae600f3cde4cf2eb4f759d940d138e8d7c94b1102982996c9a",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "gold",
-      "language": "es",
-      "passed": true,
-      "log": "gold-es-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.52,
-      "logSha256": "8225c13d9c967d890fa796b23359b5d58e7810b63512ea770a5aa5f3b507592a",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "gold",
-      "language": "fr",
-      "passed": true,
-      "log": "gold-fr-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.25,
-      "logSha256": "8b0c6e58d4d6e15dee840b183278c25278b573ecd98a407009b014c05fbdc297",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "gold",
-      "language": "it",
-      "passed": true,
-      "log": "gold-it-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.17,
-      "logSha256": "89be53193ad70a2e692020230986be0081f64c7a07c728f091d2b95285132620",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "silver",
-      "language": "es",
-      "passed": true,
-      "log": "silver-es-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.12,
-      "logSha256": "8ed24acbb8abf8afc4512dbc1655476deec351c5f8328896113903b44039217b",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "silver",
-      "language": "fr",
-      "passed": true,
-      "log": "silver-fr-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.97,
-      "logSha256": "4c4bd81c561dcc84fd10ee3076b8c5312af556844e108f0f5506dbe84195d9f0",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "crystal",
-      "language": "es",
-      "passed": true,
-      "log": "crystal-es-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.6,
-      "logSha256": "59d6e7f07f804878c7e6a73dd853cee52694b12ceeb4984c25d53a8f3176c996",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "crystal",
-      "language": "it",
-      "passed": true,
-      "log": "crystal-it-europe-catalog.log",
-      "fingerprint": "f3365a064d3b27081f36e0ff37b42bbcb5e35364b54967db41e18b5d6596e313",
-      "seconds": 2.14,
-      "logSha256": "073af6f6fc0b8b14cfd6b3f79a51ccb6ad541e73e2ad39f671d0164bbb979358",
-      "suite": "European GB/GBC catalog and rendering",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74"
-    },
-    {
-      "game": "red",
-      "language": "pt-BR",
-      "mode": "cold",
-      "passed": true,
-      "log": "red-ptbr-cold.log",
-      "logSha256": "e374743bfdbc1b0e1db10d5092b7b1149a380b83906f4ba11a1899084ce13f15",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "red",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "red-ptbr-warm.log",
-      "logSha256": "aac7377e188294c4ffacead948eb139541bbbf3ea708ceeac67a71a79f2fe756",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 58.831,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "red-bare-all.log",
+      "logSha256": "91084a365fb362cc68dde2811d061e7d548844e9a193ad779ddefa69dd57a9f5",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "blue",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "blue-ptbr-cold.log",
-      "logSha256": "6f1412e473ee167ff0e5ac922ddb661fbef8d46441985572a85c681173a20387",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "blue",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "blue-ptbr-warm.log",
-      "logSha256": "90b0e93af13f07d371f77e4ad2e3c441e7f9338a8058d8109cc881d0564ed701",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 82.895,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "blue-bare-all.log",
+      "logSha256": "084d4fb5e690923a2d1be88e7575545f169e3b996ee702736062f3242212c607",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "yellow",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "yellow-ptbr-cold.log",
-      "logSha256": "caf47d838a5b4bfd2d9105c5ce003ccfc19c4025109ffb073733f52b39ce75ea",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "yellow",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "yellow-ptbr-warm.log",
-      "logSha256": "2eab5f47caecfc849106d31dbbbe08f72c4889c8d2318738dcc35a4a710b55a8",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 39.962,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "yellow-bare-all.log",
+      "logSha256": "7183d3bded015d5ef3ab3e63bd864c1167f225b9d9fae1fc918089c404a02455",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "gold",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "gold-ptbr-cold.log",
-      "logSha256": "b674557c57bf21fe85f438fdd0e82df63551f233b88cc2bae45b2f2c79f6858d",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "gold",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "gold-ptbr-warm.log",
-      "logSha256": "7471de9cfe9be8b933131625d737e7daf666a7985f306b4a567a29509a9e4df6",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 95.845,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "gold-bare-all.log",
+      "logSha256": "e7486dea6e8fda4eef73affd390eea1274b7f29544a216ff4066c6e026a734e6",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "fr",
+        "it",
+        "ko",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "silver",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "silver-ptbr-cold.log",
-      "logSha256": "828d123f5196480a2228688385e10fbba97274aca8f035aac95f4509128c8d7d",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "silver",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "silver-ptbr-warm.log",
-      "logSha256": "a3cf47cc97edb3fe7704481d04f519e1189e5f9ad70b888b0ce469888fe7ee38",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 87.172,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "silver-bare-all.log",
+      "logSha256": "9ee8519e151fa12d0ffae3ec81d309f6b4f359dff70b76932ecc26c2b6cae830",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "fr",
+        "ko",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "crystal",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "crystal-ptbr-cold.log",
-      "logSha256": "97dbf5061c63e3aa30aa0a14ae0457d77cdcf3fff9ade963647d4a62eac542a9",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "crystal",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "crystal-ptbr-warm.log",
-      "logSha256": "6efd78b8879b0089ae496c7ebe25a42afb8be566e92e9bff7800ed235e453ce1",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 68.604,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "crystal-bare-all.log",
+      "logSha256": "846887772bed76c395f261c3cc2ecc10175ca1b661f7b8c910ff1b1a3e05e09f",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "it",
+        "ja",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "firered",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "firered-ptbr-cold.log",
-      "logSha256": "df2d6b6967eff93e8f7acc5cb94a88cef6d01db52fda1400cf8740af7c7d6092",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "firered",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "firered-ptbr-warm.log",
-      "logSha256": "d88289a21a012f694b4fe6c4006c046c659dc23d710c386b3a6ad7d56ca230e0",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 59.099,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "firered-bare-all.log",
+      "logSha256": "8b6081ef1a885786290a1c24b9b51ed36ed6bd9b493d5b61ce44d2d1d67b1a64",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "it",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "leafgreen",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "leafgreen-ptbr-cold.log",
-      "logSha256": "491a61d6147486a65b818a792a9da60fb256056128bf474c0ed7ffc221c4e88a",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "leafgreen",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "leafgreen-ptbr-warm.log",
-      "logSha256": "acef7d4de0ab58bf7f112b73cb1a3518d857192a9d9e1dcf1ca0349f2d2570a6",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 59.02,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "leafgreen-bare-all.log",
+      "logSha256": "53533dfbb6d8fefe742da77faa6dda82a0f1abe3ca1cfef64ff12ff0a70cb94e",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "fr",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "ruby",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "ruby-ptbr-cold.log",
-      "logSha256": "e62368a91a8b8e300a7989ac08852aefb4d08cc2a3398987903be99bc55a2f00",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "ruby",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "ruby-ptbr-warm.log",
-      "logSha256": "082212dcc50a6facd180333afe3106164f931d09254da5ae371270955b69daa2",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 46.048,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "ruby-bare-all.log",
+      "logSha256": "57261b2aa92d5dad6751923e1db55361ebae1f014a984b98333764e0ced9c29c",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "sapphire",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "sapphire-ptbr-cold.log",
-      "logSha256": "41e3888d74846e75bd0c6880077c7b8d8af268b23269b7207212cfc5d1f8ac07",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "sapphire",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "sapphire-ptbr-warm.log",
-      "logSha256": "6caf8d0270af402671fea23db6256ae7b25e883a831a56fb9ff5e5b7c37938c4",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 65.574,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "sapphire-bare-all.log",
+      "logSha256": "1d0d149c9a9d5d1a0b186d80a459e8a9e492c4db9d39fed4bf797f837042e395",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "emerald",
-      "language": "pt-BR",
-      "mode": "cold",
+      "mods": [],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": true,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "emerald-ptbr-cold.log",
-      "logSha256": "aa4fdb711437bd81d2692c5ddbd9ce48d455b43210dcd9bb8c26a234f38b74ee",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "emerald",
-      "language": "pt-BR",
-      "mode": "warm",
-      "passed": true,
-      "log": "emerald-ptbr-warm.log",
-      "logSha256": "1862b904663ab203183a045d27f05e7b3fe4490816e2d111ee76e4bb81d2885f",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "merged_snapshot_live.lua",
-      "driverSha256": "d055465fcff03eb825f471519b4db37e29f0d9726ded91e7f68c15746cb6924e",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 138.224,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "emerald-bare-all.log",
+      "logSha256": "f7d0a98fe125a9cb9c7dc7cbeb495e5a4e7c67ef29a48e4700b3e07a6eaaf5ab",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "es",
+        "fr",
+        "it",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "red",
-      "language": "pt-BR",
-      "mode": "live",
+      "mods": [
+        "vasc",
+        "kasc"
+      ],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "red-ptbr-live.log",
-      "logSha256": "6b6727d6a4a588d21bf0cdbc4626643c2358ec091797b4d327c577b875ba3192",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "gen1_ptbr_live.lua",
-      "driverSha256": "367144b178b3c715986465199fab6cc39d0f0c81d728fb5c0a27d18426ba2947",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 438.115,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "red-vasc-kasc.log",
+      "logSha256": "3b5c82e2892c24f10f3f51631bac2e37c6eb89b75f3c6c0e7839e401bd9981b5",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0",
+        "kanto_ascendant": "6.7.16",
+        "VOXEL_ASCENDANT": "3.0.33"
+      },
+      "menuRoute": "Kanto Ascendant\t7"
     },
     {
       "game": "gold",
-      "language": "pt-BR",
-      "mode": "live",
+      "mods": [
+        "vasc",
+        "kasc"
+      ],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "gold-ptbr-live.log",
-      "logSha256": "46c731ee851f34eefedd13a76cdce4a65c76ea1f9fbebc0ade97129aedf1f6e6",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "gen2_ptbr_live.lua",
-      "driverSha256": "28c48136f295a6f6dad9372b2f1c7f4807ad526ea087063a4dcc65e204f2f798",
-      "suite": "PT-BR integration"
-    },
-    {
-      "game": "emerald",
-      "language": "pt-BR",
-      "mode": "live",
-      "passed": true,
-      "log": "emerald-ptbr-live.log",
-      "logSha256": "f6473e390e5ad7f628eec695dd3005f5a842d6f59845fdbd735b91d1fc5d9c6b",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "languages_live.lua",
-      "driverSha256": "c876e531a2e86f578e84472bf7960e4cd66d39c7317a0d688a258fcd359cfd42",
-      "suite": "PT-BR integration"
+      "exitCode": 0,
+      "seconds": 66.534,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "gold-vasc-kasc.log",
+      "logSha256": "12262b23595157c2a05a635f1348b70e547555e817062924345e8f0602d5b9d6",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "ko",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0",
+        "kanto_ascendant": "6.7.16",
+        "VOXEL_ASCENDANT": "3.0.33"
+      },
+      "menuRoute": "fallback hub\t2"
     },
     {
       "game": "red",
-      "language": "de",
-      "mode": "de-snapshot",
-      "available": "en,de,pt-BR,es",
+      "mods": [
+        "vasc"
+      ],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "red-de-snapshot.log",
-      "logSha256": "35f8ff8c9b02d8e6b55511dd5b715c36c8a89612f9149b8a60fe996ba544223d",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "cache_snapshot.lua",
-      "driverSha256": "480aef84510b9712938b751b0ffa6894ef3cabbc2921b171cd5ed0f6a4c3d694",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "red",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es",
-      "passed": true,
-      "log": "red-picker.log",
-      "logSha256": "054253332285d1a7535c6ac9a9b13cfea58b86cf0bc9b152b61635f39c5d1c6f",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "blue",
-      "language": "de",
-      "mode": "de-snapshot",
-      "available": "en,de,pt-BR",
-      "passed": true,
-      "log": "blue-de-snapshot.log",
-      "logSha256": "09310e9e94bb5cf3e49ba5721361b337d1d1ff93cd061941af5e11497cdb42d1",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "cache_snapshot.lua",
-      "driverSha256": "480aef84510b9712938b751b0ffa6894ef3cabbc2921b171cd5ed0f6a4c3d694",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "blue",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR",
-      "passed": true,
-      "log": "blue-picker.log",
-      "logSha256": "91fd8f4f37e9d9b6c532869641d58dccf43cf77270df06e044b57b23aa78b6ed",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "yellow",
-      "language": "de",
-      "mode": "de-snapshot",
-      "available": "en,de,pt-BR,es",
-      "passed": true,
-      "log": "yellow-de-snapshot.log",
-      "logSha256": "73be2afaaa4d29e6549db8e97051e490fa33af47686bc64fe8745f71b15c6629",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "cache_snapshot.lua",
-      "driverSha256": "480aef84510b9712938b751b0ffa6894ef3cabbc2921b171cd5ed0f6a4c3d694",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "yellow",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es",
-      "passed": true,
-      "log": "yellow-picker.log",
-      "logSha256": "1d28c92e3fd04ddc6d30ea52a5862c5f34070867f928990c762bace879eefcc1",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "gold",
-      "language": "de",
-      "mode": "de-snapshot",
-      "available": "en,de,pt-BR,es,fr,it,ko",
-      "passed": true,
-      "log": "gold-de-snapshot.log",
-      "logSha256": "fe537a090ccccfecd968d8772e4ae8d66d749ed2429b3a2e8722baf58a7f2361",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "cache_snapshot.lua",
-      "driverSha256": "480aef84510b9712938b751b0ffa6894ef3cabbc2921b171cd5ed0f6a4c3d694",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "gold",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es,fr,it,ko",
-      "passed": true,
-      "log": "gold-picker.log",
-      "logSha256": "9906fbbb6355dd77604b9ef35f07a48e184867205df244f630e8fa8dcfe006eb",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "silver",
-      "language": "de",
-      "mode": "de-snapshot",
-      "available": "en,de,pt-BR,es,fr,ko",
-      "passed": true,
-      "log": "silver-de-snapshot.log",
-      "logSha256": "f552e3b30ab586aa31efcf75fdd69285aac706cd077d2b2a0ee554e7942b0327",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "cache_snapshot.lua",
-      "driverSha256": "480aef84510b9712938b751b0ffa6894ef3cabbc2921b171cd5ed0f6a4c3d694",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "silver",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es,fr,ko",
-      "passed": true,
-      "log": "silver-picker.log",
-      "logSha256": "e366a7c8c0c1c5ae586bc8d4f75d188346d1495c9f9a76182b261da376f986a7",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "crystal",
-      "language": "de",
-      "mode": "de-snapshot",
-      "available": "en,de,pt-BR,es,it,ja",
-      "passed": true,
-      "log": "crystal-de-snapshot.log",
-      "logSha256": "7f487bf72b2e56ff549c6cc0cad36bf6a60961fb66c095be509de2995580dc95",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "cache_snapshot.lua",
-      "driverSha256": "480aef84510b9712938b751b0ffa6894ef3cabbc2921b171cd5ed0f6a4c3d694",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "crystal",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es,it,ja",
-      "passed": true,
-      "log": "crystal-picker.log",
-      "logSha256": "75e360173d11e1854a4f19c731b6b06c2c875668e7b2e218be81293be157182a",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "firered",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es,it",
-      "passed": true,
-      "log": "firered-picker.log",
-      "logSha256": "5ca9514e18e3ae11c3f7be87db6032af3f9ab24897aa24c61c53bbb5f9b3a696",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "leafgreen",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR,es,fr",
-      "passed": true,
-      "log": "leafgreen-picker.log",
-      "logSha256": "e66b595ce3e5dd1f0d20269d77db1a8b3a975cafb48e07a83e2762ed957f7479",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "ruby",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR",
-      "passed": true,
-      "log": "ruby-picker.log",
-      "logSha256": "4cc772e8b893b1ee563a19afdb315b45f5d375b6e3670131aa27a26408d05840",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
-    },
-    {
-      "game": "sapphire",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,pt-BR",
-      "passed": true,
-      "log": "sapphire-picker.log",
-      "logSha256": "7d8e78886652c2daf7a149f6b6cc53f93e8afdcc7a1c36ba5494d4b31623a420",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
+      "exitCode": 0,
+      "seconds": 15.15,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "red-vasc.log",
+      "logSha256": "90257764192dd78f9ced63cab1db57ad8c505e10387e026118e412e8c4bbd4b7",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0",
+        "VOXEL_ASCENDANT": "3.0.33"
+      },
+      "menuRoute": "fallback hub\t3"
     },
     {
       "game": "emerald",
-      "language": "en",
-      "mode": "picker",
-      "available": "en,de,fr,it,es,pt-BR",
+      "mods": [
+        "origami"
+      ],
+      "testOptions": {
+        "nurse": true,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
       "passed": true,
-      "log": "emerald-picker.log",
-      "logSha256": "eef86272e96c56f77f832c2cd0125a69dd130bbd77ce44c1b4a96efb8abc5e86",
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "driver": "available_languages_live.lua",
-      "driverSha256": "91acb4922fbd0d3107538b50efd4bf196aedbc49dde4231088c6394410b4dc22",
-      "suite": "Merged language matrix and German GB"
+      "exitCode": 0,
+      "seconds": 66.203,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "emerald-origami.log",
+      "logSha256": "af3d3baadeaca2e7025d410b3bc69b4ccae50b9d4d378863fcb471bff32795eb",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0",
+        "ORIGAMI_ASCENDANT": "1.1.0-rc.4"
+      },
+      "menuRoute": "Origami Ascendant"
+    },
+    {
+      "game": "red",
+      "mods": [],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": true,
+        "badUI": true,
+        "scriptedSpeed": 4
+      },
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 8.171,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "red-bare-recovery.log",
+      "logSha256": "3d738b679f9f49ccb024e99374d9dba1b2f2d73b7a95300f379933ca8070369f",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "gold",
-      "language": "ko",
-      "mode": "final-cold",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-final-cold.log",
-      "logSha256": "55841edd248ccd07234775a2741027c6fe5d30ebd9c6e9af071c01e6ad46043a",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
+      "mods": [],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": true,
+        "badUI": true,
+        "scriptedSpeed": 4
       },
-      "suite": "Asian Gen2 real gameplay and layouts"
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 103.483,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "gold-bare-recovery.log",
+      "logSha256": "f044854d2864d9b076b638fbe9cdae240495ebc40e38dd3c1b27365676fdde6e",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "ko",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
+    },
+    {
+      "game": "emerald",
+      "mods": [],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 0,
+        "recovery": true,
+        "badUI": true,
+        "scriptedSpeed": 4
+      },
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 30.507,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "emerald-bare-recovery.log",
+      "logSha256": "0296d488a6feb60cdd2dedaa2ef0bacc4978e299a97d5feeb51dcc0993422763",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
+    },
+    {
+      "game": "red",
+      "mods": [],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 3,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
+      },
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 13.84,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "red-bare-repeat3.log",
+      "logSha256": "c93f1daed3854a5efa14e9e17653b34f352c297200b34932b4af14b358fa66c2",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
+      },
+      "languages": [
+        "de",
+        "pt-BR",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
       "game": "gold",
-      "language": "ko",
-      "mode": "cold-verify",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-cold-verify.log",
-      "logSha256": "cc791659478b0017e3e43ed315e116697b384aad214ad211b20a5a266c3bed8a",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
+      "mods": [],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 3,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
       },
-      "suite": "Asian Gen2 real gameplay and layouts"
+      "passed": true,
+      "exitCode": 0,
+      "seconds": 78.329,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "gold-bare-repeat3.log",
+      "logSha256": "f85994bf271fac8c4ddb752f0440dfbc6bd3c41f2ff2eed62cf4cb5683078761",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
+      "helpersSha256": {
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b"
+      },
+      "nonExecutedHelpersAtCaptureSha256": {
+        "gba_language_handoff.lua": "499fea5b46bb888930e3ce420de2414c06d211ef54b107872ea5a17bc8f165d9"
+      },
+      "languages": [
+        "de",
+        "ko",
+        "pt-BR",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
+      },
+      "menuRoute": "fallback hub\t1"
     },
     {
-      "game": "gold",
-      "language": "ko",
-      "mode": "warm",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-warm.log",
-      "logSha256": "aeb02c56ae044ce847786fc2536cd1e3263cfad7d59647a970e8dd1791442592",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
+      "game": "emerald",
+      "mods": [],
+      "testOptions": {
+        "nurse": false,
+        "allProfiles": false,
+        "repeatPairs": 3,
+        "recovery": false,
+        "badUI": false,
+        "scriptedSpeed": 4
       },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "gold",
-      "language": "ko",
-      "mode": "extended",
       "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-extended.log",
-      "logSha256": "5b877c89fc44479c56d36705859920ef1f067c2203164c65b3e702d2939ee67b",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
+      "exitCode": 0,
+      "seconds": 55.593,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "log": "emerald-bare-repeat3.log",
+      "logSha256": "d92c189b4736e7e0776ced9e5e0f6b3128aae3a022831e4de2453cd6cb9b3e21",
+      "driverSha256": "5ff467797e117e7f4af5d832c0e09307222919a0ae4528577f26d2c2113f741e",
       "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
+        "live_switch_state.lua": "4271374a0317ddc4e115ae2b354603720502d3945ed6ddc424c425ff2dd2a9b6",
+        "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af",
+        "live_switch_controls.lua": "3882fc8f94a44a4c57f512e440555bdad6e91a5acd8efaca9999c6dffb7a98dd",
+        "ptbr_nurse_live.lua": "86e339945b965716cf82040e4506c35d46413605d76ca2024d06612cc770a7c0",
+        "live_switch_recovery.lua": "b7c71ba589c10ee0cf706271d3b3aba3f17f388fbad54cd253824f89319f7d9b",
+        "gba_language_handoff.lua": "17a4116fbc5d60b5cec3647e7f683a14f12374d394e5e43a95bb614b4e9df197"
       },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "gold",
-      "language": "ko",
-      "mode": "menus",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-menus.log",
-      "logSha256": "27c31cfc4fa176473551301c9786326c8030b386abd1a2ccd91bc14d60017de3",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
+      "languages": [
+        "de",
+        "pt-BR",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en",
+        "de",
+        "en"
+      ],
+      "loadedModVersions": {
+        "german_rom_source": "1.8.0"
       },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "gold",
-      "language": "ko",
-      "mode": "credits",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-credits.log",
-      "logSha256": "ee238b468b0929f6c4354bee4cef24580a64fe22d532508d796fd563a9b69eaf",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "gold",
-      "language": "ko",
-      "mode": "art",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-art.log",
-      "logSha256": "689f7562917c861acecf1ad2cf0bb2910a95c2216f5761ea7f879d6472d1c865",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "gold",
-      "language": "ko",
-      "mode": "switch-request",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-switch-request.log",
-      "logSha256": "75a62da5e9ce568820fe68e285e71a1e4cea9bf51b39bfd78080f1f459ef7a10",
-      "driver": "asian_gen2_switch.lua",
-      "driverSha256": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "gold",
-      "language": "ko",
-      "mode": "switch-english",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "gold-switch-english.log",
-      "logSha256": "d5128f22f2d42788818bf6c87ed34adf811eb1071c8fb36731314cc99280e7aa",
-      "driver": "asian_gen2_switch.lua",
-      "driverSha256": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "final-cold",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-final-cold.log",
-      "logSha256": "abeac63508938a2be4f6e22f0137d6546d69c4cd6bd306dbbc52c8e0402fcb56",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "cold-verify",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-cold-verify.log",
-      "logSha256": "01834a59dc5b6cd6e46f7596af846dce08e55307c20a11eb15f775741ebfb000",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "warm",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-warm.log",
-      "logSha256": "d716e7a5992c6fcbfa7281676421cb728e34eb85cb4de6152b3ca77204c0ff36",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "extended",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-extended.log",
-      "logSha256": "13e6b07b41dc32ff864f31a8afe8c0dcdce235aec7c8c4b1cdf2a11601ebf9b0",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "menus",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-menus.log",
-      "logSha256": "d0d838f44d31b5e00bf1a2c61da9af6c62632f1884d2769093b0a1fa8d28fc0e",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "credits",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-credits.log",
-      "logSha256": "89298eb15843338b1c1fbc3a2fc679974fdab916c481b762930fdc7713bd4c99",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "art",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-art.log",
-      "logSha256": "cdbeb88dafdff090ad9b1d71b4d5d462fe5e8889b1fb81ae35a0e6271930f690",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "switch-request",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-switch-request.log",
-      "logSha256": "1c72956f4ca09cb50705ff6d09176c91e2f281e988ef8a3db2d15e801b90ac7a",
-      "driver": "asian_gen2_switch.lua",
-      "driverSha256": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "silver",
-      "language": "ko",
-      "mode": "switch-english",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "silver-switch-english.log",
-      "logSha256": "6583b9e56ea9f9e99cd743380cdb6d7d25ed13d08b3ce0d8ecd8f5b4513961d8",
-      "driver": "asian_gen2_switch.lua",
-      "driverSha256": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "final-cold",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-final-cold.log",
-      "logSha256": "eb4309ae9257fd75bb2814236cbc0eefef30b75b33750c9073e926245c8d6585",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "cold-verify",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-cold-verify.log",
-      "logSha256": "33e51e04b23d51f56c596a8ad4c68c81633e422d8e0eb67ce31f59a014a62322",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "warm",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-warm.log",
-      "logSha256": "106f05a9d5ab563f5fa83f4a8272d0fd96983e0fdaf127be0d72273f3bfb7379",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "extended",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-extended.log",
-      "logSha256": "1a76af574daa94fa78d57a5f5a4ef7d1b1cc282c4bd8a9956387418b6df83653",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "menus",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-menus.log",
-      "logSha256": "7bdcd401e892846d28cfd0963c4993cb85b8d20f8b6c466612ba9b0346acced7",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "credits",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-credits.log",
-      "logSha256": "38400d685756d3ceed0a92178be90d1c326f4a17bd8842e141544bd7982bd79c",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "art",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-art.log",
-      "logSha256": "6f08f9d8894069dce829fe77c216daf638ffaf0318a01a673eff3f1625a9a272",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "switch-request",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-switch-request.log",
-      "logSha256": "2ab068786677bd08dcb580116fcc6d59fbb382d5632d1033defae04d46474a81",
-      "driver": "asian_gen2_switch.lua",
-      "driverSha256": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "switch-english",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-switch-english.log",
-      "logSha256": "2e1f3b39804e227c3f847d1a1fe95fdaaaa428bccff9978287709b7f8807b520",
-      "driver": "asian_gen2_switch.lua",
-      "driverSha256": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
-    },
-    {
-      "game": "crystal",
-      "language": "ja",
-      "mode": "regional",
-      "passed": true,
-      "runtimePayloadSha256": "c79b1c76ee7e271c7eb8638cd425622744b92e40100e8238ed67ad763908de74",
-      "log": "crystal-regional.log",
-      "logSha256": "2316db711cccaea5009254b91015c1cd3573ffa890fb1e9ffe6b309be467ed57",
-      "driver": "asian_gen2_live.lua",
-      "driverSha256": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-      "helpersSha256": {
-        "asian_gen2_credits.lua": "a92688d240605294f088f85f5b1a6ac6acf70e60f928c5d79aa76352f6575fac",
-        "asian_gen2_extended.lua": "4f70c7ee7f8c40f1b2d42941bfa89571873aa12fcadc826c413130662ba0ec6f",
-        "asian_gen2_live.lua": "768ddd1b656c5d6b93cb32b78791f8accc6e9dc89f85e784b84d14ac3c8ccb8d",
-        "asian_gen2_regional.lua": "f5af08e9e1e29310effab79c6af8db04a4f8a26cd400a09fdb2c048e1e2c1844",
-        "asian_gen2_switch.lua": "c78712ec1bfae58b1563f28e1458d4f4948b792d1d8784fa1eae5a36a024a270"
-      },
-      "suite": "Asian Gen2 real gameplay and layouts"
+      "menuRoute": "fallback hub\t1"
     }
   ],
-  "ptbrPayloadPreservation": {
-    "comparisons": [
-      {
-        "game": "red",
-        "language": "pt-BR",
-        "assetCount": 20,
-        "assetBytes": 386856,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 0,
-        "rawIdenticalAssets": 20,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "5791f3a087c7e72240077d84fc529aec2a0739308c3a7592cbe76d35a87936f2",
-        "afterSnapshotSHA256": "8dc823560f3f9cdeb8ede2ddc49e44e10c21696b94f7a84771a8a1fd4de6d271"
-      },
-      {
-        "game": "blue",
-        "language": "pt-BR",
-        "assetCount": 20,
-        "assetBytes": 386844,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 0,
-        "rawIdenticalAssets": 20,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "97979335ee2f41717fbe282685cb81ba0a9bb759fcdc3b6d524359a93fbaa297",
-        "afterSnapshotSHA256": "52f7f3b7cca16955cb7d92da6d9d26bb773d4adecb479a241a3bfc05ac16ff1c"
-      },
-      {
-        "game": "yellow",
-        "language": "pt-BR",
-        "assetCount": 24,
-        "assetBytes": 402730,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 0,
-        "rawIdenticalAssets": 24,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "3e0459fa3f23dbe51fda81dcdce0cb2486cf21382039d413545245ffbddc3a2f",
-        "afterSnapshotSHA256": "6fb71a36d934a9778722f06f8b1da8fefe76bb5cc4001bdfc342f89dbad2c607"
-      },
-      {
-        "game": "gold",
-        "language": "pt-BR",
-        "assetCount": 31,
-        "assetBytes": 567443,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 0,
-        "rawIdenticalAssets": 31,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "d585efaa3f30c88468309410f780864a82ebbd0805206800679d20c6ce1ca5d3",
-        "afterSnapshotSHA256": "0ee2fd9e415ced9992f60ec4244cd54650007afb6c072c4db4d685d56a80e206"
-      },
-      {
-        "game": "silver",
-        "language": "pt-BR",
-        "assetCount": 31,
-        "assetBytes": 567938,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 0,
-        "rawIdenticalAssets": 31,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "0469de3cfade43db90258076b1e6a61f2ad7352eae20afc736ef0d973a0b83b3",
-        "afterSnapshotSHA256": "019d5087196b7568c8ea01c86b09e7f54846dc99f65c086bdd42ecbd159325a2"
-      },
-      {
-        "game": "crystal",
-        "language": "pt-BR",
-        "assetCount": 32,
-        "assetBytes": 699854,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 0,
-        "rawIdenticalAssets": 32,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "dc6093733d3956045973504116997a8f327a49fe8112fabeef50a22bde487124",
-        "afterSnapshotSHA256": "b94d002dd35da0627f379f2631f1cef7dee8bb4e450a856bc1211d0af0f7a2df"
-      },
-      {
-        "game": "firered",
-        "language": "pt-BR",
-        "assetCount": 1828,
-        "assetBytes": 46686218,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 25488,
-        "rawIdenticalAssets": 1828,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "1ca710280857078d666a6cb40db0f99e670e563cda1ee75b360f80042ba12bc4",
-        "afterSnapshotSHA256": "9ebd6fbcec4d520f2be73470575deb9d0fcd831f1b8f6d45b47330aeadfdc9cb"
-      },
-      {
-        "game": "leafgreen",
-        "language": "pt-BR",
-        "assetCount": 1829,
-        "assetBytes": 46686240,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 25486,
-        "rawIdenticalAssets": 1829,
-        "equivalentRepackedAssets": [],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "5696cd513282dfb997a2a3ea552086d02f76ef3c728119af66470d5e0ea594c0",
-        "afterSnapshotSHA256": "6287ba316f6886a110fcefe1033cc629f7f699ef483ef39ccca686dc38803b3a"
-      },
-      {
-        "game": "ruby",
-        "language": "pt-BR",
-        "assetCount": 1105,
-        "assetBytes": 61165911,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 34806,
-        "rawIdenticalAssets": 1104,
-        "equivalentRepackedAssets": [
-          "data/generated/gba/rse/trainer_card/manifest.lua"
-        ],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "f551e337a844e0746c0048f30a64372aa371d525976326d3b506a0071ee59fca",
-        "afterSnapshotSHA256": "a471f6fb2940f1a40dbe1058b4a9133d67307b284440ea1aa2ce074709e5a4ab"
-      },
-      {
-        "game": "sapphire",
-        "language": "pt-BR",
-        "assetCount": 903,
-        "assetBytes": 47716218,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 34454,
-        "rawIdenticalAssets": 902,
-        "equivalentRepackedAssets": [
-          "data/generated/gba/rse/trainer_card/manifest.lua"
-        ],
-        "pixelComparedMaps": 0,
-        "passed": true,
-        "beforeSnapshotSHA256": "505f7418ad302c2d91edff059173f15aeb64dcfec10cea52f113a9e9a72f4c90",
-        "afterSnapshotSHA256": "6eb7e67f018b977bfdf8465eb7c07362ff85e078bc5f1089e0d446f56b6f364d"
-      },
-      {
-        "game": "emerald",
-        "language": "pt-BR",
-        "assetCount": 974,
-        "assetBytes": 71009588,
-        "coverageMetadataCompared": false,
-        "effectiveRegistryValues": 39573,
-        "rawIdenticalAssets": 961,
-        "equivalentRepackedAssets": [
-          "data/generated/gba/rse/contest_gfx/results.gfx",
-          "data/generated/gba/rse/contest_gfx/title.map",
-          "data/generated/gba/rse/contest_gfx/title_beauty.map",
-          "data/generated/gba/rse/contest_gfx/title_cool.map",
-          "data/generated/gba/rse/contest_gfx/title_cute.map",
-          "data/generated/gba/rse/contest_gfx/title_hyper.map",
-          "data/generated/gba/rse/contest_gfx/title_link.map",
-          "data/generated/gba/rse/contest_gfx/title_master.map",
-          "data/generated/gba/rse/contest_gfx/title_normal.map",
-          "data/generated/gba/rse/contest_gfx/title_smart.map",
-          "data/generated/gba/rse/contest_gfx/title_super.map",
-          "data/generated/gba/rse/contest_gfx/title_tough.map",
-          "data/generated/gba/rse/pokedex/manifest.lua"
-        ],
-        "pixelComparedMaps": 11,
-        "passed": true,
-        "beforeSnapshotSHA256": "4e18e2e3c7d37054283b79977fc63b77751aead6838d3191ba8ed9b9e409c13e",
-        "afterSnapshotSHA256": "547fa7080bf6218336c645506cce7a5d88c1e4adb8cca3e468c4c2d2e0c0fa57"
-      }
-    ],
-    "scope": "All final registry values and all graphics of the eleven PT-BR profiles. Equivalent manifest ordering and rendered contest tile packing are verified explicitly. Cold and warm payloads agree. Coverage report metadata may gain categories and is excluded from equivalence."
+  "freshProcessRecovery": [
+    {
+      "game": "red",
+      "mode": "write",
+      "passed": true,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "driverSha256": "33daa3e11dad34c1b6a95171b8bd077e484614f67e7f327ae724f789890741b3",
+      "log": "red-interrupted-write.log",
+      "logSha256": "08da922ee7e83c4dd559c7f87c0e5c9b622d661ad3c16ad108e708c3ea2b6c2f"
+    },
+    {
+      "game": "red",
+      "mode": "resume",
+      "passed": true,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "driverSha256": "33daa3e11dad34c1b6a95171b8bd077e484614f67e7f327ae724f789890741b3",
+      "log": "red-interrupted-resume.log",
+      "logSha256": "8c8869cc51f47a1c02db898898fd894138fb2d0c306498bbcd616843873742ab"
+    },
+    {
+      "game": "gold",
+      "mode": "write",
+      "passed": true,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "driverSha256": "33daa3e11dad34c1b6a95171b8bd077e484614f67e7f327ae724f789890741b3",
+      "log": "gold-interrupted-write.log",
+      "logSha256": "bb097aa9861dce82b4aeced8c83cb6e4af83680028533873baa34a209628d903"
+    },
+    {
+      "game": "gold",
+      "mode": "resume",
+      "passed": true,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "driverSha256": "33daa3e11dad34c1b6a95171b8bd077e484614f67e7f327ae724f789890741b3",
+      "log": "gold-interrupted-resume.log",
+      "logSha256": "f45391bd2711e52e06bd0de4d67128359544256536e4b79076dd88a0eeaa921f"
+    },
+    {
+      "game": "emerald",
+      "mode": "write",
+      "passed": true,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "driverSha256": "33daa3e11dad34c1b6a95171b8bd077e484614f67e7f327ae724f789890741b3",
+      "log": "emerald-interrupted-write.log",
+      "logSha256": "ac20a6f3b527116e324df64ae13e4f53895eb9d5b74dee72a4fa3174b60c3e6c"
+    },
+    {
+      "game": "emerald",
+      "mode": "resume",
+      "passed": true,
+      "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+      "driverSha256": "33daa3e11dad34c1b6a95171b8bd077e484614f67e7f327ae724f789890741b3",
+      "log": "emerald-interrupted-resume.log",
+      "logSha256": "0e144626e7a9149021cff4adadbb91941e4ed15eabdef92e8ad2082e4c4476d6"
+    }
+  ],
+  "firstProfile": {
+    "passed": true,
+    "exitCode": 0,
+    "runtimePayloadSha256": "7cb0d2ca07b2860ff0601285fed41e4116480faa8de445ce7d397916be6fb950",
+    "helpersSha256": {
+      "initial_language_profile.lua": "71fe5209bc7136fb2ae355929ba8b088c10eb99287eebf15e386d8524920f649",
+      "live_switch_nurse.lua": "e171c5a12b583872dd802bef24cb641dda6258faf717185a5dba3182c39ce6af"
+    },
+    "log": "initial-profile.log",
+    "logSha256": "f230b40db3dcdcfd6f75dfd9f3ce7961eeb9ce5124f35c10566a1821fc139c6b"
   },
-  "preservedUnmappedFRLGEntries": {
-    "countPerEdition": 9,
-    "scope": "five empty placeholders/dummies, two newline helpers, one space and one decorative ?{PKMN}? control string; original IR inspected; unchanged by merge"
+  "unitChecks": {
+    "pythonTests": 85,
+    "luaGroups": 19,
+    "binaryCacheSuite": true,
+    "allLuaSyntax": true
   },
   "unitLogSha256": {
-    "python-tests.log": "20aa46f5a4671604903e6ff8eb863b239dac5240ad506492f849993daed02cd2",
-    "lua-tests.log": "8ef0bc3d121817c1ba9025421538007962932cf33ebaa67e6bd2124330863d45",
+    "python-tests.log": "3eb55120a9c31a14afb3c73a8f0fd6c9f7684d187377e6984701b60a4bfa30ed",
+    "lua-tests.log": "a56cec6c39d0098d450ad6675f57d899d36ccade262328835b2bf11f12d26131",
     "syntax.log": "dfcbd284a9373cc0a57dfb2e887e02d12647f32b42cda6ed5726767252adb5ff",
     "cache-unit.log": "28263c1c25869f742123086b6b628af2ba46cdc0d9498554628f371d2875ee0e",
     "european-audit.log": "46552e0efa946d42cc22cc54e033be23cd2d3e40859b2b7bd77fd69f6439ec3b",
     "gba-audit.log": "e135795a187b63e36e2117b967c7c7b4d14458e7e19849c5782a6da4aef53a3e"
-  },
-  "unitChecks": {
-    "pythonTests": 85,
-    "luaGroups": 18,
-    "binaryCacheSuite": true,
-    "allLuaSyntax": true
   },
   "sourceAudits": {
     "GBEngineUIKeys": 1499,
@@ -2312,10 +979,12 @@
     "missingInAuditedScopes": 0
   },
   "limitations": [
-    "No full-story playthroughs",
+    "Prepared offline saves, not full-story playthroughs",
+    "No Windows/Linux/mobile native file-picker QA",
+    "No two-device or online handoffs; online rooms are blocked",
+    "Only listed Ascendant versions/combinations tested; Red uses the KASC collector, Gold uses the fallback hub with both mods loaded because no KASC menu collector is exposed in that Gen2 session",
     "No independent native-speaker certification",
-    "No Windows/Linux integration runs",
-    "No two-device multiplayer or public relay integration test",
-    "Historical branch performance runs are not new merged performance measurements"
+    "Custom GBA nickname glyph rendering across different profile fonts is not certified",
+    "Memory observations include renderer caches and are not process-RSS leak certification"
   ]
 }
