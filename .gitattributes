@@ -1,0 +1,7 @@
+# TSV records have empty final columns; their trailing tabs are serialized data.
+mod/profiles/firered_es.lua whitespace=-blank-at-eol
+mod/profiles/firered_it.lua whitespace=-blank-at-eol
+mod/profiles/leafgreen_es.lua whitespace=-blank-at-eol
+mod/profiles/leafgreen_fr.lua whitespace=-blank-at-eol
+# Fixed-width UI keys and values contain intentional trailing padding.
+translations/european/gb-ui-overrides.tsv whitespace=-blank-at-eol

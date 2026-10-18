@@ -75,6 +75,35 @@ four indexed dynamic player-count strings. The audit JSON remains development
 material, outside the distributed archive. Live tests compare every added or
 changed registry key to decoded bytes from the exact input ROM on cold/warm load.
 
+## European preview
+
+The new `european.lua` adapters and the EU metadata builders are newly written
+GPL-covered additions. They do not copy a separate translation mod runtime.
+The supplemental UI catalog in `translations/european/gb-ui.json` started with
+70 authored phrases. Preview 2 adds machine-assisted drafts of public, English
+engine UI literals (Google Translate), with manual terminology, placeholder,
+font and fixed-field corrections in `gb-ui-overrides.tsv`. No private ROM text
+was sent to that service. The checked-in catalog builds offline; no translation
+service is used by the mod. This is supplemental interface text, separate from
+the retail text recipes.
+The retail alphabets are factual encoding mappings cross-checked with
+PKHeX's StringConverter2 and the exact Spanish Crystal disassembly.
+
+Development sources (private checkouts and byte-identical builds are excluded
+from the package):
+
+- https://github.com/CompuMaxx/pokefirered-europe · e184c5cf898cd29efebd33bc1bfe5994277e21ab
+- https://github.com/pret/pokegold · ef0201d8daf47e8b3ea1518eacf890f37d4cd5e8
+- https://github.com/pret/pokecrystal · 3bc8daa4173e96a7f4011dad3922eb6fa5dad5c6
+- https://github.com/einstein95/pokered-es · 6caaf44d56f87db76cbf72c54afd5ec4af8c2fa3
+- https://github.com/erosunica/pokecrystal-es · 923900505b6914b89bd5aef618eadbd35e263bab
+- https://github.com/jherediagu/traduccion_es · 2cc5ee443d478a7dd47277433a11e51c9e76dc59
+  (factual GB table addresses and encodings only; no runtime or authored
+  translation catalog is copied). Yellow adds audited far-pointer references
+  and contiguous text-bank metadata under `tools/data/`.
+
+No cartridge text, artwork or music payloads from those development sources are
+distributed. The player supplies the exact private retail cartridge images.
 ## PT-BR profiles and authored additions
 
 PT-BR profiles import the user’s exact private translation ROM. Source projects,

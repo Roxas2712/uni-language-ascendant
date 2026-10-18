@@ -1,6 +1,19 @@
 -- Profiles are selected by validated ROM digest, never by a guessed filename.
 -- More languages/revisions can be added without changing the compiler.
 return {
+ {id='crystal_it',game='crystal',language='it',name='Italiano',generation=2,profile='gb/profiles/crystal_it/profile.lua',root='gb/profiles/crystal_it/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='crystal_es',game='crystal',language='es',name='Español',generation=2,profile='gb/profiles/crystal_es/profile.lua',root='gb/profiles/crystal_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='yellow_es',game='yellow',language='es',name='Español',generation=1,profile='gb/profiles/yellow_es/profile.lua',root='gb/profiles/yellow_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/gen1.lua',shared='gb/shared/'},
+ {id='gold_es',game='gold',language='es',name='Español',generation=2,profile='gb/profiles/gold_es/profile.lua',root='gb/profiles/gold_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='silver_es',game='silver',language='es',name='Español',generation=2,profile='gb/profiles/silver_es/profile.lua',root='gb/profiles/silver_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='red_es',game='red',language='es',name='Español',generation=1,profile='gb/profiles/red_es/profile.lua',root='gb/profiles/red_es/',runtime='gb/runtime/european.lua',adapter='gb/adapters/gen1.lua',shared='gb/shared/'},
+ {id='silver_fr',game='silver',language='fr',name='Français',generation=2,profile='gb/profiles/silver_fr/profile.lua',root='gb/profiles/silver_fr/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='gold_fr',game='gold',language='fr',name='Français',generation=2,profile='gb/profiles/gold_fr/profile.lua',root='gb/profiles/gold_fr/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='gold_it',game='gold',language='it',name='Italiano',generation=2,profile='gb/profiles/gold_it/profile.lua',root='gb/profiles/gold_it/',runtime='gb/runtime/european.lua',adapter='gb/adapters/european.lua',shared='gb/shared/'},
+ {id='firered_es',game='firered',language='es',name='Español',code='BPRS',revision=0,profile='profiles/firered_es.lua',assets='profiles/firered_es_assets.lua',world='profiles/firered_es_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='leafgreen_es',game='leafgreen',language='es',name='Español',code='BPGS',revision=0,profile='profiles/leafgreen_es.lua',assets='profiles/leafgreen_es_assets.lua',world='profiles/leafgreen_es_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='leafgreen_fr',game='leafgreen',language='fr',name='Français',code='BPGF',revision=0,profile='profiles/leafgreen_fr.lua',assets='profiles/leafgreen_fr_assets.lua',world='profiles/leafgreen_fr_world.lua',glyphsPath='latin_glyphs.lua'},
+ {id='firered_it',game='firered',language='it',name='Italiano',code='BPRI',revision=0,profile='profiles/firered_it.lua',assets='profiles/firered_it_assets.lua',world='profiles/firered_it_world.lua',glyphsPath='latin_glyphs.lua'},
  {id='red_ptbr',game='red',language='pt-BR',name='Português (Brasil)',noticeKey='fanTranslation',profile='gb/profiles/red_ptbr/profile.lua',generation=1,root='gb/profiles/red_ptbr/',runtime='gb/runtime/ptbr.lua',adapter='gb/adapters/gen1.lua'},
  {id='blue_ptbr',game='blue',language='pt-BR',name='Português (Brasil)',noticeKey='fanTranslation',profile='gb/profiles/blue_ptbr/profile.lua',generation=1,root='gb/profiles/blue_ptbr/',runtime='gb/runtime/ptbr.lua',adapter='gb/adapters/gen1.lua'},
  {id='yellow_ptbr',game='yellow',language='pt-BR',name='Português (Brasil)',noticeKey='fanTranslation',profile='gb/profiles/yellow_ptbr/profile.lua',generation=1,root='gb/profiles/yellow_ptbr/',runtime='gb/runtime/ptbr.lua',adapter='gb/adapters/gen1.lua'},

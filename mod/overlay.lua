@@ -322,4 +322,5 @@ return function(mod,game,files,display,easyChatUI,materialize)
       if key=='assets' then local all=materialize();rawset(t,key,all);return all end
     end})
   else mod.exports.assets=files end
+  return active
 end

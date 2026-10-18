@@ -3,7 +3,12 @@ return function(mod)
  local function own(file, ...) return assert(loadstring(assert(mod:read(file)),'@rom_language/'..file))(...) end
  local started=love.timer.getTime()
  local language=own('startup.lua')(mod,version,own)
- if language=='en' then mod.exports.status='english';mod.exports.language='en';mod.exports.loadSeconds=love.timer.getTime()-started;return end
+ if language=='en' then
+  if require('src.core.GameVersion').generation()==2 then
+   own('gb/shared/official_mon_names.lua').installGen2ReturnCompatibility(require('src.script.gen2.Specials'))
+  end
+  mod.exports.status='english';mod.exports.language='en';mod.exports.loadSeconds=love.timer.getTime()-started;return
+ end
  local required,requirements
  for _,row in ipairs(own('rom_requirements.lua')) do if row.game==version then required=row.base.sha1;requirements=row end end
  local marker=require('src.import.CacheFs').readAt(require('src.core.GameVersion').cachePrefix()..'rom-cache.complete')
@@ -40,7 +45,7 @@ return function(mod)
  local W=require('src.import.LuaWriter')
  local function hash(bytes) return love.data.encode('string','hex',love.data.hash('string','sha256',bytes)) end
  local recipe={'compiler-v3',source.sha1,version}
- local paths={'main.lua','catalog.lua','rom_requirements.lua','cache_codec.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua',selected.profile,selected.assets,selected.world}
+ local paths={'main.lua','catalog.lua','rom_requirements.lua','cache_codec.lua','compiler.lua','translate.lua','extract.lua','assets.lua','world.lua','overlay.lua','gba/ui.lua','gba/policy.lua','gba/runtime.lua',selected.profile,selected.assets,selected.world}
  if selected.authored then paths[#paths+1]=selected.authored;paths[#paths+1]='authored.lua' end
  if language=='pt-BR' then
   paths[#paths+1]='ptbr_moves.lua';paths[#paths+1]='ptbr_names.lua';paths[#paths+1]='ptbr_graphics.lua'
@@ -138,7 +143,18 @@ return function(mod)
    report.authoredPixelLabels=own('ptbr_pixel_labels.lua')(assets,version)
    report.shopSignAtlases=own('ptbr_world_graphics.lua')(assets,version)
   end
-  local translated=own('translate.lua')(proxy,profile,bytes)
+  -- Retail European UI is a fallback below native ROM string pairs.
+  -- PT-BR keeps its separate authored translation and compatibility path.
+  local ui=own('gba/ui.lua')[selected.language]
+  local uiCount=0
+  if ui then
+   for source,target in pairs(ui) do proxy.content.strings:override(source,target);uiCount=uiCount+1 end
+  end
+  local translated=own('translate.lua')(proxy,profile,bytes,ui and own('gba/policy.lua')(version,ui))
+  if ui then
+   proxy.content.strings:override('SPEED',ui.SPEED)
+   translated.authoredUI=uiCount
+  end
   if language=='pt-BR' then
    local itemNames=own('ptbr_items.lua');local descriptions=own('ptbr_item_descriptions.lua')
    translated.authoredItemNames=0
@@ -164,6 +180,8 @@ return function(mod)
     if profile.authored[key] then translated.translated=translated.translated+1 else missing[#missing+1]=key end
    end
    translated.missing=missing
+   -- Authored PT-BR corrections are applied after native extraction.
+   translated.covered=translated.translated+#translated.retainedProperNames+#translated.inapplicable
   end
   if language=='pt-BR' then
    local classes=assert(own('ptbr_classes.lua')[version]);local originals={}
@@ -209,7 +227,8 @@ return function(mod)
   return {files=assets,operations=operations,report=translated}
  end,{lazyAssets=true})
  if result.display.genderPlaceholders then own('ptbr_gender.lua')() end
- own('overlay.lua')(mod,version,files,result.display,own('ptbr_easy_chat_ui.lua'),materialize)
+ local active=own('overlay.lua')(mod,version,files,result.display,own('ptbr_easy_chat_ui.lua'),materialize)
+ if language~='pt-BR' then own('gba/runtime.lua')(mod,version,active) end
  own('compat.lua')(mod)
  mod.exports.loadSeconds=love.timer.getTime()-started
  mod.exports.status='active'

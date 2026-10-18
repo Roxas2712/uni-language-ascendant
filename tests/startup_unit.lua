@@ -88,7 +88,8 @@ for _,game in ipairs({'red','blue','yellow','gold','silver','crystal','ruby','sa
  local test=check(imports);test.ui.chooseMenu('de')
  local available=0
  for i,c in ipairs(test.ui.choices) do
-  local expected=c.id=='en' or c.id=='de' or c.id=='pt-BR' or game=='emerald' and (c.id=='fr' or c.id=='it' or c.id=='es')
+  local extra={red={es=true},yellow={es=true},gold={es=true,fr=true,it=true},silver={es=true,fr=true},crystal={es=true,it=true},firered={es=true,it=true},leafgreen={es=true,fr=true},emerald={es=true,fr=true,it=true}}
+  local expected=c.id=='en' or c.id=='de' or c.id=='pt-BR' or (extra[game] or {})[c.id]==true
   assert(c.available==expected,game..'/'..c.id)
   if expected then available=available+1 else
    test.ui.index=i

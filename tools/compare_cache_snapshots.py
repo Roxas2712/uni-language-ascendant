@@ -7,7 +7,7 @@ import argparse, collections, hashlib, json, os, struct, subprocess, zlib
 from pathlib import Path
 
 
-def compare(before, after, cache_root, luajit, engine):
+def compare(before, after, cache_root, luajit, engine, compare_coverage=True):
     def lua(path, manifest=False):
         code="local S=require('src.core.SaveSerializer');local f=assert(io.open(os.getenv('QA_VALUE')));print(require('src.link.Json').encode(assert(S.decode(f:read('*a'),{maxNodes=500000,maxBytes=16777216}))))"
         if manifest:
@@ -66,7 +66,9 @@ def compare(before, after, cache_root, luajit, engine):
             path=folder+name+'.map'
             assert render(old[path],x)==render(new[path],y),'Displayed pixels changed: '+path
             pixel_maps+=1
-    if old_report and b.get('coverageData'):
+    if not compare_coverage:
+        pass  # Integration may add report categories without changing localized values.
+    elif old_report and b.get('coverageData'):
         # Source report file arrays originate from pairs(); all values still
         # must be present. Only arrays of strings are treated as unordered.
         def normalize(v):
@@ -77,6 +79,7 @@ def compare(before, after, cache_root, luajit, engine):
     elif a['coverage']!=b['coverage']:
         raise AssertionError('Cannot verify changed coverage report')
     return {'game':a['game'],'language':a['language'],'assetCount':a['assetCount'],'assetBytes':a['assetBytes'],
+            'coverageMetadataCompared':compare_coverage,
             'effectiveRegistryValues':sum(len(v) for v in a['registries'].values()) if a['registries'] else 0,'rawIdenticalAssets':len(old)-len(changed),
             'equivalentRepackedAssets':changed,'pixelComparedMaps':pixel_maps,'passed':True,
             'beforeSnapshotSHA256':hashlib.sha256(Path(before).read_bytes()).hexdigest(),

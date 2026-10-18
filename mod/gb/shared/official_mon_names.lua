@@ -152,7 +152,7 @@ end
 -- ReturnShuckie is gameplay logic rather than visible localization.  Install
 -- this compatibility arm even on an English boot so a save can safely cross
 -- the language restart boundary.  Its behavior is otherwise byte-for-byte
--- equivalent to the engine handler and accepts both MANIA and GABRIELE.
+-- equivalent to the engine handler and accepts the exact official English, German, Spanish, French and Italian OTs.
 function Names.installGen2ReturnCompatibility(Specials)
   local state = stateFor(Specials)
   if not state or state.returnInstalled
@@ -184,6 +184,7 @@ function Names.installGen2ReturnCompatibility(Specials)
     local originalOT = state.maniaOt or "MANIA"
     local germanOT = target(Names.GERMAN_SHUCKLE.otName)
     local validOT = mon.ot == originalOT or mon.ot == germanOT
+        or mon.ot == "MANÍA" or mon.ot == "MATTIA"
     if mon.species ~= "SHUCKLE"
         or mon.otId ~= Specials.MANIA_OT_ID or not validOT then
       shared.answer(vm, Specials.SHUCKIE_WRONG_MON)

@@ -15,6 +15,9 @@ return function(rom,p,root,own)
     end
    end
    return table.concat(out)
+  elseif r.bytes then
+   local b=r.bytes;assert(b.off>=0 and b.off+b.size<=#rom,'Byte recipe outside ROM')
+   return {rom:byte(b.off+1,b.off+b.size)}
   elseif r.empty then return ''
   elseif r.array then local out={};for i,v in ipairs(r.array) do out[i]=decode(v) end;return out
   elseif r.table then local out={};for _,v in ipairs(r.table) do out[v[1]]=decode(v[2]) end;return out
@@ -49,8 +52,10 @@ return function(rom,p,root,own)
   if r.palettes then
    for index,t in ipairs(r.tiles) do
     local tx=((index-1)%(r.width/8))*8;local ty=math.floor((index-1)/(r.width/8))*8
+    local shades={}
+    for y=0,7 do for x=0,7 do shades[y*8+x+1]=image:getPixel(tx+x,ty+y) end end
     for y=0,7 do for x=0,7 do
-     local red=image:getPixel(tx+x,ty+y);local c=t.palette[4-math.floor(red*3+0.5)]
+     local red=shades[(t.flipY and 7-y or y)*8+(t.flipX and 7-x or x)+1];local c=t.palette[4-math.floor(red*3+0.5)]
      image:setPixel(tx+x,ty+y,c[1]/255,c[2]/255,c[3]/255,c[4]/255)
     end end
    end

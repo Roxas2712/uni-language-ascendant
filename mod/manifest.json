@@ -1,7 +1,7 @@
 {
   "id": "german_rom_source",
   "name": "Uni-Language Ascendant",
-  "version": "1.5.2",
+  "version": "1.6.0-merged-preview.1",
   "api": 2,
   "entry": "main.lua",
   "profile": "content",
@@ -24,7 +24,7 @@
   "permissions": [
     "engine_internals"
   ],
-  "description": "Standalone language mod with Brazilian Portuguese and German profiles for all 11 Gen1–Gen3 editions; Emerald also French, Italian and Spanish. Ten menu languages, Ascendant intro, Back and Reset profile. PT-BR adds move names, dialogue corrections and native graphic labels. Requires your own exact ROMs; see the included QA report for tested scope. Uninstalling deletes the mod profile. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp)",
+  "description": "Language profiles for all eleven Gen1–Gen3 editions: German and Brazilian Portuguese, plus supported Spanish, French and Italian editions. Ten menu languages, native graphics, authored UI and optimized language caches. Exact personal ROM imports required; see bundled scoped QA reports. Based on Gen1Recomp by BOIS CLUB GAMES, LLC (https://github.com/bryanthaboi/gen1recomp).",
   "optional_imports": [
     {
       "id": "leafgreen_de",
@@ -219,6 +219,123 @@
       "md5": "790d40d042401d1dea843fa7f52e2448",
       "size": 16777216,
       "description": "SHA-1 b32c63d5d1454d851cef16699f3ce757798553a2; Basis: Pokémon LeafGreen (USA / English) 1.0 / Revision 0."
+    },
+    {
+      "id": "firered_es",
+      "name": "Firered · Español",
+      "description": "SHA-1 ab8f6bfe0ccdaf41188cd015c8c74c314d02296a; Basis: Pokémon FireRed (USA / English) 1.0 / Revision 0.",
+      "file": "firered_es.gba",
+      "format": "raw",
+      "size": 16777216,
+      "md5": "c629272c5e0111930a240623b6c239f0"
+    },
+    {
+      "id": "leafgreen_es",
+      "name": "Leafgreen · Español",
+      "description": "SHA-1 f9ebee5d228cb695f18ef2ced41630a09fa9eb05; Basis: Pokémon LeafGreen (USA / English) 1.0 / Revision 0.",
+      "file": "leafgreen_es.gba",
+      "format": "raw",
+      "size": 16777216,
+      "md5": "765178ed4d402033ef7ed6b82d059f5a"
+    },
+    {
+      "id": "leafgreen_fr",
+      "name": "Leafgreen · Français",
+      "description": "SHA-1 4b5758c14d0a07b70ef3ef0bd7fa5e7ce6978672; Basis: Pokémon LeafGreen (USA / English) 1.0 / Revision 0.",
+      "file": "leafgreen_fr.gba",
+      "format": "raw",
+      "size": 16777216,
+      "md5": "c5bc831107f459816508b45d9392afc9"
+    },
+    {
+      "id": "firered_it",
+      "name": "Firered · Italiano",
+      "description": "SHA-1 66a9d415205321376b4318534c0dce5f69d28362; Basis: Pokémon FireRed (USA / English) 1.0 / Revision 0.",
+      "file": "firered_it.gba",
+      "format": "raw",
+      "size": 16777216,
+      "md5": "fce3c39e7ba452eddb2279b454b66416"
+    },
+    {
+      "id": "yellow_es",
+      "name": "Yellow · Español",
+      "description": "SHA-1 1dc242039218fba50928d1afb66b70565b6b9daf; Basis: Pokémon Yellow (USA / English) 1.0 / Revision 0.",
+      "file": "yellow_es.gb",
+      "format": "raw",
+      "size": 1048576,
+      "md5": "f0da8b1cff3aab898ecde9dcbda6d817"
+    },
+    {
+      "id": "gold_es",
+      "name": "Gold · Español",
+      "description": "SHA-1 162ea54c6a3cff374642e6dd842f9bffac847e7b; Basis: Pokémon Gold (USA / English) 1.0 / Revision 0.",
+      "file": "gold_es.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "9462bc81907e38c59acccd739690e6f9"
+    },
+    {
+      "id": "silver_es",
+      "name": "Silver · Español",
+      "description": "SHA-1 05bd978ab2cb104b0aff3f696896e30885203a18; Basis: Pokémon Silver (USA / English) 1.0 / Revision 0.",
+      "file": "silver_es.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "2d83fb454dd5687a802425c501854dc2"
+    },
+    {
+      "id": "red_es",
+      "name": "Red · Español",
+      "description": "SHA-1 fc17c5b904d551b1b908054ccd1c493f755f832a; Basis: Pokémon Red (USA / English) 1.0 / Revision 0.",
+      "file": "red_es.gb",
+      "format": "raw",
+      "size": 1048576,
+      "md5": "463c241c8721ab1d1da17c91de9f8a32"
+    },
+    {
+      "id": "silver_fr",
+      "name": "Silver · Français",
+      "description": "SHA-1 a4a7e8079b7a53e4d9ef43382bbb1090b9d45d1a; Basis: Pokémon Silver (USA / English) 1.0 / Revision 0.",
+      "file": "silver_fr.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "72448fe75f534f70cd90469da95ef76f"
+    },
+    {
+      "id": "gold_fr",
+      "name": "Gold · Français",
+      "description": "SHA-1 c147c0d8c2b71b7628a7233436f5c052b5b17081; Basis: Pokémon Gold (USA / English) 1.0 / Revision 0.",
+      "file": "gold_fr.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "9af19423c5fa3dbe4fdcc78d2bc7d1c0"
+    },
+    {
+      "id": "gold_it",
+      "name": "Gold · Italiano",
+      "description": "SHA-1 032608fe8947b627584a4a0eccc7bf9ad3588426; Basis: Pokémon Gold (USA / English) 1.0 / Revision 0.",
+      "file": "gold_it.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "89bb59dc49b59b0cd30b7384d9860bb8"
+    },
+    {
+      "id": "crystal_es",
+      "name": "Pokémon Crystal · Español",
+      "description": "SHA-1 889a06fc0bb863666865aa69def0adf97945ac2a; Basis: Pokémon Crystal (USA / English) 1.0 / Revision 0.",
+      "file": "crystal_es.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "8a626340f6b16ba45c1d4e07f2134875"
+    },
+    {
+      "id": "crystal_it",
+      "name": "Pokémon Crystal · Italiano",
+      "description": "SHA-1 6cee05e5b95beeae74b8365ad18ec4a07a8c4af8; Basis: Pokémon Crystal (USA / English) 1.0 / Revision 0.",
+      "file": "crystal_it.gbc",
+      "format": "raw",
+      "size": 2097152,
+      "md5": "7c513823f65b92a75e29067745839cc8"
     }
   ]
 }

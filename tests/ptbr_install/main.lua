@@ -1,6 +1,6 @@
 function love.load()
  local ok,err=xpcall(function()
-  love.filesystem.setIdentity('uni-language-ptbr-install-qa')
+  love.filesystem.setIdentity(os.getenv('QA_INSTALL_IDENTITY') or 'uni-language-ptbr-install-qa')
   local engine=assert(os.getenv('QA_ENGINE'))
   package.path=engine..'/?.lua;'..engine..'/?/init.lua;'..package.path
   local L=require('src.mods.LauncherMods')

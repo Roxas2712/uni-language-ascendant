@@ -23,6 +23,13 @@ return {{
 ["sha1"]="a2a0e2a3d6ef4d5771aa33682d31eaefd03c32ba",
 ["size"]=1048576,
 ["version"]="hydhyro · 98cec899e9ad",
+},{
+["language"]="es",
+["md5"]="463c241c8721ab1d1da17c91de9f8a32",
+["name"]="Edicion Roja (Spain) (SGB Enhanced)",
+["sha1"]="fc17c5b904d551b1b908054ccd1c493f755f832a",
+["size"]=1048576,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -73,6 +80,13 @@ return {{
 ["sha1"]="2b94c64b1944fb6866fd0c28149f86c11bc86253",
 ["size"]=1048576,
 ["version"]="hydhyro · fbb76167ed98",
+},{
+["language"]="es",
+["md5"]="f0da8b1cff3aab898ecde9dcbda6d817",
+["name"]="Edicion Amarilla - Edicion Especial Pikachu (Spain) (GBC,SGB Enhanced)",
+["sha1"]="1dc242039218fba50928d1afb66b70565b6b9daf",
+["size"]=1048576,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -98,6 +112,27 @@ return {{
 ["sha1"]="652c0208a5c54313e2d3efb336346e59a17cbab6",
 ["size"]=2097152,
 ["version"]="PT-BR · exact hash required",
+},{
+["language"]="es",
+["md5"]="9462bc81907e38c59acccd739690e6f9",
+["name"]="Edicion Oro (Spain) (SGB Enhanced)",
+["sha1"]="162ea54c6a3cff374642e6dd842f9bffac847e7b",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
+},{
+["language"]="fr",
+["md5"]="9af19423c5fa3dbe4fdcc78d2bc7d1c0",
+["name"]="Version Or (France) (SGB Enhanced)",
+["sha1"]="c147c0d8c2b71b7628a7233436f5c052b5b17081",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
+},{
+["language"]="it",
+["md5"]="89bb59dc49b59b0cd30b7384d9860bb8",
+["name"]="Versione Oro (Italy) (SGB Enhanced)",
+["sha1"]="032608fe8947b627584a4a0eccc7bf9ad3588426",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -123,6 +158,20 @@ return {{
 ["sha1"]="9d9536f14a1874d27ea9167fdf00b80439204a6d",
 ["size"]=2097152,
 ["version"]="PT-BR · exact hash required",
+},{
+["language"]="es",
+["md5"]="2d83fb454dd5687a802425c501854dc2",
+["name"]="Edicion Plata (Spain) (SGB Enhanced)",
+["sha1"]="05bd978ab2cb104b0aff3f696896e30885203a18",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
+},{
+["language"]="fr",
+["md5"]="72448fe75f534f70cd90469da95ef76f",
+["name"]="Version Argent (France) (SGB Enhanced)",
+["sha1"]="a4a7e8079b7a53e4d9ef43382bbb1090b9d45d1a",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -148,6 +197,20 @@ return {{
 ["sha1"]="e41c519d7ca680facf546fa34b7b00f3149f428f",
 ["size"]=2097152,
 ["version"]="PT-BR · exact hash required",
+},{
+["language"]="es",
+["md5"]="8a626340f6b16ba45c1d4e07f2134875",
+["name"]="Cristal (Spain)",
+["sha1"]="889a06fc0bb863666865aa69def0adf97945ac2a",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
+},{
+["language"]="it",
+["md5"]="7c513823f65b92a75e29067745839cc8",
+["name"]="Cristallo (Italy)",
+["sha1"]="6cee05e5b95beeae74b8365ad18ec4a07a8c4af8",
+["size"]=2097152,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -173,6 +236,20 @@ return {{
 ["sha1"]="51ab6d001412cdc3d6da16fb824ab8084123b1dd",
 ["size"]=16777216,
 ["version"]="Breno · based on USA 1.1; mod gameplay base is USA 1.0",
+},{
+["language"]="es",
+["md5"]="c629272c5e0111930a240623b6c239f0",
+["name"]="Edicion Rojo Fuego (Spain)",
+["sha1"]="ab8f6bfe0ccdaf41188cd015c8c74c314d02296a",
+["size"]=16777216,
+["version"]="1.0 / Revision 0",
+},{
+["language"]="it",
+["md5"]="fce3c39e7ba452eddb2279b454b66416",
+["name"]="Versione Rosso Fuoco (Italy)",
+["sha1"]="66a9d415205321376b4318534c0dce5f69d28362",
+["size"]=16777216,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
@@ -198,6 +275,20 @@ return {{
 ["sha1"]="b32c63d5d1454d851cef16699f3ce757798553a2",
 ["size"]=16777216,
 ["version"]="Breno · based on USA 1.1; mod gameplay base is USA 1.0",
+},{
+["language"]="es",
+["md5"]="765178ed4d402033ef7ed6b82d059f5a",
+["name"]="Edicion Verde Hoja (Spain)",
+["sha1"]="f9ebee5d228cb695f18ef2ced41630a09fa9eb05",
+["size"]=16777216,
+["version"]="1.0 / Revision 0",
+},{
+["language"]="fr",
+["md5"]="c5bc831107f459816508b45d9392afc9",
+["name"]="Version Vert Feuille (France)",
+["sha1"]="4b5758c14d0a07b70ef3ef0bd7fa5e7ce6978672",
+["size"]=16777216,
+["version"]="1.0 / Revision 0",
 }},
 },{
 ["base"]={
