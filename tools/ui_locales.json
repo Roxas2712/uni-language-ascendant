@@ -51,7 +51,9 @@
     "game_leafgreen": "LeafGreen",
     "game_ruby": "Ruby",
     "game_sapphire": "Sapphire",
-    "game_emerald": "Emerald"
+    "game_emerald": "Emerald",
+    "unavailable": "This language is not yet available for this edition.",
+    "unavailableShort": "Not yet available"
   },
   "de": {
     "native": "Deutsch",
@@ -105,7 +107,9 @@
     "game_leafgreen": "Blattgrün",
     "game_ruby": "Rubin",
     "game_sapphire": "Saphir",
-    "game_emerald": "Smaragd"
+    "game_emerald": "Smaragd",
+    "unavailable": "Diese Sprache ist für diese Edition noch nicht verfügbar.",
+    "unavailableShort": "Noch nicht verfügbar"
   },
   "fr": {
     "native": "Français",
@@ -159,7 +163,9 @@
     "game_leafgreen": "Vert Feuille",
     "game_ruby": "Rubis",
     "game_sapphire": "Saphir",
-    "game_emerald": "Émeraude"
+    "game_emerald": "Émeraude",
+    "unavailable": "Cette langue n’est pas encore disponible pour cette édition.",
+    "unavailableShort": "Pas encore disponible"
   },
   "it": {
     "native": "Italiano",
@@ -213,7 +219,9 @@
     "game_leafgreen": "Verde Foglia",
     "game_ruby": "Rubino",
     "game_sapphire": "Zaffiro",
-    "game_emerald": "Smeraldo"
+    "game_emerald": "Smeraldo",
+    "unavailable": "Questa lingua non è ancora disponibile per questa edizione.",
+    "unavailableShort": "Non ancora disponibile"
   },
   "es": {
     "native": "Español",
@@ -267,7 +275,9 @@
     "game_leafgreen": "Verde Hoja",
     "game_ruby": "Rubí",
     "game_sapphire": "Zafiro",
-    "game_emerald": "Esmeralda"
+    "game_emerald": "Esmeralda",
+    "unavailable": "Este idioma aún no está disponible para esta edición.",
+    "unavailableShort": "Aún no disponible"
   },
   "ja": {
     "native": "日本語",
@@ -321,7 +331,9 @@
     "game_leafgreen": "リーフグリーン",
     "game_ruby": "ルビー",
     "game_sapphire": "サファイア",
-    "game_emerald": "エメラルド"
+    "game_emerald": "エメラルド",
+    "unavailable": "このバージョンでは、この言語はまだ利用できません。",
+    "unavailableShort": "未対応"
   },
   "ko": {
     "native": "한국어",
@@ -375,7 +387,9 @@
     "game_leafgreen": "리프그린",
     "game_ruby": "루비",
     "game_sapphire": "사파이어",
-    "game_emerald": "에메랄드"
+    "game_emerald": "에메랄드",
+    "unavailable": "이 버전에서는 아직 이 언어를 사용할 수 없습니다.",
+    "unavailableShort": "아직 지원되지 않음"
   },
   "zh-Hans": {
     "native": "简体中文",
@@ -429,7 +443,9 @@
     "game_leafgreen": "叶绿",
     "game_ruby": "红宝石",
     "game_sapphire": "蓝宝石",
-    "game_emerald": "绿宝石"
+    "game_emerald": "绿宝石",
+    "unavailable": "此版本暂不支持该语言。",
+    "unavailableShort": "暂不支持"
   },
   "zh-Hant": {
     "native": "繁體中文",
@@ -483,7 +499,9 @@
     "game_leafgreen": "葉綠",
     "game_ruby": "紅寶石",
     "game_sapphire": "藍寶石",
-    "game_emerald": "綠寶石"
+    "game_emerald": "綠寶石",
+    "unavailable": "此版本暫不支援此語言。",
+    "unavailableShort": "暫不支援"
   },
   "pt-BR": {
     "native": "Português (Brasil)",
@@ -537,6 +555,8 @@
     "game_leafgreen": "Verde Folha",
     "game_ruby": "Rubi",
     "game_sapphire": "Safira",
-    "game_emerald": "Esmeralda"
+    "game_emerald": "Esmeralda",
+    "unavailable": "Este idioma ainda não está disponível para esta edição.",
+    "unavailableShort": "Ainda indisponível"
   }
 }

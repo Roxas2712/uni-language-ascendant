@@ -6,8 +6,13 @@ return function(game)
   assert(ui.open,'picker must be open')
   local expected={};local count=0
   for id in assert(os.getenv('QA_AVAILABLE_LANGUAGES')):gmatch('[^,]+') do expected[id]=true;count=count+1 end
-  assert(#ui.choices==count,'unexpected number of game languages')
-  for _,choice in ipairs(ui.choices) do assert(expected[choice.id] and choice.available,'unavailable choice shown: '..choice.id) end
+  assert(#ui.choices>=10,'unavailable languages must remain visible')
+  local enabled=0
+  for _,choice in ipairs(ui.choices) do
+   assert(choice.available==not not expected[choice.id],'incorrect availability: '..choice.id)
+   if choice.available then enabled=enabled+1 else assert(not ui.choose(choice.id),'disabled language accepted') end
+  end
+  assert(enabled==count,'unexpected number of available languages')
   local schema=assert(game.mods.optionSchemas.german_rom_source)
   assert(#schema[1].choices==count+1,'launcher choices differ from picker')
   for _,choice in ipairs(schema[1].choices) do assert(choice[2]=='auto' or expected[choice[2]],'unavailable launcher choice') end

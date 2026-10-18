@@ -3,7 +3,9 @@ return function(game)
  if love.setDeprecationOutput then love.setDeprecationOutput(false) end
  local ok,err=xpcall(function()
   local lang=os.getenv('QA_LANGUAGE');local e=assert(game.mods.exports.german_rom_source);local ui=assert(e.startup)
-  assert(ui.open and #ui.choices==(tonumber(os.getenv('QA_CHOICES')) or 5))
+  assert(ui.open and #ui.choices>=10)
+  local enabled=0;for _,choice in ipairs(ui.choices) do if choice.available then enabled=enabled+1 end end
+  assert(enabled==(tonumber(os.getenv('QA_CHOICES')) or 5),'incorrect available-language count')
   local function shot(name)
    wait(4);local done=false
    love.graphics.captureScreenshot(function(data)

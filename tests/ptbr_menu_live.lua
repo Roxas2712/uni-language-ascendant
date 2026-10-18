@@ -39,6 +39,25 @@ return function(game)
   shot('ptbr-game-language')
   assert(ui.back() and ui.stage=='menu');game:keypressed('tab')
   assert(ui.uiIndex==1);game:keypressed('pageup');assert(ui.uiIndex==10)
+  assert(ui.chooseMenu('de'))
+  local before=assert(love.filesystem.read('mods/german_rom_source/baseroms/.uni-language-profile'))
+  local found=false
+  for i,choice in ipairs(ui.choices) do
+   if not choice.available then
+    found=true;ui.index=i;wait(5)
+    assert(not ui.choose(choice.id),'disabled language started')
+    game:keypressed('return');game:gamepadpressed(nil,'a')
+    assert(ui.open and not ui.restarting,'disabled confirmation changed the running game')
+    for _,box in ipairs(ui.hitboxes) do assert(not (box.x==654 and box.y==540),'disabled Start button is clickable') end
+    click(700,560)
+    assert(ui.open and not ui.restarting,'disabled mouse click started game')
+    assert(ui.noticeKey==(choice.supported and 'missing' or 'unavailable'))
+   end
+  end
+  assert(found,'QA needs at least one disabled language')
+  assert(before==love.filesystem.read('mods/german_rom_source/baseroms/.uni-language-profile'),'disabled choice changed preferences')
+  ui.index=4;ui.noticeKey=nil;shot('ptbr-disabled-game-languages')
+  ui.index=7;ui.noticeKey=nil;shot('ptbr-disabled-asian-languages')
   assert(ui.chooseMenu('pt-BR'));assert(ui.requestReset());shot('ptbr-reset')
   assert(ui.back() and ui.stage=='game')
   assert(ui.choose('en') and not ui.open)

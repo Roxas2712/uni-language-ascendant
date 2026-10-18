@@ -1,4 +1,4 @@
-# Uni-Language Ascendant 1.5.1
+# Uni-Language Ascendant 1.5.2
 
 Eine eigenständige Mod für Gen1Recomp. Sie liest lokalisierte Texte und Grafiken aus deiner
 eigenen Sprach-ROM und legt sie über ein bereits importiertes US-Basisspiel.
@@ -9,7 +9,9 @@ Rubin, Saphir, Emerald, Feuerrot und Blattgrün haben eigene Importprofile.
 Attackennamen, Status-/Menütexte und Grafikbeschriftungen werden lokalisiert.
 Gen3 ergänzt auch Itemnamen, Trainerklassen, Ortsnamen und native Nebenmenüs.
 Die Mod ergänzt die importierten Fanübersetzungen durch eigene Korrekturen.
-Der aktuelle Prüfstatus mit echten Spielszenen steht in [PT-BR.html](PT-BR.html).
+Die Spielprüfungen von Version 1.5.1 stehen in [PT-BR.html](PT-BR.html).
+Version 1.5.2 ändert nur die Sprachwahl vor dem Titel, Menütexte und Schriften.
+Die Auswahl wurde für elf Editionen automatisiert und in Smaragd/Saphir live geprüft.
 Das ist keine Aussage über einen vollständigen Story-Durchlauf jeder Edition.
 
 Die benötigten Basis- und Sprach-ROMs müssen exakt der [ROM-Liste](ROM-Liste.html)
@@ -22,8 +24,10 @@ Korrektur zur früheren Doku: „Missão concluída! Poções, saúde e proteç�
 ein künstlicher Schrift-Test, kein Joy-Dialog. Die aktuelle Doku verwendet echte
 NPC-Interaktion samt KP-Erholung und Rückkehr zur Feldsteuerung als Beleg.
 
-Neu in 1.4.2: Die Spielsprachwahl und die Mod-Optionen zeigen pro Edition nur
-Sprachen mit einem unterstützten, bereits importierten ROM-Profil. Fehlt eine
+Die Spielsprachwahl zeigt alle zehn Sprachen. Nicht verfügbare Sprachen sind
+pro Edition ausgegraut: „Noch nicht verfügbar“ bedeutet, dass das Sprachprofil
+fehlt; „Sprach-ROM fehlt“ verlangt den passenden Import. Beide können nicht
+gestartet werden. Die Mod-Optionen im Launcher enthalten nur startbare Sprachen. Fehlt eine
 zuvor gewählte Sprach-ROM, startet die Mod auf Englisch. Die zehn Menüsprachen
 und die Liste der benötigten ROMs bleiben unabhängig davon verfügbar.
 Emerald unterstützt zusätzlich Französisch, Italienisch und Spanisch. Die unten

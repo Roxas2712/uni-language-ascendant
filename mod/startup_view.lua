@@ -4,6 +4,7 @@ return function(mod,state,requirements,locales,order)
  local fonts={}
  local family={ja='jp',ko='kr',['zh-Hans']='sc',['zh-Hant']='tc'}
  local ink={.10,.17,.24};local muted={.35,.43,.48};local cream={.97,.96,.90};local red={.83,.22,.25};local teal={.09,.48,.48}
+ local disabled={.79,.81,.80};local disabledInk={.36,.39,.39}
  local function color(c) G.setColor(c[1],c[2],c[3],1) end
  local function font(size,locale)
   local f=family[locale or state.uiLanguage] or 'jp';local k=f..size
@@ -113,13 +114,15 @@ return function(mod,state,requirements,locales,order)
    for i=first,math.min(first+2,#state.choices) do
     local c=state.choices[i]
     local x=32+(i-first)*302
-    panel(x,201,286,82,i==state.index and {.98,.86,.40} or cream)
-    text(c.id=='en' and t.english or c.id=='de' and t.german or c.name,x+18,212,24,ink,250)
-    text(c.available and (c.id=='en' and t.baseReady or t.romReady) or t.romMissing,x+18,249,13,c.available and teal or red,256)
+    panel(x,201,286,82,c.available and (i==state.index and {.98,.86,.40} or cream) or disabled)
+    if i==state.index and not c.available then color(disabledInk);G.setLineWidth(3);G.rectangle('line',x+5,206,276,72,8,8) end
+    text(c.id=='en' and t.english or c.id=='de' and t.german or c.name,x+18,212,24,c.available and ink or disabledInk,250,c.id)
+    text(c.available and (c.id=='en' and t.baseReady or t.romReady) or (c.supported and t.romMissing or t.unavailableShort),x+18,249,13,c.available and teal or disabledInk,256)
     hit(x,201,286,82,function()state.index=i;state.noticeKey=nil end)
    end
    if #state.choices<=2 then wrapped(t.uiOnly,665,212,250,12,muted) end
-   local choiceNotice=state.choices[state.index].noticeKey
+   local current=state.choices[state.index]
+   local choiceNotice=current.supported and current.noticeKey
    if choiceNotice then text(t[choiceNotice] or locales.en[choiceNotice],34,286,12,muted,890) end
    local row=requirements[state.page]
    panel(32,306,896,213,cream)
@@ -137,10 +140,11 @@ return function(mod,state,requirements,locales,order)
    local wanted=state.choices[state.index].id
    local source=wanted=='en' and row.sources[1] or nil
    for _,r in ipairs(row.sources) do if r.language==wanted then source=r;break end end
-   if source then rom(t.source,source,435) end
+   if source then rom(t.source,source,435)
+   elseif wanted~='en' then wrapped(t.unavailable,50,435,850,16,muted) end
    text(t.exact,50,493,11,muted,850)
-   panel(654,540,274,51,teal);text(t.start..'  >',675,549,21,cream,232)
-   hit(654,540,274,51,state.confirm)
+   panel(654,540,274,51,current.available and teal or disabled);text(t.start..'  >',675,549,21,current.available and cream or disabledInk,232)
+   if current.available then hit(654,540,274,51,state.confirm) end
    wrapped(state.noticeKey and t[state.noticeKey] or t.switchHint,34,532,590,12,state.noticeKey and red or muted)
    text(t.controls,34,625,12,ink,894)
   end
